@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "2025 Books"
+categories: jekyll update
+---
+
+## January
+- _The Ministry of Time_ by Kaliane Bradley
+- _The Goldfinch_ by Donna Tartt
+- _The God of the Woods_ by Liz Moore
+- _Butter_ by Asako Yuzuki
+- _Lady Tan's Circle of Women_ by Lisa See
+- _Beach Read_ by Emily Henry
+- _A Gentleman in Muscow_ by Amor Towles
+- _The Idiot_ by Elif Batuman
+- _Shogun Part 1_ by James Clavell
+- _Shogun Part 2_ by James Clavell
+
+## February
+- _Onyx Storm_ by Rebecca Yarros
+- _Project Hail Mary_ by Andy Weir
+- _Counting Miracles_ by Nicholas Sparks
+- _Silent Spring_ by Rachel Carson
+- _Slaughterhouse-Five_ by Kurt Vonnegut
+- _Erasure_ by Percival Everett
+
