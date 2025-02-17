@@ -15,6 +15,7 @@ categories: jekyll update
 - _The Idiot_ by Elif Batuman
 - _Shogun Part 1_ by James Clavell
 - _Shogun Part 2_ by James Clavell
+- _アマテラスの暗号_ by 伊勢谷 武
 
 ## February
 - _Onyx Storm_ by Rebecca Yarros
@@ -23,4 +24,4 @@ categories: jekyll update
 - _Silent Spring_ by Rachel Carson
 - _Slaughterhouse-Five_ by Kurt Vonnegut
 - _Erasure_ by Percival Everett
-
+- _The Hunger Games_ by Suzanne Collins
