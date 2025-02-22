@@ -25,3 +25,6 @@ categories: jekyll update
 - _Slaughterhouse-Five_ by Kurt Vonnegut
 - _Erasure_ by Percival Everett
 - _The Hunger Games_ by Suzanne Collins
+- _Catching Fire_ by Suzanne Collins
+- _Mockingjay_ by Suzanne Collins
+- _Mickey 7_ by Edward Ashton
