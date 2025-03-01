@@ -28,3 +28,9 @@ categories: jekyll update
 - _Catching Fire_ by Suzanne Collins
 - _Mockingjay_ by Suzanne Collins
 - _Mickey 7_ by Edward Ashton
+- _Pet Sematary_ by Stephen King
+- _Of Mice and Men_ by John Steinbeck
+- _The Four Winds_ by Kristin Hannah
+
+## March 
+- _First Person Singular_ by Haruki Murakami
