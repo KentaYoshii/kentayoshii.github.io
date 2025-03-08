@@ -34,3 +34,8 @@ categories: jekyll update
 
 ## March 
 - _First Person Singular_ by Haruki Murakami
+- _The Teacher_ by Freida McFadden
+- _The Strange Case of Dr. Jekyll and Mr. Hyde_ by Robert Louis Stevenson
+- _A Study in Scarlet_ by Arthur Conan Doyle
+- _The Grapes of Wrath_ by John Steinbeck
+- _All the Colors of the Dark_ by Chris Whitaker
