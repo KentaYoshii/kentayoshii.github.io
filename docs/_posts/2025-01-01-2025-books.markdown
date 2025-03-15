@@ -39,3 +39,7 @@ categories: jekyll update
 - _A Study in Scarlet_ by Arthur Conan Doyle
 - _The Grapes of Wrath_ by John Steinbeck
 - _All the Colors of the Dark_ by Chris Whitaker
+- _The Vegetarian_ by Han Kang
+- _Source Code_ by Bill Gates
+- _The Boyfriend_ by Freida McFadden 
+- _The Secret History_ by Donna Tartt
