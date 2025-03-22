@@ -43,3 +43,8 @@ categories: jekyll update
 - _Source Code_ by Bill Gates
 - _The Boyfriend_ by Freida McFadden 
 - _The Secret History_ by Donna Tartt
+- _The Invisible Man_ by H.G. Wells
+- _The Hound of the Baskervilles_ by Sherlock Holmes
+- _The Hobbit_ by JRR Tolkien
+- _Station Eleven_ by Emily St.John Mandel
+- _The Crash_ by Freida McFadden
