@@ -44,7 +44,17 @@ categories: jekyll update
 - _The Boyfriend_ by Freida McFadden 
 - _The Secret History_ by Donna Tartt
 - _The Invisible Man_ by H.G. Wells
-- _The Hound of the Baskervilles_ by Sherlock Holmes
+- _The Hound of the Baskervilles_ by Arthur Conan Doyle
 - _The Hobbit_ by JRR Tolkien
 - _Station Eleven_ by Emily St.John Mandel
 - _The Crash_ by Freida McFadden
+- _The Sign of Four_ by Arthur Conan Doyle
+- _Long Island_ by Colm Tóibín
+- _The Ballad of Songbirds ans Snakes_ by Suzanne Collins
+- _Sunrise on the Reaping_ by Suzanne Collins
+
+## April
+- _Ward D_ by Freida McFadden
+- _A Journey to the Center of the Earth_ by Jules Verne
+- _Around the World in Eighty Days_ by Jules Verne
+- _20,000 Leagues Under the Sea_ by Jules Verne
