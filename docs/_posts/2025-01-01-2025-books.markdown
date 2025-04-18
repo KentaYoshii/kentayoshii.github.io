@@ -58,3 +58,11 @@ categories: jekyll update
 - _A Journey to the Center of the Earth_ by Jules Verne
 - _Around the World in Eighty Days_ by Jules Verne
 - _20,000 Leagues Under the Sea_ by Jules Verne
+- _Drive Your Plow over the Bones of the Dead_ by Olga Tokarczuk
+- _Careless People_ by Sarah Wynn-Williams
+- _Prophet Song_ by Paul Lynch
+- _Divergent_ by Veronica Roth
+- _Insurgent_ by Veronica Roth
+- _Allegiant_ by Veronica Roth
+- _Broken Country_ by Clare Leslie Hall
+- _Blood Moon_ by Sandra Brown
