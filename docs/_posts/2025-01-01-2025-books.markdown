@@ -68,3 +68,11 @@ categories: jekyll update
 - _Blood Moon_ by Sandra Brown
 - _The Three Musketeers_ by Alexandre Dumas
 - _The Overstory_ by Richard Powers
+
+## May
+- _The Martian_ by Andy Weir
+- _Killing Floor_ by Lee Child
+- _Lights Out_ by Navessa Allen
+- _The Kite Runner_ by Khaled Hosseini
+- _The Fault in Our Stars_ by John Green
+- _Strangers in Time_ by David Baldacci
