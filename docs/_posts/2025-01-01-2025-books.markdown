@@ -76,3 +76,12 @@ categories: jekyll update
 - _The Kite Runner_ by Khaled Hosseini
 - _The Fault in Our Stars_ by John Green
 - _Strangers in Time_ by David Baldacci
+- _Weyward_ by Emilia Hart
+- _Great Big Beautiful Life_ by Emily Henry
+- _People We Meet on Vacation_ by Emily Henry
+- _Gone Girl_ by Gillian Flynn
+- _The Man in the Iron Mask_ by Alexandre Dumas
+- _Intermezzo_ by Sally Rooney
+- _The Wedding People_ by Alison Espach
+- _Land of Milk and Honey_ by C Pam Zhang
+- _The Frozen River_ by Ariel Lawhon
