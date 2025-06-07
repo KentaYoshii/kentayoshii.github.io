@@ -85,3 +85,6 @@ categories: jekyll update
 - _The Wedding People_ by Alison Espach
 - _Land of Milk and Honey_ by C Pam Zhang
 - _The Frozen River_ by Ariel Lawhon
+
+## June
+- _The Brave New World_ by Aldous Huxley
