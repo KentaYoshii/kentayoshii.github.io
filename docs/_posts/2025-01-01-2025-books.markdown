@@ -88,3 +88,5 @@ categories: jekyll update
 
 ## June
 - _The Brave New World_ by Aldous Huxley
+- _The Magic Mountain_ by Thomas Mann
+- _Almond_ by Sohn Won-Pyung
