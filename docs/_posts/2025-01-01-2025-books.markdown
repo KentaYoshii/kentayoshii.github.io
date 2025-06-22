@@ -91,3 +91,6 @@ categories: jekyll update
 - _The Magic Mountain_ by Thomas Mann
 - _Almond_ by Sohn Won-Pyung
 - _Die Trying_ by Lee Child
+- _The Shining_ by Stephen King
+- _The Lincoln Highway_ by Amor Towles
+- _The Postcard_ by Anne Berest
