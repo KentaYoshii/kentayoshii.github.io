@@ -87,6 +87,9 @@ categories: jekyll update
 - _The Frozen River_ by Ariel Lawhon
 
 ## June
+- _The Wager_ by David Grann
+- _Never Flinch_ by Stephen King
+- _Land of Milk and Honey_ by C Pam Zhang
 - _The Brave New World_ by Aldous Huxley
 - _The Magic Mountain_ by Thomas Mann
 - _Almond_ by Sohn Won-Pyung
@@ -94,3 +97,18 @@ categories: jekyll update
 - _The Shining_ by Stephen King
 - _The Lincoln Highway_ by Amor Towles
 - _The Postcard_ by Anne Berest
+- _The Will of the Many_ by James Islington
+- _Rules of Civility_ by Amor Towles
+- _The Green Mile_ by Stephen King
+
+## July
+- _The Sympathizer_ by Viet Thanh Nguyen
+- _Tai-Pan_ by James Clavell
+- _Blackout_ by Justin Torres
+- _Atmosphere_ by Taylor Jenkins Reid
+- _The Maid_ by Nita Prose
+- _The Demon of Unrest_ by Erik Larson
+- _The Mysterious Affair at Styles_ by Agatha Christie
+- _Murder on the Links_ by Agatha Christie
+- _Poirot Investigates_ by Agatha Christie
+- _Wicked_ by Gregory Maguire
