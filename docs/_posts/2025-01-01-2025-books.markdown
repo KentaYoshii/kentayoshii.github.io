@@ -112,3 +112,4 @@ categories: jekyll update
 - _Murder on the Links_ by Agatha Christie
 - _Poirot Investigates_ by Agatha Christie
 - _Wicked_ by Gregory Maguire
+- _A Table for Two_ by Amor Towles
