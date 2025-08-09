@@ -113,3 +113,8 @@ categories: jekyll update
 - _Poirot Investigates_ by Agatha Christie
 - _Wicked_ by Gregory Maguire
 - _A Table for Two_ by Amor Towles
+- _The Murder of Roger Ackroyd_ by Agatha Christie
+
+## August 
+- _Gai-Jin_ by James Clavell
+- _King rat_ by James Clavell
