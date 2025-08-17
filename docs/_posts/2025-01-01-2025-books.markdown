@@ -118,3 +118,6 @@ categories: jekyll update
 ## August 
 - _Gai-Jin_ by James Clavell
 - _King rat_ by James Clavell
+- _The British Are Coming_ by Rick Atkinson
+- _The Guest List_ by Lucy Foley
+- _The Big Four_ by Agatha Christie
