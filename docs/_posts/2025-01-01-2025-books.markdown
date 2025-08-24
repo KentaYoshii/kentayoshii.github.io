@@ -121,3 +121,9 @@ categories: jekyll update
 - _The British Are Coming_ by Rick Atkinson
 - _The Guest List_ by Lucy Foley
 - _The Big Four_ by Agatha Christie
+- _The Mystery of the Blue Train_ by Agatha Christie
+- _Peril at End House_ by Agatha Christie
+- _Lord Edgware Dies_ by Agatha Christie
+- _Murder on the Orient Express_ by Agatha Christie
+- _Three Act Tragedy_ by Agatha Christie
+- _Death in the Clouds_ by Agatha Christie
