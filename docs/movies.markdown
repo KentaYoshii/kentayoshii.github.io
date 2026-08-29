@@ -5,7 +5,7 @@ permalink: /movies/
 ---
 
 <div class="wide-section"><div class="wide-inner">
-<div class="collection-page" data-collection>
+<div class="collection-page" data-collection="movies">
   <div class="collection-header">
     <p class="collection-tagline">Movies and shows I've watched, newest first.</p>
     <input type="text" class="search-input" placeholder="Search titles…" aria-label="Search movies">

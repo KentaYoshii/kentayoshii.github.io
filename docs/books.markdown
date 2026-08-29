@@ -5,7 +5,7 @@ permalink: /books/
 ---
 
 <div class="wide-section"><div class="wide-inner">
-<div class="collection-page" data-collection>
+<div class="collection-page" data-collection="books">
   <div class="collection-header">
     <p class="collection-tagline">Everything I've read, newest first.</p>
     <input type="text" class="search-input" placeholder="Search titles or authors…" aria-label="Search books">

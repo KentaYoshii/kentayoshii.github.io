@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   initThemeToggle();
   initCollectionPage();
+  initCoverArt();
   initHomeStats();
   initVimTipsToc();
 });
@@ -163,4 +164,234 @@ function initVimTipsToc() {
 
   toc.appendChild(list);
   container.insertBefore(toc, container.firstChild);
+}
+
+// ---- Cover art (Books/Movies) ----
+//
+// Loading strategy, since these pages can have hundreds of entries:
+//  - Only fetch a cover once its <li> scrolls near the viewport
+//    (IntersectionObserver), not on page load. This also means entries
+//    hidden by the search filter never fetch until they're shown.
+//  - Cap concurrent lookups so we don't fire off hundreds of requests at
+//    once (e.g. on a tall viewport or a wide multi-column layout).
+//  - Cache resolved (and "not found") results in localStorage, keyed by
+//    title/author, so repeat visits are instant and don't re-hit the API.
+
+var COVER_CACHE_PREFIX = 'coverCache:v1:';
+var COVER_MAX_CONCURRENT = 4;
+var coverQueue = [];
+var coverActive = 0;
+var coverObserver = null;
+
+function initCoverArt() {
+  var page = document.querySelector('[data-collection]');
+  if (!page) return;
+
+  var kind = page.getAttribute('data-collection');
+  if (kind !== 'books' && kind !== 'movies') return;
+
+  var items = Array.prototype.slice.call(page.querySelectorAll('.year-block li'));
+  items.forEach(function (li) {
+    var info = kind === 'books' ? parseBookEntry(li) : parseMovieEntry(li);
+    if (!info || !info.title) return;
+
+    var wrap = document.createElement('span');
+    wrap.className = 'cover-thumb-wrap';
+
+    var fallback = document.createElement('span');
+    fallback.className = 'cover-fallback';
+    fallback.setAttribute('aria-hidden', 'true');
+    fallback.textContent = kind === 'books' ? '📖' : '🎬';
+    wrap.appendChild(fallback);
+
+    var textSpan = document.createElement('span');
+    textSpan.className = 'entry-text';
+    while (li.firstChild) {
+      textSpan.appendChild(li.firstChild);
+    }
+
+    li.appendChild(wrap);
+    li.appendChild(textSpan);
+    li.classList.add('has-cover-slot');
+
+    observeForCover(li, wrap, kind, info);
+  });
+}
+
+function parseBookEntry(li) {
+  var em = li.querySelector('em');
+  if (!em) return null;
+
+  var title = em.textContent.trim();
+  var fullText = li.textContent;
+  var afterTitle = fullText.slice(fullText.indexOf(title) + title.length);
+  var author = afterTitle.replace(/^[\s—-]*by\s+/i, '').trim();
+  return { title: title, author: author };
+}
+
+function parseMovieEntry(li) {
+  var raw = li.textContent.trim();
+  var isSeries = /\(\s*tv series\s*\)/i.test(raw) || /\bseason\s+\d+\b/i.test(raw);
+  var cleaned = raw
+    .replace(/\(\s*tv series\s*\)/ig, '')
+    .replace(/\bseason\s+\d+\b/ig, '')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+  return { title: cleaned || raw, isSeries: isSeries };
+}
+
+function getCoverObserver() {
+  if (coverObserver !== null) return coverObserver;
+  if (typeof IntersectionObserver === 'undefined') {
+    coverObserver = false;
+    return coverObserver;
+  }
+  coverObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+      coverObserver.unobserve(entry.target);
+      var handler = entry.target.coverHandler;
+      if (handler) handler();
+    });
+  }, { rootMargin: '200px 0px' });
+  return coverObserver;
+}
+
+function observeForCover(li, wrap, kind, info) {
+  var handler = function () {
+    enqueueCoverFetch(function () {
+      return resolveCover(kind, info).then(function (url) {
+        applyCover(wrap, url);
+      });
+    });
+  };
+
+  var observer = getCoverObserver();
+  if (!observer) {
+    handler();
+    return;
+  }
+  li.coverHandler = handler;
+  observer.observe(li);
+}
+
+function enqueueCoverFetch(task) {
+  coverQueue.push(task);
+  pumpCoverQueue();
+}
+
+function pumpCoverQueue() {
+  while (coverActive < COVER_MAX_CONCURRENT && coverQueue.length) {
+    var task = coverQueue.shift();
+    coverActive++;
+    task().catch(function () {}).then(function () {
+      coverActive--;
+      pumpCoverQueue();
+    });
+  }
+}
+
+function applyCover(wrap, url) {
+  if (!url) return;
+  var img = document.createElement('img');
+  img.className = 'cover-thumb';
+  img.alt = '';
+  img.loading = 'lazy';
+  img.addEventListener('load', function () {
+    wrap.classList.add('is-loaded');
+  });
+  img.addEventListener('error', function () {
+    img.remove();
+  });
+  img.src = url;
+  wrap.appendChild(img);
+}
+
+function coverCacheKey(kind, info) {
+  return kind + ':' + (info.title + '|' + (info.author || '')).toLowerCase();
+}
+
+function readCoverCache(key) {
+  try {
+    var raw = localStorage.getItem(COVER_CACHE_PREFIX + key);
+    if (raw === null) return undefined;
+    return JSON.parse(raw);
+  } catch (e) {
+    return undefined;
+  }
+}
+
+function writeCoverCache(key, value) {
+  try {
+    localStorage.setItem(COVER_CACHE_PREFIX + key, JSON.stringify(value));
+  } catch (e) {}
+}
+
+function resolveCover(kind, info) {
+  var key = coverCacheKey(kind, info);
+  var cached = readCoverCache(key);
+  if (cached !== undefined) {
+    return Promise.resolve(cached.url);
+  }
+
+  var lookup = kind === 'books' ? fetchBookCover(info) : fetchMovieCover(info);
+  return lookup
+    .then(function (url) {
+      writeCoverCache(key, { url: url || null });
+      return url;
+    })
+    .catch(function () {
+      writeCoverCache(key, { url: null });
+      return null;
+    });
+}
+
+// Open Library's search API is free, keyless, and CORS-enabled.
+function fetchBookCover(info) {
+  var params = 'title=' + encodeURIComponent(info.title) +
+    (info.author ? '&author=' + encodeURIComponent(info.author) : '') +
+    '&limit=1&fields=cover_i';
+
+  return fetch('https://openlibrary.org/search.json?' + params)
+    .then(function (res) { return res.json(); })
+    .then(function (data) {
+      var doc = data && data.docs && data.docs[0];
+      if (doc && doc.cover_i) {
+        return 'https://covers.openlibrary.org/b/id/' + doc.cover_i + '-M.jpg';
+      }
+      return null;
+    });
+}
+
+// TMDB (themoviedb.org). Free tier, CORS-enabled. Note: this key is a
+// personal, non-commercial API key and is necessarily public in a static
+// site's client-side JS (there's no backend to hide it behind) — same as
+// any free-tier key embedded in a browser app.
+var TMDB_API_KEY = '276b22ca1df85e0ea85564e4b597e81f';
+var TMDB_IMAGE_BASE = 'https://image.tmdb.org/t/p/w200';
+
+function fetchMovieCover(info) {
+  var term = encodeURIComponent(info.title);
+
+  function search(type, posterField) {
+    return fetch('https://api.themoviedb.org/3/search/' + type + '?api_key=' + TMDB_API_KEY + '&query=' + term)
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        var result = data && data.results && data.results[0];
+        if (result && result.poster_path) {
+          return TMDB_IMAGE_BASE + result.poster_path;
+        }
+        return null;
+      });
+  }
+
+  // Entries explicitly marked as a series (e.g. "(TV Series)", "Season 2")
+  // search TV first, since a movie-search false-positive would otherwise
+  // win before we ever tried the TV catalog.
+  var first = info.isSeries ? 'tv' : 'movie';
+  var second = info.isSeries ? 'movie' : 'tv';
+
+  return search(first).then(function (url) {
+    return url || search(second);
+  });
 }
