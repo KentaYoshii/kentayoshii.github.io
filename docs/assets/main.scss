@@ -472,6 +472,15 @@ body,
 // onto it (stretching the circle into a misaligned oblong). Reset those and
 // right-align it to match the stacked nav links.
 @media screen and (max-width: $on-palm) {
+  // Minima gives the dropdown panel the same background as the page, so an
+  // open menu reads as transparent — page content behind it appears to bleed
+  // through. Use the header's surface colour and add a shadow so it reads as
+  // a panel floating above the page.
+  .site-nav {
+    background-color: #f3e8d5;
+    box-shadow: 0 8px 20px rgba(60, 40, 20, 0.18);
+  }
+
   .site-nav .theme-toggle {
     display: block;
     width: 34px;
@@ -542,8 +551,11 @@ body,
   // menu is a cream panel showing near-invisible light-on-light text.
   @media screen and (max-width: $on-palm) {
     .site-nav {
-      background-color: $dark-surface;
+      // Lifted a little off $dark-surface, which is too close to $dark-bg to
+      // distinguish the panel from the page behind it.
+      background-color: lighten($dark-surface, 5%);
       border-color: $dark-border;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
     }
   }
 
