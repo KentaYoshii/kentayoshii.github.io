@@ -264,6 +264,98 @@ code, pre {
   margin-bottom: 12px;
 }
 
+// ---- Stats page ----
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 18px;
+  margin-bottom: $spacing-unit;
+}
+
+.stat-card {
+  background-color: #fffaf1;
+  border: 1px solid $grey-color-light;
+  border-radius: 12px;
+  padding: 22px;
+  text-align: center;
+}
+
+.stat-big {
+  display: block;
+  font-family: "Merriweather", Georgia, serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.1;
+  color: $brand-color;
+}
+
+.stat-caption {
+  display: block;
+  margin-top: 6px;
+  font-size: 14px;
+  color: $grey-color-dark;
+}
+
+.fact-list {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    padding: 8px 0;
+    border-bottom: 1px dashed $grey-color-light;
+  }
+
+  li:last-child {
+    border-bottom: none;
+  }
+}
+
+.bar-list {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    display: grid;
+    grid-template-columns: minmax(90px, 170px) 1fr auto;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+}
+
+.bar-label {
+  font-size: 15px;
+}
+
+.bar-track {
+  background-color: $grey-color-light;
+  border-radius: 999px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  display: block;
+  height: 100%;
+  background-color: $brand-color;
+  border-radius: 999px;
+}
+
+.bar-value {
+  font-size: 14px;
+  color: $grey-color-dark;
+  min-width: 2ch;
+  text-align: right;
+}
+
+.home-about {
+  margin-top: $spacing-unit * 1.5;
+  padding-top: $spacing-unit;
+  border-top: 1px solid $grey-color-light;
+  max-width: 640px;
+}
+
 .collection-controls {
   display: flex;
   flex-wrap: wrap;
@@ -753,6 +845,37 @@ body,
 
   .view-toggle {
     border-color: $dark-border;
+  }
+
+  .stat-card {
+    background-color: $dark-surface;
+    border-color: $dark-border;
+  }
+
+  .stat-big,
+  .bar-fill {
+    color: $dark-brand;
+  }
+
+  .bar-fill {
+    background-color: $dark-brand;
+  }
+
+  .bar-track {
+    background-color: $dark-border;
+  }
+
+  .stat-caption,
+  .bar-value {
+    color: $dark-muted;
+  }
+
+  .fact-list li {
+    border-bottom-color: $dark-border;
+  }
+
+  .home-about {
+    border-top-color: $dark-border;
   }
 
   .view-button {

@@ -13,22 +13,33 @@ by GitHub Pages from the **`gh-pages` branch, `/docs` folder**. Pushing to
 docs/                     Jekyll site root
   _data/books.json        generated — do not edit by hand
   _data/movies.json       generated — do not edit by hand
+  _data/stats.json        generated — do not edit by hand
   _posts/*books*          hand-written reading logs (source of truth)
   _posts/*movies*         hand-written watch logs (source of truth)
   books.markdown          renders _data/books.json
   movies.markdown         renders _data/movies.json
+  stats.markdown          renders _data/stats.json
   dev/vim-tips.markdown   dev notes, edited directly
   assets/js/main.js       search, grouping, cover art, dark mode
   assets/main.scss        theme
 scripts/
+  build.py                runs all three, in order — the usual entry point
   merge_books.py          builds _data/books.json
   build_movies.py         builds _data/movies.json
+  build_stats.py          builds _data/stats.json (reads the other two)
 goodreads_library_export.csv   latest Goodreads export
 ```
 
-The two `_data/*.json` files are **generated**. Editing them directly works
-until the next regeneration overwrites it — always edit the source and re-run
-the script.
+The `_data/*.json` files are **generated**. Editing them directly works until
+the next regeneration overwrites it — always edit the source and re-run the
+build. When in doubt just run everything:
+
+```sh
+python3 scripts/build.py
+```
+
+`build_stats.py` reads the output of the other two, so if you run them
+individually, run it last.
 
 ## Adding books
 
@@ -45,8 +56,8 @@ Goodreads' export ships an empty `Date Read` column).
 3. Regenerate and commit:
 
    ```sh
-   python3 scripts/merge_books.py
-   git add goodreads_library_export.csv docs/_data/books.json
+   python3 scripts/build.py
+   git add goodreads_library_export.csv docs/_data
    git commit -m "Update books" && git push origin gh-pages
    ```
 
@@ -101,8 +112,8 @@ Edit the markdown log for the year, under the right `## Month` heading:
 Then regenerate and commit:
 
 ```sh
-python3 scripts/build_movies.py
-git add docs/_posts docs/_data/movies.json
+python3 scripts/build.py
+git add docs/_posts docs/_data
 git commit -m "Update movies" && git push origin gh-pages
 ```
 
@@ -112,6 +123,15 @@ post without re-running the script leaves the site showing stale data.**
 
 Mark TV entries with `(TV Series)` or `Season N` — the cover lookup uses that
 to search TMDB's TV catalogue first, which otherwise returns a wrong film.
+
+## Stats page
+
+`/stats/` is rendered entirely from `_data/stats.json` — no client-side work.
+Page counts and publication years come from the Goodreads export (532 and 536
+of 563 books respectively), so the totals are "across the books we have data
+for", not the whole shelf. Ratings are deliberately absent: every row in the
+export has `My Rating: 0`, so there is nothing to show until books get rated
+on Goodreads.
 
 ## Adding dev notes
 

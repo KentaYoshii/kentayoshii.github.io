@@ -33,7 +33,7 @@ header_pages:
   - books.markdown
   - movies.markdown
   - dev.markdown
-  - about.markdown
+  - stats.markdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.

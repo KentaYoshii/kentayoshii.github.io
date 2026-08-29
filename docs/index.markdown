@@ -40,7 +40,21 @@ layout: page
     <p>Programming notes and cheat sheets, starting with Vim tips.</p>
     <span class="link-card-cta">Browse dev notes →</span>
   </a>
+  <a class="link-card" href="{{ '/stats/' | relative_url }}">
+    <span class="link-card-icon" aria-hidden="true">📊</span>
+    <h2>Stats</h2>
+    <p>Pages read, most-read authors, and how far back the shelf goes.</p>
+    <span class="link-card-cta">See the numbers →</span>
+  </a>
 </div>
+
+<section class="home-about">
+  <h2>About</h2>
+  <p>I'm Kenta. This is a personal log of the books I've read, the movies and
+  shows I've watched, and the programming notes I keep having to look up
+  again. The book list is kept in sync with Goodreads; everything else is
+  written by hand.</p>
+</section>
 
 </div></div>
 

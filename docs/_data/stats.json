@@ -1,0 +1,120 @@
+{
+ "books": {
+  "total": 563,
+  "authors": 230,
+  "pages_total": 203450,
+  "pages_total_pretty": "203,450",
+  "pages_median": 348,
+  "pages_counted": 532,
+  "longest": {
+   "title": "Les Misérables",
+   "author": "Victor Hugo",
+   "pages": 1488
+  },
+  "shortest": {
+   "title": "Murder in the Mews",
+   "author": "Agatha Christie",
+   "pages": 5
+  },
+  "oldest": {
+   "title": "The Iliad",
+   "author": "Homer",
+   "published": -750
+  },
+  "newest": {
+   "title": "Yesteryear",
+   "author": "Caro Claire Burke",
+   "published": 2026
+  },
+  "span_years": 2776,
+  "span_years_pretty": "2,776",
+  "top_authors": [
+   {
+    "name": "Agatha Christie",
+    "count": 72
+   },
+   {
+    "name": "John Grisham",
+    "count": 52
+   },
+   {
+    "name": "Haruki Murakami",
+    "count": 25
+   },
+   {
+    "name": "Stephen King",
+    "count": 22
+   },
+   {
+    "name": "Lee Child",
+    "count": 13
+   },
+   {
+    "name": "Kazuo Ishiguro",
+    "count": 9
+   },
+   {
+    "name": "J.K. Rowling",
+    "count": 8
+   },
+   {
+    "name": "Freida McFadden",
+    "count": 7
+   },
+   {
+    "name": "John Green",
+    "count": 6
+   },
+   {
+    "name": "Arthur Conan Doyle",
+    "count": 6
+   }
+  ],
+  "by_year": [
+   {
+    "year": "2025",
+    "count": 106
+   },
+   {
+    "year": "2024",
+    "count": 117
+   }
+  ],
+  "dated": 223,
+  "centuries": [
+   {
+    "name": "21st century",
+    "count": 271
+   },
+   {
+    "name": "20th century",
+    "count": 211
+   },
+   {
+    "name": "19th century",
+    "count": 51
+   },
+   {
+    "name": "8th century BC",
+    "count": 2
+   },
+   {
+    "name": "17th century",
+    "count": 1
+   }
+  ]
+ },
+ "movies": {
+  "total": 102,
+  "by_year": [
+   {
+    "year": "2025",
+    "count": 56
+   },
+   {
+    "year": "2024",
+    "count": 46
+   }
+  ]
+ }
+}
