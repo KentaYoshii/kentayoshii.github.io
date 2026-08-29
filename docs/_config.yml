@@ -32,6 +32,7 @@ plugins:
 header_pages:
   - books.markdown
   - movies.markdown
+  - posts.markdown
   - dev.markdown
   - stats.markdown
 

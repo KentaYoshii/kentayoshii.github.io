@@ -19,6 +19,7 @@ docs/                     Jekyll site root
   books.markdown          renders _data/books.json
   movies.markdown         renders _data/movies.json
   stats.markdown          renders _data/stats.json
+  posts.markdown          lists posts filed under `categories: posts`
   dev/vim-tips.markdown   dev notes, edited directly
   assets/js/main.js       search, grouping, cover art, dark mode
   assets/main.scss        theme
@@ -123,6 +124,26 @@ post without re-running the script leaves the site showing stale data.**
 
 Mark TV entries with `(TV Series)` or `Season N` — the cover lookup uses that
 to search TMDB's TV catalogue first, which otherwise returns a wrong film.
+
+## Writing a post
+
+`/posts/` lists anything in `_posts` filed under `categories: posts`. The book
+and movie logs live in the same folder but under their own categories, so they
+never appear there. No build step — Jekyll picks it up directly.
+
+```markdown
+---
+layout: post
+title: "Some title"
+categories: posts
+---
+
+Body goes here.
+```
+
+Avoid `books` or `movies` in the filename: the generator scripts glob
+`_posts/*books*` and `_posts/*movies*`, and would try to parse the post as a
+log.
 
 ## Stats page
 

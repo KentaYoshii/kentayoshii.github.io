@@ -349,6 +349,11 @@ code, pre {
   text-align: right;
 }
 
+.empty-state {
+  color: $grey-color-dark;
+  font-style: italic;
+}
+
 .home-about {
   margin-top: $spacing-unit * 1.5;
   padding-top: $spacing-unit;
@@ -866,7 +871,9 @@ body,
   }
 
   .stat-caption,
-  .bar-value {
+  .bar-value,
+  .empty-state,
+  .post-meta {
     color: $dark-muted;
   }
 
@@ -874,7 +881,12 @@ body,
     border-bottom-color: $dark-border;
   }
 
-  .home-about {
+  .empty-state {
+  color: $grey-color-dark;
+  font-style: italic;
+}
+
+.home-about {
     border-top-color: $dark-border;
   }
 

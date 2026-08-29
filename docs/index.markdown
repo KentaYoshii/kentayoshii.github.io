@@ -34,6 +34,12 @@ layout: page
     <p>Movies and shows I've watched, organized by year and searchable.</p>
     <span class="link-card-cta">Browse movies →</span>
   </a>
+  <a class="link-card" href="{{ '/posts/' | relative_url }}">
+    <span class="link-card-icon" aria-hidden="true">✍️</span>
+    <h2>Posts</h2>
+    <p>Occasional writing.</p>
+    <span class="link-card-cta">Read posts →</span>
+  </a>
   <a class="link-card" href="{{ '/dev/' | relative_url }}">
     <span class="link-card-icon" aria-hidden="true">🛠️</span>
     <h2>Dev Notes</h2>
