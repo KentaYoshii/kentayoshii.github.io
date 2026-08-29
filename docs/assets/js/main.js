@@ -177,7 +177,7 @@ function initVimTipsToc() {
 //  - Cache resolved (and "not found") results in localStorage, keyed by
 //    title/author, so repeat visits are instant and don't re-hit the API.
 
-var COVER_CACHE_PREFIX = 'coverCache:v1:';
+var COVER_CACHE_PREFIX = 'coverCache:v2:';
 var COVER_MAX_CONCURRENT = 4;
 var coverQueue = [];
 var coverActive = 0;
@@ -352,19 +352,28 @@ function resolveCover(kind, info) {
 
 // Open Library's search API is free, keyless, and CORS-enabled.
 function fetchBookCover(info) {
-  var params = 'title=' + encodeURIComponent(info.title) +
-    (info.author ? '&author=' + encodeURIComponent(info.author) : '') +
-    '&limit=1&fields=cover_i';
+  function search(withAuthor) {
+    var params = 'title=' + encodeURIComponent(info.title) +
+      (withAuthor && info.author ? '&author=' + encodeURIComponent(info.author) : '') +
+      '&limit=1&fields=cover_i';
 
-  return fetch('https://openlibrary.org/search.json?' + params)
-    .then(function (res) { return res.json(); })
-    .then(function (data) {
-      var doc = data && data.docs && data.docs[0];
-      if (doc && doc.cover_i) {
-        return 'https://covers.openlibrary.org/b/id/' + doc.cover_i + '-M.jpg';
-      }
-      return null;
-    });
+    return fetch('https://openlibrary.org/search.json?' + params)
+      .then(function (res) { return res.json(); })
+      .then(function (data) {
+        var doc = data && data.docs && data.docs[0];
+        if (doc && doc.cover_i) {
+          return 'https://covers.openlibrary.org/b/id/' + doc.cover_i + '-M.jpg';
+        }
+        return null;
+      });
+  }
+
+  // Title+author is the precise query, but fails whenever Open Library's
+  // credited "author" differs from ours (translators, anthology editors,
+  // etc.) — a broader title-only search catches those.
+  return search(true).then(function (url) {
+    return url || (info.author ? search(false) : null);
+  });
 }
 
 // TMDB (themoviedb.org). Free tier, CORS-enabled. Note: this key is a
