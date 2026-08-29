@@ -69,6 +69,13 @@ h1, h2, h3, h4, h5, h6 {
   border-top: 1px solid $grey-color-light;
 }
 
+.last-updated {
+  font-size: 13px;
+  color: $grey-color;
+  text-align: center;
+  margin-top: $spacing-unit * 0.75;
+}
+
 .post-list > li,
 .home .post-list-heading {
   border-bottom: 1px dashed $grey-color-light;
@@ -873,7 +880,8 @@ body,
   .stat-caption,
   .bar-value,
   .empty-state,
-  .post-meta {
+  .post-meta,
+  .last-updated {
     color: $dark-muted;
   }
 
