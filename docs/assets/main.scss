@@ -249,6 +249,7 @@ code, pre {
 
 .search-input {
   width: 100%;
+  max-width: 480px;
   box-sizing: border-box;
   font-family: $base-font-family;
   font-size: 16px;
@@ -294,6 +295,48 @@ code, pre {
   background-color: $grey-color-light;
   border-radius: 999px;
   padding: 3px 10px;
+}
+
+// Break out of minima's narrow $content-width wrapper for pages that
+// benefit from more breathing room (home, books, movies). Other pages
+// (About, Vim Tips) keep the narrower prose-friendly width.
+.wide-section {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  box-sizing: border-box;
+  padding: 0 $spacing-unit;
+}
+
+.wide-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.year-block ul {
+  columns: 2;
+  column-gap: 48px;
+  margin: 0 0 $spacing-unit;
+
+  li {
+    break-inside: avoid;
+    margin-bottom: 6px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .year-block ul {
+    columns: 3;
+  }
+}
+
+@media screen and (max-width: $on-palm) {
+  .year-block ul {
+    columns: 1;
+  }
 }
 
 .toc {

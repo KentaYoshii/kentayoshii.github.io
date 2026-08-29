@@ -4,6 +4,7 @@ title: Books
 permalink: /books/
 ---
 
+<div class="wide-section"><div class="wide-inner">
 <div class="collection-page" data-collection>
   <div class="collection-header">
     <p class="collection-tagline">Everything I've read, newest first.</p>
@@ -19,5 +20,6 @@ permalink: /books/
   </section>
   {%- endfor -%}
 </div>
+</div></div>
 
 <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>

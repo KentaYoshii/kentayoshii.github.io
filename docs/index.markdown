@@ -2,6 +2,8 @@
 layout: page
 ---
 
+<div class="wide-section"><div class="wide-inner">
+
 <section class="hero" data-home-stats>
   <p class="hero-eyebrow">Kenta's Log</p>
   <h1 class="hero-title">Books, movies, and Vim tricks I don't want to forget.</h1>
@@ -39,5 +41,7 @@ layout: page
     <span class="link-card-cta">See tips →</span>
   </a>
 </div>
+
+</div></div>
 
 <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>

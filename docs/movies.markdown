@@ -4,6 +4,7 @@ title: Movies
 permalink: /movies/
 ---
 
+<div class="wide-section"><div class="wide-inner">
 <div class="collection-page" data-collection>
   <div class="collection-header">
     <p class="collection-tagline">Movies and shows I've watched, newest first.</p>
@@ -19,5 +20,6 @@ permalink: /movies/
   </section>
   {%- endfor -%}
 </div>
+</div></div>
 
 <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
