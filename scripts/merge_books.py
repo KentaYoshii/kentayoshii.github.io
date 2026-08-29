@@ -65,6 +65,19 @@ def keyify(s):
     return re.sub(r'[^\w]+', '', fold(nfkc(s)).lower(), flags=re.UNICODE)
 
 
+def sort_title(t):
+    """Titles file under their first significant word, so 'The Covenant of
+    Water' sorts and groups under C."""
+    return re.sub(r'^(the|a|an)\s+', '', nfkc(t).strip(), flags=re.I)
+
+
+def letter_of(t):
+    """Grouping bucket for the 'First letter' view. Anything not starting with
+    a Latin letter (digits, Japanese titles) collects under '#'."""
+    s = fold(sort_title(t)).upper()
+    return s[0] if s and 'A' <= s[0] <= 'Z' else '#'
+
+
 def strip_series(t):
     """Drop Goodreads' trailing series/romanization annotations:
     '1Q84 (1Q84, #1-3)' and '永遠の0 [Eien No Zero]'."""
@@ -219,7 +232,11 @@ def main():
             'year': m['year'],
         })
 
-    books.sort(key=lambda b: (keyify(b['author']), keyify(b['title'])))
+    # The page's default view is an ungrouped A-Z list, so sort by title here
+    # and let the client re-group without re-sorting.
+    for b in books:
+        b['letter'] = letter_of(b['title'])
+    books.sort(key=lambda b: (keyify(sort_title(b['title'])), keyify(b['author'])))
 
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
     with open(OUT_PATH, 'w', encoding='utf-8') as f:

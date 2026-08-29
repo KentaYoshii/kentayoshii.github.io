@@ -264,7 +264,41 @@ code, pre {
   margin-bottom: 12px;
 }
 
+.collection-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.group-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: $grey-color-dark;
+  white-space: nowrap;
+}
+
+.group-select {
+  font-family: $base-font-family;
+  font-size: 15px;
+  padding: 10px 12px;
+  border: 1px solid $grey-color-light;
+  border-radius: 8px;
+  background-color: #fffaf1;
+  color: $text-color;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+    border-color: $brand-color;
+    box-shadow: 0 0 0 3px rgba(168, 99, 44, 0.15);
+  }
+}
+
 .search-input {
+  flex: 1 1 260px;
   width: 100%;
   max-width: 480px;
   box-sizing: border-box;
@@ -611,10 +645,20 @@ body,
   .stat-pill,
   .toc,
   .link-card,
-  .search-input {
+  .search-input,
+  .group-select {
     background-color: $dark-surface;
     border-color: $dark-border;
     color: $dark-text;
+  }
+
+  .group-control {
+    color: $dark-muted;
+  }
+
+  .group-select:focus {
+    border-color: $dark-brand;
+    box-shadow: 0 0 0 3px rgba(226, 168, 95, 0.2);
   }
 
   .link-card:hover {

@@ -1,3380 +1,3943 @@
 [
  {
-  "title": "The Covenant of Water",
-  "author": "Abraham Verghese",
-  "isbn": "9780802162175",
-  "year": "2024"
- },
- {
-  "title": "4:50 From Paddington",
-  "author": "Agatha Christie",
-  "isbn": "9781579126933",
-  "year": null
- },
- {
-  "title": "A Caribbean Mystery",
-  "author": "Agatha Christie",
-  "isbn": "9780451199928",
-  "year": null
- },
- {
-  "title": "After the Funeral",
-  "author": "Agatha Christie",
-  "isbn": "9780425173909",
-  "year": null
- },
- {
-  "title": "A Murder Is Announced",
-  "author": "Agatha Christie",
-  "isbn": "9781579126292",
-  "year": null
- },
- {
-  "title": "And Then There Were None",
-  "author": "Agatha Christie",
-  "isbn": "9780312330873",
-  "year": null
- },
- {
-  "title": "A Pocket Full of Rye",
-  "author": "Agatha Christie",
-  "isbn": "9780451199867",
-  "year": null
- },
- {
-  "title": "Appointment with Death",
-  "author": "Agatha Christie",
-  "isbn": "9780007119356",
-  "year": null
- },
- {
-  "title": "At Bertram's Hotel",
-  "author": "Agatha Christie",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "By the Pricking of My Thumbs",
-  "author": "Agatha Christie",
-  "isbn": "9780451200525",
-  "year": null
- },
- {
-  "title": "Cards on the Table",
-  "author": "Agatha Christie",
-  "isbn": "9780425205952",
-  "year": null
- },
- {
-  "title": "Cat Among the Pigeons",
-  "author": "Agatha Christie",
-  "isbn": "9780425205969",
-  "year": null
- },
- {
-  "title": "Crooked House",
-  "author": "Agatha Christie",
-  "isbn": "9780312981662",
-  "year": null
- },
- {
-  "title": "Curtain",
-  "author": "Agatha Christie",
-  "isbn": "9780425173749",
-  "year": null
- },
- {
-  "title": "Dead Man's Folly",
-  "author": "Agatha Christie",
-  "isbn": "9781572705470",
-  "year": null
- },
- {
-  "title": "Death Comes as the End",
-  "author": "Agatha Christie",
-  "isbn": "9780312981617",
-  "year": null
- },
- {
-  "title": "Death in the Clouds",
-  "author": "Agatha Christie",
-  "isbn": "9780007119332",
-  "year": "2025"
- },
- {
-  "title": "Death on the Nile",
-  "author": "Agatha Christie",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Destination Unknown",
-  "author": "Agatha Christie",
-  "isbn": "9780007154906",
-  "year": null
- },
- {
-  "title": "Dumb Witness",
-  "author": "Agatha Christie",
-  "isbn": "9780007120796",
-  "year": null
- },
- {
-  "title": "Elephants Can Remember",
-  "author": "Agatha Christie",
-  "isbn": "9780425067826",
-  "year": null
- },
- {
-  "title": "Endless Night",
-  "author": "Agatha Christie",
-  "isbn": "9780007151677",
-  "year": null
- },
- {
-  "title": "Evil Under the Sun",
-  "author": "Agatha Christie",
-  "isbn": "9781579126285",
-  "year": null
- },
- {
-  "title": "Five Little Pigs",
-  "author": "Agatha Christie",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Hallowe'en Party",
-  "author": "Agatha Christie",
-  "isbn": "9780007120680",
-  "year": null
- },
- {
-  "title": "Hercule Poirot's Christmas",
-  "author": "Agatha Christie",
-  "isbn": "9780007120697",
-  "year": null
- },
- {
-  "title": "Hercule Poirot: The Complete Short Stories",
-  "author": "Agatha Christie",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Hickory Dickory Dock",
-  "author": "Agatha Christie",
-  "isbn": "9781572705647",
-  "year": null
- },
- {
-  "title": "Lord Edgware Dies",
-  "author": "Agatha Christie",
-  "isbn": "9780002314572",
-  "year": "2025"
- },
- {
-  "title": "Mrs. McGinty's Dead",
-  "author": "Agatha Christie",
-  "isbn": "9781572707313",
-  "year": null
- },
- {
-  "title": "Murder at the Vicarage",
-  "author": "Agatha Christie",
-  "isbn": "9781579126254",
-  "year": null
- },
- {
-  "title": "Murder in Mesopotamia",
-  "author": "Agatha Christie",
-  "isbn": "9780007113804",
-  "year": null
- },
- {
-  "title": "Murder in the Mews",
-  "author": "Agatha Christie",
-  "isbn": "9781572702844",
-  "year": null
- },
- {
-  "title": "Murder Is Easy",
-  "author": "Agatha Christie",
-  "isbn": "9780312979829",
-  "year": null
- },
- {
-  "title": "Murder on the Links",
-  "author": "Agatha Christie",
-  "isbn": "9781734452556",
-  "year": "2025"
- },
- {
-  "title": "Murder on the Orient Express",
-  "author": "Agatha Christie",
-  "isbn": "9780007119318",
-  "year": "2025"
- },
- {
-  "title": "Nemesis",
-  "author": "Agatha Christie",
-  "isbn": "9780451200181",
-  "year": null
- },
- {
-  "title": "N or M?",
-  "author": "Agatha Christie",
-  "isbn": "9780007111459",
-  "year": null
- },
- {
-  "title": "One, Two, Buckle My Shoe",
-  "author": "Agatha Christie",
-  "isbn": "9781572703858",
-  "year": null
- },
- {
-  "title": "Ordeal by Innocence",
-  "author": "Agatha Christie",
-  "isbn": "9780312981624",
-  "year": null
- },
- {
-  "title": "Partners in Crime",
-  "author": "Agatha Christie",
-  "isbn": "9780007111503",
-  "year": null
- },
- {
-  "title": "Passenger to Frankfurt",
-  "author": "Agatha Christie",
-  "isbn": "9780007154920",
-  "year": null
- },
- {
-  "title": "Peril at End House",
-  "author": "Agatha Christie",
-  "isbn": "9780007119301",
-  "year": "2025"
- },
- {
-  "title": "Poirot Investigates",
-  "author": "Agatha Christie",
-  "isbn": "9781736062883",
-  "year": "2025"
- },
- {
-  "title": "Postern of Fate",
-  "author": "Agatha Christie",
-  "isbn": "9780007111480",
-  "year": null
- },
- {
-  "title": "Sad Cypress",
-  "author": "Agatha Christie",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Sleeping Murder",
-  "author": "Agatha Christie",
-  "isbn": "9780002317856",
-  "year": null
- },
- {
-  "title": "Sparkling Cyanide",
-  "author": "Agatha Christie",
-  "isbn": "9780007136858",
-  "year": null
- },
- {
-  "title": "Taken at the Flood",
-  "author": "Agatha Christie",
-  "isbn": "9780007121014",
-  "year": null
- },
- {
-  "title": "The A.B.C. Murders",
-  "author": "Agatha Christie",
-  "isbn": "9781579126247",
-  "year": null
- },
- {
-  "title": "The Adventure of the Christmas Pudding",
-  "author": "Agatha Christie",
-  "isbn": "9780007121083",
-  "year": null
- },
- {
-  "title": "The Big Four",
-  "author": "Agatha Christie",
-  "isbn": "9780007120819",
-  "year": "2025"
- },
- {
-  "title": "The Body in the Library",
-  "author": "Agatha Christie",
-  "isbn": "9781579126261",
-  "year": null
- },
- {
-  "title": "The Clocks",
-  "author": "Agatha Christie",
-  "isbn": "9781572703933",
-  "year": null
- },
- {
-  "title": "The Hollow",
-  "author": "Agatha Christie",
-  "isbn": "9780007121021",
-  "year": null
- },
- {
-  "title": "The Labours of Hercules",
-  "author": "Agatha Christie",
-  "isbn": "9781572704572",
-  "year": null
- },
- {
-  "title": "The Man in the Brown Suit",
-  "author": "Agatha Christie",
-  "isbn": "9780007151660",
-  "year": null
- },
- {
-  "title": "The Mirror Crack'd From Side to Side",
-  "author": "Agatha Christie",
-  "isbn": "9780007120987",
-  "year": null
- },
- {
-  "title": "The Moving Finger",
-  "author": "Agatha Christie",
-  "isbn": "9780007120840",
-  "year": null
- },
- {
-  "title": "The Murder of Roger Ackroyd",
-  "author": "Agatha Christie",
-  "isbn": "9781579126278",
-  "year": "2025"
- },
- {
-  "title": "The Mysterious Affair at Styles",
-  "author": "Agatha Christie",
-  "isbn": "9781734452594",
-  "year": "2025"
- },
- {
-  "title": "The Mystery of the Blue Train",
-  "author": "Agatha Christie",
-  "isbn": "9781579126957",
-  "year": "2025"
- },
- {
-  "title": "The Pale Horse",
-  "author": "Agatha Christie",
-  "isbn": "9780312981716",
-  "year": null
- },
- {
-  "title": "The Secret Adversary",
-  "author": "Agatha Christie",
-  "isbn": "9781600963940",
-  "year": null
- },
- {
-  "title": "The Secret of Chimneys",
-  "author": "Agatha Christie",
-  "isbn": "9780007122585",
-  "year": null
- },
- {
-  "title": "The Seven Dials Mystery",
-  "author": "Agatha Christie",
-  "isbn": "9780007122592",
-  "year": null
- },
- {
-  "title": "The Sittaford Mystery",
-  "author": "Agatha Christie",
-  "isbn": "9780007136841",
-  "year": null
- },
- {
-  "title": "They Came to Baghdad",
-  "author": "Agatha Christie",
-  "isbn": "9780007154937",
-  "year": null
- },
- {
-  "title": "They Do It With Mirrors",
-  "author": "Agatha Christie",
-  "isbn": "9780451199904",
-  "year": null
- },
- {
-  "title": "Third Girl",
-  "author": "Agatha Christie",
-  "isbn": "9780007121106",
-  "year": null
- },
- {
-  "title": "Three Act Tragedy",
-  "author": "Agatha Christie",
-  "isbn": "9780425205976",
-  "year": "2025"
- },
- {
-  "title": "Towards Zero",
-  "author": "Agatha Christie",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Why Didn't They Ask Evans?",
-  "author": "Agatha Christie",
-  "isbn": "9780312981594",
-  "year": null
- },
- {
-  "title": "The Fall",
-  "author": "Albert Camus",
-  "isbn": "9780679720225",
-  "year": null
- },
- {
-  "title": "The Plague",
-  "author": "Albert Camus",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "The Stranger",
-  "author": "Albert Camus",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "The Brave New World",
-  "author": "Aldous Huxley",
-  "isbn": "9780060929879",
-  "year": "2025"
- },
- {
-  "title": "The Count of Monte Cristo",
-  "author": "Alexandre Dumas",
-  "isbn": "9780140449266",
-  "year": null
- },
- {
-  "title": "The Man in the Iron Mask",
-  "author": "Alexandre Dumas",
-  "isbn": "9780140439243",
-  "year": "2025"
- },
- {
-  "title": "The Three Musketeers",
-  "author": "Alexandre Dumas",
-  "isbn": "",
-  "year": "2025"
- },
- {
-  "title": "The Silent Patient",
-  "author": "Alex Michaelides",
-  "isbn": "9781250301697",
-  "year": null
- },
- {
-  "title": "The Lovely Bones",
-  "author": "Alice Sebold",
-  "isbn": "9780316166683",
-  "year": "2024"
- },
- {
-  "title": "The Wedding People",
-  "author": "Alison Espach",
-  "isbn": "",
-  "year": "2025"
- },
- {
-  "title": "Theo of Golden",
-  "author": "Allen Levi",
-  "isbn": "9781668236512",
-  "year": null
- },
- {
-  "title": "A Gentleman in Moscow",
-  "author": "Amor Towles",
-  "isbn": "",
-  "year": "2025"
- },
- {
-  "title": "A Table for Two",
-  "author": "Amor Towles",
-  "isbn": "9780593296370",
-  "year": "2025"
- },
- {
-  "title": "Rules of Civility",
-  "author": "Amor Towles",
-  "isbn": "",
-  "year": "2025"
- },
- {
-  "title": "The Lincoln Highway",
-  "author": "Amor Towles",
-  "isbn": "9780735222359",
-  "year": "2025"
- },
- {
-  "title": "Call Me By Your Name",
-  "author": "André Aciman",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Project Hail Mary",
-  "author": "Andy Weir",
-  "isbn": "9780593135204",
-  "year": "2025"
- },
- {
-  "title": "The Martian",
-  "author": "Andy Weir",
-  "isbn": "9780804139021",
-  "year": "2025"
- },
- {
-  "title": "The Hate U Give",
-  "author": "Angie Thomas",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Milkman",
-  "author": "Anna Burns",
-  "isbn": "9780571338764",
-  "year": null
- },
- {
-  "title": "Black Beauty",
-  "author": "Anna Sewell",
-  "isbn": "9780439228909",
-  "year": null
- },
- {
-  "title": "The Postcard",
-  "author": "Anne Berest",
-  "isbn": "",
-  "year": "2025"
- },
- {
-  "title": "The Diary of a Young Girl",
-  "author": "Anne Frank",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Hello Beautiful",
-  "author": "Ann Napolitano",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Tom Lake",
-  "author": "Ann Patchett",
-  "isbn": "9780063327528",
-  "year": "2024"
- },
- {
-  "title": "A Clockwork Orange",
-  "author": "Anthony Burgess",
-  "isbn": "9780393341768",
-  "year": "2024"
- },
- {
-  "title": "All the Light We Cannot See",
-  "author": "Anthony Doerr",
-  "isbn": "9781476746586",
-  "year": "2024"
- },
- {
-  "title": "Magpie Murders",
-  "author": "Anthony Horowitz",
-  "isbn": "9780062645227",
-  "year": null
- },
- {
-  "title": "The Little Prince",
-  "author": "Antoine de Saint-Exupéry",
-  "isbn": "9780152023980",
-  "year": null
- },
- {
-  "title": "The Frozen River",
-  "author": "Ariel Lawhon",
-  "isbn": "9780385546874",
-  "year": "2025"
- },
- {
-  "title": "A Study in Scarlet",
-  "author": "Arthur Conan Doyle",
-  "isbn": "9781420925531",
-  "year": "2025"
- },
- {
-  "title": "The Adventures of Sherlock Holmes",
-  "author": "Arthur Conan Doyle",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "The Hound of the Baskervilles",
-  "author": "Arthur Conan Doyle",
-  "isbn": "",
-  "year": "2025"
- },
- {
-  "title": "The Memoirs of Sherlock Holmes",
-  "author": "Arthur Conan Doyle",
-  "isbn": "9780192123091",
-  "year": null
- },
- {
-  "title": "The Return of Sherlock Holmes",
-  "author": "Arthur Conan Doyle",
-  "isbn": "9780192123176",
-  "year": null
- },
- {
-  "title": "The Sign of Four",
-  "author": "Arthur Conan Doyle",
-  "isbn": "",
-  "year": "2025"
- },
- {
-  "title": "The Crucible",
-  "author": "Arthur Miller",
-  "isbn": "9780142437339",
-  "year": null
- },
- {
-  "title": "Butter",
-  "author": "Asako Yuzuki",
-  "isbn": "9780063236400",
-  "year": "2025"
- },
- {
-  "title": "First Lie Wins",
-  "author": "Ashley Elston",
-  "isbn": "",
-  "year": "2024"
- },
- {
-  "title": "Demon Copperhead",
-  "author": "Barbara Kingsolver",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "A Tree Grows in Brooklyn",
-  "author": "Betty Smith",
-  "isbn": "9780061120077",
-  "year": "2024"
- },
- {
-  "title": "Source Code",
-  "author": "Bill Gates",
-  "isbn": "9780593801581",
-  "year": "2025"
- },
- {
-  "title": "Lessons in Chemistry",
-  "author": "Bonnie Garmus",
-  "isbn": "9781804990926",
-  "year": "2024"
- },
- {
-  "title": "Dracula",
-  "author": "Bram Stoker",
-  "isbn": "9780393970128",
-  "year": null
- },
- {
-  "title": "The Woman in Me",
-  "author": "Britney Spears",
-  "isbn": "",
-  "year": "2024"
- },
- {
-  "title": "Just Mercy",
-  "author": "Bryan Stevenson",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "A Random Walk Down Wall Street",
-  "author": "Burton G. Malkiel",
-  "isbn": "9781324002185",
-  "year": "2024"
- },
- {
-  "title": "Yesteryear",
-  "author": "Caro Claire Burke",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "The Chosen",
-  "author": "Chaim Potok",
-  "isbn": "9780449213445",
-  "year": null
- },
- {
-  "title": "A Christmas Carol",
-  "author": "Charles Dickens",
-  "isbn": "9781561797462",
-  "year": null
- },
- {
-  "title": "A Tale of Two Cities",
-  "author": "Charles Dickens",
-  "isbn": "9780141439600",
-  "year": null
- },
- {
-  "title": "David Copperfield",
-  "author": "Charles Dickens",
-  "isbn": "",
-  "year": "2024"
- },
- {
-  "title": "Great Expectations",
-  "author": "Charles Dickens",
-  "isbn": "9780192833594",
-  "year": null
- },
- {
-  "title": "Oliver Twist",
-  "author": "Charles Dickens",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Jane Eyre",
-  "author": "Charlotte Brontë",
-  "isbn": "9780142437209",
-  "year": null
- },
- {
-  "title": "All the Colors of the Dark",
-  "author": "Chris Whitaker",
-  "isbn": "9780593798881",
-  "year": "2025"
- },
- {
-  "title": "We Begin at the End",
-  "author": "Chris Whitaker",
-  "isbn": "9781250759665",
-  "year": null
- },
- {
-  "title": "われら闇より天を見る",
-  "author": "Chris Whitaker",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Broken Country",
-  "author": "Clare Leslie Hall",
-  "isbn": "9781668078181",
-  "year": "2025"
- },
- {
-  "title": "It Ends with Us",
-  "author": "Colleen Hoover",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "It Starts with Us",
-  "author": "Colleen Hoover",
-  "isbn": "9781668001226",
-  "year": null
- },
- {
-  "title": "Never Never",
-  "author": "Colleen Hoover",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Reminders of Him",
-  "author": "Colleen Hoover",
-  "isbn": "9781542025607",
-  "year": null
- },
- {
-  "title": "Ugly Love",
-  "author": "Colleen Hoover",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Verity",
-  "author": "Colleen Hoover",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Long Island",
-  "author": "Colm Tóibín",
-  "isbn": "9781476785110",
-  "year": "2025"
- },
- {
-  "title": "The Underground Railroad",
-  "author": "Colson Whitehead",
-  "isbn": "9780385542364",
-  "year": "2024"
- },
- {
-  "title": "Land of Milk and Honey",
-  "author": "C Pam Zhang",
-  "isbn": "9780593538241",
-  "year": "2025"
- },
- {
-  "title": "North Woods",
-  "author": "Daniel Mason",
-  "isbn": "",
-  "year": "2024"
- },
- {
-  "title": "The New Map",
-  "author": "Daniel Yergin",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Strangers in Time",
-  "author": "David Baldacci",
-  "isbn": "9781538742051",
-  "year": "2025"
- },
- {
-  "title": "Killers of the Flower Moon",
-  "author": "David Grann",
-  "isbn": "9780593470831",
-  "year": "2024"
- },
- {
-  "title": "The Wager",
-  "author": "David Grann",
-  "isbn": "9780385534260",
-  "year": "2025"
- },
- {
-  "title": "Where the Crawdads Sing",
-  "author": "Delia Owens",
-  "isbn": "9780735219113",
-  "year": null
- },
- {
-  "title": "The Goldfinch",
-  "author": "Donna Tartt",
-  "isbn": "9780316055437",
-  "year": "2025"
- },
- {
-  "title": "The Secret History",
-  "author": "Donna Tartt",
-  "isbn": "9781400031702",
-  "year": "2025"
- },
- {
-  "title": "The Art of Readable Code: Simple and Practical Techniques for Writing Better Code",
-  "author": "Dustin Boswell",
-  "isbn": "9780596802295",
-  "year": null
- },
- {
-  "title": "The Complete Stories and Poems",
-  "author": "Edgar Allan Poe",
-  "isbn": "9780385074070",
-  "year": null
- },
- {
-  "title": "Mickey7",
-  "author": "Edward Ashton",
-  "isbn": "9781250275035",
-  "year": "2025"
- },
- {
-  "title": "The Idiot",
-  "author": "Elif Batuman",
-  "isbn": "9781594205613",
-  "year": "2025"
- },
- {
-  "title": "Weyward",
-  "author": "Emilia Hart",
-  "isbn": "9781250842725",
-  "year": "2025"
- },
- {
-  "title": "Wuthering Heights",
-  "author": "Emily Brontë",
-  "isbn": "9780141439556",
-  "year": null
- },
- {
-  "title": "Beach Read",
-  "author": "Emily Henry",
-  "isbn": "9781984806734",
-  "year": "2025"
- },
- {
-  "title": "Book Lovers",
-  "author": "Emily Henry",
-  "isbn": "9780593334836",
-  "year": "2024"
- },
- {
-  "title": "Funny Story",
-  "author": "Emily Henry",
-  "isbn": "",
-  "year": "2024"
- },
- {
-  "title": "Great Big Beautiful Life",
-  "author": "Emily Henry",
-  "isbn": "",
-  "year": "2025"
- },
- {
-  "title": "Happy Place",
-  "author": "Emily Henry",
-  "isbn": "9780593441275",
-  "year": null
- },
- {
-  "title": "People We Meet on Vacation",
-  "author": "Emily Henry",
-  "isbn": "",
-  "year": "2025"
- },
- {
-  "title": "Station Eleven",
-  "author": "Emily St. John Mandel",
-  "isbn": "9780385353304",
-  "year": "2025"
- },
- {
-  "title": "All Quiet on the Western Front",
-  "author": "Erich Maria Remarque",
-  "isbn": "9780449213940",
-  "year": null
- },
- {
-  "title": "The Demon of Unrest",
-  "author": "Erik Larson",
-  "isbn": "9780385348744",
-  "year": "2025"
- },
- {
-  "title": "A Farewell to Arms",
-  "author": "Ernest Hemingway",
-  "isbn": "9780099910107",
-  "year": null
- },
- {
-  "title": "For Whom the Bell Tolls",
-  "author": "Ernest Hemingway",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "In Our Time",
-  "author": "Ernest Hemingway",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "The Old Man and the Sea",
-  "author": "Ernest Hemingway",
-  "isbn": "9780684830490",
-  "year": null
- },
- {
-  "title": "The Sun Also Rises",
-  "author": "Ernest Hemingway",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "The Good Soldier",
-  "author": "Ford Madox Ford",
-  "isbn": "9781551113814",
-  "year": null
- },
- {
-  "title": "Dune",
-  "author": "Frank Herbert",
-  "isbn": "9780593099322",
-  "year": null
- },
- {
-  "title": "The Castle",
-  "author": "Franz Kafka",
-  "isbn": "9780805211061",
-  "year": null
- },
- {
-  "title": "The Metamorphosis",
-  "author": "Franz Kafka",
-  "isbn": "9780553213690",
-  "year": null
- },
- {
-  "title": "The Trial",
-  "author": "Franz Kafka",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "A Man Called Ove",
-  "author": "Fredrik Backman",
-  "isbn": "9781476738017",
-  "year": "2024"
- },
- {
-  "title": "Anxious People",
-  "author": "Fredrik Backman",
-  "isbn": "9781982169633",
-  "year": null
- },
- {
-  "title": "Never Lie",
-  "author": "Freida McFadden",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "The Boyfriend",
-  "author": "Freida McFadden",
-  "isbn": "9781728296227",
-  "year": "2025"
- },
- {
-  "title": "The Crash",
-  "author": "Freida McFadden",
-  "isbn": "9781464232985",
-  "year": "2025"
- },
- {
-  "title": "The Housemaid",
-  "author": "Freida McFadden",
-  "isbn": "9781803144375",
-  "year": "2024"
- },
- {
-  "title": "The Housemaid's Secret",
-  "author": "Freida McFadden",
-  "isbn": "9781837901319",
-  "year": "2024"
- },
- {
-  "title": "The Teacher",
-  "author": "Freida McFadden",
-  "isbn": "9781728296210",
-  "year": "2025"
- },
- {
-  "title": "Ward D",
-  "author": "Freida McFadden",
-  "isbn": "9781464233005",
-  "year": "2025"
- },
- {
-  "title": "The Great Gatsby",
-  "author": "F. Scott Fitzgerald",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Crime and Punishment",
-  "author": "Fyodor Dostoevsky",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "The Brothers Karamazov",
-  "author": "Fyodor Dostoevsky",
-  "isbn": "9780374528379",
-  "year": null
- },
- {
-  "title": "Love in the Time of Cholera",
-  "author": "Gabriel García Márquez",
-  "isbn": "9781400034680",
-  "year": "2024"
- },
- {
-  "title": "One Hundred Years of Solitude",
-  "author": "Gabriel García Márquez",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Tomorrow, and Tomorrow, and Tomorrow",
-  "author": "Gabrielle Zevin",
-  "isbn": "9780735243347",
-  "year": "2024"
- },
- {
-  "title": "Eleanor Oliphant Is Completely Fine",
-  "author": "Gail Honeyman",
-  "isbn": "9780008172145",
-  "year": "2024"
- },
- {
-  "title": "Middlemarch",
-  "author": "George Eliot",
-  "isbn": "9780451529176",
-  "year": null
+  "title": "11/22/63",
+  "author": "Stephen King",
+  "isbn": "9781451627282",
+  "year": null,
+  "letter": "#"
  },
  {
   "title": "1984",
   "author": "George Orwell",
   "isbn": "9780452284234",
-  "year": null
- },
- {
-  "title": "Animal Farm",
-  "author": "George Orwell",
-  "isbn": "9780451526342",
-  "year": null
- },
- {
-  "title": "The Richest Man in Babylon",
-  "author": "George S. Clason",
-  "isbn": "9789388118354",
-  "year": "2024"
- },
- {
-  "title": "Gone Girl",
-  "author": "Gillian Flynn",
-  "isbn": "9780307588371",
-  "year": "2025"
- },
- {
-  "title": "Wicked",
-  "author": "Gregory Maguire",
-  "isbn": "",
-  "year": "2025"
- },
- {
-  "title": "The Vegetarian",
-  "author": "Han Kang",
-  "isbn": "9780553448184",
-  "year": "2025"
- },
- {
-  "title": "Factfulness",
-  "author": "Hans Rosling",
-  "isbn": "9781473637467",
-  "year": null
- },
- {
-  "title": "A Little Life",
-  "author": "Hanya Yanagihara",
-  "isbn": "9780385539258",
-  "year": "2024"
- },
- {
-  "title": "To Kill a Mockingbird",
-  "author": "Harper Lee",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Uncle Tom’s Cabin",
-  "author": "Harriet Beecher Stowe",
-  "isbn": "",
-  "year": null
+  "year": null,
+  "letter": "#"
  },
  {
   "title": "1Q84",
   "author": "Haruki Murakami",
   "isbn": "9780307593313",
-  "year": null
- },
- {
-  "title": "Absolutely on Music",
-  "author": "Haruki Murakami",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "After Dark",
-  "author": "Haruki Murakami",
-  "isbn": "9780307265838",
-  "year": null
- },
- {
-  "title": "After the Quake",
-  "author": "Haruki Murakami",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "A Wild Sheep Chase",
-  "author": "Haruki Murakami",
-  "isbn": "9780375718946",
-  "year": null
- },
- {
-  "title": "Blind Willow, Sleeping Woman",
-  "author": "Haruki Murakami",
-  "isbn": "9781400044610",
-  "year": null
- },
- {
-  "title": "Colorless Tsukuru Tazaki",
-  "author": "Haruki Murakami",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Colorless Tsukuru Tazaki and His Years of Pilgrimage",
-  "author": "Haruki Murakami",
-  "isbn": "9780385352116",
-  "year": null
- },
- {
-  "title": "Dance Dance Dance",
-  "author": "Haruki Murakami",
-  "isbn": "9780099448761",
-  "year": null
- },
- {
-  "title": "First Person Singular",
-  "author": "Haruki Murakami",
-  "isbn": "9780593318072",
-  "year": "2025"
- },
- {
-  "title": "Hard-Boiled Wonderland and the End of the World",
-  "author": "Haruki Murakami",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Hear the Wind Sing",
-  "author": "Haruki Murakami",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Kafka on the Shore",
-  "author": "Haruki Murakami",
-  "isbn": "9781400079278",
-  "year": null
- },
- {
-  "title": "Killing Commendatore",
-  "author": "Haruki Murakami",
-  "isbn": "9780525520047",
-  "year": null
- },
- {
-  "title": "Men Without Women",
-  "author": "Haruki Murakami",
-  "isbn": "9780385689458",
-  "year": null
- },
- {
-  "title": "Norwegian Wood",
-  "author": "Haruki Murakami",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "South of the Border, West of the Sun",
-  "author": "Haruki Murakami",
-  "isbn": "9780099448570",
-  "year": null
- },
- {
-  "title": "Sputnik Sweetheart",
-  "author": "Haruki Murakami",
-  "isbn": "9780099448471",
-  "year": null
- },
- {
-  "title": "The City and Its Uncertain Walls",
-  "author": "Haruki Murakami",
-  "isbn": "9780593801970",
-  "year": "2024"
- },
- {
-  "title": "The Elephant Vanishes",
-  "author": "Haruki Murakami",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "The Strange Library",
-  "author": "Haruki Murakami",
-  "isbn": "9780385354301",
-  "year": null
- },
- {
-  "title": "The Wind-Up Bird Chronicle",
-  "author": "Haruki Murakami",
-  "isbn": "9780965341981",
-  "year": null
- },
- {
-  "title": "Underground",
-  "author": "Haruki Murakami",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "What I Talk About When I Talk About Running",
-  "author": "Haruki Murakami",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Wind/Pinball: Two Novels",
-  "author": "Haruki Murakami",
-  "isbn": "9780385352123",
-  "year": null
- },
- {
-  "title": "十戒",
-  "author": "Haruo Yugi",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "方舟",
-  "author": "Haruo Yugi",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "The Ark",
-  "author": "Haruo Yuki",
-  "isbn": "9781805331896",
-  "year": null
- },
- {
-  "title": "十誡",
-  "author": "Haruo Yuki",
-  "isbn": "9786267609422",
-  "year": null
- },
- {
-  "title": "The Turn of the Screw",
-  "author": "Henry James",
-  "isbn": "9780140620610",
-  "year": null
- },
- {
-  "title": "Washington Square",
-  "author": "Henry James",
-  "isbn": "9780451528711",
-  "year": null
- },
- {
-  "title": "Moby-Dick",
-  "author": "Herman Melville",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Moby-Dick or, The Whale",
-  "author": "Herman Melville",
-  "isbn": "9780142437247",
-  "year": null
- },
- {
-  "title": "Trust",
-  "author": "Hernan Diaz",
-  "isbn": "",
-  "year": "2024"
- },
- {
-  "title": "The Invisible Man",
-  "author": "H.G. Wells",
-  "isbn": "9780451528520",
-  "year": "2025"
- },
- {
-  "title": "War of the Worlds",
-  "author": "H.G. Wells",
-  "isbn": "9780375759239",
-  "year": "2024"
- },
- {
-  "title": "The Iliad",
-  "author": "Homer",
-  "isbn": "9781324001805",
-  "year": null
- },
- {
-  "title": "The Odyssey",
-  "author": "Homer",
-  "isbn": "9780143039952",
-  "year": null
- },
- {
-  "title": "Welcome to Hyunam-Dong Bookshop",
-  "author": "Hwang Bo-Reum",
-  "isbn": "",
-  "year": "2024"
- },
- {
-  "title": "Welcome to the Hyunam-Dong Bookshop",
-  "author": "Hwang Bo-Reum",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "The Call of the Wild",
-  "author": "Jack London",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "White Fang",
-  "author": "Jack London",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Tokyo Vice",
-  "author": "Jake Adelstein",
-  "isbn": "9780307378798",
-  "year": null
- },
- {
-  "title": "Gai-Jin",
-  "author": "James Clavell",
-  "isbn": "9780440216803",
-  "year": "2025"
- },
- {
-  "title": "King Rat",
-  "author": "James Clavell",
-  "isbn": "9780385333764",
-  "year": "2025"
- },
- {
-  "title": "Shōgun",
-  "author": "James Clavell",
-  "isbn": "9781982603847",
-  "year": "2025"
- },
- {
-  "title": "Tai-Pan",
-  "author": "James Clavell",
-  "isbn": "",
-  "year": "2025"
- },
- {
-  "title": "The Strength of the Few",
-  "author": "James Islington",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "The Will of the Many",
-  "author": "James Islington",
-  "isbn": "9781982141196",
-  "year": "2025"
- },
- {
-  "title": "The Heaven & Earth Grocery Store",
-  "author": "James McBride",
-  "isbn": "9780593422946",
-  "year": "2024"
- },
- {
-  "title": "The Celestine Prophecy",
-  "author": "James Redfield",
-  "isbn": "9780446518628",
-  "year": null
- },
- {
-  "title": "Emma",
-  "author": "Jane Austen",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Mansfield Park",
-  "author": "Jane Austen",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Northanger Abbey",
-  "author": "Jane Austen",
-  "isbn": "9781593082642",
-  "year": null
- },
- {
-  "title": "Persuasion",
-  "author": "Jane Austen",
-  "isbn": "9780192802637",
-  "year": null
- },
- {
-  "title": "Pride and Prejudice",
-  "author": "Jane Austen",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Sense and Sensibility",
-  "author": "Jane Austen",
-  "isbn": "9780141439662",
-  "year": null
- },
- {
-  "title": "Going Rogue",
-  "author": "Janet Evanovich",
-  "isbn": "9781668003053",
-  "year": "2024"
- },
- {
-  "title": "Guns, Germs, and Steel: The Fates of Human Societies",
-  "author": "Jared Diamond",
-  "isbn": "9780739467350",
-  "year": null
- },
- {
-  "title": "Upheaval",
-  "author": "Jared Diamond",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Red Sparrow",
-  "author": "Jason Matthews",
-  "isbn": "9781476706122",
-  "year": null
- },
- {
-  "title": "The Penguin Book of Japanese Short Stories",
-  "author": "Jay Rubin",
-  "isbn": "9780141395623",
-  "year": null
- },
- {
-  "title": "Encore in Death",
-  "author": "J.D. Robb",
-  "isbn": "9781250284310",
-  "year": "2024"
- },
- {
-  "title": "The Catcher in the Rye",
-  "author": "J.D. Salinger",
-  "isbn": "9780316769174",
-  "year": null
- },
- {
-  "title": "Hillbilly Elegy",
-  "author": "J.D. Vance",
-  "isbn": "",
-  "year": "2024"
- },
- {
-  "title": "Harry Potter and the Chamber of Secrets",
-  "author": "J.K. Rowling",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Harry Potter and the Deathly Hallows",
-  "author": "J.K. Rowling",
-  "isbn": "9780545010221",
-  "year": null
- },
- {
-  "title": "Harry Potter and the Goblet of Fire",
-  "author": "J.K. Rowling",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Harry Potter and the Half-Blood Prince",
-  "author": "J.K. Rowling",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Harry Potter and the Order of the Phoenix",
-  "author": "J.K. Rowling",
-  "isbn": "9780439358064",
-  "year": null
- },
- {
-  "title": "Harry Potter and the Philosopher's Stone",
-  "author": "J.K. Rowling",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Harry Potter and the Prisoner of Azkaban",
-  "author": "J.K. Rowling",
-  "isbn": "9780439655484",
-  "year": null
- },
- {
-  "title": "Harry Potter series",
-  "author": "J.K. Rowling",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "An Abundance of Katherines",
-  "author": "John Green",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Looking for Alaska",
-  "author": "John Green",
-  "isbn": "9781435249158",
-  "year": null
- },
- {
-  "title": "Paper Towns",
-  "author": "John Green",
-  "isbn": "9780142414934",
-  "year": null
- },
- {
-  "title": "The Fault in Our Stars",
-  "author": "John Green",
-  "isbn": "9780525478812",
-  "year": "2025"
- },
- {
-  "title": "Turtles All the Way Down",
-  "author": "John Green",
-  "isbn": "9780525555360",
-  "year": null
- },
- {
-  "title": "Will Grayson, Will Grayson",
-  "author": "John Green",
-  "isbn": "9780525421580",
-  "year": null
- },
- {
-  "title": "A Painted House",
-  "author": "John Grisham",
-  "isbn": "9780385337939",
-  "year": "2024"
- },
- {
-  "title": "A Time for Mercy",
-  "author": "John Grisham",
-  "isbn": "9780385545976",
-  "year": "2024"
- },
- {
-  "title": "A Time to Kill",
-  "author": "John Grisham",
-  "isbn": "",
-  "year": "2024"
- },
- {
-  "title": "Bleachers",
-  "author": "John Grisham",
-  "isbn": "",
-  "year": "2024"
- },
- {
-  "title": "Calico Joe",
-  "author": "John Grisham",
-  "isbn": "9780385536073",
-  "year": "2024"
- },
- {
-  "title": "Camino Ghosts",
-  "author": "John Grisham",
-  "isbn": "9780385545990",
-  "year": "2024"
- },
- {
-  "title": "Camino Island",
-  "author": "John Grisham",
-  "isbn": "9780385543026",
-  "year": "2024"
- },
- {
-  "title": "Camino Winds",
-  "author": "John Grisham",
-  "isbn": "9780385545945",
-  "year": "2024"
- },
- {
-  "title": "Ford County",
-  "author": "John Grisham",
-  "isbn": "",
-  "year": "2024"
- },
- {
-  "title": "Gray Mountain",
-  "author": "John Grisham",
-  "isbn": "9780385537148",
-  "year": "2024"
- },
- {
-  "title": "Playing for Pizza",
-  "author": "John Grisham",
-  "isbn": "9780385525008",
-  "year": "2024"
- },
- {
-  "title": "Rogue Lawyer",
-  "author": "John Grisham",
-  "isbn": "9780385539432",
-  "year": "2024"
- },
- {
-  "title": "Skipping Christmas",
-  "author": "John Grisham",
-  "isbn": "9780099481683",
-  "year": "2024"
- },
- {
-  "title": "Sooley",
-  "author": "John Grisham",
-  "isbn": "9780385547680",
-  "year": "2024"
- },
- {
-  "title": "Sparring Partners",
-  "author": "John Grisham",
-  "isbn": "9780385549325",
-  "year": "2024"
- },
- {
-  "title": "Sycamore Row",
-  "author": "John Grisham",
-  "isbn": "9780385537131",
-  "year": "2024"
- },
- {
-  "title": "The Accomplice",
-  "author": "John Grisham",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "The Appeal",
-  "author": "John Grisham",
-  "isbn": "9780385515047",
-  "year": "2024"
- },
- {
-  "title": "The Associate",
-  "author": "John Grisham",
-  "isbn": "9780385517836",
-  "year": "2024"
- },
- {
-  "title": "The Boys from Biloxi",
-  "author": "John Grisham",
-  "isbn": "9780385548922",
-  "year": "2024"
- },
- {
-  "title": "The Brethren",
-  "author": "John Grisham",
-  "isbn": "9780385339674",
-  "year": "2024"
- },
- {
-  "title": "The Broker",
-  "author": "John Grisham",
-  "isbn": "9780385340540",
-  "year": "2024"
- },
- {
-  "title": "The Chamber",
-  "author": "John Grisham",
-  "isbn": "9780385339667",
-  "year": "2024"
- },
- {
-  "title": "The Client",
-  "author": "John Grisham",
-  "isbn": "9780385339087",
-  "year": "2024"
- },
- {
-  "title": "The Confession",
-  "author": "John Grisham",
-  "isbn": "9780385528047",
-  "year": "2024"
- },
- {
-  "title": "The Exchange",
-  "author": "John Grisham",
-  "isbn": "9780385548953",
-  "year": "2024"
- },
- {
-  "title": "The Firm",
-  "author": "John Grisham",
-  "isbn": "9780440211457",
-  "year": "2024"
- },
- {
-  "title": "The Framed",
-  "author": "John Grisham",
-  "isbn": "9780385550444",
-  "year": "2024"
- },
- {
-  "title": "The Guardians",
-  "author": "John Grisham",
-  "isbn": "9780385544184",
-  "year": "2024"
- },
- {
-  "title": "The Innocent Man",
-  "author": "John Grisham",
-  "isbn": "9780385517232",
-  "year": "2024"
- },
- {
-  "title": "The Judge's List",
-  "author": "John Grisham",
-  "isbn": "9780385546027",
-  "year": "2024"
- },
- {
-  "title": "The King of Torts",
-  "author": "John Grisham",
-  "isbn": "9780385339650",
-  "year": "2024"
- },
- {
-  "title": "The Last Juror",
-  "author": "John Grisham",
-  "isbn": "9780385339681",
-  "year": "2024"
- },
- {
-  "title": "The Litigators",
-  "author": "John Grisham",
-  "isbn": "9781444729702",
-  "year": "2024"
- },
- {
-  "title": "Theodore Boone: Kid Lawyer",
-  "author": "John Grisham",
-  "isbn": "9780142428696",
-  "year": "2024"
- },
- {
-  "title": "Theodore Boone: The Abduction",
-  "author": "John Grisham",
-  "isbn": "",
-  "year": "2024"
- },
- {
-  "title": "Theodore Boone: The Accused",
-  "author": "John Grisham",
-  "isbn": "9780525425762",
-  "year": "2024"
- },
- {
-  "title": "Theodore Boone: The Activist",
-  "author": "John Grisham",
-  "isbn": "9780525425779",
-  "year": "2024"
- },
- {
-  "title": "Theodore Boone: The Fugitive",
-  "author": "John Grisham",
-  "isbn": "9780525426387",
-  "year": "2024"
- },
- {
-  "title": "Theodore Boone: The Scandal",
-  "author": "John Grisham",
-  "isbn": "9780525426394",
-  "year": "2024"
- },
- {
-  "title": "The Partner",
-  "author": "John Grisham",
-  "isbn": "9780385339100",
-  "year": "2024"
- },
- {
-  "title": "The Pelican Brief",
-  "author": "John Grisham",
-  "isbn": "9780385339704",
-  "year": "2024"
- },
- {
-  "title": "The Racketeer",
-  "author": "John Grisham",
-  "isbn": "9780385535144",
-  "year": "2024"
- },
- {
-  "title": "The Rainmaker",
-  "author": "John Grisham",
-  "isbn": "",
-  "year": "2024"
- },
- {
-  "title": "The Reckoning",
-  "author": "John Grisham",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "The Rooster Bar",
-  "author": "John Grisham",
-  "isbn": "9780385541176",
-  "year": "2024"
- },
- {
-  "title": "The Runaway Jury",
-  "author": "John Grisham",
-  "isbn": "9780385339698",
-  "year": "2024"
- },
- {
-  "title": "The Street Lawyer",
-  "author": "John Grisham",
-  "isbn": "9780385339094",
-  "year": "2024"
- },
- {
-  "title": "The Summons",
-  "author": "John Grisham",
-  "isbn": "9780385339599",
-  "year": "2024"
- },
- {
-  "title": "The Testament",
-  "author": "John Grisham",
-  "isbn": "9780440234746",
-  "year": "2024"
- },
- {
-  "title": "The Whistler",
-  "author": "John Grisham",
-  "isbn": "9780385541206",
-  "year": "2024"
- },
- {
-  "title": "The Widow",
-  "author": "John Grisham",
-  "isbn": "9780385548984",
-  "year": null
- },
- {
-  "title": "Hiroshima",
-  "author": "John Hersey",
-  "isbn": "9780679721031",
-  "year": null
- },
- {
-  "title": "East of Eden",
-  "author": "John Steinbeck",
-  "isbn": "9780142000656",
-  "year": null
- },
- {
-  "title": "Of Mice and Men",
-  "author": "John Steinbeck",
-  "isbn": "9780142000670",
-  "year": "2025"
- },
- {
-  "title": "The Grapes of Wrath",
-  "author": "John Steinbeck",
-  "isbn": "9780670016907",
-  "year": "2025"
- },
- {
-  "title": "The Pearl",
-  "author": "John Steinbeck",
-  "isbn": "9780142000694",
-  "year": null
- },
- {
-  "title": "Stoner",
-  "author": "John Williams",
-  "isbn": "9781590171998",
-  "year": null
- },
- {
-  "title": "The Snowman",
-  "author": "Jo Nesbø",
-  "isbn": "9780307595867",
-  "year": null
- },
- {
-  "title": "Heart of Darkness",
-  "author": "Joseph Conrad",
-  "isbn": "9781892295491",
-  "year": null
- },
- {
-  "title": "Catch-22",
-  "author": "Joseph Heller",
-  "isbn": "9780684833392",
-  "year": "2024"
- },
- {
-  "title": "The Fellowship of the Ring",
-  "author": "J.R.R. Tolkien",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "The Hobbit",
-  "author": "J.R.R. Tolkien",
-  "isbn": "",
-  "year": "2025"
- },
- {
-  "title": "The Hobbit, or There and Back Again",
-  "author": "J.R.R. Tolkien",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "The Return of the King",
-  "author": "J.R.R. Tolkien",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "The Two Towers",
-  "author": "J.R.R. Tolkien",
-  "isbn": "",
-  "year": null
+  "year": null,
+  "letter": "#"
  },
  {
   "title": "20,000 Leagues Under the Sea",
   "author": "Jules Verne",
   "isbn": "",
-  "year": "2025"
- },
- {
-  "title": "A Journey to the Center of the Earth",
-  "author": "Jules Verne",
-  "isbn": "9780553213973",
-  "year": "2025"
- },
- {
-  "title": "Around the World in Eighty Days",
-  "author": "Jules Verne",
-  "isbn": "9780140449068",
-  "year": "2025"
- },
- {
-  "title": "Twenty Thousand Leagues Under the Sea",
-  "author": "Jules Verne",
-  "isbn": "9780760728505",
-  "year": null
- },
- {
-  "title": "俺たちの箱根駅伝 上",
-  "author": "Jun Ikeido",
-  "isbn": "9784163917726",
-  "year": null
- },
- {
-  "title": "俺たちの箱根駅伝 下",
-  "author": "Jun Ikeido",
-  "isbn": "9784163917733",
-  "year": null
- },
- {
-  "title": "Blackout",
-  "author": "Justin Torres",
-  "isbn": "",
-  "year": "2025"
- },
- {
-  "title": "Blackouts",
-  "author": "Justin Torres",
-  "isbn": "9780374293574",
-  "year": null
- },
- {
-  "title": "The Ministry of Time",
-  "author": "Kaliane Bradley",
-  "isbn": "9781668045145",
-  "year": "2025"
- },
- {
-  "title": "The Truths We Hold",
-  "author": "Kamala Harris",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Martyr!",
-  "author": "Kaveh Akbar",
-  "isbn": "9780593537619",
-  "year": "2024"
- },
- {
-  "title": "An Artist of the Floating World",
-  "author": "Kazuo Ishiguro",
-  "isbn": "9780571225361",
-  "year": null
- },
- {
-  "title": "A Pale View of Hills",
-  "author": "Kazuo Ishiguro",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Klara and the Sun",
-  "author": "Kazuo Ishiguro",
-  "isbn": "9780593318171",
-  "year": null
- },
- {
-  "title": "Never Let Me Go",
-  "author": "Kazuo Ishiguro",
-  "isbn": "9781400078776",
-  "year": null
- },
- {
-  "title": "Nocturnes",
-  "author": "Kazuo Ishiguro",
-  "isbn": "9780307397874",
-  "year": null
- },
- {
-  "title": "The Buried Giant",
-  "author": "Kazuo Ishiguro",
-  "isbn": "9780307271037",
-  "year": null
- },
- {
-  "title": "The Remains of the Day",
-  "author": "Kazuo Ishiguro",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "The Unconsoled",
-  "author": "Kazuo Ishiguro",
-  "isbn": "9780571225392",
-  "year": null
- },
- {
-  "title": "When We Were Orphans",
-  "author": "Kazuo Ishiguro",
-  "isbn": "9780571225408",
-  "year": null
- },
- {
-  "title": "Night of the Milky Way Railway",
-  "author": "Kenji Miyazawa",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Night Train to the Stars",
-  "author": "Kenji Miyazawa",
-  "isbn": "9781784877767",
-  "year": null
- },
- {
-  "title": "Crazy Rich Asians",
-  "author": "Kevin Kwan",
-  "isbn": "9780385536974",
-  "year": null
- },
- {
-  "title": "The Kite Runner",
-  "author": "Khaled Hosseini",
-  "isbn": "",
-  "year": "2025"
- },
- {
-  "title": "水車小屋のネネ",
-  "author": "Kikuko Tsumura",
-  "isbn": "9784620108629",
-  "year": "2024"
- },
- {
-  "title": "Bullet Train",
-  "author": "Kōtarō Isaka",
-  "isbn": "9781419756337",
-  "year": null
- },
- {
-  "title": "The Four Winds",
-  "author": "Kristin Hannah",
-  "isbn": "9781250178602",
-  "year": "2025"
- },
- {
-  "title": "The Great Alone",
-  "author": "Kristin Hannah",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "The Nightingale",
-  "author": "Kristin Hannah",
-  "isbn": "9780312577223",
-  "year": null
- },
- {
-  "title": "The Women",
-  "author": "Kristin Hannah",
-  "isbn": "9781250178633",
-  "year": "2024"
- },
- {
-  "title": "Breakfast of Champions",
-  "author": "Kurt Vonnegut Jr.",
-  "isbn": "9780385334204",
-  "year": null
- },
- {
-  "title": "Cat’s Cradle",
-  "author": "Kurt Vonnegut Jr.",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Slaughterhouse-Five",
-  "author": "Kurt Vonnegut Jr.",
-  "isbn": "",
-  "year": "2025"
- },
- {
-  "title": "Bad Luck and Trouble",
-  "author": "Lee Child",
-  "isbn": "9780385340557",
-  "year": null
- },
- {
-  "title": "Die Trying",
-  "author": "Lee Child",
-  "isbn": "9780515142242",
-  "year": "2025"
- },
- {
-  "title": "Echo Burning",
-  "author": "Lee Child",
-  "isbn": "9780515133318",
-  "year": null
- },
- {
-  "title": "Gone Tomorrow",
-  "author": "Lee Child",
-  "isbn": "9780593057056",
-  "year": null
- },
- {
-  "title": "Killing Floor",
-  "author": "Lee Child",
-  "isbn": "9780515141429",
-  "year": "2025"
- },
- {
-  "title": "Nothing to Lose",
-  "author": "Lee Child",
-  "isbn": "9780385340564",
-  "year": null
- },
- {
-  "title": "One Shot",
-  "author": "Lee Child",
-  "isbn": "9780440241027",
-  "year": null
- },
- {
-  "title": "Persuader",
-  "author": "Lee Child",
-  "isbn": "9780440241003",
-  "year": null
- },
- {
-  "title": "Running Blind",
-  "author": "Lee Child",
-  "isbn": "9780515130973",
-  "year": null
- },
- {
-  "title": "The Enemy",
-  "author": "Lee Child",
-  "isbn": "9780440241010",
-  "year": null
- },
- {
-  "title": "The Hard Way",
-  "author": "Lee Child",
-  "isbn": "9780385336697",
-  "year": null
- },
- {
-  "title": "Tripwire",
-  "author": "Lee Child",
-  "isbn": "9780515128635",
-  "year": null
- },
- {
-  "title": "Without Fail",
-  "author": "Lee Child",
-  "isbn": "9781590860625",
-  "year": null
- },
- {
-  "title": "Anna Karenina",
-  "author": "Leo Tolstoy",
-  "isbn": "9780345803924",
-  "year": null
- },
- {
-  "title": "War and Peace",
-  "author": "Leo Tolstoy",
-  "isbn": "9780192833983",
-  "year": null
- },
- {
-  "title": "Lady Tan's Circle of Women",
-  "author": "Lisa See",
-  "isbn": "9781982117085",
-  "year": "2025"
- },
- {
-  "title": "Death's End",
-  "author": "Liu Cixin",
-  "isbn": "9780765377104",
-  "year": "2024"
- },
- {
-  "title": "The Dark Forest",
-  "author": "Liu Cixin",
-  "isbn": "",
-  "year": "2024"
- },
- {
-  "title": "The Three-Body Problem",
-  "author": "Liu Cixin",
-  "isbn": "",
-  "year": "2024"
- },
- {
-  "title": "The God of the Woods",
-  "author": "Liz Moore",
-  "isbn": "",
-  "year": "2025"
- },
- {
-  "title": "Anne of Green Gables",
-  "author": "L.M. Montgomery",
-  "isbn": "9780451528827",
-  "year": null
- },
- {
-  "title": "The Giver",
-  "author": "Lois Lowry",
-  "isbn": "9780385732550",
-  "year": null
- },
- {
-  "title": "Little Women",
-  "author": "Louisa May Alcott",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "The Guest List",
-  "author": "Lucy Foley",
-  "isbn": "",
-  "year": "2025"
- },
- {
-  "title": "Circe",
-  "author": "Madeline Miller",
-  "isbn": "9780316556347",
-  "year": "2024"
- },
- {
-  "title": "Song of Achilles",
-  "author": "Madeline Miller",
-  "isbn": "",
-  "year": "2024"
- },
- {
-  "title": "リボルバー",
-  "author": "Maha Harada",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "そして、バトンは渡された",
-  "author": "Maiko Seo",
-  "isbn": "9784163907956",
-  "year": null
- },
- {
-  "title": "The Handmaid's Tale",
-  "author": "Margaret Atwood",
-  "isbn": "9781328879943",
-  "year": "2024"
- },
- {
-  "title": "The Testaments",
-  "author": "Margaret Atwood",
-  "isbn": "",
-  "year": "2024"
- },
- {
-  "title": "Gone with the Wind",
-  "author": "Margaret Mitchell",
-  "isbn": "9780446365383",
-  "year": null
- },
- {
-  "title": "The Subtle Art of Not Giving a F*ck",
-  "author": "Mark Manson",
-  "isbn": "9798804636129",
-  "year": "2024"
- },
- {
-  "title": "The Adventures of Huckleberry Finn",
-  "author": "Mark Twain",
-  "isbn": "9780142437179",
-  "year": null
- },
- {
-  "title": "The Adventures of Tom Sawyer",
-  "author": "Mark Twain",
-  "isbn": "9780143039563",
-  "year": null
- },
- {
-  "title": "The Book Thief",
-  "author": "Markus Zusak",
-  "isbn": "",
-  "year": "2024"
- },
- {
-  "title": "Frankenstein",
-  "author": "Mary Wollstonecraft Shelley",
-  "isbn": "9780143131847",
-  "year": null
- },
- {
-  "title": "Like Father, Like Son",
-  "author": "Matt Centrowitz",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "The Midnight Library",
-  "author": "Matt Haig",
-  "isbn": "9780525559474",
-  "year": null
- },
- {
-  "title": "Greenlights",
-  "author": "Matthew McConaughey",
-  "isbn": "9780593139134",
-  "year": null
- },
- {
-  "title": "Bloomberg by Bloomberg",
-  "author": "Michael R. Bloomberg",
-  "isbn": "9780471208884",
-  "year": "2024"
- },
- {
-  "title": "光のとこにいてね",
-  "author": "Michi Ichiho",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "What You Are Looking for Is in the Library",
-  "author": "Michiko Aoyama",
-  "isbn": "9781335005625",
-  "year": null
- },
- {
-  "title": "Don Quixote",
-  "author": "Miguel de Cervantes Saavedra",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "成瀬は天下を取りにいく",
-  "author": "Mina Miyajima",
-  "isbn": "9784103549512",
-  "year": "2024"
- },
- {
-  "title": "Pachinko",
-  "author": "Min Jin Lee",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "The Last Girl",
-  "author": "Nadia Murad",
-  "isbn": "9780525493211",
-  "year": null
- },
- {
-  "title": "A Perfect Day to Be Alone",
-  "author": "Nanae Aoyama",
-  "isbn": "9781529427691",
-  "year": null
- },
- {
-  "title": "永遠の0",
-  "author": "Naoki Hyakuta",
-  "isbn": "9784062764131",
-  "year": null
- },
- {
-  "title": "The Scarlet Letter",
-  "author": "Nathaniel Hawthorne",
-  "isbn": "9780142437261",
-  "year": null
- },
- {
-  "title": "Botchan",
-  "author": "Natsume Sōseki",
-  "isbn": "9784770030481",
-  "year": null
- },
- {
-  "title": "I Am a Cat",
-  "author": "Natsume Sōseki",
-  "isbn": "9780804832656",
-  "year": null
- },
- {
-  "title": "Kokoro",
-  "author": "Natsume Sōseki",
-  "isbn": "9780895267153",
-  "year": null
- },
- {
-  "title": "Sanshirō",
-  "author": "Natsume Sōseki",
-  "isbn": "9781929280100",
-  "year": null
- },
- {
-  "title": "Lights Out",
-  "author": "Navessa Allen",
-  "isbn": "9781638932239",
-  "year": "2025"
- },
- {
-  "title": "Counting Miracles",
-  "author": "Nicholas Sparks",
-  "isbn": "9780593449592",
-  "year": "2025"
- },
- {
-  "title": "The Maid",
-  "author": "Nita Prose",
-  "isbn": "9780593356159",
-  "year": "2025"
- },
- {
-  "title": "Drive Your Plow Over the Bones of the Dead",
-  "author": "Olga Tokarczuk",
-  "isbn": "",
-  "year": "2025"
- },
- {
-  "title": "No Longer Human",
-  "author": "Osamu Dazai",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "The Importance of Being Earnest",
-  "author": "Oscar Wilde",
-  "isbn": "9781580495806",
-  "year": null
- },
- {
-  "title": "The Picture of Dorian Gray",
-  "author": "Oscar Wilde",
-  "isbn": "9780141439570",
-  "year": null
- },
- {
-  "title": "Prophet Song",
-  "author": "Paul Lynch",
-  "isbn": "",
-  "year": "2025"
- },
- {
-  "title": "The Alchemist",
-  "author": "Paulo Coelho",
-  "isbn": "9780062315007",
-  "year": "2024"
- },
- {
-  "title": "Erasure",
-  "author": "Percival Everett",
-  "isbn": "9780786888153",
-  "year": "2025"
- },
- {
-  "title": "James",
-  "author": "Percival Everett",
-  "isbn": "9780385550369",
-  "year": "2024"
- },
- {
-  "title": "The Code of the Woosters",
-  "author": "P.G. Wodehouse",
-  "isbn": "9780393339819",
-  "year": "2024"
- },
- {
-  "title": "Shoe Dog",
-  "author": "Phil Knight",
-  "isbn": "9781501135910",
-  "year": null
- },
- {
-  "title": "Silent Spring",
-  "author": "Rachel Carson",
-  "isbn": "",
-  "year": "2025"
- },
- {
-  "title": "Fahrenheit 451",
-  "author": "Ray Bradbury",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Something Wicked This Way Comes",
-  "author": "Ray Bradbury",
-  "isbn": "9780380729401",
-  "year": null
- },
- {
-  "title": "The Illustrated Man",
-  "author": "Ray Bradbury",
-  "isbn": "9780007127740",
-  "year": null
- },
- {
-  "title": "The Martian Chronicles",
-  "author": "Ray Bradbury",
-  "isbn": "9780553278224",
-  "year": null
- },
- {
-  "title": "Fourth Wing",
-  "author": "Rebecca Yarros",
-  "isbn": "9781649374042",
-  "year": null
- },
- {
-  "title": "In the Likely Event",
-  "author": "Rebecca Yarros",
-  "isbn": "9781662511561",
-  "year": null
- },
- {
-  "title": "Iron Flame",
-  "author": "Rebecca Yarros",
-  "isbn": "9781649374172",
-  "year": "2024"
- },
- {
-  "title": "Onyx Storm",
-  "author": "Rebecca Yarros",
-  "isbn": "9781649374189",
-  "year": "2025"
- },
- {
-  "title": "The Things We Leave Unfinished",
-  "author": "Rebecca Yarros",
-  "isbn": "9781682815663",
-  "year": null
- },
- {
-  "title": "Babel",
-  "author": "R.F. Kuang",
-  "isbn": "9780063021426",
-  "year": null
- },
- {
-  "title": "Katabasis",
-  "author": "R.F. Kuang",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Yellowface",
-  "author": "R.F. Kuang",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "The Overstory",
-  "author": "Richard Powers",
-  "isbn": "9780393356687",
-  "year": "2025"
- },
- {
-  "title": "The British Are Coming",
-  "author": "Rick Atkinson",
-  "isbn": "9781627790437",
-  "year": "2025"
- },
- {
-  "title": "The Fate of the Day: The War for America, Fort Ticonderoga to Charleston, 1777-1780",
-  "author": "Rick Atkinson",
-  "isbn": "9780593799185",
-  "year": null
- },
- {
-  "title": "Dr. Jekyll and Mr. Hyde",
-  "author": "Robert Louis Stevenson",
-  "isbn": "9780451528957",
-  "year": null
- },
- {
-  "title": "The Strange Case of Dr. Jekyll and Mr. Hyde",
-  "author": "Robert Louis Stevenson",
-  "isbn": "",
-  "year": "2025"
- },
- {
-  "title": "Treasure Island",
-  "author": "Robert Louis Stevenson",
-  "isbn": "9780753453803",
-  "year": null
- },
- {
-  "title": "A Tale for the Time Being",
-  "author": "Ruth Ozeki",
-  "isbn": "9780670026630",
-  "year": null
- },
- {
-  "title": "The Woman in Cabin 10",
-  "author": "Ruth Ware",
-  "isbn": "9781668221877",
-  "year": null
- },
- {
-  "title": "正欲",
-  "author": "Ryo Asai",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Rashomon",
-  "author": "Ryūnosuke Akutagawa",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Rashomon and Other Stories",
-  "author": "Ryūnosuke Akutagawa",
-  "isbn": "9780871401731",
-  "year": null
- },
- {
-  "title": "Intermezzo",
-  "author": "Sally Rooney",
-  "isbn": "9780374602635",
-  "year": "2025"
- },
- {
-  "title": "Normal People",
-  "author": "Sally Rooney",
-  "isbn": "9781984822178",
-  "year": "2024"
- },
- {
-  "title": "Blood Moon",
-  "author": "Sandra Brown",
-  "isbn": "9781538742983",
-  "year": "2025"
- },
- {
-  "title": "A Court of Frost and Starlight",
-  "author": "Sarah J. Maas",
-  "isbn": "9781635575620",
-  "year": "2024"
- },
- {
-  "title": "A Court of Mist and Fury",
-  "author": "Sarah J. Maas",
-  "isbn": "9781635575583",
-  "year": "2024"
- },
- {
-  "title": "A ​Court of Silver Flames",
-  "author": "Sarah J. Maas",
-  "isbn": "9781681196282",
-  "year": "2024"
- },
- {
-  "title": "A Court of Thorns and Roses",
-  "author": "Sarah J. Maas",
-  "isbn": "9781635575569",
-  "year": "2024"
- },
- {
-  "title": "A Court of Wings and Ruin",
-  "author": "Sarah J. Maas",
-  "isbn": "9781635575606",
-  "year": "2024"
- },
- {
-  "title": "Careless People",
-  "author": "Sarah Wynn-Williams",
-  "isbn": "9781250391230",
-  "year": "2025"
- },
- {
-  "title": "Convenience Store Woman",
-  "author": "Sayaka Murata",
-  "isbn": "9780802128256",
-  "year": null
- },
- {
-  "title": "The Outsiders",
-  "author": "S.E. Hinton",
-  "isbn": "9780142407332",
-  "year": null
- },
- {
-  "title": "Remarkably Bright Creatures",
-  "author": "Shelby Van Pelt",
-  "isbn": "9780063204157",
-  "year": "2024"
- },
- {
-  "title": "Winesburg, Ohio",
-  "author": "Sherwood Anderson",
-  "isbn": "9780192839770",
-  "year": null
- },
- {
-  "title": "Silence",
-  "author": "Shusaku Endo",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Almond",
-  "author": "Sohn Won-Pyung",
-  "isbn": "9780062961372",
-  "year": "2025"
- },
- {
-  "title": "Counterattacks at Thirty",
-  "author": "Sohn Won-Pyung",
-  "isbn": "9780063378100",
-  "year": null
- },
- {
-  "title": "三十の反撃",
-  "author": "Sohn Won-Pyung",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "My Beloved World",
-  "author": "Sonia Sotomayor",
-  "isbn": "9780307594884",
-  "year": null
- },
- {
-  "title": "Who Moved My Cheese?",
-  "author": "Spencer Johnson",
-  "isbn": "9780091883768",
-  "year": null
- },
- {
-  "title": "The Red Badge of Courage",
-  "author": "Stephen Crane",
-  "isbn": "9781580495868",
-  "year": null
- },
- {
-  "title": "11/22/63",
-  "author": "Stephen King",
-  "isbn": "9781451627282",
-  "year": null
- },
- {
-  "title": "Carrie",
-  "author": "Stephen King",
-  "isbn": "9781416524304",
-  "year": null
- },
- {
-  "title": "Cujo",
-  "author": "Stephen King",
-  "isbn": "9780307348241",
-  "year": null
- },
- {
-  "title": "Doctor Sleep",
-  "author": "Stephen King",
-  "isbn": "9781476727653",
-  "year": null
- },
- {
-  "title": "Fairy Tale",
-  "author": "Stephen King",
-  "isbn": "9781668002179",
-  "year": "2024"
- },
- {
-  "title": "Finders Keepers",
-  "author": "Stephen King",
-  "isbn": "9781501100079",
-  "year": null
- },
- {
-  "title": "Firestarter",
-  "author": "Stephen King",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Holly",
-  "author": "Stephen King",
-  "isbn": "9781668016138",
-  "year": "2024"
- },
- {
-  "title": "If It Bleeds",
-  "author": "Stephen King",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "It",
-  "author": "Stephen King",
-  "isbn": "9780450411434",
-  "year": null
- },
- {
-  "title": "Misery",
-  "author": "Stephen King",
-  "isbn": "9780450417399",
-  "year": null
- },
- {
-  "title": "Mr. Mercedes",
-  "author": "Stephen King",
-  "isbn": "9781476754451",
-  "year": null
- },
- {
-  "title": "Never Flinch",
-  "author": "Stephen King",
-  "isbn": "9781668089330",
-  "year": "2025"
- },
- {
-  "title": "Pet Sematary",
-  "author": "Stephen King",
-  "isbn": "",
-  "year": "2025"
- },
- {
-  "title": "’Salem’s Lot",
-  "author": "Stephen King",
-  "isbn": "9780450031069",
-  "year": null
- },
- {
-  "title": "The Green Mile",
-  "author": "Stephen King",
-  "isbn": "9780451933027",
-  "year": "2025"
- },
- {
-  "title": "The Institute",
-  "author": "Stephen King",
-  "isbn": "",
-  "year": "2024"
- },
- {
-  "title": "The Outsider",
-  "author": "Stephen King",
-  "isbn": "9781501180989",
-  "year": null
- },
- {
-  "title": "The Shining",
-  "author": "Stephen King",
-  "isbn": "9780450040184",
-  "year": "2025"
- },
- {
-  "title": "The Stand",
-  "author": "Stephen King",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Under the Dome",
-  "author": "Stephen King",
-  "isbn": "9781439148501",
-  "year": null
- },
- {
-  "title": "You Like It Darker",
-  "author": "Stephen King",
-  "isbn": "9781668037713",
-  "year": "2024"
- },
- {
-  "title": "Catching Fire",
-  "author": "Suzanne Collins",
-  "isbn": "9780439023498",
-  "year": "2025"
- },
- {
-  "title": "Mockingjay",
-  "author": "Suzanne Collins",
-  "isbn": "9780439023511",
-  "year": "2025"
- },
- {
-  "title": "Sunrise on the Reaping",
-  "author": "Suzanne Collins",
-  "isbn": "9781546171461",
-  "year": "2025"
- },
- {
-  "title": "The Ballad of Songbirds and Snakes",
-  "author": "Suzanne Collins",
-  "isbn": "",
-  "year": "2025"
- },
- {
-  "title": "The Hunger Games",
-  "author": "Suzanne Collins",
-  "isbn": "9780439023481",
-  "year": "2025"
- },
- {
-  "title": "Educated",
-  "author": "Tara Westover",
-  "isbn": "9780399590504",
-  "year": "2024"
- },
- {
-  "title": "Atmosphere",
-  "author": "Taylor Jenkins Reid",
-  "isbn": "",
-  "year": "2025"
- },
- {
-  "title": "The Seven Husbands of Evelyn Hugo",
-  "author": "Taylor Jenkins Reid",
-  "isbn": "9781501139239",
-  "year": null
- },
- {
-  "title": "The Magic Mountain",
-  "author": "Thomas Mann",
-  "isbn": "9780593688137",
-  "year": "2025"
- },
- {
-  "title": "The Undercover Economist",
-  "author": "Tim Harford",
-  "isbn": "9780195189773",
-  "year": "2024"
- },
- {
-  "title": "Beloved",
-  "author": "Toni Morrison",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Song of Solomon",
-  "author": "Toni Morrison",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "同志少女よ、敵を撃て",
-  "author": "Touma Aisaka",
-  "isbn": "9784152100641",
-  "year": null
- },
- {
-  "title": "Breakfast at Tiffany's",
-  "author": "Truman Capote",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Breakfast at Tiffany’s and Three Stories",
-  "author": "Truman Capote",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "In Cold Blood",
-  "author": "Truman Capote",
-  "isbn": "9780679745587",
-  "year": null
- },
- {
-  "title": "Allegiant",
-  "author": "Veronica Roth",
-  "isbn": "9780007524273",
-  "year": "2025"
- },
- {
-  "title": "Divergent",
-  "author": "Veronica Roth",
-  "isbn": "9780062024039",
-  "year": "2025"
- },
- {
-  "title": "Insurgent",
-  "author": "Veronica Roth",
-  "isbn": "9780007442911",
-  "year": "2025"
- },
- {
-  "title": "The Invisible Life of Addie LaRue",
-  "author": "V.E. Schwab",
-  "isbn": "9780765387561",
-  "year": "2024"
- },
- {
-  "title": "Les Misérables",
-  "author": "Victor Hugo",
-  "isbn": "9780451525260",
-  "year": null
- },
- {
-  "title": "The Sympathizer",
-  "author": "Viet Thanh Nguyen",
-  "isbn": "9780802123459",
-  "year": "2025"
- },
- {
-  "title": "The Correspondent",
-  "author": "Virginia Evans",
-  "isbn": "9780593798430",
-  "year": null
- },
- {
-  "title": "A Room of One’s Own",
-  "author": "Virginia Woolf",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Mrs. Dalloway",
-  "author": "Virginia Woolf",
-  "isbn": "9780151009985",
-  "year": null
- },
- {
-  "title": "Lolita",
-  "author": "Vladimir Nabokov",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Elon Musk",
-  "author": "Walter Isaacson",
-  "isbn": "9781982181284",
-  "year": "2024"
- },
- {
-  "title": "Steve Jobs",
-  "author": "Walter Isaacson",
-  "isbn": "9781451648539",
-  "year": null
- },
- {
-  "title": "Ivanhoe",
-  "author": "Walter Scott",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Rob Roy",
-  "author": "Walter Scott",
-  "isbn": "9780140435542",
-  "year": null
- },
- {
-  "title": "Lord of the Flies",
-  "author": "William Golding",
-  "isbn": "9780140283334",
-  "year": null
- },
- {
-  "title": "The Moon and Sixpence",
-  "author": "W. Somerset Maugham",
-  "isbn": "9781598185218",
-  "year": null
- },
- {
-  "title": "Taiwan Travelogue",
-  "author": "Yáng Shuāng-zǐ",
-  "isbn": "9781644453155",
-  "year": null
- },
- {
-  "title": "Snow Country",
-  "author": "Yasunari Kawabata",
-  "isbn": "9780679761044",
-  "year": null
- },
- {
-  "title": "The Dancing Girl of Izu",
-  "author": "Yasunari Kawabata",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "The Dancing Girl of Izu and Other Stories",
-  "author": "Yasunari Kawabata",
-  "isbn": "9781887178945",
-  "year": null
- },
- {
-  "title": "In Order to Live",
-  "author": "Yeonmi Park",
-  "isbn": "9781594206795",
-  "year": null
- },
- {
-  "title": "The Memory Police",
-  "author": "Yōko Ogawa",
-  "isbn": "9781101870600",
-  "year": "2024"
- },
- {
-  "title": "I Want to Eat Your Pancreas",
-  "author": "Yoru Sumino",
-  "isbn": "9786026383143",
-  "year": null
- },
- {
-  "title": "君の膵臓をたべたい",
-  "author": "Yoru Sumino",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Confession of a Mask",
-  "author": "Yukio Mishima",
-  "isbn": "",
-  "year": null
- },
- {
-  "title": "Confessions of a Mask",
-  "author": "Yukio Mishima",
-  "isbn": "9780720610314",
-  "year": null
- },
- {
-  "title": "The Temple of the Golden Pavilion",
-  "author": "Yukio Mishima",
-  "isbn": "9780679433156",
-  "year": null
- },
- {
-  "title": "汝、星のごとく",
-  "author": "Yuu Nagira",
-  "isbn": "",
-  "year": null
+  "year": "2025",
+  "letter": "#"
  },
  {
   "title": "21 Lessons for the 21st Century",
   "author": "Yuval Noah Harari",
   "isbn": "9780525512172",
-  "year": null
+  "year": null,
+  "letter": "#"
+ },
+ {
+  "title": "4:50 From Paddington",
+  "author": "Agatha Christie",
+  "isbn": "9781579126933",
+  "year": null,
+  "letter": "#"
+ },
+ {
+  "title": "The A.B.C. Murders",
+  "author": "Agatha Christie",
+  "isbn": "9781579126247",
+  "year": null,
+  "letter": "A"
+ },
+ {
+  "title": "Absolutely on Music",
+  "author": "Haruki Murakami",
+  "isbn": "",
+  "year": null,
+  "letter": "A"
+ },
+ {
+  "title": "An Abundance of Katherines",
+  "author": "John Green",
+  "isbn": "",
+  "year": null,
+  "letter": "A"
+ },
+ {
+  "title": "The Accomplice",
+  "author": "John Grisham",
+  "isbn": "",
+  "year": null,
+  "letter": "A"
+ },
+ {
+  "title": "The Adventure of the Christmas Pudding",
+  "author": "Agatha Christie",
+  "isbn": "9780007121083",
+  "year": null,
+  "letter": "A"
+ },
+ {
+  "title": "The Adventures of Huckleberry Finn",
+  "author": "Mark Twain",
+  "isbn": "9780142437179",
+  "year": null,
+  "letter": "A"
+ },
+ {
+  "title": "The Adventures of Sherlock Holmes",
+  "author": "Arthur Conan Doyle",
+  "isbn": "",
+  "year": null,
+  "letter": "A"
+ },
+ {
+  "title": "The Adventures of Tom Sawyer",
+  "author": "Mark Twain",
+  "isbn": "9780143039563",
+  "year": null,
+  "letter": "A"
+ },
+ {
+  "title": "After Dark",
+  "author": "Haruki Murakami",
+  "isbn": "9780307265838",
+  "year": null,
+  "letter": "A"
+ },
+ {
+  "title": "After the Funeral",
+  "author": "Agatha Christie",
+  "isbn": "9780425173909",
+  "year": null,
+  "letter": "A"
+ },
+ {
+  "title": "After the Quake",
+  "author": "Haruki Murakami",
+  "isbn": "",
+  "year": null,
+  "letter": "A"
+ },
+ {
+  "title": "The Alchemist",
+  "author": "Paulo Coelho",
+  "isbn": "9780062315007",
+  "year": "2024",
+  "letter": "A"
+ },
+ {
+  "title": "Allegiant",
+  "author": "Veronica Roth",
+  "isbn": "9780007524273",
+  "year": "2025",
+  "letter": "A"
+ },
+ {
+  "title": "All Quiet on the Western Front",
+  "author": "Erich Maria Remarque",
+  "isbn": "9780449213940",
+  "year": null,
+  "letter": "A"
+ },
+ {
+  "title": "All the Colors of the Dark",
+  "author": "Chris Whitaker",
+  "isbn": "9780593798881",
+  "year": "2025",
+  "letter": "A"
+ },
+ {
+  "title": "All the Light We Cannot See",
+  "author": "Anthony Doerr",
+  "isbn": "9781476746586",
+  "year": "2024",
+  "letter": "A"
+ },
+ {
+  "title": "Almond",
+  "author": "Sohn Won-Pyung",
+  "isbn": "9780062961372",
+  "year": "2025",
+  "letter": "A"
+ },
+ {
+  "title": "And Then There Were None",
+  "author": "Agatha Christie",
+  "isbn": "9780312330873",
+  "year": null,
+  "letter": "A"
+ },
+ {
+  "title": "Animal Farm",
+  "author": "George Orwell",
+  "isbn": "9780451526342",
+  "year": null,
+  "letter": "A"
+ },
+ {
+  "title": "Anna Karenina",
+  "author": "Leo Tolstoy",
+  "isbn": "9780345803924",
+  "year": null,
+  "letter": "A"
+ },
+ {
+  "title": "Anne of Green Gables",
+  "author": "L.M. Montgomery",
+  "isbn": "9780451528827",
+  "year": null,
+  "letter": "A"
+ },
+ {
+  "title": "Anxious People",
+  "author": "Fredrik Backman",
+  "isbn": "9781982169633",
+  "year": null,
+  "letter": "A"
+ },
+ {
+  "title": "The Appeal",
+  "author": "John Grisham",
+  "isbn": "9780385515047",
+  "year": "2024",
+  "letter": "A"
+ },
+ {
+  "title": "Appointment with Death",
+  "author": "Agatha Christie",
+  "isbn": "9780007119356",
+  "year": null,
+  "letter": "A"
+ },
+ {
+  "title": "The Ark",
+  "author": "Haruo Yuki",
+  "isbn": "9781805331896",
+  "year": null,
+  "letter": "A"
+ },
+ {
+  "title": "Around the World in Eighty Days",
+  "author": "Jules Verne",
+  "isbn": "9780140449068",
+  "year": "2025",
+  "letter": "A"
+ },
+ {
+  "title": "An Artist of the Floating World",
+  "author": "Kazuo Ishiguro",
+  "isbn": "9780571225361",
+  "year": null,
+  "letter": "A"
+ },
+ {
+  "title": "The Art of Readable Code: Simple and Practical Techniques for Writing Better Code",
+  "author": "Dustin Boswell",
+  "isbn": "9780596802295",
+  "year": null,
+  "letter": "A"
+ },
+ {
+  "title": "The Associate",
+  "author": "John Grisham",
+  "isbn": "9780385517836",
+  "year": "2024",
+  "letter": "A"
+ },
+ {
+  "title": "At Bertram's Hotel",
+  "author": "Agatha Christie",
+  "isbn": "",
+  "year": null,
+  "letter": "A"
+ },
+ {
+  "title": "Atmosphere",
+  "author": "Taylor Jenkins Reid",
+  "isbn": "",
+  "year": "2025",
+  "letter": "A"
+ },
+ {
+  "title": "Babel",
+  "author": "R.F. Kuang",
+  "isbn": "9780063021426",
+  "year": null,
+  "letter": "B"
+ },
+ {
+  "title": "Bad Luck and Trouble",
+  "author": "Lee Child",
+  "isbn": "9780385340557",
+  "year": null,
+  "letter": "B"
+ },
+ {
+  "title": "The Ballad of Songbirds and Snakes",
+  "author": "Suzanne Collins",
+  "isbn": "",
+  "year": "2025",
+  "letter": "B"
+ },
+ {
+  "title": "Beach Read",
+  "author": "Emily Henry",
+  "isbn": "9781984806734",
+  "year": "2025",
+  "letter": "B"
+ },
+ {
+  "title": "Beloved",
+  "author": "Toni Morrison",
+  "isbn": "",
+  "year": null,
+  "letter": "B"
+ },
+ {
+  "title": "The Big Four",
+  "author": "Agatha Christie",
+  "isbn": "9780007120819",
+  "year": "2025",
+  "letter": "B"
+ },
+ {
+  "title": "Black Beauty",
+  "author": "Anna Sewell",
+  "isbn": "9780439228909",
+  "year": null,
+  "letter": "B"
+ },
+ {
+  "title": "Blackout",
+  "author": "Justin Torres",
+  "isbn": "",
+  "year": "2025",
+  "letter": "B"
+ },
+ {
+  "title": "Blackouts",
+  "author": "Justin Torres",
+  "isbn": "9780374293574",
+  "year": null,
+  "letter": "B"
+ },
+ {
+  "title": "Bleachers",
+  "author": "John Grisham",
+  "isbn": "",
+  "year": "2024",
+  "letter": "B"
+ },
+ {
+  "title": "Blind Willow, Sleeping Woman",
+  "author": "Haruki Murakami",
+  "isbn": "9781400044610",
+  "year": null,
+  "letter": "B"
+ },
+ {
+  "title": "Blood Moon",
+  "author": "Sandra Brown",
+  "isbn": "9781538742983",
+  "year": "2025",
+  "letter": "B"
+ },
+ {
+  "title": "Bloomberg by Bloomberg",
+  "author": "Michael R. Bloomberg",
+  "isbn": "9780471208884",
+  "year": "2024",
+  "letter": "B"
+ },
+ {
+  "title": "The Body in the Library",
+  "author": "Agatha Christie",
+  "isbn": "9781579126261",
+  "year": null,
+  "letter": "B"
+ },
+ {
+  "title": "Book Lovers",
+  "author": "Emily Henry",
+  "isbn": "9780593334836",
+  "year": "2024",
+  "letter": "B"
+ },
+ {
+  "title": "The Book Thief",
+  "author": "Markus Zusak",
+  "isbn": "",
+  "year": "2024",
+  "letter": "B"
+ },
+ {
+  "title": "Botchan",
+  "author": "Natsume Sōseki",
+  "isbn": "9784770030481",
+  "year": null,
+  "letter": "B"
+ },
+ {
+  "title": "The Boyfriend",
+  "author": "Freida McFadden",
+  "isbn": "9781728296227",
+  "year": "2025",
+  "letter": "B"
+ },
+ {
+  "title": "The Boys from Biloxi",
+  "author": "John Grisham",
+  "isbn": "9780385548922",
+  "year": "2024",
+  "letter": "B"
+ },
+ {
+  "title": "The Brave New World",
+  "author": "Aldous Huxley",
+  "isbn": "9780060929879",
+  "year": "2025",
+  "letter": "B"
+ },
+ {
+  "title": "Breakfast at Tiffany's",
+  "author": "Truman Capote",
+  "isbn": "",
+  "year": null,
+  "letter": "B"
+ },
+ {
+  "title": "Breakfast at Tiffany’s and Three Stories",
+  "author": "Truman Capote",
+  "isbn": "",
+  "year": null,
+  "letter": "B"
+ },
+ {
+  "title": "Breakfast of Champions",
+  "author": "Kurt Vonnegut Jr.",
+  "isbn": "9780385334204",
+  "year": null,
+  "letter": "B"
+ },
+ {
+  "title": "The Brethren",
+  "author": "John Grisham",
+  "isbn": "9780385339674",
+  "year": "2024",
+  "letter": "B"
+ },
+ {
+  "title": "The British Are Coming",
+  "author": "Rick Atkinson",
+  "isbn": "9781627790437",
+  "year": "2025",
+  "letter": "B"
+ },
+ {
+  "title": "Broken Country",
+  "author": "Clare Leslie Hall",
+  "isbn": "9781668078181",
+  "year": "2025",
+  "letter": "B"
+ },
+ {
+  "title": "The Broker",
+  "author": "John Grisham",
+  "isbn": "9780385340540",
+  "year": "2024",
+  "letter": "B"
+ },
+ {
+  "title": "The Brothers Karamazov",
+  "author": "Fyodor Dostoevsky",
+  "isbn": "9780374528379",
+  "year": null,
+  "letter": "B"
+ },
+ {
+  "title": "Bullet Train",
+  "author": "Kōtarō Isaka",
+  "isbn": "9781419756337",
+  "year": null,
+  "letter": "B"
+ },
+ {
+  "title": "The Buried Giant",
+  "author": "Kazuo Ishiguro",
+  "isbn": "9780307271037",
+  "year": null,
+  "letter": "B"
+ },
+ {
+  "title": "Butter",
+  "author": "Asako Yuzuki",
+  "isbn": "9780063236400",
+  "year": "2025",
+  "letter": "B"
+ },
+ {
+  "title": "By the Pricking of My Thumbs",
+  "author": "Agatha Christie",
+  "isbn": "9780451200525",
+  "year": null,
+  "letter": "B"
+ },
+ {
+  "title": "Calico Joe",
+  "author": "John Grisham",
+  "isbn": "9780385536073",
+  "year": "2024",
+  "letter": "C"
+ },
+ {
+  "title": "Call Me By Your Name",
+  "author": "André Aciman",
+  "isbn": "",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "The Call of the Wild",
+  "author": "Jack London",
+  "isbn": "",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "Camino Ghosts",
+  "author": "John Grisham",
+  "isbn": "9780385545990",
+  "year": "2024",
+  "letter": "C"
+ },
+ {
+  "title": "Camino Island",
+  "author": "John Grisham",
+  "isbn": "9780385543026",
+  "year": "2024",
+  "letter": "C"
+ },
+ {
+  "title": "Camino Winds",
+  "author": "John Grisham",
+  "isbn": "9780385545945",
+  "year": "2024",
+  "letter": "C"
+ },
+ {
+  "title": "Cards on the Table",
+  "author": "Agatha Christie",
+  "isbn": "9780425205952",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "Careless People",
+  "author": "Sarah Wynn-Williams",
+  "isbn": "9781250391230",
+  "year": "2025",
+  "letter": "C"
+ },
+ {
+  "title": "A Caribbean Mystery",
+  "author": "Agatha Christie",
+  "isbn": "9780451199928",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "Carrie",
+  "author": "Stephen King",
+  "isbn": "9781416524304",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "The Castle",
+  "author": "Franz Kafka",
+  "isbn": "9780805211061",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "Cat Among the Pigeons",
+  "author": "Agatha Christie",
+  "isbn": "9780425205969",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "Catch-22",
+  "author": "Joseph Heller",
+  "isbn": "9780684833392",
+  "year": "2024",
+  "letter": "C"
+ },
+ {
+  "title": "The Catcher in the Rye",
+  "author": "J.D. Salinger",
+  "isbn": "9780316769174",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "Catching Fire",
+  "author": "Suzanne Collins",
+  "isbn": "9780439023498",
+  "year": "2025",
+  "letter": "C"
+ },
+ {
+  "title": "Cat’s Cradle",
+  "author": "Kurt Vonnegut Jr.",
+  "isbn": "",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "The Celestine Prophecy",
+  "author": "James Redfield",
+  "isbn": "9780446518628",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "The Chamber",
+  "author": "John Grisham",
+  "isbn": "9780385339667",
+  "year": "2024",
+  "letter": "C"
+ },
+ {
+  "title": "The Chosen",
+  "author": "Chaim Potok",
+  "isbn": "9780449213445",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "A Christmas Carol",
+  "author": "Charles Dickens",
+  "isbn": "9781561797462",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "Circe",
+  "author": "Madeline Miller",
+  "isbn": "9780316556347",
+  "year": "2024",
+  "letter": "C"
+ },
+ {
+  "title": "The City and Its Uncertain Walls",
+  "author": "Haruki Murakami",
+  "isbn": "9780593801970",
+  "year": "2024",
+  "letter": "C"
+ },
+ {
+  "title": "The Client",
+  "author": "John Grisham",
+  "isbn": "9780385339087",
+  "year": "2024",
+  "letter": "C"
+ },
+ {
+  "title": "The Clocks",
+  "author": "Agatha Christie",
+  "isbn": "9781572703933",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "A Clockwork Orange",
+  "author": "Anthony Burgess",
+  "isbn": "9780393341768",
+  "year": "2024",
+  "letter": "C"
+ },
+ {
+  "title": "The Code of the Woosters",
+  "author": "P.G. Wodehouse",
+  "isbn": "9780393339819",
+  "year": "2024",
+  "letter": "C"
+ },
+ {
+  "title": "Colorless Tsukuru Tazaki",
+  "author": "Haruki Murakami",
+  "isbn": "",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "Colorless Tsukuru Tazaki and His Years of Pilgrimage",
+  "author": "Haruki Murakami",
+  "isbn": "9780385352116",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "The Complete Stories and Poems",
+  "author": "Edgar Allan Poe",
+  "isbn": "9780385074070",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "The Confession",
+  "author": "John Grisham",
+  "isbn": "9780385528047",
+  "year": "2024",
+  "letter": "C"
+ },
+ {
+  "title": "Confession of a Mask",
+  "author": "Yukio Mishima",
+  "isbn": "",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "Confessions of a Mask",
+  "author": "Yukio Mishima",
+  "isbn": "9780720610314",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "Convenience Store Woman",
+  "author": "Sayaka Murata",
+  "isbn": "9780802128256",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "The Correspondent",
+  "author": "Virginia Evans",
+  "isbn": "9780593798430",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "Counterattacks at Thirty",
+  "author": "Sohn Won-Pyung",
+  "isbn": "9780063378100",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "Counting Miracles",
+  "author": "Nicholas Sparks",
+  "isbn": "9780593449592",
+  "year": "2025",
+  "letter": "C"
+ },
+ {
+  "title": "The Count of Monte Cristo",
+  "author": "Alexandre Dumas",
+  "isbn": "9780140449266",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "A Court of Frost and Starlight",
+  "author": "Sarah J. Maas",
+  "isbn": "9781635575620",
+  "year": "2024",
+  "letter": "C"
+ },
+ {
+  "title": "A Court of Mist and Fury",
+  "author": "Sarah J. Maas",
+  "isbn": "9781635575583",
+  "year": "2024",
+  "letter": "C"
+ },
+ {
+  "title": "A ​Court of Silver Flames",
+  "author": "Sarah J. Maas",
+  "isbn": "9781681196282",
+  "year": "2024",
+  "letter": "#"
+ },
+ {
+  "title": "A Court of Thorns and Roses",
+  "author": "Sarah J. Maas",
+  "isbn": "9781635575569",
+  "year": "2024",
+  "letter": "C"
+ },
+ {
+  "title": "A Court of Wings and Ruin",
+  "author": "Sarah J. Maas",
+  "isbn": "9781635575606",
+  "year": "2024",
+  "letter": "C"
+ },
+ {
+  "title": "The Covenant of Water",
+  "author": "Abraham Verghese",
+  "isbn": "9780802162175",
+  "year": "2024",
+  "letter": "C"
+ },
+ {
+  "title": "The Crash",
+  "author": "Freida McFadden",
+  "isbn": "9781464232985",
+  "year": "2025",
+  "letter": "C"
+ },
+ {
+  "title": "Crazy Rich Asians",
+  "author": "Kevin Kwan",
+  "isbn": "9780385536974",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "Crime and Punishment",
+  "author": "Fyodor Dostoevsky",
+  "isbn": "",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "Crooked House",
+  "author": "Agatha Christie",
+  "isbn": "9780312981662",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "The Crucible",
+  "author": "Arthur Miller",
+  "isbn": "9780142437339",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "Cujo",
+  "author": "Stephen King",
+  "isbn": "9780307348241",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "Curtain",
+  "author": "Agatha Christie",
+  "isbn": "9780425173749",
+  "year": null,
+  "letter": "C"
+ },
+ {
+  "title": "Dance Dance Dance",
+  "author": "Haruki Murakami",
+  "isbn": "9780099448761",
+  "year": null,
+  "letter": "D"
+ },
+ {
+  "title": "The Dancing Girl of Izu",
+  "author": "Yasunari Kawabata",
+  "isbn": "",
+  "year": null,
+  "letter": "D"
+ },
+ {
+  "title": "The Dancing Girl of Izu and Other Stories",
+  "author": "Yasunari Kawabata",
+  "isbn": "9781887178945",
+  "year": null,
+  "letter": "D"
+ },
+ {
+  "title": "The Dark Forest",
+  "author": "Liu Cixin",
+  "isbn": "",
+  "year": "2024",
+  "letter": "D"
+ },
+ {
+  "title": "David Copperfield",
+  "author": "Charles Dickens",
+  "isbn": "",
+  "year": "2024",
+  "letter": "D"
+ },
+ {
+  "title": "Dead Man's Folly",
+  "author": "Agatha Christie",
+  "isbn": "9781572705470",
+  "year": null,
+  "letter": "D"
+ },
+ {
+  "title": "Death Comes as the End",
+  "author": "Agatha Christie",
+  "isbn": "9780312981617",
+  "year": null,
+  "letter": "D"
+ },
+ {
+  "title": "Death in the Clouds",
+  "author": "Agatha Christie",
+  "isbn": "9780007119332",
+  "year": "2025",
+  "letter": "D"
+ },
+ {
+  "title": "Death on the Nile",
+  "author": "Agatha Christie",
+  "isbn": "",
+  "year": null,
+  "letter": "D"
+ },
+ {
+  "title": "Death's End",
+  "author": "Liu Cixin",
+  "isbn": "9780765377104",
+  "year": "2024",
+  "letter": "D"
+ },
+ {
+  "title": "Demon Copperhead",
+  "author": "Barbara Kingsolver",
+  "isbn": "",
+  "year": null,
+  "letter": "D"
+ },
+ {
+  "title": "The Demon of Unrest",
+  "author": "Erik Larson",
+  "isbn": "9780385348744",
+  "year": "2025",
+  "letter": "D"
+ },
+ {
+  "title": "Destination Unknown",
+  "author": "Agatha Christie",
+  "isbn": "9780007154906",
+  "year": null,
+  "letter": "D"
+ },
+ {
+  "title": "The Diary of a Young Girl",
+  "author": "Anne Frank",
+  "isbn": "",
+  "year": null,
+  "letter": "D"
+ },
+ {
+  "title": "Die Trying",
+  "author": "Lee Child",
+  "isbn": "9780515142242",
+  "year": "2025",
+  "letter": "D"
+ },
+ {
+  "title": "Divergent",
+  "author": "Veronica Roth",
+  "isbn": "9780062024039",
+  "year": "2025",
+  "letter": "D"
+ },
+ {
+  "title": "Doctor Sleep",
+  "author": "Stephen King",
+  "isbn": "9781476727653",
+  "year": null,
+  "letter": "D"
+ },
+ {
+  "title": "Don Quixote",
+  "author": "Miguel de Cervantes Saavedra",
+  "isbn": "",
+  "year": null,
+  "letter": "D"
+ },
+ {
+  "title": "Dracula",
+  "author": "Bram Stoker",
+  "isbn": "9780393970128",
+  "year": null,
+  "letter": "D"
+ },
+ {
+  "title": "Drive Your Plow Over the Bones of the Dead",
+  "author": "Olga Tokarczuk",
+  "isbn": "",
+  "year": "2025",
+  "letter": "D"
+ },
+ {
+  "title": "Dr. Jekyll and Mr. Hyde",
+  "author": "Robert Louis Stevenson",
+  "isbn": "9780451528957",
+  "year": null,
+  "letter": "D"
+ },
+ {
+  "title": "Dumb Witness",
+  "author": "Agatha Christie",
+  "isbn": "9780007120796",
+  "year": null,
+  "letter": "D"
+ },
+ {
+  "title": "Dune",
+  "author": "Frank Herbert",
+  "isbn": "9780593099322",
+  "year": null,
+  "letter": "D"
+ },
+ {
+  "title": "East of Eden",
+  "author": "John Steinbeck",
+  "isbn": "9780142000656",
+  "year": null,
+  "letter": "E"
+ },
+ {
+  "title": "Echo Burning",
+  "author": "Lee Child",
+  "isbn": "9780515133318",
+  "year": null,
+  "letter": "E"
+ },
+ {
+  "title": "Educated",
+  "author": "Tara Westover",
+  "isbn": "9780399590504",
+  "year": "2024",
+  "letter": "E"
+ },
+ {
+  "title": "Eleanor Oliphant Is Completely Fine",
+  "author": "Gail Honeyman",
+  "isbn": "9780008172145",
+  "year": "2024",
+  "letter": "E"
+ },
+ {
+  "title": "Elephants Can Remember",
+  "author": "Agatha Christie",
+  "isbn": "9780425067826",
+  "year": null,
+  "letter": "E"
+ },
+ {
+  "title": "The Elephant Vanishes",
+  "author": "Haruki Murakami",
+  "isbn": "",
+  "year": null,
+  "letter": "E"
+ },
+ {
+  "title": "Elon Musk",
+  "author": "Walter Isaacson",
+  "isbn": "9781982181284",
+  "year": "2024",
+  "letter": "E"
+ },
+ {
+  "title": "Emma",
+  "author": "Jane Austen",
+  "isbn": "",
+  "year": null,
+  "letter": "E"
+ },
+ {
+  "title": "Encore in Death",
+  "author": "J.D. Robb",
+  "isbn": "9781250284310",
+  "year": "2024",
+  "letter": "E"
+ },
+ {
+  "title": "Endless Night",
+  "author": "Agatha Christie",
+  "isbn": "9780007151677",
+  "year": null,
+  "letter": "E"
+ },
+ {
+  "title": "The Enemy",
+  "author": "Lee Child",
+  "isbn": "9780440241010",
+  "year": null,
+  "letter": "E"
+ },
+ {
+  "title": "Erasure",
+  "author": "Percival Everett",
+  "isbn": "9780786888153",
+  "year": "2025",
+  "letter": "E"
+ },
+ {
+  "title": "Evil Under the Sun",
+  "author": "Agatha Christie",
+  "isbn": "9781579126285",
+  "year": null,
+  "letter": "E"
+ },
+ {
+  "title": "The Exchange",
+  "author": "John Grisham",
+  "isbn": "9780385548953",
+  "year": "2024",
+  "letter": "E"
+ },
+ {
+  "title": "Factfulness",
+  "author": "Hans Rosling",
+  "isbn": "9781473637467",
+  "year": null,
+  "letter": "F"
+ },
+ {
+  "title": "Fahrenheit 451",
+  "author": "Ray Bradbury",
+  "isbn": "",
+  "year": null,
+  "letter": "F"
+ },
+ {
+  "title": "Fairy Tale",
+  "author": "Stephen King",
+  "isbn": "9781668002179",
+  "year": "2024",
+  "letter": "F"
+ },
+ {
+  "title": "The Fall",
+  "author": "Albert Camus",
+  "isbn": "9780679720225",
+  "year": null,
+  "letter": "F"
+ },
+ {
+  "title": "A Farewell to Arms",
+  "author": "Ernest Hemingway",
+  "isbn": "9780099910107",
+  "year": null,
+  "letter": "F"
+ },
+ {
+  "title": "The Fate of the Day: The War for America, Fort Ticonderoga to Charleston, 1777-1780",
+  "author": "Rick Atkinson",
+  "isbn": "9780593799185",
+  "year": null,
+  "letter": "F"
+ },
+ {
+  "title": "The Fault in Our Stars",
+  "author": "John Green",
+  "isbn": "9780525478812",
+  "year": "2025",
+  "letter": "F"
+ },
+ {
+  "title": "The Fellowship of the Ring",
+  "author": "J.R.R. Tolkien",
+  "isbn": "",
+  "year": null,
+  "letter": "F"
+ },
+ {
+  "title": "Finders Keepers",
+  "author": "Stephen King",
+  "isbn": "9781501100079",
+  "year": null,
+  "letter": "F"
+ },
+ {
+  "title": "Firestarter",
+  "author": "Stephen King",
+  "isbn": "",
+  "year": null,
+  "letter": "F"
+ },
+ {
+  "title": "The Firm",
+  "author": "John Grisham",
+  "isbn": "9780440211457",
+  "year": "2024",
+  "letter": "F"
+ },
+ {
+  "title": "First Lie Wins",
+  "author": "Ashley Elston",
+  "isbn": "",
+  "year": "2024",
+  "letter": "F"
+ },
+ {
+  "title": "First Person Singular",
+  "author": "Haruki Murakami",
+  "isbn": "9780593318072",
+  "year": "2025",
+  "letter": "F"
+ },
+ {
+  "title": "Five Little Pigs",
+  "author": "Agatha Christie",
+  "isbn": "",
+  "year": null,
+  "letter": "F"
+ },
+ {
+  "title": "Ford County",
+  "author": "John Grisham",
+  "isbn": "",
+  "year": "2024",
+  "letter": "F"
+ },
+ {
+  "title": "For Whom the Bell Tolls",
+  "author": "Ernest Hemingway",
+  "isbn": "",
+  "year": null,
+  "letter": "F"
+ },
+ {
+  "title": "Fourth Wing",
+  "author": "Rebecca Yarros",
+  "isbn": "9781649374042",
+  "year": null,
+  "letter": "F"
+ },
+ {
+  "title": "The Four Winds",
+  "author": "Kristin Hannah",
+  "isbn": "9781250178602",
+  "year": "2025",
+  "letter": "F"
+ },
+ {
+  "title": "The Framed",
+  "author": "John Grisham",
+  "isbn": "9780385550444",
+  "year": "2024",
+  "letter": "F"
+ },
+ {
+  "title": "Frankenstein",
+  "author": "Mary Wollstonecraft Shelley",
+  "isbn": "9780143131847",
+  "year": null,
+  "letter": "F"
+ },
+ {
+  "title": "The Frozen River",
+  "author": "Ariel Lawhon",
+  "isbn": "9780385546874",
+  "year": "2025",
+  "letter": "F"
+ },
+ {
+  "title": "Funny Story",
+  "author": "Emily Henry",
+  "isbn": "",
+  "year": "2024",
+  "letter": "F"
+ },
+ {
+  "title": "Gai-Jin",
+  "author": "James Clavell",
+  "isbn": "9780440216803",
+  "year": "2025",
+  "letter": "G"
+ },
+ {
+  "title": "A Gentleman in Moscow",
+  "author": "Amor Towles",
+  "isbn": "",
+  "year": "2025",
+  "letter": "G"
+ },
+ {
+  "title": "The Giver",
+  "author": "Lois Lowry",
+  "isbn": "9780385732550",
+  "year": null,
+  "letter": "G"
+ },
+ {
+  "title": "The God of the Woods",
+  "author": "Liz Moore",
+  "isbn": "",
+  "year": "2025",
+  "letter": "G"
+ },
+ {
+  "title": "Going Rogue",
+  "author": "Janet Evanovich",
+  "isbn": "9781668003053",
+  "year": "2024",
+  "letter": "G"
+ },
+ {
+  "title": "The Goldfinch",
+  "author": "Donna Tartt",
+  "isbn": "9780316055437",
+  "year": "2025",
+  "letter": "G"
+ },
+ {
+  "title": "Gone Girl",
+  "author": "Gillian Flynn",
+  "isbn": "9780307588371",
+  "year": "2025",
+  "letter": "G"
+ },
+ {
+  "title": "Gone Tomorrow",
+  "author": "Lee Child",
+  "isbn": "9780593057056",
+  "year": null,
+  "letter": "G"
+ },
+ {
+  "title": "Gone with the Wind",
+  "author": "Margaret Mitchell",
+  "isbn": "9780446365383",
+  "year": null,
+  "letter": "G"
+ },
+ {
+  "title": "The Good Soldier",
+  "author": "Ford Madox Ford",
+  "isbn": "9781551113814",
+  "year": null,
+  "letter": "G"
+ },
+ {
+  "title": "The Grapes of Wrath",
+  "author": "John Steinbeck",
+  "isbn": "9780670016907",
+  "year": "2025",
+  "letter": "G"
+ },
+ {
+  "title": "Gray Mountain",
+  "author": "John Grisham",
+  "isbn": "9780385537148",
+  "year": "2024",
+  "letter": "G"
+ },
+ {
+  "title": "The Great Alone",
+  "author": "Kristin Hannah",
+  "isbn": "",
+  "year": null,
+  "letter": "G"
+ },
+ {
+  "title": "Great Big Beautiful Life",
+  "author": "Emily Henry",
+  "isbn": "",
+  "year": "2025",
+  "letter": "G"
+ },
+ {
+  "title": "Great Expectations",
+  "author": "Charles Dickens",
+  "isbn": "9780192833594",
+  "year": null,
+  "letter": "G"
+ },
+ {
+  "title": "The Great Gatsby",
+  "author": "F. Scott Fitzgerald",
+  "isbn": "",
+  "year": null,
+  "letter": "G"
+ },
+ {
+  "title": "Greenlights",
+  "author": "Matthew McConaughey",
+  "isbn": "9780593139134",
+  "year": null,
+  "letter": "G"
+ },
+ {
+  "title": "The Green Mile",
+  "author": "Stephen King",
+  "isbn": "9780451933027",
+  "year": "2025",
+  "letter": "G"
+ },
+ {
+  "title": "The Guardians",
+  "author": "John Grisham",
+  "isbn": "9780385544184",
+  "year": "2024",
+  "letter": "G"
+ },
+ {
+  "title": "The Guest List",
+  "author": "Lucy Foley",
+  "isbn": "",
+  "year": "2025",
+  "letter": "G"
+ },
+ {
+  "title": "Guns, Germs, and Steel: The Fates of Human Societies",
+  "author": "Jared Diamond",
+  "isbn": "9780739467350",
+  "year": null,
+  "letter": "G"
+ },
+ {
+  "title": "Hallowe'en Party",
+  "author": "Agatha Christie",
+  "isbn": "9780007120680",
+  "year": null,
+  "letter": "H"
+ },
+ {
+  "title": "The Handmaid's Tale",
+  "author": "Margaret Atwood",
+  "isbn": "9781328879943",
+  "year": "2024",
+  "letter": "H"
+ },
+ {
+  "title": "Happy Place",
+  "author": "Emily Henry",
+  "isbn": "9780593441275",
+  "year": null,
+  "letter": "H"
+ },
+ {
+  "title": "Hard-Boiled Wonderland and the End of the World",
+  "author": "Haruki Murakami",
+  "isbn": "",
+  "year": null,
+  "letter": "H"
+ },
+ {
+  "title": "The Hard Way",
+  "author": "Lee Child",
+  "isbn": "9780385336697",
+  "year": null,
+  "letter": "H"
+ },
+ {
+  "title": "Harry Potter and the Chamber of Secrets",
+  "author": "J.K. Rowling",
+  "isbn": "",
+  "year": null,
+  "letter": "H"
+ },
+ {
+  "title": "Harry Potter and the Deathly Hallows",
+  "author": "J.K. Rowling",
+  "isbn": "9780545010221",
+  "year": null,
+  "letter": "H"
+ },
+ {
+  "title": "Harry Potter and the Goblet of Fire",
+  "author": "J.K. Rowling",
+  "isbn": "",
+  "year": null,
+  "letter": "H"
+ },
+ {
+  "title": "Harry Potter and the Half-Blood Prince",
+  "author": "J.K. Rowling",
+  "isbn": "",
+  "year": null,
+  "letter": "H"
+ },
+ {
+  "title": "Harry Potter and the Order of the Phoenix",
+  "author": "J.K. Rowling",
+  "isbn": "9780439358064",
+  "year": null,
+  "letter": "H"
+ },
+ {
+  "title": "Harry Potter and the Philosopher's Stone",
+  "author": "J.K. Rowling",
+  "isbn": "",
+  "year": null,
+  "letter": "H"
+ },
+ {
+  "title": "Harry Potter and the Prisoner of Azkaban",
+  "author": "J.K. Rowling",
+  "isbn": "9780439655484",
+  "year": null,
+  "letter": "H"
+ },
+ {
+  "title": "Harry Potter series",
+  "author": "J.K. Rowling",
+  "isbn": "",
+  "year": null,
+  "letter": "H"
+ },
+ {
+  "title": "The Hate U Give",
+  "author": "Angie Thomas",
+  "isbn": "",
+  "year": null,
+  "letter": "H"
+ },
+ {
+  "title": "Hear the Wind Sing",
+  "author": "Haruki Murakami",
+  "isbn": "",
+  "year": null,
+  "letter": "H"
+ },
+ {
+  "title": "Heart of Darkness",
+  "author": "Joseph Conrad",
+  "isbn": "9781892295491",
+  "year": null,
+  "letter": "H"
+ },
+ {
+  "title": "The Heaven & Earth Grocery Store",
+  "author": "James McBride",
+  "isbn": "9780593422946",
+  "year": "2024",
+  "letter": "H"
+ },
+ {
+  "title": "Hello Beautiful",
+  "author": "Ann Napolitano",
+  "isbn": "",
+  "year": null,
+  "letter": "H"
+ },
+ {
+  "title": "Hercule Poirot's Christmas",
+  "author": "Agatha Christie",
+  "isbn": "9780007120697",
+  "year": null,
+  "letter": "H"
+ },
+ {
+  "title": "Hercule Poirot: The Complete Short Stories",
+  "author": "Agatha Christie",
+  "isbn": "",
+  "year": null,
+  "letter": "H"
+ },
+ {
+  "title": "Hickory Dickory Dock",
+  "author": "Agatha Christie",
+  "isbn": "9781572705647",
+  "year": null,
+  "letter": "H"
+ },
+ {
+  "title": "Hillbilly Elegy",
+  "author": "J.D. Vance",
+  "isbn": "",
+  "year": "2024",
+  "letter": "H"
+ },
+ {
+  "title": "Hiroshima",
+  "author": "John Hersey",
+  "isbn": "9780679721031",
+  "year": null,
+  "letter": "H"
+ },
+ {
+  "title": "The Hobbit",
+  "author": "J.R.R. Tolkien",
+  "isbn": "",
+  "year": "2025",
+  "letter": "H"
+ },
+ {
+  "title": "The Hobbit, or There and Back Again",
+  "author": "J.R.R. Tolkien",
+  "isbn": "",
+  "year": null,
+  "letter": "H"
+ },
+ {
+  "title": "The Hollow",
+  "author": "Agatha Christie",
+  "isbn": "9780007121021",
+  "year": null,
+  "letter": "H"
+ },
+ {
+  "title": "Holly",
+  "author": "Stephen King",
+  "isbn": "9781668016138",
+  "year": "2024",
+  "letter": "H"
  },
  {
   "title": "Homo Deus",
   "author": "Yuval Noah Harari",
   "isbn": "",
-  "year": null
+  "year": null,
+  "letter": "H"
+ },
+ {
+  "title": "The Hound of the Baskervilles",
+  "author": "Arthur Conan Doyle",
+  "isbn": "",
+  "year": "2025",
+  "letter": "H"
+ },
+ {
+  "title": "The Housemaid",
+  "author": "Freida McFadden",
+  "isbn": "9781803144375",
+  "year": "2024",
+  "letter": "H"
+ },
+ {
+  "title": "The Housemaid's Secret",
+  "author": "Freida McFadden",
+  "isbn": "9781837901319",
+  "year": "2024",
+  "letter": "H"
+ },
+ {
+  "title": "The Hunger Games",
+  "author": "Suzanne Collins",
+  "isbn": "9780439023481",
+  "year": "2025",
+  "letter": "H"
+ },
+ {
+  "title": "I Am a Cat",
+  "author": "Natsume Sōseki",
+  "isbn": "9780804832656",
+  "year": null,
+  "letter": "I"
+ },
+ {
+  "title": "The Idiot",
+  "author": "Elif Batuman",
+  "isbn": "9781594205613",
+  "year": "2025",
+  "letter": "I"
+ },
+ {
+  "title": "If It Bleeds",
+  "author": "Stephen King",
+  "isbn": "",
+  "year": null,
+  "letter": "I"
+ },
+ {
+  "title": "The Iliad",
+  "author": "Homer",
+  "isbn": "9781324001805",
+  "year": null,
+  "letter": "I"
+ },
+ {
+  "title": "The Illustrated Man",
+  "author": "Ray Bradbury",
+  "isbn": "9780007127740",
+  "year": null,
+  "letter": "I"
+ },
+ {
+  "title": "The Importance of Being Earnest",
+  "author": "Oscar Wilde",
+  "isbn": "9781580495806",
+  "year": null,
+  "letter": "I"
+ },
+ {
+  "title": "In Cold Blood",
+  "author": "Truman Capote",
+  "isbn": "9780679745587",
+  "year": null,
+  "letter": "I"
+ },
+ {
+  "title": "The Innocent Man",
+  "author": "John Grisham",
+  "isbn": "9780385517232",
+  "year": "2024",
+  "letter": "I"
+ },
+ {
+  "title": "In Order to Live",
+  "author": "Yeonmi Park",
+  "isbn": "9781594206795",
+  "year": null,
+  "letter": "I"
+ },
+ {
+  "title": "In Our Time",
+  "author": "Ernest Hemingway",
+  "isbn": "",
+  "year": null,
+  "letter": "I"
+ },
+ {
+  "title": "The Institute",
+  "author": "Stephen King",
+  "isbn": "",
+  "year": "2024",
+  "letter": "I"
+ },
+ {
+  "title": "Insurgent",
+  "author": "Veronica Roth",
+  "isbn": "9780007442911",
+  "year": "2025",
+  "letter": "I"
+ },
+ {
+  "title": "Intermezzo",
+  "author": "Sally Rooney",
+  "isbn": "9780374602635",
+  "year": "2025",
+  "letter": "I"
+ },
+ {
+  "title": "In the Likely Event",
+  "author": "Rebecca Yarros",
+  "isbn": "9781662511561",
+  "year": null,
+  "letter": "I"
+ },
+ {
+  "title": "The Invisible Life of Addie LaRue",
+  "author": "V.E. Schwab",
+  "isbn": "9780765387561",
+  "year": "2024",
+  "letter": "I"
+ },
+ {
+  "title": "The Invisible Man",
+  "author": "H.G. Wells",
+  "isbn": "9780451528520",
+  "year": "2025",
+  "letter": "I"
+ },
+ {
+  "title": "Iron Flame",
+  "author": "Rebecca Yarros",
+  "isbn": "9781649374172",
+  "year": "2024",
+  "letter": "I"
+ },
+ {
+  "title": "It",
+  "author": "Stephen King",
+  "isbn": "9780450411434",
+  "year": null,
+  "letter": "I"
+ },
+ {
+  "title": "It Ends with Us",
+  "author": "Colleen Hoover",
+  "isbn": "",
+  "year": null,
+  "letter": "I"
+ },
+ {
+  "title": "It Starts with Us",
+  "author": "Colleen Hoover",
+  "isbn": "9781668001226",
+  "year": null,
+  "letter": "I"
+ },
+ {
+  "title": "Ivanhoe",
+  "author": "Walter Scott",
+  "isbn": "",
+  "year": null,
+  "letter": "I"
+ },
+ {
+  "title": "I Want to Eat Your Pancreas",
+  "author": "Yoru Sumino",
+  "isbn": "9786026383143",
+  "year": null,
+  "letter": "I"
+ },
+ {
+  "title": "James",
+  "author": "Percival Everett",
+  "isbn": "9780385550369",
+  "year": "2024",
+  "letter": "J"
+ },
+ {
+  "title": "Jane Eyre",
+  "author": "Charlotte Brontë",
+  "isbn": "9780142437209",
+  "year": null,
+  "letter": "J"
+ },
+ {
+  "title": "A Journey to the Center of the Earth",
+  "author": "Jules Verne",
+  "isbn": "9780553213973",
+  "year": "2025",
+  "letter": "J"
+ },
+ {
+  "title": "The Judge's List",
+  "author": "John Grisham",
+  "isbn": "9780385546027",
+  "year": "2024",
+  "letter": "J"
+ },
+ {
+  "title": "Just Mercy",
+  "author": "Bryan Stevenson",
+  "isbn": "",
+  "year": null,
+  "letter": "J"
+ },
+ {
+  "title": "Kafka on the Shore",
+  "author": "Haruki Murakami",
+  "isbn": "9781400079278",
+  "year": null,
+  "letter": "K"
+ },
+ {
+  "title": "Katabasis",
+  "author": "R.F. Kuang",
+  "isbn": "",
+  "year": null,
+  "letter": "K"
+ },
+ {
+  "title": "Killers of the Flower Moon",
+  "author": "David Grann",
+  "isbn": "9780593470831",
+  "year": "2024",
+  "letter": "K"
+ },
+ {
+  "title": "Killing Commendatore",
+  "author": "Haruki Murakami",
+  "isbn": "9780525520047",
+  "year": null,
+  "letter": "K"
+ },
+ {
+  "title": "Killing Floor",
+  "author": "Lee Child",
+  "isbn": "9780515141429",
+  "year": "2025",
+  "letter": "K"
+ },
+ {
+  "title": "The King of Torts",
+  "author": "John Grisham",
+  "isbn": "9780385339650",
+  "year": "2024",
+  "letter": "K"
+ },
+ {
+  "title": "King Rat",
+  "author": "James Clavell",
+  "isbn": "9780385333764",
+  "year": "2025",
+  "letter": "K"
+ },
+ {
+  "title": "The Kite Runner",
+  "author": "Khaled Hosseini",
+  "isbn": "",
+  "year": "2025",
+  "letter": "K"
+ },
+ {
+  "title": "Klara and the Sun",
+  "author": "Kazuo Ishiguro",
+  "isbn": "9780593318171",
+  "year": null,
+  "letter": "K"
+ },
+ {
+  "title": "Kokoro",
+  "author": "Natsume Sōseki",
+  "isbn": "9780895267153",
+  "year": null,
+  "letter": "K"
+ },
+ {
+  "title": "The Labours of Hercules",
+  "author": "Agatha Christie",
+  "isbn": "9781572704572",
+  "year": null,
+  "letter": "L"
+ },
+ {
+  "title": "Lady Tan's Circle of Women",
+  "author": "Lisa See",
+  "isbn": "9781982117085",
+  "year": "2025",
+  "letter": "L"
+ },
+ {
+  "title": "Land of Milk and Honey",
+  "author": "C Pam Zhang",
+  "isbn": "9780593538241",
+  "year": "2025",
+  "letter": "L"
+ },
+ {
+  "title": "The Last Girl",
+  "author": "Nadia Murad",
+  "isbn": "9780525493211",
+  "year": null,
+  "letter": "L"
+ },
+ {
+  "title": "The Last Juror",
+  "author": "John Grisham",
+  "isbn": "9780385339681",
+  "year": "2024",
+  "letter": "L"
+ },
+ {
+  "title": "Les Misérables",
+  "author": "Victor Hugo",
+  "isbn": "9780451525260",
+  "year": null,
+  "letter": "L"
+ },
+ {
+  "title": "Lessons in Chemistry",
+  "author": "Bonnie Garmus",
+  "isbn": "9781804990926",
+  "year": "2024",
+  "letter": "L"
+ },
+ {
+  "title": "Lights Out",
+  "author": "Navessa Allen",
+  "isbn": "9781638932239",
+  "year": "2025",
+  "letter": "L"
+ },
+ {
+  "title": "Like Father, Like Son",
+  "author": "Matt Centrowitz",
+  "isbn": "",
+  "year": null,
+  "letter": "L"
+ },
+ {
+  "title": "The Lincoln Highway",
+  "author": "Amor Towles",
+  "isbn": "9780735222359",
+  "year": "2025",
+  "letter": "L"
+ },
+ {
+  "title": "The Litigators",
+  "author": "John Grisham",
+  "isbn": "9781444729702",
+  "year": "2024",
+  "letter": "L"
+ },
+ {
+  "title": "A Little Life",
+  "author": "Hanya Yanagihara",
+  "isbn": "9780385539258",
+  "year": "2024",
+  "letter": "L"
+ },
+ {
+  "title": "The Little Prince",
+  "author": "Antoine de Saint-Exupéry",
+  "isbn": "9780152023980",
+  "year": null,
+  "letter": "L"
+ },
+ {
+  "title": "Little Women",
+  "author": "Louisa May Alcott",
+  "isbn": "",
+  "year": null,
+  "letter": "L"
+ },
+ {
+  "title": "Lolita",
+  "author": "Vladimir Nabokov",
+  "isbn": "",
+  "year": null,
+  "letter": "L"
+ },
+ {
+  "title": "Long Island",
+  "author": "Colm Tóibín",
+  "isbn": "9781476785110",
+  "year": "2025",
+  "letter": "L"
+ },
+ {
+  "title": "Looking for Alaska",
+  "author": "John Green",
+  "isbn": "9781435249158",
+  "year": null,
+  "letter": "L"
+ },
+ {
+  "title": "Lord Edgware Dies",
+  "author": "Agatha Christie",
+  "isbn": "9780002314572",
+  "year": "2025",
+  "letter": "L"
+ },
+ {
+  "title": "Lord of the Flies",
+  "author": "William Golding",
+  "isbn": "9780140283334",
+  "year": null,
+  "letter": "L"
+ },
+ {
+  "title": "Love in the Time of Cholera",
+  "author": "Gabriel García Márquez",
+  "isbn": "9781400034680",
+  "year": "2024",
+  "letter": "L"
+ },
+ {
+  "title": "The Lovely Bones",
+  "author": "Alice Sebold",
+  "isbn": "9780316166683",
+  "year": "2024",
+  "letter": "L"
+ },
+ {
+  "title": "The Magic Mountain",
+  "author": "Thomas Mann",
+  "isbn": "9780593688137",
+  "year": "2025",
+  "letter": "M"
+ },
+ {
+  "title": "Magpie Murders",
+  "author": "Anthony Horowitz",
+  "isbn": "9780062645227",
+  "year": null,
+  "letter": "M"
+ },
+ {
+  "title": "The Maid",
+  "author": "Nita Prose",
+  "isbn": "9780593356159",
+  "year": "2025",
+  "letter": "M"
+ },
+ {
+  "title": "A Man Called Ove",
+  "author": "Fredrik Backman",
+  "isbn": "9781476738017",
+  "year": "2024",
+  "letter": "M"
+ },
+ {
+  "title": "The Man in the Brown Suit",
+  "author": "Agatha Christie",
+  "isbn": "9780007151660",
+  "year": null,
+  "letter": "M"
+ },
+ {
+  "title": "The Man in the Iron Mask",
+  "author": "Alexandre Dumas",
+  "isbn": "9780140439243",
+  "year": "2025",
+  "letter": "M"
+ },
+ {
+  "title": "Mansfield Park",
+  "author": "Jane Austen",
+  "isbn": "",
+  "year": null,
+  "letter": "M"
+ },
+ {
+  "title": "The Martian",
+  "author": "Andy Weir",
+  "isbn": "9780804139021",
+  "year": "2025",
+  "letter": "M"
+ },
+ {
+  "title": "The Martian Chronicles",
+  "author": "Ray Bradbury",
+  "isbn": "9780553278224",
+  "year": null,
+  "letter": "M"
+ },
+ {
+  "title": "Martyr!",
+  "author": "Kaveh Akbar",
+  "isbn": "9780593537619",
+  "year": "2024",
+  "letter": "M"
+ },
+ {
+  "title": "The Memoirs of Sherlock Holmes",
+  "author": "Arthur Conan Doyle",
+  "isbn": "9780192123091",
+  "year": null,
+  "letter": "M"
+ },
+ {
+  "title": "The Memory Police",
+  "author": "Yōko Ogawa",
+  "isbn": "9781101870600",
+  "year": "2024",
+  "letter": "M"
+ },
+ {
+  "title": "Men Without Women",
+  "author": "Haruki Murakami",
+  "isbn": "9780385689458",
+  "year": null,
+  "letter": "M"
+ },
+ {
+  "title": "The Metamorphosis",
+  "author": "Franz Kafka",
+  "isbn": "9780553213690",
+  "year": null,
+  "letter": "M"
+ },
+ {
+  "title": "Mickey7",
+  "author": "Edward Ashton",
+  "isbn": "9781250275035",
+  "year": "2025",
+  "letter": "M"
+ },
+ {
+  "title": "Middlemarch",
+  "author": "George Eliot",
+  "isbn": "9780451529176",
+  "year": null,
+  "letter": "M"
+ },
+ {
+  "title": "The Midnight Library",
+  "author": "Matt Haig",
+  "isbn": "9780525559474",
+  "year": null,
+  "letter": "M"
+ },
+ {
+  "title": "Milkman",
+  "author": "Anna Burns",
+  "isbn": "9780571338764",
+  "year": null,
+  "letter": "M"
+ },
+ {
+  "title": "The Ministry of Time",
+  "author": "Kaliane Bradley",
+  "isbn": "9781668045145",
+  "year": "2025",
+  "letter": "M"
+ },
+ {
+  "title": "The Mirror Crack'd From Side to Side",
+  "author": "Agatha Christie",
+  "isbn": "9780007120987",
+  "year": null,
+  "letter": "M"
+ },
+ {
+  "title": "Misery",
+  "author": "Stephen King",
+  "isbn": "9780450417399",
+  "year": null,
+  "letter": "M"
+ },
+ {
+  "title": "Moby-Dick",
+  "author": "Herman Melville",
+  "isbn": "",
+  "year": null,
+  "letter": "M"
+ },
+ {
+  "title": "Moby-Dick or, The Whale",
+  "author": "Herman Melville",
+  "isbn": "9780142437247",
+  "year": null,
+  "letter": "M"
+ },
+ {
+  "title": "Mockingjay",
+  "author": "Suzanne Collins",
+  "isbn": "9780439023511",
+  "year": "2025",
+  "letter": "M"
+ },
+ {
+  "title": "The Moon and Sixpence",
+  "author": "W. Somerset Maugham",
+  "isbn": "9781598185218",
+  "year": null,
+  "letter": "M"
+ },
+ {
+  "title": "The Moving Finger",
+  "author": "Agatha Christie",
+  "isbn": "9780007120840",
+  "year": null,
+  "letter": "M"
+ },
+ {
+  "title": "Mr. Mercedes",
+  "author": "Stephen King",
+  "isbn": "9781476754451",
+  "year": null,
+  "letter": "M"
+ },
+ {
+  "title": "Mrs. Dalloway",
+  "author": "Virginia Woolf",
+  "isbn": "9780151009985",
+  "year": null,
+  "letter": "M"
+ },
+ {
+  "title": "Mrs. McGinty's Dead",
+  "author": "Agatha Christie",
+  "isbn": "9781572707313",
+  "year": null,
+  "letter": "M"
+ },
+ {
+  "title": "Murder at the Vicarage",
+  "author": "Agatha Christie",
+  "isbn": "9781579126254",
+  "year": null,
+  "letter": "M"
+ },
+ {
+  "title": "Murder in Mesopotamia",
+  "author": "Agatha Christie",
+  "isbn": "9780007113804",
+  "year": null,
+  "letter": "M"
+ },
+ {
+  "title": "Murder in the Mews",
+  "author": "Agatha Christie",
+  "isbn": "9781572702844",
+  "year": null,
+  "letter": "M"
+ },
+ {
+  "title": "A Murder Is Announced",
+  "author": "Agatha Christie",
+  "isbn": "9781579126292",
+  "year": null,
+  "letter": "M"
+ },
+ {
+  "title": "Murder Is Easy",
+  "author": "Agatha Christie",
+  "isbn": "9780312979829",
+  "year": null,
+  "letter": "M"
+ },
+ {
+  "title": "The Murder of Roger Ackroyd",
+  "author": "Agatha Christie",
+  "isbn": "9781579126278",
+  "year": "2025",
+  "letter": "M"
+ },
+ {
+  "title": "Murder on the Links",
+  "author": "Agatha Christie",
+  "isbn": "9781734452556",
+  "year": "2025",
+  "letter": "M"
+ },
+ {
+  "title": "Murder on the Orient Express",
+  "author": "Agatha Christie",
+  "isbn": "9780007119318",
+  "year": "2025",
+  "letter": "M"
+ },
+ {
+  "title": "My Beloved World",
+  "author": "Sonia Sotomayor",
+  "isbn": "9780307594884",
+  "year": null,
+  "letter": "M"
+ },
+ {
+  "title": "The Mysterious Affair at Styles",
+  "author": "Agatha Christie",
+  "isbn": "9781734452594",
+  "year": "2025",
+  "letter": "M"
+ },
+ {
+  "title": "The Mystery of the Blue Train",
+  "author": "Agatha Christie",
+  "isbn": "9781579126957",
+  "year": "2025",
+  "letter": "M"
+ },
+ {
+  "title": "Nemesis",
+  "author": "Agatha Christie",
+  "isbn": "9780451200181",
+  "year": null,
+  "letter": "N"
+ },
+ {
+  "title": "Never Flinch",
+  "author": "Stephen King",
+  "isbn": "9781668089330",
+  "year": "2025",
+  "letter": "N"
+ },
+ {
+  "title": "Never Let Me Go",
+  "author": "Kazuo Ishiguro",
+  "isbn": "9781400078776",
+  "year": null,
+  "letter": "N"
+ },
+ {
+  "title": "Never Lie",
+  "author": "Freida McFadden",
+  "isbn": "",
+  "year": null,
+  "letter": "N"
+ },
+ {
+  "title": "Never Never",
+  "author": "Colleen Hoover",
+  "isbn": "",
+  "year": null,
+  "letter": "N"
+ },
+ {
+  "title": "The New Map",
+  "author": "Daniel Yergin",
+  "isbn": "",
+  "year": null,
+  "letter": "N"
+ },
+ {
+  "title": "The Nightingale",
+  "author": "Kristin Hannah",
+  "isbn": "9780312577223",
+  "year": null,
+  "letter": "N"
+ },
+ {
+  "title": "Night of the Milky Way Railway",
+  "author": "Kenji Miyazawa",
+  "isbn": "",
+  "year": null,
+  "letter": "N"
+ },
+ {
+  "title": "Night Train to the Stars",
+  "author": "Kenji Miyazawa",
+  "isbn": "9781784877767",
+  "year": null,
+  "letter": "N"
+ },
+ {
+  "title": "Nocturnes",
+  "author": "Kazuo Ishiguro",
+  "isbn": "9780307397874",
+  "year": null,
+  "letter": "N"
+ },
+ {
+  "title": "No Longer Human",
+  "author": "Osamu Dazai",
+  "isbn": "",
+  "year": null,
+  "letter": "N"
+ },
+ {
+  "title": "N or M?",
+  "author": "Agatha Christie",
+  "isbn": "9780007111459",
+  "year": null,
+  "letter": "N"
+ },
+ {
+  "title": "Normal People",
+  "author": "Sally Rooney",
+  "isbn": "9781984822178",
+  "year": "2024",
+  "letter": "N"
+ },
+ {
+  "title": "Northanger Abbey",
+  "author": "Jane Austen",
+  "isbn": "9781593082642",
+  "year": null,
+  "letter": "N"
+ },
+ {
+  "title": "North Woods",
+  "author": "Daniel Mason",
+  "isbn": "",
+  "year": "2024",
+  "letter": "N"
+ },
+ {
+  "title": "Norwegian Wood",
+  "author": "Haruki Murakami",
+  "isbn": "",
+  "year": null,
+  "letter": "N"
+ },
+ {
+  "title": "Nothing to Lose",
+  "author": "Lee Child",
+  "isbn": "9780385340564",
+  "year": null,
+  "letter": "N"
+ },
+ {
+  "title": "The Odyssey",
+  "author": "Homer",
+  "isbn": "9780143039952",
+  "year": null,
+  "letter": "O"
+ },
+ {
+  "title": "Of Mice and Men",
+  "author": "John Steinbeck",
+  "isbn": "9780142000670",
+  "year": "2025",
+  "letter": "O"
+ },
+ {
+  "title": "The Old Man and the Sea",
+  "author": "Ernest Hemingway",
+  "isbn": "9780684830490",
+  "year": null,
+  "letter": "O"
+ },
+ {
+  "title": "Oliver Twist",
+  "author": "Charles Dickens",
+  "isbn": "",
+  "year": null,
+  "letter": "O"
+ },
+ {
+  "title": "One Hundred Years of Solitude",
+  "author": "Gabriel García Márquez",
+  "isbn": "",
+  "year": null,
+  "letter": "O"
+ },
+ {
+  "title": "One Shot",
+  "author": "Lee Child",
+  "isbn": "9780440241027",
+  "year": null,
+  "letter": "O"
+ },
+ {
+  "title": "One, Two, Buckle My Shoe",
+  "author": "Agatha Christie",
+  "isbn": "9781572703858",
+  "year": null,
+  "letter": "O"
+ },
+ {
+  "title": "Onyx Storm",
+  "author": "Rebecca Yarros",
+  "isbn": "9781649374189",
+  "year": "2025",
+  "letter": "O"
+ },
+ {
+  "title": "Ordeal by Innocence",
+  "author": "Agatha Christie",
+  "isbn": "9780312981624",
+  "year": null,
+  "letter": "O"
+ },
+ {
+  "title": "The Outsider",
+  "author": "Stephen King",
+  "isbn": "9781501180989",
+  "year": null,
+  "letter": "O"
+ },
+ {
+  "title": "The Outsiders",
+  "author": "S.E. Hinton",
+  "isbn": "9780142407332",
+  "year": null,
+  "letter": "O"
+ },
+ {
+  "title": "The Overstory",
+  "author": "Richard Powers",
+  "isbn": "9780393356687",
+  "year": "2025",
+  "letter": "O"
+ },
+ {
+  "title": "Pachinko",
+  "author": "Min Jin Lee",
+  "isbn": "",
+  "year": null,
+  "letter": "P"
+ },
+ {
+  "title": "A Painted House",
+  "author": "John Grisham",
+  "isbn": "9780385337939",
+  "year": "2024",
+  "letter": "P"
+ },
+ {
+  "title": "The Pale Horse",
+  "author": "Agatha Christie",
+  "isbn": "9780312981716",
+  "year": null,
+  "letter": "P"
+ },
+ {
+  "title": "A Pale View of Hills",
+  "author": "Kazuo Ishiguro",
+  "isbn": "",
+  "year": null,
+  "letter": "P"
+ },
+ {
+  "title": "Paper Towns",
+  "author": "John Green",
+  "isbn": "9780142414934",
+  "year": null,
+  "letter": "P"
+ },
+ {
+  "title": "The Partner",
+  "author": "John Grisham",
+  "isbn": "9780385339100",
+  "year": "2024",
+  "letter": "P"
+ },
+ {
+  "title": "Partners in Crime",
+  "author": "Agatha Christie",
+  "isbn": "9780007111503",
+  "year": null,
+  "letter": "P"
+ },
+ {
+  "title": "Passenger to Frankfurt",
+  "author": "Agatha Christie",
+  "isbn": "9780007154920",
+  "year": null,
+  "letter": "P"
+ },
+ {
+  "title": "The Pearl",
+  "author": "John Steinbeck",
+  "isbn": "9780142000694",
+  "year": null,
+  "letter": "P"
+ },
+ {
+  "title": "The Pelican Brief",
+  "author": "John Grisham",
+  "isbn": "9780385339704",
+  "year": "2024",
+  "letter": "P"
+ },
+ {
+  "title": "The Penguin Book of Japanese Short Stories",
+  "author": "Jay Rubin",
+  "isbn": "9780141395623",
+  "year": null,
+  "letter": "P"
+ },
+ {
+  "title": "People We Meet on Vacation",
+  "author": "Emily Henry",
+  "isbn": "",
+  "year": "2025",
+  "letter": "P"
+ },
+ {
+  "title": "A Perfect Day to Be Alone",
+  "author": "Nanae Aoyama",
+  "isbn": "9781529427691",
+  "year": null,
+  "letter": "P"
+ },
+ {
+  "title": "Peril at End House",
+  "author": "Agatha Christie",
+  "isbn": "9780007119301",
+  "year": "2025",
+  "letter": "P"
+ },
+ {
+  "title": "Persuader",
+  "author": "Lee Child",
+  "isbn": "9780440241003",
+  "year": null,
+  "letter": "P"
+ },
+ {
+  "title": "Persuasion",
+  "author": "Jane Austen",
+  "isbn": "9780192802637",
+  "year": null,
+  "letter": "P"
+ },
+ {
+  "title": "Pet Sematary",
+  "author": "Stephen King",
+  "isbn": "",
+  "year": "2025",
+  "letter": "P"
+ },
+ {
+  "title": "The Picture of Dorian Gray",
+  "author": "Oscar Wilde",
+  "isbn": "9780141439570",
+  "year": null,
+  "letter": "P"
+ },
+ {
+  "title": "The Plague",
+  "author": "Albert Camus",
+  "isbn": "",
+  "year": null,
+  "letter": "P"
+ },
+ {
+  "title": "Playing for Pizza",
+  "author": "John Grisham",
+  "isbn": "9780385525008",
+  "year": "2024",
+  "letter": "P"
+ },
+ {
+  "title": "A Pocket Full of Rye",
+  "author": "Agatha Christie",
+  "isbn": "9780451199867",
+  "year": null,
+  "letter": "P"
+ },
+ {
+  "title": "Poirot Investigates",
+  "author": "Agatha Christie",
+  "isbn": "9781736062883",
+  "year": "2025",
+  "letter": "P"
+ },
+ {
+  "title": "The Postcard",
+  "author": "Anne Berest",
+  "isbn": "",
+  "year": "2025",
+  "letter": "P"
+ },
+ {
+  "title": "Postern of Fate",
+  "author": "Agatha Christie",
+  "isbn": "9780007111480",
+  "year": null,
+  "letter": "P"
+ },
+ {
+  "title": "Pride and Prejudice",
+  "author": "Jane Austen",
+  "isbn": "",
+  "year": null,
+  "letter": "P"
+ },
+ {
+  "title": "Project Hail Mary",
+  "author": "Andy Weir",
+  "isbn": "9780593135204",
+  "year": "2025",
+  "letter": "P"
+ },
+ {
+  "title": "Prophet Song",
+  "author": "Paul Lynch",
+  "isbn": "",
+  "year": "2025",
+  "letter": "P"
+ },
+ {
+  "title": "The Racketeer",
+  "author": "John Grisham",
+  "isbn": "9780385535144",
+  "year": "2024",
+  "letter": "R"
+ },
+ {
+  "title": "The Rainmaker",
+  "author": "John Grisham",
+  "isbn": "",
+  "year": "2024",
+  "letter": "R"
+ },
+ {
+  "title": "A Random Walk Down Wall Street",
+  "author": "Burton G. Malkiel",
+  "isbn": "9781324002185",
+  "year": "2024",
+  "letter": "R"
+ },
+ {
+  "title": "Rashomon",
+  "author": "Ryūnosuke Akutagawa",
+  "isbn": "",
+  "year": null,
+  "letter": "R"
+ },
+ {
+  "title": "Rashomon and Other Stories",
+  "author": "Ryūnosuke Akutagawa",
+  "isbn": "9780871401731",
+  "year": null,
+  "letter": "R"
+ },
+ {
+  "title": "The Reckoning",
+  "author": "John Grisham",
+  "isbn": "",
+  "year": null,
+  "letter": "R"
+ },
+ {
+  "title": "The Red Badge of Courage",
+  "author": "Stephen Crane",
+  "isbn": "9781580495868",
+  "year": null,
+  "letter": "R"
+ },
+ {
+  "title": "Red Sparrow",
+  "author": "Jason Matthews",
+  "isbn": "9781476706122",
+  "year": null,
+  "letter": "R"
+ },
+ {
+  "title": "The Remains of the Day",
+  "author": "Kazuo Ishiguro",
+  "isbn": "",
+  "year": null,
+  "letter": "R"
+ },
+ {
+  "title": "Remarkably Bright Creatures",
+  "author": "Shelby Van Pelt",
+  "isbn": "9780063204157",
+  "year": "2024",
+  "letter": "R"
+ },
+ {
+  "title": "Reminders of Him",
+  "author": "Colleen Hoover",
+  "isbn": "9781542025607",
+  "year": null,
+  "letter": "R"
+ },
+ {
+  "title": "The Return of Sherlock Holmes",
+  "author": "Arthur Conan Doyle",
+  "isbn": "9780192123176",
+  "year": null,
+  "letter": "R"
+ },
+ {
+  "title": "The Return of the King",
+  "author": "J.R.R. Tolkien",
+  "isbn": "",
+  "year": null,
+  "letter": "R"
+ },
+ {
+  "title": "The Richest Man in Babylon",
+  "author": "George S. Clason",
+  "isbn": "9789388118354",
+  "year": "2024",
+  "letter": "R"
+ },
+ {
+  "title": "Rob Roy",
+  "author": "Walter Scott",
+  "isbn": "9780140435542",
+  "year": null,
+  "letter": "R"
+ },
+ {
+  "title": "Rogue Lawyer",
+  "author": "John Grisham",
+  "isbn": "9780385539432",
+  "year": "2024",
+  "letter": "R"
+ },
+ {
+  "title": "A Room of One’s Own",
+  "author": "Virginia Woolf",
+  "isbn": "",
+  "year": null,
+  "letter": "R"
+ },
+ {
+  "title": "The Rooster Bar",
+  "author": "John Grisham",
+  "isbn": "9780385541176",
+  "year": "2024",
+  "letter": "R"
+ },
+ {
+  "title": "Rules of Civility",
+  "author": "Amor Towles",
+  "isbn": "",
+  "year": "2025",
+  "letter": "R"
+ },
+ {
+  "title": "The Runaway Jury",
+  "author": "John Grisham",
+  "isbn": "9780385339698",
+  "year": "2024",
+  "letter": "R"
+ },
+ {
+  "title": "Running Blind",
+  "author": "Lee Child",
+  "isbn": "9780515130973",
+  "year": null,
+  "letter": "R"
+ },
+ {
+  "title": "Sad Cypress",
+  "author": "Agatha Christie",
+  "isbn": "",
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "’Salem’s Lot",
+  "author": "Stephen King",
+  "isbn": "9780450031069",
+  "year": null,
+  "letter": "#"
+ },
+ {
+  "title": "Sanshirō",
+  "author": "Natsume Sōseki",
+  "isbn": "9781929280100",
+  "year": null,
+  "letter": "S"
  },
  {
   "title": "Sapiens",
   "author": "Yuval Noah Harari",
   "isbn": "",
-  "year": null
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "The Scarlet Letter",
+  "author": "Nathaniel Hawthorne",
+  "isbn": "9780142437261",
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "The Secret Adversary",
+  "author": "Agatha Christie",
+  "isbn": "9781600963940",
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "The Secret History",
+  "author": "Donna Tartt",
+  "isbn": "9781400031702",
+  "year": "2025",
+  "letter": "S"
+ },
+ {
+  "title": "The Secret of Chimneys",
+  "author": "Agatha Christie",
+  "isbn": "9780007122585",
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "Sense and Sensibility",
+  "author": "Jane Austen",
+  "isbn": "9780141439662",
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "The Seven Dials Mystery",
+  "author": "Agatha Christie",
+  "isbn": "9780007122592",
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "The Seven Husbands of Evelyn Hugo",
+  "author": "Taylor Jenkins Reid",
+  "isbn": "9781501139239",
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "The Shining",
+  "author": "Stephen King",
+  "isbn": "9780450040184",
+  "year": "2025",
+  "letter": "S"
+ },
+ {
+  "title": "Shoe Dog",
+  "author": "Phil Knight",
+  "isbn": "9781501135910",
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "Shōgun",
+  "author": "James Clavell",
+  "isbn": "9781982603847",
+  "year": "2025",
+  "letter": "S"
+ },
+ {
+  "title": "The Sign of Four",
+  "author": "Arthur Conan Doyle",
+  "isbn": "",
+  "year": "2025",
+  "letter": "S"
+ },
+ {
+  "title": "Silence",
+  "author": "Shusaku Endo",
+  "isbn": "",
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "The Silent Patient",
+  "author": "Alex Michaelides",
+  "isbn": "9781250301697",
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "Silent Spring",
+  "author": "Rachel Carson",
+  "isbn": "",
+  "year": "2025",
+  "letter": "S"
+ },
+ {
+  "title": "The Sittaford Mystery",
+  "author": "Agatha Christie",
+  "isbn": "9780007136841",
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "Skipping Christmas",
+  "author": "John Grisham",
+  "isbn": "9780099481683",
+  "year": "2024",
+  "letter": "S"
+ },
+ {
+  "title": "Slaughterhouse-Five",
+  "author": "Kurt Vonnegut Jr.",
+  "isbn": "",
+  "year": "2025",
+  "letter": "S"
+ },
+ {
+  "title": "Sleeping Murder",
+  "author": "Agatha Christie",
+  "isbn": "9780002317856",
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "Snow Country",
+  "author": "Yasunari Kawabata",
+  "isbn": "9780679761044",
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "The Snowman",
+  "author": "Jo Nesbø",
+  "isbn": "9780307595867",
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "Something Wicked This Way Comes",
+  "author": "Ray Bradbury",
+  "isbn": "9780380729401",
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "Song of Achilles",
+  "author": "Madeline Miller",
+  "isbn": "",
+  "year": "2024",
+  "letter": "S"
+ },
+ {
+  "title": "Song of Solomon",
+  "author": "Toni Morrison",
+  "isbn": "",
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "Sooley",
+  "author": "John Grisham",
+  "isbn": "9780385547680",
+  "year": "2024",
+  "letter": "S"
+ },
+ {
+  "title": "Source Code",
+  "author": "Bill Gates",
+  "isbn": "9780593801581",
+  "year": "2025",
+  "letter": "S"
+ },
+ {
+  "title": "South of the Border, West of the Sun",
+  "author": "Haruki Murakami",
+  "isbn": "9780099448570",
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "Sparkling Cyanide",
+  "author": "Agatha Christie",
+  "isbn": "9780007136858",
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "Sparring Partners",
+  "author": "John Grisham",
+  "isbn": "9780385549325",
+  "year": "2024",
+  "letter": "S"
+ },
+ {
+  "title": "Sputnik Sweetheart",
+  "author": "Haruki Murakami",
+  "isbn": "9780099448471",
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "The Stand",
+  "author": "Stephen King",
+  "isbn": "",
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "Station Eleven",
+  "author": "Emily St. John Mandel",
+  "isbn": "9780385353304",
+  "year": "2025",
+  "letter": "S"
+ },
+ {
+  "title": "Steve Jobs",
+  "author": "Walter Isaacson",
+  "isbn": "9781451648539",
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "Stoner",
+  "author": "John Williams",
+  "isbn": "9781590171998",
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "The Strange Case of Dr. Jekyll and Mr. Hyde",
+  "author": "Robert Louis Stevenson",
+  "isbn": "",
+  "year": "2025",
+  "letter": "S"
+ },
+ {
+  "title": "The Strange Library",
+  "author": "Haruki Murakami",
+  "isbn": "9780385354301",
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "The Stranger",
+  "author": "Albert Camus",
+  "isbn": "",
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "Strangers in Time",
+  "author": "David Baldacci",
+  "isbn": "9781538742051",
+  "year": "2025",
+  "letter": "S"
+ },
+ {
+  "title": "The Street Lawyer",
+  "author": "John Grisham",
+  "isbn": "9780385339094",
+  "year": "2024",
+  "letter": "S"
+ },
+ {
+  "title": "The Strength of the Few",
+  "author": "James Islington",
+  "isbn": "",
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "A Study in Scarlet",
+  "author": "Arthur Conan Doyle",
+  "isbn": "9781420925531",
+  "year": "2025",
+  "letter": "S"
+ },
+ {
+  "title": "The Subtle Art of Not Giving a F*ck",
+  "author": "Mark Manson",
+  "isbn": "9798804636129",
+  "year": "2024",
+  "letter": "S"
+ },
+ {
+  "title": "The Summons",
+  "author": "John Grisham",
+  "isbn": "9780385339599",
+  "year": "2024",
+  "letter": "S"
+ },
+ {
+  "title": "The Sun Also Rises",
+  "author": "Ernest Hemingway",
+  "isbn": "",
+  "year": null,
+  "letter": "S"
+ },
+ {
+  "title": "Sunrise on the Reaping",
+  "author": "Suzanne Collins",
+  "isbn": "9781546171461",
+  "year": "2025",
+  "letter": "S"
+ },
+ {
+  "title": "Sycamore Row",
+  "author": "John Grisham",
+  "isbn": "9780385537131",
+  "year": "2024",
+  "letter": "S"
+ },
+ {
+  "title": "The Sympathizer",
+  "author": "Viet Thanh Nguyen",
+  "isbn": "9780802123459",
+  "year": "2025",
+  "letter": "S"
+ },
+ {
+  "title": "A Table for Two",
+  "author": "Amor Towles",
+  "isbn": "9780593296370",
+  "year": "2025",
+  "letter": "T"
+ },
+ {
+  "title": "Tai-Pan",
+  "author": "James Clavell",
+  "isbn": "",
+  "year": "2025",
+  "letter": "T"
+ },
+ {
+  "title": "Taiwan Travelogue",
+  "author": "Yáng Shuāng-zǐ",
+  "isbn": "9781644453155",
+  "year": null,
+  "letter": "T"
+ },
+ {
+  "title": "Taken at the Flood",
+  "author": "Agatha Christie",
+  "isbn": "9780007121014",
+  "year": null,
+  "letter": "T"
+ },
+ {
+  "title": "A Tale for the Time Being",
+  "author": "Ruth Ozeki",
+  "isbn": "9780670026630",
+  "year": null,
+  "letter": "T"
+ },
+ {
+  "title": "A Tale of Two Cities",
+  "author": "Charles Dickens",
+  "isbn": "9780141439600",
+  "year": null,
+  "letter": "T"
+ },
+ {
+  "title": "The Teacher",
+  "author": "Freida McFadden",
+  "isbn": "9781728296210",
+  "year": "2025",
+  "letter": "T"
+ },
+ {
+  "title": "The Temple of the Golden Pavilion",
+  "author": "Yukio Mishima",
+  "isbn": "9780679433156",
+  "year": null,
+  "letter": "T"
+ },
+ {
+  "title": "The Testament",
+  "author": "John Grisham",
+  "isbn": "9780440234746",
+  "year": "2024",
+  "letter": "T"
+ },
+ {
+  "title": "The Testaments",
+  "author": "Margaret Atwood",
+  "isbn": "",
+  "year": "2024",
+  "letter": "T"
+ },
+ {
+  "title": "Theodore Boone: Kid Lawyer",
+  "author": "John Grisham",
+  "isbn": "9780142428696",
+  "year": "2024",
+  "letter": "T"
+ },
+ {
+  "title": "Theodore Boone: The Abduction",
+  "author": "John Grisham",
+  "isbn": "",
+  "year": "2024",
+  "letter": "T"
+ },
+ {
+  "title": "Theodore Boone: The Accused",
+  "author": "John Grisham",
+  "isbn": "9780525425762",
+  "year": "2024",
+  "letter": "T"
+ },
+ {
+  "title": "Theodore Boone: The Activist",
+  "author": "John Grisham",
+  "isbn": "9780525425779",
+  "year": "2024",
+  "letter": "T"
+ },
+ {
+  "title": "Theodore Boone: The Fugitive",
+  "author": "John Grisham",
+  "isbn": "9780525426387",
+  "year": "2024",
+  "letter": "T"
+ },
+ {
+  "title": "Theodore Boone: The Scandal",
+  "author": "John Grisham",
+  "isbn": "9780525426394",
+  "year": "2024",
+  "letter": "T"
+ },
+ {
+  "title": "Theo of Golden",
+  "author": "Allen Levi",
+  "isbn": "9781668236512",
+  "year": null,
+  "letter": "T"
+ },
+ {
+  "title": "They Came to Baghdad",
+  "author": "Agatha Christie",
+  "isbn": "9780007154937",
+  "year": null,
+  "letter": "T"
+ },
+ {
+  "title": "They Do It With Mirrors",
+  "author": "Agatha Christie",
+  "isbn": "9780451199904",
+  "year": null,
+  "letter": "T"
+ },
+ {
+  "title": "The Things We Leave Unfinished",
+  "author": "Rebecca Yarros",
+  "isbn": "9781682815663",
+  "year": null,
+  "letter": "T"
+ },
+ {
+  "title": "Third Girl",
+  "author": "Agatha Christie",
+  "isbn": "9780007121106",
+  "year": null,
+  "letter": "T"
+ },
+ {
+  "title": "Three Act Tragedy",
+  "author": "Agatha Christie",
+  "isbn": "9780425205976",
+  "year": "2025",
+  "letter": "T"
+ },
+ {
+  "title": "The Three-Body Problem",
+  "author": "Liu Cixin",
+  "isbn": "",
+  "year": "2024",
+  "letter": "T"
+ },
+ {
+  "title": "The Three Musketeers",
+  "author": "Alexandre Dumas",
+  "isbn": "",
+  "year": "2025",
+  "letter": "T"
+ },
+ {
+  "title": "A Time for Mercy",
+  "author": "John Grisham",
+  "isbn": "9780385545976",
+  "year": "2024",
+  "letter": "T"
+ },
+ {
+  "title": "A Time to Kill",
+  "author": "John Grisham",
+  "isbn": "",
+  "year": "2024",
+  "letter": "T"
+ },
+ {
+  "title": "To Kill a Mockingbird",
+  "author": "Harper Lee",
+  "isbn": "",
+  "year": null,
+  "letter": "T"
+ },
+ {
+  "title": "Tokyo Vice",
+  "author": "Jake Adelstein",
+  "isbn": "9780307378798",
+  "year": null,
+  "letter": "T"
+ },
+ {
+  "title": "Tom Lake",
+  "author": "Ann Patchett",
+  "isbn": "9780063327528",
+  "year": "2024",
+  "letter": "T"
+ },
+ {
+  "title": "Tomorrow, and Tomorrow, and Tomorrow",
+  "author": "Gabrielle Zevin",
+  "isbn": "9780735243347",
+  "year": "2024",
+  "letter": "T"
+ },
+ {
+  "title": "Towards Zero",
+  "author": "Agatha Christie",
+  "isbn": "",
+  "year": null,
+  "letter": "T"
+ },
+ {
+  "title": "Treasure Island",
+  "author": "Robert Louis Stevenson",
+  "isbn": "9780753453803",
+  "year": null,
+  "letter": "T"
+ },
+ {
+  "title": "A Tree Grows in Brooklyn",
+  "author": "Betty Smith",
+  "isbn": "9780061120077",
+  "year": "2024",
+  "letter": "T"
+ },
+ {
+  "title": "The Trial",
+  "author": "Franz Kafka",
+  "isbn": "",
+  "year": null,
+  "letter": "T"
+ },
+ {
+  "title": "Tripwire",
+  "author": "Lee Child",
+  "isbn": "9780515128635",
+  "year": null,
+  "letter": "T"
+ },
+ {
+  "title": "Trust",
+  "author": "Hernan Diaz",
+  "isbn": "",
+  "year": "2024",
+  "letter": "T"
+ },
+ {
+  "title": "The Truths We Hold",
+  "author": "Kamala Harris",
+  "isbn": "",
+  "year": null,
+  "letter": "T"
+ },
+ {
+  "title": "The Turn of the Screw",
+  "author": "Henry James",
+  "isbn": "9780140620610",
+  "year": null,
+  "letter": "T"
+ },
+ {
+  "title": "Turtles All the Way Down",
+  "author": "John Green",
+  "isbn": "9780525555360",
+  "year": null,
+  "letter": "T"
+ },
+ {
+  "title": "Twenty Thousand Leagues Under the Sea",
+  "author": "Jules Verne",
+  "isbn": "9780760728505",
+  "year": null,
+  "letter": "T"
+ },
+ {
+  "title": "The Two Towers",
+  "author": "J.R.R. Tolkien",
+  "isbn": "",
+  "year": null,
+  "letter": "T"
+ },
+ {
+  "title": "Ugly Love",
+  "author": "Colleen Hoover",
+  "isbn": "",
+  "year": null,
+  "letter": "U"
+ },
+ {
+  "title": "Uncle Tom’s Cabin",
+  "author": "Harriet Beecher Stowe",
+  "isbn": "",
+  "year": null,
+  "letter": "U"
+ },
+ {
+  "title": "The Unconsoled",
+  "author": "Kazuo Ishiguro",
+  "isbn": "9780571225392",
+  "year": null,
+  "letter": "U"
+ },
+ {
+  "title": "The Undercover Economist",
+  "author": "Tim Harford",
+  "isbn": "9780195189773",
+  "year": "2024",
+  "letter": "U"
+ },
+ {
+  "title": "Underground",
+  "author": "Haruki Murakami",
+  "isbn": "",
+  "year": null,
+  "letter": "U"
+ },
+ {
+  "title": "The Underground Railroad",
+  "author": "Colson Whitehead",
+  "isbn": "9780385542364",
+  "year": "2024",
+  "letter": "U"
+ },
+ {
+  "title": "Under the Dome",
+  "author": "Stephen King",
+  "isbn": "9781439148501",
+  "year": null,
+  "letter": "U"
+ },
+ {
+  "title": "Upheaval",
+  "author": "Jared Diamond",
+  "isbn": "",
+  "year": null,
+  "letter": "U"
+ },
+ {
+  "title": "The Vegetarian",
+  "author": "Han Kang",
+  "isbn": "9780553448184",
+  "year": "2025",
+  "letter": "V"
+ },
+ {
+  "title": "Verity",
+  "author": "Colleen Hoover",
+  "isbn": "",
+  "year": null,
+  "letter": "V"
+ },
+ {
+  "title": "The Wager",
+  "author": "David Grann",
+  "isbn": "9780385534260",
+  "year": "2025",
+  "letter": "W"
+ },
+ {
+  "title": "War and Peace",
+  "author": "Leo Tolstoy",
+  "isbn": "9780192833983",
+  "year": null,
+  "letter": "W"
+ },
+ {
+  "title": "Ward D",
+  "author": "Freida McFadden",
+  "isbn": "9781464233005",
+  "year": "2025",
+  "letter": "W"
+ },
+ {
+  "title": "War of the Worlds",
+  "author": "H.G. Wells",
+  "isbn": "9780375759239",
+  "year": "2024",
+  "letter": "W"
+ },
+ {
+  "title": "Washington Square",
+  "author": "Henry James",
+  "isbn": "9780451528711",
+  "year": null,
+  "letter": "W"
+ },
+ {
+  "title": "We Begin at the End",
+  "author": "Chris Whitaker",
+  "isbn": "9781250759665",
+  "year": null,
+  "letter": "W"
+ },
+ {
+  "title": "The Wedding People",
+  "author": "Alison Espach",
+  "isbn": "",
+  "year": "2025",
+  "letter": "W"
+ },
+ {
+  "title": "Welcome to Hyunam-Dong Bookshop",
+  "author": "Hwang Bo-Reum",
+  "isbn": "",
+  "year": "2024",
+  "letter": "W"
+ },
+ {
+  "title": "Welcome to the Hyunam-Dong Bookshop",
+  "author": "Hwang Bo-Reum",
+  "isbn": "",
+  "year": null,
+  "letter": "W"
+ },
+ {
+  "title": "Weyward",
+  "author": "Emilia Hart",
+  "isbn": "9781250842725",
+  "year": "2025",
+  "letter": "W"
+ },
+ {
+  "title": "What I Talk About When I Talk About Running",
+  "author": "Haruki Murakami",
+  "isbn": "",
+  "year": null,
+  "letter": "W"
+ },
+ {
+  "title": "What You Are Looking for Is in the Library",
+  "author": "Michiko Aoyama",
+  "isbn": "9781335005625",
+  "year": null,
+  "letter": "W"
+ },
+ {
+  "title": "When We Were Orphans",
+  "author": "Kazuo Ishiguro",
+  "isbn": "9780571225408",
+  "year": null,
+  "letter": "W"
+ },
+ {
+  "title": "Where the Crawdads Sing",
+  "author": "Delia Owens",
+  "isbn": "9780735219113",
+  "year": null,
+  "letter": "W"
+ },
+ {
+  "title": "The Whistler",
+  "author": "John Grisham",
+  "isbn": "9780385541206",
+  "year": "2024",
+  "letter": "W"
+ },
+ {
+  "title": "White Fang",
+  "author": "Jack London",
+  "isbn": "",
+  "year": null,
+  "letter": "W"
+ },
+ {
+  "title": "Who Moved My Cheese?",
+  "author": "Spencer Johnson",
+  "isbn": "9780091883768",
+  "year": null,
+  "letter": "W"
+ },
+ {
+  "title": "Why Didn't They Ask Evans?",
+  "author": "Agatha Christie",
+  "isbn": "9780312981594",
+  "year": null,
+  "letter": "W"
+ },
+ {
+  "title": "Wicked",
+  "author": "Gregory Maguire",
+  "isbn": "",
+  "year": "2025",
+  "letter": "W"
+ },
+ {
+  "title": "The Widow",
+  "author": "John Grisham",
+  "isbn": "9780385548984",
+  "year": null,
+  "letter": "W"
+ },
+ {
+  "title": "A Wild Sheep Chase",
+  "author": "Haruki Murakami",
+  "isbn": "9780375718946",
+  "year": null,
+  "letter": "W"
+ },
+ {
+  "title": "Will Grayson, Will Grayson",
+  "author": "John Green",
+  "isbn": "9780525421580",
+  "year": null,
+  "letter": "W"
+ },
+ {
+  "title": "The Will of the Many",
+  "author": "James Islington",
+  "isbn": "9781982141196",
+  "year": "2025",
+  "letter": "W"
+ },
+ {
+  "title": "Wind/Pinball: Two Novels",
+  "author": "Haruki Murakami",
+  "isbn": "9780385352123",
+  "year": null,
+  "letter": "W"
+ },
+ {
+  "title": "The Wind-Up Bird Chronicle",
+  "author": "Haruki Murakami",
+  "isbn": "9780965341981",
+  "year": null,
+  "letter": "W"
+ },
+ {
+  "title": "Winesburg, Ohio",
+  "author": "Sherwood Anderson",
+  "isbn": "9780192839770",
+  "year": null,
+  "letter": "W"
+ },
+ {
+  "title": "Without Fail",
+  "author": "Lee Child",
+  "isbn": "9781590860625",
+  "year": null,
+  "letter": "W"
+ },
+ {
+  "title": "The Woman in Cabin 10",
+  "author": "Ruth Ware",
+  "isbn": "9781668221877",
+  "year": null,
+  "letter": "W"
+ },
+ {
+  "title": "The Woman in Me",
+  "author": "Britney Spears",
+  "isbn": "",
+  "year": "2024",
+  "letter": "W"
+ },
+ {
+  "title": "The Women",
+  "author": "Kristin Hannah",
+  "isbn": "9781250178633",
+  "year": "2024",
+  "letter": "W"
+ },
+ {
+  "title": "Wuthering Heights",
+  "author": "Emily Brontë",
+  "isbn": "9780141439556",
+  "year": null,
+  "letter": "W"
+ },
+ {
+  "title": "Yellowface",
+  "author": "R.F. Kuang",
+  "isbn": "",
+  "year": null,
+  "letter": "Y"
+ },
+ {
+  "title": "Yesteryear",
+  "author": "Caro Claire Burke",
+  "isbn": "",
+  "year": null,
+  "letter": "Y"
+ },
+ {
+  "title": "You Like It Darker",
+  "author": "Stephen King",
+  "isbn": "9781668037713",
+  "year": "2024",
+  "letter": "Y"
+ },
+ {
+  "title": "そして、バトンは渡された",
+  "author": "Maiko Seo",
+  "isbn": "9784163907956",
+  "year": null,
+  "letter": "#"
+ },
+ {
+  "title": "われら闇より天を見る",
+  "author": "Chris Whitaker",
+  "isbn": "",
+  "year": null,
+  "letter": "#"
  },
  {
   "title": "アマテラスの暗号",
   "author": "伊勢谷 武",
   "isbn": "",
-  "year": "2025"
- },
- {
-  "title": "君たちはどう生きるか",
-  "author": "吉野 源三郎",
-  "isbn": "9784003315811",
-  "year": null
+  "year": "2025",
+  "letter": "#"
  },
  {
   "title": "ラブカは静かに弓を持つ",
   "author": "安壇美緒",
   "isbn": "9784087717846",
-  "year": null
+  "year": null,
+  "letter": "#"
  },
  {
-  "title": "君のクイズ",
-  "author": "小川 哲",
-  "isbn": "9784022518378",
-  "year": null
+  "title": "リボルバー",
+  "author": "Maha Harada",
+  "isbn": "",
+  "year": null,
+  "letter": "#"
+ },
+ {
+  "title": "三十の反撃",
+  "author": "Sohn Won-Pyung",
+  "isbn": "",
+  "year": null,
+  "letter": "#"
  },
  {
   "title": "俺たちの箱根駅伝",
   "author": "池井戸潤",
   "isbn": "",
-  "year": "2024"
+  "year": "2024",
+  "letter": "#"
+ },
+ {
+  "title": "俺たちの箱根駅伝 上",
+  "author": "Jun Ikeido",
+  "isbn": "9784163917726",
+  "year": null,
+  "letter": "#"
+ },
+ {
+  "title": "俺たちの箱根駅伝 下",
+  "author": "Jun Ikeido",
+  "isbn": "9784163917733",
+  "year": null,
+  "letter": "#"
+ },
+ {
+  "title": "光のとこにいてね",
+  "author": "Michi Ichiho",
+  "isbn": "",
+  "year": null,
+  "letter": "#"
+ },
+ {
+  "title": "十戒",
+  "author": "Haruo Yugi",
+  "isbn": "",
+  "year": null,
+  "letter": "#"
+ },
+ {
+  "title": "十誡",
+  "author": "Haruo Yuki",
+  "isbn": "9786267609422",
+  "year": null,
+  "letter": "#"
+ },
+ {
+  "title": "同志少女よ、敵を撃て",
+  "author": "Touma Aisaka",
+  "isbn": "9784152100641",
+  "year": null,
+  "letter": "#"
+ },
+ {
+  "title": "君たちはどう生きるか",
+  "author": "吉野 源三郎",
+  "isbn": "9784003315811",
+  "year": null,
+  "letter": "#"
+ },
+ {
+  "title": "君のクイズ",
+  "author": "小川 哲",
+  "isbn": "9784022518378",
+  "year": null,
+  "letter": "#"
+ },
+ {
+  "title": "君の膵臓をたべたい",
+  "author": "Yoru Sumino",
+  "isbn": "",
+  "year": null,
+  "letter": "#"
+ },
+ {
+  "title": "成瀬は天下を取りにいく",
+  "author": "Mina Miyajima",
+  "isbn": "9784103549512",
+  "year": "2024",
+  "letter": "#"
+ },
+ {
+  "title": "方舟",
+  "author": "Haruo Yugi",
+  "isbn": "",
+  "year": null,
+  "letter": "#"
+ },
+ {
+  "title": "正欲",
+  "author": "Ryo Asai",
+  "isbn": "",
+  "year": null,
+  "letter": "#"
+ },
+ {
+  "title": "水車小屋のネネ",
+  "author": "Kikuko Tsumura",
+  "isbn": "9784620108629",
+  "year": "2024",
+  "letter": "#"
+ },
+ {
+  "title": "永遠の0",
+  "author": "Naoki Hyakuta",
+  "isbn": "9784062764131",
+  "year": null,
+  "letter": "#"
+ },
+ {
+  "title": "汝、星のごとく",
+  "author": "Yuu Nagira",
+  "isbn": "",
+  "year": null,
+  "letter": "#"
  }
 ]

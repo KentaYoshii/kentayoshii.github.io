@@ -55,67 +55,140 @@ function initCollectionPage() {
   var page = document.querySelector('[data-collection]');
   if (!page) return;
 
-  var yearBlocks = Array.prototype.slice.call(page.querySelectorAll('.year-block'));
+  var container = page.querySelector('[data-items]');
+  if (!container) return;
+
+  var kind = page.getAttribute('data-collection');
+  var items = Array.prototype.slice.call(container.querySelectorAll('li'));
   var searchInput = page.querySelector('.search-input');
   var statsEl = page.querySelector('.stats-summary');
+  var select = page.querySelector('.group-select');
 
-  yearBlocks.forEach(function (block) {
-    var countEl = block.querySelector('.year-count');
-    if (countEl) {
-      countEl.textContent = block.querySelectorAll('li').length;
+  var GROUP_NOUN = { author: 'authors', letter: 'letters', year: 'years' };
+  var STORAGE_KEY = 'groupBy:' + kind;
+  var sections = [];
+  var mode = 'none';
+
+  function groupNameFor(li) {
+    if (mode === 'author') return li.getAttribute('data-author') || 'Unknown';
+    if (mode === 'letter') return li.getAttribute('data-letter') || '#';
+    if (mode === 'year') return li.getAttribute('data-year') || 'Undated';
+    return null;
+  }
+
+  // A null name renders a section with no heading, which is how the ungrouped
+  // view keeps the same .year-block styling (multi-column list) as the
+  // grouped ones.
+  function buildSection(name, lis) {
+    var section = document.createElement('section');
+    section.className = 'year-block';
+
+    if (name !== null) {
+      var heading = document.createElement('h1');
+      heading.className = 'year-heading';
+      heading.appendChild(document.createTextNode(name + ' '));
+      var count = document.createElement('span');
+      count.className = 'year-count';
+      count.textContent = lis.length;
+      heading.appendChild(count);
+      section.appendChild(heading);
     }
-  });
 
-  function allItems() {
-    return Array.prototype.slice.call(page.querySelectorAll('.year-block li'));
+    var ul = document.createElement('ul');
+    lis.forEach(function (li) { ul.appendChild(li); });
+    section.appendChild(ul);
+    return section;
+  }
+
+  function render() {
+    // The <li> nodes are moved, never rebuilt, so cover images already loaded
+    // (and their IntersectionObservers) survive a regroup.
+    container.textContent = '';
+    sections = [];
+
+    if (mode === 'none') {
+      sections.push(buildSection(null, items));
+    } else {
+      var groups = Object.create(null);
+      var names = [];
+      items.forEach(function (li) {
+        var name = groupNameFor(li);
+        if (!groups[name]) { groups[name] = []; names.push(name); }
+        groups[name].push(li);
+      });
+      // Years read most-recent-first; everything else alphabetically.
+      names.sort(function (a, b) {
+        return mode === 'year' ? b.localeCompare(a) : a.localeCompare(b);
+      });
+      names.forEach(function (name) {
+        sections.push(buildSection(name, groups[name]));
+      });
+    }
+
+    sections.forEach(function (s) { container.appendChild(s); });
   }
 
   function renderStats(visibleCount, totalCount) {
     if (!statsEl) return;
-    if (visibleCount === totalCount) {
-      var groupPlural = page.getAttribute('data-group-label') || 'logs';
-      var groupSingular = groupPlural.replace(/s$/, '');
-      statsEl.textContent = totalCount + (totalCount === 1 ? ' entry' : ' entries') +
-        ' across ' + yearBlocks.length + ' ' + (yearBlocks.length === 1 ? groupSingular : groupPlural);
-    } else {
+    if (visibleCount !== totalCount) {
       statsEl.textContent = 'Showing ' + visibleCount + ' of ' + totalCount + ' entries';
+      return;
     }
+    var text = totalCount + (totalCount === 1 ? ' entry' : ' entries');
+    var noun = GROUP_NOUN[mode];
+    if (noun) {
+      text += ' across ' + sections.length + ' ' +
+        (sections.length === 1 ? noun.replace(/s$/, '') : noun);
+    }
+    statsEl.textContent = text;
   }
 
   function applyFilter(query) {
-    var items = allItems();
-    var visible = 0;
     var q = foldForSearch(query.trim());
+    var visible = 0;
 
     items.forEach(function (li) {
-      // On the Books page the author is only in data-author (the visible row
-      // is just the title, since the author is the section heading), so it
-      // has to be searched explicitly.
-      var haystack = foldForSearch(li.textContent + ' ' + (li.getAttribute('data-author') || ''));
+      // Match against the data attributes rather than the rendered row: the
+      // author is not shown when grouping by author, and the visible text
+      // carries a trailing date label.
+      var haystack = foldForSearch(
+        (li.getAttribute('data-title') || '') + ' ' +
+        (li.getAttribute('data-author') || '') + ' ' +
+        (li.getAttribute('data-year') || '')
+      );
       var match = !q || haystack.indexOf(q) !== -1;
       li.style.display = match ? '' : 'none';
       if (match) visible++;
     });
 
-    yearBlocks.forEach(function (block) {
-      var headers = Array.prototype.slice.call(block.querySelectorAll('h2'));
-      headers.forEach(function (heading) {
-        var list = heading.nextElementSibling;
-        if (!list) return;
-        var anyVisible = Array.prototype.slice.call(list.querySelectorAll('li')).some(function (li) {
-          return li.style.display !== 'none';
-        });
-        heading.style.display = anyVisible ? '' : 'none';
-        list.style.display = anyVisible ? '' : 'none';
-      });
-
-      var blockVisible = Array.prototype.slice.call(block.querySelectorAll('li')).some(function (li) {
-        return li.style.display !== 'none';
-      });
-      block.style.display = blockVisible ? '' : 'none';
+    sections.forEach(function (section) {
+      var anyVisible = Array.prototype.slice.call(section.querySelectorAll('li'))
+        .some(function (li) { return li.style.display !== 'none'; });
+      section.style.display = anyVisible ? '' : 'none';
     });
 
     renderStats(visible, items.length);
+  }
+
+  function setMode(next, persist) {
+    mode = next;
+    if (persist) {
+      try { localStorage.setItem(STORAGE_KEY, next); } catch (e) {}
+    }
+    render();
+    applyFilter(searchInput ? searchInput.value : '');
+  }
+
+  var saved = null;
+  try { saved = localStorage.getItem(STORAGE_KEY); } catch (e) {}
+  if (saved && select && select.querySelector('option[value="' + saved + '"]')) {
+    select.value = saved;
+  }
+
+  if (select) {
+    select.addEventListener('change', function () {
+      setMode(select.value, true);
+    });
   }
 
   if (searchInput) {
@@ -124,7 +197,7 @@ function initCollectionPage() {
     });
   }
 
-  applyFilter('');
+  setMode(select ? select.value : 'none', false);
 }
 
 // Fetches the Books/Movies pages and counts their entries to populate the
@@ -205,7 +278,7 @@ function initCoverArt() {
   var kind = page.getAttribute('data-collection');
   if (kind !== 'books' && kind !== 'movies') return;
 
-  var items = Array.prototype.slice.call(page.querySelectorAll('.year-block li'));
+  var items = Array.prototype.slice.call(page.querySelectorAll('[data-items] li'));
   items.forEach(function (li) {
     var info = kind === 'books' ? parseBookEntry(li) : parseMovieEntry(li);
     if (!info || !info.title) return;
@@ -238,14 +311,11 @@ function initCoverArt() {
 }
 
 function parseBookEntry(li) {
-  var em = li.querySelector('em');
-  if (!em) return null;
+  // Read the data attributes rather than the rendered row: the visible text
+  // also carries a trailing "· 2025" date label.
+  var title = (li.getAttribute('data-title') || '').trim();
+  if (!title) return null;
 
-  var title = em.textContent.trim();
-
-  // The author and ISBN are emitted as data attributes by books.markdown,
-  // since the visible row only shows the title (the author is the section
-  // heading).
   var author = li.getAttribute('data-author') || '';
   var isbn = li.getAttribute('data-isbn') || '';
 
@@ -258,7 +328,8 @@ function parseBookEntry(li) {
 }
 
 function parseMovieEntry(li) {
-  var raw = li.textContent.trim();
+  var raw = (li.getAttribute('data-title') || '').trim();
+  if (!raw) return null;
   var isSeries = /\(\s*tv series\s*\)/i.test(raw) || /\bseason\s+\d+\b/i.test(raw);
   var cleaned = raw
     .replace(/\(\s*tv series\s*\)/ig, '')
