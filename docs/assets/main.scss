@@ -1,0 +1,115 @@
+---
+---
+
+@charset "utf-8";
+
+// Warm, cozy reading-nook palette
+$base-font-family: "Lora", Georgia, "Times New Roman", serif;
+$base-font-size: 18px;
+$base-line-height: 1.6;
+
+$text-color: #3e2f24;
+$background-color: #faf3e6;
+$brand-color: #a8632c;
+
+$link-base-color: $brand-color;
+$link-visited-color: #8a4e21;
+$link-hover-color: #6f3d18;
+
+$grey-color: #8a7867;
+$grey-color-light: #e9dfd0;
+$grey-color-dark: #5b4a3a;
+
+$table-text-align: left;
+$content-width: 780px;
+$spacing-unit: 30px;
+
+@import "minima";
+
+// ---- Custom cozy touches on top of minima ----
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Merriweather", "Lora", Georgia, serif;
+  font-weight: 700;
+  color: #2c2016;
+}
+
+.site-header {
+  border-top: 6px solid $brand-color;
+  border-bottom: 1px solid $grey-color-light;
+  background-color: #f3e8d5;
+}
+
+.site-title,
+.site-title:visited {
+  color: #2c2016 !important;
+  font-family: "Merriweather", Georgia, serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .page-link {
+  color: $text-color;
+  font-weight: 500;
+}
+
+.site-nav .page-link:hover {
+  color: $brand-color;
+}
+
+.site-footer {
+  background-color: #f3e8d5;
+  border-top: 1px solid $grey-color-light;
+}
+
+.post-list > li,
+.home .post-list-heading {
+  border-bottom: 1px dashed $grey-color-light;
+  padding-bottom: $spacing-unit * 0.5;
+}
+
+.post-list > li:last-child {
+  border-bottom: none;
+}
+
+.post-link {
+  font-family: "Merriweather", Georgia, serif;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(168, 99, 44, 0.35);
+}
+
+a:hover {
+  border-bottom-color: $link-hover-color;
+}
+
+.page-content {
+  background-color: $background-color;
+}
+
+blockquote {
+  border-left: 4px solid $brand-color;
+  color: $grey-color-dark;
+  font-style: italic;
+}
+
+code, pre {
+  background-color: #f0e6d6;
+  border-radius: 4px;
+}
+
+.vim-tips h2 {
+  margin-top: $spacing-unit * 1.5;
+  border-bottom: 2px solid $grey-color-light;
+  padding-bottom: 6px;
+}
+
+.vim-tips code {
+  padding: 0.1em 0.35em;
+}
+
+.vim-tips ul {
+  line-height: 1.7;
+}
