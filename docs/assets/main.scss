@@ -467,6 +467,20 @@ body,
   }
 }
 
+// On mobile the toggle lives inside minima's collapsible nav panel, where
+// ".site-nav .page-link" would otherwise force display:block and padding
+// onto it (stretching the circle into a misaligned oblong). Reset those and
+// right-align it to match the stacked nav links.
+@media screen and (max-width: $on-palm) {
+  .site-nav .theme-toggle {
+    display: block;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    margin: 6px 10px 0 auto;
+  }
+}
+
 [data-theme="dark"] {
   $dark-bg: #1c1712;
   $dark-surface: #241d16;
@@ -515,6 +529,22 @@ body,
 
   .site-nav .page-link:hover {
     color: $dark-brand;
+  }
+
+  // The hamburger glyph is a dark brown in the light theme, which nearly
+  // disappears against the dark header.
+  .site-nav .menu-icon > svg {
+    fill: $dark-text;
+  }
+
+  // On mobile minima renders the nav as a dropdown panel with its own
+  // background/border, hardcoded to the light theme — without this the open
+  // menu is a cream panel showing near-invisible light-on-light text.
+  @media screen and (max-width: $on-palm) {
+    .site-nav {
+      background-color: $dark-surface;
+      border-color: $dark-border;
+    }
   }
 
   .site-footer {
