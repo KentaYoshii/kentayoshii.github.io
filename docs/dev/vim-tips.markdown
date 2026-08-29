@@ -1,8 +1,10 @@
 ---
 layout: page
 title: Vim Tips
-permalink: /vim-tips/
+permalink: /dev/vim-tips/
 ---
+
+<p class="breadcrumb"><a href="{{ '/dev/' | relative_url }}">Dev Notes</a> / Vim Tips</p>
 
 <div class="vim-tips" markdown="1">
 

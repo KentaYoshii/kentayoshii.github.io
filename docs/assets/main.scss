@@ -100,6 +100,16 @@ code, pre {
   border-radius: 4px;
 }
 
+.breadcrumb {
+  font-size: 14px;
+  color: $grey-color-dark;
+  margin-bottom: $spacing-unit * 0.5;
+
+  a {
+    border-bottom: 1px solid rgba(168, 99, 44, 0.35);
+  }
+}
+
 .vim-tips h2 {
   margin-top: $spacing-unit * 1.5;
   border-bottom: 2px solid $grey-color-light;

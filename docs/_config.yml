@@ -20,7 +20,7 @@
 
 title: Kenta's Log
 email: kentayoshii1220@gmail.com
-description: A running log of books I've read, movies/shows I've watched, and Vim tips I don't want to forget.
+description: A running log of books I've read, movies/shows I've watched, and dev notes I don't want to forget.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kentayoshii.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -33,7 +33,7 @@ plugins:
 header_pages:
   - books.markdown
   - movies.markdown
-  - vim-tips.markdown
+  - dev.markdown
   - about.markdown
 
 # Exclude from processing.

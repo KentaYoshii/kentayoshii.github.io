@@ -6,7 +6,7 @@ layout: page
 
 <section class="hero" data-home-stats>
   <p class="hero-eyebrow">Kenta's Log</p>
-  <h1 class="hero-title">Books, movies, and Vim tricks I don't want to forget.</h1>
+  <h1 class="hero-title">Books, movies, and dev notes I don't want to forget.</h1>
   <p class="hero-subtitle">A running log I keep for myself — updated whenever I finish something worth remembering.</p>
 
   <div class="stats-strip">
@@ -34,11 +34,11 @@ layout: page
     <p>Movies and shows I've watched, organized by year and searchable.</p>
     <span class="link-card-cta">Browse movies →</span>
   </a>
-  <a class="link-card" href="{{ '/vim-tips/' | relative_url }}">
-    <span class="link-card-icon" aria-hidden="true">⌨️</span>
-    <h2>Vim Tips</h2>
-    <p>A personal cheat sheet of Vim tricks worth remembering.</p>
-    <span class="link-card-cta">See tips →</span>
+  <a class="link-card" href="{{ '/dev/' | relative_url }}">
+    <span class="link-card-icon" aria-hidden="true">🛠️</span>
+    <h2>Dev Notes</h2>
+    <p>Programming notes and cheat sheets, starting with Vim tips.</p>
+    <span class="link-card-cta">Browse dev notes →</span>
   </a>
 </div>
 
