@@ -361,6 +361,12 @@ code, pre {
   min-width: 0;
 }
 
+.entry-date {
+  color: $grey-color-dark;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
 // Break out of minima's narrow $content-width wrapper for pages that
 // benefit from more breathing room (home, books, movies). Other pages
 // (About, Vim Tips) keep the narrower prose-friendly width.
@@ -549,7 +555,8 @@ body,
   .stats-summary,
   .stat-label,
   .link-card p,
-  .breadcrumb {
+  .breadcrumb,
+  .entry-date {
     color: $dark-muted;
   }
 

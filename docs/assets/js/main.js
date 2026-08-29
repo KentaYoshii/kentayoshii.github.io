@@ -1,10 +1,83 @@
 document.addEventListener('DOMContentLoaded', function () {
   initThemeToggle();
+  regroupBooksByAuthor();
   initCollectionPage();
   initCoverArt();
   initHomeStats();
   initVimTipsToc();
 });
+
+// Restructures the Books page from year/month sections (as authored in the
+// Jekyll posts) into author-grouped sections, with a small "read in <year>"
+// label appended to each title. Runs before initCollectionPage/initCoverArt
+// so the rest of the page — search, stats, cover art, bullets — all operate
+// on the new grouping without any changes, since they just look for
+// ".year-block" sections generically.
+function regroupBooksByAuthor() {
+  var page = document.querySelector('[data-collection="books"]');
+  if (!page) return;
+
+  var oldBlocks = Array.prototype.slice.call(page.querySelectorAll('.year-block'));
+  if (!oldBlocks.length) return;
+
+  var byAuthor = {};
+
+  oldBlocks.forEach(function (block) {
+    var year = block.getAttribute('data-year');
+    var undated = block.getAttribute('data-undated') === 'true';
+    var items = Array.prototype.slice.call(block.querySelectorAll('li'));
+
+    items.forEach(function (li) {
+      var info = parseBookEntry(li);
+      if (!info || !info.author) return;
+
+      var em = li.querySelector('em');
+      var rawTitle = em ? em.textContent.trim() : info.title;
+
+      if (!byAuthor[info.author]) byAuthor[info.author] = [];
+      byAuthor[info.author].push({ li: li, year: undated ? null : year, title: rawTitle });
+    });
+  });
+
+  var authors = Object.keys(byAuthor).sort(function (a, b) {
+    return a.localeCompare(b);
+  });
+  if (!authors.length) return;
+
+  var container = oldBlocks[0].parentNode;
+  oldBlocks.forEach(function (block) { block.remove(); });
+
+  authors.forEach(function (author) {
+    var section = document.createElement('section');
+    section.className = 'year-block';
+
+    var heading = document.createElement('h1');
+    heading.className = 'year-heading';
+    heading.appendChild(document.createTextNode(author + ' '));
+    var countSpan = document.createElement('span');
+    countSpan.className = 'year-count';
+    heading.appendChild(countSpan);
+    section.appendChild(heading);
+
+    var ul = document.createElement('ul');
+    var books = byAuthor[author].sort(function (a, b) {
+      return a.title.localeCompare(b.title);
+    });
+
+    books.forEach(function (entry) {
+      if (entry.year) {
+        var dateSpan = document.createElement('span');
+        dateSpan.className = 'entry-date';
+        dateSpan.textContent = ' · ' + entry.year;
+        entry.li.appendChild(dateSpan);
+      }
+      ul.appendChild(entry.li);
+    });
+
+    section.appendChild(ul);
+    container.appendChild(section);
+  });
+}
 
 // Inserts a light/dark mode toggle into the site nav. The initial theme is
 // already applied synchronously by an inline script in custom-head.html
@@ -64,8 +137,10 @@ function initCollectionPage() {
   function renderStats(visibleCount, totalCount) {
     if (!statsEl) return;
     if (visibleCount === totalCount) {
+      var groupPlural = page.getAttribute('data-group-label') || 'logs';
+      var groupSingular = groupPlural.replace(/s$/, '');
       statsEl.textContent = totalCount + (totalCount === 1 ? ' entry' : ' entries') +
-        ' across ' + yearBlocks.length + (yearBlocks.length === 1 ? ' log' : ' logs');
+        ' across ' + yearBlocks.length + ' ' + (yearBlocks.length === 1 ? groupSingular : groupPlural);
     } else {
       statsEl.textContent = 'Showing ' + visibleCount + ' of ' + totalCount + ' entries';
     }
@@ -226,8 +301,14 @@ function parseBookEntry(li) {
   var em = li.querySelector('em');
   if (!em) return null;
 
+  // Ignore the "· <year>" label regroupBooksByAuthor appends, if present,
+  // so it's never mistaken for part of the author's name.
+  var dateEl = li.querySelector('.entry-date');
+  var fullText = dateEl
+    ? li.textContent.slice(0, li.textContent.length - dateEl.textContent.length)
+    : li.textContent;
+
   var title = em.textContent.trim();
-  var fullText = li.textContent;
   var afterTitle = fullText.slice(fullText.indexOf(title) + title.length);
   var author = afterTitle.replace(/^[\s—-]*by\s+/i, '').trim();
 

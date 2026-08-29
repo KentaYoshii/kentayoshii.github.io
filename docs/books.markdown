@@ -5,16 +5,16 @@ permalink: /books/
 ---
 
 <div class="wide-section"><div class="wide-inner">
-<div class="collection-page" data-collection="books">
+<div class="collection-page" data-collection="books" data-group-label="authors">
   <div class="collection-header">
-    <p class="collection-tagline">Everything I've read, newest first.</p>
+    <p class="collection-tagline">Everything I've read, grouped by author.</p>
     <input type="text" class="search-input" placeholder="Search titles or authors…" aria-label="Search books">
     <p class="stats-summary" aria-live="polite"></p>
   </div>
 
   {%- assign sorted_posts = site.categories.books | sort: 'date' | reverse -%}
   {%- for post in sorted_posts -%}
-  <section class="year-block">
+  <section class="year-block" data-year="{{ post.date | date: '%Y' }}"{% if post.undated %} data-undated="true"{% endif %}>
     <h1 class="year-heading">{{ post.title }} <span class="year-count"></span></h1>
     {{ post.content }}
   </section>

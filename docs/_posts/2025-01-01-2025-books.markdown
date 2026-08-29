@@ -92,7 +92,7 @@ categories: books
 - _Land of Milk and Honey_ by C Pam Zhang
 - _The Brave New World_ by Aldous Huxley
 - _The Magic Mountain_ by Thomas Mann
-- _Almond_ by Sohn Won-Pyung
+- _Almond_ by Sohn Won-pyung
 - _Die Trying_ by Lee Child
 - _The Shining_ by Stephen King
 - _The Lincoln Highway_ by Amor Towles
