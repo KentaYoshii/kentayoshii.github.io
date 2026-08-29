@@ -46,15 +46,22 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Merriweather", Georgia, serif;
   font-weight: 700;
   letter-spacing: 0.02em;
+  border-bottom: none;
+}
+
+.site-title:hover {
+  border-bottom: none;
 }
 
 .site-nav .page-link {
   color: $text-color;
   font-weight: 500;
+  border-bottom: none;
 }
 
 .site-nav .page-link:hover {
   color: $brand-color;
+  border-bottom: none;
 }
 
 .site-footer {
