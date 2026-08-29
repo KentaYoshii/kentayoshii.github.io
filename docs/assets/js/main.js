@@ -210,9 +210,13 @@ function initCoverArt() {
       textSpan.appendChild(li.firstChild);
     }
 
-    li.appendChild(wrap);
-    li.appendChild(textSpan);
-    li.classList.add('has-cover-slot');
+    // Flex layout goes on this inner row, not the <li> itself — setting
+    // display:flex directly on an <li> suppresses its bullet marker.
+    var row = document.createElement('span');
+    row.className = 'entry-row';
+    row.appendChild(wrap);
+    row.appendChild(textSpan);
+    li.appendChild(row);
 
     observeForCover(li, wrap, kind, info);
   });
