@@ -1,8 +1,44 @@
 document.addEventListener('DOMContentLoaded', function () {
+  initThemeToggle();
   initCollectionPage();
   initHomeStats();
   initVimTipsToc();
 });
+
+// Inserts a light/dark mode toggle into the site nav. The initial theme is
+// already applied synchronously by an inline script in custom-head.html
+// (to avoid a flash of the wrong theme); this just wires up the button.
+function initThemeToggle() {
+  var nav = document.querySelector('.site-nav .trigger') || document.querySelector('.site-nav');
+  if (!nav) return;
+
+  var button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'theme-toggle page-link';
+  button.setAttribute('aria-label', 'Toggle dark mode');
+
+  function isDark() {
+    return document.documentElement.getAttribute('data-theme') === 'dark';
+  }
+
+  function render() {
+    button.textContent = isDark() ? '☀️' : '🌙';
+  }
+
+  button.addEventListener('click', function () {
+    var next = isDark() ? 'light' : 'dark';
+    if (next === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+    }
+    try { localStorage.setItem('theme', next); } catch (e) {}
+    render();
+  });
+
+  render();
+  nav.appendChild(button);
+}
 
 // Live search/filter + running stats on the Books/Movies pages.
 function initCollectionPage() {

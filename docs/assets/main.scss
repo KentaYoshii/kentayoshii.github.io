@@ -382,3 +382,166 @@ code, pre {
     border-bottom: none;
   }
 }
+
+// ---- Dark mode ----
+
+body,
+.site-header,
+.site-footer,
+.page-content,
+.link-card,
+.stat-pill,
+.toc,
+.search-input {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.theme-toggle {
+  background: none;
+  border: 1px solid $grey-color-light;
+  border-radius: 999px;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  color: $text-color;
+  vertical-align: middle;
+
+  &:hover {
+    border-color: $brand-color;
+  }
+}
+
+[data-theme="dark"] {
+  $dark-bg: #1c1712;
+  $dark-surface: #241d16;
+  $dark-text: #ece2d0;
+  $dark-brand: #e2a85f;
+  $dark-border: #3c3122;
+  $dark-muted: #bfae94;
+
+  body {
+    background-color: $dark-bg;
+    color: $dark-text;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $dark-text;
+  }
+
+  a {
+    color: $dark-brand;
+    border-bottom-color: rgba(226, 168, 95, 0.35);
+  }
+
+  a:visited {
+    color: darken($dark-brand, 10%);
+  }
+
+  a:hover {
+    color: lighten($dark-brand, 8%);
+    border-bottom-color: lighten($dark-brand, 8%);
+  }
+
+  .site-header {
+    background-color: $dark-surface;
+    border-bottom-color: $dark-border;
+    border-top-color: $dark-brand;
+  }
+
+  .site-title,
+  .site-title:visited {
+    color: $dark-text !important;
+  }
+
+  .site-nav .page-link {
+    color: $dark-text;
+  }
+
+  .site-nav .page-link:hover {
+    color: $dark-brand;
+  }
+
+  .site-footer {
+    background-color: $dark-surface;
+    border-top-color: $dark-border;
+  }
+
+  .site-footer,
+  .footer-col-wrapper,
+  .site-footer .contact-list,
+  .site-footer .social-media-list {
+    color: $dark-muted;
+  }
+
+  .page-content {
+    background-color: $dark-bg;
+  }
+
+  .post-list > li,
+  .home .post-list-heading,
+  .year-heading,
+  .toc {
+    border-color: $dark-border;
+  }
+
+  blockquote {
+    color: $dark-muted;
+    border-left-color: $dark-brand;
+  }
+
+  code, pre {
+    background-color: #2c2419;
+    color: $dark-text;
+  }
+
+  .hero-subtitle,
+  .collection-tagline,
+  .stats-summary,
+  .stat-label,
+  .link-card p,
+  .breadcrumb {
+    color: $dark-muted;
+  }
+
+  .hero-eyebrow,
+  .stat-value,
+  .link-card-cta {
+    color: $dark-brand;
+  }
+
+  .stat-pill,
+  .toc,
+  .link-card,
+  .search-input {
+    background-color: $dark-surface;
+    border-color: $dark-border;
+    color: $dark-text;
+  }
+
+  .link-card:hover {
+    border-color: $dark-brand;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+  }
+
+  .search-input:focus {
+    border-color: $dark-brand;
+    box-shadow: 0 0 0 3px rgba(226, 168, 95, 0.2);
+  }
+
+  .year-count {
+    background-color: $dark-border;
+    color: $dark-muted;
+  }
+
+  .theme-toggle {
+    border-color: $dark-border;
+    color: $dark-text;
+  }
+
+  .theme-toggle:hover {
+    border-color: $dark-brand;
+  }
+}
