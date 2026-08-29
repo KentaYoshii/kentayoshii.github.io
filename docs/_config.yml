@@ -19,7 +19,6 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Kenta's Log
-email: kentayoshii1220@gmail.com
 description: A running log of books I've read, movies/shows I've watched, and dev notes I don't want to forget.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kentayoshii.github.io" # the base hostname & protocol for your site, e.g. http://example.com
