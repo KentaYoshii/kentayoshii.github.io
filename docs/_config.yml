@@ -18,9 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Kenta's BookVault
+title: Kenta's Log
 email: kentayoshii1220@gmail.com
-description: Kenta's BookVault
+description: A running log of books I've read, movies/shows I've watched, and Vim tips I don't want to forget.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kentayoshii.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -28,6 +28,13 @@ url: "https://kentayoshii.github.io" # the base hostname & protocol for your sit
 theme: minima
 plugins:
   - jekyll-feed
+
+# Controls the order of pages in the site nav (minima reads this list)
+header_pages:
+  - books.markdown
+  - movies.markdown
+  - vim-tips.markdown
+  - about.markdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "2025 Books"
-categories: jekyll update
+categories: books
 ---
 
 ## January
