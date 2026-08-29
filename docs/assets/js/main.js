@@ -230,7 +230,13 @@ function parseBookEntry(li) {
   var fullText = li.textContent;
   var afterTitle = fullText.slice(fullText.indexOf(title) + title.length);
   var author = afterTitle.replace(/^[\s—-]*by\s+/i, '').trim();
-  return { title: title, author: author };
+
+  // Strip a trailing "Part N" (e.g. reading a novel in two sittings, logged
+  // as "Shogun Part 1"/"Shogun Part 2") for search purposes — catalogs
+  // index the work as a single title, so the literal suffix won't match.
+  var searchTitle = title.replace(/\s+part\s+(\d+|one|two|three|four|five|six|seven|eight|nine|ten)\s*$/i, '').trim();
+
+  return { title: searchTitle || title, author: author };
 }
 
 function parseMovieEntry(li) {
@@ -331,6 +337,11 @@ function writeCoverCache(key, value) {
   } catch (e) {}
 }
 
+// Entries that resolve to the same cache key (e.g. a book logged twice, or
+// "Shogun Part 1"/"Part 2" sharing one search title) share a single in-flight
+// request instead of each firing its own, even before either has cached.
+var coverInFlight = {};
+
 function resolveCover(kind, info) {
   var key = coverCacheKey(kind, info);
   var cached = readCoverCache(key);
@@ -338,16 +349,25 @@ function resolveCover(kind, info) {
     return Promise.resolve(cached.url);
   }
 
+  if (coverInFlight[key]) {
+    return coverInFlight[key];
+  }
+
   var lookup = kind === 'books' ? fetchBookCover(info) : fetchMovieCover(info);
-  return lookup
+  var promise = lookup
     .then(function (url) {
       writeCoverCache(key, { url: url || null });
+      delete coverInFlight[key];
       return url;
     })
     .catch(function () {
       writeCoverCache(key, { url: null });
+      delete coverInFlight[key];
       return null;
     });
+
+  coverInFlight[key] = promise;
+  return promise;
 }
 
 // Open Library's search API is free, keyless, and CORS-enabled.

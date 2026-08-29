@@ -11,7 +11,7 @@ categories: books
 - _Butter_ by Asako Yuzuki
 - _Lady Tan's Circle of Women_ by Lisa See
 - _Beach Read_ by Emily Henry
-- _A Gentleman in Muscow_ by Amor Towles
+- _A Gentleman in Moscow_ by Amor Towles
 - _The Idiot_ by Elif Batuman
 - _Shogun Part 1_ by James Clavell
 - _Shogun Part 2_ by James Clavell
@@ -50,7 +50,7 @@ categories: books
 - _The Crash_ by Freida McFadden
 - _The Sign of Four_ by Arthur Conan Doyle
 - _Long Island_ by Colm Tóibín
-- _The Ballad of Songbirds ans Snakes_ by Suzanne Collins
+- _The Ballad of Songbirds and Snakes_ by Suzanne Collins
 - _Sunrise on the Reaping_ by Suzanne Collins
 
 ## April
