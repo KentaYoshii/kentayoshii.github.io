@@ -63,11 +63,21 @@ function initCollectionPage() {
   var searchInput = page.querySelector('.search-input');
   var statsEl = page.querySelector('.stats-summary');
   var select = page.querySelector('.group-select');
+  var sortSelect = page.querySelector('.sort-select');
+  var viewButtons = Array.prototype.slice.call(page.querySelectorAll('.view-button'));
 
   var GROUP_NOUN = { author: 'authors', letter: 'letters', year: 'years' };
   var STORAGE_KEY = 'groupBy:' + kind;
+  var SORT_KEY = 'sortBy:' + kind;
+  var VIEW_KEY = 'view:' + kind;
   var sections = [];
   var mode = 'none';
+  var sortMode = 'title';
+
+  // The document order is already title A-Z (the data files are pre-sorted),
+  // so it doubles as the title ordering and as a stable tiebreak for the
+  // others.
+  items.forEach(function (li, i) { li.__order = i; });
 
   function groupNameFor(li) {
     if (mode === 'author') return li.getAttribute('data-author') || 'Unknown';
@@ -100,23 +110,56 @@ function initCollectionPage() {
     return section;
   }
 
+  function numAttr(li, name) {
+    var v = parseInt(li.getAttribute(name), 10);
+    return isNaN(v) ? null : v;
+  }
+
+  function sortedItems() {
+    if (sortMode === 'title') return items.slice();
+
+    return items.slice().sort(function (a, b) {
+      var av, bv;
+      if (sortMode === 'date') {
+        av = a.getAttribute('data-date') || '';
+        bv = b.getAttribute('data-date') || '';
+        // Undated entries sort last rather than leading with a blank run.
+        if (!av && !bv) return a.__order - b.__order;
+        if (!av) return 1;
+        if (!bv) return -1;
+        if (av !== bv) return av < bv ? 1 : -1;   // newest first
+        return a.__order - b.__order;
+      }
+      av = numAttr(a, 'data-' + sortMode);
+      bv = numAttr(b, 'data-' + sortMode);
+      if (av === null && bv === null) return a.__order - b.__order;
+      if (av === null) return 1;
+      if (bv === null) return -1;
+      if (av !== bv) return bv - av;             // longest / most recent first
+      return a.__order - b.__order;
+    });
+  }
+
   function render() {
     // The <li> nodes are moved, never rebuilt, so cover images already loaded
     // (and their IntersectionObservers) survive a regroup.
     container.textContent = '';
     sections = [];
 
+    var ordered = sortedItems();
+
     if (mode === 'none') {
-      sections.push(buildSection(null, items));
+      sections.push(buildSection(null, ordered));
     } else {
       var groups = Object.create(null);
       var names = [];
-      items.forEach(function (li) {
+      ordered.forEach(function (li) {
         var name = groupNameFor(li);
         if (!groups[name]) { groups[name] = []; names.push(name); }
         groups[name].push(li);
       });
-      // Years read most-recent-first; everything else alphabetically.
+      // Years most-recent-first; everything else alphabetically. Group order
+      // is independent of the sort, which orders items within each group.
       names.sort(function (a, b) {
         return mode === 'year' ? b.localeCompare(a) : a.localeCompare(b);
       });
@@ -170,26 +213,60 @@ function initCollectionPage() {
     renderStats(visible, items.length);
   }
 
-  function setMode(next, persist) {
-    mode = next;
-    if (persist) {
-      try { localStorage.setItem(STORAGE_KEY, next); } catch (e) {}
-    }
+  function refresh() {
+    // Lets CSS drop the per-row author when it is already the section heading.
+    container.setAttribute('data-group', mode);
     render();
     applyFilter(searchInput ? searchInput.value : '');
   }
 
-  var saved = null;
-  try { saved = localStorage.getItem(STORAGE_KEY); } catch (e) {}
-  if (saved && select && select.querySelector('option[value="' + saved + '"]')) {
-    select.value = saved;
+  function store(key, value) {
+    try { localStorage.setItem(key, value); } catch (e) {}
   }
+
+  function read(key) {
+    try { return localStorage.getItem(key); } catch (e) { return null; }
+  }
+
+  function setView(next, persist) {
+    container.setAttribute('data-view', next);
+    viewButtons.forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.getAttribute('data-view') === next));
+    });
+    if (persist) store(VIEW_KEY, next);
+  }
+
+  function restore(sel, key) {
+    var saved = read(key);
+    if (saved && sel && sel.querySelector('option[value="' + saved + '"]')) {
+      sel.value = saved;
+    }
+  }
+
+  restore(select, STORAGE_KEY);
+  restore(sortSelect, SORT_KEY);
 
   if (select) {
     select.addEventListener('change', function () {
-      setMode(select.value, true);
+      mode = select.value;
+      store(STORAGE_KEY, mode);
+      refresh();
     });
   }
+
+  if (sortSelect) {
+    sortSelect.addEventListener('change', function () {
+      sortMode = sortSelect.value;
+      store(SORT_KEY, sortMode);
+      refresh();
+    });
+  }
+
+  viewButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      setView(button.getAttribute('data-view'), true);
+    });
+  });
 
   if (searchInput) {
     searchInput.addEventListener('input', function () {
@@ -197,7 +274,10 @@ function initCollectionPage() {
     });
   }
 
-  setMode(select ? select.value : 'none', false);
+  mode = select ? select.value : 'none';
+  sortMode = sortSelect ? sortSelect.value : 'title';
+  setView(read(VIEW_KEY) === 'grid' ? 'grid' : 'list', false);
+  refresh();
 }
 
 // Fetches the Books/Movies pages and counts their entries to populate the

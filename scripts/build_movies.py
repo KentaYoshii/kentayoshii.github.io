@@ -76,6 +76,9 @@ def main():
                 'title': title,
                 'year': year,
                 'month': month,
+                # Sortable stamp for the "date watched" ordering; entries with
+                # no month heading sort to the start of their year.
+                'date': '%s-%02d' % (year, MONTH_NUM.get((month or '').lower(), 0)),
                 'letter': letter_of(title),
             })
 

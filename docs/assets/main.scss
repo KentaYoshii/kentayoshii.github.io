@@ -401,6 +401,100 @@ code, pre {
   white-space: nowrap;
 }
 
+// The author is shown per row only when it is not already the section
+// heading, and in the grid where there is no heading to lean on.
+.entry-byline {
+  display: none;
+  color: $grey-color-dark;
+  font-size: 13px;
+}
+
+.view-toggle {
+  display: inline-flex;
+  border: 1px solid $grey-color-light;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.view-button {
+  font-family: $base-font-family;
+  font-size: 14px;
+  padding: 9px 14px;
+  border: none;
+  background-color: #fffaf1;
+  color: $grey-color-dark;
+  cursor: pointer;
+
+  & + & {
+    border-left: 1px solid $grey-color-light;
+  }
+
+  &[aria-pressed="true"] {
+    background-color: $brand-color;
+    color: #fff;
+  }
+}
+
+// ---- Grid view ----
+
+[data-view="grid"] {
+  .year-block ul {
+    columns: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 22px 18px;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .year-block li {
+    margin-bottom: 0;
+  }
+
+  .entry-row {
+    display: block;
+  }
+
+  .cover-thumb-wrap {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 3;
+    border-radius: 6px;
+    font-size: 30px;
+    margin-bottom: 8px;
+    box-shadow: 0 4px 12px rgba(60, 40, 20, 0.15);
+  }
+
+  .entry-text {
+    display: block;
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
+  .entry-byline {
+    display: block;
+  }
+
+  .entry-date {
+    display: block;
+  }
+
+  em {
+    font-style: normal;
+    font-weight: 600;
+  }
+}
+
+// Ungrouped list still benefits from seeing who wrote what.
+[data-view="list"][data-group="none"] .entry-byline,
+[data-view="list"][data-group="letter"] .entry-byline {
+  display: inline;
+
+  &::before {
+    content: " — ";
+  }
+}
+
 // Break out of minima's narrow $content-width wrapper for pages that
 // benefit from more breathing room (home, books, movies). Other pages
 // (About, Vim Tips) keep the narrower prose-friendly width.
@@ -652,8 +746,31 @@ body,
     color: $dark-text;
   }
 
-  .group-control {
+  .group-control,
+  .entry-byline {
     color: $dark-muted;
+  }
+
+  .view-toggle {
+    border-color: $dark-border;
+  }
+
+  .view-button {
+    background-color: $dark-surface;
+    color: $dark-muted;
+
+    & + & {
+      border-left-color: $dark-border;
+    }
+
+    &[aria-pressed="true"] {
+      background-color: $dark-brand;
+      color: #1c1712;
+    }
+  }
+
+  [data-view="grid"] .cover-thumb-wrap {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   }
 
   .group-select:focus {

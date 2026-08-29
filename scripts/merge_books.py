@@ -116,6 +116,12 @@ def title_keys(t):
     return sorted(keys)
 
 
+def as_int(v):
+    v = (v or '').strip()
+    m = re.match(r'^(-?\d+)(?:\.0+)?$', v)
+    return int(m.group(1)) if m else None
+
+
 def load_goodreads():
     with open(CSV_PATH, newline='', encoding='utf-8') as f:
         rows = list(csv.DictReader(f))
@@ -127,6 +133,11 @@ def load_goodreads():
             'title': strip_series(nfkc(r['Title'])),
             'author': squash(r['Author']),
             'isbn': clean_excel(r.get('ISBN13')) or clean_excel(r.get('ISBN')),
+            'pages': as_int(r.get('Number of Pages')),
+            # Original publication year, not this edition's reprint date, so
+            # the classics read as old.
+            'published': as_int(r.get('Original Publication Year')
+                                or r.get('Year Published')),
             'keys': title_keys(r['Title']),
         })
     return books, len(rows)
@@ -217,6 +228,8 @@ def main():
             'author': g['author'],
             'isbn': g['isbn'],
             'year': pick_year(md_hits),
+            'pages': g['pages'],
+            'published': g['published'],
         })
 
     seen = set()
@@ -230,6 +243,8 @@ def main():
             'author': canon_author(m['author']),
             'isbn': '',
             'year': m['year'],
+            'pages': None,
+            'published': None,
         })
 
     # The page's default view is an ungrouped A-Z list, so sort by title here
@@ -251,6 +266,9 @@ def main():
           % (len(books), len(authors), os.path.relpath(OUT_PATH, ROOT)))
     print('  with isbn: %d' % sum(1 for b in books if b['isbn']))
     print('  with year: %d' % sum(1 for b in books if b['year']))
+    print('  with pages: %d | with pub year: %d'
+          % (sum(1 for b in books if b['pages']),
+             sum(1 for b in books if b['published'])))
 
 
 if __name__ == '__main__':

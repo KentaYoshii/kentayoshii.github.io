@@ -24,6 +24,16 @@ ignored; the "group by" control re-groups it client-side.
           <option value="letter">First letter</option>
         </select>
       </label>
+      <label class="group-control">Sort by
+        <select class="sort-select" aria-label="Sort movies by">
+          <option value="title">Title</option>
+          <option value="date">Date watched</option>
+        </select>
+      </label>
+      <div class="view-toggle" role="group" aria-label="View as">
+        <button type="button" class="view-button" data-view="list" aria-pressed="true">List</button>
+        <button type="button" class="view-button" data-view="grid" aria-pressed="false">Grid</button>
+      </div>
     </div>
     <p class="stats-summary" aria-live="polite"></p>
   </div>
@@ -32,7 +42,7 @@ ignored; the "group by" control re-groups it client-side.
     <section class="year-block">
       <ul>
         {%- for movie in site.data.movies -%}
-        <li data-title="{{ movie.title | escape }}" data-letter="{{ movie.letter }}" data-year="{{ movie.year }}">{{ movie.title | escape }}<span class="entry-date"> · {% if movie.month %}{{ movie.month | slice: 0, 3 }} {% endif %}{{ movie.year }}</span></li>
+        <li data-title="{{ movie.title | escape }}" data-letter="{{ movie.letter }}" data-year="{{ movie.year }}" data-date="{{ movie.date }}"><em>{{ movie.title | escape }}</em><span class="entry-date"> · {% if movie.month %}{{ movie.month | slice: 0, 3 }} {% endif %}{{ movie.year }}</span></li>
         {%- endfor -%}
       </ul>
     </section>

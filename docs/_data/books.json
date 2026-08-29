@@ -4,6 +4,8 @@
   "author": "Stephen King",
   "isbn": "9781451627282",
   "year": null,
+  "pages": 849,
+  "published": 2011,
   "letter": "#"
  },
  {
@@ -11,6 +13,8 @@
   "author": "George Orwell",
   "isbn": "9780452284234",
   "year": null,
+  "pages": 368,
+  "published": 1949,
   "letter": "#"
  },
  {
@@ -18,6 +22,8 @@
   "author": "Haruki Murakami",
   "isbn": "9780307593313",
   "year": null,
+  "pages": 944,
+  "published": 2009,
   "letter": "#"
  },
  {
@@ -25,6 +31,8 @@
   "author": "Jules Verne",
   "isbn": "",
   "year": "2025",
+  "pages": null,
+  "published": null,
   "letter": "#"
  },
  {
@@ -32,6 +40,8 @@
   "author": "Yuval Noah Harari",
   "isbn": "9780525512172",
   "year": null,
+  "pages": 372,
+  "published": 2018,
   "letter": "#"
  },
  {
@@ -39,6 +49,8 @@
   "author": "Agatha Christie",
   "isbn": "9781579126933",
   "year": null,
+  "pages": 286,
+  "published": 1957,
   "letter": "#"
  },
  {
@@ -46,6 +58,8 @@
   "author": "Agatha Christie",
   "isbn": "9781579126247",
   "year": null,
+  "pages": 207,
+  "published": 1936,
   "letter": "A"
  },
  {
@@ -53,6 +67,8 @@
   "author": "Haruki Murakami",
   "isbn": "",
   "year": null,
+  "pages": null,
+  "published": null,
   "letter": "A"
  },
  {
@@ -60,6 +76,8 @@
   "author": "John Green",
   "isbn": "",
   "year": null,
+  "pages": 260,
+  "published": 2006,
   "letter": "A"
  },
  {
@@ -67,6 +85,8 @@
   "author": "John Grisham",
   "isbn": "",
   "year": null,
+  "pages": 238,
+  "published": 2019,
   "letter": "A"
  },
  {
@@ -74,6 +94,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007121083",
   "year": null,
+  "pages": 304,
+  "published": 1960,
   "letter": "A"
  },
  {
@@ -81,6 +103,8 @@
   "author": "Mark Twain",
   "isbn": "9780142437179",
   "year": null,
+  "pages": 327,
+  "published": 1885,
   "letter": "A"
  },
  {
@@ -88,6 +112,8 @@
   "author": "Arthur Conan Doyle",
   "isbn": "",
   "year": null,
+  "pages": 389,
+  "published": 1892,
   "letter": "A"
  },
  {
@@ -95,6 +121,8 @@
   "author": "Mark Twain",
   "isbn": "9780143039563",
   "year": null,
+  "pages": 244,
+  "published": 1876,
   "letter": "A"
  },
  {
@@ -102,6 +130,8 @@
   "author": "Haruki Murakami",
   "isbn": "9780307265838",
   "year": null,
+  "pages": 191,
+  "published": 2004,
   "letter": "A"
  },
  {
@@ -109,6 +139,8 @@
   "author": "Agatha Christie",
   "isbn": "9780425173909",
   "year": null,
+  "pages": 256,
+  "published": 1953,
   "letter": "A"
  },
  {
@@ -116,6 +148,8 @@
   "author": "Haruki Murakami",
   "isbn": "",
   "year": null,
+  "pages": 147,
+  "published": 2000,
   "letter": "A"
  },
  {
@@ -123,6 +157,8 @@
   "author": "Paulo Coelho",
   "isbn": "9780062315007",
   "year": "2024",
+  "pages": 182,
+  "published": 1988,
   "letter": "A"
  },
  {
@@ -130,6 +166,8 @@
   "author": "Veronica Roth",
   "isbn": "9780007524273",
   "year": "2025",
+  "pages": 531,
+  "published": 2013,
   "letter": "A"
  },
  {
@@ -137,6 +175,8 @@
   "author": "Erich Maria Remarque",
   "isbn": "9780449213940",
   "year": null,
+  "pages": 296,
+  "published": 1928,
   "letter": "A"
  },
  {
@@ -144,6 +184,8 @@
   "author": "Chris Whitaker",
   "isbn": "9780593798881",
   "year": "2025",
+  "pages": 597,
+  "published": 2024,
   "letter": "A"
  },
  {
@@ -151,6 +193,8 @@
   "author": "Anthony Doerr",
   "isbn": "9781476746586",
   "year": "2024",
+  "pages": 531,
+  "published": 2014,
   "letter": "A"
  },
  {
@@ -158,6 +202,8 @@
   "author": "Sohn Won-Pyung",
   "isbn": "9780062961372",
   "year": "2025",
+  "pages": 272,
+  "published": 2017,
   "letter": "A"
  },
  {
@@ -165,6 +211,8 @@
   "author": "Agatha Christie",
   "isbn": "9780312330873",
   "year": null,
+  "pages": 264,
+  "published": 1939,
   "letter": "A"
  },
  {
@@ -172,6 +220,8 @@
   "author": "George Orwell",
   "isbn": "9780451526342",
   "year": null,
+  "pages": 141,
+  "published": 1945,
   "letter": "A"
  },
  {
@@ -179,6 +229,8 @@
   "author": "Leo Tolstoy",
   "isbn": "9780345803924",
   "year": null,
+  "pages": 964,
+  "published": 1878,
   "letter": "A"
  },
  {
@@ -186,6 +238,8 @@
   "author": "L.M. Montgomery",
   "isbn": "9780451528827",
   "year": null,
+  "pages": 320,
+  "published": 1908,
   "letter": "A"
  },
  {
@@ -193,6 +247,8 @@
   "author": "Fredrik Backman",
   "isbn": "9781982169633",
   "year": null,
+  "pages": 336,
+  "published": 2019,
   "letter": "A"
  },
  {
@@ -200,6 +256,8 @@
   "author": "John Grisham",
   "isbn": "9780385515047",
   "year": "2024",
+  "pages": 358,
+  "published": 2008,
   "letter": "A"
  },
  {
@@ -207,6 +265,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007119356",
   "year": null,
+  "pages": 303,
+  "published": 1938,
   "letter": "A"
  },
  {
@@ -214,6 +274,8 @@
   "author": "Haruo Yuki",
   "isbn": "9781805331896",
   "year": null,
+  "pages": 320,
+  "published": 2022,
   "letter": "A"
  },
  {
@@ -221,6 +283,8 @@
   "author": "Jules Verne",
   "isbn": "9780140449068",
   "year": "2025",
+  "pages": 252,
+  "published": 1872,
   "letter": "A"
  },
  {
@@ -228,6 +292,8 @@
   "author": "Kazuo Ishiguro",
   "isbn": "9780571225361",
   "year": null,
+  "pages": 206,
+  "published": 1986,
   "letter": "A"
  },
  {
@@ -235,6 +301,8 @@
   "author": "Dustin Boswell",
   "isbn": "9780596802295",
   "year": null,
+  "pages": 204,
+  "published": 2010,
   "letter": "A"
  },
  {
@@ -242,6 +310,8 @@
   "author": "John Grisham",
   "isbn": "9780385517836",
   "year": "2024",
+  "pages": 373,
+  "published": 2009,
   "letter": "A"
  },
  {
@@ -249,6 +319,8 @@
   "author": "Agatha Christie",
   "isbn": "",
   "year": null,
+  "pages": 223,
+  "published": 1965,
   "letter": "A"
  },
  {
@@ -256,6 +328,8 @@
   "author": "Taylor Jenkins Reid",
   "isbn": "",
   "year": "2025",
+  "pages": 337,
+  "published": 2025,
   "letter": "A"
  },
  {
@@ -263,6 +337,8 @@
   "author": "R.F. Kuang",
   "isbn": "9780063021426",
   "year": null,
+  "pages": 544,
+  "published": 2022,
   "letter": "B"
  },
  {
@@ -270,6 +346,8 @@
   "author": "Lee Child",
   "isbn": "9780385340557",
   "year": null,
+  "pages": 378,
+  "published": 2007,
   "letter": "B"
  },
  {
@@ -277,6 +355,8 @@
   "author": "Suzanne Collins",
   "isbn": "",
   "year": "2025",
+  "pages": 541,
+  "published": 2020,
   "letter": "B"
  },
  {
@@ -284,6 +364,8 @@
   "author": "Emily Henry",
   "isbn": "9781984806734",
   "year": "2025",
+  "pages": 358,
+  "published": 2020,
   "letter": "B"
  },
  {
@@ -291,6 +373,8 @@
   "author": "Toni Morrison",
   "isbn": "",
   "year": null,
+  "pages": 325,
+  "published": 1987,
   "letter": "B"
  },
  {
@@ -298,6 +382,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007120819",
   "year": "2025",
+  "pages": 272,
+  "published": 1927,
   "letter": "B"
  },
  {
@@ -305,6 +391,8 @@
   "author": "Anna Sewell",
   "isbn": "9780439228909",
   "year": null,
+  "pages": 245,
+  "published": 1877,
   "letter": "B"
  },
  {
@@ -312,6 +400,8 @@
   "author": "Justin Torres",
   "isbn": "",
   "year": "2025",
+  "pages": null,
+  "published": null,
   "letter": "B"
  },
  {
@@ -319,6 +409,8 @@
   "author": "Justin Torres",
   "isbn": "9780374293574",
   "year": null,
+  "pages": 306,
+  "published": 2023,
   "letter": "B"
  },
  {
@@ -326,6 +418,8 @@
   "author": "John Grisham",
   "isbn": "",
   "year": "2024",
+  "pages": 229,
+  "published": 2003,
   "letter": "B"
  },
  {
@@ -333,6 +427,8 @@
   "author": "Haruki Murakami",
   "isbn": "9781400044610",
   "year": null,
+  "pages": 334,
+  "published": 2006,
   "letter": "B"
  },
  {
@@ -340,6 +436,8 @@
   "author": "Sandra Brown",
   "isbn": "9781538742983",
   "year": "2025",
+  "pages": 448,
+  "published": 2025,
   "letter": "B"
  },
  {
@@ -347,6 +445,8 @@
   "author": "Michael R. Bloomberg",
   "isbn": "9780471208884",
   "year": "2024",
+  "pages": 280,
+  "published": 1997,
   "letter": "B"
  },
  {
@@ -354,6 +454,8 @@
   "author": "Agatha Christie",
   "isbn": "9781579126261",
   "year": null,
+  "pages": 191,
+  "published": 1942,
   "letter": "B"
  },
  {
@@ -361,6 +463,8 @@
   "author": "Emily Henry",
   "isbn": "9780593334836",
   "year": "2024",
+  "pages": 377,
+  "published": 2022,
   "letter": "B"
  },
  {
@@ -368,6 +472,8 @@
   "author": "Markus Zusak",
   "isbn": "",
   "year": "2024",
+  "pages": 592,
+  "published": 2005,
   "letter": "B"
  },
  {
@@ -375,6 +481,8 @@
   "author": "Natsume Sōseki",
   "isbn": "9784770030481",
   "year": null,
+  "pages": 171,
+  "published": 1906,
   "letter": "B"
  },
  {
@@ -382,6 +490,8 @@
   "author": "Freida McFadden",
   "isbn": "9781728296227",
   "year": "2025",
+  "pages": 368,
+  "published": 2024,
   "letter": "B"
  },
  {
@@ -389,6 +499,8 @@
   "author": "John Grisham",
   "isbn": "9780385548922",
   "year": "2024",
+  "pages": 464,
+  "published": 2022,
   "letter": "B"
  },
  {
@@ -396,6 +508,8 @@
   "author": "Aldous Huxley",
   "isbn": "9780060929879",
   "year": "2025",
+  "pages": 288,
+  "published": 1932,
   "letter": "B"
  },
  {
@@ -403,6 +517,8 @@
   "author": "Truman Capote",
   "isbn": "",
   "year": null,
+  "pages": null,
+  "published": null,
   "letter": "B"
  },
  {
@@ -410,6 +526,8 @@
   "author": "Truman Capote",
   "isbn": "",
   "year": null,
+  "pages": 142,
+  "published": 1958,
   "letter": "B"
  },
  {
@@ -417,6 +535,8 @@
   "author": "Kurt Vonnegut Jr.",
   "isbn": "9780385334204",
   "year": null,
+  "pages": 303,
+  "published": 1973,
   "letter": "B"
  },
  {
@@ -424,6 +544,8 @@
   "author": "John Grisham",
   "isbn": "9780385339674",
   "year": "2024",
+  "pages": 440,
+  "published": 2000,
   "letter": "B"
  },
  {
@@ -431,6 +553,8 @@
   "author": "Rick Atkinson",
   "isbn": "9781627790437",
   "year": "2025",
+  "pages": 776,
+  "published": 2019,
   "letter": "B"
  },
  {
@@ -438,6 +562,8 @@
   "author": "Clare Leslie Hall",
   "isbn": "9781668078181",
   "year": "2025",
+  "pages": 319,
+  "published": 2025,
   "letter": "B"
  },
  {
@@ -445,6 +571,8 @@
   "author": "John Grisham",
   "isbn": "9780385340540",
   "year": "2024",
+  "pages": 422,
+  "published": 2005,
   "letter": "B"
  },
  {
@@ -452,6 +580,8 @@
   "author": "Fyodor Dostoevsky",
   "isbn": "9780374528379",
   "year": null,
+  "pages": 796,
+  "published": 1879,
   "letter": "B"
  },
  {
@@ -459,6 +589,8 @@
   "author": "Kōtarō Isaka",
   "isbn": "9781419756337",
   "year": null,
+  "pages": 432,
+  "published": 2010,
   "letter": "B"
  },
  {
@@ -466,6 +598,8 @@
   "author": "Kazuo Ishiguro",
   "isbn": "9780307271037",
   "year": null,
+  "pages": 317,
+  "published": 2015,
   "letter": "B"
  },
  {
@@ -473,6 +607,8 @@
   "author": "Asako Yuzuki",
   "isbn": "9780063236400",
   "year": "2025",
+  "pages": 464,
+  "published": 2017,
   "letter": "B"
  },
  {
@@ -480,6 +616,8 @@
   "author": "Agatha Christie",
   "isbn": "9780451200525",
   "year": null,
+  "pages": 212,
+  "published": 1968,
   "letter": "B"
  },
  {
@@ -487,6 +625,8 @@
   "author": "John Grisham",
   "isbn": "9780385536073",
   "year": "2024",
+  "pages": 198,
+  "published": 2012,
   "letter": "C"
  },
  {
@@ -494,6 +634,8 @@
   "author": "André Aciman",
   "isbn": "",
   "year": null,
+  "pages": 248,
+  "published": 2007,
   "letter": "C"
  },
  {
@@ -501,6 +643,8 @@
   "author": "Jack London",
   "isbn": "",
   "year": null,
+  "pages": 172,
+  "published": 1903,
   "letter": "C"
  },
  {
@@ -508,6 +652,8 @@
   "author": "John Grisham",
   "isbn": "9780385545990",
   "year": "2024",
+  "pages": 292,
+  "published": 2024,
   "letter": "C"
  },
  {
@@ -515,6 +661,8 @@
   "author": "John Grisham",
   "isbn": "9780385543026",
   "year": "2024",
+  "pages": 290,
+  "published": 2017,
   "letter": "C"
  },
  {
@@ -522,6 +670,8 @@
   "author": "John Grisham",
   "isbn": "9780385545945",
   "year": "2024",
+  "pages": 304,
+  "published": 2020,
   "letter": "C"
  },
  {
@@ -529,6 +679,8 @@
   "author": "Agatha Christie",
   "isbn": "9780425205952",
   "year": null,
+  "pages": 324,
+  "published": 1936,
   "letter": "C"
  },
  {
@@ -536,6 +688,8 @@
   "author": "Sarah Wynn-Williams",
   "isbn": "9781250391230",
   "year": "2025",
+  "pages": 382,
+  "published": 2025,
   "letter": "C"
  },
  {
@@ -543,6 +697,8 @@
   "author": "Agatha Christie",
   "isbn": "9780451199928",
   "year": null,
+  "pages": 224,
+  "published": 1964,
   "letter": "C"
  },
  {
@@ -550,6 +706,8 @@
   "author": "Stephen King",
   "isbn": "9781416524304",
   "year": null,
+  "pages": 272,
+  "published": 1974,
   "letter": "C"
  },
  {
@@ -557,6 +715,8 @@
   "author": "Franz Kafka",
   "isbn": "9780805211061",
   "year": null,
+  "pages": 328,
+  "published": 1926,
   "letter": "C"
  },
  {
@@ -564,6 +724,8 @@
   "author": "Agatha Christie",
   "isbn": "9780425205969",
   "year": null,
+  "pages": 352,
+  "published": 1959,
   "letter": "C"
  },
  {
@@ -571,6 +733,8 @@
   "author": "Joseph Heller",
   "isbn": "9780684833392",
   "year": "2024",
+  "pages": 453,
+  "published": 1961,
   "letter": "C"
  },
  {
@@ -578,6 +742,8 @@
   "author": "J.D. Salinger",
   "isbn": "9780316769174",
   "year": null,
+  "pages": 277,
+  "published": 1951,
   "letter": "C"
  },
  {
@@ -585,6 +751,8 @@
   "author": "Suzanne Collins",
   "isbn": "9780439023498",
   "year": "2025",
+  "pages": 391,
+  "published": 2009,
   "letter": "C"
  },
  {
@@ -592,6 +760,8 @@
   "author": "Kurt Vonnegut Jr.",
   "isbn": "",
   "year": null,
+  "pages": 306,
+  "published": 1963,
   "letter": "C"
  },
  {
@@ -599,6 +769,8 @@
   "author": "James Redfield",
   "isbn": "9780446518628",
   "year": null,
+  "pages": 246,
+  "published": 1993,
   "letter": "C"
  },
  {
@@ -606,6 +778,8 @@
   "author": "John Grisham",
   "isbn": "9780385339667",
   "year": "2024",
+  "pages": 632,
+  "published": 1994,
   "letter": "C"
  },
  {
@@ -613,6 +787,8 @@
   "author": "Chaim Potok",
   "isbn": "9780449213445",
   "year": null,
+  "pages": 291,
+  "published": 1967,
   "letter": "C"
  },
  {
@@ -620,6 +796,8 @@
   "author": "Charles Dickens",
   "isbn": "9781561797462",
   "year": null,
+  "pages": 184,
+  "published": 1843,
   "letter": "C"
  },
  {
@@ -627,6 +805,8 @@
   "author": "Madeline Miller",
   "isbn": "9780316556347",
   "year": "2024",
+  "pages": 393,
+  "published": 2018,
   "letter": "C"
  },
  {
@@ -634,6 +814,8 @@
   "author": "Haruki Murakami",
   "isbn": "9780593801970",
   "year": "2024",
+  "pages": 449,
+  "published": 2023,
   "letter": "C"
  },
  {
@@ -641,6 +823,8 @@
   "author": "John Grisham",
   "isbn": "9780385339087",
   "year": "2024",
+  "pages": 483,
+  "published": 1993,
   "letter": "C"
  },
  {
@@ -648,6 +832,8 @@
   "author": "Agatha Christie",
   "isbn": "9781572703933",
   "year": null,
+  "pages": 8,
+  "published": 1963,
   "letter": "C"
  },
  {
@@ -655,6 +841,8 @@
   "author": "Anthony Burgess",
   "isbn": "9780393341768",
   "year": "2024",
+  "pages": 240,
+  "published": 1962,
   "letter": "C"
  },
  {
@@ -662,6 +850,8 @@
   "author": "P.G. Wodehouse",
   "isbn": "9780393339819",
   "year": "2024",
+  "pages": 272,
+  "published": 1938,
   "letter": "C"
  },
  {
@@ -669,6 +859,8 @@
   "author": "Haruki Murakami",
   "isbn": "",
   "year": null,
+  "pages": null,
+  "published": null,
   "letter": "C"
  },
  {
@@ -676,6 +868,8 @@
   "author": "Haruki Murakami",
   "isbn": "9780385352116",
   "year": null,
+  "pages": 308,
+  "published": 2013,
   "letter": "C"
  },
  {
@@ -683,6 +877,8 @@
   "author": "Edgar Allan Poe",
   "isbn": "9780385074070",
   "year": null,
+  "pages": 821,
+  "published": 1849,
   "letter": "C"
  },
  {
@@ -690,6 +886,8 @@
   "author": "John Grisham",
   "isbn": "9780385528047",
   "year": "2024",
+  "pages": 418,
+  "published": 2010,
   "letter": "C"
  },
  {
@@ -697,6 +895,8 @@
   "author": "Yukio Mishima",
   "isbn": "",
   "year": null,
+  "pages": null,
+  "published": null,
   "letter": "C"
  },
  {
@@ -704,6 +904,8 @@
   "author": "Yukio Mishima",
   "isbn": "9780720610314",
   "year": null,
+  "pages": 224,
+  "published": 1949,
   "letter": "C"
  },
  {
@@ -711,6 +913,8 @@
   "author": "Sayaka Murata",
   "isbn": "9780802128256",
   "year": null,
+  "pages": 163,
+  "published": 2016,
   "letter": "C"
  },
  {
@@ -718,6 +922,8 @@
   "author": "Virginia Evans",
   "isbn": "9780593798430",
   "year": null,
+  "pages": 285,
+  "published": 2025,
   "letter": "C"
  },
  {
@@ -725,6 +931,8 @@
   "author": "Sohn Won-Pyung",
   "isbn": "9780063378100",
   "year": null,
+  "pages": 234,
+  "published": 2017,
   "letter": "C"
  },
  {
@@ -732,6 +940,8 @@
   "author": "Nicholas Sparks",
   "isbn": "9780593449592",
   "year": "2025",
+  "pages": 368,
+  "published": 2024,
   "letter": "C"
  },
  {
@@ -739,6 +949,8 @@
   "author": "Alexandre Dumas",
   "isbn": "9780140449266",
   "year": null,
+  "pages": 1276,
+  "published": 1846,
   "letter": "C"
  },
  {
@@ -746,6 +958,8 @@
   "author": "Sarah J. Maas",
   "isbn": "9781635575620",
   "year": "2024",
+  "pages": 272,
+  "published": 2018,
   "letter": "C"
  },
  {
@@ -753,6 +967,8 @@
   "author": "Sarah J. Maas",
   "isbn": "9781635575583",
   "year": "2024",
+  "pages": 626,
+  "published": 2016,
   "letter": "C"
  },
  {
@@ -760,6 +976,8 @@
   "author": "Sarah J. Maas",
   "isbn": "9781681196282",
   "year": "2024",
+  "pages": 757,
+  "published": 2021,
   "letter": "#"
  },
  {
@@ -767,6 +985,8 @@
   "author": "Sarah J. Maas",
   "isbn": "9781635575569",
   "year": "2024",
+  "pages": 419,
+  "published": 2015,
   "letter": "C"
  },
  {
@@ -774,6 +994,8 @@
   "author": "Sarah J. Maas",
   "isbn": "9781635575606",
   "year": "2024",
+  "pages": 699,
+  "published": 2017,
   "letter": "C"
  },
  {
@@ -781,6 +1003,8 @@
   "author": "Abraham Verghese",
   "isbn": "9780802162175",
   "year": "2024",
+  "pages": 715,
+  "published": 2023,
   "letter": "C"
  },
  {
@@ -788,6 +1012,8 @@
   "author": "Freida McFadden",
   "isbn": "9781464232985",
   "year": "2025",
+  "pages": 384,
+  "published": 2025,
   "letter": "C"
  },
  {
@@ -795,6 +1021,8 @@
   "author": "Kevin Kwan",
   "isbn": "9780385536974",
   "year": null,
+  "pages": 403,
+  "published": 2013,
   "letter": "C"
  },
  {
@@ -802,6 +1030,8 @@
   "author": "Fyodor Dostoevsky",
   "isbn": "",
   "year": null,
+  "pages": 671,
+  "published": 1866,
   "letter": "C"
  },
  {
@@ -809,6 +1039,8 @@
   "author": "Agatha Christie",
   "isbn": "9780312981662",
   "year": null,
+  "pages": 276,
+  "published": 1949,
   "letter": "C"
  },
  {
@@ -816,6 +1048,8 @@
   "author": "Arthur Miller",
   "isbn": "9780142437339",
   "year": null,
+  "pages": 143,
+  "published": 1953,
   "letter": "C"
  },
  {
@@ -823,6 +1057,8 @@
   "author": "Stephen King",
   "isbn": "9780307348241",
   "year": null,
+  "pages": 432,
+  "published": 1981,
   "letter": "C"
  },
  {
@@ -830,6 +1066,8 @@
   "author": "Agatha Christie",
   "isbn": "9780425173749",
   "year": null,
+  "pages": 215,
+  "published": 1975,
   "letter": "C"
  },
  {
@@ -837,6 +1075,8 @@
   "author": "Haruki Murakami",
   "isbn": "9780099448761",
   "year": null,
+  "pages": 393,
+  "published": 1988,
   "letter": "D"
  },
  {
@@ -844,6 +1084,8 @@
   "author": "Yasunari Kawabata",
   "isbn": "",
   "year": null,
+  "pages": null,
+  "published": null,
   "letter": "D"
  },
  {
@@ -851,6 +1093,8 @@
   "author": "Yasunari Kawabata",
   "isbn": "9781887178945",
   "year": null,
+  "pages": 176,
+  "published": 1926,
   "letter": "D"
  },
  {
@@ -858,6 +1102,8 @@
   "author": "Liu Cixin",
   "isbn": "",
   "year": "2024",
+  "pages": 512,
+  "published": 2008,
   "letter": "D"
  },
  {
@@ -865,6 +1111,8 @@
   "author": "Charles Dickens",
   "isbn": "",
   "year": "2024",
+  "pages": 882,
+  "published": 1850,
   "letter": "D"
  },
  {
@@ -872,6 +1120,8 @@
   "author": "Agatha Christie",
   "isbn": "9781572705470",
   "year": null,
+  "pages": 6,
+  "published": 1956,
   "letter": "D"
  },
  {
@@ -879,6 +1129,8 @@
   "author": "Agatha Christie",
   "isbn": "9780312981617",
   "year": null,
+  "pages": 267,
+  "published": 1944,
   "letter": "D"
  },
  {
@@ -886,6 +1138,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007119332",
   "year": "2025",
+  "pages": 336,
+  "published": 1935,
   "letter": "D"
  },
  {
@@ -893,6 +1147,8 @@
   "author": "Agatha Christie",
   "isbn": "",
   "year": null,
+  "pages": 352,
+  "published": 1937,
   "letter": "D"
  },
  {
@@ -900,6 +1156,8 @@
   "author": "Liu Cixin",
   "isbn": "9780765377104",
   "year": "2024",
+  "pages": 604,
+  "published": 2010,
   "letter": "D"
  },
  {
@@ -907,6 +1165,8 @@
   "author": "Barbara Kingsolver",
   "isbn": "",
   "year": null,
+  "pages": 560,
+  "published": 2022,
   "letter": "D"
  },
  {
@@ -914,6 +1174,8 @@
   "author": "Erik Larson",
   "isbn": "9780385348744",
   "year": "2025",
+  "pages": 592,
+  "published": 2024,
   "letter": "D"
  },
  {
@@ -921,6 +1183,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007154906",
   "year": null,
+  "pages": 316,
+  "published": 1954,
   "letter": "D"
  },
  {
@@ -928,6 +1192,8 @@
   "author": "Anne Frank",
   "isbn": "",
   "year": null,
+  "pages": 256,
+  "published": 1947,
   "letter": "D"
  },
  {
@@ -935,6 +1201,8 @@
   "author": "Lee Child",
   "isbn": "9780515142242",
   "year": "2025",
+  "pages": 567,
+  "published": 1998,
   "letter": "D"
  },
  {
@@ -942,6 +1210,8 @@
   "author": "Veronica Roth",
   "isbn": "9780062024039",
   "year": "2025",
+  "pages": 487,
+  "published": 2011,
   "letter": "D"
  },
  {
@@ -949,6 +1219,8 @@
   "author": "Stephen King",
   "isbn": "9781476727653",
   "year": null,
+  "pages": 531,
+  "published": 2013,
   "letter": "D"
  },
  {
@@ -956,6 +1228,8 @@
   "author": "Miguel de Cervantes Saavedra",
   "isbn": "",
   "year": null,
+  "pages": 1023,
+  "published": 1605,
   "letter": "D"
  },
  {
@@ -963,6 +1237,8 @@
   "author": "Bram Stoker",
   "isbn": "9780393970128",
   "year": null,
+  "pages": 488,
+  "published": 1897,
   "letter": "D"
  },
  {
@@ -970,6 +1246,8 @@
   "author": "Olga Tokarczuk",
   "isbn": "",
   "year": "2025",
+  "pages": 274,
+  "published": 2009,
   "letter": "D"
  },
  {
@@ -977,6 +1255,8 @@
   "author": "Robert Louis Stevenson",
   "isbn": "9780451528957",
   "year": null,
+  "pages": 139,
+  "published": 1886,
   "letter": "D"
  },
  {
@@ -984,6 +1264,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007120796",
   "year": null,
+  "pages": 317,
+  "published": 1937,
   "letter": "D"
  },
  {
@@ -991,6 +1273,8 @@
   "author": "Frank Herbert",
   "isbn": "9780593099322",
   "year": null,
+  "pages": 658,
+  "published": 1965,
   "letter": "D"
  },
  {
@@ -998,6 +1282,8 @@
   "author": "John Steinbeck",
   "isbn": "9780142000656",
   "year": null,
+  "pages": 601,
+  "published": 1952,
   "letter": "E"
  },
  {
@@ -1005,6 +1291,8 @@
   "author": "Lee Child",
   "isbn": "9780515133318",
   "year": null,
+  "pages": 432,
+  "published": 2001,
   "letter": "E"
  },
  {
@@ -1012,6 +1300,8 @@
   "author": "Tara Westover",
   "isbn": "9780399590504",
   "year": "2024",
+  "pages": 352,
+  "published": 2018,
   "letter": "E"
  },
  {
@@ -1019,6 +1309,8 @@
   "author": "Gail Honeyman",
   "isbn": "9780008172145",
   "year": "2024",
+  "pages": 390,
+  "published": 2017,
   "letter": "E"
  },
  {
@@ -1026,6 +1318,8 @@
   "author": "Agatha Christie",
   "isbn": "9780425067826",
   "year": null,
+  "pages": 212,
+  "published": 1972,
   "letter": "E"
  },
  {
@@ -1033,6 +1327,8 @@
   "author": "Haruki Murakami",
   "isbn": "",
   "year": null,
+  "pages": 327,
+  "published": 1993,
   "letter": "E"
  },
  {
@@ -1040,6 +1336,8 @@
   "author": "Walter Isaacson",
   "isbn": "9781982181284",
   "year": "2024",
+  "pages": 688,
+  "published": 2023,
   "letter": "E"
  },
  {
@@ -1047,6 +1345,8 @@
   "author": "Jane Austen",
   "isbn": "",
   "year": null,
+  "pages": 474,
+  "published": 1815,
   "letter": "E"
  },
  {
@@ -1054,6 +1354,8 @@
   "author": "J.D. Robb",
   "isbn": "9781250284310",
   "year": "2024",
+  "pages": 375,
+  "published": 2023,
   "letter": "E"
  },
  {
@@ -1061,6 +1363,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007151677",
   "year": null,
+  "pages": 303,
+  "published": 1967,
   "letter": "E"
  },
  {
@@ -1068,6 +1372,8 @@
   "author": "Lee Child",
   "isbn": "9780440241010",
   "year": null,
+  "pages": 464,
+  "published": 2004,
   "letter": "E"
  },
  {
@@ -1075,6 +1381,8 @@
   "author": "Percival Everett",
   "isbn": "9780786888153",
   "year": "2025",
+  "pages": 280,
+  "published": 2001,
   "letter": "E"
  },
  {
@@ -1082,6 +1390,8 @@
   "author": "Agatha Christie",
   "isbn": "9781579126285",
   "year": null,
+  "pages": 220,
+  "published": 1941,
   "letter": "E"
  },
  {
@@ -1089,6 +1399,8 @@
   "author": "John Grisham",
   "isbn": "9780385548953",
   "year": "2024",
+  "pages": 338,
+  "published": 2023,
   "letter": "E"
  },
  {
@@ -1096,6 +1408,8 @@
   "author": "Hans Rosling",
   "isbn": "9781473637467",
   "year": null,
+  "pages": 342,
+  "published": 2018,
   "letter": "F"
  },
  {
@@ -1103,6 +1417,8 @@
   "author": "Ray Bradbury",
   "isbn": "",
   "year": null,
+  "pages": 249,
+  "published": 1963,
   "letter": "F"
  },
  {
@@ -1110,6 +1426,8 @@
   "author": "Stephen King",
   "isbn": "9781668002179",
   "year": "2024",
+  "pages": 607,
+  "published": 2022,
   "letter": "F"
  },
  {
@@ -1117,6 +1435,8 @@
   "author": "Albert Camus",
   "isbn": "9780679720225",
   "year": null,
+  "pages": 147,
+  "published": 1956,
   "letter": "F"
  },
  {
@@ -1124,6 +1444,8 @@
   "author": "Ernest Hemingway",
   "isbn": "9780099910107",
   "year": null,
+  "pages": 304,
+  "published": 1929,
   "letter": "F"
  },
  {
@@ -1131,6 +1453,8 @@
   "author": "Rick Atkinson",
   "isbn": "9780593799185",
   "year": null,
+  "pages": 880,
+  "published": 2025,
   "letter": "F"
  },
  {
@@ -1138,6 +1462,8 @@
   "author": "John Green",
   "isbn": "9780525478812",
   "year": "2025",
+  "pages": 313,
+  "published": 2012,
   "letter": "F"
  },
  {
@@ -1145,6 +1471,8 @@
   "author": "J.R.R. Tolkien",
   "isbn": "",
   "year": null,
+  "pages": 432,
+  "published": 1954,
   "letter": "F"
  },
  {
@@ -1152,6 +1480,8 @@
   "author": "Stephen King",
   "isbn": "9781501100079",
   "year": null,
+  "pages": 434,
+  "published": 2015,
   "letter": "F"
  },
  {
@@ -1159,6 +1489,8 @@
   "author": "Stephen King",
   "isbn": "",
   "year": null,
+  "pages": 564,
+  "published": 1980,
   "letter": "F"
  },
  {
@@ -1166,6 +1498,8 @@
   "author": "John Grisham",
   "isbn": "9780440211457",
   "year": "2024",
+  "pages": 501,
+  "published": 1991,
   "letter": "F"
  },
  {
@@ -1173,6 +1507,8 @@
   "author": "Ashley Elston",
   "isbn": "",
   "year": "2024",
+  "pages": 340,
+  "published": 2024,
   "letter": "F"
  },
  {
@@ -1180,6 +1516,8 @@
   "author": "Haruki Murakami",
   "isbn": "9780593318072",
   "year": "2025",
+  "pages": 245,
+  "published": 2020,
   "letter": "F"
  },
  {
@@ -1187,6 +1525,8 @@
   "author": "Agatha Christie",
   "isbn": "",
   "year": null,
+  "pages": 216,
+  "published": 1942,
   "letter": "F"
  },
  {
@@ -1194,6 +1534,8 @@
   "author": "John Grisham",
   "isbn": "",
   "year": "2024",
+  "pages": null,
+  "published": null,
   "letter": "F"
  },
  {
@@ -1201,6 +1543,8 @@
   "author": "Ernest Hemingway",
   "isbn": "",
   "year": null,
+  "pages": 471,
+  "published": 1940,
   "letter": "F"
  },
  {
@@ -1208,6 +1552,8 @@
   "author": "Rebecca Yarros",
   "isbn": "9781649374042",
   "year": null,
+  "pages": 517,
+  "published": 2023,
   "letter": "F"
  },
  {
@@ -1215,6 +1561,8 @@
   "author": "Kristin Hannah",
   "isbn": "9781250178602",
   "year": "2025",
+  "pages": 464,
+  "published": 2021,
   "letter": "F"
  },
  {
@@ -1222,6 +1570,8 @@
   "author": "John Grisham",
   "isbn": "9780385550444",
   "year": "2024",
+  "pages": 368,
+  "published": 2024,
   "letter": "F"
  },
  {
@@ -1229,6 +1579,8 @@
   "author": "Mary Wollstonecraft Shelley",
   "isbn": "9780143131847",
   "year": null,
+  "pages": 260,
+  "published": 1818,
   "letter": "F"
  },
  {
@@ -1236,6 +1588,8 @@
   "author": "Ariel Lawhon",
   "isbn": "9780385546874",
   "year": "2025",
+  "pages": 448,
+  "published": 2023,
   "letter": "F"
  },
  {
@@ -1243,6 +1597,8 @@
   "author": "Emily Henry",
   "isbn": "",
   "year": "2024",
+  "pages": 395,
+  "published": 2024,
   "letter": "F"
  },
  {
@@ -1250,6 +1606,8 @@
   "author": "James Clavell",
   "isbn": "9780440216803",
   "year": "2025",
+  "pages": 1236,
+  "published": 1993,
   "letter": "G"
  },
  {
@@ -1257,6 +1615,8 @@
   "author": "Amor Towles",
   "isbn": "",
   "year": "2025",
+  "pages": 495,
+  "published": 2016,
   "letter": "G"
  },
  {
@@ -1264,6 +1624,8 @@
   "author": "Lois Lowry",
   "isbn": "9780385732550",
   "year": null,
+  "pages": 208,
+  "published": 1993,
   "letter": "G"
  },
  {
@@ -1271,6 +1633,8 @@
   "author": "Liz Moore",
   "isbn": "",
   "year": "2025",
+  "pages": 562,
+  "published": 2024,
   "letter": "G"
  },
  {
@@ -1278,6 +1642,8 @@
   "author": "Janet Evanovich",
   "isbn": "9781668003053",
   "year": "2024",
+  "pages": 324,
+  "published": 2022,
   "letter": "G"
  },
  {
@@ -1285,6 +1651,8 @@
   "author": "Donna Tartt",
   "isbn": "9780316055437",
   "year": "2025",
+  "pages": 771,
+  "published": 2013,
   "letter": "G"
  },
  {
@@ -1292,6 +1660,8 @@
   "author": "Gillian Flynn",
   "isbn": "9780307588371",
   "year": "2025",
+  "pages": 415,
+  "published": 2012,
   "letter": "G"
  },
  {
@@ -1299,6 +1669,8 @@
   "author": "Lee Child",
   "isbn": "9780593057056",
   "year": null,
+  "pages": 441,
+  "published": 2009,
   "letter": "G"
  },
  {
@@ -1306,6 +1678,8 @@
   "author": "Margaret Mitchell",
   "isbn": "9780446365383",
   "year": null,
+  "pages": 1037,
+  "published": 1936,
   "letter": "G"
  },
  {
@@ -1313,6 +1687,8 @@
   "author": "Ford Madox Ford",
   "isbn": "9781551113814",
   "year": null,
+  "pages": 368,
+  "published": 1915,
   "letter": "G"
  },
  {
@@ -1320,6 +1696,8 @@
   "author": "John Steinbeck",
   "isbn": "9780670016907",
   "year": "2025",
+  "pages": 536,
+  "published": 1939,
   "letter": "G"
  },
  {
@@ -1327,6 +1705,8 @@
   "author": "John Grisham",
   "isbn": "9780385537148",
   "year": "2024",
+  "pages": 368,
+  "published": 2014,
   "letter": "G"
  },
  {
@@ -1334,6 +1714,8 @@
   "author": "Kristin Hannah",
   "isbn": "",
   "year": null,
+  "pages": 435,
+  "published": 2018,
   "letter": "G"
  },
  {
@@ -1341,6 +1723,8 @@
   "author": "Emily Henry",
   "isbn": "",
   "year": "2025",
+  "pages": 432,
+  "published": 2025,
   "letter": "G"
  },
  {
@@ -1348,6 +1732,8 @@
   "author": "Charles Dickens",
   "isbn": "9780192833594",
   "year": null,
+  "pages": 544,
+  "published": 1861,
   "letter": "G"
  },
  {
@@ -1355,6 +1741,8 @@
   "author": "F. Scott Fitzgerald",
   "isbn": "",
   "year": null,
+  "pages": 180,
+  "published": 1925,
   "letter": "G"
  },
  {
@@ -1362,6 +1750,8 @@
   "author": "Matthew McConaughey",
   "isbn": "9780593139134",
   "year": null,
+  "pages": 289,
+  "published": 2020,
   "letter": "G"
  },
  {
@@ -1369,6 +1759,8 @@
   "author": "Stephen King",
   "isbn": "9780451933027",
   "year": "2025",
+  "pages": 592,
+  "published": 1996,
   "letter": "G"
  },
  {
@@ -1376,6 +1768,8 @@
   "author": "John Grisham",
   "isbn": "9780385544184",
   "year": "2024",
+  "pages": 370,
+  "published": 2019,
   "letter": "G"
  },
  {
@@ -1383,6 +1777,8 @@
   "author": "Lucy Foley",
   "isbn": "",
   "year": "2025",
+  "pages": 319,
+  "published": 2020,
   "letter": "G"
  },
  {
@@ -1390,6 +1786,8 @@
   "author": "Jared Diamond",
   "isbn": "9780739467350",
   "year": null,
+  "pages": 498,
+  "published": 1997,
   "letter": "G"
  },
  {
@@ -1397,6 +1795,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007120680",
   "year": null,
+  "pages": 336,
+  "published": 1969,
   "letter": "H"
  },
  {
@@ -1404,6 +1804,8 @@
   "author": "Margaret Atwood",
   "isbn": "9781328879943",
   "year": "2024",
+  "pages": 320,
+  "published": 1985,
   "letter": "H"
  },
  {
@@ -1411,6 +1813,8 @@
   "author": "Emily Henry",
   "isbn": "9780593441275",
   "year": null,
+  "pages": 388,
+  "published": 2023,
   "letter": "H"
  },
  {
@@ -1418,6 +1822,8 @@
   "author": "Haruki Murakami",
   "isbn": "",
   "year": null,
+  "pages": 400,
+  "published": 1985,
   "letter": "H"
  },
  {
@@ -1425,6 +1831,8 @@
   "author": "Lee Child",
   "isbn": "9780385336697",
   "year": null,
+  "pages": 384,
+  "published": 2006,
   "letter": "H"
  },
  {
@@ -1432,6 +1840,8 @@
   "author": "J.K. Rowling",
   "isbn": "",
   "year": null,
+  "pages": 341,
+  "published": 1998,
   "letter": "H"
  },
  {
@@ -1439,6 +1849,8 @@
   "author": "J.K. Rowling",
   "isbn": "9780545010221",
   "year": null,
+  "pages": 784,
+  "published": 2007,
   "letter": "H"
  },
  {
@@ -1446,6 +1858,8 @@
   "author": "J.K. Rowling",
   "isbn": "",
   "year": null,
+  "pages": 752,
+  "published": 2000,
   "letter": "H"
  },
  {
@@ -1453,6 +1867,8 @@
   "author": "J.K. Rowling",
   "isbn": "",
   "year": null,
+  "pages": 672,
+  "published": 2005,
   "letter": "H"
  },
  {
@@ -1460,6 +1876,8 @@
   "author": "J.K. Rowling",
   "isbn": "9780439358064",
   "year": null,
+  "pages": 896,
+  "published": 2003,
   "letter": "H"
  },
  {
@@ -1467,6 +1885,8 @@
   "author": "J.K. Rowling",
   "isbn": "",
   "year": null,
+  "pages": 333,
+  "published": 1997,
   "letter": "H"
  },
  {
@@ -1474,6 +1894,8 @@
   "author": "J.K. Rowling",
   "isbn": "9780439655484",
   "year": null,
+  "pages": 547,
+  "published": 1999,
   "letter": "H"
  },
  {
@@ -1481,6 +1903,8 @@
   "author": "J.K. Rowling",
   "isbn": "",
   "year": null,
+  "pages": null,
+  "published": null,
   "letter": "H"
  },
  {
@@ -1488,6 +1912,8 @@
   "author": "Angie Thomas",
   "isbn": "",
   "year": null,
+  "pages": 444,
+  "published": 2017,
   "letter": "H"
  },
  {
@@ -1495,6 +1921,8 @@
   "author": "Haruki Murakami",
   "isbn": "",
   "year": null,
+  "pages": null,
+  "published": null,
   "letter": "H"
  },
  {
@@ -1502,6 +1930,8 @@
   "author": "Joseph Conrad",
   "isbn": "9781892295491",
   "year": null,
+  "pages": 188,
+  "published": 1899,
   "letter": "H"
  },
  {
@@ -1509,6 +1939,8 @@
   "author": "James McBride",
   "isbn": "9780593422946",
   "year": "2024",
+  "pages": 400,
+  "published": 2023,
   "letter": "H"
  },
  {
@@ -1516,6 +1948,8 @@
   "author": "Ann Napolitano",
   "isbn": "",
   "year": null,
+  "pages": 594,
+  "published": 2023,
   "letter": "H"
  },
  {
@@ -1523,6 +1957,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007120697",
   "year": null,
+  "pages": 335,
+  "published": 1938,
   "letter": "H"
  },
  {
@@ -1530,6 +1966,8 @@
   "author": "Agatha Christie",
   "isbn": "",
   "year": null,
+  "pages": 864,
+  "published": 1999,
   "letter": "H"
  },
  {
@@ -1537,6 +1975,8 @@
   "author": "Agatha Christie",
   "isbn": "9781572705647",
   "year": null,
+  "pages": null,
+  "published": 1955,
   "letter": "H"
  },
  {
@@ -1544,6 +1984,8 @@
   "author": "J.D. Vance",
   "isbn": "",
   "year": "2024",
+  "pages": 264,
+  "published": 2016,
   "letter": "H"
  },
  {
@@ -1551,6 +1993,8 @@
   "author": "John Hersey",
   "isbn": "9780679721031",
   "year": null,
+  "pages": 152,
+  "published": 1946,
   "letter": "H"
  },
  {
@@ -1558,6 +2002,8 @@
   "author": "J.R.R. Tolkien",
   "isbn": "",
   "year": "2025",
+  "pages": null,
+  "published": null,
   "letter": "H"
  },
  {
@@ -1565,6 +2011,8 @@
   "author": "J.R.R. Tolkien",
   "isbn": "",
   "year": null,
+  "pages": 366,
+  "published": 1937,
   "letter": "H"
  },
  {
@@ -1572,6 +2020,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007121021",
   "year": null,
+  "pages": 384,
+  "published": 1946,
   "letter": "H"
  },
  {
@@ -1579,6 +2029,8 @@
   "author": "Stephen King",
   "isbn": "9781668016138",
   "year": "2024",
+  "pages": 449,
+  "published": 2023,
   "letter": "H"
  },
  {
@@ -1586,6 +2038,8 @@
   "author": "Yuval Noah Harari",
   "isbn": "",
   "year": null,
+  "pages": 450,
+  "published": 2015,
   "letter": "H"
  },
  {
@@ -1593,6 +2047,8 @@
   "author": "Arthur Conan Doyle",
   "isbn": "",
   "year": "2025",
+  "pages": 256,
+  "published": 1902,
   "letter": "H"
  },
  {
@@ -1600,6 +2056,8 @@
   "author": "Freida McFadden",
   "isbn": "9781803144375",
   "year": "2024",
+  "pages": 338,
+  "published": 2022,
   "letter": "H"
  },
  {
@@ -1607,6 +2065,8 @@
   "author": "Freida McFadden",
   "isbn": "9781837901319",
   "year": "2024",
+  "pages": 311,
+  "published": 2023,
   "letter": "H"
  },
  {
@@ -1614,6 +2074,8 @@
   "author": "Suzanne Collins",
   "isbn": "9780439023481",
   "year": "2025",
+  "pages": 374,
+  "published": 2008,
   "letter": "H"
  },
  {
@@ -1621,6 +2083,8 @@
   "author": "Natsume Sōseki",
   "isbn": "9780804832656",
   "year": null,
+  "pages": 470,
+  "published": 1906,
   "letter": "I"
  },
  {
@@ -1628,6 +2092,8 @@
   "author": "Elif Batuman",
   "isbn": "9781594205613",
   "year": "2025",
+  "pages": 423,
+  "published": 2017,
   "letter": "I"
  },
  {
@@ -1635,6 +2101,8 @@
   "author": "Stephen King",
   "isbn": "",
   "year": null,
+  "pages": 438,
+  "published": 2020,
   "letter": "I"
  },
  {
@@ -1642,6 +2110,8 @@
   "author": "Homer",
   "isbn": "9781324001805",
   "year": null,
+  "pages": 848,
+  "published": -750,
   "letter": "I"
  },
  {
@@ -1649,6 +2119,8 @@
   "author": "Ray Bradbury",
   "isbn": "9780007127740",
   "year": null,
+  "pages": 186,
+  "published": 1951,
   "letter": "I"
  },
  {
@@ -1656,6 +2128,8 @@
   "author": "Oscar Wilde",
   "isbn": "9781580495806",
   "year": null,
+  "pages": 89,
+  "published": 1895,
   "letter": "I"
  },
  {
@@ -1663,6 +2137,8 @@
   "author": "Truman Capote",
   "isbn": "9780679745587",
   "year": null,
+  "pages": 343,
+  "published": 1966,
   "letter": "I"
  },
  {
@@ -1670,6 +2146,8 @@
   "author": "John Grisham",
   "isbn": "9780385517232",
   "year": "2024",
+  "pages": 360,
+  "published": 2006,
   "letter": "I"
  },
  {
@@ -1677,6 +2155,8 @@
   "author": "Yeonmi Park",
   "isbn": "9781594206795",
   "year": null,
+  "pages": 273,
+  "published": 2015,
   "letter": "I"
  },
  {
@@ -1684,6 +2164,8 @@
   "author": "Ernest Hemingway",
   "isbn": "",
   "year": null,
+  "pages": 156,
+  "published": 1924,
   "letter": "I"
  },
  {
@@ -1691,6 +2173,8 @@
   "author": "Stephen King",
   "isbn": "",
   "year": "2024",
+  "pages": 561,
+  "published": 2019,
   "letter": "I"
  },
  {
@@ -1698,6 +2182,8 @@
   "author": "Veronica Roth",
   "isbn": "9780007442911",
   "year": "2025",
+  "pages": 525,
+  "published": 2012,
   "letter": "I"
  },
  {
@@ -1705,6 +2191,8 @@
   "author": "Sally Rooney",
   "isbn": "9780374602635",
   "year": "2025",
+  "pages": 464,
+  "published": 2024,
   "letter": "I"
  },
  {
@@ -1712,6 +2200,8 @@
   "author": "Rebecca Yarros",
   "isbn": "9781662511561",
   "year": null,
+  "pages": 348,
+  "published": 2023,
   "letter": "I"
  },
  {
@@ -1719,6 +2209,8 @@
   "author": "V.E. Schwab",
   "isbn": "9780765387561",
   "year": "2024",
+  "pages": 448,
+  "published": 2020,
   "letter": "I"
  },
  {
@@ -1726,6 +2218,8 @@
   "author": "H.G. Wells",
   "isbn": "9780451528520",
   "year": "2025",
+  "pages": 192,
+  "published": 1897,
   "letter": "I"
  },
  {
@@ -1733,6 +2227,8 @@
   "author": "Rebecca Yarros",
   "isbn": "9781649374172",
   "year": "2024",
+  "pages": 623,
+  "published": 2023,
   "letter": "I"
  },
  {
@@ -1740,6 +2236,8 @@
   "author": "Stephen King",
   "isbn": "9780450411434",
   "year": null,
+  "pages": 1184,
+  "published": 1986,
   "letter": "I"
  },
  {
@@ -1747,6 +2245,8 @@
   "author": "Colleen Hoover",
   "isbn": "",
   "year": null,
+  "pages": 373,
+  "published": 2016,
   "letter": "I"
  },
  {
@@ -1754,6 +2254,8 @@
   "author": "Colleen Hoover",
   "isbn": "9781668001226",
   "year": null,
+  "pages": 324,
+  "published": 2022,
   "letter": "I"
  },
  {
@@ -1761,6 +2263,8 @@
   "author": "Walter Scott",
   "isbn": "",
   "year": null,
+  "pages": 496,
+  "published": 1819,
   "letter": "I"
  },
  {
@@ -1768,6 +2272,8 @@
   "author": "Yoru Sumino",
   "isbn": "9786026383143",
   "year": null,
+  "pages": 308,
+  "published": 2015,
   "letter": "I"
  },
  {
@@ -1775,6 +2281,8 @@
   "author": "Percival Everett",
   "isbn": "9780385550369",
   "year": "2024",
+  "pages": 303,
+  "published": 2024,
   "letter": "J"
  },
  {
@@ -1782,6 +2290,8 @@
   "author": "Charlotte Brontë",
   "isbn": "9780142437209",
   "year": null,
+  "pages": 532,
+  "published": 1847,
   "letter": "J"
  },
  {
@@ -1789,6 +2299,8 @@
   "author": "Jules Verne",
   "isbn": "9780553213973",
   "year": "2025",
+  "pages": 240,
+  "published": 1864,
   "letter": "J"
  },
  {
@@ -1796,6 +2308,8 @@
   "author": "John Grisham",
   "isbn": "9780385546027",
   "year": "2024",
+  "pages": 357,
+  "published": 2021,
   "letter": "J"
  },
  {
@@ -1803,6 +2317,8 @@
   "author": "Bryan Stevenson",
   "isbn": "",
   "year": null,
+  "pages": 336,
+  "published": 2014,
   "letter": "J"
  },
  {
@@ -1810,6 +2326,8 @@
   "author": "Haruki Murakami",
   "isbn": "9781400079278",
   "year": null,
+  "pages": 467,
+  "published": 2002,
   "letter": "K"
  },
  {
@@ -1817,6 +2335,8 @@
   "author": "R.F. Kuang",
   "isbn": "",
   "year": null,
+  "pages": 559,
+  "published": 2025,
   "letter": "K"
  },
  {
@@ -1824,6 +2344,8 @@
   "author": "David Grann",
   "isbn": "9780593470831",
   "year": "2024",
+  "pages": 338,
+  "published": 2017,
   "letter": "K"
  },
  {
@@ -1831,6 +2353,8 @@
   "author": "Haruki Murakami",
   "isbn": "9780525520047",
   "year": null,
+  "pages": 681,
+  "published": 2017,
   "letter": "K"
  },
  {
@@ -1838,6 +2362,8 @@
   "author": "Lee Child",
   "isbn": "9780515141429",
   "year": "2025",
+  "pages": 474,
+  "published": 1997,
   "letter": "K"
  },
  {
@@ -1845,6 +2371,8 @@
   "author": "John Grisham",
   "isbn": "9780385339650",
   "year": "2024",
+  "pages": 276,
+  "published": 2003,
   "letter": "K"
  },
  {
@@ -1852,6 +2380,8 @@
   "author": "James Clavell",
   "isbn": "9780385333764",
   "year": "2025",
+  "pages": 368,
+  "published": 1962,
   "letter": "K"
  },
  {
@@ -1859,6 +2389,8 @@
   "author": "Khaled Hosseini",
   "isbn": "",
   "year": "2025",
+  "pages": 371,
+  "published": 2003,
   "letter": "K"
  },
  {
@@ -1866,6 +2398,8 @@
   "author": "Kazuo Ishiguro",
   "isbn": "9780593318171",
   "year": null,
+  "pages": 303,
+  "published": 2021,
   "letter": "K"
  },
  {
@@ -1873,6 +2407,8 @@
   "author": "Natsume Sōseki",
   "isbn": "9780895267153",
   "year": null,
+  "pages": 256,
+  "published": 1914,
   "letter": "K"
  },
  {
@@ -1880,6 +2416,8 @@
   "author": "Agatha Christie",
   "isbn": "9781572704572",
   "year": null,
+  "pages": 9,
+  "published": 1947,
   "letter": "L"
  },
  {
@@ -1887,6 +2425,8 @@
   "author": "Lisa See",
   "isbn": "9781982117085",
   "year": "2025",
+  "pages": 352,
+  "published": 2023,
   "letter": "L"
  },
  {
@@ -1894,6 +2434,8 @@
   "author": "C Pam Zhang",
   "isbn": "9780593538241",
   "year": "2025",
+  "pages": 240,
+  "published": 2023,
   "letter": "L"
  },
  {
@@ -1901,6 +2443,8 @@
   "author": "Nadia Murad",
   "isbn": "9780525493211",
   "year": null,
+  "pages": null,
+  "published": 2017,
   "letter": "L"
  },
  {
@@ -1908,6 +2452,8 @@
   "author": "John Grisham",
   "isbn": "9780385339681",
   "year": "2024",
+  "pages": 278,
+  "published": 2004,
   "letter": "L"
  },
  {
@@ -1915,6 +2461,8 @@
   "author": "Victor Hugo",
   "isbn": "9780451525260",
   "year": null,
+  "pages": 1488,
+  "published": 1862,
   "letter": "L"
  },
  {
@@ -1922,6 +2470,8 @@
   "author": "Bonnie Garmus",
   "isbn": "9781804990926",
   "year": "2024",
+  "pages": 390,
+  "published": 2022,
   "letter": "L"
  },
  {
@@ -1929,6 +2479,8 @@
   "author": "Navessa Allen",
   "isbn": "9781638932239",
   "year": "2025",
+  "pages": 416,
+  "published": 2024,
   "letter": "L"
  },
  {
@@ -1936,6 +2488,8 @@
   "author": "Matt Centrowitz",
   "isbn": "",
   "year": null,
+  "pages": null,
+  "published": null,
   "letter": "L"
  },
  {
@@ -1943,6 +2497,8 @@
   "author": "Amor Towles",
   "isbn": "9780735222359",
   "year": "2025",
+  "pages": 576,
+  "published": 2021,
   "letter": "L"
  },
  {
@@ -1950,6 +2506,8 @@
   "author": "John Grisham",
   "isbn": "9781444729702",
   "year": "2024",
+  "pages": 385,
+  "published": 2011,
   "letter": "L"
  },
  {
@@ -1957,6 +2515,8 @@
   "author": "Hanya Yanagihara",
   "isbn": "9780385539258",
   "year": "2024",
+  "pages": 736,
+  "published": 2015,
   "letter": "L"
  },
  {
@@ -1964,6 +2524,8 @@
   "author": "Antoine de Saint-Exupéry",
   "isbn": "9780152023980",
   "year": null,
+  "pages": 96,
+  "published": 1943,
   "letter": "L"
  },
  {
@@ -1971,6 +2533,8 @@
   "author": "Louisa May Alcott",
   "isbn": "",
   "year": null,
+  "pages": 449,
+  "published": 1868,
   "letter": "L"
  },
  {
@@ -1978,6 +2542,8 @@
   "author": "Vladimir Nabokov",
   "isbn": "",
   "year": null,
+  "pages": 376,
+  "published": 1955,
   "letter": "L"
  },
  {
@@ -1985,6 +2551,8 @@
   "author": "Colm Tóibín",
   "isbn": "9781476785110",
   "year": "2025",
+  "pages": 294,
+  "published": 2024,
   "letter": "L"
  },
  {
@@ -1992,6 +2560,8 @@
   "author": "John Green",
   "isbn": "9781435249158",
   "year": null,
+  "pages": 221,
+  "published": 2005,
   "letter": "L"
  },
  {
@@ -1999,6 +2569,8 @@
   "author": "Agatha Christie",
   "isbn": "9780002314572",
   "year": "2025",
+  "pages": 219,
+  "published": 1933,
   "letter": "L"
  },
  {
@@ -2006,6 +2578,8 @@
   "author": "William Golding",
   "isbn": "9780140283334",
   "year": null,
+  "pages": 182,
+  "published": 1954,
   "letter": "L"
  },
  {
@@ -2013,6 +2587,8 @@
   "author": "Gabriel García Márquez",
   "isbn": "9781400034680",
   "year": "2024",
+  "pages": 348,
+  "published": 1985,
   "letter": "L"
  },
  {
@@ -2020,6 +2596,8 @@
   "author": "Alice Sebold",
   "isbn": "9780316166683",
   "year": "2024",
+  "pages": 372,
+  "published": 2002,
   "letter": "L"
  },
  {
@@ -2027,6 +2605,8 @@
   "author": "Thomas Mann",
   "isbn": "9780593688137",
   "year": "2025",
+  "pages": 706,
+  "published": 1924,
   "letter": "M"
  },
  {
@@ -2034,6 +2614,8 @@
   "author": "Anthony Horowitz",
   "isbn": "9780062645227",
   "year": null,
+  "pages": 477,
+  "published": 2016,
   "letter": "M"
  },
  {
@@ -2041,6 +2623,8 @@
   "author": "Nita Prose",
   "isbn": "9780593356159",
   "year": "2025",
+  "pages": 289,
+  "published": 2022,
   "letter": "M"
  },
  {
@@ -2048,6 +2632,8 @@
   "author": "Fredrik Backman",
   "isbn": "9781476738017",
   "year": "2024",
+  "pages": 337,
+  "published": 2012,
   "letter": "M"
  },
  {
@@ -2055,6 +2641,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007151660",
   "year": null,
+  "pages": 381,
+  "published": 1924,
   "letter": "M"
  },
  {
@@ -2062,6 +2650,8 @@
   "author": "Alexandre Dumas",
   "isbn": "9780140439243",
   "year": "2025",
+  "pages": 383,
+  "published": 1850,
   "letter": "M"
  },
  {
@@ -2069,6 +2659,8 @@
   "author": "Jane Austen",
   "isbn": "",
   "year": null,
+  "pages": 488,
+  "published": 1814,
   "letter": "M"
  },
  {
@@ -2076,6 +2668,8 @@
   "author": "Andy Weir",
   "isbn": "9780804139021",
   "year": "2025",
+  "pages": 369,
+  "published": 2011,
   "letter": "M"
  },
  {
@@ -2083,6 +2677,8 @@
   "author": "Ray Bradbury",
   "isbn": "9780553278224",
   "year": null,
+  "pages": 182,
+  "published": 1950,
   "letter": "M"
  },
  {
@@ -2090,6 +2686,8 @@
   "author": "Kaveh Akbar",
   "isbn": "9780593537619",
   "year": "2024",
+  "pages": 332,
+  "published": 2024,
   "letter": "M"
  },
  {
@@ -2097,6 +2695,8 @@
   "author": "Arthur Conan Doyle",
   "isbn": "9780192123091",
   "year": null,
+  "pages": 378,
+  "published": 1893,
   "letter": "M"
  },
  {
@@ -2104,6 +2704,8 @@
   "author": "Yōko Ogawa",
   "isbn": "9781101870600",
   "year": "2024",
+  "pages": 274,
+  "published": 1994,
   "letter": "M"
  },
  {
@@ -2111,6 +2713,8 @@
   "author": "Haruki Murakami",
   "isbn": "9780385689458",
   "year": null,
+  "pages": 242,
+  "published": 2014,
   "letter": "M"
  },
  {
@@ -2118,6 +2722,8 @@
   "author": "Franz Kafka",
   "isbn": "9780553213690",
   "year": null,
+  "pages": 201,
+  "published": 1915,
   "letter": "M"
  },
  {
@@ -2125,6 +2731,8 @@
   "author": "Edward Ashton",
   "isbn": "9781250275035",
   "year": "2025",
+  "pages": 296,
+  "published": 2022,
   "letter": "M"
  },
  {
@@ -2132,6 +2740,8 @@
   "author": "George Eliot",
   "isbn": "9780451529176",
   "year": null,
+  "pages": 912,
+  "published": 1872,
   "letter": "M"
  },
  {
@@ -2139,6 +2749,8 @@
   "author": "Matt Haig",
   "isbn": "9780525559474",
   "year": null,
+  "pages": 288,
+  "published": 2020,
   "letter": "M"
  },
  {
@@ -2146,6 +2758,8 @@
   "author": "Anna Burns",
   "isbn": "9780571338764",
   "year": null,
+  "pages": 352,
+  "published": 2018,
   "letter": "M"
  },
  {
@@ -2153,6 +2767,8 @@
   "author": "Kaliane Bradley",
   "isbn": "9781668045145",
   "year": "2025",
+  "pages": 339,
+  "published": 2024,
   "letter": "M"
  },
  {
@@ -2160,6 +2776,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007120987",
   "year": null,
+  "pages": 351,
+  "published": 1962,
   "letter": "M"
  },
  {
@@ -2167,6 +2785,8 @@
   "author": "Stephen King",
   "isbn": "9780450417399",
   "year": null,
+  "pages": 370,
+  "published": 1987,
   "letter": "M"
  },
  {
@@ -2174,6 +2794,8 @@
   "author": "Herman Melville",
   "isbn": "",
   "year": null,
+  "pages": null,
+  "published": null,
   "letter": "M"
  },
  {
@@ -2181,6 +2803,8 @@
   "author": "Herman Melville",
   "isbn": "9780142437247",
   "year": null,
+  "pages": 720,
+  "published": 1851,
   "letter": "M"
  },
  {
@@ -2188,6 +2812,8 @@
   "author": "Suzanne Collins",
   "isbn": "9780439023511",
   "year": "2025",
+  "pages": 390,
+  "published": 2010,
   "letter": "M"
  },
  {
@@ -2195,6 +2821,8 @@
   "author": "W. Somerset Maugham",
   "isbn": "9781598185218",
   "year": null,
+  "pages": 187,
+  "published": 1919,
   "letter": "M"
  },
  {
@@ -2202,6 +2830,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007120840",
   "year": null,
+  "pages": 299,
+  "published": 1942,
   "letter": "M"
  },
  {
@@ -2209,6 +2839,8 @@
   "author": "Stephen King",
   "isbn": "9781476754451",
   "year": null,
+  "pages": 437,
+  "published": 2014,
   "letter": "M"
  },
  {
@@ -2216,6 +2848,8 @@
   "author": "Virginia Woolf",
   "isbn": "9780151009985",
   "year": null,
+  "pages": 194,
+  "published": 1925,
   "letter": "M"
  },
  {
@@ -2223,6 +2857,8 @@
   "author": "Agatha Christie",
   "isbn": "9781572707313",
   "year": null,
+  "pages": 244,
+  "published": 1952,
   "letter": "M"
  },
  {
@@ -2230,6 +2866,8 @@
   "author": "Agatha Christie",
   "isbn": "9781579126254",
   "year": null,
+  "pages": 288,
+  "published": 1930,
   "letter": "M"
  },
  {
@@ -2237,6 +2875,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007113804",
   "year": null,
+  "pages": 264,
+  "published": 1936,
   "letter": "M"
  },
  {
@@ -2244,6 +2884,8 @@
   "author": "Agatha Christie",
   "isbn": "9781572702844",
   "year": null,
+  "pages": 5,
+  "published": 1937,
   "letter": "M"
  },
  {
@@ -2251,6 +2893,8 @@
   "author": "Agatha Christie",
   "isbn": "9781579126292",
   "year": null,
+  "pages": 288,
+  "published": 1950,
   "letter": "M"
  },
  {
@@ -2258,6 +2902,8 @@
   "author": "Agatha Christie",
   "isbn": "9780312979829",
   "year": null,
+  "pages": 277,
+  "published": 1939,
   "letter": "M"
  },
  {
@@ -2265,6 +2911,8 @@
   "author": "Agatha Christie",
   "isbn": "9781579126278",
   "year": "2025",
+  "pages": 288,
+  "published": 1926,
   "letter": "M"
  },
  {
@@ -2272,6 +2920,8 @@
   "author": "Agatha Christie",
   "isbn": "9781734452556",
   "year": "2025",
+  "pages": 240,
+  "published": 1923,
   "letter": "M"
  },
  {
@@ -2279,6 +2929,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007119318",
   "year": "2025",
+  "pages": 347,
+  "published": 1934,
   "letter": "M"
  },
  {
@@ -2286,6 +2938,8 @@
   "author": "Sonia Sotomayor",
   "isbn": "9780307594884",
   "year": null,
+  "pages": 302,
+  "published": 2013,
   "letter": "M"
  },
  {
@@ -2293,6 +2947,8 @@
   "author": "Agatha Christie",
   "isbn": "9781734452594",
   "year": "2025",
+  "pages": 174,
+  "published": 1920,
   "letter": "M"
  },
  {
@@ -2300,6 +2956,8 @@
   "author": "Agatha Christie",
   "isbn": "9781579126957",
   "year": "2025",
+  "pages": 317,
+  "published": 1928,
   "letter": "M"
  },
  {
@@ -2307,6 +2965,8 @@
   "author": "Agatha Christie",
   "isbn": "9780451200181",
   "year": null,
+  "pages": 213,
+  "published": 1971,
   "letter": "N"
  },
  {
@@ -2314,6 +2974,8 @@
   "author": "Stephen King",
   "isbn": "9781668089330",
   "year": "2025",
+  "pages": 448,
+  "published": 2025,
   "letter": "N"
  },
  {
@@ -2321,6 +2983,8 @@
   "author": "Kazuo Ishiguro",
   "isbn": "9781400078776",
   "year": null,
+  "pages": 288,
+  "published": 2005,
   "letter": "N"
  },
  {
@@ -2328,6 +2992,8 @@
   "author": "Freida McFadden",
   "isbn": "",
   "year": null,
+  "pages": 286,
+  "published": 2022,
   "letter": "N"
  },
  {
@@ -2335,6 +3001,8 @@
   "author": "Colleen Hoover",
   "isbn": "",
   "year": null,
+  "pages": null,
+  "published": null,
   "letter": "N"
  },
  {
@@ -2342,6 +3010,8 @@
   "author": "Daniel Yergin",
   "isbn": "",
   "year": null,
+  "pages": null,
+  "published": null,
   "letter": "N"
  },
  {
@@ -2349,6 +3019,8 @@
   "author": "Kristin Hannah",
   "isbn": "9780312577223",
   "year": null,
+  "pages": 564,
+  "published": 2015,
   "letter": "N"
  },
  {
@@ -2356,6 +3028,8 @@
   "author": "Kenji Miyazawa",
   "isbn": "",
   "year": null,
+  "pages": null,
+  "published": null,
   "letter": "N"
  },
  {
@@ -2363,6 +3037,8 @@
   "author": "Kenji Miyazawa",
   "isbn": "9781784877767",
   "year": null,
+  "pages": 230,
+  "published": 1934,
   "letter": "N"
  },
  {
@@ -2370,6 +3046,8 @@
   "author": "Kazuo Ishiguro",
   "isbn": "9780307397874",
   "year": null,
+  "pages": 221,
+  "published": 2009,
   "letter": "N"
  },
  {
@@ -2377,6 +3055,8 @@
   "author": "Osamu Dazai",
   "isbn": "",
   "year": null,
+  "pages": 176,
+  "published": 1948,
   "letter": "N"
  },
  {
@@ -2384,6 +3064,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007111459",
   "year": null,
+  "pages": 304,
+  "published": 1941,
   "letter": "N"
  },
  {
@@ -2391,6 +3073,8 @@
   "author": "Sally Rooney",
   "isbn": "9781984822178",
   "year": "2024",
+  "pages": 273,
+  "published": 2018,
   "letter": "N"
  },
  {
@@ -2398,6 +3082,8 @@
   "author": "Jane Austen",
   "isbn": "9781593082642",
   "year": null,
+  "pages": 260,
+  "published": 1817,
   "letter": "N"
  },
  {
@@ -2405,6 +3091,8 @@
   "author": "Daniel Mason",
   "isbn": "",
   "year": "2024",
+  "pages": 372,
+  "published": 2023,
   "letter": "N"
  },
  {
@@ -2412,6 +3100,8 @@
   "author": "Haruki Murakami",
   "isbn": "",
   "year": null,
+  "pages": 296,
+  "published": 1987,
   "letter": "N"
  },
  {
@@ -2419,6 +3109,8 @@
   "author": "Lee Child",
   "isbn": "9780385340564",
   "year": null,
+  "pages": 416,
+  "published": 2008,
   "letter": "N"
  },
  {
@@ -2426,6 +3118,8 @@
   "author": "Homer",
   "isbn": "9780143039952",
   "year": null,
+  "pages": 541,
+  "published": -750,
   "letter": "O"
  },
  {
@@ -2433,6 +3127,8 @@
   "author": "John Steinbeck",
   "isbn": "9780142000670",
   "year": "2025",
+  "pages": 107,
+  "published": 1937,
   "letter": "O"
  },
  {
@@ -2440,6 +3136,8 @@
   "author": "Ernest Hemingway",
   "isbn": "9780684830490",
   "year": null,
+  "pages": 96,
+  "published": 1952,
   "letter": "O"
  },
  {
@@ -2447,6 +3145,8 @@
   "author": "Charles Dickens",
   "isbn": "",
   "year": null,
+  "pages": 608,
+  "published": 1838,
   "letter": "O"
  },
  {
@@ -2454,6 +3154,8 @@
   "author": "Gabriel García Márquez",
   "isbn": "",
   "year": null,
+  "pages": 417,
+  "published": 1967,
   "letter": "O"
  },
  {
@@ -2461,6 +3163,8 @@
   "author": "Lee Child",
   "isbn": "9780440241027",
   "year": null,
+  "pages": 466,
+  "published": 2005,
   "letter": "O"
  },
  {
@@ -2468,6 +3172,8 @@
   "author": "Agatha Christie",
   "isbn": "9781572703858",
   "year": null,
+  "pages": 232,
+  "published": 1940,
   "letter": "O"
  },
  {
@@ -2475,6 +3181,8 @@
   "author": "Rebecca Yarros",
   "isbn": "9781649374189",
   "year": "2025",
+  "pages": 544,
+  "published": 2025,
   "letter": "O"
  },
  {
@@ -2482,6 +3190,8 @@
   "author": "Agatha Christie",
   "isbn": "9780312981624",
   "year": null,
+  "pages": 288,
+  "published": 1958,
   "letter": "O"
  },
  {
@@ -2489,6 +3199,8 @@
   "author": "Stephen King",
   "isbn": "9781501180989",
   "year": null,
+  "pages": 561,
+  "published": 2018,
   "letter": "O"
  },
  {
@@ -2496,6 +3208,8 @@
   "author": "S.E. Hinton",
   "isbn": "9780142407332",
   "year": null,
+  "pages": 214,
+  "published": 1967,
   "letter": "O"
  },
  {
@@ -2503,6 +3217,8 @@
   "author": "Richard Powers",
   "isbn": "9780393356687",
   "year": "2025",
+  "pages": 502,
+  "published": 2018,
   "letter": "O"
  },
  {
@@ -2510,6 +3226,8 @@
   "author": "Min Jin Lee",
   "isbn": "",
   "year": null,
+  "pages": 496,
+  "published": 2017,
   "letter": "P"
  },
  {
@@ -2517,6 +3235,8 @@
   "author": "John Grisham",
   "isbn": "9780385337939",
   "year": "2024",
+  "pages": 384,
+  "published": 2001,
   "letter": "P"
  },
  {
@@ -2524,6 +3244,8 @@
   "author": "Agatha Christie",
   "isbn": "9780312981716",
   "year": null,
+  "pages": 288,
+  "published": 1961,
   "letter": "P"
  },
  {
@@ -2531,6 +3253,8 @@
   "author": "Kazuo Ishiguro",
   "isbn": "",
   "year": null,
+  "pages": 183,
+  "published": 1982,
   "letter": "P"
  },
  {
@@ -2538,6 +3262,8 @@
   "author": "John Green",
   "isbn": "9780142414934",
   "year": null,
+  "pages": 305,
+  "published": 2008,
   "letter": "P"
  },
  {
@@ -2545,6 +3271,8 @@
   "author": "John Grisham",
   "isbn": "9780385339100",
   "year": "2024",
+  "pages": 416,
+  "published": 1997,
   "letter": "P"
  },
  {
@@ -2552,6 +3280,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007111503",
   "year": null,
+  "pages": 347,
+  "published": 1929,
   "letter": "P"
  },
  {
@@ -2559,6 +3289,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007154920",
   "year": null,
+  "pages": 363,
+  "published": 1970,
   "letter": "P"
  },
  {
@@ -2566,6 +3298,8 @@
   "author": "John Steinbeck",
   "isbn": "9780142000694",
   "year": null,
+  "pages": 96,
+  "published": 1947,
   "letter": "P"
  },
  {
@@ -2573,6 +3307,8 @@
   "author": "John Grisham",
   "isbn": "9780385339704",
   "year": "2024",
+  "pages": 400,
+  "published": 1992,
   "letter": "P"
  },
  {
@@ -2580,6 +3316,8 @@
   "author": "Jay Rubin",
   "isbn": "9780141395623",
   "year": null,
+  "pages": 566,
+  "published": 2018,
   "letter": "P"
  },
  {
@@ -2587,6 +3325,8 @@
   "author": "Emily Henry",
   "isbn": "",
   "year": "2025",
+  "pages": 382,
+  "published": 2021,
   "letter": "P"
  },
  {
@@ -2594,6 +3334,8 @@
   "author": "Nanae Aoyama",
   "isbn": "9781529427691",
   "year": null,
+  "pages": 160,
+  "published": 2007,
   "letter": "P"
  },
  {
@@ -2601,6 +3343,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007119301",
   "year": "2025",
+  "pages": 287,
+  "published": 1932,
   "letter": "P"
  },
  {
@@ -2608,6 +3352,8 @@
   "author": "Lee Child",
   "isbn": "9780440241003",
   "year": null,
+  "pages": 496,
+  "published": 2003,
   "letter": "P"
  },
  {
@@ -2615,6 +3361,8 @@
   "author": "Jane Austen",
   "isbn": "9780192802637",
   "year": null,
+  "pages": 249,
+  "published": 1817,
   "letter": "P"
  },
  {
@@ -2622,6 +3370,8 @@
   "author": "Stephen King",
   "isbn": "",
   "year": "2025",
+  "pages": 580,
+  "published": 1983,
   "letter": "P"
  },
  {
@@ -2629,6 +3379,8 @@
   "author": "Oscar Wilde",
   "isbn": "9780141439570",
   "year": null,
+  "pages": 253,
+  "published": 1890,
   "letter": "P"
  },
  {
@@ -2636,6 +3388,8 @@
   "author": "Albert Camus",
   "isbn": "",
   "year": null,
+  "pages": 308,
+  "published": 1947,
   "letter": "P"
  },
  {
@@ -2643,6 +3397,8 @@
   "author": "John Grisham",
   "isbn": "9780385525008",
   "year": "2024",
+  "pages": 262,
+  "published": 2007,
   "letter": "P"
  },
  {
@@ -2650,6 +3406,8 @@
   "author": "Agatha Christie",
   "isbn": "9780451199867",
   "year": null,
+  "pages": 220,
+  "published": 1953,
   "letter": "P"
  },
  {
@@ -2657,6 +3415,8 @@
   "author": "Agatha Christie",
   "isbn": "9781736062883",
   "year": "2025",
+  "pages": 191,
+  "published": 1924,
   "letter": "P"
  },
  {
@@ -2664,6 +3424,8 @@
   "author": "Anne Berest",
   "isbn": "",
   "year": "2025",
+  "pages": 464,
+  "published": 2021,
   "letter": "P"
  },
  {
@@ -2671,6 +3433,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007111480",
   "year": null,
+  "pages": 256,
+  "published": 1973,
   "letter": "P"
  },
  {
@@ -2678,6 +3442,8 @@
   "author": "Jane Austen",
   "isbn": "",
   "year": null,
+  "pages": 400,
+  "published": 1813,
   "letter": "P"
  },
  {
@@ -2685,6 +3451,8 @@
   "author": "Andy Weir",
   "isbn": "9780593135204",
   "year": "2025",
+  "pages": 476,
+  "published": 2021,
   "letter": "P"
  },
  {
@@ -2692,6 +3460,8 @@
   "author": "Paul Lynch",
   "isbn": "",
   "year": "2025",
+  "pages": 259,
+  "published": 2023,
   "letter": "P"
  },
  {
@@ -2699,6 +3469,8 @@
   "author": "John Grisham",
   "isbn": "9780385535144",
   "year": "2024",
+  "pages": 340,
+  "published": 2012,
   "letter": "R"
  },
  {
@@ -2706,6 +3478,8 @@
   "author": "John Grisham",
   "isbn": "",
   "year": "2024",
+  "pages": 576,
+  "published": 1995,
   "letter": "R"
  },
  {
@@ -2713,6 +3487,8 @@
   "author": "Burton G. Malkiel",
   "isbn": "9781324002185",
   "year": "2024",
+  "pages": 432,
+  "published": 1973,
   "letter": "R"
  },
  {
@@ -2720,6 +3496,8 @@
   "author": "Ryūnosuke Akutagawa",
   "isbn": "",
   "year": null,
+  "pages": null,
+  "published": null,
   "letter": "R"
  },
  {
@@ -2727,6 +3505,8 @@
   "author": "Ryūnosuke Akutagawa",
   "isbn": "9780871401731",
   "year": null,
+  "pages": 110,
+  "published": 1915,
   "letter": "R"
  },
  {
@@ -2734,6 +3514,8 @@
   "author": "John Grisham",
   "isbn": "",
   "year": null,
+  "pages": 420,
+  "published": 2018,
   "letter": "R"
  },
  {
@@ -2741,6 +3523,8 @@
   "author": "Stephen Crane",
   "isbn": "9781580495868",
   "year": null,
+  "pages": 149,
+  "published": 1894,
   "letter": "R"
  },
  {
@@ -2748,6 +3532,8 @@
   "author": "Jason Matthews",
   "isbn": "9781476706122",
   "year": null,
+  "pages": 434,
+  "published": 2013,
   "letter": "R"
  },
  {
@@ -2755,6 +3541,8 @@
   "author": "Kazuo Ishiguro",
   "isbn": "",
   "year": null,
+  "pages": 258,
+  "published": 1989,
   "letter": "R"
  },
  {
@@ -2762,6 +3550,8 @@
   "author": "Shelby Van Pelt",
   "isbn": "9780063204157",
   "year": "2024",
+  "pages": 360,
+  "published": 2022,
   "letter": "R"
  },
  {
@@ -2769,6 +3559,8 @@
   "author": "Colleen Hoover",
   "isbn": "9781542025607",
   "year": null,
+  "pages": 335,
+  "published": 2022,
   "letter": "R"
  },
  {
@@ -2776,6 +3568,8 @@
   "author": "Arthur Conan Doyle",
   "isbn": "9780192123176",
   "year": null,
+  "pages": 455,
+  "published": 1904,
   "letter": "R"
  },
  {
@@ -2783,6 +3577,8 @@
   "author": "J.R.R. Tolkien",
   "isbn": "",
   "year": null,
+  "pages": 432,
+  "published": 1955,
   "letter": "R"
  },
  {
@@ -2790,6 +3586,8 @@
   "author": "George S. Clason",
   "isbn": "9789388118354",
   "year": "2024",
+  "pages": 160,
+  "published": 1926,
   "letter": "R"
  },
  {
@@ -2797,6 +3595,8 @@
   "author": "Walter Scott",
   "isbn": "9780140435542",
   "year": null,
+  "pages": 501,
+  "published": 1817,
   "letter": "R"
  },
  {
@@ -2804,6 +3604,8 @@
   "author": "John Grisham",
   "isbn": "9780385539432",
   "year": "2024",
+  "pages": 344,
+  "published": 2015,
   "letter": "R"
  },
  {
@@ -2811,6 +3613,8 @@
   "author": "Virginia Woolf",
   "isbn": "",
   "year": null,
+  "pages": 112,
+  "published": 1929,
   "letter": "R"
  },
  {
@@ -2818,6 +3622,8 @@
   "author": "John Grisham",
   "isbn": "9780385541176",
   "year": "2024",
+  "pages": 352,
+  "published": 2017,
   "letter": "R"
  },
  {
@@ -2825,6 +3631,8 @@
   "author": "Amor Towles",
   "isbn": "",
   "year": "2025",
+  "pages": 335,
+  "published": 2011,
   "letter": "R"
  },
  {
@@ -2832,6 +3640,8 @@
   "author": "John Grisham",
   "isbn": "9780385339698",
   "year": "2024",
+  "pages": 464,
+  "published": 1996,
   "letter": "R"
  },
  {
@@ -2839,6 +3649,8 @@
   "author": "Lee Child",
   "isbn": "9780515130973",
   "year": null,
+  "pages": 512,
+  "published": 2000,
   "letter": "R"
  },
  {
@@ -2846,6 +3658,8 @@
   "author": "Agatha Christie",
   "isbn": "",
   "year": null,
+  "pages": 336,
+  "published": 1940,
   "letter": "S"
  },
  {
@@ -2853,6 +3667,8 @@
   "author": "Stephen King",
   "isbn": "9780450031069",
   "year": null,
+  "pages": 483,
+  "published": 1975,
   "letter": "#"
  },
  {
@@ -2860,6 +3676,8 @@
   "author": "Natsume Sōseki",
   "isbn": "9781929280100",
   "year": null,
+  "pages": 248,
+  "published": 1908,
   "letter": "S"
  },
  {
@@ -2867,6 +3685,8 @@
   "author": "Yuval Noah Harari",
   "isbn": "",
   "year": null,
+  "pages": 512,
+  "published": 2011,
   "letter": "S"
  },
  {
@@ -2874,6 +3694,8 @@
   "author": "Nathaniel Hawthorne",
   "isbn": "9780142437261",
   "year": null,
+  "pages": 279,
+  "published": 1850,
   "letter": "S"
  },
  {
@@ -2881,6 +3703,8 @@
   "author": "Agatha Christie",
   "isbn": "9781600963940",
   "year": null,
+  "pages": 266,
+  "published": 1922,
   "letter": "S"
  },
  {
@@ -2888,6 +3712,8 @@
   "author": "Donna Tartt",
   "isbn": "9781400031702",
   "year": "2025",
+  "pages": 559,
+  "published": 1992,
   "letter": "S"
  },
  {
@@ -2895,6 +3721,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007122585",
   "year": null,
+  "pages": 400,
+  "published": 1925,
   "letter": "S"
  },
  {
@@ -2902,6 +3730,8 @@
   "author": "Jane Austen",
   "isbn": "9780141439662",
   "year": null,
+  "pages": 409,
+  "published": 1811,
   "letter": "S"
  },
  {
@@ -2909,6 +3739,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007122592",
   "year": null,
+  "pages": 375,
+  "published": 1929,
   "letter": "S"
  },
  {
@@ -2916,6 +3748,8 @@
   "author": "Taylor Jenkins Reid",
   "isbn": "9781501139239",
   "year": null,
+  "pages": 389,
+  "published": 2017,
   "letter": "S"
  },
  {
@@ -2923,6 +3757,8 @@
   "author": "Stephen King",
   "isbn": "9780450040184",
   "year": "2025",
+  "pages": 497,
+  "published": 1977,
   "letter": "S"
  },
  {
@@ -2930,6 +3766,8 @@
   "author": "Phil Knight",
   "isbn": "9781501135910",
   "year": null,
+  "pages": 400,
+  "published": 2016,
   "letter": "S"
  },
  {
@@ -2937,6 +3775,8 @@
   "author": "James Clavell",
   "isbn": "9781982603847",
   "year": "2025",
+  "pages": 1152,
+  "published": 1975,
   "letter": "S"
  },
  {
@@ -2944,6 +3784,8 @@
   "author": "Arthur Conan Doyle",
   "isbn": "",
   "year": "2025",
+  "pages": 129,
+  "published": 1890,
   "letter": "S"
  },
  {
@@ -2951,6 +3793,8 @@
   "author": "Shusaku Endo",
   "isbn": "",
   "year": null,
+  "pages": null,
+  "published": null,
   "letter": "S"
  },
  {
@@ -2958,6 +3802,8 @@
   "author": "Alex Michaelides",
   "isbn": "9781250301697",
   "year": null,
+  "pages": 336,
+  "published": 2019,
   "letter": "S"
  },
  {
@@ -2965,6 +3811,8 @@
   "author": "Rachel Carson",
   "isbn": "",
   "year": "2025",
+  "pages": 378,
+  "published": 1962,
   "letter": "S"
  },
  {
@@ -2972,6 +3820,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007136841",
   "year": null,
+  "pages": 248,
+  "published": 1931,
   "letter": "S"
  },
  {
@@ -2979,6 +3829,8 @@
   "author": "John Grisham",
   "isbn": "9780099481683",
   "year": "2024",
+  "pages": 198,
+  "published": 2001,
   "letter": "S"
  },
  {
@@ -2986,6 +3838,8 @@
   "author": "Kurt Vonnegut Jr.",
   "isbn": "",
   "year": "2025",
+  "pages": 275,
+  "published": 1969,
   "letter": "S"
  },
  {
@@ -2993,6 +3847,8 @@
   "author": "Agatha Christie",
   "isbn": "9780002317856",
   "year": null,
+  "pages": 242,
+  "published": 1976,
   "letter": "S"
  },
  {
@@ -3000,6 +3856,8 @@
   "author": "Yasunari Kawabata",
   "isbn": "9780679761044",
   "year": null,
+  "pages": 175,
+  "published": 1948,
   "letter": "S"
  },
  {
@@ -3007,6 +3865,8 @@
   "author": "Jo Nesbø",
   "isbn": "9780307595867",
   "year": null,
+  "pages": 383,
+  "published": 2007,
   "letter": "S"
  },
  {
@@ -3014,6 +3874,8 @@
   "author": "Ray Bradbury",
   "isbn": "9780380729401",
   "year": null,
+  "pages": 293,
+  "published": 1962,
   "letter": "S"
  },
  {
@@ -3021,6 +3883,8 @@
   "author": "Madeline Miller",
   "isbn": "",
   "year": "2024",
+  "pages": 408,
+  "published": 2011,
   "letter": "S"
  },
  {
@@ -3028,6 +3892,8 @@
   "author": "Toni Morrison",
   "isbn": "",
   "year": null,
+  "pages": 338,
+  "published": 1977,
   "letter": "S"
  },
  {
@@ -3035,6 +3901,8 @@
   "author": "John Grisham",
   "isbn": "9780385547680",
   "year": "2024",
+  "pages": 355,
+  "published": 2021,
   "letter": "S"
  },
  {
@@ -3042,6 +3910,8 @@
   "author": "Bill Gates",
   "isbn": "9780593801581",
   "year": "2025",
+  "pages": 336,
+  "published": 2025,
   "letter": "S"
  },
  {
@@ -3049,6 +3919,8 @@
   "author": "Haruki Murakami",
   "isbn": "9780099448570",
   "year": null,
+  "pages": 190,
+  "published": 1992,
   "letter": "S"
  },
  {
@@ -3056,6 +3928,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007136858",
   "year": null,
+  "pages": 336,
+  "published": 1945,
   "letter": "S"
  },
  {
@@ -3063,6 +3937,8 @@
   "author": "John Grisham",
   "isbn": "9780385549325",
   "year": "2024",
+  "pages": 320,
+  "published": 2022,
   "letter": "S"
  },
  {
@@ -3070,6 +3946,8 @@
   "author": "Haruki Murakami",
   "isbn": "9780099448471",
   "year": null,
+  "pages": 229,
+  "published": 1999,
   "letter": "S"
  },
  {
@@ -3077,6 +3955,8 @@
   "author": "Stephen King",
   "isbn": "",
   "year": null,
+  "pages": null,
+  "published": 1978,
   "letter": "S"
  },
  {
@@ -3084,6 +3964,8 @@
   "author": "Emily St. John Mandel",
   "isbn": "9780385353304",
   "year": "2025",
+  "pages": 333,
+  "published": 2014,
   "letter": "S"
  },
  {
@@ -3091,6 +3973,8 @@
   "author": "Walter Isaacson",
   "isbn": "9781451648539",
   "year": null,
+  "pages": 630,
+  "published": 2011,
   "letter": "S"
  },
  {
@@ -3098,6 +3982,8 @@
   "author": "John Williams",
   "isbn": "9781590171998",
   "year": null,
+  "pages": 292,
+  "published": 1965,
   "letter": "S"
  },
  {
@@ -3105,6 +3991,8 @@
   "author": "Robert Louis Stevenson",
   "isbn": "",
   "year": "2025",
+  "pages": null,
+  "published": null,
   "letter": "S"
  },
  {
@@ -3112,6 +4000,8 @@
   "author": "Haruki Murakami",
   "isbn": "9780385354301",
   "year": null,
+  "pages": 96,
+  "published": 2005,
   "letter": "S"
  },
  {
@@ -3119,6 +4009,8 @@
   "author": "Albert Camus",
   "isbn": "",
   "year": null,
+  "pages": 123,
+  "published": 1942,
   "letter": "S"
  },
  {
@@ -3126,6 +4018,8 @@
   "author": "David Baldacci",
   "isbn": "9781538742051",
   "year": "2025",
+  "pages": 435,
+  "published": 2025,
   "letter": "S"
  },
  {
@@ -3133,6 +4027,8 @@
   "author": "John Grisham",
   "isbn": "9780385339094",
   "year": "2024",
+  "pages": 384,
+  "published": 1998,
   "letter": "S"
  },
  {
@@ -3140,6 +4036,8 @@
   "author": "James Islington",
   "isbn": "",
   "year": null,
+  "pages": 736,
+  "published": 2025,
   "letter": "S"
  },
  {
@@ -3147,6 +4045,8 @@
   "author": "Arthur Conan Doyle",
   "isbn": "9781420925531",
   "year": "2025",
+  "pages": 123,
+  "published": 1887,
   "letter": "S"
  },
  {
@@ -3154,6 +4054,8 @@
   "author": "Mark Manson",
   "isbn": "9798804636129",
   "year": "2024",
+  "pages": 212,
+  "published": 2016,
   "letter": "S"
  },
  {
@@ -3161,6 +4063,8 @@
   "author": "John Grisham",
   "isbn": "9780385339599",
   "year": "2024",
+  "pages": 384,
+  "published": 2002,
   "letter": "S"
  },
  {
@@ -3168,6 +4072,8 @@
   "author": "Ernest Hemingway",
   "isbn": "",
   "year": null,
+  "pages": 189,
+  "published": 1926,
   "letter": "S"
  },
  {
@@ -3175,6 +4081,8 @@
   "author": "Suzanne Collins",
   "isbn": "9781546171461",
   "year": "2025",
+  "pages": 387,
+  "published": 2025,
   "letter": "S"
  },
  {
@@ -3182,6 +4090,8 @@
   "author": "John Grisham",
   "isbn": "9780385537131",
   "year": "2024",
+  "pages": 447,
+  "published": 2013,
   "letter": "S"
  },
  {
@@ -3189,6 +4099,8 @@
   "author": "Viet Thanh Nguyen",
   "isbn": "9780802123459",
   "year": "2025",
+  "pages": 384,
+  "published": 2015,
   "letter": "S"
  },
  {
@@ -3196,6 +4108,8 @@
   "author": "Amor Towles",
   "isbn": "9780593296370",
   "year": "2025",
+  "pages": 451,
+  "published": 2024,
   "letter": "T"
  },
  {
@@ -3203,6 +4117,8 @@
   "author": "James Clavell",
   "isbn": "",
   "year": "2025",
+  "pages": 732,
+  "published": 1966,
   "letter": "T"
  },
  {
@@ -3210,6 +4126,8 @@
   "author": "Yáng Shuāng-zǐ",
   "isbn": "9781644453155",
   "year": null,
+  "pages": 298,
+  "published": 2020,
   "letter": "T"
  },
  {
@@ -3217,6 +4135,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007121014",
   "year": null,
+  "pages": 352,
+  "published": 1948,
   "letter": "T"
  },
  {
@@ -3224,6 +4144,8 @@
   "author": "Ruth Ozeki",
   "isbn": "9780670026630",
   "year": null,
+  "pages": 432,
+  "published": 2013,
   "letter": "T"
  },
  {
@@ -3231,6 +4153,8 @@
   "author": "Charles Dickens",
   "isbn": "9780141439600",
   "year": null,
+  "pages": 489,
+  "published": 1859,
   "letter": "T"
  },
  {
@@ -3238,6 +4162,8 @@
   "author": "Freida McFadden",
   "isbn": "9781728296210",
   "year": "2025",
+  "pages": 379,
+  "published": 2024,
   "letter": "T"
  },
  {
@@ -3245,6 +4171,8 @@
   "author": "Yukio Mishima",
   "isbn": "9780679433156",
   "year": null,
+  "pages": 247,
+  "published": 1956,
   "letter": "T"
  },
  {
@@ -3252,6 +4180,8 @@
   "author": "John Grisham",
   "isbn": "9780440234746",
   "year": "2024",
+  "pages": 533,
+  "published": 1999,
   "letter": "T"
  },
  {
@@ -3259,6 +4189,8 @@
   "author": "Margaret Atwood",
   "isbn": "",
   "year": "2024",
+  "pages": 422,
+  "published": 2019,
   "letter": "T"
  },
  {
@@ -3266,6 +4198,8 @@
   "author": "John Grisham",
   "isbn": "9780142428696",
   "year": "2024",
+  "pages": 263,
+  "published": 2010,
   "letter": "T"
  },
  {
@@ -3273,6 +4207,8 @@
   "author": "John Grisham",
   "isbn": "",
   "year": "2024",
+  "pages": 232,
+  "published": 2010,
   "letter": "T"
  },
  {
@@ -3280,6 +4216,8 @@
   "author": "John Grisham",
   "isbn": "9780525425762",
   "year": "2024",
+  "pages": 288,
+  "published": 2012,
   "letter": "T"
  },
  {
@@ -3287,6 +4225,8 @@
   "author": "John Grisham",
   "isbn": "9780525425779",
   "year": "2024",
+  "pages": 289,
+  "published": 2013,
   "letter": "T"
  },
  {
@@ -3294,6 +4234,8 @@
   "author": "John Grisham",
   "isbn": "9780525426387",
   "year": "2024",
+  "pages": 250,
+  "published": 2015,
   "letter": "T"
  },
  {
@@ -3301,6 +4243,8 @@
   "author": "John Grisham",
   "isbn": "9780525426394",
   "year": "2024",
+  "pages": 224,
+  "published": 2016,
   "letter": "T"
  },
  {
@@ -3308,6 +4252,8 @@
   "author": "Allen Levi",
   "isbn": "9781668236512",
   "year": null,
+  "pages": 387,
+  "published": 2023,
   "letter": "T"
  },
  {
@@ -3315,6 +4261,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007154937",
   "year": null,
+  "pages": 368,
+  "published": 1951,
   "letter": "T"
  },
  {
@@ -3322,6 +4270,8 @@
   "author": "Agatha Christie",
   "isbn": "9780451199904",
   "year": null,
+  "pages": 224,
+  "published": 1952,
   "letter": "T"
  },
  {
@@ -3329,6 +4279,8 @@
   "author": "Rebecca Yarros",
   "isbn": "9781682815663",
   "year": null,
+  "pages": 448,
+  "published": 2021,
   "letter": "T"
  },
  {
@@ -3336,6 +4288,8 @@
   "author": "Agatha Christie",
   "isbn": "9780007121106",
   "year": null,
+  "pages": 365,
+  "published": 1966,
   "letter": "T"
  },
  {
@@ -3343,6 +4297,8 @@
   "author": "Agatha Christie",
   "isbn": "9780425205976",
   "year": "2025",
+  "pages": 336,
+  "published": 1935,
   "letter": "T"
  },
  {
@@ -3350,6 +4306,8 @@
   "author": "Liu Cixin",
   "isbn": "",
   "year": "2024",
+  "pages": 472,
+  "published": 2006,
   "letter": "T"
  },
  {
@@ -3357,6 +4315,8 @@
   "author": "Alexandre Dumas",
   "isbn": "",
   "year": "2025",
+  "pages": 625,
+  "published": 1844,
   "letter": "T"
  },
  {
@@ -3364,6 +4324,8 @@
   "author": "John Grisham",
   "isbn": "9780385545976",
   "year": "2024",
+  "pages": 480,
+  "published": 2020,
   "letter": "T"
  },
  {
@@ -3371,6 +4333,8 @@
   "author": "John Grisham",
   "isbn": "",
   "year": "2024",
+  "pages": 738,
+  "published": 1989,
   "letter": "T"
  },
  {
@@ -3378,6 +4342,8 @@
   "author": "Harper Lee",
   "isbn": "",
   "year": null,
+  "pages": 323,
+  "published": 1960,
   "letter": "T"
  },
  {
@@ -3385,6 +4351,8 @@
   "author": "Jake Adelstein",
   "isbn": "9780307378798",
   "year": null,
+  "pages": 335,
+  "published": 2009,
   "letter": "T"
  },
  {
@@ -3392,6 +4360,8 @@
   "author": "Ann Patchett",
   "isbn": "9780063327528",
   "year": "2024",
+  "pages": 320,
+  "published": 2023,
   "letter": "T"
  },
  {
@@ -3399,6 +4369,8 @@
   "author": "Gabrielle Zevin",
   "isbn": "9780735243347",
   "year": "2024",
+  "pages": 399,
+  "published": 2022,
   "letter": "T"
  },
  {
@@ -3406,6 +4378,8 @@
   "author": "Agatha Christie",
   "isbn": "",
   "year": null,
+  "pages": 259,
+  "published": 1944,
   "letter": "T"
  },
  {
@@ -3413,6 +4387,8 @@
   "author": "Robert Louis Stevenson",
   "isbn": "9780753453803",
   "year": null,
+  "pages": 352,
+  "published": 1882,
   "letter": "T"
  },
  {
@@ -3420,6 +4396,8 @@
   "author": "Betty Smith",
   "isbn": "9780061120077",
   "year": "2024",
+  "pages": 496,
+  "published": 1943,
   "letter": "T"
  },
  {
@@ -3427,6 +4405,8 @@
   "author": "Franz Kafka",
   "isbn": "",
   "year": null,
+  "pages": 255,
+  "published": 1925,
   "letter": "T"
  },
  {
@@ -3434,6 +4414,8 @@
   "author": "Lee Child",
   "isbn": "9780515128635",
   "year": null,
+  "pages": 432,
+  "published": 1999,
   "letter": "T"
  },
  {
@@ -3441,6 +4423,8 @@
   "author": "Hernan Diaz",
   "isbn": "",
   "year": "2024",
+  "pages": 402,
+  "published": 2022,
   "letter": "T"
  },
  {
@@ -3448,6 +4432,8 @@
   "author": "Kamala Harris",
   "isbn": "",
   "year": null,
+  "pages": 336,
+  "published": 2019,
   "letter": "T"
  },
  {
@@ -3455,6 +4441,8 @@
   "author": "Henry James",
   "isbn": "9780140620610",
   "year": null,
+  "pages": 121,
+  "published": 1898,
   "letter": "T"
  },
  {
@@ -3462,6 +4450,8 @@
   "author": "John Green",
   "isbn": "9780525555360",
   "year": null,
+  "pages": 290,
+  "published": 2017,
   "letter": "T"
  },
  {
@@ -3469,6 +4459,8 @@
   "author": "Jules Verne",
   "isbn": "9780760728505",
   "year": null,
+  "pages": 269,
+  "published": 1869,
   "letter": "T"
  },
  {
@@ -3476,6 +4468,8 @@
   "author": "J.R.R. Tolkien",
   "isbn": "",
   "year": null,
+  "pages": 448,
+  "published": 1954,
   "letter": "T"
  },
  {
@@ -3483,6 +4477,8 @@
   "author": "Colleen Hoover",
   "isbn": "",
   "year": null,
+  "pages": 330,
+  "published": 2014,
   "letter": "U"
  },
  {
@@ -3490,6 +4486,8 @@
   "author": "Harriet Beecher Stowe",
   "isbn": "",
   "year": null,
+  "pages": 438,
+  "published": 1852,
   "letter": "U"
  },
  {
@@ -3497,6 +4495,8 @@
   "author": "Kazuo Ishiguro",
   "isbn": "9780571225392",
   "year": null,
+  "pages": 535,
+  "published": 1995,
   "letter": "U"
  },
  {
@@ -3504,6 +4504,8 @@
   "author": "Tim Harford",
   "isbn": "9780195189773",
   "year": "2024",
+  "pages": 288,
+  "published": 2005,
   "letter": "U"
  },
  {
@@ -3511,6 +4513,8 @@
   "author": "Haruki Murakami",
   "isbn": "",
   "year": null,
+  "pages": 309,
+  "published": 1997,
   "letter": "U"
  },
  {
@@ -3518,6 +4522,8 @@
   "author": "Colson Whitehead",
   "isbn": "9780385542364",
   "year": "2024",
+  "pages": 306,
+  "published": 2016,
   "letter": "U"
  },
  {
@@ -3525,6 +4531,8 @@
   "author": "Stephen King",
   "isbn": "9781439148501",
   "year": null,
+  "pages": 1074,
+  "published": 2009,
   "letter": "U"
  },
  {
@@ -3532,6 +4540,8 @@
   "author": "Jared Diamond",
   "isbn": "",
   "year": null,
+  "pages": 512,
+  "published": 2019,
   "letter": "U"
  },
  {
@@ -3539,6 +4549,8 @@
   "author": "Han Kang",
   "isbn": "9780553448184",
   "year": "2025",
+  "pages": 158,
+  "published": 2007,
   "letter": "V"
  },
  {
@@ -3546,6 +4558,8 @@
   "author": "Colleen Hoover",
   "isbn": "",
   "year": null,
+  "pages": 336,
+  "published": 2018,
   "letter": "V"
  },
  {
@@ -3553,6 +4567,8 @@
   "author": "David Grann",
   "isbn": "9780385534260",
   "year": "2025",
+  "pages": 329,
+  "published": 2023,
   "letter": "W"
  },
  {
@@ -3560,6 +4576,8 @@
   "author": "Leo Tolstoy",
   "isbn": "9780192833983",
   "year": null,
+  "pages": 1392,
+  "published": 1868,
   "letter": "W"
  },
  {
@@ -3567,6 +4585,8 @@
   "author": "Freida McFadden",
   "isbn": "9781464233005",
   "year": "2025",
+  "pages": 320,
+  "published": 2023,
   "letter": "W"
  },
  {
@@ -3574,6 +4594,8 @@
   "author": "H.G. Wells",
   "isbn": "9780375759239",
   "year": "2024",
+  "pages": 192,
+  "published": 1898,
   "letter": "W"
  },
  {
@@ -3581,6 +4603,8 @@
   "author": "Henry James",
   "isbn": "9780451528711",
   "year": null,
+  "pages": 240,
+  "published": 1880,
   "letter": "W"
  },
  {
@@ -3588,6 +4612,8 @@
   "author": "Chris Whitaker",
   "isbn": "9781250759665",
   "year": null,
+  "pages": 384,
+  "published": 2020,
   "letter": "W"
  },
  {
@@ -3595,6 +4621,8 @@
   "author": "Alison Espach",
   "isbn": "",
   "year": "2025",
+  "pages": 367,
+  "published": 2024,
   "letter": "W"
  },
  {
@@ -3602,6 +4630,8 @@
   "author": "Hwang Bo-Reum",
   "isbn": "",
   "year": "2024",
+  "pages": null,
+  "published": null,
   "letter": "W"
  },
  {
@@ -3609,6 +4639,8 @@
   "author": "Hwang Bo-Reum",
   "isbn": "",
   "year": null,
+  "pages": 307,
+  "published": 2022,
   "letter": "W"
  },
  {
@@ -3616,6 +4648,8 @@
   "author": "Emilia Hart",
   "isbn": "9781250842725",
   "year": "2025",
+  "pages": 392,
+  "published": 2023,
   "letter": "W"
  },
  {
@@ -3623,6 +4657,8 @@
   "author": "Haruki Murakami",
   "isbn": "",
   "year": null,
+  "pages": 188,
+  "published": 2007,
   "letter": "W"
  },
  {
@@ -3630,6 +4666,8 @@
   "author": "Michiko Aoyama",
   "isbn": "9781335005625",
   "year": null,
+  "pages": 304,
+  "published": 2020,
   "letter": "W"
  },
  {
@@ -3637,6 +4675,8 @@
   "author": "Kazuo Ishiguro",
   "isbn": "9780571225408",
   "year": null,
+  "pages": 320,
+  "published": 2000,
   "letter": "W"
  },
  {
@@ -3644,6 +4684,8 @@
   "author": "Delia Owens",
   "isbn": "9780735219113",
   "year": null,
+  "pages": 384,
+  "published": 2018,
   "letter": "W"
  },
  {
@@ -3651,6 +4693,8 @@
   "author": "John Grisham",
   "isbn": "9780385541206",
   "year": "2024",
+  "pages": 424,
+  "published": 2016,
   "letter": "W"
  },
  {
@@ -3658,6 +4702,8 @@
   "author": "Jack London",
   "isbn": "",
   "year": null,
+  "pages": 252,
+  "published": 1906,
   "letter": "W"
  },
  {
@@ -3665,6 +4711,8 @@
   "author": "Spencer Johnson",
   "isbn": "9780091883768",
   "year": null,
+  "pages": 98,
+  "published": 1998,
   "letter": "W"
  },
  {
@@ -3672,6 +4720,8 @@
   "author": "Agatha Christie",
   "isbn": "9780312981594",
   "year": null,
+  "pages": 288,
+  "published": 1934,
   "letter": "W"
  },
  {
@@ -3679,6 +4729,8 @@
   "author": "Gregory Maguire",
   "isbn": "",
   "year": "2025",
+  "pages": 406,
+  "published": 1995,
   "letter": "W"
  },
  {
@@ -3686,6 +4738,8 @@
   "author": "John Grisham",
   "isbn": "9780385548984",
   "year": null,
+  "pages": 404,
+  "published": 2025,
   "letter": "W"
  },
  {
@@ -3693,6 +4747,8 @@
   "author": "Haruki Murakami",
   "isbn": "9780375718946",
   "year": null,
+  "pages": 353,
+  "published": 1982,
   "letter": "W"
  },
  {
@@ -3700,6 +4756,8 @@
   "author": "John Green",
   "isbn": "9780525421580",
   "year": null,
+  "pages": 320,
+  "published": 2010,
   "letter": "W"
  },
  {
@@ -3707,6 +4765,8 @@
   "author": "James Islington",
   "isbn": "9781982141196",
   "year": "2025",
+  "pages": 640,
+  "published": 2023,
   "letter": "W"
  },
  {
@@ -3714,6 +4774,8 @@
   "author": "Haruki Murakami",
   "isbn": "9780385352123",
   "year": null,
+  "pages": 234,
+  "published": 1980,
   "letter": "W"
  },
  {
@@ -3721,6 +4783,8 @@
   "author": "Haruki Murakami",
   "isbn": "9780965341981",
   "year": null,
+  "pages": 607,
+  "published": 1994,
   "letter": "W"
  },
  {
@@ -3728,6 +4792,8 @@
   "author": "Sherwood Anderson",
   "isbn": "9780192839770",
   "year": null,
+  "pages": 240,
+  "published": 1919,
   "letter": "W"
  },
  {
@@ -3735,6 +4801,8 @@
   "author": "Lee Child",
   "isbn": "9781590860625",
   "year": null,
+  "pages": 14,
+  "published": 2002,
   "letter": "W"
  },
  {
@@ -3742,6 +4810,8 @@
   "author": "Ruth Ware",
   "isbn": "9781668221877",
   "year": null,
+  "pages": 400,
+  "published": 2016,
   "letter": "W"
  },
  {
@@ -3749,6 +4819,8 @@
   "author": "Britney Spears",
   "isbn": "",
   "year": "2024",
+  "pages": null,
+  "published": null,
   "letter": "W"
  },
  {
@@ -3756,6 +4828,8 @@
   "author": "Kristin Hannah",
   "isbn": "9781250178633",
   "year": "2024",
+  "pages": 471,
+  "published": 2024,
   "letter": "W"
  },
  {
@@ -3763,6 +4837,8 @@
   "author": "Emily Brontë",
   "isbn": "9780141439556",
   "year": null,
+  "pages": 359,
+  "published": 1847,
   "letter": "W"
  },
  {
@@ -3770,6 +4846,8 @@
   "author": "R.F. Kuang",
   "isbn": "",
   "year": null,
+  "pages": 319,
+  "published": 2023,
   "letter": "Y"
  },
  {
@@ -3777,6 +4855,8 @@
   "author": "Caro Claire Burke",
   "isbn": "",
   "year": null,
+  "pages": 400,
+  "published": 2026,
   "letter": "Y"
  },
  {
@@ -3784,6 +4864,8 @@
   "author": "Stephen King",
   "isbn": "9781668037713",
   "year": "2024",
+  "pages": 512,
+  "published": 2024,
   "letter": "Y"
  },
  {
@@ -3791,6 +4873,8 @@
   "author": "Maiko Seo",
   "isbn": "9784163907956",
   "year": null,
+  "pages": 378,
+  "published": 2018,
   "letter": "#"
  },
  {
@@ -3798,6 +4882,8 @@
   "author": "Chris Whitaker",
   "isbn": "",
   "year": null,
+  "pages": null,
+  "published": null,
   "letter": "#"
  },
  {
@@ -3805,6 +4891,8 @@
   "author": "伊勢谷 武",
   "isbn": "",
   "year": "2025",
+  "pages": 978,
+  "published": 2019,
   "letter": "#"
  },
  {
@@ -3812,6 +4900,8 @@
   "author": "安壇美緒",
   "isbn": "9784087717846",
   "year": null,
+  "pages": 212,
+  "published": 2022,
   "letter": "#"
  },
  {
@@ -3819,6 +4909,8 @@
   "author": "Maha Harada",
   "isbn": "",
   "year": null,
+  "pages": 287,
+  "published": 2021,
   "letter": "#"
  },
  {
@@ -3826,6 +4918,8 @@
   "author": "Sohn Won-Pyung",
   "isbn": "",
   "year": null,
+  "pages": null,
+  "published": null,
   "letter": "#"
  },
  {
@@ -3833,6 +4927,8 @@
   "author": "池井戸潤",
   "isbn": "",
   "year": "2024",
+  "pages": null,
+  "published": null,
   "letter": "#"
  },
  {
@@ -3840,6 +4936,8 @@
   "author": "Jun Ikeido",
   "isbn": "9784163917726",
   "year": null,
+  "pages": 376,
+  "published": 2024,
   "letter": "#"
  },
  {
@@ -3847,6 +4945,8 @@
   "author": "Jun Ikeido",
   "isbn": "9784163917733",
   "year": null,
+  "pages": 336,
+  "published": 2024,
   "letter": "#"
  },
  {
@@ -3854,6 +4954,8 @@
   "author": "Michi Ichiho",
   "isbn": "",
   "year": null,
+  "pages": 464,
+  "published": 2022,
   "letter": "#"
  },
  {
@@ -3861,6 +4963,8 @@
   "author": "Haruo Yugi",
   "isbn": "",
   "year": null,
+  "pages": null,
+  "published": null,
   "letter": "#"
  },
  {
@@ -3868,6 +4972,8 @@
   "author": "Haruo Yuki",
   "isbn": "9786267609422",
   "year": null,
+  "pages": 221,
+  "published": 2025,
   "letter": "#"
  },
  {
@@ -3875,6 +4981,8 @@
   "author": "Touma Aisaka",
   "isbn": "9784152100641",
   "year": null,
+  "pages": 496,
+  "published": 2021,
   "letter": "#"
  },
  {
@@ -3882,6 +4990,8 @@
   "author": "吉野 源三郎",
   "isbn": "9784003315811",
   "year": null,
+  "pages": null,
+  "published": 1937,
   "letter": "#"
  },
  {
@@ -3889,6 +4999,8 @@
   "author": "小川 哲",
   "isbn": "9784022518378",
   "year": null,
+  "pages": 165,
+  "published": 2022,
   "letter": "#"
  },
  {
@@ -3896,6 +5008,8 @@
   "author": "Yoru Sumino",
   "isbn": "",
   "year": null,
+  "pages": null,
+  "published": null,
   "letter": "#"
  },
  {
@@ -3903,6 +5017,8 @@
   "author": "Mina Miyajima",
   "isbn": "9784103549512",
   "year": "2024",
+  "pages": 277,
+  "published": 2023,
   "letter": "#"
  },
  {
@@ -3910,6 +5026,8 @@
   "author": "Haruo Yugi",
   "isbn": "",
   "year": null,
+  "pages": null,
+  "published": null,
   "letter": "#"
  },
  {
@@ -3917,6 +5035,8 @@
   "author": "Ryo Asai",
   "isbn": "",
   "year": null,
+  "pages": 386,
+  "published": 2021,
   "letter": "#"
  },
  {
@@ -3924,6 +5044,8 @@
   "author": "Kikuko Tsumura",
   "isbn": "9784620108629",
   "year": "2024",
+  "pages": 496,
+  "published": 2023,
   "letter": "#"
  },
  {
@@ -3931,6 +5053,8 @@
   "author": "Naoki Hyakuta",
   "isbn": "9784062764131",
   "year": null,
+  "pages": 589,
+  "published": 2006,
   "letter": "#"
  },
  {
@@ -3938,6 +5062,8 @@
   "author": "Yuu Nagira",
   "isbn": "",
   "year": null,
+  "pages": 357,
+  "published": 2022,
   "letter": "#"
  }
 ]

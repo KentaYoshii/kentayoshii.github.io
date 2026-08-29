@@ -24,6 +24,18 @@ by title (leading articles ignored), which is the default ungrouped view; the
           <option value="letter">First letter</option>
         </select>
       </label>
+      <label class="group-control">Sort by
+        <select class="sort-select" aria-label="Sort books by">
+          <option value="title">Title</option>
+          <option value="date">Year read</option>
+          <option value="pages">Length</option>
+          <option value="published">Publication date</option>
+        </select>
+      </label>
+      <div class="view-toggle" role="group" aria-label="View as">
+        <button type="button" class="view-button" data-view="list" aria-pressed="true">List</button>
+        <button type="button" class="view-button" data-view="grid" aria-pressed="false">Grid</button>
+      </div>
     </div>
     <p class="stats-summary" aria-live="polite"></p>
   </div>
@@ -33,7 +45,7 @@ by title (leading articles ignored), which is the default ungrouped view; the
       <ul>
         {%- for book in site.data.books -%}
         {%- comment -%}An empty string is truthy in Liquid, so test it explicitly.{%- endcomment -%}
-        <li data-title="{{ book.title | escape }}" data-author="{{ book.author | escape }}" data-letter="{{ book.letter }}"{% if book.isbn and book.isbn != "" %} data-isbn="{{ book.isbn }}"{% endif %}><em>{{ book.title | escape }}</em>{% if book.year and book.year != "" %}<span class="entry-date"> · {{ book.year }}</span>{% endif %}</li>
+        <li data-title="{{ book.title | escape }}" data-author="{{ book.author | escape }}" data-letter="{{ book.letter }}"{% if book.year and book.year != "" %} data-date="{{ book.year }}"{% endif %}{% if book.pages %} data-pages="{{ book.pages }}"{% endif %}{% if book.published %} data-published="{{ book.published }}"{% endif %}{% if book.isbn and book.isbn != "" %} data-isbn="{{ book.isbn }}"{% endif %}><em>{{ book.title | escape }}</em><span class="entry-byline">{{ book.author | escape }}</span>{% if book.year and book.year != "" %}<span class="entry-date"> · {{ book.year }}</span>{% endif %}</li>
         {%- endfor -%}
       </ul>
     </section>
