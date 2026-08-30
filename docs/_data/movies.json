@@ -7,10 +7,38 @@
   "letter": "#"
  },
  {
+  "title": "28 Days Later",
+  "year": "2025",
+  "month": "October",
+  "date": "2025-10",
+  "letter": "#"
+ },
+ {
+  "title": "28 Weeks Later",
+  "year": "2025",
+  "month": "October",
+  "date": "2025-10",
+  "letter": "#"
+ },
+ {
+  "title": "28 Years Later",
+  "year": "2025",
+  "month": "December",
+  "date": "2025-12",
+  "letter": "#"
+ },
+ {
   "title": "The Accountant 2",
   "year": "2025",
   "month": "June",
   "date": "2025-06",
+  "letter": "A"
+ },
+ {
+  "title": "AK-47 Kalashnikov",
+  "year": "2025",
+  "month": "September",
+  "date": "2025-09",
   "letter": "A"
  },
  {
@@ -35,6 +63,13 @@
   "letter": "A"
  },
  {
+  "title": "The Amateur",
+  "year": "2025",
+  "month": "December",
+  "date": "2025-12",
+  "letter": "A"
+ },
+ {
   "title": "Angels & Demons",
   "year": "2025",
   "month": "May",
@@ -47,6 +82,20 @@
   "month": "November",
   "date": "2024-11",
   "letter": "A"
+ },
+ {
+  "title": "Avatar: Fire and Ash",
+  "year": "2025",
+  "month": "December",
+  "date": "2025-12",
+  "letter": "A"
+ },
+ {
+  "title": "Battle for Sevastopol",
+  "year": "2025",
+  "month": "August",
+  "date": "2025-08",
+  "letter": "B"
  },
  {
   "title": "The Beekeeper",
@@ -63,11 +112,46 @@
   "letter": "B"
  },
  {
+  "title": "The Bourne Identity",
+  "year": "2025",
+  "month": "September",
+  "date": "2025-09",
+  "letter": "B"
+ },
+ {
+  "title": "The Bourne Legacy",
+  "year": "2025",
+  "month": "September",
+  "date": "2025-09",
+  "letter": "B"
+ },
+ {
+  "title": "The Bourne Supremacy",
+  "year": "2025",
+  "month": "September",
+  "date": "2025-09",
+  "letter": "B"
+ },
+ {
+  "title": "The Bourne Ultimatum",
+  "year": "2025",
+  "month": "September",
+  "date": "2025-09",
+  "letter": "B"
+ },
+ {
   "title": "The Boys in The Boat",
   "year": "2024",
   "month": "May",
   "date": "2024-05",
   "letter": "B"
+ },
+ {
+  "title": "Captain America: Brave New World",
+  "year": "2025",
+  "month": "August",
+  "date": "2025-08",
+  "letter": "C"
  },
  {
   "title": "Casino Royale",
@@ -98,11 +182,25 @@
   "letter": "C"
  },
  {
+  "title": "Count of Monte-Cristo",
+  "year": "2025",
+  "month": "November",
+  "date": "2025-11",
+  "letter": "C"
+ },
+ {
   "title": "Creed",
   "year": "2025",
   "month": "June",
   "date": "2025-06",
   "letter": "C"
+ },
+ {
+  "title": "Darkest Hour",
+  "year": "2025",
+  "month": "August",
+  "date": "2025-08",
+  "letter": "D"
  },
  {
   "title": "The Da Vinci Code",
@@ -126,6 +224,13 @@
   "letter": "D"
  },
  {
+  "title": "Deepwater Horizon",
+  "year": "2025",
+  "month": "October",
+  "date": "2025-10",
+  "letter": "D"
+ },
+ {
   "title": "Diamonds are Forever",
   "year": "2024",
   "month": "November",
@@ -137,6 +242,27 @@
   "year": "2024",
   "month": "December",
   "date": "2024-12",
+  "letter": "D"
+ },
+ {
+  "title": "Die Hard",
+  "year": "2025",
+  "month": "December",
+  "date": "2025-12",
+  "letter": "D"
+ },
+ {
+  "title": "Die Hard 2",
+  "year": "2025",
+  "month": "December",
+  "date": "2025-12",
+  "letter": "D"
+ },
+ {
+  "title": "Die Hard: With a Vengeance",
+  "year": "2025",
+  "month": "December",
+  "date": "2025-12",
   "letter": "D"
  },
  {
@@ -203,6 +329,20 @@
   "letter": "F"
  },
  {
+  "title": "The Fantastic Four: First Steps",
+  "year": "2025",
+  "month": "December",
+  "date": "2025-12",
+  "letter": "F"
+ },
+ {
+  "title": "Flight Risk",
+  "year": "2025",
+  "month": "November",
+  "date": "2025-11",
+  "letter": "F"
+ },
+ {
   "title": "Forrest Gump",
   "year": "2025",
   "month": "June",
@@ -221,6 +361,13 @@
   "year": "2024",
   "month": "October",
   "date": "2024-10",
+  "letter": "F"
+ },
+ {
+  "title": "From the World of John Wick: Ballerina",
+  "year": "2025",
+  "month": "November",
+  "date": "2025-11",
   "letter": "F"
  },
  {
@@ -273,6 +420,34 @@
   "letter": "H"
  },
  {
+  "title": "Indiana Jones and the Kingdom of the Crystal Skull",
+  "year": "2025",
+  "month": "December",
+  "date": "2025-12",
+  "letter": "I"
+ },
+ {
+  "title": "Indiana Jones and the Last Crusade",
+  "year": "2025",
+  "month": "December",
+  "date": "2025-12",
+  "letter": "I"
+ },
+ {
+  "title": "Indiana Jones and the Raiders of the Lost Ark",
+  "year": "2025",
+  "month": "December",
+  "date": "2025-12",
+  "letter": "I"
+ },
+ {
+  "title": "Indiana Jones and the Temple of Doom",
+  "year": "2025",
+  "month": "December",
+  "date": "2025-12",
+  "letter": "I"
+ },
+ {
   "title": "Infinite",
   "year": "2024",
   "month": "November",
@@ -322,10 +497,31 @@
   "letter": "J"
  },
  {
+  "title": "Jason Bourne",
+  "year": "2025",
+  "month": "September",
+  "date": "2025-09",
+  "letter": "J"
+ },
+ {
+  "title": "Karate Kid: Legends",
+  "year": "2025",
+  "month": "December",
+  "date": "2025-12",
+  "letter": "K"
+ },
+ {
   "title": "Kingdom of the Planet of the Apes",
   "year": "2025",
   "month": "March",
   "date": "2025-03",
+  "letter": "K"
+ },
+ {
+  "title": "Kingdom of the Planet of the Apes",
+  "year": "2025",
+  "month": "August",
+  "date": "2025-08",
   "letter": "K"
  },
  {
@@ -350,11 +546,32 @@
   "letter": "K"
  },
  {
+  "title": "Knight and Day",
+  "year": "2025",
+  "month": "October",
+  "date": "2025-10",
+  "letter": "K"
+ },
+ {
   "title": "Knives Out",
   "year": "2025",
   "month": "January",
   "date": "2025-01",
   "letter": "K"
+ },
+ {
+  "title": "Last Breath",
+  "year": "2025",
+  "month": "October",
+  "date": "2025-10",
+  "letter": "L"
+ },
+ {
+  "title": "Letters from Iwo Jima",
+  "year": "2025",
+  "month": "November",
+  "date": "2025-11",
+  "letter": "L"
  },
  {
   "title": "License to Kill",
@@ -392,6 +609,20 @@
   "letter": "L"
  },
  {
+  "title": "The Long Walk",
+  "year": "2025",
+  "month": "December",
+  "date": "2025-12",
+  "letter": "L"
+ },
+ {
+  "title": "Love Hurts",
+  "year": "2025",
+  "month": "October",
+  "date": "2025-10",
+  "letter": "L"
+ },
+ {
   "title": "The Magnificent Seven",
   "year": "2024",
   "month": "September",
@@ -413,6 +644,41 @@
   "letter": "M"
  },
  {
+  "title": "Marty Supreme",
+  "year": "2025",
+  "month": "December",
+  "date": "2025-12",
+  "letter": "M"
+ },
+ {
+  "title": "The Matrix",
+  "year": "2025",
+  "month": "November",
+  "date": "2025-11",
+  "letter": "M"
+ },
+ {
+  "title": "The Matrix Reloaded",
+  "year": "2025",
+  "month": "December",
+  "date": "2025-12",
+  "letter": "M"
+ },
+ {
+  "title": "The Matrix Resurrections",
+  "year": "2025",
+  "month": "December",
+  "date": "2025-12",
+  "letter": "M"
+ },
+ {
+  "title": "The Matrix Revolutions",
+  "year": "2025",
+  "month": "December",
+  "date": "2025-12",
+  "letter": "M"
+ },
+ {
   "title": "Memory",
   "year": "2025",
   "month": "July",
@@ -431,6 +697,13 @@
   "year": "2025",
   "month": "June",
   "date": "2025-06",
+  "letter": "M"
+ },
+ {
+  "title": "The Ministry of Ungentlemanly Warfare",
+  "year": "2025",
+  "month": "November",
+  "date": "2025-11",
   "letter": "M"
  },
  {
@@ -476,6 +749,20 @@
   "letter": "O"
  },
  {
+  "title": "Pearl Harbor",
+  "year": "2025",
+  "month": "November",
+  "date": "2025-11",
+  "letter": "P"
+ },
+ {
+  "title": "Play Dirty",
+  "year": "2025",
+  "month": "October",
+  "date": "2025-10",
+  "letter": "P"
+ },
+ {
   "title": "Predator",
   "year": "2025",
   "month": "April",
@@ -487,6 +774,13 @@
   "year": "2025",
   "month": "April",
   "date": "2025-04",
+  "letter": "P"
+ },
+ {
+  "title": "Predator: Badlands",
+  "year": "2025",
+  "month": "December",
+  "date": "2025-12",
   "letter": "P"
  },
  {
@@ -560,6 +854,13 @@
   "letter": "R"
  },
  {
+  "title": "The Running Man",
+  "year": "2025",
+  "month": "December",
+  "date": "2025-12",
+  "letter": "R"
+ },
+ {
   "title": "Shogun (TV Series)",
   "year": "2025",
   "month": "February",
@@ -595,10 +896,24 @@
   "letter": "S"
  },
  {
+  "title": "Superman",
+  "year": "2025",
+  "month": "December",
+  "date": "2025-12",
+  "letter": "S"
+ },
+ {
   "title": "Thunderball",
   "year": "2024",
   "month": "November",
   "date": "2024-11",
+  "letter": "T"
+ },
+ {
+  "title": "Thunderbolts",
+  "year": "2025",
+  "month": "December",
+  "date": "2025-12",
   "letter": "T"
  },
  {
@@ -690,6 +1005,13 @@
   "year": "2024",
   "month": "October",
   "date": "2024-10",
+  "letter": "W"
+ },
+ {
+  "title": "A Working Man",
+  "year": "2025",
+  "month": "September",
+  "date": "2025-09",
   "letter": "W"
  },
  {

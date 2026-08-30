@@ -105,11 +105,11 @@
   ]
  },
  "movies": {
-  "total": 102,
+  "total": 148,
   "by_year": [
    {
     "year": "2025",
-    "count": 56
+    "count": 102
    },
    {
     "year": "2024",
