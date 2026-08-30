@@ -23,12 +23,9 @@ import os
 import re
 import unicodedata
 
-import genres
-
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 CSV_PATH = os.path.join(ROOT, 'goodreads_library_export.csv')
-SUBJECTS_PATH = os.path.join(HERE, 'subject_cache.json')
 LOG_PATH = os.path.join(ROOT, 'docs', '_logs', 'books.md')
 OUT_PATH = os.path.join(ROOT, 'docs', '_data', 'books.json')
 
@@ -304,24 +301,6 @@ def report_duplicates(books):
             print('    %-40s %s' % (b['title'][:40], b['author'][:24]))
 
 
-def load_subjects():
-    """The genre cache written by fetch_subjects.py, or {} if it has never
-    been run. Optional by design: the build must work offline and on a fresh
-    clone, so a missing cache means books simply carry no genre."""
-    if not os.path.exists(SUBJECTS_PATH):
-        return {}
-    with open(SUBJECTS_PATH, encoding='utf-8') as f:
-        return json.load(f)
-
-
-def subject_key(book):
-    """Must stay identical to cache_key() in fetch_subjects.py."""
-    if book.get('isbn'):
-        return 'isbn:' + book['isbn']
-    return 'ta:%s|%s' % (book.get('title', '').lower().strip(),
-                         book.get('author', '').lower().strip())
-
-
 def main():
     gr, total_rows = load_goodreads()
     md = load_markdown()
@@ -410,13 +389,6 @@ def main():
             'series_index': None,
         })
 
-    # Genre is attached last so it applies to Goodreads and markdown-only books
-    # alike. Purely a read of the committed cache — no network in the build.
-    subjects = load_subjects()
-    for b in books:
-        entry = subjects.get(subject_key(b)) or {}
-        b['genre'] = genres.classify(entry.get('subjects'))
-
     # The page's default view is an ungrouped A-Z list, so sort by title here
     # and let the client re-group without re-sorting.
     for b in books:
@@ -442,16 +414,6 @@ def main():
     in_series = [b for b in books if b['series']]
     print('  in a series: %d across %d series (min %d books each)'
           % (len(in_series), len({b['series'] for b in in_series}), SERIES_MIN))
-
-    if subjects:
-        tagged = collections.Counter(b['genre'] for b in books if b['genre'])
-        print('  with genre: %d of %d (%d subject records cached)'
-              % (sum(tagged.values()), len(books), len(subjects)))
-        for slug, _ in genres.GENRES:
-            if tagged[slug]:
-                print('    %-20s %d' % (genres.GENRE_LABELS[slug], tagged[slug]))
-    else:
-        print('  with genre: 0 (run scripts/fetch_subjects.py to populate)')
 
     report_near_misses(md_only, gr)
     report_duplicates(books)
