@@ -1,7 +1,7 @@
 # Kenta's Log
 
-A personal log of books read, movies/shows watched, and dev notes.
-Live at <https://kentayoshii.github.io>.
+A personal log of books read, movies/shows watched, national parks visited,
+and dev notes. Live at <https://kentayoshii.github.io>.
 
 Static [Jekyll](https://jekyllrb.com/) site using the `minima` theme, published
 by GitHub Pages from the **`gh-pages` branch, `/docs` folder**. Pushing to
@@ -15,11 +15,14 @@ docs/                     Jekyll site root
   _data/books.json        generated — do not edit by hand
   _data/movies.json       generated — do not edit by hand
   _data/stats.json        generated — do not edit by hand
+  _data/travel.json       generated — do not edit by hand
   _logs/books.md          hand-written reading log (source of truth)
   _logs/movies.md         hand-written watch log (source of truth)
+  _logs/travel.md         hand-written travel log (source of truth)
   _posts/                 blog posts only (`categories: posts`)
   books.markdown          renders _data/books.json
   movies.markdown         renders _data/movies.json
+  travel.markdown         renders _data/travel.json
   stats.markdown          renders _data/stats.json
   posts.markdown          lists posts filed under `categories: posts`
   404.html                served by GitHub Pages for any unmatched path
@@ -27,11 +30,13 @@ docs/                     Jekyll site root
   assets/js/main.js       search, grouping, cover art, dark mode
   assets/main.scss        theme
 scripts/
-  build.py                runs all four, in order — the usual entry point
+  build.py                runs everything below, in order — the usual entry point
   merge_books.py          builds _data/books.json
   build_movies.py         builds _data/movies.json
   build_stats.py          builds _data/stats.json (reads the other two)
   build_images.py         draws the favicon and social card from books.json
+  build_travel.py         builds _data/travel.json
+  national_parks.py       fixed reference list of all 63 US National Parks
 goodreads_library_export.csv   latest Goodreads export
 ```
 
@@ -178,6 +183,51 @@ falling back to the most popular one — but a year is still the reliable
 disambiguator.
 
 For a show, prefer one `Title (TV Series)` entry over one row per season.
+
+## Travel
+
+`docs/_logs/travel.md` groups entries by `## <category>` then `### <year>`,
+currently just `## National Parks`:
+
+```markdown
+## National Parks
+
+### 2026
+- Yosemite
+- Grand Teton
+```
+
+Then regenerate and commit:
+
+```sh
+python3 scripts/build_travel.py
+git add docs/_logs/travel.md docs/_data/travel.json
+git commit -m "Add a park visit" && git push origin gh-pages
+```
+
+National Parks is different from Books and Movies in one respect: it has a
+known, finite universe. `scripts/national_parks.py` holds the fixed list of
+all 63 US National Parks (the NPS's "National Park" designation specifically
+— not monuments, preserves, or historic sites), and `build_travel.py`
+cross-references the log against it so the page can show what's *left*, not
+just what's done. That reference list is not something you log — it changes
+only when the NPS designates a new park (most recently New River Gorge, in
+2020) — so double check it against nps.gov if the checklist ever looks short
+one.
+
+A log entry is matched to a park by a normalised name comparison that also
+tries prefixes in either direction (`Guadalupe` finds `Guadalupe Mountains`,
+`Rocky Mountains` finds `Rocky Mountain`) and strips accents (`Haleakala`
+finds `Haleakalā`). A name that changes more than that — `Hawaiian Volcanoes`
+for `Hawaiʻi Volcanoes` — needs an entry in `ALIASES` at the bottom of
+`national_parks.py`. An entry that matches nothing prints a warning rather
+than silently vanishing from the count, the same principle as
+`merge_books.py`'s near-miss detector.
+
+The heading structure leaves room for a `## Cities` (or any other) category
+later without restructuring the file — it would just have no fixed universe
+to check off against, so `build_travel.py` would render it as a plain visited
+list rather than a checklist.
 
 ## Writing a post
 
