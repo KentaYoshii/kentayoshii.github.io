@@ -1039,6 +1039,21 @@ body,
   transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
+// Minima lays the header out with floats (site-title left, site-nav right),
+// which has no good place for a third element sitting between them. Flexing
+// the wrapper instead means the toggle can just be a normal flex item,
+// vertically centred against the title for free, with the nav pushed to the
+// far right by its own margin rather than a float.
+.site-header .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.site-nav {
+  margin-left: auto;
+}
+
 .theme-toggle {
   background: none;
   border: 1px solid $grey-color-light;
@@ -1050,17 +1065,13 @@ body,
   line-height: 1;
   cursor: pointer;
   color: $text-color;
-  vertical-align: middle;
+  flex: 0 0 auto;
 
   &:hover {
     border-color: $brand-color;
   }
 }
 
-// On mobile the toggle lives inside minima's collapsible nav panel, where
-// ".site-nav .page-link" would otherwise force display:block and padding
-// onto it (stretching the circle into a misaligned oblong). Reset those and
-// right-align it to match the stacked nav links.
 @media screen and (max-width: $on-palm) {
   // Minima gives the dropdown panel the same background as the page, so an
   // open menu reads as transparent — page content behind it appears to bleed
@@ -1069,14 +1080,6 @@ body,
   .site-nav {
     background-color: #f3e8d5;
     box-shadow: 0 8px 20px rgba(60, 40, 20, 0.18);
-  }
-
-  .site-nav .theme-toggle {
-    display: block;
-    width: 34px;
-    height: 34px;
-    padding: 0;
-    margin: 6px 10px 0 auto;
   }
 
   // The sticky bar has to earn its height on a phone screen. Everything below

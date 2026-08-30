@@ -7,16 +7,18 @@ document.addEventListener('DOMContentLoaded', function () {
   initVimTipsToc();
 });
 
-// Inserts a light/dark mode toggle into the site nav. The initial theme is
-// already applied synchronously by an inline script in custom-head.html
-// (to avoid a flash of the wrong theme); this just wires up the button.
+// Inserts a light/dark mode toggle right next to the site title, so it is
+// always visible rather than tucked inside the collapsible mobile nav. The
+// initial theme is already applied synchronously by an inline script in
+// custom-head.html (to avoid a flash of the wrong theme); this just wires up
+// the button.
 function initThemeToggle() {
-  var nav = document.querySelector('.site-nav .trigger') || document.querySelector('.site-nav');
-  if (!nav) return;
+  var title = document.querySelector('.site-title');
+  if (!title) return;
 
   var button = document.createElement('button');
   button.type = 'button';
-  button.className = 'theme-toggle page-link';
+  button.className = 'theme-toggle';
   button.setAttribute('aria-label', 'Toggle dark mode');
 
   function isDark() {
@@ -39,7 +41,7 @@ function initThemeToggle() {
   });
 
   render();
-  nav.appendChild(button);
+  title.insertAdjacentElement('afterend', button);
 }
 
 // Lowercase and strip Latin accents so typing "shogun" finds "Shōgun" and
