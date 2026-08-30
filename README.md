@@ -20,6 +20,7 @@ docs/                     Jekyll site root
   movies.markdown         renders _data/movies.json
   stats.markdown          renders _data/stats.json
   posts.markdown          lists posts filed under `categories: posts`
+  404.html                served by GitHub Pages for any unmatched path
   dev/vim-tips.markdown   dev notes, edited directly
   assets/js/main.js       search, grouping, cover art, dark mode
   assets/main.scss        theme
@@ -99,6 +100,21 @@ Where the two disagree:
 A title typo in the markdown silently prevents a match, which costs that book
 its ISBN and therefore its cover. If a book is missing a cover, check its
 spelling first — the script prints a matched/unmatched count each run.
+
+### Series
+
+The same `(Series Name, #3)` suffix that the title matcher strips is also
+captured, giving the Books page its "group by series" view and the stats page
+its series chart. Two things to know:
+
+- A series is only kept once **two or more** of its books have been read
+  (`SERIES_MIN` in `merge_books.py`). Otherwise the 34 series represented by a
+  single book each would add 34 one-item sections to the page.
+- Series come from Goodreads only, so a markdown-only book never has one.
+
+Grouping by series lists each section in publication order — `#1`, `#2`, … —
+which is why the sort control greys out in that mode. Books in no series
+collect in a `Standalone` section at the end.
 
 ## Adding movies and shows
 

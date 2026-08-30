@@ -57,6 +57,11 @@ def main():
 
     centuries = collections.Counter(century_label(b['published']) for b in published)
 
+    # merge_books.py has already dropped series with only one book read, so
+    # every series here has at least two.
+    in_series = [b for b in books if b.get('series')]
+    by_series = collections.Counter(b['series'] for b in in_series)
+
     movie_years = collections.Counter(m['year'] for m in movies)
 
     stats = {
@@ -83,6 +88,10 @@ def main():
             'dated': sum(by_year.values()),
             'centuries': [{'name': n, 'count': c} for n, c in
                           sorted(centuries.items(), key=lambda kv: -kv[1])[:6]],
+            'series_count': len(by_series),
+            'in_series': len(in_series),
+            'top_series': [{'name': n, 'count': c}
+                           for n, c in by_series.most_common(8)],
         },
         'movies': {
             'total': len(movies),
@@ -101,6 +110,7 @@ def main():
     print('  %d books, %d authors, %s pages' % (b['total'], b['authors'], f"{b['pages_total']:,}"))
     print('  span %s -> %s (%d years)' % (b['oldest']['published'],
                                           b['newest']['published'], b['span_years']))
+    print('  %d books across %d series' % (b['in_series'], b['series_count']))
     print('  %d movies/shows' % stats['movies']['total'])
 
 

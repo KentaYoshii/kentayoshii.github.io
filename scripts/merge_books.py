@@ -15,6 +15,7 @@ Why both sources:
     the repo as the year source and as a chronological archive.
 """
 
+import collections
 import csv
 import glob
 import json
@@ -86,6 +87,28 @@ def strip_series(t):
     return t.strip()
 
 
+# Goodreads appends '(Series Name, #3)' to titles in a series. The '#' is what
+# distinguishes those from ordinary trailing parentheticals such as
+# '君のクイズ (Japanese Edition)' or 'The Fall (Vintage International)'.
+SERIES_RE = re.compile(r'\(([^()]*?),?\s*#([^()]*?)\)\s*$')
+
+# A series represented by a single read book is not a series worth showing —
+# it just puts 34 one-item sections in the list — so entries only keep their
+# series once this many books from it have been read.
+SERIES_MIN = 2
+
+
+def parse_series(title):
+    """('The Return of Sherlock Holmes (Sherlock Holmes, #6)')
+        -> ('Sherlock Holmes', '6')."""
+    m = SERIES_RE.search(nfkc(title).strip())
+    if not m:
+        return None, None
+    name = squash(m.group(1))
+    index = squash(m.group(2))
+    return (name, index) if name else (None, None)
+
+
 def title_keys(t):
     base = strip_series(nfkc(t))
     keys = set()
@@ -129,6 +152,7 @@ def load_goodreads():
     for r in rows:
         if r.get('Exclusive Shelf', '').strip() != 'read':
             continue  # skip to-read / currently-reading
+        series, series_index = parse_series(r['Title'])
         books.append({
             'title': strip_series(nfkc(r['Title'])),
             'author': squash(r['Author']),
@@ -138,8 +162,18 @@ def load_goodreads():
             # the classics read as old.
             'published': as_int(r.get('Original Publication Year')
                                 or r.get('Year Published')),
+            'series': series,
+            'series_index': series_index,
             'keys': title_keys(r['Title']),
         })
+
+    # Drop the series label from books whose series is only represented once.
+    counts = collections.Counter(b['series'] for b in books if b['series'])
+    for b in books:
+        if b['series'] and counts[b['series']] < SERIES_MIN:
+            b['series'] = None
+            b['series_index'] = None
+
     return books, len(rows)
 
 
@@ -230,6 +264,8 @@ def main():
             'year': pick_year(md_hits),
             'pages': g['pages'],
             'published': g['published'],
+            'series': g['series'],
+            'series_index': g['series_index'],
         })
 
     seen = set()
@@ -245,6 +281,10 @@ def main():
             'year': m['year'],
             'pages': None,
             'published': None,
+            # Only Goodreads annotates series; a markdown-only book has no
+            # source for it.
+            'series': None,
+            'series_index': None,
         })
 
     # The page's default view is an ungrouped A-Z list, so sort by title here
@@ -269,6 +309,9 @@ def main():
     print('  with pages: %d | with pub year: %d'
           % (sum(1 for b in books if b['pages']),
              sum(1 for b in books if b['published'])))
+    in_series = [b for b in books if b['series']]
+    print('  in a series: %d across %d series (min %d books each)'
+          % (len(in_series), len({b['series'] for b in in_series}), SERIES_MIN))
 
 
 if __name__ == '__main__':

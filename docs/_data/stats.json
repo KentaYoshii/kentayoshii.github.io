@@ -102,6 +102,42 @@
     "name": "17th century",
     "count": 1
    }
+  ],
+  "series_count": 26,
+  "in_series": 142,
+  "top_series": [
+   {
+    "name": "Hercule Poirot",
+    "count": 37
+   },
+   {
+    "name": "Jack Reacher",
+    "count": 13
+   },
+   {
+    "name": "Miss Marple",
+    "count": 12
+   },
+   {
+    "name": "Theodore Boone",
+    "count": 7
+   },
+   {
+    "name": "Harry Potter",
+    "count": 7
+   },
+   {
+    "name": "Sherlock Holmes",
+    "count": 6
+   },
+   {
+    "name": "The Hunger Games",
+    "count": 5
+   },
+   {
+    "name": "A Court of Thorns and Roses",
+    "count": 5
+   }
   ]
  },
  "movies": {

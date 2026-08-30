@@ -58,6 +58,21 @@ scripts/build_stats.py. No client-side work.
   {%- endfor -%}
 </ul>
 
+<h2>Series</h2>
+
+<p class="collection-tagline">{{ b.in_series }} of the {{ b.total }} books belong to a series I've read at least twice from — {{ b.series_count }} series in all.</p>
+
+{%- assign tops = b.top_series | first -%}
+<ul class="bar-list">
+  {%- for s in b.top_series -%}
+  <li>
+    <span class="bar-label">{{ s.name }}</span>
+    <span class="bar-track"><span class="bar-fill" style="width: {{ s.count | times: 100 | divided_by: tops.count }}%"></span></span>
+    <span class="bar-value">{{ s.count }}</span>
+  </li>
+  {%- endfor -%}
+</ul>
+
 <h2>When these books were written</h2>
 
 {%- assign topc = b.centuries | first -%}

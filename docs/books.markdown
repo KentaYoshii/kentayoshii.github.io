@@ -21,6 +21,7 @@ by title (leading articles ignored), which is the default ungrouped view; the
         <select class="group-select" aria-label="Group books by">
           <option value="none">Nothing</option>
           <option value="author">Author</option>
+          <option value="series">Series</option>
           <option value="letter">First letter</option>
         </select>
       </label>
@@ -45,7 +46,7 @@ by title (leading articles ignored), which is the default ungrouped view; the
       <ul>
         {%- for book in site.data.books -%}
         {%- comment -%}An empty string is truthy in Liquid, so test it explicitly.{%- endcomment -%}
-        <li data-title="{{ book.title | escape }}" data-author="{{ book.author | escape }}" data-letter="{{ book.letter }}"{% if book.year and book.year != "" %} data-date="{{ book.year }}"{% endif %}{% if book.pages %} data-pages="{{ book.pages }}"{% endif %}{% if book.published %} data-published="{{ book.published }}"{% endif %}{% if book.isbn and book.isbn != "" %} data-isbn="{{ book.isbn }}"{% endif %}><em>{{ book.title | escape }}</em><span class="entry-byline">{{ book.author | escape }}</span>{% if book.year and book.year != "" %}<span class="entry-date"> · {{ book.year }}</span>{% endif %}</li>
+        <li data-title="{{ book.title | escape }}" data-author="{{ book.author | escape }}" data-letter="{{ book.letter }}"{% if book.year and book.year != "" %} data-date="{{ book.year }}"{% endif %}{% if book.pages %} data-pages="{{ book.pages }}"{% endif %}{% if book.published %} data-published="{{ book.published }}"{% endif %}{% if book.isbn and book.isbn != "" %} data-isbn="{{ book.isbn }}"{% endif %}{% if book.series %} data-series="{{ book.series | escape }}" data-series-index="{{ book.series_index }}"{% endif %}><em>{{ book.title | escape }}</em>{% if book.series %}<span class="entry-series">#{{ book.series_index }}</span>{% endif %}<span class="entry-byline">{{ book.author | escape }}</span>{% if book.year and book.year != "" %}<span class="entry-date"> · {{ book.year }}</span>{% endif %}</li>
         {%- endfor -%}
       </ul>
     </section>

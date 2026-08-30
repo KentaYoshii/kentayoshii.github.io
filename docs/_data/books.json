@@ -6,6 +6,8 @@
   "year": null,
   "pages": 849,
   "published": 2011,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -15,6 +17,8 @@
   "year": null,
   "pages": 368,
   "published": 1949,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -24,6 +28,8 @@
   "year": null,
   "pages": 944,
   "published": 2009,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -33,6 +39,8 @@
   "year": "2025",
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -42,6 +50,8 @@
   "year": null,
   "pages": 372,
   "published": 2018,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -51,6 +61,8 @@
   "year": null,
   "pages": 286,
   "published": 1957,
+  "series": "Miss Marple",
+  "series_index": "7",
   "letter": "#"
  },
  {
@@ -60,6 +72,8 @@
   "year": null,
   "pages": 207,
   "published": 1936,
+  "series": "Hercule Poirot",
+  "series_index": "13",
   "letter": "A"
  },
  {
@@ -69,6 +83,8 @@
   "year": null,
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "A"
  },
  {
@@ -78,6 +94,8 @@
   "year": null,
   "pages": 260,
   "published": 2006,
+  "series": null,
+  "series_index": null,
   "letter": "A"
  },
  {
@@ -87,6 +105,8 @@
   "year": null,
   "pages": 238,
   "published": 2019,
+  "series": "Theodore Boone",
+  "series_index": "7",
   "letter": "A"
  },
  {
@@ -96,6 +116,8 @@
   "year": null,
   "pages": 304,
   "published": 1960,
+  "series": "Hercule Poirot",
+  "series_index": "37",
   "letter": "A"
  },
  {
@@ -105,6 +127,8 @@
   "year": null,
   "pages": 327,
   "published": 1885,
+  "series": null,
+  "series_index": null,
   "letter": "A"
  },
  {
@@ -114,6 +138,8 @@
   "year": null,
   "pages": 389,
   "published": 1892,
+  "series": "Sherlock Holmes",
+  "series_index": "3",
   "letter": "A"
  },
  {
@@ -123,6 +149,8 @@
   "year": null,
   "pages": 244,
   "published": 1876,
+  "series": null,
+  "series_index": null,
   "letter": "A"
  },
  {
@@ -132,6 +160,8 @@
   "year": null,
   "pages": 191,
   "published": 2004,
+  "series": null,
+  "series_index": null,
   "letter": "A"
  },
  {
@@ -141,6 +171,8 @@
   "year": null,
   "pages": 256,
   "published": 1953,
+  "series": "Hercule Poirot",
+  "series_index": "30",
   "letter": "A"
  },
  {
@@ -150,6 +182,8 @@
   "year": null,
   "pages": 147,
   "published": 2000,
+  "series": null,
+  "series_index": null,
   "letter": "A"
  },
  {
@@ -159,6 +193,8 @@
   "year": "2024",
   "pages": 182,
   "published": 1988,
+  "series": null,
+  "series_index": null,
   "letter": "A"
  },
  {
@@ -168,6 +204,8 @@
   "year": "2025",
   "pages": 531,
   "published": 2013,
+  "series": "Divergent",
+  "series_index": "3",
   "letter": "A"
  },
  {
@@ -177,6 +215,8 @@
   "year": null,
   "pages": 296,
   "published": 1928,
+  "series": null,
+  "series_index": null,
   "letter": "A"
  },
  {
@@ -186,6 +226,8 @@
   "year": "2025",
   "pages": 597,
   "published": 2024,
+  "series": null,
+  "series_index": null,
   "letter": "A"
  },
  {
@@ -195,6 +237,8 @@
   "year": "2024",
   "pages": 531,
   "published": 2014,
+  "series": null,
+  "series_index": null,
   "letter": "A"
  },
  {
@@ -204,6 +248,8 @@
   "year": "2025",
   "pages": 272,
   "published": 2017,
+  "series": null,
+  "series_index": null,
   "letter": "A"
  },
  {
@@ -213,6 +259,8 @@
   "year": null,
   "pages": 264,
   "published": 1939,
+  "series": null,
+  "series_index": null,
   "letter": "A"
  },
  {
@@ -222,6 +270,8 @@
   "year": null,
   "pages": 141,
   "published": 1945,
+  "series": null,
+  "series_index": null,
   "letter": "A"
  },
  {
@@ -231,6 +281,8 @@
   "year": null,
   "pages": 964,
   "published": 1878,
+  "series": null,
+  "series_index": null,
   "letter": "A"
  },
  {
@@ -240,6 +292,8 @@
   "year": null,
   "pages": 320,
   "published": 1908,
+  "series": null,
+  "series_index": null,
   "letter": "A"
  },
  {
@@ -249,6 +303,8 @@
   "year": null,
   "pages": 336,
   "published": 2019,
+  "series": null,
+  "series_index": null,
   "letter": "A"
  },
  {
@@ -258,6 +314,8 @@
   "year": "2024",
   "pages": 358,
   "published": 2008,
+  "series": null,
+  "series_index": null,
   "letter": "A"
  },
  {
@@ -267,6 +325,8 @@
   "year": null,
   "pages": 303,
   "published": 1938,
+  "series": "Hercule Poirot",
+  "series_index": "19",
   "letter": "A"
  },
  {
@@ -276,6 +336,8 @@
   "year": null,
   "pages": 320,
   "published": 2022,
+  "series": null,
+  "series_index": null,
   "letter": "A"
  },
  {
@@ -285,6 +347,8 @@
   "year": "2025",
   "pages": 252,
   "published": 1872,
+  "series": null,
+  "series_index": null,
   "letter": "A"
  },
  {
@@ -294,6 +358,8 @@
   "year": null,
   "pages": 206,
   "published": 1986,
+  "series": null,
+  "series_index": null,
   "letter": "A"
  },
  {
@@ -303,6 +369,8 @@
   "year": null,
   "pages": 204,
   "published": 2010,
+  "series": null,
+  "series_index": null,
   "letter": "A"
  },
  {
@@ -312,6 +380,8 @@
   "year": "2024",
   "pages": 373,
   "published": 2009,
+  "series": null,
+  "series_index": null,
   "letter": "A"
  },
  {
@@ -321,6 +391,8 @@
   "year": null,
   "pages": 223,
   "published": 1965,
+  "series": "Miss Marple",
+  "series_index": "10",
   "letter": "A"
  },
  {
@@ -330,6 +402,8 @@
   "year": "2025",
   "pages": 337,
   "published": 2025,
+  "series": null,
+  "series_index": null,
   "letter": "A"
  },
  {
@@ -339,6 +413,8 @@
   "year": null,
   "pages": 544,
   "published": 2022,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -348,6 +424,8 @@
   "year": null,
   "pages": 378,
   "published": 2007,
+  "series": "Jack Reacher",
+  "series_index": "11",
   "letter": "B"
  },
  {
@@ -357,6 +435,8 @@
   "year": "2025",
   "pages": 541,
   "published": 2020,
+  "series": "The Hunger Games",
+  "series_index": "0",
   "letter": "B"
  },
  {
@@ -366,6 +446,8 @@
   "year": "2025",
   "pages": 358,
   "published": 2020,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -375,6 +457,8 @@
   "year": null,
   "pages": 325,
   "published": 1987,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -384,6 +468,8 @@
   "year": "2025",
   "pages": 272,
   "published": 1927,
+  "series": "Hercule Poirot",
+  "series_index": "5",
   "letter": "B"
  },
  {
@@ -393,6 +479,8 @@
   "year": null,
   "pages": 245,
   "published": 1877,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -402,6 +490,8 @@
   "year": "2025",
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -411,6 +501,8 @@
   "year": null,
   "pages": 306,
   "published": 2023,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -420,6 +512,8 @@
   "year": "2024",
   "pages": 229,
   "published": 2003,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -429,6 +523,8 @@
   "year": null,
   "pages": 334,
   "published": 2006,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -438,6 +534,8 @@
   "year": "2025",
   "pages": 448,
   "published": 2025,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -447,6 +545,8 @@
   "year": "2024",
   "pages": 280,
   "published": 1997,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -456,6 +556,8 @@
   "year": null,
   "pages": 191,
   "published": 1942,
+  "series": "Miss Marple",
+  "series_index": "2",
   "letter": "B"
  },
  {
@@ -465,6 +567,8 @@
   "year": "2024",
   "pages": 377,
   "published": 2022,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -474,6 +578,8 @@
   "year": "2024",
   "pages": 592,
   "published": 2005,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -483,6 +589,8 @@
   "year": null,
   "pages": 171,
   "published": 1906,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -492,6 +600,8 @@
   "year": "2025",
   "pages": 368,
   "published": 2024,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -501,6 +611,8 @@
   "year": "2024",
   "pages": 464,
   "published": 2022,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -510,6 +622,8 @@
   "year": "2025",
   "pages": 288,
   "published": 1932,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -519,6 +633,8 @@
   "year": null,
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -528,6 +644,8 @@
   "year": null,
   "pages": 142,
   "published": 1958,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -537,6 +655,8 @@
   "year": null,
   "pages": 303,
   "published": 1973,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -546,6 +666,8 @@
   "year": "2024",
   "pages": 440,
   "published": 2000,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -555,6 +677,8 @@
   "year": "2025",
   "pages": 776,
   "published": 2019,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -564,6 +688,8 @@
   "year": "2025",
   "pages": 319,
   "published": 2025,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -573,6 +699,8 @@
   "year": "2024",
   "pages": 422,
   "published": 2005,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -582,6 +710,8 @@
   "year": null,
   "pages": 796,
   "published": 1879,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -591,6 +721,8 @@
   "year": null,
   "pages": 432,
   "published": 2010,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -600,6 +732,8 @@
   "year": null,
   "pages": 317,
   "published": 2015,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -609,6 +743,8 @@
   "year": "2025",
   "pages": 464,
   "published": 2017,
+  "series": null,
+  "series_index": null,
   "letter": "B"
  },
  {
@@ -618,6 +754,8 @@
   "year": null,
   "pages": 212,
   "published": 1968,
+  "series": "Tommy and Tuppence Mysteries",
+  "series_index": "4",
   "letter": "B"
  },
  {
@@ -627,6 +765,8 @@
   "year": "2024",
   "pages": 198,
   "published": 2012,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -636,6 +776,8 @@
   "year": null,
   "pages": 248,
   "published": 2007,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -645,6 +787,8 @@
   "year": null,
   "pages": 172,
   "published": 1903,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -654,6 +798,8 @@
   "year": "2024",
   "pages": 292,
   "published": 2024,
+  "series": "Camino Island",
+  "series_index": "3",
   "letter": "C"
  },
  {
@@ -663,6 +809,8 @@
   "year": "2024",
   "pages": 290,
   "published": 2017,
+  "series": "Camino Island",
+  "series_index": "1",
   "letter": "C"
  },
  {
@@ -672,6 +820,8 @@
   "year": "2024",
   "pages": 304,
   "published": 2020,
+  "series": "Camino Island",
+  "series_index": "2",
   "letter": "C"
  },
  {
@@ -681,6 +831,8 @@
   "year": null,
   "pages": 324,
   "published": 1936,
+  "series": "Hercule Poirot",
+  "series_index": "15",
   "letter": "C"
  },
  {
@@ -690,6 +842,8 @@
   "year": "2025",
   "pages": 382,
   "published": 2025,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -699,6 +853,8 @@
   "year": null,
   "pages": 224,
   "published": 1964,
+  "series": "Miss Marple",
+  "series_index": "9",
   "letter": "C"
  },
  {
@@ -708,6 +864,8 @@
   "year": null,
   "pages": 272,
   "published": 1974,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -717,6 +875,8 @@
   "year": null,
   "pages": 328,
   "published": 1926,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -726,6 +886,8 @@
   "year": null,
   "pages": 352,
   "published": 1959,
+  "series": "Hercule Poirot",
+  "series_index": "36",
   "letter": "C"
  },
  {
@@ -735,6 +897,8 @@
   "year": "2024",
   "pages": 453,
   "published": 1961,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -744,6 +908,8 @@
   "year": null,
   "pages": 277,
   "published": 1951,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -753,6 +919,8 @@
   "year": "2025",
   "pages": 391,
   "published": 2009,
+  "series": "The Hunger Games",
+  "series_index": "2",
   "letter": "C"
  },
  {
@@ -762,6 +930,8 @@
   "year": null,
   "pages": 306,
   "published": 1963,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -771,6 +941,8 @@
   "year": null,
   "pages": 246,
   "published": 1993,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -780,6 +952,8 @@
   "year": "2024",
   "pages": 632,
   "published": 1994,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -789,6 +963,8 @@
   "year": null,
   "pages": 291,
   "published": 1967,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -798,6 +974,8 @@
   "year": null,
   "pages": 184,
   "published": 1843,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -807,6 +985,8 @@
   "year": "2024",
   "pages": 393,
   "published": 2018,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -816,6 +996,8 @@
   "year": "2024",
   "pages": 449,
   "published": 2023,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -825,6 +1007,8 @@
   "year": "2024",
   "pages": 483,
   "published": 1993,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -834,6 +1018,8 @@
   "year": null,
   "pages": 8,
   "published": 1963,
+  "series": "Hercule Poirot",
+  "series_index": "39",
   "letter": "C"
  },
  {
@@ -843,6 +1029,8 @@
   "year": "2024",
   "pages": 240,
   "published": 1962,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -852,6 +1040,8 @@
   "year": "2024",
   "pages": 272,
   "published": 1938,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -861,6 +1051,8 @@
   "year": null,
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -870,6 +1062,8 @@
   "year": null,
   "pages": 308,
   "published": 2013,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -879,6 +1073,8 @@
   "year": null,
   "pages": 821,
   "published": 1849,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -888,6 +1084,8 @@
   "year": "2024",
   "pages": 418,
   "published": 2010,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -897,6 +1095,8 @@
   "year": null,
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -906,6 +1106,8 @@
   "year": null,
   "pages": 224,
   "published": 1949,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -915,6 +1117,8 @@
   "year": null,
   "pages": 163,
   "published": 2016,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -924,6 +1128,8 @@
   "year": null,
   "pages": 285,
   "published": 2025,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -933,6 +1139,8 @@
   "year": null,
   "pages": 234,
   "published": 2017,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -942,6 +1150,8 @@
   "year": "2025",
   "pages": 368,
   "published": 2024,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -951,6 +1161,8 @@
   "year": null,
   "pages": 1276,
   "published": 1846,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -960,6 +1172,8 @@
   "year": "2024",
   "pages": 272,
   "published": 2018,
+  "series": "A Court of Thorns and Roses",
+  "series_index": "4",
   "letter": "C"
  },
  {
@@ -969,6 +1183,8 @@
   "year": "2024",
   "pages": 626,
   "published": 2016,
+  "series": "A Court of Thorns and Roses",
+  "series_index": "2",
   "letter": "C"
  },
  {
@@ -978,6 +1194,8 @@
   "year": "2024",
   "pages": 757,
   "published": 2021,
+  "series": "A Court of Thorns and Roses",
+  "series_index": "5",
   "letter": "#"
  },
  {
@@ -987,6 +1205,8 @@
   "year": "2024",
   "pages": 419,
   "published": 2015,
+  "series": "A Court of Thorns and Roses",
+  "series_index": "1",
   "letter": "C"
  },
  {
@@ -996,6 +1216,8 @@
   "year": "2024",
   "pages": 699,
   "published": 2017,
+  "series": "A Court of Thorns and Roses",
+  "series_index": "3",
   "letter": "C"
  },
  {
@@ -1005,6 +1227,8 @@
   "year": "2024",
   "pages": 715,
   "published": 2023,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -1014,6 +1238,8 @@
   "year": "2025",
   "pages": 384,
   "published": 2025,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -1023,6 +1249,8 @@
   "year": null,
   "pages": 403,
   "published": 2013,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -1032,6 +1260,8 @@
   "year": null,
   "pages": 671,
   "published": 1866,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -1041,6 +1271,8 @@
   "year": null,
   "pages": 276,
   "published": 1949,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -1050,6 +1282,8 @@
   "year": null,
   "pages": 143,
   "published": 1953,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -1059,6 +1293,8 @@
   "year": null,
   "pages": 432,
   "published": 1981,
+  "series": null,
+  "series_index": null,
   "letter": "C"
  },
  {
@@ -1068,6 +1304,8 @@
   "year": null,
   "pages": 215,
   "published": 1975,
+  "series": "Hercule Poirot",
+  "series_index": "44",
   "letter": "C"
  },
  {
@@ -1077,6 +1315,8 @@
   "year": null,
   "pages": 393,
   "published": 1988,
+  "series": null,
+  "series_index": null,
   "letter": "D"
  },
  {
@@ -1086,6 +1326,8 @@
   "year": null,
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "D"
  },
  {
@@ -1095,6 +1337,8 @@
   "year": null,
   "pages": 176,
   "published": 1926,
+  "series": null,
+  "series_index": null,
   "letter": "D"
  },
  {
@@ -1104,6 +1348,8 @@
   "year": "2024",
   "pages": 512,
   "published": 2008,
+  "series": "Remembrance of Earth’s Past",
+  "series_index": "2",
   "letter": "D"
  },
  {
@@ -1113,6 +1359,8 @@
   "year": "2024",
   "pages": 882,
   "published": 1850,
+  "series": null,
+  "series_index": null,
   "letter": "D"
  },
  {
@@ -1122,6 +1370,8 @@
   "year": null,
   "pages": 6,
   "published": 1956,
+  "series": "Hercule Poirot",
+  "series_index": "35",
   "letter": "D"
  },
  {
@@ -1131,6 +1381,8 @@
   "year": null,
   "pages": 267,
   "published": 1944,
+  "series": null,
+  "series_index": null,
   "letter": "D"
  },
  {
@@ -1140,6 +1392,8 @@
   "year": "2025",
   "pages": 336,
   "published": 1935,
+  "series": "Hercule Poirot",
+  "series_index": "12",
   "letter": "D"
  },
  {
@@ -1149,6 +1403,8 @@
   "year": null,
   "pages": 352,
   "published": 1937,
+  "series": "Hercule Poirot",
+  "series_index": "18",
   "letter": "D"
  },
  {
@@ -1158,6 +1414,8 @@
   "year": "2024",
   "pages": 604,
   "published": 2010,
+  "series": "Remembrance of Earth’s Past",
+  "series_index": "3",
   "letter": "D"
  },
  {
@@ -1167,6 +1425,8 @@
   "year": null,
   "pages": 560,
   "published": 2022,
+  "series": null,
+  "series_index": null,
   "letter": "D"
  },
  {
@@ -1176,6 +1436,8 @@
   "year": "2025",
   "pages": 592,
   "published": 2024,
+  "series": null,
+  "series_index": null,
   "letter": "D"
  },
  {
@@ -1185,6 +1447,8 @@
   "year": null,
   "pages": 316,
   "published": 1954,
+  "series": null,
+  "series_index": null,
   "letter": "D"
  },
  {
@@ -1194,6 +1458,8 @@
   "year": null,
   "pages": 256,
   "published": 1947,
+  "series": null,
+  "series_index": null,
   "letter": "D"
  },
  {
@@ -1203,6 +1469,8 @@
   "year": "2025",
   "pages": 567,
   "published": 1998,
+  "series": "Jack Reacher",
+  "series_index": "2",
   "letter": "D"
  },
  {
@@ -1212,6 +1480,8 @@
   "year": "2025",
   "pages": 487,
   "published": 2011,
+  "series": "Divergent",
+  "series_index": "1",
   "letter": "D"
  },
  {
@@ -1221,6 +1491,8 @@
   "year": null,
   "pages": 531,
   "published": 2013,
+  "series": "The Shining",
+  "series_index": "2",
   "letter": "D"
  },
  {
@@ -1230,6 +1502,8 @@
   "year": null,
   "pages": 1023,
   "published": 1605,
+  "series": null,
+  "series_index": null,
   "letter": "D"
  },
  {
@@ -1239,6 +1513,8 @@
   "year": null,
   "pages": 488,
   "published": 1897,
+  "series": null,
+  "series_index": null,
   "letter": "D"
  },
  {
@@ -1248,6 +1524,8 @@
   "year": "2025",
   "pages": 274,
   "published": 2009,
+  "series": null,
+  "series_index": null,
   "letter": "D"
  },
  {
@@ -1257,6 +1535,8 @@
   "year": null,
   "pages": 139,
   "published": 1886,
+  "series": null,
+  "series_index": null,
   "letter": "D"
  },
  {
@@ -1266,6 +1546,8 @@
   "year": null,
   "pages": 317,
   "published": 1937,
+  "series": "Hercule Poirot",
+  "series_index": "17",
   "letter": "D"
  },
  {
@@ -1275,6 +1557,8 @@
   "year": null,
   "pages": 658,
   "published": 1965,
+  "series": null,
+  "series_index": null,
   "letter": "D"
  },
  {
@@ -1284,6 +1568,8 @@
   "year": null,
   "pages": 601,
   "published": 1952,
+  "series": null,
+  "series_index": null,
   "letter": "E"
  },
  {
@@ -1293,6 +1579,8 @@
   "year": null,
   "pages": 432,
   "published": 2001,
+  "series": "Jack Reacher",
+  "series_index": "5",
   "letter": "E"
  },
  {
@@ -1302,6 +1590,8 @@
   "year": "2024",
   "pages": 352,
   "published": 2018,
+  "series": null,
+  "series_index": null,
   "letter": "E"
  },
  {
@@ -1311,6 +1601,8 @@
   "year": "2024",
   "pages": 390,
   "published": 2017,
+  "series": null,
+  "series_index": null,
   "letter": "E"
  },
  {
@@ -1320,6 +1612,8 @@
   "year": null,
   "pages": 212,
   "published": 1972,
+  "series": "Hercule Poirot",
+  "series_index": "42",
   "letter": "E"
  },
  {
@@ -1329,6 +1623,8 @@
   "year": null,
   "pages": 327,
   "published": 1993,
+  "series": null,
+  "series_index": null,
   "letter": "E"
  },
  {
@@ -1338,6 +1634,8 @@
   "year": "2024",
   "pages": 688,
   "published": 2023,
+  "series": null,
+  "series_index": null,
   "letter": "E"
  },
  {
@@ -1347,6 +1645,8 @@
   "year": null,
   "pages": 474,
   "published": 1815,
+  "series": null,
+  "series_index": null,
   "letter": "E"
  },
  {
@@ -1356,6 +1656,8 @@
   "year": "2024",
   "pages": 375,
   "published": 2023,
+  "series": null,
+  "series_index": null,
   "letter": "E"
  },
  {
@@ -1365,6 +1667,8 @@
   "year": null,
   "pages": 303,
   "published": 1967,
+  "series": null,
+  "series_index": null,
   "letter": "E"
  },
  {
@@ -1374,6 +1678,8 @@
   "year": null,
   "pages": 464,
   "published": 2004,
+  "series": "Jack Reacher",
+  "series_index": "8",
   "letter": "E"
  },
  {
@@ -1383,6 +1689,8 @@
   "year": "2025",
   "pages": 280,
   "published": 2001,
+  "series": null,
+  "series_index": null,
   "letter": "E"
  },
  {
@@ -1392,6 +1700,8 @@
   "year": null,
   "pages": 220,
   "published": 1941,
+  "series": "Hercule Poirot",
+  "series_index": "23",
   "letter": "E"
  },
  {
@@ -1401,6 +1711,8 @@
   "year": "2024",
   "pages": 338,
   "published": 2023,
+  "series": "The Firm",
+  "series_index": "2",
   "letter": "E"
  },
  {
@@ -1410,6 +1722,8 @@
   "year": null,
   "pages": 342,
   "published": 2018,
+  "series": null,
+  "series_index": null,
   "letter": "F"
  },
  {
@@ -1419,6 +1733,8 @@
   "year": null,
   "pages": 249,
   "published": 1963,
+  "series": null,
+  "series_index": null,
   "letter": "F"
  },
  {
@@ -1428,6 +1744,8 @@
   "year": "2024",
   "pages": 607,
   "published": 2022,
+  "series": null,
+  "series_index": null,
   "letter": "F"
  },
  {
@@ -1437,6 +1755,8 @@
   "year": null,
   "pages": 147,
   "published": 1956,
+  "series": null,
+  "series_index": null,
   "letter": "F"
  },
  {
@@ -1446,6 +1766,8 @@
   "year": null,
   "pages": 304,
   "published": 1929,
+  "series": null,
+  "series_index": null,
   "letter": "F"
  },
  {
@@ -1455,6 +1777,8 @@
   "year": null,
   "pages": 880,
   "published": 2025,
+  "series": null,
+  "series_index": null,
   "letter": "F"
  },
  {
@@ -1464,6 +1788,8 @@
   "year": "2025",
   "pages": 313,
   "published": 2012,
+  "series": null,
+  "series_index": null,
   "letter": "F"
  },
  {
@@ -1473,6 +1799,8 @@
   "year": null,
   "pages": 432,
   "published": 1954,
+  "series": "The Lord of the Rings",
+  "series_index": "1",
   "letter": "F"
  },
  {
@@ -1482,6 +1810,8 @@
   "year": null,
   "pages": 434,
   "published": 2015,
+  "series": null,
+  "series_index": null,
   "letter": "F"
  },
  {
@@ -1491,6 +1821,8 @@
   "year": null,
   "pages": 564,
   "published": 1980,
+  "series": null,
+  "series_index": null,
   "letter": "F"
  },
  {
@@ -1500,6 +1832,8 @@
   "year": "2024",
   "pages": 501,
   "published": 1991,
+  "series": "The Firm",
+  "series_index": "1",
   "letter": "F"
  },
  {
@@ -1509,6 +1843,8 @@
   "year": "2024",
   "pages": 340,
   "published": 2024,
+  "series": null,
+  "series_index": null,
   "letter": "F"
  },
  {
@@ -1518,6 +1854,8 @@
   "year": "2025",
   "pages": 245,
   "published": 2020,
+  "series": null,
+  "series_index": null,
   "letter": "F"
  },
  {
@@ -1527,6 +1865,8 @@
   "year": null,
   "pages": 216,
   "published": 1942,
+  "series": "Hercule Poirot",
+  "series_index": "24",
   "letter": "F"
  },
  {
@@ -1536,6 +1876,8 @@
   "year": "2024",
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "F"
  },
  {
@@ -1545,6 +1887,8 @@
   "year": null,
   "pages": 471,
   "published": 1940,
+  "series": null,
+  "series_index": null,
   "letter": "F"
  },
  {
@@ -1554,6 +1898,8 @@
   "year": null,
   "pages": 517,
   "published": 2023,
+  "series": "The Empyrean",
+  "series_index": "1",
   "letter": "F"
  },
  {
@@ -1563,6 +1909,8 @@
   "year": "2025",
   "pages": 464,
   "published": 2021,
+  "series": null,
+  "series_index": null,
   "letter": "F"
  },
  {
@@ -1572,6 +1920,8 @@
   "year": "2024",
   "pages": 368,
   "published": 2024,
+  "series": null,
+  "series_index": null,
   "letter": "F"
  },
  {
@@ -1581,6 +1931,8 @@
   "year": null,
   "pages": 260,
   "published": 1818,
+  "series": null,
+  "series_index": null,
   "letter": "F"
  },
  {
@@ -1590,6 +1942,8 @@
   "year": "2025",
   "pages": 448,
   "published": 2023,
+  "series": null,
+  "series_index": null,
   "letter": "F"
  },
  {
@@ -1599,6 +1953,8 @@
   "year": "2024",
   "pages": 395,
   "published": 2024,
+  "series": null,
+  "series_index": null,
   "letter": "F"
  },
  {
@@ -1608,6 +1964,8 @@
   "year": "2025",
   "pages": 1236,
   "published": 1993,
+  "series": "Asian Saga",
+  "series_index": "3",
   "letter": "G"
  },
  {
@@ -1617,6 +1975,8 @@
   "year": "2025",
   "pages": 495,
   "published": 2016,
+  "series": null,
+  "series_index": null,
   "letter": "G"
  },
  {
@@ -1626,6 +1986,8 @@
   "year": null,
   "pages": 208,
   "published": 1993,
+  "series": null,
+  "series_index": null,
   "letter": "G"
  },
  {
@@ -1635,6 +1997,8 @@
   "year": "2025",
   "pages": 562,
   "published": 2024,
+  "series": null,
+  "series_index": null,
   "letter": "G"
  },
  {
@@ -1644,6 +2008,8 @@
   "year": "2024",
   "pages": 324,
   "published": 2022,
+  "series": null,
+  "series_index": null,
   "letter": "G"
  },
  {
@@ -1653,6 +2019,8 @@
   "year": "2025",
   "pages": 771,
   "published": 2013,
+  "series": null,
+  "series_index": null,
   "letter": "G"
  },
  {
@@ -1662,6 +2030,8 @@
   "year": "2025",
   "pages": 415,
   "published": 2012,
+  "series": null,
+  "series_index": null,
   "letter": "G"
  },
  {
@@ -1671,6 +2041,8 @@
   "year": null,
   "pages": 441,
   "published": 2009,
+  "series": "Jack Reacher",
+  "series_index": "13",
   "letter": "G"
  },
  {
@@ -1680,6 +2052,8 @@
   "year": null,
   "pages": 1037,
   "published": 1936,
+  "series": null,
+  "series_index": null,
   "letter": "G"
  },
  {
@@ -1689,6 +2063,8 @@
   "year": null,
   "pages": 368,
   "published": 1915,
+  "series": null,
+  "series_index": null,
   "letter": "G"
  },
  {
@@ -1698,6 +2074,8 @@
   "year": "2025",
   "pages": 536,
   "published": 1939,
+  "series": null,
+  "series_index": null,
   "letter": "G"
  },
  {
@@ -1707,6 +2085,8 @@
   "year": "2024",
   "pages": 368,
   "published": 2014,
+  "series": null,
+  "series_index": null,
   "letter": "G"
  },
  {
@@ -1716,6 +2096,8 @@
   "year": null,
   "pages": 435,
   "published": 2018,
+  "series": null,
+  "series_index": null,
   "letter": "G"
  },
  {
@@ -1725,6 +2107,8 @@
   "year": "2025",
   "pages": 432,
   "published": 2025,
+  "series": null,
+  "series_index": null,
   "letter": "G"
  },
  {
@@ -1734,6 +2118,8 @@
   "year": null,
   "pages": 544,
   "published": 1861,
+  "series": null,
+  "series_index": null,
   "letter": "G"
  },
  {
@@ -1743,6 +2129,8 @@
   "year": null,
   "pages": 180,
   "published": 1925,
+  "series": null,
+  "series_index": null,
   "letter": "G"
  },
  {
@@ -1752,6 +2140,8 @@
   "year": null,
   "pages": 289,
   "published": 2020,
+  "series": null,
+  "series_index": null,
   "letter": "G"
  },
  {
@@ -1761,6 +2151,8 @@
   "year": "2025",
   "pages": 592,
   "published": 1996,
+  "series": null,
+  "series_index": null,
   "letter": "G"
  },
  {
@@ -1770,6 +2162,8 @@
   "year": "2024",
   "pages": 370,
   "published": 2019,
+  "series": null,
+  "series_index": null,
   "letter": "G"
  },
  {
@@ -1779,6 +2173,8 @@
   "year": "2025",
   "pages": 319,
   "published": 2020,
+  "series": null,
+  "series_index": null,
   "letter": "G"
  },
  {
@@ -1788,6 +2184,8 @@
   "year": null,
   "pages": 498,
   "published": 1997,
+  "series": null,
+  "series_index": null,
   "letter": "G"
  },
  {
@@ -1797,6 +2195,8 @@
   "year": null,
   "pages": 336,
   "published": 1969,
+  "series": "Hercule Poirot",
+  "series_index": "41",
   "letter": "H"
  },
  {
@@ -1806,6 +2206,8 @@
   "year": "2024",
   "pages": 320,
   "published": 1985,
+  "series": null,
+  "series_index": null,
   "letter": "H"
  },
  {
@@ -1815,6 +2217,8 @@
   "year": null,
   "pages": 388,
   "published": 2023,
+  "series": null,
+  "series_index": null,
   "letter": "H"
  },
  {
@@ -1824,6 +2228,8 @@
   "year": null,
   "pages": 400,
   "published": 1985,
+  "series": null,
+  "series_index": null,
   "letter": "H"
  },
  {
@@ -1833,6 +2239,8 @@
   "year": null,
   "pages": 384,
   "published": 2006,
+  "series": "Jack Reacher",
+  "series_index": "10",
   "letter": "H"
  },
  {
@@ -1842,6 +2250,8 @@
   "year": null,
   "pages": 341,
   "published": 1998,
+  "series": "Harry Potter",
+  "series_index": "2",
   "letter": "H"
  },
  {
@@ -1851,6 +2261,8 @@
   "year": null,
   "pages": 784,
   "published": 2007,
+  "series": "Harry Potter",
+  "series_index": "7",
   "letter": "H"
  },
  {
@@ -1860,6 +2272,8 @@
   "year": null,
   "pages": 752,
   "published": 2000,
+  "series": "Harry Potter",
+  "series_index": "4",
   "letter": "H"
  },
  {
@@ -1869,6 +2283,8 @@
   "year": null,
   "pages": 672,
   "published": 2005,
+  "series": "Harry Potter",
+  "series_index": "6",
   "letter": "H"
  },
  {
@@ -1878,6 +2294,8 @@
   "year": null,
   "pages": 896,
   "published": 2003,
+  "series": "Harry Potter",
+  "series_index": "5",
   "letter": "H"
  },
  {
@@ -1887,6 +2305,8 @@
   "year": null,
   "pages": 333,
   "published": 1997,
+  "series": "Harry Potter",
+  "series_index": "1",
   "letter": "H"
  },
  {
@@ -1896,6 +2316,8 @@
   "year": null,
   "pages": 547,
   "published": 1999,
+  "series": "Harry Potter",
+  "series_index": "3",
   "letter": "H"
  },
  {
@@ -1905,6 +2327,8 @@
   "year": null,
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "H"
  },
  {
@@ -1914,6 +2338,8 @@
   "year": null,
   "pages": 444,
   "published": 2017,
+  "series": null,
+  "series_index": null,
   "letter": "H"
  },
  {
@@ -1923,6 +2349,8 @@
   "year": null,
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "H"
  },
  {
@@ -1932,6 +2360,8 @@
   "year": null,
   "pages": 188,
   "published": 1899,
+  "series": null,
+  "series_index": null,
   "letter": "H"
  },
  {
@@ -1941,6 +2371,8 @@
   "year": "2024",
   "pages": 400,
   "published": 2023,
+  "series": null,
+  "series_index": null,
   "letter": "H"
  },
  {
@@ -1950,6 +2382,8 @@
   "year": null,
   "pages": 594,
   "published": 2023,
+  "series": null,
+  "series_index": null,
   "letter": "H"
  },
  {
@@ -1959,6 +2393,8 @@
   "year": null,
   "pages": 335,
   "published": 1938,
+  "series": "Hercule Poirot",
+  "series_index": "20",
   "letter": "H"
  },
  {
@@ -1968,6 +2404,8 @@
   "year": null,
   "pages": 864,
   "published": 1999,
+  "series": null,
+  "series_index": null,
   "letter": "H"
  },
  {
@@ -1977,6 +2415,8 @@
   "year": null,
   "pages": null,
   "published": 1955,
+  "series": "Hercule Poirot",
+  "series_index": "31",
   "letter": "H"
  },
  {
@@ -1986,6 +2426,8 @@
   "year": "2024",
   "pages": 264,
   "published": 2016,
+  "series": null,
+  "series_index": null,
   "letter": "H"
  },
  {
@@ -1995,6 +2437,8 @@
   "year": null,
   "pages": 152,
   "published": 1946,
+  "series": null,
+  "series_index": null,
   "letter": "H"
  },
  {
@@ -2004,6 +2448,8 @@
   "year": "2025",
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "H"
  },
  {
@@ -2013,6 +2459,8 @@
   "year": null,
   "pages": 366,
   "published": 1937,
+  "series": null,
+  "series_index": null,
   "letter": "H"
  },
  {
@@ -2022,6 +2470,8 @@
   "year": null,
   "pages": 384,
   "published": 1946,
+  "series": "Hercule Poirot",
+  "series_index": "25",
   "letter": "H"
  },
  {
@@ -2031,6 +2481,8 @@
   "year": "2024",
   "pages": 449,
   "published": 2023,
+  "series": "Holly Gibney",
+  "series_index": "3",
   "letter": "H"
  },
  {
@@ -2040,6 +2492,8 @@
   "year": null,
   "pages": 450,
   "published": 2015,
+  "series": null,
+  "series_index": null,
   "letter": "H"
  },
  {
@@ -2049,6 +2503,8 @@
   "year": "2025",
   "pages": 256,
   "published": 1902,
+  "series": "Sherlock Holmes",
+  "series_index": "5",
   "letter": "H"
  },
  {
@@ -2058,6 +2514,8 @@
   "year": "2024",
   "pages": 338,
   "published": 2022,
+  "series": "The Housemaid",
+  "series_index": "1",
   "letter": "H"
  },
  {
@@ -2067,6 +2525,8 @@
   "year": "2024",
   "pages": 311,
   "published": 2023,
+  "series": "The Housemaid",
+  "series_index": "2",
   "letter": "H"
  },
  {
@@ -2076,6 +2536,8 @@
   "year": "2025",
   "pages": 374,
   "published": 2008,
+  "series": "The Hunger Games",
+  "series_index": "1",
   "letter": "H"
  },
  {
@@ -2085,6 +2547,8 @@
   "year": null,
   "pages": 470,
   "published": 1906,
+  "series": null,
+  "series_index": null,
   "letter": "I"
  },
  {
@@ -2094,6 +2558,8 @@
   "year": "2025",
   "pages": 423,
   "published": 2017,
+  "series": null,
+  "series_index": null,
   "letter": "I"
  },
  {
@@ -2103,6 +2569,8 @@
   "year": null,
   "pages": 438,
   "published": 2020,
+  "series": "Holly Gibney",
+  "series_index": "2",
   "letter": "I"
  },
  {
@@ -2112,6 +2580,8 @@
   "year": null,
   "pages": 848,
   "published": -750,
+  "series": null,
+  "series_index": null,
   "letter": "I"
  },
  {
@@ -2121,6 +2591,8 @@
   "year": null,
   "pages": 186,
   "published": 1951,
+  "series": null,
+  "series_index": null,
   "letter": "I"
  },
  {
@@ -2130,6 +2602,8 @@
   "year": null,
   "pages": 89,
   "published": 1895,
+  "series": null,
+  "series_index": null,
   "letter": "I"
  },
  {
@@ -2139,6 +2613,8 @@
   "year": null,
   "pages": 343,
   "published": 1966,
+  "series": null,
+  "series_index": null,
   "letter": "I"
  },
  {
@@ -2148,6 +2624,8 @@
   "year": "2024",
   "pages": 360,
   "published": 2006,
+  "series": null,
+  "series_index": null,
   "letter": "I"
  },
  {
@@ -2157,6 +2635,8 @@
   "year": null,
   "pages": 273,
   "published": 2015,
+  "series": null,
+  "series_index": null,
   "letter": "I"
  },
  {
@@ -2166,6 +2646,8 @@
   "year": null,
   "pages": 156,
   "published": 1924,
+  "series": null,
+  "series_index": null,
   "letter": "I"
  },
  {
@@ -2175,6 +2657,8 @@
   "year": "2024",
   "pages": 561,
   "published": 2019,
+  "series": null,
+  "series_index": null,
   "letter": "I"
  },
  {
@@ -2184,6 +2668,8 @@
   "year": "2025",
   "pages": 525,
   "published": 2012,
+  "series": "Divergent",
+  "series_index": "2",
   "letter": "I"
  },
  {
@@ -2193,6 +2679,8 @@
   "year": "2025",
   "pages": 464,
   "published": 2024,
+  "series": null,
+  "series_index": null,
   "letter": "I"
  },
  {
@@ -2202,6 +2690,8 @@
   "year": null,
   "pages": 348,
   "published": 2023,
+  "series": null,
+  "series_index": null,
   "letter": "I"
  },
  {
@@ -2211,6 +2701,8 @@
   "year": "2024",
   "pages": 448,
   "published": 2020,
+  "series": null,
+  "series_index": null,
   "letter": "I"
  },
  {
@@ -2220,6 +2712,8 @@
   "year": "2025",
   "pages": 192,
   "published": 1897,
+  "series": null,
+  "series_index": null,
   "letter": "I"
  },
  {
@@ -2229,6 +2723,8 @@
   "year": "2024",
   "pages": 623,
   "published": 2023,
+  "series": "The Empyrean",
+  "series_index": "2",
   "letter": "I"
  },
  {
@@ -2238,6 +2734,8 @@
   "year": null,
   "pages": 1184,
   "published": 1986,
+  "series": null,
+  "series_index": null,
   "letter": "I"
  },
  {
@@ -2247,6 +2745,8 @@
   "year": null,
   "pages": 373,
   "published": 2016,
+  "series": "It Ends with Us",
+  "series_index": "1",
   "letter": "I"
  },
  {
@@ -2256,6 +2756,8 @@
   "year": null,
   "pages": 324,
   "published": 2022,
+  "series": "It Ends with Us",
+  "series_index": "2",
   "letter": "I"
  },
  {
@@ -2265,6 +2767,8 @@
   "year": null,
   "pages": 496,
   "published": 1819,
+  "series": null,
+  "series_index": null,
   "letter": "I"
  },
  {
@@ -2274,6 +2778,8 @@
   "year": null,
   "pages": 308,
   "published": 2015,
+  "series": null,
+  "series_index": null,
   "letter": "I"
  },
  {
@@ -2283,6 +2789,8 @@
   "year": "2024",
   "pages": 303,
   "published": 2024,
+  "series": null,
+  "series_index": null,
   "letter": "J"
  },
  {
@@ -2292,6 +2800,8 @@
   "year": null,
   "pages": 532,
   "published": 1847,
+  "series": null,
+  "series_index": null,
   "letter": "J"
  },
  {
@@ -2301,6 +2811,8 @@
   "year": "2025",
   "pages": 240,
   "published": 1864,
+  "series": null,
+  "series_index": null,
   "letter": "J"
  },
  {
@@ -2310,6 +2822,8 @@
   "year": "2024",
   "pages": 357,
   "published": 2021,
+  "series": "The Whistler",
+  "series_index": "2",
   "letter": "J"
  },
  {
@@ -2319,6 +2833,8 @@
   "year": null,
   "pages": 336,
   "published": 2014,
+  "series": null,
+  "series_index": null,
   "letter": "J"
  },
  {
@@ -2328,6 +2844,8 @@
   "year": null,
   "pages": 467,
   "published": 2002,
+  "series": null,
+  "series_index": null,
   "letter": "K"
  },
  {
@@ -2337,6 +2855,8 @@
   "year": null,
   "pages": 559,
   "published": 2025,
+  "series": null,
+  "series_index": null,
   "letter": "K"
  },
  {
@@ -2346,6 +2866,8 @@
   "year": "2024",
   "pages": 338,
   "published": 2017,
+  "series": null,
+  "series_index": null,
   "letter": "K"
  },
  {
@@ -2355,6 +2877,8 @@
   "year": null,
   "pages": 681,
   "published": 2017,
+  "series": null,
+  "series_index": null,
   "letter": "K"
  },
  {
@@ -2364,6 +2888,8 @@
   "year": "2025",
   "pages": 474,
   "published": 1997,
+  "series": "Jack Reacher",
+  "series_index": "1",
   "letter": "K"
  },
  {
@@ -2373,6 +2899,8 @@
   "year": "2024",
   "pages": 276,
   "published": 2003,
+  "series": null,
+  "series_index": null,
   "letter": "K"
  },
  {
@@ -2382,6 +2910,8 @@
   "year": "2025",
   "pages": 368,
   "published": 1962,
+  "series": "Asian Saga",
+  "series_index": "4",
   "letter": "K"
  },
  {
@@ -2391,6 +2921,8 @@
   "year": "2025",
   "pages": 371,
   "published": 2003,
+  "series": null,
+  "series_index": null,
   "letter": "K"
  },
  {
@@ -2400,6 +2932,8 @@
   "year": null,
   "pages": 303,
   "published": 2021,
+  "series": null,
+  "series_index": null,
   "letter": "K"
  },
  {
@@ -2409,6 +2943,8 @@
   "year": null,
   "pages": 256,
   "published": 1914,
+  "series": null,
+  "series_index": null,
   "letter": "K"
  },
  {
@@ -2418,6 +2954,8 @@
   "year": null,
   "pages": 9,
   "published": 1947,
+  "series": "Hercule Poirot",
+  "series_index": "26",
   "letter": "L"
  },
  {
@@ -2427,6 +2965,8 @@
   "year": "2025",
   "pages": 352,
   "published": 2023,
+  "series": null,
+  "series_index": null,
   "letter": "L"
  },
  {
@@ -2436,6 +2976,8 @@
   "year": "2025",
   "pages": 240,
   "published": 2023,
+  "series": null,
+  "series_index": null,
   "letter": "L"
  },
  {
@@ -2445,6 +2987,8 @@
   "year": null,
   "pages": null,
   "published": 2017,
+  "series": null,
+  "series_index": null,
   "letter": "L"
  },
  {
@@ -2454,6 +2998,8 @@
   "year": "2024",
   "pages": 278,
   "published": 2004,
+  "series": null,
+  "series_index": null,
   "letter": "L"
  },
  {
@@ -2463,6 +3009,8 @@
   "year": null,
   "pages": 1488,
   "published": 1862,
+  "series": null,
+  "series_index": null,
   "letter": "L"
  },
  {
@@ -2472,6 +3020,8 @@
   "year": "2024",
   "pages": 390,
   "published": 2022,
+  "series": null,
+  "series_index": null,
   "letter": "L"
  },
  {
@@ -2481,6 +3031,8 @@
   "year": "2025",
   "pages": 416,
   "published": 2024,
+  "series": null,
+  "series_index": null,
   "letter": "L"
  },
  {
@@ -2490,6 +3042,8 @@
   "year": null,
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "L"
  },
  {
@@ -2499,6 +3053,8 @@
   "year": "2025",
   "pages": 576,
   "published": 2021,
+  "series": null,
+  "series_index": null,
   "letter": "L"
  },
  {
@@ -2508,6 +3064,8 @@
   "year": "2024",
   "pages": 385,
   "published": 2011,
+  "series": null,
+  "series_index": null,
   "letter": "L"
  },
  {
@@ -2517,6 +3075,8 @@
   "year": "2024",
   "pages": 736,
   "published": 2015,
+  "series": null,
+  "series_index": null,
   "letter": "L"
  },
  {
@@ -2526,6 +3086,8 @@
   "year": null,
   "pages": 96,
   "published": 1943,
+  "series": null,
+  "series_index": null,
   "letter": "L"
  },
  {
@@ -2535,6 +3097,8 @@
   "year": null,
   "pages": 449,
   "published": 1868,
+  "series": null,
+  "series_index": null,
   "letter": "L"
  },
  {
@@ -2544,6 +3108,8 @@
   "year": null,
   "pages": 376,
   "published": 1955,
+  "series": null,
+  "series_index": null,
   "letter": "L"
  },
  {
@@ -2553,6 +3119,8 @@
   "year": "2025",
   "pages": 294,
   "published": 2024,
+  "series": null,
+  "series_index": null,
   "letter": "L"
  },
  {
@@ -2562,6 +3130,8 @@
   "year": null,
   "pages": 221,
   "published": 2005,
+  "series": null,
+  "series_index": null,
   "letter": "L"
  },
  {
@@ -2571,6 +3141,8 @@
   "year": "2025",
   "pages": 219,
   "published": 1933,
+  "series": "Hercule Poirot",
+  "series_index": "9",
   "letter": "L"
  },
  {
@@ -2580,6 +3152,8 @@
   "year": null,
   "pages": 182,
   "published": 1954,
+  "series": null,
+  "series_index": null,
   "letter": "L"
  },
  {
@@ -2589,6 +3163,8 @@
   "year": "2024",
   "pages": 348,
   "published": 1985,
+  "series": null,
+  "series_index": null,
   "letter": "L"
  },
  {
@@ -2598,6 +3174,8 @@
   "year": "2024",
   "pages": 372,
   "published": 2002,
+  "series": null,
+  "series_index": null,
   "letter": "L"
  },
  {
@@ -2607,6 +3185,8 @@
   "year": "2025",
   "pages": 706,
   "published": 1924,
+  "series": null,
+  "series_index": null,
   "letter": "M"
  },
  {
@@ -2616,6 +3196,8 @@
   "year": null,
   "pages": 477,
   "published": 2016,
+  "series": null,
+  "series_index": null,
   "letter": "M"
  },
  {
@@ -2625,6 +3207,8 @@
   "year": "2025",
   "pages": 289,
   "published": 2022,
+  "series": null,
+  "series_index": null,
   "letter": "M"
  },
  {
@@ -2634,6 +3218,8 @@
   "year": "2024",
   "pages": 337,
   "published": 2012,
+  "series": null,
+  "series_index": null,
   "letter": "M"
  },
  {
@@ -2643,6 +3229,8 @@
   "year": null,
   "pages": 381,
   "published": 1924,
+  "series": "Colonel Race",
+  "series_index": "1",
   "letter": "M"
  },
  {
@@ -2652,6 +3240,8 @@
   "year": "2025",
   "pages": 383,
   "published": 1850,
+  "series": null,
+  "series_index": null,
   "letter": "M"
  },
  {
@@ -2661,6 +3251,8 @@
   "year": null,
   "pages": 488,
   "published": 1814,
+  "series": null,
+  "series_index": null,
   "letter": "M"
  },
  {
@@ -2670,6 +3262,8 @@
   "year": "2025",
   "pages": 369,
   "published": 2011,
+  "series": null,
+  "series_index": null,
   "letter": "M"
  },
  {
@@ -2679,6 +3273,8 @@
   "year": null,
   "pages": 182,
   "published": 1950,
+  "series": null,
+  "series_index": null,
   "letter": "M"
  },
  {
@@ -2688,6 +3284,8 @@
   "year": "2024",
   "pages": 332,
   "published": 2024,
+  "series": null,
+  "series_index": null,
   "letter": "M"
  },
  {
@@ -2697,6 +3295,8 @@
   "year": null,
   "pages": 378,
   "published": 1893,
+  "series": "Sherlock Holmes",
+  "series_index": "4",
   "letter": "M"
  },
  {
@@ -2706,6 +3306,8 @@
   "year": "2024",
   "pages": 274,
   "published": 1994,
+  "series": null,
+  "series_index": null,
   "letter": "M"
  },
  {
@@ -2715,6 +3317,8 @@
   "year": null,
   "pages": 242,
   "published": 2014,
+  "series": null,
+  "series_index": null,
   "letter": "M"
  },
  {
@@ -2724,6 +3328,8 @@
   "year": null,
   "pages": 201,
   "published": 1915,
+  "series": null,
+  "series_index": null,
   "letter": "M"
  },
  {
@@ -2733,6 +3339,8 @@
   "year": "2025",
   "pages": 296,
   "published": 2022,
+  "series": null,
+  "series_index": null,
   "letter": "M"
  },
  {
@@ -2742,6 +3350,8 @@
   "year": null,
   "pages": 912,
   "published": 1872,
+  "series": null,
+  "series_index": null,
   "letter": "M"
  },
  {
@@ -2751,6 +3361,8 @@
   "year": null,
   "pages": 288,
   "published": 2020,
+  "series": null,
+  "series_index": null,
   "letter": "M"
  },
  {
@@ -2760,6 +3372,8 @@
   "year": null,
   "pages": 352,
   "published": 2018,
+  "series": null,
+  "series_index": null,
   "letter": "M"
  },
  {
@@ -2769,6 +3383,8 @@
   "year": "2025",
   "pages": 339,
   "published": 2024,
+  "series": null,
+  "series_index": null,
   "letter": "M"
  },
  {
@@ -2778,6 +3394,8 @@
   "year": null,
   "pages": 351,
   "published": 1962,
+  "series": "Miss Marple",
+  "series_index": "8",
   "letter": "M"
  },
  {
@@ -2787,6 +3405,8 @@
   "year": null,
   "pages": 370,
   "published": 1987,
+  "series": null,
+  "series_index": null,
   "letter": "M"
  },
  {
@@ -2796,6 +3416,8 @@
   "year": null,
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "M"
  },
  {
@@ -2805,6 +3427,8 @@
   "year": null,
   "pages": 720,
   "published": 1851,
+  "series": null,
+  "series_index": null,
   "letter": "M"
  },
  {
@@ -2814,6 +3438,8 @@
   "year": "2025",
   "pages": 390,
   "published": 2010,
+  "series": "The Hunger Games",
+  "series_index": "3",
   "letter": "M"
  },
  {
@@ -2823,6 +3449,8 @@
   "year": null,
   "pages": 187,
   "published": 1919,
+  "series": null,
+  "series_index": null,
   "letter": "M"
  },
  {
@@ -2832,6 +3460,8 @@
   "year": null,
   "pages": 299,
   "published": 1942,
+  "series": "Miss Marple",
+  "series_index": "3",
   "letter": "M"
  },
  {
@@ -2841,6 +3471,8 @@
   "year": null,
   "pages": 437,
   "published": 2014,
+  "series": null,
+  "series_index": null,
   "letter": "M"
  },
  {
@@ -2850,6 +3482,8 @@
   "year": null,
   "pages": 194,
   "published": 1925,
+  "series": null,
+  "series_index": null,
   "letter": "M"
  },
  {
@@ -2859,6 +3493,8 @@
   "year": null,
   "pages": 244,
   "published": 1952,
+  "series": "Hercule Poirot",
+  "series_index": "29",
   "letter": "M"
  },
  {
@@ -2868,6 +3504,8 @@
   "year": null,
   "pages": 288,
   "published": 1930,
+  "series": "Miss Marple",
+  "series_index": "1",
   "letter": "M"
  },
  {
@@ -2877,6 +3515,8 @@
   "year": null,
   "pages": 264,
   "published": 1936,
+  "series": "Hercule Poirot",
+  "series_index": "14",
   "letter": "M"
  },
  {
@@ -2886,6 +3526,8 @@
   "year": null,
   "pages": 5,
   "published": 1937,
+  "series": "Hercule Poirot",
+  "series_index": "16",
   "letter": "M"
  },
  {
@@ -2895,6 +3537,8 @@
   "year": null,
   "pages": 288,
   "published": 1950,
+  "series": "Miss Marple",
+  "series_index": "4",
   "letter": "M"
  },
  {
@@ -2904,6 +3548,8 @@
   "year": null,
   "pages": 277,
   "published": 1939,
+  "series": "Superintendent Battle",
+  "series_index": "4",
   "letter": "M"
  },
  {
@@ -2913,6 +3559,8 @@
   "year": "2025",
   "pages": 288,
   "published": 1926,
+  "series": "Hercule Poirot",
+  "series_index": "4",
   "letter": "M"
  },
  {
@@ -2922,6 +3570,8 @@
   "year": "2025",
   "pages": 240,
   "published": 1923,
+  "series": "Hercule Poirot",
+  "series_index": "2",
   "letter": "M"
  },
  {
@@ -2931,6 +3581,8 @@
   "year": "2025",
   "pages": 347,
   "published": 1934,
+  "series": "Hercule Poirot",
+  "series_index": "10",
   "letter": "M"
  },
  {
@@ -2940,6 +3592,8 @@
   "year": null,
   "pages": 302,
   "published": 2013,
+  "series": null,
+  "series_index": null,
   "letter": "M"
  },
  {
@@ -2949,6 +3603,8 @@
   "year": "2025",
   "pages": 174,
   "published": 1920,
+  "series": "Hercule Poirot",
+  "series_index": "1",
   "letter": "M"
  },
  {
@@ -2958,6 +3614,8 @@
   "year": "2025",
   "pages": 317,
   "published": 1928,
+  "series": "Hercule Poirot",
+  "series_index": "6",
   "letter": "M"
  },
  {
@@ -2967,6 +3625,8 @@
   "year": null,
   "pages": 213,
   "published": 1971,
+  "series": "Miss Marple",
+  "series_index": "11",
   "letter": "N"
  },
  {
@@ -2976,6 +3636,8 @@
   "year": "2025",
   "pages": 448,
   "published": 2025,
+  "series": "Holly Gibney",
+  "series_index": "4",
   "letter": "N"
  },
  {
@@ -2985,6 +3647,8 @@
   "year": null,
   "pages": 288,
   "published": 2005,
+  "series": null,
+  "series_index": null,
   "letter": "N"
  },
  {
@@ -2994,6 +3658,8 @@
   "year": null,
   "pages": 286,
   "published": 2022,
+  "series": null,
+  "series_index": null,
   "letter": "N"
  },
  {
@@ -3003,6 +3669,8 @@
   "year": null,
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "N"
  },
  {
@@ -3012,6 +3680,8 @@
   "year": null,
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "N"
  },
  {
@@ -3021,6 +3691,8 @@
   "year": null,
   "pages": 564,
   "published": 2015,
+  "series": null,
+  "series_index": null,
   "letter": "N"
  },
  {
@@ -3030,6 +3702,8 @@
   "year": null,
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "N"
  },
  {
@@ -3039,6 +3713,8 @@
   "year": null,
   "pages": 230,
   "published": 1934,
+  "series": null,
+  "series_index": null,
   "letter": "N"
  },
  {
@@ -3048,6 +3724,8 @@
   "year": null,
   "pages": 221,
   "published": 2009,
+  "series": null,
+  "series_index": null,
   "letter": "N"
  },
  {
@@ -3057,6 +3735,8 @@
   "year": null,
   "pages": 176,
   "published": 1948,
+  "series": null,
+  "series_index": null,
   "letter": "N"
  },
  {
@@ -3066,6 +3746,8 @@
   "year": null,
   "pages": 304,
   "published": 1941,
+  "series": "Tommy & Tuppence Mysteries",
+  "series_index": "3",
   "letter": "N"
  },
  {
@@ -3075,6 +3757,8 @@
   "year": "2024",
   "pages": 273,
   "published": 2018,
+  "series": null,
+  "series_index": null,
   "letter": "N"
  },
  {
@@ -3084,6 +3768,8 @@
   "year": null,
   "pages": 260,
   "published": 1817,
+  "series": null,
+  "series_index": null,
   "letter": "N"
  },
  {
@@ -3093,6 +3779,8 @@
   "year": "2024",
   "pages": 372,
   "published": 2023,
+  "series": null,
+  "series_index": null,
   "letter": "N"
  },
  {
@@ -3102,6 +3790,8 @@
   "year": null,
   "pages": 296,
   "published": 1987,
+  "series": null,
+  "series_index": null,
   "letter": "N"
  },
  {
@@ -3111,6 +3801,8 @@
   "year": null,
   "pages": 416,
   "published": 2008,
+  "series": "Jack Reacher",
+  "series_index": "12",
   "letter": "N"
  },
  {
@@ -3120,6 +3812,8 @@
   "year": null,
   "pages": 541,
   "published": -750,
+  "series": null,
+  "series_index": null,
   "letter": "O"
  },
  {
@@ -3129,6 +3823,8 @@
   "year": "2025",
   "pages": 107,
   "published": 1937,
+  "series": null,
+  "series_index": null,
   "letter": "O"
  },
  {
@@ -3138,6 +3834,8 @@
   "year": null,
   "pages": 96,
   "published": 1952,
+  "series": null,
+  "series_index": null,
   "letter": "O"
  },
  {
@@ -3147,6 +3845,8 @@
   "year": null,
   "pages": 608,
   "published": 1838,
+  "series": null,
+  "series_index": null,
   "letter": "O"
  },
  {
@@ -3156,6 +3856,8 @@
   "year": null,
   "pages": 417,
   "published": 1967,
+  "series": null,
+  "series_index": null,
   "letter": "O"
  },
  {
@@ -3165,6 +3867,8 @@
   "year": null,
   "pages": 466,
   "published": 2005,
+  "series": "Jack Reacher",
+  "series_index": "9",
   "letter": "O"
  },
  {
@@ -3174,6 +3878,8 @@
   "year": null,
   "pages": 232,
   "published": 1940,
+  "series": "Hercule Poirot",
+  "series_index": "22",
   "letter": "O"
  },
  {
@@ -3183,6 +3889,8 @@
   "year": "2025",
   "pages": 544,
   "published": 2025,
+  "series": "The Empyrean",
+  "series_index": "3",
   "letter": "O"
  },
  {
@@ -3192,6 +3900,8 @@
   "year": null,
   "pages": 288,
   "published": 1958,
+  "series": null,
+  "series_index": null,
   "letter": "O"
  },
  {
@@ -3201,6 +3911,8 @@
   "year": null,
   "pages": 561,
   "published": 2018,
+  "series": "Holly Gibney",
+  "series_index": "1",
   "letter": "O"
  },
  {
@@ -3210,6 +3922,8 @@
   "year": null,
   "pages": 214,
   "published": 1967,
+  "series": null,
+  "series_index": null,
   "letter": "O"
  },
  {
@@ -3219,6 +3933,8 @@
   "year": "2025",
   "pages": 502,
   "published": 2018,
+  "series": null,
+  "series_index": null,
   "letter": "O"
  },
  {
@@ -3228,6 +3944,8 @@
   "year": null,
   "pages": 496,
   "published": 2017,
+  "series": null,
+  "series_index": null,
   "letter": "P"
  },
  {
@@ -3237,6 +3955,8 @@
   "year": "2024",
   "pages": 384,
   "published": 2001,
+  "series": null,
+  "series_index": null,
   "letter": "P"
  },
  {
@@ -3246,6 +3966,8 @@
   "year": null,
   "pages": 288,
   "published": 1961,
+  "series": null,
+  "series_index": null,
   "letter": "P"
  },
  {
@@ -3255,6 +3977,8 @@
   "year": null,
   "pages": 183,
   "published": 1982,
+  "series": null,
+  "series_index": null,
   "letter": "P"
  },
  {
@@ -3264,6 +3988,8 @@
   "year": null,
   "pages": 305,
   "published": 2008,
+  "series": null,
+  "series_index": null,
   "letter": "P"
  },
  {
@@ -3273,6 +3999,8 @@
   "year": "2024",
   "pages": 416,
   "published": 1997,
+  "series": null,
+  "series_index": null,
   "letter": "P"
  },
  {
@@ -3282,6 +4010,8 @@
   "year": null,
   "pages": 347,
   "published": 1929,
+  "series": "Tommy & Tuppence Mysteries",
+  "series_index": "2",
   "letter": "P"
  },
  {
@@ -3291,6 +4021,8 @@
   "year": null,
   "pages": 363,
   "published": 1970,
+  "series": null,
+  "series_index": null,
   "letter": "P"
  },
  {
@@ -3300,6 +4032,8 @@
   "year": null,
   "pages": 96,
   "published": 1947,
+  "series": null,
+  "series_index": null,
   "letter": "P"
  },
  {
@@ -3309,6 +4043,8 @@
   "year": "2024",
   "pages": 400,
   "published": 1992,
+  "series": null,
+  "series_index": null,
   "letter": "P"
  },
  {
@@ -3318,6 +4054,8 @@
   "year": null,
   "pages": 566,
   "published": 2018,
+  "series": null,
+  "series_index": null,
   "letter": "P"
  },
  {
@@ -3327,6 +4065,8 @@
   "year": "2025",
   "pages": 382,
   "published": 2021,
+  "series": null,
+  "series_index": null,
   "letter": "P"
  },
  {
@@ -3336,6 +4076,8 @@
   "year": null,
   "pages": 160,
   "published": 2007,
+  "series": null,
+  "series_index": null,
   "letter": "P"
  },
  {
@@ -3345,6 +4087,8 @@
   "year": "2025",
   "pages": 287,
   "published": 1932,
+  "series": "Hercule Poirot",
+  "series_index": "8",
   "letter": "P"
  },
  {
@@ -3354,6 +4098,8 @@
   "year": null,
   "pages": 496,
   "published": 2003,
+  "series": "Jack Reacher",
+  "series_index": "7",
   "letter": "P"
  },
  {
@@ -3363,6 +4109,8 @@
   "year": null,
   "pages": 249,
   "published": 1817,
+  "series": null,
+  "series_index": null,
   "letter": "P"
  },
  {
@@ -3372,6 +4120,8 @@
   "year": "2025",
   "pages": 580,
   "published": 1983,
+  "series": null,
+  "series_index": null,
   "letter": "P"
  },
  {
@@ -3381,6 +4131,8 @@
   "year": null,
   "pages": 253,
   "published": 1890,
+  "series": null,
+  "series_index": null,
   "letter": "P"
  },
  {
@@ -3390,6 +4142,8 @@
   "year": null,
   "pages": 308,
   "published": 1947,
+  "series": null,
+  "series_index": null,
   "letter": "P"
  },
  {
@@ -3399,6 +4153,8 @@
   "year": "2024",
   "pages": 262,
   "published": 2007,
+  "series": null,
+  "series_index": null,
   "letter": "P"
  },
  {
@@ -3408,6 +4164,8 @@
   "year": null,
   "pages": 220,
   "published": 1953,
+  "series": "Miss Marple",
+  "series_index": "6",
   "letter": "P"
  },
  {
@@ -3417,6 +4175,8 @@
   "year": "2025",
   "pages": 191,
   "published": 1924,
+  "series": "Hercule Poirot",
+  "series_index": "3",
   "letter": "P"
  },
  {
@@ -3426,6 +4186,8 @@
   "year": "2025",
   "pages": 464,
   "published": 2021,
+  "series": null,
+  "series_index": null,
   "letter": "P"
  },
  {
@@ -3435,6 +4197,8 @@
   "year": null,
   "pages": 256,
   "published": 1973,
+  "series": "Tommy and Tuppence Mysteries",
+  "series_index": "5",
   "letter": "P"
  },
  {
@@ -3444,6 +4208,8 @@
   "year": null,
   "pages": 400,
   "published": 1813,
+  "series": null,
+  "series_index": null,
   "letter": "P"
  },
  {
@@ -3453,6 +4219,8 @@
   "year": "2025",
   "pages": 476,
   "published": 2021,
+  "series": null,
+  "series_index": null,
   "letter": "P"
  },
  {
@@ -3462,6 +4230,8 @@
   "year": "2025",
   "pages": 259,
   "published": 2023,
+  "series": null,
+  "series_index": null,
   "letter": "P"
  },
  {
@@ -3471,6 +4241,8 @@
   "year": "2024",
   "pages": 340,
   "published": 2012,
+  "series": null,
+  "series_index": null,
   "letter": "R"
  },
  {
@@ -3480,6 +4252,8 @@
   "year": "2024",
   "pages": 576,
   "published": 1995,
+  "series": null,
+  "series_index": null,
   "letter": "R"
  },
  {
@@ -3489,6 +4263,8 @@
   "year": "2024",
   "pages": 432,
   "published": 1973,
+  "series": null,
+  "series_index": null,
   "letter": "R"
  },
  {
@@ -3498,6 +4274,8 @@
   "year": null,
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "R"
  },
  {
@@ -3507,6 +4285,8 @@
   "year": null,
   "pages": 110,
   "published": 1915,
+  "series": null,
+  "series_index": null,
   "letter": "R"
  },
  {
@@ -3516,6 +4296,8 @@
   "year": null,
   "pages": 420,
   "published": 2018,
+  "series": null,
+  "series_index": null,
   "letter": "R"
  },
  {
@@ -3525,6 +4307,8 @@
   "year": null,
   "pages": 149,
   "published": 1894,
+  "series": null,
+  "series_index": null,
   "letter": "R"
  },
  {
@@ -3534,6 +4318,8 @@
   "year": null,
   "pages": 434,
   "published": 2013,
+  "series": null,
+  "series_index": null,
   "letter": "R"
  },
  {
@@ -3543,6 +4329,8 @@
   "year": null,
   "pages": 258,
   "published": 1989,
+  "series": null,
+  "series_index": null,
   "letter": "R"
  },
  {
@@ -3552,6 +4340,8 @@
   "year": "2024",
   "pages": 360,
   "published": 2022,
+  "series": null,
+  "series_index": null,
   "letter": "R"
  },
  {
@@ -3561,6 +4351,8 @@
   "year": null,
   "pages": 335,
   "published": 2022,
+  "series": null,
+  "series_index": null,
   "letter": "R"
  },
  {
@@ -3570,6 +4362,8 @@
   "year": null,
   "pages": 455,
   "published": 1904,
+  "series": "Sherlock Holmes",
+  "series_index": "6",
   "letter": "R"
  },
  {
@@ -3579,6 +4373,8 @@
   "year": null,
   "pages": 432,
   "published": 1955,
+  "series": "The Lord of the Rings",
+  "series_index": "3",
   "letter": "R"
  },
  {
@@ -3588,6 +4384,8 @@
   "year": "2024",
   "pages": 160,
   "published": 1926,
+  "series": null,
+  "series_index": null,
   "letter": "R"
  },
  {
@@ -3597,6 +4395,8 @@
   "year": null,
   "pages": 501,
   "published": 1817,
+  "series": null,
+  "series_index": null,
   "letter": "R"
  },
  {
@@ -3606,6 +4406,8 @@
   "year": "2024",
   "pages": 344,
   "published": 2015,
+  "series": null,
+  "series_index": null,
   "letter": "R"
  },
  {
@@ -3615,6 +4417,8 @@
   "year": null,
   "pages": 112,
   "published": 1929,
+  "series": null,
+  "series_index": null,
   "letter": "R"
  },
  {
@@ -3624,6 +4428,8 @@
   "year": "2024",
   "pages": 352,
   "published": 2017,
+  "series": null,
+  "series_index": null,
   "letter": "R"
  },
  {
@@ -3633,6 +4439,8 @@
   "year": "2025",
   "pages": 335,
   "published": 2011,
+  "series": null,
+  "series_index": null,
   "letter": "R"
  },
  {
@@ -3642,6 +4450,8 @@
   "year": "2024",
   "pages": 464,
   "published": 1996,
+  "series": null,
+  "series_index": null,
   "letter": "R"
  },
  {
@@ -3651,6 +4461,8 @@
   "year": null,
   "pages": 512,
   "published": 2000,
+  "series": "Jack Reacher",
+  "series_index": "4",
   "letter": "R"
  },
  {
@@ -3660,6 +4472,8 @@
   "year": null,
   "pages": 336,
   "published": 1940,
+  "series": "Hercule Poirot",
+  "series_index": "21",
   "letter": "S"
  },
  {
@@ -3669,6 +4483,8 @@
   "year": null,
   "pages": 483,
   "published": 1975,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -3678,6 +4494,8 @@
   "year": null,
   "pages": 248,
   "published": 1908,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -3687,6 +4505,8 @@
   "year": null,
   "pages": 512,
   "published": 2011,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -3696,6 +4516,8 @@
   "year": null,
   "pages": 279,
   "published": 1850,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -3705,6 +4527,8 @@
   "year": null,
   "pages": 266,
   "published": 1922,
+  "series": "Tommy and Tuppence Mysteries",
+  "series_index": "1",
   "letter": "S"
  },
  {
@@ -3714,6 +4538,8 @@
   "year": "2025",
   "pages": 559,
   "published": 1992,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -3723,6 +4549,8 @@
   "year": null,
   "pages": 400,
   "published": 1925,
+  "series": "Superintendent Battle",
+  "series_index": "1",
   "letter": "S"
  },
  {
@@ -3732,6 +4560,8 @@
   "year": null,
   "pages": 409,
   "published": 1811,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -3741,6 +4571,8 @@
   "year": null,
   "pages": 375,
   "published": 1929,
+  "series": "Superintendent Battle",
+  "series_index": "2",
   "letter": "S"
  },
  {
@@ -3750,6 +4582,8 @@
   "year": null,
   "pages": 389,
   "published": 2017,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -3759,6 +4593,8 @@
   "year": "2025",
   "pages": 497,
   "published": 1977,
+  "series": "The Shining",
+  "series_index": "1",
   "letter": "S"
  },
  {
@@ -3768,6 +4604,8 @@
   "year": null,
   "pages": 400,
   "published": 2016,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -3777,6 +4615,8 @@
   "year": "2025",
   "pages": 1152,
   "published": 1975,
+  "series": "Asian Saga",
+  "series_index": "1",
   "letter": "S"
  },
  {
@@ -3786,6 +4626,8 @@
   "year": "2025",
   "pages": 129,
   "published": 1890,
+  "series": "Sherlock Holmes",
+  "series_index": "2",
   "letter": "S"
  },
  {
@@ -3795,6 +4637,8 @@
   "year": null,
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -3804,6 +4648,8 @@
   "year": null,
   "pages": 336,
   "published": 2019,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -3813,6 +4659,8 @@
   "year": "2025",
   "pages": 378,
   "published": 1962,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -3822,6 +4670,8 @@
   "year": null,
   "pages": 248,
   "published": 1931,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -3831,6 +4681,8 @@
   "year": "2024",
   "pages": 198,
   "published": 2001,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -3840,6 +4692,8 @@
   "year": "2025",
   "pages": 275,
   "published": 1969,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -3849,6 +4703,8 @@
   "year": null,
   "pages": 242,
   "published": 1976,
+  "series": "Miss Marple",
+  "series_index": "12",
   "letter": "S"
  },
  {
@@ -3858,6 +4714,8 @@
   "year": null,
   "pages": 175,
   "published": 1948,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -3867,6 +4725,8 @@
   "year": null,
   "pages": 383,
   "published": 2007,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -3876,6 +4736,8 @@
   "year": null,
   "pages": 293,
   "published": 1962,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -3885,6 +4747,8 @@
   "year": "2024",
   "pages": 408,
   "published": 2011,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -3894,6 +4758,8 @@
   "year": null,
   "pages": 338,
   "published": 1977,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -3903,6 +4769,8 @@
   "year": "2024",
   "pages": 355,
   "published": 2021,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -3912,6 +4780,8 @@
   "year": "2025",
   "pages": 336,
   "published": 2025,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -3921,6 +4791,8 @@
   "year": null,
   "pages": 190,
   "published": 1992,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -3930,6 +4802,8 @@
   "year": null,
   "pages": 336,
   "published": 1945,
+  "series": "Colonel Race",
+  "series_index": "4",
   "letter": "S"
  },
  {
@@ -3939,6 +4813,8 @@
   "year": "2024",
   "pages": 320,
   "published": 2022,
+  "series": "Jake Brigance",
+  "series_index": "4",
   "letter": "S"
  },
  {
@@ -3948,6 +4824,8 @@
   "year": null,
   "pages": 229,
   "published": 1999,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -3957,6 +4835,8 @@
   "year": null,
   "pages": null,
   "published": 1978,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -3966,6 +4846,8 @@
   "year": "2025",
   "pages": 333,
   "published": 2014,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -3975,6 +4857,8 @@
   "year": null,
   "pages": 630,
   "published": 2011,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -3984,6 +4868,8 @@
   "year": null,
   "pages": 292,
   "published": 1965,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -3993,6 +4879,8 @@
   "year": "2025",
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -4002,6 +4890,8 @@
   "year": null,
   "pages": 96,
   "published": 2005,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -4011,6 +4901,8 @@
   "year": null,
   "pages": 123,
   "published": 1942,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -4020,6 +4912,8 @@
   "year": "2025",
   "pages": 435,
   "published": 2025,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -4029,6 +4923,8 @@
   "year": "2024",
   "pages": 384,
   "published": 1998,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -4038,6 +4934,8 @@
   "year": null,
   "pages": 736,
   "published": 2025,
+  "series": "Hierarchy",
+  "series_index": "2",
   "letter": "S"
  },
  {
@@ -4047,6 +4945,8 @@
   "year": "2025",
   "pages": 123,
   "published": 1887,
+  "series": "Sherlock Holmes",
+  "series_index": "1",
   "letter": "S"
  },
  {
@@ -4056,6 +4956,8 @@
   "year": "2024",
   "pages": 212,
   "published": 2016,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -4065,6 +4967,8 @@
   "year": "2024",
   "pages": 384,
   "published": 2002,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -4074,6 +4978,8 @@
   "year": null,
   "pages": 189,
   "published": 1926,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -4083,6 +4989,8 @@
   "year": "2025",
   "pages": 387,
   "published": 2025,
+  "series": "The Hunger Games",
+  "series_index": "0.5",
   "letter": "S"
  },
  {
@@ -4092,6 +5000,8 @@
   "year": "2024",
   "pages": 447,
   "published": 2013,
+  "series": "Jake Brigance",
+  "series_index": "2",
   "letter": "S"
  },
  {
@@ -4101,6 +5011,8 @@
   "year": "2025",
   "pages": 384,
   "published": 2015,
+  "series": null,
+  "series_index": null,
   "letter": "S"
  },
  {
@@ -4110,6 +5022,8 @@
   "year": "2025",
   "pages": 451,
   "published": 2024,
+  "series": null,
+  "series_index": null,
   "letter": "T"
  },
  {
@@ -4119,6 +5033,8 @@
   "year": "2025",
   "pages": 732,
   "published": 1966,
+  "series": "Asian Saga",
+  "series_index": "2",
   "letter": "T"
  },
  {
@@ -4128,6 +5044,8 @@
   "year": null,
   "pages": 298,
   "published": 2020,
+  "series": null,
+  "series_index": null,
   "letter": "T"
  },
  {
@@ -4137,6 +5055,8 @@
   "year": null,
   "pages": 352,
   "published": 1948,
+  "series": "Hercule Poirot",
+  "series_index": "27",
   "letter": "T"
  },
  {
@@ -4146,6 +5066,8 @@
   "year": null,
   "pages": 432,
   "published": 2013,
+  "series": null,
+  "series_index": null,
   "letter": "T"
  },
  {
@@ -4155,6 +5077,8 @@
   "year": null,
   "pages": 489,
   "published": 1859,
+  "series": null,
+  "series_index": null,
   "letter": "T"
  },
  {
@@ -4164,6 +5088,8 @@
   "year": "2025",
   "pages": 379,
   "published": 2024,
+  "series": null,
+  "series_index": null,
   "letter": "T"
  },
  {
@@ -4173,6 +5099,8 @@
   "year": null,
   "pages": 247,
   "published": 1956,
+  "series": null,
+  "series_index": null,
   "letter": "T"
  },
  {
@@ -4182,6 +5110,8 @@
   "year": "2024",
   "pages": 533,
   "published": 1999,
+  "series": null,
+  "series_index": null,
   "letter": "T"
  },
  {
@@ -4191,6 +5121,8 @@
   "year": "2024",
   "pages": 422,
   "published": 2019,
+  "series": null,
+  "series_index": null,
   "letter": "T"
  },
  {
@@ -4200,6 +5132,8 @@
   "year": "2024",
   "pages": 263,
   "published": 2010,
+  "series": "Theodore Boone",
+  "series_index": "1",
   "letter": "T"
  },
  {
@@ -4209,6 +5143,8 @@
   "year": "2024",
   "pages": 232,
   "published": 2010,
+  "series": "Theodore Boone",
+  "series_index": "2",
   "letter": "T"
  },
  {
@@ -4218,6 +5154,8 @@
   "year": "2024",
   "pages": 288,
   "published": 2012,
+  "series": "Theodore Boone",
+  "series_index": "3",
   "letter": "T"
  },
  {
@@ -4227,6 +5165,8 @@
   "year": "2024",
   "pages": 289,
   "published": 2013,
+  "series": "Theodore Boone",
+  "series_index": "4",
   "letter": "T"
  },
  {
@@ -4236,6 +5176,8 @@
   "year": "2024",
   "pages": 250,
   "published": 2015,
+  "series": "Theodore Boone",
+  "series_index": "5",
   "letter": "T"
  },
  {
@@ -4245,6 +5187,8 @@
   "year": "2024",
   "pages": 224,
   "published": 2016,
+  "series": "Theodore Boone",
+  "series_index": "6",
   "letter": "T"
  },
  {
@@ -4254,6 +5198,8 @@
   "year": null,
   "pages": 387,
   "published": 2023,
+  "series": null,
+  "series_index": null,
   "letter": "T"
  },
  {
@@ -4263,6 +5209,8 @@
   "year": null,
   "pages": 368,
   "published": 1951,
+  "series": null,
+  "series_index": null,
   "letter": "T"
  },
  {
@@ -4272,6 +5220,8 @@
   "year": null,
   "pages": 224,
   "published": 1952,
+  "series": "Miss Marple",
+  "series_index": "5",
   "letter": "T"
  },
  {
@@ -4281,6 +5231,8 @@
   "year": null,
   "pages": 448,
   "published": 2021,
+  "series": null,
+  "series_index": null,
   "letter": "T"
  },
  {
@@ -4290,6 +5242,8 @@
   "year": null,
   "pages": 365,
   "published": 1966,
+  "series": "Hercule Poirot",
+  "series_index": "40",
   "letter": "T"
  },
  {
@@ -4299,6 +5253,8 @@
   "year": "2025",
   "pages": 336,
   "published": 1935,
+  "series": "Hercule Poirot",
+  "series_index": "11",
   "letter": "T"
  },
  {
@@ -4308,6 +5264,8 @@
   "year": "2024",
   "pages": 472,
   "published": 2006,
+  "series": "Remembrance of Earth’s Past",
+  "series_index": "1",
   "letter": "T"
  },
  {
@@ -4317,6 +5275,8 @@
   "year": "2025",
   "pages": 625,
   "published": 1844,
+  "series": null,
+  "series_index": null,
   "letter": "T"
  },
  {
@@ -4326,6 +5286,8 @@
   "year": "2024",
   "pages": 480,
   "published": 2020,
+  "series": "Jake Brigance",
+  "series_index": "3",
   "letter": "T"
  },
  {
@@ -4335,6 +5297,8 @@
   "year": "2024",
   "pages": 738,
   "published": 1989,
+  "series": "Jake Brigance",
+  "series_index": "1",
   "letter": "T"
  },
  {
@@ -4344,6 +5308,8 @@
   "year": null,
   "pages": 323,
   "published": 1960,
+  "series": null,
+  "series_index": null,
   "letter": "T"
  },
  {
@@ -4353,6 +5319,8 @@
   "year": null,
   "pages": 335,
   "published": 2009,
+  "series": null,
+  "series_index": null,
   "letter": "T"
  },
  {
@@ -4362,6 +5330,8 @@
   "year": "2024",
   "pages": 320,
   "published": 2023,
+  "series": null,
+  "series_index": null,
   "letter": "T"
  },
  {
@@ -4371,6 +5341,8 @@
   "year": "2024",
   "pages": 399,
   "published": 2022,
+  "series": null,
+  "series_index": null,
   "letter": "T"
  },
  {
@@ -4380,6 +5352,8 @@
   "year": null,
   "pages": 259,
   "published": 1944,
+  "series": "Superintendent Battle",
+  "series_index": "5",
   "letter": "T"
  },
  {
@@ -4389,6 +5363,8 @@
   "year": null,
   "pages": 352,
   "published": 1882,
+  "series": null,
+  "series_index": null,
   "letter": "T"
  },
  {
@@ -4398,6 +5374,8 @@
   "year": "2024",
   "pages": 496,
   "published": 1943,
+  "series": null,
+  "series_index": null,
   "letter": "T"
  },
  {
@@ -4407,6 +5385,8 @@
   "year": null,
   "pages": 255,
   "published": 1925,
+  "series": null,
+  "series_index": null,
   "letter": "T"
  },
  {
@@ -4416,6 +5396,8 @@
   "year": null,
   "pages": 432,
   "published": 1999,
+  "series": "Jack Reacher",
+  "series_index": "3",
   "letter": "T"
  },
  {
@@ -4425,6 +5407,8 @@
   "year": "2024",
   "pages": 402,
   "published": 2022,
+  "series": null,
+  "series_index": null,
   "letter": "T"
  },
  {
@@ -4434,6 +5418,8 @@
   "year": null,
   "pages": 336,
   "published": 2019,
+  "series": null,
+  "series_index": null,
   "letter": "T"
  },
  {
@@ -4443,6 +5429,8 @@
   "year": null,
   "pages": 121,
   "published": 1898,
+  "series": null,
+  "series_index": null,
   "letter": "T"
  },
  {
@@ -4452,6 +5440,8 @@
   "year": null,
   "pages": 290,
   "published": 2017,
+  "series": null,
+  "series_index": null,
   "letter": "T"
  },
  {
@@ -4461,6 +5451,8 @@
   "year": null,
   "pages": 269,
   "published": 1869,
+  "series": null,
+  "series_index": null,
   "letter": "T"
  },
  {
@@ -4470,6 +5462,8 @@
   "year": null,
   "pages": 448,
   "published": 1954,
+  "series": "The Lord of the Rings",
+  "series_index": "2",
   "letter": "T"
  },
  {
@@ -4479,6 +5473,8 @@
   "year": null,
   "pages": 330,
   "published": 2014,
+  "series": null,
+  "series_index": null,
   "letter": "U"
  },
  {
@@ -4488,6 +5484,8 @@
   "year": null,
   "pages": 438,
   "published": 1852,
+  "series": null,
+  "series_index": null,
   "letter": "U"
  },
  {
@@ -4497,6 +5495,8 @@
   "year": null,
   "pages": 535,
   "published": 1995,
+  "series": null,
+  "series_index": null,
   "letter": "U"
  },
  {
@@ -4506,6 +5506,8 @@
   "year": "2024",
   "pages": 288,
   "published": 2005,
+  "series": null,
+  "series_index": null,
   "letter": "U"
  },
  {
@@ -4515,6 +5517,8 @@
   "year": null,
   "pages": 309,
   "published": 1997,
+  "series": null,
+  "series_index": null,
   "letter": "U"
  },
  {
@@ -4524,6 +5528,8 @@
   "year": "2024",
   "pages": 306,
   "published": 2016,
+  "series": null,
+  "series_index": null,
   "letter": "U"
  },
  {
@@ -4533,6 +5539,8 @@
   "year": null,
   "pages": 1074,
   "published": 2009,
+  "series": null,
+  "series_index": null,
   "letter": "U"
  },
  {
@@ -4542,6 +5550,8 @@
   "year": null,
   "pages": 512,
   "published": 2019,
+  "series": null,
+  "series_index": null,
   "letter": "U"
  },
  {
@@ -4551,6 +5561,8 @@
   "year": "2025",
   "pages": 158,
   "published": 2007,
+  "series": null,
+  "series_index": null,
   "letter": "V"
  },
  {
@@ -4560,6 +5572,8 @@
   "year": null,
   "pages": 336,
   "published": 2018,
+  "series": null,
+  "series_index": null,
   "letter": "V"
  },
  {
@@ -4569,6 +5583,8 @@
   "year": "2025",
   "pages": 329,
   "published": 2023,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4578,6 +5594,8 @@
   "year": null,
   "pages": 1392,
   "published": 1868,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4587,6 +5605,8 @@
   "year": "2025",
   "pages": 320,
   "published": 2023,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4596,6 +5616,8 @@
   "year": "2024",
   "pages": 192,
   "published": 1898,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4605,6 +5627,8 @@
   "year": null,
   "pages": 240,
   "published": 1880,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4614,6 +5638,8 @@
   "year": null,
   "pages": 384,
   "published": 2020,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4623,6 +5649,8 @@
   "year": "2025",
   "pages": 367,
   "published": 2024,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4632,6 +5660,8 @@
   "year": "2024",
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4641,6 +5671,8 @@
   "year": null,
   "pages": 307,
   "published": 2022,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4650,6 +5682,8 @@
   "year": "2025",
   "pages": 392,
   "published": 2023,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4659,6 +5693,8 @@
   "year": null,
   "pages": 188,
   "published": 2007,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4668,6 +5704,8 @@
   "year": null,
   "pages": 304,
   "published": 2020,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4677,6 +5715,8 @@
   "year": null,
   "pages": 320,
   "published": 2000,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4686,6 +5726,8 @@
   "year": null,
   "pages": 384,
   "published": 2018,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4695,6 +5737,8 @@
   "year": "2024",
   "pages": 424,
   "published": 2016,
+  "series": "The Whistler",
+  "series_index": "1",
   "letter": "W"
  },
  {
@@ -4704,6 +5748,8 @@
   "year": null,
   "pages": 252,
   "published": 1906,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4713,6 +5759,8 @@
   "year": null,
   "pages": 98,
   "published": 1998,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4722,6 +5770,8 @@
   "year": null,
   "pages": 288,
   "published": 1934,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4731,6 +5781,8 @@
   "year": "2025",
   "pages": 406,
   "published": 1995,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4740,6 +5792,8 @@
   "year": null,
   "pages": 404,
   "published": 2025,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4749,6 +5803,8 @@
   "year": null,
   "pages": 353,
   "published": 1982,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4758,6 +5814,8 @@
   "year": null,
   "pages": 320,
   "published": 2010,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4767,6 +5825,8 @@
   "year": "2025",
   "pages": 640,
   "published": 2023,
+  "series": "Hierarchy",
+  "series_index": "1",
   "letter": "W"
  },
  {
@@ -4776,6 +5836,8 @@
   "year": null,
   "pages": 234,
   "published": 1980,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4785,6 +5847,8 @@
   "year": null,
   "pages": 607,
   "published": 1994,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4794,6 +5858,8 @@
   "year": null,
   "pages": 240,
   "published": 1919,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4803,6 +5869,8 @@
   "year": null,
   "pages": 14,
   "published": 2002,
+  "series": "Jack Reacher",
+  "series_index": "6",
   "letter": "W"
  },
  {
@@ -4812,6 +5880,8 @@
   "year": null,
   "pages": 400,
   "published": 2016,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4821,6 +5891,8 @@
   "year": "2024",
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4830,6 +5902,8 @@
   "year": "2024",
   "pages": 471,
   "published": 2024,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4839,6 +5913,8 @@
   "year": null,
   "pages": 359,
   "published": 1847,
+  "series": null,
+  "series_index": null,
   "letter": "W"
  },
  {
@@ -4848,6 +5924,8 @@
   "year": null,
   "pages": 319,
   "published": 2023,
+  "series": null,
+  "series_index": null,
   "letter": "Y"
  },
  {
@@ -4857,6 +5935,8 @@
   "year": null,
   "pages": 400,
   "published": 2026,
+  "series": null,
+  "series_index": null,
   "letter": "Y"
  },
  {
@@ -4866,6 +5946,8 @@
   "year": "2024",
   "pages": 512,
   "published": 2024,
+  "series": null,
+  "series_index": null,
   "letter": "Y"
  },
  {
@@ -4875,6 +5957,8 @@
   "year": null,
   "pages": 378,
   "published": 2018,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -4884,6 +5968,8 @@
   "year": null,
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -4893,6 +5979,8 @@
   "year": "2025",
   "pages": 978,
   "published": 2019,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -4902,6 +5990,8 @@
   "year": null,
   "pages": 212,
   "published": 2022,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -4911,6 +6001,8 @@
   "year": null,
   "pages": 287,
   "published": 2021,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -4920,6 +6012,8 @@
   "year": null,
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -4929,6 +6023,8 @@
   "year": "2024",
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -4938,6 +6034,8 @@
   "year": null,
   "pages": 376,
   "published": 2024,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -4947,6 +6045,8 @@
   "year": null,
   "pages": 336,
   "published": 2024,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -4956,6 +6056,8 @@
   "year": null,
   "pages": 464,
   "published": 2022,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -4965,6 +6067,8 @@
   "year": null,
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -4974,6 +6078,8 @@
   "year": null,
   "pages": 221,
   "published": 2025,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -4983,6 +6089,8 @@
   "year": null,
   "pages": 496,
   "published": 2021,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -4992,6 +6100,8 @@
   "year": null,
   "pages": null,
   "published": 1937,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -5001,6 +6111,8 @@
   "year": null,
   "pages": 165,
   "published": 2022,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -5010,6 +6122,8 @@
   "year": null,
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -5019,6 +6133,8 @@
   "year": "2024",
   "pages": 277,
   "published": 2023,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -5028,6 +6144,8 @@
   "year": null,
   "pages": null,
   "published": null,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -5037,6 +6155,8 @@
   "year": null,
   "pages": 386,
   "published": 2021,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -5046,6 +6166,8 @@
   "year": "2024",
   "pages": 496,
   "published": 2023,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -5055,6 +6177,8 @@
   "year": null,
   "pages": 589,
   "published": 2006,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  },
  {
@@ -5064,6 +6188,8 @@
   "year": null,
   "pages": 357,
   "published": 2022,
+  "series": null,
+  "series_index": null,
   "letter": "#"
  }
 ]

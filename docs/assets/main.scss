@@ -519,6 +519,20 @@ code, pre {
   font-size: 13px;
 }
 
+// The position within a series only means anything once the series itself is
+// the section heading, so it stays hidden in every other grouping.
+.entry-series {
+  display: none;
+  margin-left: 8px;
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  color: $grey-color;
+}
+
+[data-group="series"] .entry-series {
+  display: inline;
+}
+
 .view-toggle {
   display: inline-flex;
   border: 1px solid $grey-color-light;
@@ -595,8 +609,10 @@ code, pre {
   }
 }
 
-// Ungrouped list still benefits from seeing who wrote what.
+// Ungrouped list still benefits from seeing who wrote what. So does the
+// series grouping, where the heading is the series rather than the author.
 [data-view="list"][data-group="none"] .entry-byline,
+[data-view="list"][data-group="series"] .entry-byline,
 [data-view="list"][data-group="letter"] .entry-byline {
   display: inline;
 
@@ -857,8 +873,13 @@ body,
   }
 
   .group-control,
-  .entry-byline {
+  .entry-byline,
+  .entry-series {
     color: $dark-muted;
+  }
+
+  .sort-select:disabled {
+    color: $dark-border;
   }
 
   .view-toggle {

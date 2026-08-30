@@ -66,7 +66,17 @@ function initCollectionPage() {
   var sortSelect = page.querySelector('.sort-select');
   var viewButtons = Array.prototype.slice.call(page.querySelectorAll('.view-button'));
 
-  var GROUP_NOUN = { author: 'authors', letter: 'letters', year: 'years' };
+  // [plural, singular] — "series" is its own plural, so the summary line
+  // cannot just trim a trailing "s".
+  var GROUP_NOUN = {
+    author: ['authors', 'author'],
+    series: ['series', 'series'],
+    letter: ['letters', 'letter'],
+    year: ['years', 'year']
+  };
+  // Books with no series collect here, and the bucket sorts last rather than
+  // alphabetically among the real series.
+  var NO_SERIES = 'Standalone';
   var STORAGE_KEY = 'groupBy:' + kind;
   var SORT_KEY = 'sortBy:' + kind;
   var VIEW_KEY = 'view:' + kind;
@@ -81,9 +91,17 @@ function initCollectionPage() {
 
   function groupNameFor(li) {
     if (mode === 'author') return li.getAttribute('data-author') || 'Unknown';
+    if (mode === 'series') return li.getAttribute('data-series') || NO_SERIES;
     if (mode === 'letter') return li.getAttribute('data-letter') || '#';
     if (mode === 'year') return li.getAttribute('data-year') || 'Undated';
     return null;
+  }
+
+  // '#3' -> 3, and '#0.5' (a novella between books) -> 0.5. Anything
+  // unparseable sorts to the end of its series.
+  function seriesIndex(li) {
+    var v = parseFloat(li.getAttribute('data-series-index'));
+    return isNaN(v) ? Infinity : v;
   }
 
   // A null name renders a section with no heading, which is how the ungrouped
@@ -158,13 +176,29 @@ function initCollectionPage() {
         if (!groups[name]) { groups[name] = []; names.push(name); }
         groups[name].push(li);
       });
-      // Years most-recent-first; everything else alphabetically. Group order
-      // is independent of the sort, which orders items within each group.
+      // Years most-recent-first; everything else alphabetically, except that
+      // the catch-all bucket of series-less books always trails the real
+      // series. Group order is independent of the sort, which orders items
+      // within each group.
       names.sort(function (a, b) {
-        return mode === 'year' ? b.localeCompare(a) : a.localeCompare(b);
+        if (mode === 'year') return b.localeCompare(a);
+        if (mode === 'series') {
+          if (a === NO_SERIES) return 1;
+          if (b === NO_SERIES) return -1;
+        }
+        return a.localeCompare(b);
       });
       names.forEach(function (name) {
-        sections.push(buildSection(name, groups[name]));
+        var lis = groups[name];
+        // Publication order is the only meaningful order inside a series, so
+        // it overrides the sort control there. The series-less bucket keeps
+        // whatever the sort produced.
+        if (mode === 'series' && name !== NO_SERIES) {
+          lis = lis.slice().sort(function (a, b) {
+            return seriesIndex(a) - seriesIndex(b) || a.__order - b.__order;
+          });
+        }
+        sections.push(buildSection(name, lis));
       });
     }
 
@@ -181,7 +215,7 @@ function initCollectionPage() {
     var noun = GROUP_NOUN[mode];
     if (noun) {
       text += ' across ' + sections.length + ' ' +
-        (sections.length === 1 ? noun.replace(/s$/, '') : noun);
+        noun[sections.length === 1 ? 1 : 0];
     }
     statsEl.textContent = text;
   }
@@ -197,6 +231,9 @@ function initCollectionPage() {
       var haystack = foldForSearch(
         (li.getAttribute('data-title') || '') + ' ' +
         (li.getAttribute('data-author') || '') + ' ' +
+        // So "poirot" finds the 37 Poirot novels, whose own titles never say
+        // it, in any grouping.
+        (li.getAttribute('data-series') || '') + ' ' +
         (li.getAttribute('data-year') || '')
       );
       var match = !q || haystack.indexOf(q) !== -1;
@@ -216,6 +253,15 @@ function initCollectionPage() {
   function refresh() {
     // Lets CSS drop the per-row author when it is already the section heading.
     container.setAttribute('data-group', mode);
+    // Grouping by series pins each section to publication order, so say so by
+    // greying the control out rather than letting it look live but inert.
+    if (sortSelect) {
+      var inert = mode === 'series';
+      sortSelect.disabled = inert;
+      sortSelect.title = inert
+        ? 'Series are always listed in publication order'
+        : '';
+    }
     render();
     applyFilter(searchInput ? searchInput.value : '');
   }
