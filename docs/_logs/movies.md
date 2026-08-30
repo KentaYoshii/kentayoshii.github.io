@@ -248,7 +248,6 @@ An entry with no month heading above it sorts to the start of its year.
 - The Odyssey
 - One Battle After Another
 - The Alabama Solution
-- The Running Man (2025)
 - The Running Man (1987)
 
 ### August

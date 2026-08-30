@@ -179,11 +179,11 @@
   ]
  },
  "movies": {
-  "total": 180,
+  "total": 179,
   "by_year": [
    {
     "year": "2026",
-    "count": 32
+    "count": 31
    },
    {
     "year": "2025",
