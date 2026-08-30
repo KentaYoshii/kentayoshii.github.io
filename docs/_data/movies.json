@@ -126,7 +126,7 @@
   "letter": "B"
  },
  {
-  "title": "Blade",
+  "title": "Blade (1998)",
   "year": "2026",
   "month": "January",
   "date": "2026-01",
@@ -224,7 +224,7 @@
   "letter": "C"
  },
  {
-  "title": "Count of Monte-Cristo",
+  "title": "The Count of Monte-Cristo (2024)",
   "year": "2025",
   "month": "November",
   "date": "2025-11",
@@ -546,7 +546,7 @@
   "letter": "I"
  },
  {
-  "title": "Indiana Jones and the Raiders of the Lost Ark",
+  "title": "Indiana Jones and the Raiders of the Lost Ark (1981)",
   "year": "2025",
   "month": "December",
   "date": "2025-12",
@@ -606,13 +606,6 @@
   "year": "2025",
   "month": "June",
   "date": "2025-06",
-  "letter": "J"
- },
- {
-  "title": "Jack Reacher Season 3",
-  "year": "2025",
-  "month": "March",
-  "date": "2025-03",
   "letter": "J"
  },
  {
@@ -700,7 +693,7 @@
   "letter": "L"
  },
  {
-  "title": "Life",
+  "title": "Life of Pi",
   "year": "2025",
   "month": "March",
   "date": "2025-03",
@@ -1001,7 +994,7 @@
   "letter": "R"
  },
  {
-  "title": "Reacher Season 2 (TV Series )",
+  "title": "Reacher (TV Series)",
   "year": "2024",
   "month": "January",
   "date": "2024-01",
@@ -1141,7 +1134,7 @@
   "letter": "T"
  },
  {
-  "title": "Unstoppable",
+  "title": "Unstoppable (2024)",
   "year": "2025",
   "month": "January",
   "date": "2025-01",

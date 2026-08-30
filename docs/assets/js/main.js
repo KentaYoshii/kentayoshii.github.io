@@ -744,6 +744,22 @@ var TMDB_IMAGE_BASE = 'https://image.tmdb.org/t/p/w200';
 function fetchMovieCover(info) {
   var term = encodeURIComponent(info.title);
 
+  // TMDB ranks by popularity, not by how well the title matches, so a short
+  // generic title like "Blade" can return an unrelated but busier film first.
+  // Prefer a result whose title is exactly what we asked for.
+  function pick(results) {
+    if (!results || !results.length) return null;
+    var want = foldForSearch(info.title);
+    var fallback = null;
+    for (var i = 0; i < results.length; i++) {
+      var r = results[i];
+      if (!r.poster_path) continue;
+      if (foldForSearch(r.title || r.name || '') === want) return r;
+      if (!fallback) fallback = r;
+    }
+    return fallback;
+  }
+
   function search(type) {
     // TMDB names the release-year filter differently per catalogue.
     var yearParam = '';
@@ -754,11 +770,8 @@ function fetchMovieCover(info) {
                  '&query=' + term + yearParam)
       .then(function (res) { return res.json(); })
       .then(function (data) {
-        var result = data && data.results && data.results[0];
-        if (result && result.poster_path) {
-          return TMDB_IMAGE_BASE + result.poster_path;
-        }
-        return null;
+        var result = pick(data && data.results);
+        return result ? TMDB_IMAGE_BASE + result.poster_path : null;
       });
   }
 

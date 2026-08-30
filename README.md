@@ -170,6 +170,14 @@ The lookup strips a trailing `(YYYY)` off the search text and passes it to
 TMDB as a year filter, and includes it in the cover cache key — without it the
 two would share one cached poster.
 
+The year is also the fix when a short, common title fetches the wrong poster
+(`Blade`, `Unstoppable`). TMDB ranks by popularity rather than title match, so
+the lookup prefers a result whose title is exactly what was asked for before
+falling back to the most popular one — but a year is still the reliable
+disambiguator.
+
+For a show, prefer one `Title (TV Series)` entry over one row per season.
+
 ## Writing a post
 
 `/posts/` lists anything in `_posts` filed under `categories: posts`. That

@@ -129,7 +129,7 @@
     "isbn": "9780140449266"
    },
    {
-    "title": "Creed"
+    "title": "Crime 101"
    },
    {
     "isbn": "9780007119332"
@@ -138,7 +138,7 @@
     "isbn": "9780007151677"
    },
    {
-    "title": "F1"
+    "title": "Fallout (TV Series)"
    },
    {
     "isbn": "9780143131847"
@@ -147,7 +147,7 @@
     "isbn": "9780007120680"
    },
    {
-    "title": "Homestead"
+    "title": "How to Make a Killing"
    },
    {
     "isbn": "9780804832656"
@@ -156,7 +156,7 @@
     "isbn": "9780385550369"
    },
    {
-    "title": "Jason Bourne"
+    "title": "Kingdom of the Planet of the Apes"
    },
    {
     "isbn": "9780451525260"
@@ -165,7 +165,7 @@
     "isbn": "9780007151660"
    },
    {
-    "title": "Marty Supreme"
+    "title": "Mickey 17"
    },
    {
     "isbn": "9780439023511"
@@ -174,7 +174,7 @@
     "isbn": "9780451200181"
    },
    {
-    "title": "Predator"
+    "title": "Predator: Badlands"
    },
    {
     "isbn": "9781501180989"
@@ -183,7 +183,7 @@
     "isbn": "9780385525008"
    },
    {
-    "title": "Spectre"
+    "title": "Superman"
    },
    {
     "isbn": "9780385339698"
@@ -192,7 +192,7 @@
     "isbn": "9780002317856"
    },
    {
-    "title": "The Da Vinci Code"
+    "title": "The Eight Hundred"
    },
    {
     "isbn": "9781420925531"
@@ -201,7 +201,7 @@
     "isbn": "9780525426387"
    },
    {
-    "title": "The Long Walk"
+    "title": "The Lord of the Rings: The Fellowship of the Ring"
    },
    {
     "isbn": "9780760728505"
@@ -210,7 +210,7 @@
     "isbn": "9780091883768"
    },
    {
-    "title": "The Prey"
+    "title": "The Running Man"
    }
   ],
   "series_count": 26,
@@ -251,7 +251,7 @@
   ]
  },
  "movies": {
-  "total": 179,
+  "total": 178,
   "by_year": [
    {
     "year": "2026",
@@ -259,7 +259,7 @@
    },
    {
     "year": "2025",
-    "count": 102
+    "count": 101
    },
    {
     "year": "2024",

@@ -10,7 +10,7 @@ An entry with no month heading above it sorts to the start of its year.
 ## 2024
 
 ### January
-- Reacher Season 2 (TV Series ) 
+- Reacher (TV Series)
 
 ### March
 - The Beekeeper
@@ -83,7 +83,7 @@ An entry with no month heading above it sorts to the start of its year.
 ### January
 - Sicario
 - The Great Debaters
-- Unstoppable 
+- Unstoppable (2024)
 - In the Land of Saints and Sinners
 - The Equalizer
 - The Equalizer 2
@@ -103,8 +103,7 @@ An entry with no month heading above it sorts to the start of its year.
 ### March 
 - War for the Planet of the Apes
 - Kingdom of the Planet of the Apes
-- Jack Reacher Season 3
-- Life
+- Life of Pi
 - Mickey 17
 - Twisters
 - Contagion
@@ -175,7 +174,7 @@ An entry with no month heading above it sorts to the start of its year.
 - Knight and Day
 
 ### November
-- Count of Monte-Cristo
+- The Count of Monte-Cristo (2024)
 - From the World of John Wick: Ballerina
 - Flight Risk
 - The Ministry of Ungentlemanly Warfare
@@ -188,7 +187,7 @@ An entry with no month heading above it sorts to the start of its year.
 - The Matrix Revolutions
 - The Matrix Resurrections
 - The Long Walk
-- Indiana Jones and the Raiders of the Lost Ark
+- Indiana Jones and the Raiders of the Lost Ark (1981)
 - Indiana Jones and the Temple of Doom 
 - Indiana Jones and the Last Crusade 
 - Indiana Jones and the Kingdom of the Crystal Skull
@@ -211,7 +210,7 @@ An entry with no month heading above it sorts to the start of its year.
 ### January
 - A Good Day to Die Hard
 - Sinners
-- Blade
+- Blade (1998)
 - Blade II
 - The Firm
 - Blade: Trinity
