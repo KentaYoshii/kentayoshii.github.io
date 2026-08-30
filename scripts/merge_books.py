@@ -10,14 +10,13 @@ Why both sources:
   - Goodreads has more books (only its "read" shelf is used) and, crucially,
     ISBNs — which let the cover lookup hit Open Library directly instead of
     guessing from a title search.
-  - The markdown posts are the only source of *when* a book was read;
-    Goodreads' export has an empty "Date Read" column throughout. They stay in
+  - docs/_logs/books.md is the only source of *when* a book was read;
+    Goodreads' export has an empty "Date Read" column throughout. It stays in
     the repo as the year source and as a chronological archive.
 """
 
 import collections
 import csv
-import glob
 import json
 import os
 import re
@@ -26,7 +25,7 @@ import unicodedata
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 CSV_PATH = os.path.join(ROOT, 'goodreads_library_export.csv')
-POSTS_GLOB = os.path.join(ROOT, 'docs', '_posts', '*books*')
+LOG_PATH = os.path.join(ROOT, 'docs', '_logs', 'books.md')
 OUT_PATH = os.path.join(ROOT, 'docs', '_data', 'books.json')
 
 
@@ -178,24 +177,30 @@ def load_goodreads():
 
 
 def load_markdown():
+    """Read docs/_logs/books.md, where a '## <year>' heading dates everything
+    beneath it and '## Undated' marks the pre-2024 backlog. Books are recorded
+    at year granularity, so the '###' month subheadings are not parsed."""
     entries = []
-    for path in sorted(glob.glob(POSTS_GLOB)):
-        year = re.search(r'(\d{4})-\d\d-\d\d', os.path.basename(path)).group(1)
-        text = open(path, encoding='utf-8').read()
-        undated = bool(re.search(r'^undated:\s*true', text, re.M))
-        for line in text.splitlines():
-            m = re.match(r'^-\s+_(.+?)_\s*(?:by\s+)?(.*)$', line.strip())
-            if not m:
-                continue
-            title, author = m.group(1).strip(), m.group(2).strip()
-            if not author:
-                continue
-            entries.append({
-                'title': squash(title),
-                'author': squash(author),
-                'year': None if undated else year,
-                'keys': title_keys(title),
-            })
+    year = None
+    for line in open(LOG_PATH, encoding='utf-8'):
+        line = line.rstrip()
+        head = re.match(r'^##\s+(.+?)\s*$', line)
+        if head:
+            label = head.group(1)
+            year = label if re.fullmatch(r'\d{4}', label) else None
+            continue
+        m = re.match(r'^-\s+_(.+?)_\s*(?:by\s+)?(.*)$', line.strip())
+        if not m:
+            continue
+        title, author = m.group(1).strip(), m.group(2).strip()
+        if not author:
+            continue
+        entries.append({
+            'title': squash(title),
+            'author': squash(author),
+            'year': year,
+            'keys': title_keys(title),
+        })
     return entries
 
 

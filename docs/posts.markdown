@@ -6,8 +6,8 @@ description: Occasional writing.
 ---
 
 {%- comment -%}
-Lists posts filed under `categories: posts`. The book and movie logs also live
-in _posts but are filed under their own categories, so they stay out of here.
+Lists posts filed under `categories: posts`. The book and movie logs used to
+share this folder; they now live in _logs/, which Jekyll does not publish.
 {%- endcomment -%}
 
 {%- assign entries = site.categories.posts -%}

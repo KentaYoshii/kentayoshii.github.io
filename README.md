@@ -5,7 +5,8 @@ Live at <https://kentayoshii.github.io>.
 
 Static [Jekyll](https://jekyllrb.com/) site using the `minima` theme, published
 by GitHub Pages from the **`gh-pages` branch, `/docs` folder**. Pushing to
-`gh-pages` deploys; there is no CI workflow.
+`gh-pages` deploys. A CI workflow checks each push but does not gate the
+deploy — see [CI](#ci).
 
 ## Layout
 
@@ -14,8 +15,9 @@ docs/                     Jekyll site root
   _data/books.json        generated — do not edit by hand
   _data/movies.json       generated — do not edit by hand
   _data/stats.json        generated — do not edit by hand
-  _posts/*books*          hand-written reading logs (source of truth)
-  _posts/*movies*         hand-written watch logs (source of truth)
+  _logs/books.md          hand-written reading log (source of truth)
+  _logs/movies.md         hand-written watch log (source of truth)
+  _posts/                 blog posts only (`categories: posts`)
   books.markdown          renders _data/books.json
   movies.markdown         renders _data/movies.json
   stats.markdown          renders _data/stats.json
@@ -65,17 +67,19 @@ Goodreads' export ships an empty `Date Read` column).
 
 Only the `read` shelf is used; `to-read` and `currently-reading` are ignored.
 
-**To record the year a book was read**, add it to the markdown log for that
-year (`docs/_posts/YYYY-01-01-YYYY-books.md`) in the existing format, then
-re-run the script:
+**To record the year a book was read**, add it to `docs/_logs/books.md` under
+the right `## <year>` heading, then re-run the script:
 
 ```markdown
-## March
+## 2026
+### March
 - _Title_ by Author Name
 ```
 
-The `_posts/2023-01-01-2023-books.md` file is the pre-2024 backlog; it carries
-`undated: true` in its front matter, so its entries deliberately show no year.
+The `## <year>` heading is what dates the entry. The `###` month subheadings
+are for reading only — books are recorded at year granularity, so the month is
+not parsed. Entries under `## Undated` (the pre-2024 backlog) deliberately
+show no year.
 
 ### How the merge works
 
@@ -118,10 +122,12 @@ collect in a `Standalone` section at the end.
 
 ## Adding movies and shows
 
-Edit the markdown log for the year, under the right `## Month` heading:
+Edit `docs/_logs/movies.md`, under the right `## <year>` and `### <Month>`
+headings:
 
 ```markdown
-## June
+## 2026
+### June
 - The Accountant 2
 - Reacher Season 2 (TV Series)
 ```
@@ -130,22 +136,23 @@ Then regenerate and commit:
 
 ```sh
 python3 scripts/build.py
-git add docs/_posts docs/_data
+git add docs/_logs docs/_data
 git commit -m "Update movies" && git push origin gh-pages
 ```
 
-The posts remain the source of truth; the data file exists only because Liquid
-cannot read the `## Month` headings out of a rendered post body. **Editing a
-post without re-running the script leaves the site showing stale data.**
+The log remains the source of truth; the data file exists only because Liquid
+cannot read the month headings out of a markdown body. **Editing the log
+without re-running the script leaves the site showing stale data** — CI
+catches this.
 
 Mark TV entries with `(TV Series)` or `Season N` — the cover lookup uses that
 to search TMDB's TV catalogue first, which otherwise returns a wrong film.
 
 ## Writing a post
 
-`/posts/` lists anything in `_posts` filed under `categories: posts`. The book
-and movie logs live in the same folder but under their own categories, so they
-never appear there. No build step — Jekyll picks it up directly.
+`/posts/` lists anything in `_posts` filed under `categories: posts`. That
+folder now holds nothing but real writing — the book and movie logs moved to
+`_logs/`. No build step — Jekyll picks it up directly.
 
 ```markdown
 ---
@@ -157,9 +164,8 @@ categories: posts
 Body goes here.
 ```
 
-Avoid `books` or `movies` in the filename: the generator scripts glob
-`_posts/*books*` and `_posts/*movies*`, and would try to parse the post as a
-log.
+Filenames are unconstrained: the generator scripts read `_logs/books.md` and
+`_logs/movies.md` by exact path, so a post can be named anything.
 
 ## Stats page
 

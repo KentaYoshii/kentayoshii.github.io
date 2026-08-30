@@ -1,17 +1,16 @@
 #!/usr/bin/env python3
-"""Flatten the markdown movie logs into docs/_data/movies.json.
+"""Flatten docs/_logs/movies.md into docs/_data/movies.json.
 
-Run after editing anything in docs/_posts/*movies*:
+Run after editing the log:
 
     python3 scripts/build_movies.py
 
 The Movies page offers a "group by" control (none / year / first letter), and
-Liquid cannot read the month headings out of a rendered post body, so the
-posts are flattened into a data file here instead. The posts stay in the repo
-as the source of truth — this only mirrors them.
+Liquid cannot read the month headings out of a markdown body, so the log is
+flattened into a data file here instead. The log stays in the repo as the
+source of truth — this only mirrors it.
 """
 
-import glob
 import json
 import os
 import re
@@ -19,7 +18,7 @@ import unicodedata
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-POSTS_GLOB = os.path.join(ROOT, 'docs', '_posts', '*movies*')
+LOG_PATH = os.path.join(ROOT, 'docs', '_logs', 'movies.md')
 OUT_PATH = os.path.join(ROOT, 'docs', '_data', 'movies.json')
 
 MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
@@ -57,30 +56,37 @@ def letter_of(t):
 
 def main():
     items = []
-    for path in sorted(glob.glob(POSTS_GLOB)):
-        year = re.search(r'(\d{4})-\d\d-\d\d', os.path.basename(path)).group(1)
-        month = None
-        for line in open(path, encoding='utf-8'):
-            line = line.rstrip()
-            head = re.match(r'^##\s+(.+?)\s*$', line)
-            if head:
-                month = head.group(1) if head.group(1).lower() in MONTH_NUM else None
-                continue
-            m = re.match(r'^-\s+(.+?)\s*$', line)
-            if not m:
-                continue
-            title = re.sub(r'\s+', ' ', nfkc(m.group(1))).strip()
-            if not title:
-                continue
-            items.append({
-                'title': title,
-                'year': year,
-                'month': month,
-                # Sortable stamp for the "date watched" ordering; entries with
-                # no month heading sort to the start of their year.
-                'date': '%s-%02d' % (year, MONTH_NUM.get((month or '').lower(), 0)),
-                'letter': letter_of(title),
-            })
+    year = None
+    month = None
+    # '## 2025' opens a year, '### January' a month within it. A new year
+    # clears the month so an entry cannot inherit one across the boundary.
+    for line in open(LOG_PATH, encoding='utf-8'):
+        line = line.rstrip()
+        head = re.match(r'^##\s+(.+?)\s*$', line)
+        if head:
+            label = head.group(1)
+            year = label if re.fullmatch(r'\d{4}', label) else None
+            month = None
+            continue
+        sub = re.match(r'^###\s+(.+?)\s*$', line)
+        if sub:
+            month = sub.group(1) if sub.group(1).lower() in MONTH_NUM else None
+            continue
+        m = re.match(r'^-\s+(.+?)\s*$', line)
+        if not m or year is None:
+            continue
+        title = re.sub(r'\s+', ' ', nfkc(m.group(1))).strip()
+        if not title:
+            continue
+        items.append({
+            'title': title,
+            'year': year,
+            'month': month,
+            # Sortable stamp for the "date watched" ordering; entries with
+            # no month heading sort to the start of their year.
+            'date': '%s-%02d' % (year, MONTH_NUM.get((month or '').lower(), 0)),
+            'letter': letter_of(title),
+        })
 
     items.sort(key=lambda i: keyify(sort_title(i['title'])))
 

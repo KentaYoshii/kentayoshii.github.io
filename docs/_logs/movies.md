@@ -1,10 +1,86 @@
----
-layout: post
-title:  "2025 Movies/Shows"
-categories: movies
----
+# Movies and shows
 
-## January
+Source of truth for the Movies page. `scripts/build_movies.py` reads
+the `- Title` lines below into `docs/_data/movies.json`.
+
+A `## <year>` heading sets the year, a `### <Month>` heading the month.
+An entry with no month heading above it sorts to the start of its year.
+
+
+## 2024
+
+### January
+- Reacher Season 2 (TV Series ) 
+
+### March
+- The Beekeeper
+
+### April
+- Wrath of Man
+
+### May 
+- Fallout (TV Series)
+- The Boys in The Boat 
+
+### June
+- Godzilla Minus One
+- Road House
+
+### July
+- A Quiet Place
+- A Quiet Place: Day One
+
+### August 
+- A Quiet Place Part II
+- 13 Hours: The Secret Soldiers of Benghazi
+- It Ends with Us
+
+### September
+- The Magnificent Seven
+- Transformers One
+- The Wild Robot
+
+### October
+- Wolfs
+- Blink Twice
+- Dr. No
+- From Russia with Love
+
+### November
+- Thunderball
+- Goldfinger
+- Apocalypse Z: The Beginning of the End
+- You Only Live Twice
+- Infinite
+- Diamonds are Forever
+- On Her Majesty's Secret Service
+- Live and Let Die
+- The Man with the Golden Gun
+- Moonraker
+- Gladiator II
+
+### December
+- The Spy Who Loved Me
+- For Your Eyes Only
+- Octopussy 
+- A View to a Kill
+- The Living Daylights
+- License to Kill
+- GoldenEye
+- Tomorrow Never Dies
+- The World is Not Enough
+- Die Another Day
+- Casino Royale
+- Quantum of Solace
+- Skyfall
+- Spectre
+- No Time To Die
+- Red One
+
+
+## 2025
+
+### January
 - Sicario
 - The Great Debaters
 - Unstoppable 
@@ -15,7 +91,7 @@ categories: movies
 - The Eight Hundred
 - Knives Out
 
-## February 
+### February 
 - Shogun (TV Series)
 - Titanic
 - Longlegs
@@ -24,7 +100,7 @@ categories: movies
 - Rise of the Planet of the Apes
 - Dawn of the Planet of the Apes
 
-## March 
+### March 
 - War for the Planet of the Apes
 - Kingdom of the Planet of the Apes
 - Jack Reacher Season 3
@@ -34,7 +110,7 @@ categories: movies
 - Contagion
 - The Prey 
 
-## April
+### April
 - Predator
 - Predator 2
 - Alien vs Predator
@@ -44,7 +120,7 @@ categories: movies
 - Kingsman: The Golden Circle
 - The King's Man
 
-## May
+### May
 - The Da Vinci Code
 - Angels & Demons 
 - Mission Impossible: The Final Reckoning 
@@ -52,7 +128,7 @@ categories: movies
 - Without Remorse
 - Conclave
 
-## June
+### June
 - Creed
 - The Accountant 2
 - Oblivion
@@ -62,7 +138,7 @@ categories: movies
 - Forrest Gump 
 - Mile 22
 
-## July
+### July
 - Heads of State
 - The Commuter
 - Memory
@@ -71,7 +147,7 @@ categories: movies
 - Wicked
 - Ip Man 4
 
-## August
+### August
 - USS Indianapolis
 - Valkyrie
 - The Man Who Cracked the Nazi Code
@@ -80,7 +156,7 @@ categories: movies
 - Darkest Hour
 - Battle for Sevastopol
 
-## September
+### September
 - A Working Man
 - AK-47 Kalashnikov
 - The Bourne Identity
@@ -89,7 +165,7 @@ categories: movies
 - The Bourne Legacy
 - Jason Bourne
 
-## October
+### October
 - Love Hurts
 - 28 Days Later
 - 28 Weeks Later
@@ -98,7 +174,7 @@ categories: movies
 - Deepwater Horizon
 - Knight and Day
 
-## November
+### November
 - Count of Monte-Cristo
 - From the World of John Wick: Ballerina
 - Flight Risk
@@ -107,7 +183,7 @@ categories: movies
 - Letters from Iwo Jima
 - The Matrix
 
-## December
+### December
 - The Matrix Reloaded
 - The Matrix Revolutions
 - The Matrix Resurrections
