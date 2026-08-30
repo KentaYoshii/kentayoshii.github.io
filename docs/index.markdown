@@ -40,7 +40,12 @@ a blank placeholder, which main.js then drops.
 <div class="cover-mosaic" aria-hidden="true" data-cover-mosaic>
   {%- for item in site.data.stats.books.mosaic -%}
   {%- if item.isbn -%}
-  <img class="mosaic-cover" src="https://covers.openlibrary.org/b/isbn/{{ item.isbn }}-M.jpg?default=false" alt="" loading="lazy" decoding="async">
+  {%- comment -%}
+  Not lazy: the band is at the top of the page and clips horizontally, so a
+  lazy jacket outside the clipped region never enters the viewport and never
+  loads at all — it stays an empty grey slot for the life of the page.
+  {%- endcomment -%}
+  <img class="mosaic-cover" src="https://covers.openlibrary.org/b/isbn/{{ item.isbn }}-M.jpg?default=false" alt="" decoding="async">
   {%- else -%}
   <span class="mosaic-cover mosaic-slot" data-mosaic-movie="{{ item.title | escape }}" hidden></span>
   {%- endif -%}

@@ -459,11 +459,16 @@ function initCoverMosaic() {
   });
 
   Array.prototype.forEach.call(band.querySelectorAll('[data-mosaic-movie]'), function (slot) {
-    var title = slot.getAttribute('data-mosaic-movie');
+    // The data file carries the raw log title, so "(TV Series)" and a trailing
+    // "(2025)" are still on it. Parse it the same way the Movies page does, or
+    // the annotations go to TMDB as search text and the show is searched for in
+    // the film catalogue.
+    var info = parseMovieTitle(slot.getAttribute('data-mosaic-movie'));
+    if (!info) { slot.remove(); return; }
     // Shares the collection pages' request queue and localStorage cache, so a
     // poster already fetched on /movies/ costs nothing here.
     enqueueCoverFetch(function () {
-      return resolveCover('movies', { title: title, isSeries: false, releaseYear: null })
+      return resolveCover('movies', info)
         .then(function (url) {
           if (!url) {
             slot.remove();
@@ -587,7 +592,13 @@ function parseBookEntry(li) {
 }
 
 function parseMovieEntry(li) {
-  var raw = (li.getAttribute('data-title') || '').trim();
+  return parseMovieTitle(li.getAttribute('data-title'));
+}
+
+// The string half of the above, shared with the landing-page mosaic, whose
+// slots carry the raw log title in an attribute rather than a list row.
+function parseMovieTitle(title) {
+  var raw = (title || '').trim();
   if (!raw) return null;
   var isSeries = /\(\s*tv series\s*\)/i.test(raw) || /\bseason\s+\d+\b/i.test(raw);
   // A trailing "(1987)" disambiguates a remake from its original. Pull it out

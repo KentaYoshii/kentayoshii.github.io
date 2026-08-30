@@ -221,9 +221,9 @@ A few pieces that are not obvious from the markup:
 - **Cover shimmer** — keyed off `.is-settled`, which `applyCover` adds however
   the lookup ends. A miss has to settle too, or the placeholder would animate
   forever on the ~150 books with no cover.
-- **Landing page mosaic** — 36 slots chosen at build time by striding through
+- **Landing page mosaic** — 15 slots chosen at build time by striding through
   the title-sorted shelf and watch list (`MOSAIC_COUNT` / `MOSAIC_MOVIES` in
-  `build_stats.py`), so it is not 36 titles beginning with "A". Book jackets
+  `build_stats.py`), so it is not 15 titles beginning with "A". Book jackets
   resolve straight from an ISBN and are plain `<img>` tags; TMDB has no
   title-addressable poster URL, so film slots start `hidden` and `main.js`
   fills them from the shared cover cache. With no JavaScript the band is just
@@ -232,7 +232,13 @@ A few pieces that are not obvious from the markup:
   comes back under 10px wide — but only after a real `load` or `error` event.
   A `loading="lazy"` image whose load is still deferred can report
   `complete === true` with `naturalWidth` 0, so testing `complete` alone
-  deletes every jacket before it loads. Decorative and `aria-hidden`.
+  deletes every jacket before it loads. Two things follow from the band being
+  a clipped, non-scrolling flex row: the jackets are **not** lazy (a lazy image
+  outside the clipped region never enters the viewport, so it never loads at
+  all and stays an empty slot forever), and the slot count is kept near what
+  actually fits — overshooting only widens the clipped-away part. Film slots
+  parse `(TV Series)` and a trailing `(YYYY)` out of the title the same way the
+  Movies page does. Decorative and `aria-hidden`.
 - **Spine wall** — rendered in Liquid from `_data/books.json`, no extra data:
   width is `pages / 40` and the era colour is a comparison chain on
   `published`.

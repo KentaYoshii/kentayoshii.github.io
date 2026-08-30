@@ -23,8 +23,12 @@ DATA = os.path.join(ROOT, 'docs', '_data')
 # How many covers the landing page's decorative band shows, and how many of
 # those are film posters rather than book jackets. Each one is an extra lazy
 # request, so keep it modest.
-MOSAIC_COUNT = 36
-MOSAIC_MOVIES = 12
+# Sized to roughly one screen width plus a little bleed for the mask to fade.
+# Overshooting is not free: the band clips horizontally, and a browser will not
+# lazy-load — or even paint — slots that sit outside the viewport, so the extra
+# ones are dead weight that only widens the clipped region.
+MOSAIC_COUNT = 15
+MOSAIC_MOVIES = 5
 
 
 def stride(seq, n):
