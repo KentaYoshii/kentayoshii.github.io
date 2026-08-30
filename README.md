@@ -187,10 +187,10 @@ For a show, prefer one `Title (TV Series)` entry over one row per season.
 ## Travel
 
 `docs/_logs/travel.md` groups entries by `## <category>` then `### <year>`,
-currently just `## National Parks`:
+currently just `## US National Parks`:
 
 ```markdown
-## National Parks
+## US National Parks
 
 ### 2026
 - Yosemite
@@ -205,17 +205,17 @@ git add docs/_logs/travel.md docs/_data/travel.json
 git commit -m "Add a park visit" && git push origin gh-pages
 ```
 
-National Parks is different from Books and Movies in one respect: it has a
-known, finite universe. `scripts/national_parks.py` holds the fixed list of
-all 63 US National Parks (the NPS's "National Park" designation specifically
-— not monuments, preserves, or historic sites), and `build_travel.py`
-cross-references the log against it so the page can show what's *left*, not
-just what's done. That reference list is not something you log — it changes
-only when the NPS designates a new park (most recently New River Gorge, in
-2020) — so double check it against nps.gov if the checklist ever looks short
-one.
+Each category is a checklist against a known, finite universe — different
+from Books and Movies, which only ever grow. `scripts/national_parks.py`
+holds the fixed list of all 63 US National Parks (the NPS's "National Park"
+designation specifically — not monuments, preserves, or historic sites), and
+`build_travel.py` cross-references the log against it so the page can show
+what's *left*, not just what's done. That reference list is not something
+you log — it changes only when the NPS designates a new park (most recently
+New River Gorge, in 2020) — so double check it against nps.gov if the
+checklist ever looks short one.
 
-A log entry is matched to a park by a normalised name comparison that also
+A log entry is matched to an item by a normalised name comparison that also
 tries prefixes in either direction (`Guadalupe` finds `Guadalupe Mountains`,
 `Rocky Mountains` finds `Rocky Mountain`) and strips accents (`Haleakala`
 finds `Haleakalā`). A name that changes more than that — `Hawaiian Volcanoes`
@@ -224,10 +224,22 @@ for `Hawaiʻi Volcanoes` — needs an entry in `ALIASES` at the bottom of
 than silently vanishing from the count, the same principle as
 `merge_books.py`'s near-miss detector.
 
-The heading structure leaves room for a `## Cities` (or any other) category
-later without restructuring the file — it would just have no fixed universe
-to check off against, so `build_travel.py` would render it as a plain visited
-list rather than a checklist.
+### Adding another checklist
+
+`build_travel.py`'s `CHECKLISTS` list is a registry of `(log heading, json
+key, reference module)`. Adding a Countries checklist, say, needs three
+things and no changes to the matching or page-rendering logic:
+
+1. A reference module shaped like `national_parks.py` — `ITEMS`, a list of
+   `(name, subtitle)` tuples (country, continent, say), plus an optional
+   `ALIASES`.
+2. An entry in `CHECKLISTS`.
+3. A `## Countries` section in `travel.md` using that exact heading text.
+
+`docs/travel.markdown` loops over whatever categories `travel.json` actually
+contains, so a new checklist appears on the page automatically — nothing
+there needs to change. A `## <heading>` in the log with no matching entry in
+`CHECKLISTS` prints a warning rather than silently being dropped.
 
 ## Writing a post
 

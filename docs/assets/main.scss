@@ -1067,10 +1067,17 @@ body,
   }
 }
 
-// A passport-style checklist: every US National Park as a tile, visited ones
-// filled in with a date. Server-rendered — 63 tiles fit on one screen, so
-// this needs no client-side search/grouping the way Books and Movies do.
-.travel-page {
+// One or more passport-style checklists — every item in a category as a
+// tile, visited ones filled in with a date. Server-rendered, no client-side
+// search/grouping the way Books and Movies need, since each checklist is
+// small enough to fit on one screen.
+.park-section {
+  margin-bottom: $spacing-unit * 2;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   .collection-tagline {
     margin-bottom: $spacing-unit;
   }

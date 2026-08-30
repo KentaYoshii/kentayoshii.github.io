@@ -9,9 +9,14 @@ National River in December 2020) — if the checklist ever looks short a
 park, this is the first place to check against the current NPS list.
 
 No network, no I/O: a plain Python list, imported by build_travel.py.
+
+Every checklist reference module (see build_travel.py's CHECKLISTS) exposes
+the same two names: ITEMS, a list of (name, subtitle) tuples, and an
+optional ALIASES dict. That contract is what lets build_travel.py treat this
+module and a future countries.py identically.
 """
 
-NATIONAL_PARKS = [
+ITEMS = [
     ('Acadia', 'Maine'),
     ('American Samoa', 'American Samoa'),
     ('Arches', 'Utah'),

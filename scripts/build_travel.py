@@ -1,15 +1,22 @@
 #!/usr/bin/env python3
-"""Cross-reference docs/_logs/travel.md against the fixed National Parks
-reference list into docs/_data/travel.json, which the Travel page renders
-as a checklist.
+"""Cross-reference docs/_logs/travel.md against fixed reference lists into
+docs/_data/travel.json, which the Travel page renders as one checklist per
+category.
 
 Run after editing the log:
 
     python3 scripts/build_travel.py
 
-Unlike books and movies, "National Parks" has a known, finite universe
-(scripts/national_parks.py) — the output is not just what you logged, it's
-all 63 parks with a visited flag, so the page can show what's left too.
+Unlike books and movies, a category here has a known, finite universe — the
+output is not just what you logged, it's every item with a visited flag, so
+the page can show what's left too.
+
+Adding a new category (e.g. Countries) needs three things, no changes to the
+matching or output logic below:
+  1. A reference list module, same shape as national_parks.py: a list of
+     (name, subtitle) tuples plus an optional ALIASES dict.
+  2. An entry in CHECKLISTS below.
+  3. A "## <label>" section in docs/_logs/travel.md using that exact label.
 """
 
 import json
@@ -29,10 +36,17 @@ import national_parks  # noqa: E402
 MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
           'August', 'September', 'October', 'November', 'December']
 
+# Log heading -> (json key, module). The heading text must match the log's
+# "## " line exactly; the json key is what the Travel page's Liquid loop
+# keys off. Order here is display order on the page.
+CHECKLISTS = [
+    ('US National Parks', 'us_national_parks', national_parks),
+]
+
 
 def fold(s):
     """Strip diacritics (Haleakalā -> Haleakala) so a plain-ASCII log entry
-    matches the reference list's accented official names."""
+    matches a reference list's accented official names."""
     return ''.join(c for c in unicodedata.normalize('NFKD', s)
                    if not unicodedata.combining(c))
 
@@ -42,7 +56,8 @@ def keyify(s):
 
 
 def parse_log():
-    """Category -> [(year, month_or_None, raw_name), ...]."""
+    """Category (the exact "## " heading text) -> [(year, month_or_None,
+    raw_name), ...]."""
     categories = {}
     category = None
     year = None
@@ -71,13 +86,13 @@ def parse_log():
     return categories
 
 
-def match_park(raw_name, remaining):
-    """The canonical park name raw_name refers to, from the parks in
-    `remaining` (a dict keyed by keyify'd name), or None with a printed
-    warning. Tries, in order: an explicit alias, an exact match, then an
-    unambiguous prefix match in either direction ('Guadalupe' -> 'Guadalupe
-    Mountains', 'Rocky Mountains' -> 'Rocky Mountain')."""
-    aliased = national_parks.ALIASES.get(raw_name, raw_name)
+def match_item(raw_name, remaining, aliases, noun):
+    """The canonical name raw_name refers to, from the items in `remaining`
+    (a dict keyed by keyify'd name), or None with a printed warning. Tries,
+    in order: an explicit alias, an exact match, then an unambiguous prefix
+    match in either direction ('Guadalupe' -> 'Guadalupe Mountains',
+    'Rocky Mountains' -> 'Rocky Mountain')."""
+    aliased = aliases.get(raw_name, raw_name)
     key = keyify(aliased)
 
     if key in remaining:
@@ -88,64 +103,82 @@ def match_park(raw_name, remaining):
     if len(prefix_hits) == 1:
         return prefix_hits[0]
     if len(prefix_hits) > 1:
-        print('  ! "%s" matches multiple parks (%s) — add it to ALIASES in '
-              'national_parks.py to disambiguate' % (raw_name, ', '.join(prefix_hits)),
-              file=sys.stderr)
+        print('  ! "%s" matches multiple %s (%s) — add an alias to disambiguate'
+              % (raw_name, noun, ', '.join(prefix_hits)), file=sys.stderr)
         return None
 
-    print('  ! "%s" does not match any national park — typo, or a park not yet '
-          'in national_parks.py?' % raw_name, file=sys.stderr)
+    print('  ! "%s" does not match any %s — typo, or one missing from the '
+          'reference list?' % (raw_name, noun[:-1] if noun.endswith('s') else noun),
+          file=sys.stderr)
     return None
 
 
-def main():
-    categories = parse_log()
-    entries = categories.get('National Parks', [])
+def build_checklist(label, entries, reference):
+    """(json-ready dict, unmatched count) for one category. `reference` is a
+    module exposing ITEMS (a list of (name, subtitle) tuples) and optionally
+    ALIASES — the contract every checklist module in CHECKLISTS follows."""
+    items = reference.ITEMS
+    aliases = getattr(reference, 'ALIASES', {})
+    noun = label.lower()
 
-    # keyify -> canonical name, so multiple entries reduce to the same key on
-    # a repeat visit without complaint (only the earliest visit is kept).
-    by_key = {keyify(name): name for name, _ in national_parks.NATIONAL_PARKS}
-    state_of = dict(national_parks.NATIONAL_PARKS)
+    by_key = {keyify(name): name for name, _ in items}
 
     visited = {}   # canonical name -> (year, month)
     unmatched = 0
     for year, month, raw_name in entries:
-        park = match_park(raw_name, by_key)
-        if park is None:
+        name = match_item(raw_name, by_key, aliases, noun)
+        if name is None:
             unmatched += 1
             continue
-        if park not in visited or year < visited[park][0]:
-            visited[park] = (year, month)
+        if name not in visited or year < visited[name][0]:
+            visited[name] = (year, month)
 
-    parks = []
-    for name, state in national_parks.NATIONAL_PARKS:
+    out_items = []
+    for name, subtitle in items:
         v = visited.get(name)
-        parks.append({
+        out_items.append({
             'name': name,
-            'state': state,
+            'subtitle': subtitle,
             'visited': v is not None,
             'year': v[0] if v else None,
             'month': v[1] if v else None,
         })
-    parks.sort(key=lambda p: p['name'])
+    out_items.sort(key=lambda i: i['name'])
+
+    return {
+        'label': label,
+        'visited': len(visited),
+        'total': len(items),
+        'items': out_items,
+    }, unmatched
+
+
+def main():
+    categories = parse_log()
+
+    checklists = {}
+    total_unmatched = 0
+    for label, json_key, reference in CHECKLISTS:
+        result, unmatched = build_checklist(label, categories.get(label, []), reference)
+        checklists[json_key] = result
+        total_unmatched += unmatched
+        print('  %-20s %d/%d visited' % (label, result['visited'], result['total']))
+
+    registered = {label for label, _, _ in CHECKLISTS}
+    for label in categories:
+        if label not in registered:
+            print('  ! "## %s" in the log has no registered checklist — see the '
+                  'module docstring to add one' % label, file=sys.stderr)
 
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
     with open(OUT_PATH, 'w', encoding='utf-8') as f:
-        json.dump({
-            'national_parks': {
-                'visited': len(visited),
-                'total': len(national_parks.NATIONAL_PARKS),
-                'parks': parks,
-            }
-        }, f, ensure_ascii=False, indent=1)
+        json.dump({'checklists': checklists}, f, ensure_ascii=False, indent=1)
         f.write('\n')
 
-    print('wrote %d/%d national parks visited -> %s'
-          % (len(visited), len(national_parks.NATIONAL_PARKS),
-             os.path.relpath(OUT_PATH, ROOT)))
-    if unmatched:
-        print('  %d log entr%s did not match a park (see warnings above)'
-              % (unmatched, 'y' if unmatched == 1 else 'ies'))
+    print('wrote %s' % os.path.relpath(OUT_PATH, ROOT))
+    if total_unmatched:
+        print('  %d log entr%s did not match anything (see warnings above)'
+              % (total_unmatched, 'y' if total_unmatched == 1 else 'ies'))
 
 
 if __name__ == '__main__':

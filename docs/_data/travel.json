@@ -1,449 +1,452 @@
 {
- "national_parks": {
-  "visited": 14,
-  "total": 63,
-  "parks": [
-   {
-    "name": "Acadia",
-    "state": "Maine",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "American Samoa",
-    "state": "American Samoa",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Arches",
-    "state": "Utah",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Badlands",
-    "state": "South Dakota",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Big Bend",
-    "state": "Texas",
-    "visited": true,
-    "year": "2025",
-    "month": null
-   },
-   {
-    "name": "Biscayne",
-    "state": "Florida",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Black Canyon of the Gunnison",
-    "state": "Colorado",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Bryce Canyon",
-    "state": "Utah",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Canyonlands",
-    "state": "Utah",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Capitol Reef",
-    "state": "Utah",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Carlsbad Caverns",
-    "state": "New Mexico",
-    "visited": true,
-    "year": "2025",
-    "month": null
-   },
-   {
-    "name": "Channel Islands",
-    "state": "California",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Congaree",
-    "state": "South Carolina",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Crater Lake",
-    "state": "Oregon",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Cuyahoga Valley",
-    "state": "Ohio",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Death Valley",
-    "state": "California / Nevada",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Denali",
-    "state": "Alaska",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Dry Tortugas",
-    "state": "Florida",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Everglades",
-    "state": "Florida",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Gates of the Arctic",
-    "state": "Alaska",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Gateway Arch",
-    "state": "Missouri",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Glacier",
-    "state": "Montana",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Glacier Bay",
-    "state": "Alaska",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Grand Canyon",
-    "state": "Arizona",
-    "visited": true,
-    "year": "2025",
-    "month": null
-   },
-   {
-    "name": "Grand Teton",
-    "state": "Wyoming",
-    "visited": true,
-    "year": "2025",
-    "month": null
-   },
-   {
-    "name": "Great Basin",
-    "state": "Nevada",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Great Sand Dunes",
-    "state": "Colorado",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Great Smoky Mountains",
-    "state": "Tennessee / North Carolina",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Guadalupe Mountains",
-    "state": "Texas",
-    "visited": true,
-    "year": "2025",
-    "month": null
-   },
-   {
-    "name": "Haleakalā",
-    "state": "Hawaii",
-    "visited": true,
-    "year": "2026",
-    "month": null
-   },
-   {
-    "name": "Hawaiʻi Volcanoes",
-    "state": "Hawaii",
-    "visited": true,
-    "year": "2026",
-    "month": null
-   },
-   {
-    "name": "Hot Springs",
-    "state": "Arkansas",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Indiana Dunes",
-    "state": "Indiana",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Isle Royale",
-    "state": "Michigan",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Joshua Tree",
-    "state": "California",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Katmai",
-    "state": "Alaska",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Kenai Fjords",
-    "state": "Alaska",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Kings Canyon",
-    "state": "California",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Kobuk Valley",
-    "state": "Alaska",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Lake Clark",
-    "state": "Alaska",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Lassen Volcanic",
-    "state": "California",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Mammoth Cave",
-    "state": "Kentucky",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Mesa Verde",
-    "state": "Colorado",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Mount Rainier",
-    "state": "Washington",
-    "visited": true,
-    "year": "2026",
-    "month": null
-   },
-   {
-    "name": "New River Gorge",
-    "state": "West Virginia",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "North Cascades",
-    "state": "Washington",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Olympic",
-    "state": "Washington",
-    "visited": true,
-    "year": "2026",
-    "month": null
-   },
-   {
-    "name": "Petrified Forest",
-    "state": "Arizona",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Pinnacles",
-    "state": "California",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Redwood",
-    "state": "California",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Rocky Mountain",
-    "state": "Colorado",
-    "visited": true,
-    "year": "2026",
-    "month": null
-   },
-   {
-    "name": "Saguaro",
-    "state": "Arizona",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Sequoia",
-    "state": "California",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Shenandoah",
-    "state": "Virginia",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Theodore Roosevelt",
-    "state": "North Dakota",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Virgin Islands",
-    "state": "U.S. Virgin Islands",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Voyageurs",
-    "state": "Minnesota",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "White Sands",
-    "state": "New Mexico",
-    "visited": true,
-    "year": "2025",
-    "month": null
-   },
-   {
-    "name": "Wind Cave",
-    "state": "South Dakota",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Wrangell–St. Elias",
-    "state": "Alaska",
-    "visited": false,
-    "year": null,
-    "month": null
-   },
-   {
-    "name": "Yellowstone",
-    "state": "Wyoming / Montana / Idaho",
-    "visited": true,
-    "year": "2025",
-    "month": null
-   },
-   {
-    "name": "Yosemite",
-    "state": "California",
-    "visited": true,
-    "year": "2025",
-    "month": null
-   },
-   {
-    "name": "Zion",
-    "state": "Utah",
-    "visited": true,
-    "year": "2025",
-    "month": null
-   }
-  ]
+ "checklists": {
+  "us_national_parks": {
+   "label": "US National Parks",
+   "visited": 14,
+   "total": 63,
+   "items": [
+    {
+     "name": "Acadia",
+     "subtitle": "Maine",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "American Samoa",
+     "subtitle": "American Samoa",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Arches",
+     "subtitle": "Utah",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Badlands",
+     "subtitle": "South Dakota",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Big Bend",
+     "subtitle": "Texas",
+     "visited": true,
+     "year": "2025",
+     "month": null
+    },
+    {
+     "name": "Biscayne",
+     "subtitle": "Florida",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Black Canyon of the Gunnison",
+     "subtitle": "Colorado",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Bryce Canyon",
+     "subtitle": "Utah",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Canyonlands",
+     "subtitle": "Utah",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Capitol Reef",
+     "subtitle": "Utah",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Carlsbad Caverns",
+     "subtitle": "New Mexico",
+     "visited": true,
+     "year": "2025",
+     "month": null
+    },
+    {
+     "name": "Channel Islands",
+     "subtitle": "California",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Congaree",
+     "subtitle": "South Carolina",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Crater Lake",
+     "subtitle": "Oregon",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Cuyahoga Valley",
+     "subtitle": "Ohio",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Death Valley",
+     "subtitle": "California / Nevada",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Denali",
+     "subtitle": "Alaska",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Dry Tortugas",
+     "subtitle": "Florida",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Everglades",
+     "subtitle": "Florida",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Gates of the Arctic",
+     "subtitle": "Alaska",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Gateway Arch",
+     "subtitle": "Missouri",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Glacier",
+     "subtitle": "Montana",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Glacier Bay",
+     "subtitle": "Alaska",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Grand Canyon",
+     "subtitle": "Arizona",
+     "visited": true,
+     "year": "2025",
+     "month": null
+    },
+    {
+     "name": "Grand Teton",
+     "subtitle": "Wyoming",
+     "visited": true,
+     "year": "2025",
+     "month": null
+    },
+    {
+     "name": "Great Basin",
+     "subtitle": "Nevada",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Great Sand Dunes",
+     "subtitle": "Colorado",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Great Smoky Mountains",
+     "subtitle": "Tennessee / North Carolina",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Guadalupe Mountains",
+     "subtitle": "Texas",
+     "visited": true,
+     "year": "2025",
+     "month": null
+    },
+    {
+     "name": "Haleakalā",
+     "subtitle": "Hawaii",
+     "visited": true,
+     "year": "2026",
+     "month": null
+    },
+    {
+     "name": "Hawaiʻi Volcanoes",
+     "subtitle": "Hawaii",
+     "visited": true,
+     "year": "2026",
+     "month": null
+    },
+    {
+     "name": "Hot Springs",
+     "subtitle": "Arkansas",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Indiana Dunes",
+     "subtitle": "Indiana",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Isle Royale",
+     "subtitle": "Michigan",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Joshua Tree",
+     "subtitle": "California",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Katmai",
+     "subtitle": "Alaska",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Kenai Fjords",
+     "subtitle": "Alaska",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Kings Canyon",
+     "subtitle": "California",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Kobuk Valley",
+     "subtitle": "Alaska",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Lake Clark",
+     "subtitle": "Alaska",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Lassen Volcanic",
+     "subtitle": "California",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Mammoth Cave",
+     "subtitle": "Kentucky",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Mesa Verde",
+     "subtitle": "Colorado",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Mount Rainier",
+     "subtitle": "Washington",
+     "visited": true,
+     "year": "2026",
+     "month": null
+    },
+    {
+     "name": "New River Gorge",
+     "subtitle": "West Virginia",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "North Cascades",
+     "subtitle": "Washington",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Olympic",
+     "subtitle": "Washington",
+     "visited": true,
+     "year": "2026",
+     "month": null
+    },
+    {
+     "name": "Petrified Forest",
+     "subtitle": "Arizona",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Pinnacles",
+     "subtitle": "California",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Redwood",
+     "subtitle": "California",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Rocky Mountain",
+     "subtitle": "Colorado",
+     "visited": true,
+     "year": "2026",
+     "month": null
+    },
+    {
+     "name": "Saguaro",
+     "subtitle": "Arizona",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Sequoia",
+     "subtitle": "California",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Shenandoah",
+     "subtitle": "Virginia",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Theodore Roosevelt",
+     "subtitle": "North Dakota",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Virgin Islands",
+     "subtitle": "U.S. Virgin Islands",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Voyageurs",
+     "subtitle": "Minnesota",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "White Sands",
+     "subtitle": "New Mexico",
+     "visited": true,
+     "year": "2025",
+     "month": null
+    },
+    {
+     "name": "Wind Cave",
+     "subtitle": "South Dakota",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Wrangell–St. Elias",
+     "subtitle": "Alaska",
+     "visited": false,
+     "year": null,
+     "month": null
+    },
+    {
+     "name": "Yellowstone",
+     "subtitle": "Wyoming / Montana / Idaho",
+     "visited": true,
+     "year": "2025",
+     "month": null
+    },
+    {
+     "name": "Yosemite",
+     "subtitle": "California",
+     "visited": true,
+     "year": "2025",
+     "month": null
+    },
+    {
+     "name": "Zion",
+     "subtitle": "Utah",
+     "visited": true,
+     "year": "2025",
+     "month": null
+    }
+   ]
+  }
  }
 }
