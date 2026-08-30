@@ -29,6 +29,9 @@ docs/                     Jekyll site root
 scripts/
   build.py                runs all four, in order — the usual entry point
   merge_books.py          builds _data/books.json
+  fetch_subjects.py       one-off, networked — refreshes subject_cache.json
+  subject_cache.json      generated — Open Library subjects, committed
+  genres.py               maps raw subjects onto the fixed genre list
   build_movies.py         builds _data/movies.json
   build_stats.py          builds _data/stats.json (reads the other two)
   build_images.py         draws the favicon and social card from books.json
@@ -116,6 +119,56 @@ this rather than leaving you to notice:
 Warnings do not fail the build. Fix the log title, or if the two titles are
 legitimately different — Goodreads using a short form, or splitting a novel
 into volumes — add the pair to `ALIASES` in the script.
+
+### Genres
+
+Goodreads has no genre to export — `Bookshelves` holds only `to-read` and
+`My Review` is empty on every row — so genre comes from Open Library's
+crowd-sourced subjects.
+
+`scripts/fetch_subjects.py` is the **only script that touches the network, and
+it is deliberately not part of `build.py`**. CI re-runs the build and fails if
+`docs/_data` changes, so a build that fetched live would go red whenever Open
+Library's data moved, for reasons unrelated to the commit. Instead the fetch is
+an occasional manual step that writes `scripts/subject_cache.json`; that file is
+committed, and `merge_books.py` reads it offline.
+
+```sh
+python3 scripts/fetch_subjects.py --limit 20   # trial run first
+python3 scripts/fetch_subjects.py              # fetch everything uncached
+python3 scripts/build.py
+git add scripts/subject_cache.json docs/_data
+```
+
+Re-running only fetches books not already cached, so adding ten books costs ten
+lookups rather than 555. `--refresh` forces the lot; `--report` summarises the
+cache without any network at all.
+
+Two distinctions the script is careful about:
+
+- **A failed request is not an answer.** Caching "no subjects" for a request
+  that was blocked or rate-limited would permanently skip a book a later run
+  could have resolved. Only a completed request is ever written, and three
+  consecutive failures abort the run rather than grinding through every batch.
+- **The cache is optional.** A fresh clone with no cache file builds fine;
+  books simply carry `genre: null`.
+
+Lookups go through Open Library's `/api/books` endpoint, which takes up to 40
+ISBNs per request — about a dozen requests for the whole shelf. Books with no
+ISBN fall back to one title/author search each.
+
+`genres.py` maps the raw subjects onto a fixed list of 18 genres. This matters
+because the subjects are unnormalised: a single book carries `Fiction`,
+`Detective and mystery stories`, `New York Times bestseller` and
+`Accessible book` side by side. The mapping drops the noise, then scores each
+genre by how many of its rules match — rather than taking the first matching
+subject, since a book tagged both `Fiction` and `Detective and mystery stories`
+should be a mystery and Open Library's ordering is not something to rely on.
+Ties break toward the more specific genre.
+
+Expect to tune `RULES` after the first real fetch. Run `--report` to see the
+most common raw subjects across your own shelf and add rules for whatever the
+default list misses.
 
 ### Series
 
