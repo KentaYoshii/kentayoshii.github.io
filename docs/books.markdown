@@ -37,7 +37,6 @@ by title (leading articles ignored), which is the default ungrouped view; the
       <div class="view-toggle" role="group" aria-label="View as">
         <button type="button" class="view-button" data-view="list" aria-pressed="true">List</button>
         <button type="button" class="view-button" data-view="grid" aria-pressed="false">Grid</button>
-        <button type="button" class="view-button" data-view="shelf" aria-pressed="false">Shelf</button>
       </div>
     </div>
     {%- comment -%}

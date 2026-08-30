@@ -34,7 +34,6 @@ ignored; the "group by" control re-groups it client-side.
       <div class="view-toggle" role="group" aria-label="View as">
         <button type="button" class="view-button" data-view="list" aria-pressed="true">List</button>
         <button type="button" class="view-button" data-view="grid" aria-pressed="false">Grid</button>
-        <button type="button" class="view-button" data-view="shelf" aria-pressed="false">Shelf</button>
       </div>
     </div>
     <nav class="jump-rail" aria-label="Jump to section" hidden></nav>

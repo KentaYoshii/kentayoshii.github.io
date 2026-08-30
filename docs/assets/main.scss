@@ -762,80 +762,6 @@ code, pre {
   }
 }
 
-// ---- Shelf view: each entry stood on end, like a book on a shelf ----
-// Heights and eras are set by main.js on the <li>, since CSS cannot read a
-// page count out of a data attribute.
-[data-view="shelf"] {
-  .year-block ul {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;   // spines stand on a common baseline
-    gap: 3px;
-    list-style: none;
-    margin-left: 0;
-    padding: 0 0 4px;
-    border-bottom: 2px solid $grey-color-light;
-  }
-
-  li {
-    flex: 0 0 auto;
-    width: 30px;
-    height: var(--spine-h, 170px);
-    border-radius: 2px 2px 0 0;
-    background-color: $brand-color;
-    overflow: hidden;
-    position: relative;
-  }
-
-  // The cover thumbnail and the date make no sense on a spine.
-  .cover-thumb-wrap,
-  .entry-date,
-  .entry-series {
-    display: none;
-  }
-
-  .entry-row {
-    display: block;
-    height: 100%;
-  }
-
-  .entry-text {
-    display: block;
-    height: 100%;
-    // Titles run bottom-to-top, the way most spines are printed.
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    padding: 8px 0;
-    font-size: 12px;
-    line-height: 30px;    // centres the text across the spine's width
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: #fff8ec;
-  }
-
-  em {
-    font-style: normal;
-  }
-
-  .entry-byline {
-    display: none;
-  }
-
-  li[data-era="pre1800"] { background-color: #7d4a24; }
-  li[data-era="c19"]     { background-color: #a8632c; }
-  li[data-era="c20a"]    { background-color: #c08a4b; }
-  li[data-era="c20b"]    { background-color: #d8a86a; }
-  li[data-era="c21"]     { background-color: #e8c99a; }
-  li[data-era="unknown"] { background-color: #b9a888; }
-
-  // Pale spines need dark lettering to stay legible.
-  li[data-era="c20b"] .entry-text,
-  li[data-era="c21"] .entry-text {
-    color: #4a3520;
-  }
-}
-
 // Ungrouped list still benefits from seeing who wrote what. So does the
 // series grouping, where the heading is the series rather than the author.
 [data-view="list"][data-group="none"] .entry-byline,
@@ -968,6 +894,68 @@ body,
     height: 34px;
     padding: 0;
     margin: 6px 10px 0 auto;
+  }
+
+  // The sticky bar has to earn its height on a phone screen. Everything below
+  // trims it to roughly the search field plus one row of controls: the era
+  // chips scroll sideways instead of wrapping onto three lines, and the jump
+  // rail and running count — both comfortably reachable by scrolling — are
+  // dropped rather than pinned.
+  .collection-header {
+    padding: 8px 0 6px;
+    margin-bottom: 4px;
+  }
+
+  .collection-controls {
+    gap: 8px;
+  }
+
+  .search-input {
+    flex: 1 1 100%;
+    padding: 7px 10px;
+    font-size: 15px;
+  }
+
+  .group-control {
+    font-size: 13px;
+  }
+
+  .group-select,
+  .sort-select {
+    font-size: 13px;
+    padding: 4px 6px;
+  }
+
+  .view-button {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+
+  .era-filter {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-top: 6px;
+    padding-bottom: 2px;
+    // Momentum scrolling without a visible bar, which would add height.
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar { display: none; }
+
+    .era-chip {
+      flex: 0 0 auto;
+    }
+  }
+
+  // The rail is a pointer affordance and the least useful of the three on a
+  // phone; the running count stays, since it is one small line and it is the
+  // only feedback that a filter is active.
+  .jump-rail {
+    display: none;
+  }
+
+  .collection-header .stats-summary {
+    margin: 6px 0 0;
+    font-size: 12px;
   }
 }
 
@@ -1150,9 +1138,6 @@ body,
     color: $dark-muted;
   }
 
-  [data-view="shelf"] .year-block ul {
-    border-bottom-color: $dark-border;
-  }
 
   // The light sweep is invisible on a dark placeholder.
   .cover-thumb-wrap:not(.is-settled)::before {

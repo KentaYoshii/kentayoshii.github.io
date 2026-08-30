@@ -233,13 +233,12 @@ A few pieces that are not obvious from the markup:
 - **Spine wall** — rendered in Liquid from `_data/books.json`, no extra data:
   width is `pages / 40` and the era colour is a comparison chain on
   `published`.
-- **Shelf view** — a third view mode where each entry is a spine. `main.js`
-  tags every row with `data-era` and a `--spine-h` at startup, because CSS
-  cannot read a page count out of a data attribute. Entries with no page count
-  get a stable pseudo-height from their title, or a shelf of identical spines
-  reads as a bar chart.
-- **Era chips** — filter on the same five buckets, using the `data-era` the
-  shelf already needs. They combine with the search rather than replacing it.
+- **Era chips** — filter on the same five buckets the spine wall colours by.
+  `main.js` tags every row with `data-era` at startup; the chips combine with
+  the search rather than replacing it, and clicking the active chip clears it.
+- **Sticky bar on mobile** — the controls stay pinned, but the jump rail is
+  hidden and the era chips scroll sideways rather than wrapping onto three
+  lines, so the bar stays near the height of the search field plus one row.
 - **Watch heatmap** — a year × month grid on the Stats page. Books carry only
   a year, so movies are the one part of the log fine-grained enough to show a
   rhythm. Shading is bucketed into six levels in Liquid, which has no float

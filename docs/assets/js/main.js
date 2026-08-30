@@ -346,26 +346,10 @@ function initCollectionPage() {
     try { return localStorage.getItem(key); } catch (e) { return null; }
   }
 
-  // Tags every entry with its era (which the filter chips and the shelf both
-  // key off) and a spine height. Height comes from the page count where there
-  // is one, so a long novel stands taller; everything else gets a stable
-  // pseudo-height from its title, because a shelf of identical spines looks
-  // like a bar chart.
+  // Tags every entry with the era bucket the filter chips key off, matching
+  // the buckets the Stats page colours its spine wall by.
   function decorateEntries() {
     items.forEach(function (li) {
-      var pages = numAttr(li, 'data-pages');
-      var height;
-      if (pages) {
-        height = Math.max(120, Math.min(210, 110 + pages / 6));
-      } else {
-        var t = li.getAttribute('data-title') || '';
-        var h = 0;
-        for (var i = 0; i < t.length; i++) h = (h * 31 + t.charCodeAt(i)) % 90;
-        height = 130 + h;
-      }
-      li.style.setProperty('--spine-h', Math.round(height) + 'px');
-
-      // Colour by era, matching the Stats page's spine wall.
       var pub = numAttr(li, 'data-published');
       var era = 'unknown';
       if (pub !== null) {
@@ -444,8 +428,7 @@ function initCollectionPage() {
 
   mode = select ? select.value : 'none';
   sortMode = sortSelect ? sortSelect.value : 'title';
-  var savedView = read(VIEW_KEY);
-  setView(savedView === 'grid' || savedView === 'shelf' ? savedView : 'list', false);
+  setView(read(VIEW_KEY) === 'grid' ? 'grid' : 'list', false);
   refresh();
 
   // The header's height changes when the controls wrap onto another line.
@@ -461,16 +444,17 @@ function initCoverMosaic() {
 
   // Open Library serves a 1px image for an unknown ISBN when "default=false"
   // is not honoured, and that stretches into a smear. Treat either as a miss.
-  function checkJacket(img) {
+  //
+  // Only ever act on an image that has finished: a loading="lazy" image whose
+  // load is still deferred can report complete === true with naturalWidth 0,
+  // so testing complete alone deletes every jacket before it loads.
+  function settleJacket(img) {
     if (!img.naturalWidth || img.naturalWidth < 10) img.remove();
   }
 
   Array.prototype.forEach.call(band.querySelectorAll('img.mosaic-cover'), function (img) {
-    if (img.complete) {
-      checkJacket(img);
-      return;
-    }
-    img.addEventListener('load', function () { checkJacket(img); });
+    if (img.complete && img.naturalWidth > 0) return;   // already loaded fine
+    img.addEventListener('load', function () { settleJacket(img); });
     img.addEventListener('error', function () { img.remove(); });
   });
 
