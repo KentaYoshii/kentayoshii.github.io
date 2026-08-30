@@ -210,3 +210,36 @@ export PATH="/opt/bb/bin/ruby3.1:$PATH"
 Note the local `Gemfile` pins `github-pages`, which tracks the Jekyll version
 GitHub Pages actually builds with — worth using rather than a newer Jekyll, so
 local output matches production.
+
+## Link previews
+
+`jekyll-seo-tag` generates the `<title>`, `description` and Open Graph tags
+that Slack, iMessage and social sites read. Every page carries its own
+`description:` in its front matter; without one it inherits the site-wide
+description, which makes every link preview read identically.
+
+There is no `og:image`, so previews render as small text-only cards. To
+upgrade them to large image cards, add a raster image (PNG or JPG — SVG is not
+reliably supported) and point `_config.yml` at it:
+
+```yaml
+image: /assets/social-card.png
+```
+
+Recommended size is 1200×630. Do not reference a file that does not exist —
+a broken `og:image` previews worse than none at all.
+
+## CI
+
+`.github/workflows/build.yml` runs two checks on every push and pull request:
+
+- **data** — re-runs `scripts/build.py` and fails if `docs/_data` changes,
+  which catches editing a markdown log without regenerating the JSON.
+- **site** — a full `jekyll build`, which catches Liquid and front-matter
+  errors.
+
+Both are advisory. GitHub Pages builds and deploys independently of this
+workflow, so a red run does not block a deploy — it just tells you the
+published site is wrong. Both failure modes are otherwise silent: stale data
+looks fine until you notice a missing book, and a Liquid error leaves the
+previous version of the page published.

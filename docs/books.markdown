@@ -2,6 +2,7 @@
 layout: page
 title: Books
 permalink: /books/
+description: Every book I've read — searchable, and groupable by author, series or title.
 ---
 
 {%- comment -%}

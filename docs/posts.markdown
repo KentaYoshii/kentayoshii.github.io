@@ -2,6 +2,7 @@
 layout: page
 title: Posts
 permalink: /posts/
+description: Occasional writing.
 ---
 
 {%- comment -%}

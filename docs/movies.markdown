@@ -2,6 +2,7 @@
 layout: page
 title: Movies
 permalink: /movies/
+description: Every movie and show I've watched, by the month I watched it.
 ---
 
 {%- comment -%}

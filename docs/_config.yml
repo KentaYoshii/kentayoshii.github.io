@@ -20,6 +20,7 @@
 
 title: Kenta's Log
 description: A running log of books I've read, movies/shows I've watched, and dev notes I don't want to forget.
+author: Kenta Yoshii
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kentayoshii.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -27,6 +28,10 @@ url: "https://kentayoshii.github.io" # the base hostname & protocol for your sit
 theme: minima
 plugins:
   - jekyll-feed
+  # Generates the <title>, description and Open Graph/Twitter tags that
+  # link previews read. minima depends on it, so it loaded implicitly
+  # before; listing it here makes that explicit.
+  - jekyll-seo-tag
 
 # Controls the order of pages in the site nav (minima reads this list)
 header_pages:

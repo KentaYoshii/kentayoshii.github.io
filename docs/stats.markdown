@@ -2,6 +2,7 @@
 layout: page
 title: Stats
 permalink: /stats/
+description: Pages read, most-read authors and series, and how far back the shelf goes.
 ---
 
 {%- comment -%}

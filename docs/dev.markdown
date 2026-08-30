@@ -2,6 +2,7 @@
 layout: page
 title: Dev Notes
 permalink: /dev/
+description: Programming notes and cheat sheets I don't want to forget.
 ---
 
 <div class="wide-section"><div class="wide-inner">

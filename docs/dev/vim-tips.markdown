@@ -2,6 +2,7 @@
 layout: page
 title: Vim Tips
 permalink: /dev/vim-tips/
+description: Vim motions, editing commands and shortcuts worth committing to memory.
 ---
 
 <p class="breadcrumb"><a href="{{ '/dev/' | relative_url }}">Dev Notes</a> / Vim Tips</p>
