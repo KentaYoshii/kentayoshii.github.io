@@ -222,24 +222,23 @@ A few pieces that are not obvious from the markup:
   the lookup ends. A miss has to settle too, or the placeholder would animate
   forever on the ~150 books with no cover.
 - **Status strip** — a muted line under the header on every page: the
-  author's local time, current weather, and a bouncing panda emoji,
-  inserted by `initStatusStrip()` rather than templated, so nothing else
-  needed to change. Fixed to New York regardless of visitor — this is the
-  author's time and weather, not a geolocation feature — via `STATUS_LAT` /
+  author's local time, current weather, and a quote, inserted by
+  `initStatusStrip()` rather than templated, so nothing else needed to
+  change. Fixed to New York regardless of visitor — this is the author's
+  time and weather, not a geolocation feature — via `STATUS_LAT` /
   `STATUS_LON` / `STATUS_TIMEZONE` at the top of that function in `main.js`.
   Weather comes from Open-Meteo, chosen because it needs no key and no
-  attribution. Each part degrades independently: the clock needs nothing to
-  render, the weather text simply never appears on a failed fetch, and the
-  day/night state falls back to a fixed-hour guess in `STATUS_TIMEZONE`
-  rather than being left assuming weather it never received. The panda is a
-  real "🐼" glyph animated with CSS transforms rather than composed from
-  divs and `border-radius` the way the spine wall and heat legend are —
-  hand-drawing a face has no reliable preview available in this dev
-  environment, where a real emoji is correct by construction and only needs
-  to be moved, not drawn. The "blink" is a brief vertical squash of the
-  whole glyph rather than a swapped frame, since no closed-eye panda emoji
-  exists; a small weather glyph (☀️/🌧️/❄️/…) floats beside it, filled in
-  from the forecast's WMO code once it resolves.
+  attribution; the quote comes from a short hand-picked `QUOTES` list in the
+  same function rather than a live "inspirational quote" API — the standard
+  one for this (`api.quotable.io`) turned out to be down entirely while
+  building this, and a couple of others were unreachable in testing too. A
+  fixed list can't go dark the way a free third-party API can. It changes
+  once a day rather than on every reload, keyed off a day number computed in
+  `STATUS_TIMEZONE` so it flips at NYC midnight along with the rest of the
+  strip, not at an hour that depends on the visitor's own timezone. Each
+  part degrades independently: the clock needs nothing to render, the
+  weather text simply never appears on a failed fetch, and the quote needs
+  no network at all.
 - **Landing page mosaic** — 24 slots chosen at build time by striding through
   the title-sorted shelf and watch list (`MOSAIC_COUNT` / `MOSAIC_MOVIES` in
   `build_stats.py`), so it is not 24 titles beginning with "A". Book jackets

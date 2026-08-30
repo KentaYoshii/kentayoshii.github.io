@@ -566,36 +566,50 @@ var STATUS_PLACE = 'NYC';
 var WEATHER_URL = 'https://api.open-meteo.com/v1/forecast?latitude=' + STATUS_LAT +
   '&longitude=' + STATUS_LON + '&current_weather=true&temperature_unit=fahrenheit';
 
-// WMO weather codes -> a short label and a weather emoji. Open Library and
-// TMDB fold way more cases than this; a status strip does not need
-// meteorological precision, just enough to say something readable next to
-// the temperature and show a recognizable glyph beside the panda.
+// WMO weather codes -> a short readable label. Open Library and TMDB fold
+// way more cases than this; a status strip does not need meteorological
+// precision, just enough to say something next to the temperature.
 var WEATHER_CODES = {
-  0: ['clear', '☀️'], 1: ['mostly clear', '🌤️'], 2: ['partly cloudy', '⛅'],
-  3: ['overcast', '☁️'],
-  45: ['foggy', '🌫️'], 48: ['foggy', '🌫️'],
-  51: ['drizzling', '🌦️'], 53: ['drizzling', '🌦️'], 55: ['drizzling', '🌦️'],
-  56: ['icy drizzle', '🌧️'], 57: ['icy drizzle', '🌧️'],
-  61: ['raining', '🌧️'], 63: ['raining', '🌧️'], 65: ['raining hard', '🌧️'],
-  66: ['icy rain', '🌧️'], 67: ['icy rain', '🌧️'],
-  71: ['snowing', '🌨️'], 73: ['snowing', '🌨️'], 75: ['snowing hard', '❄️'],
-  77: ['snow grains', '🌨️'],
-  80: ['rain showers', '🌦️'], 81: ['rain showers', '🌧️'], 82: ['heavy showers', '⛈️'],
-  85: ['snow showers', '🌨️'], 86: ['snow showers', '🌨️'],
-  95: ['thunderstorms', '⛈️'], 96: ['thunderstorms', '⛈️'], 97: ['thunderstorms', '⛈️'],
-  99: ['thunderstorms', '⛈️']
+  0: 'clear', 1: 'mostly clear', 2: 'partly cloudy', 3: 'overcast',
+  45: 'foggy', 48: 'foggy',
+  51: 'drizzling', 53: 'drizzling', 55: 'drizzling',
+  56: 'icy drizzle', 57: 'icy drizzle',
+  61: 'raining', 63: 'raining', 65: 'raining hard',
+  66: 'icy rain', 67: 'icy rain',
+  71: 'snowing', 73: 'snowing', 75: 'snowing hard', 77: 'snow grains',
+  80: 'rain showers', 81: 'rain showers', 82: 'heavy showers',
+  85: 'snow showers', 86: 'snow showers',
+  95: 'thunderstorms', 96: 'thunderstorms', 97: 'thunderstorms', 99: 'thunderstorms'
 };
 
-// A muted line under the header: local time, current weather, and a panda
-// emoji that bounces, blinks, and swaps in a weather glyph. Built from a real
-// emoji rather than hand-drawn CSS shapes — a browser's font renders "🐼"
-// correctly by construction, where composing a face from divs and
-// border-radius is a guess at proportions with no way to preview it here.
+// A small hand-picked list rather than a live "inspirational quote" API. Every
+// free one tried while building this either had gone dark outright
+// (api.quotable.io, once the standard recommendation for this exact use case)
+// or was blocked in testing (dummyjson, zenquotes) — a bad sign for a
+// dependency this decorative to carry. A short list here can't disappear.
+var QUOTES = [
+  ['A reader lives a thousand lives before he dies.', 'George R.R. Martin'],
+  ['There is no friend as loyal as a book.', 'Ernest Hemingway'],
+  ['That’s the thing about books. They let you travel without moving your feet.', 'Jhumpa Lahiri'],
+  ['Once you learn to read, you will be forever free.', 'Frederick Douglass'],
+  ['A room without books is like a body without a soul.', 'Marcus Tullius Cicero'],
+  ['We read to know we are not alone.', 'C.S. Lewis'],
+  ['Books are a uniquely portable magic.', 'Stephen King'],
+  ['I cannot remember the books I’ve read any more than the meals I have eaten; even so, they have made me.', 'Ralph Waldo Emerson'],
+  ['Movies can and do have tremendous influence in shaping young lives.', 'Walt Disney'],
+  ['A great film is when the price of the popcorn doesn’t matter.', 'Roger Ebert'],
+  ['Cinema is a matter of what’s in the frame and what’s out.', 'Martin Scorsese'],
+  ['Film is one of the three universal languages, the other two: mathematics and music.', 'Frank Capra'],
+  ['Time you enjoy wasting is not wasted time.', 'Marthe Troly-Curtin'],
+  ['The unread story is not a story; it is little black marks on wood pulp.', 'Ursula K. Le Guin']
+];
+
+// A muted line under the header: local time, current weather, and a quote
+// that changes once a day rather than on every reload — a page you open
+// three times before noon should show the same line each time.
 //
 // Every part degrades independently: the clock needs nothing, the weather
-// text disappears on a failed fetch, and the day/night state falls back to a
-// fixed-hour guess rather than staying caught in an in-between state if the
-// forecast never lands.
+// text disappears on a failed fetch, and the quote needs no network at all.
 function initStatusStrip() {
   var header = document.querySelector('.site-header');
   if (!header) return;
@@ -603,29 +617,33 @@ function initStatusStrip() {
   var strip = document.createElement('div');
   strip.className = 'status-strip';
   strip.innerHTML =
-    '<span class="status-panda" data-panda aria-hidden="true">' +
-      '<span class="panda-emoji" data-panda-emoji>🐼</span>' +
-      '<span class="panda-sleep">💤</span>' +
-      '<span class="panda-weather" data-panda-weather></span>' +
-    '</span>' +
-    '<span class="status-text" data-status-text></span>';
+    '<span class="status-text" data-status-text></span>' +
+    '<span class="status-quote" data-status-quote></span>';
   header.insertAdjacentElement('afterend', strip);
 
-  var panda = strip.querySelector('[data-panda]');
-  var pandaEmoji = strip.querySelector('[data-panda-emoji]');
-  var pandaWeather = strip.querySelector('[data-panda-weather]');
   var textEl = strip.querySelector('[data-status-text]');
+  var quoteEl = strip.querySelector('[data-status-quote]');
 
-  // A closed-eye panda emoji does not exist, so the blink is a brief
-  // vertical squash of the whole glyph instead — the same trick a sprite
-  // sheet uses, just done with a transform instead of a swapped frame.
-  // Skipped while asleep, so a night blink cannot pop the glyph back "awake"
-  // between animation frames.
-  setInterval(function () {
-    if (panda.classList.contains('is-night')) return;
-    pandaEmoji.classList.add('is-blinking');
-    setTimeout(function () { pandaEmoji.classList.remove('is-blinking'); }, 150);
-  }, 4500);
+  // A day number in STATUS_TIMEZONE, not the visitor's — the quote should
+  // flip at NYC midnight along with everything else in the strip, not at an
+  // hour that depends on which timezone happens to load the page.
+  var nyDateParts = { year: 2000, month: 1, day: 1 };
+  try {
+    var parts = new Intl.DateTimeFormat('en-US', {
+      timeZone: STATUS_TIMEZONE, year: 'numeric', month: 'numeric', day: 'numeric'
+    }).formatToParts(new Date());
+    parts.forEach(function (p) {
+      if (p.type === 'year') nyDateParts.year = parseInt(p.value, 10);
+      if (p.type === 'month') nyDateParts.month = parseInt(p.value, 10);
+      if (p.type === 'day') nyDateParts.day = parseInt(p.value, 10);
+    });
+  } catch (e) { /* unsupported timeZone string; fall back to a fixed date */ }
+  // Days since an arbitrary epoch is all a stable index needs — it does not
+  // have to be a real day-of-year count, just something that changes by
+  // exactly one every day in STATUS_TIMEZONE.
+  var dayIndex = Math.floor(Date.UTC(nyDateParts.year, nyDateParts.month - 1, nyDateParts.day) / 86400000);
+  var quote = QUOTES[((dayIndex % QUOTES.length) + QUOTES.length) % QUOTES.length];
+  quoteEl.textContent = '“' + quote[0] + '” —' + quote[1];
 
   var clockFormat;
   try {
@@ -653,29 +671,13 @@ function initStatusStrip() {
     textEl.remove();
   }
 
-  // Falls back to a fixed-hour guess in STATUS_TIMEZONE if the forecast never
-  // arrives, so the panda is never left assuming weather it doesn't have. The
-  // guess is in NYC's hour, not the visitor's — the clock next to it is too.
-  function applyDayNight(isDay) {
-    panda.classList.toggle('is-night', !isDay);
-  }
-  var nyHour = 12;
-  try {
-    nyHour = parseInt(new Intl.DateTimeFormat('en-US', {
-      hour: 'numeric', hour12: false, timeZone: STATUS_TIMEZONE
-    }).format(new Date()), 10);
-  } catch (e) { /* unsupported timeZone string; stay with the daytime default */ }
-  applyDayNight(nyHour >= 7 && nyHour < 19);
-
   fetch(WEATHER_URL)
     .then(function (res) { return res.json(); })
     .then(function (data) {
       var cw = data && data.current_weather;
       if (!cw) return;
-      applyDayNight(cw.is_day === 1);
-      var info = WEATHER_CODES[cw.weathercode];
-      pandaWeather.textContent = info ? info[1] : '';
-      weatherText = Math.round(cw.temperature) + '°F' + (info && info[0] ? ', ' + info[0] : '');
+      var label = WEATHER_CODES[cw.weathercode];
+      weatherText = Math.round(cw.temperature) + '°F' + (label ? ', ' + label : '');
       renderClock();
     })
     .catch(function () { /* no network, or Open-Meteo is down — clock stands alone */ });

@@ -1018,14 +1018,13 @@ body,
   }
 }
 
-// A muted line under the header: local time, weather, and a panda emoji.
-// Real emoji rather than hand-drawn shapes — a browser's font renders "🐼"
-// correctly by construction, so the animation only has to move, rotate, and
-// scale a glyph that is already known to look right.
+// A muted line under the header: local time, weather, and a quote that
+// changes once a day. No image, no emoji, no animation — just two text runs.
 .status-strip {
   display: flex;
-  align-items: center;
-  gap: 8px;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
   max-width: $content-width;
   margin: 0 auto;
   padding: 6px calc(#{$spacing-unit} / 2) 0;
@@ -1034,80 +1033,20 @@ body,
 .status-text {
   font-size: 13px;
   color: $grey-color;
+  white-space: nowrap;
 }
 
-.status-panda {
-  position: relative;
-  display: inline-flex;
-  flex: 0 0 auto;
-  line-height: 1;
-}
-
-.panda-emoji {
-  display: inline-block;
-  font-size: 26px;
-  animation: panda-bounce 2.6s ease-in-out infinite;
-
-  &.is-blinking {
-    animation-play-state: paused;   // freeze the bounce mid-squash, not mid-air
-    transform: scaleY(0.2);
-  }
-}
-
-// A small floating weather glyph (☀️ 🌧️ ❄️ ...) main.js fills in from the
-// forecast. Empty and invisible until then, rather than a placeholder icon
-// that would claim to know the weather before the fetch has resolved.
-.panda-weather {
-  position: absolute;
-  top: -4px;
-  right: -8px;
+.status-quote {
   font-size: 13px;
-}
-
-.panda-sleep {
-  position: absolute;
-  top: -6px;
-  right: -8px;
-  font-size: 13px;
-  opacity: 0;
-}
-
-// Stops bouncing and tilts into a rest pose rather than continuing to hop —
-// a bouncing panda next to "💤" reads as a contradiction, not as asleep.
-.status-panda.is-night {
-  .panda-emoji {
-    animation: none;
-    transform: rotate(-8deg) scaleY(0.85);
-  }
-
-  .panda-weather { opacity: 0; }
-
-  .panda-sleep {
-    opacity: 1;
-    animation: panda-sleep-float 2.4s ease-in infinite;
-  }
-}
-
-@keyframes panda-bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-4px); }
-}
-
-@keyframes panda-sleep-float {
-  0% { transform: translateY(0); opacity: 0; }
-  30% { opacity: 1; }
-  100% { transform: translateY(-8px); opacity: 0; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .panda-emoji {
-    animation: none;
-  }
-
-  .status-panda.is-night .panda-sleep {
-    animation: none;
-    opacity: 1;
-  }
+  font-style: italic;
+  color: $grey-color;
+  // Long quotes should not push the clock/weather onto their own line on a
+  // narrow-but-not-mobile window; they clip with an ellipsis instead.
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+  flex: 1 1 160px;
 }
 
 @media screen and (max-width: $on-palm) {
@@ -1116,12 +1055,15 @@ body,
     padding-right: $spacing-unit / 2;
   }
 
-  .panda-emoji {
-    font-size: 22px;
+  .status-text,
+  .status-quote {
+    font-size: 12px;
   }
 
-  .status-text {
-    font-size: 12px;
+  // No room to clip gracefully at this width; drop the quote and keep the
+  // clock and weather, which are the more useful line on a small screen.
+  .status-quote {
+    display: none;
   }
 }
 
