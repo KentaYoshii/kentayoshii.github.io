@@ -176,6 +176,27 @@ for", not the whole shelf. Ratings are deliberately absent: every row in the
 export has `My Rating: 0`, so there is nothing to show until books get rated
 on Goodreads.
 
+## Design notes
+
+A few pieces that are not obvious from the markup:
+
+- **Sticky controls** — `.collection-header` sticks to the top of the Books and
+  Movies pages. `main.js` measures its height into a `--sticky-h` custom
+  property, which `.year-block`'s `scroll-margin-top` subtracts so a jump
+  lands below the bar rather than behind it.
+- **Jump rail** — rebuilt after every filter, so searching narrows it in step
+  with the list. Twelve sections or fewer are listed by name (years); above
+  that it collapses to initials, with non-Latin under `#`.
+- **Cover shimmer** — keyed off `.is-settled`, which `applyCover` adds however
+  the lookup ends. A miss has to settle too, or the placeholder would animate
+  forever on the ~150 books with no cover.
+- **Landing page mosaic** — 36 ISBNs chosen at build time by striding through
+  the title-sorted shelf (`MOSAIC_COUNT` in `build_stats.py`), so it is not 36
+  books beginning with "A". Decorative and `aria-hidden`.
+- **Spine wall** — rendered in Liquid from `_data/books.json`, no extra data:
+  width is `pages / 40` and the era colour is a comparison chain on
+  `published`.
+
 ## Adding dev notes
 
 `docs/dev/vim-tips.markdown` is edited directly — no build step. For a new

@@ -14,8 +14,8 @@ ignored; the "group by" control re-groups it client-side.
 
 <div class="wide-section"><div class="wide-inner">
 <div class="collection-page" data-collection="movies">
+  <p class="collection-tagline">Movies and shows I've watched.</p>
   <div class="collection-header">
-    <p class="collection-tagline">Movies and shows I've watched.</p>
     <div class="collection-controls">
       <input type="text" class="search-input" placeholder="Search titles…" aria-label="Search movies">
       <label class="group-control">Group by
@@ -36,6 +36,7 @@ ignored; the "group by" control re-groups it client-side.
         <button type="button" class="view-button" data-view="grid" aria-pressed="false">Grid</button>
       </div>
     </div>
+    <nav class="jump-rail" aria-label="Jump to section" hidden></nav>
     <p class="stats-summary" aria-live="polite"></p>
   </div>
 

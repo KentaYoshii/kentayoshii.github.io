@@ -59,6 +59,37 @@ scripts/build_stats.py. No client-side work.
   {%- endfor -%}
 </ul>
 
+<h2>The shelf</h2>
+
+<p class="collection-tagline">Every book with a known page count, oldest first. Each spine is as wide as the book is long, so the whole strip is {{ b.pages_total_pretty }} pages at one glance.</p>
+
+{%- comment -%}
+Rendered straight from _data/books.json rather than precomputed: the width is
+just pages/40 and the era bucket is a comparison chain, both of which Liquid
+can do, so this needs no extra data.
+{%- endcomment -%}
+{%- assign shelf = site.data.books | where_exp: "bk", "bk.pages" | sort: "published" -%}
+<div class="spine-wall">
+  {%- for bk in shelf -%}
+  {%- if bk.published == nil -%}{%- assign era = "unknown" -%}
+  {%- elsif bk.published < 1800 -%}{%- assign era = "pre1800" -%}
+  {%- elsif bk.published < 1900 -%}{%- assign era = "c19" -%}
+  {%- elsif bk.published < 1950 -%}{%- assign era = "c20a" -%}
+  {%- elsif bk.published < 2000 -%}{%- assign era = "c20b" -%}
+  {%- else -%}{%- assign era = "c21" -%}
+  {%- endif -%}
+  <span class="spine spine--{{ era }}" style="width: {{ bk.pages | divided_by: 40 | plus: 2 }}px" title="{{ bk.title | escape }} — {{ bk.pages }} pages"></span>
+  {%- endfor -%}
+</div>
+
+<ul class="spine-legend">
+  <li><span class="spine spine--pre1800"></span> before 1800</li>
+  <li><span class="spine spine--c19"></span> 1800s</li>
+  <li><span class="spine spine--c20a"></span> 1900–1949</li>
+  <li><span class="spine spine--c20b"></span> 1950–1999</li>
+  <li><span class="spine spine--c21"></span> 2000s</li>
+</ul>
+
 <h2>Series</h2>
 
 <p class="collection-tagline">{{ b.in_series }} of the {{ b.total }} books belong to a series I've read at least twice from — {{ b.series_count }} series in all.</p>

@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
   initThemeToggle();
   initCollectionPage();
   initCoverArt();
-  initHomeStats();
   initVimTipsToc();
 });
 
@@ -65,6 +64,12 @@ function initCollectionPage() {
   var select = page.querySelector('.group-select');
   var sortSelect = page.querySelector('.sort-select');
   var viewButtons = Array.prototype.slice.call(page.querySelectorAll('.view-button'));
+  var header = page.querySelector('.collection-header');
+  var rail = page.querySelector('.jump-rail');
+
+  // Above this many sections the rail lists initials instead of full names —
+  // 230 author chips would be no more navigable than the list itself.
+  var RAIL_MAX_NAMES = 12;
 
   // [plural, singular] — "series" is its own plural, so the summary line
   // cannot just trim a trailing "s".
@@ -205,6 +210,65 @@ function initCollectionPage() {
     sections.forEach(function (s) { container.appendChild(s); });
   }
 
+  // The sticky header overlaps whatever a jump scrolls to, so publish its
+  // height for .year-block's scroll-margin-top to subtract.
+  function syncStickyHeight() {
+    if (!header) return;
+    page.style.setProperty('--sticky-h', header.offsetHeight + 'px');
+  }
+
+  function sectionLabel(section) {
+    var h = section.querySelector('.year-heading');
+    return h ? h.childNodes[0].textContent.trim() : '';
+  }
+
+  // Rebuilt from the sections still on screen, so searching narrows the rail
+  // in step with the list.
+  function buildRail() {
+    if (!rail) return;
+    rail.textContent = '';
+
+    var shown = sections.filter(function (s) {
+      return s.style.display !== 'none' && s.querySelector('.year-heading');
+    });
+    if (shown.length < 2) {
+      rail.hidden = true;
+      syncStickyHeight();
+      return;
+    }
+
+    var byName = shown.length <= RAIL_MAX_NAMES;
+    var seen = Object.create(null);
+    var chips = [];
+    shown.forEach(function (section) {
+      var name = sectionLabel(section);
+      if (!name) return;
+      // Non-Latin initials collect under '#', matching how letter_of() in
+      // the build scripts buckets them.
+      var initial = foldForSearch(name).charAt(0).toUpperCase();
+      if (!(initial >= 'A' && initial <= 'Z')) initial = '#';
+      var label = byName ? name : initial;
+      if (seen[label]) return;       // first section wins the initial
+      seen[label] = true;
+      chips.push({ label: label, section: section });
+    });
+
+    chips.forEach(function (chip) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'jump-chip';
+      b.textContent = chip.label;
+      b.addEventListener('click', function () {
+        syncStickyHeight();
+        chip.section.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      });
+      rail.appendChild(b);
+    });
+
+    rail.hidden = chips.length < 2;
+    syncStickyHeight();
+  }
+
   function renderStats(visibleCount, totalCount) {
     if (!statsEl) return;
     if (visibleCount !== totalCount) {
@@ -248,6 +312,7 @@ function initCollectionPage() {
     });
 
     renderStats(visible, items.length);
+    buildRail();
   }
 
   function refresh() {
@@ -324,31 +389,9 @@ function initCollectionPage() {
   sortMode = sortSelect ? sortSelect.value : 'title';
   setView(read(VIEW_KEY) === 'grid' ? 'grid' : 'list', false);
   refresh();
-}
 
-// Fetches the Books/Movies pages and counts their entries to populate the
-// home page's live stat pills, so the counts never need manual updating.
-function initHomeStats() {
-  var hero = document.querySelector('[data-home-stats]');
-  if (!hero) return;
-
-  var pills = Array.prototype.slice.call(hero.querySelectorAll('[data-count-source]'));
-
-  pills.forEach(function (pill) {
-    var url = pill.getAttribute('data-count-source');
-    var valueEl = pill.querySelector('.stat-value');
-
-    fetch(url)
-      .then(function (res) { return res.text(); })
-      .then(function (html) {
-        var doc = new DOMParser().parseFromString(html, 'text/html');
-        var count = doc.querySelectorAll('.year-block li').length;
-        if (valueEl) valueEl.textContent = count;
-      })
-      .catch(function () {
-        if (valueEl) valueEl.textContent = '—';
-      });
-  });
+  // The header's height changes when the controls wrap onto another line.
+  window.addEventListener('resize', syncStickyHeight);
 }
 
 // Builds a quick-jump table of contents for the Vim Tips page from its
@@ -487,6 +530,8 @@ function observeForCover(li, wrap, kind, info) {
     enqueueCoverFetch(function () {
       return resolveCover(kind, info).then(function (url) {
         applyCover(wrap, url);
+      }, function () {
+        applyCover(wrap, null);   // a failed lookup still has to settle
       });
     });
   };
@@ -516,17 +561,23 @@ function pumpCoverQueue() {
   }
 }
 
+// "settled" means the lookup is over, however it ended. The loading shimmer
+// keys off it, so a miss has to settle too or it would animate forever.
 function applyCover(wrap, url) {
-  if (!url) return;
+  if (!url) {
+    wrap.classList.add('is-settled');
+    return;
+  }
   var img = document.createElement('img');
   img.className = 'cover-thumb';
   img.alt = '';
   img.loading = 'lazy';
   img.addEventListener('load', function () {
-    wrap.classList.add('is-loaded');
+    wrap.classList.add('is-loaded', 'is-settled');
   });
   img.addEventListener('error', function () {
     img.remove();
+    wrap.classList.add('is-settled');
   });
   img.src = url;
   wrap.appendChild(img);

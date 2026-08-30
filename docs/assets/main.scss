@@ -220,6 +220,49 @@ code, pre {
   font-size: 14px;
 }
 
+// Decorative band of real covers under the hero. Faded and masked at both
+// ends so it reads as texture behind the page rather than as a gallery.
+.cover-mosaic {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  overflow: hidden;
+  height: 132px;
+  margin: $spacing-unit 0 0;
+  opacity: 0.55;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+
+  img {
+    flex: 0 0 auto;
+    width: 88px;
+    height: 132px;
+    object-fit: cover;
+    border-radius: 3px;
+    // A cover Open Library does not have returns a 1px placeholder, which
+    // would otherwise stretch into a smear.
+    background-color: $grey-color-light;
+  }
+}
+
+@media screen and (max-width: $on-palm) {
+  .cover-mosaic {
+    height: 96px;
+    gap: 6px;
+
+    img {
+      width: 64px;
+      height: 96px;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .cover-mosaic {
+    animation: fade-up 0.7s ease-out;
+  }
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -374,11 +417,55 @@ code, pre {
   max-width: 640px;
 }
 
+// The collections run to hundreds of rows, so the controls follow you down
+// rather than scrolling away after the first screen. Below the site header's
+// z-index, so the mobile nav dropdown still covers this.
+.collection-header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: $background-color;
+  padding: 12px 0 10px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid $grey-color-light;
+}
+
 .collection-controls {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 12px;
+}
+
+// A jump target must clear the sticky header; --sticky-h is published by
+// main.js, which measures it (the controls wrap at narrow widths).
+.year-block {
+  scroll-margin-top: calc(var(--sticky-h, 120px) + 14px);
+}
+
+.jump-rail {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 10px;
+}
+
+.jump-chip {
+  font-family: $base-font-family;
+  font-size: 13px;
+  line-height: 1;
+  min-width: 24px;
+  padding: 5px 6px;
+  color: $grey-color-dark;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    color: $brand-color;
+    border-color: $grey-color-light;
+  }
 }
 
 .group-control {
@@ -480,6 +567,34 @@ code, pre {
 
 .cover-fallback {
   line-height: 1;
+}
+
+// A slow sweep across the placeholder while the cover is in flight, so a
+// grid of pending covers reads as loading rather than as broken. Stops for
+// anyone who has asked for reduced motion.
+@keyframes cover-shimmer {
+  from { background-position: 200% 0; }
+  to   { background-position: -200% 0; }
+}
+
+.cover-thumb-wrap:not(.is-settled)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    rgba(255, 255, 255, 0) 35%,
+    rgba(255, 255, 255, 0.55) 50%,
+    rgba(255, 255, 255, 0) 65%
+  );
+  background-size: 200% 100%;
+  animation: cover-shimmer 1.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cover-thumb-wrap:not(.is-settled)::before {
+    animation: none;
+  }
 }
 
 .cover-thumb {
@@ -878,6 +993,47 @@ body,
     color: $dark-muted;
   }
 
+  // The sticky bar sits over scrolling content, so it needs the page colour
+  // rather than the transparent default.
+  .collection-header {
+    background-color: $dark-bg;
+    border-bottom-color: $dark-border;
+  }
+
+  .jump-chip {
+    color: $dark-muted;
+
+    &:hover {
+      color: $dark-brand;
+      border-color: $dark-border;
+    }
+  }
+
+  // The light sweep is invisible on a dark placeholder.
+  .cover-thumb-wrap:not(.is-settled)::before {
+    background: linear-gradient(
+      100deg,
+      rgba(255, 255, 255, 0) 35%,
+      rgba(255, 255, 255, 0.12) 50%,
+      rgba(255, 255, 255, 0) 65%
+    );
+    background-size: 200% 100%;
+  }
+
+  .cover-thumb-wrap,
+  .cover-mosaic img,
+  .spine--unknown {
+    background-color: $dark-border;
+  }
+
+  .cover-mosaic {
+    opacity: 0.4;
+  }
+
+  .spine-legend {
+    color: $dark-muted;
+  }
+
   .sort-select:disabled {
     color: $dark-border;
   }
@@ -912,7 +1068,55 @@ body,
     color: $dark-muted;
   }
 
-  .fact-list li {
+  // Each book as a spine on a shelf: width = length, colour = era. Wraps into
+// however many rows the viewport allows, which is what makes 200,000 pages
+// legible as a quantity rather than a number.
+.spine-wall {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 2px;
+  margin-bottom: $spacing-unit * 0.5;
+}
+
+.spine {
+  display: inline-block;
+  height: 58px;
+  border-radius: 1px;
+  background-color: $grey-color;
+}
+
+.spine--pre1800 { background-color: #7d4a24; }
+.spine--c19     { background-color: #a8632c; }
+.spine--c20a    { background-color: #c08a4b; }
+.spine--c20b    { background-color: #d8a86a; }
+.spine--c21     { background-color: #e8c99a; }
+.spine--unknown { background-color: $grey-color-light; }
+
+.spine-legend {
+  list-style: none;
+  margin: 0 0 $spacing-unit;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  font-size: 13px;
+  color: $grey-color-dark;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .spine {
+    width: 12px;
+    height: 14px;
+    border-radius: 2px;
+  }
+}
+
+.fact-list li {
     border-bottom-color: $dark-border;
   }
 

@@ -14,8 +14,8 @@ by title (leading articles ignored), which is the default ungrouped view; the
 
 <div class="wide-section"><div class="wide-inner">
 <div class="collection-page" data-collection="books">
+  <p class="collection-tagline">Everything I've read.</p>
   <div class="collection-header">
-    <p class="collection-tagline">Everything I've read.</p>
     <div class="collection-controls">
       <input type="text" class="search-input" placeholder="Search titles or authors…" aria-label="Search books">
       <label class="group-control">Group by
@@ -39,6 +39,7 @@ by title (leading articles ignored), which is the default ungrouped view; the
         <button type="button" class="view-button" data-view="grid" aria-pressed="false">Grid</button>
       </div>
     </div>
+    <nav class="jump-rail" aria-label="Jump to section" hidden></nav>
     <p class="stats-summary" aria-live="polite"></p>
   </div>
 

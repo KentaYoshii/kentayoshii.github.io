@@ -19,6 +19,10 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 DATA = os.path.join(ROOT, 'docs', '_data')
 
+# How many covers the landing page's decorative band shows. Each one is an
+# extra lazy image request, so keep it modest.
+MOSAIC_COUNT = 36
+
 
 def load(name):
     with open(os.path.join(DATA, name), encoding='utf-8') as f:
@@ -62,6 +66,13 @@ def main():
     in_series = [b for b in books if b.get('series')]
     by_series = collections.Counter(b['series'] for b in in_series)
 
+    # ISBNs for the landing page's decorative cover band. Books are sorted by
+    # title, so take an even stride through them rather than the first N --
+    # otherwise the band is forty books beginning with "A".
+    with_isbn = [b['isbn'] for b in books if b['isbn']]
+    step = max(1, len(with_isbn) // MOSAIC_COUNT)
+    mosaic = with_isbn[::step][:MOSAIC_COUNT]
+
     movie_years = collections.Counter(m['year'] for m in movies)
 
     stats = {
@@ -88,6 +99,7 @@ def main():
             'dated': sum(by_year.values()),
             'centuries': [{'name': n, 'count': c} for n, c in
                           sorted(centuries.items(), key=lambda kv: -kv[1])[:6]],
+            'mosaic': mosaic,
             'series_count': len(by_series),
             'in_series': len(in_series),
             'top_series': [{'name': n, 'count': c}
