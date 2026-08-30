@@ -19,9 +19,43 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 DATA = os.path.join(ROOT, 'docs', '_data')
 
-# How many covers the landing page's decorative band shows. Each one is an
-# extra lazy image request, so keep it modest.
+# How many covers the landing page's decorative band shows, and how many of
+# those are film posters rather than book jackets. Each one is an extra lazy
+# request, so keep it modest.
 MOSAIC_COUNT = 36
+MOSAIC_MOVIES = 12
+
+
+def stride(seq, n):
+    """An evenly spaced sample of n items. The inputs are sorted by title, so
+    taking the first n would return a run of books all starting with "A"."""
+    if not seq or n <= 0:
+        return []
+    return seq[::max(1, len(seq) // n)][:n]
+
+
+def build_mosaic(books, movies):
+    """Book jackets and film posters interleaved two-to-one.
+
+    Books carry an ISBN, which is enough to build an Open Library URL at build
+    time. Movies carry only a title: TMDB has no title-addressable poster URL,
+    so those slots are filled in the browser.
+    """
+    jackets = stride([b['isbn'] for b in books if b['isbn']],
+                     MOSAIC_COUNT - MOSAIC_MOVIES)
+    posters = stride(sorted({m['title'] for m in movies}), MOSAIC_MOVIES)
+
+    out = []
+    bi = mi = 0
+    while bi < len(jackets) or mi < len(posters):
+        for _ in range(2):
+            if bi < len(jackets):
+                out.append({'isbn': jackets[bi]})
+                bi += 1
+        if mi < len(posters):
+            out.append({'title': posters[mi]})
+            mi += 1
+    return out
 
 
 def load(name):
@@ -66,12 +100,7 @@ def main():
     in_series = [b for b in books if b.get('series')]
     by_series = collections.Counter(b['series'] for b in in_series)
 
-    # ISBNs for the landing page's decorative cover band. Books are sorted by
-    # title, so take an even stride through them rather than the first N --
-    # otherwise the band is forty books beginning with "A".
-    with_isbn = [b['isbn'] for b in books if b['isbn']]
-    step = max(1, len(with_isbn) // MOSAIC_COUNT)
-    mosaic = with_isbn[::step][:MOSAIC_COUNT]
+    mosaic = build_mosaic(books, movies)
 
     movie_years = collections.Counter(m['year'] for m in movies)
 

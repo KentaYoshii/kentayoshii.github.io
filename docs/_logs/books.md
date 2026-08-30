@@ -109,7 +109,7 @@ year granularity, so the month is not parsed.
 - _Moby-Dick_ by Herman Melville
 - _The Crucible_ by Arthur Miller
 - _The Temple of the Golden Pavilion_ by Yukio Mishima
-- _Confession of a Mask_ by Yukio Mishima
+- _Confessions of a Mask_ by Yukio Mishima
 - _Night of the Milky Way Railway_ by Kenji Miyazawa
 - _Anne of Green Gables_ by Lucy Maud Montgomery
 - _Beloved_ by Toni Morrison
@@ -155,7 +155,6 @@ year granularity, so the month is not parsed.
 - _The Celestine Prophecy_ by James Redfield
 - _The Seven Husbands of Evelyn Hugo_ by Taylor Jenkins Reid
 - _Factfulness_ by Hans Rosling
-- _Harry Potter series_ by J.K. Rowling
 - _The Penguin Book of Japanese Short Stories_ Jay Rubin
 - _The Little Prince_ by Antoine de Saint-Exupery
 - _そして、バトンは渡された_ by Maiko Seo
@@ -315,7 +314,7 @@ year granularity, so the month is not parsed.
 ### December
 - _Eleanor Oliphant is completely fine_ by Gail Honeyman
 - _The Memory Police_ by Yoko Ogawa
-- _Welcome to Hyunam-Dong Bookshop_ by Hwang Bo-reum
+- _Welcome to the Hyunam-Dong Bookshop_ by Hwang Bo-reum
 - _Love in the Time of Cholera_ by Gabriel Garcia Marquez
 - _The Three-Body Problem_ by Cixin Liu
 - _Death's End_ by Cixin Liu
@@ -435,7 +434,7 @@ year granularity, so the month is not parsed.
 ### July
 - _The Sympathizer_ by Viet Thanh Nguyen
 - _Tai-Pan_ by James Clavell
-- _Blackout_ by Justin Torres
+- _Blackouts_ by Justin Torres
 - _Atmosphere_ by Taylor Jenkins Reid
 - _The Maid_ by Nita Prose
 - _The Demon of Unrest_ by Erik Larson

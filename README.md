@@ -102,8 +102,19 @@ Where the two disagree:
   two differ only by case/accents, where Goodreads' canonical form is used.
 
 A title typo in the markdown silently prevents a match, which costs that book
-its ISBN and therefore its cover. If a book is missing a cover, check its
-spelling first — the script prints a matched/unmatched count each run.
+its ISBN, page count, publication year and cover. `merge_books.py` warns about
+this rather than leaving you to notice:
+
+- **near misses** — a log entry whose title closely resembles a Goodreads one
+  *by the same author*. The author check is what keeps it quiet about genuine
+  coincidences like `Ford County` (Grisham) vs `Snow Country` (Kawabata).
+- **duplicates** — the same title and author twice, one work listed as
+  separate volumes, or an entry naming a set (`Harry Potter series`) rather
+  than a book.
+
+Warnings do not fail the build. Fix the log title, or if the two titles are
+legitimately different — Goodreads using a short form, or splitting a novel
+into volumes — add the pair to `ALIASES` in the script.
 
 ### Series
 
@@ -201,9 +212,15 @@ A few pieces that are not obvious from the markup:
 - **Cover shimmer** — keyed off `.is-settled`, which `applyCover` adds however
   the lookup ends. A miss has to settle too, or the placeholder would animate
   forever on the ~150 books with no cover.
-- **Landing page mosaic** — 36 ISBNs chosen at build time by striding through
-  the title-sorted shelf (`MOSAIC_COUNT` in `build_stats.py`), so it is not 36
-  books beginning with "A". Decorative and `aria-hidden`.
+- **Landing page mosaic** — 36 slots chosen at build time by striding through
+  the title-sorted shelf and watch list (`MOSAIC_COUNT` / `MOSAIC_MOVIES` in
+  `build_stats.py`), so it is not 36 titles beginning with "A". Book jackets
+  resolve straight from an ISBN and are plain `<img>` tags; TMDB has no
+  title-addressable poster URL, so film slots start `hidden` and `main.js`
+  fills them from the shared cover cache. With no JavaScript the band is just
+  books. Jacket URLs carry `?default=false` so Open Library 404s on a missing
+  cover instead of serving a blank, and `main.js` drops anything that fails or
+  comes back under 10px wide. Decorative and `aria-hidden`.
 - **Spine wall** — rendered in Liquid from `_data/books.json`, no extra data:
   width is `pages / 40` and the era colour is a comparison chain on
   `published`.

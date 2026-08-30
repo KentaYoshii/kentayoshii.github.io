@@ -484,21 +484,10 @@
   "letter": "B"
  },
  {
-  "title": "Blackout",
-  "author": "Justin Torres",
-  "isbn": "",
-  "year": "2025",
-  "pages": null,
-  "published": null,
-  "series": null,
-  "series_index": null,
-  "letter": "B"
- },
- {
   "title": "Blackouts",
   "author": "Justin Torres",
   "isbn": "9780374293574",
-  "year": null,
+  "year": "2025",
   "pages": 306,
   "published": 2023,
   "series": null,
@@ -1089,17 +1078,6 @@
   "letter": "C"
  },
  {
-  "title": "Confession of a Mask",
-  "author": "Yukio Mishima",
-  "isbn": "",
-  "year": null,
-  "pages": null,
-  "published": null,
-  "series": null,
-  "series_index": null,
-  "letter": "C"
- },
- {
   "title": "Confessions of a Mask",
   "author": "Yukio Mishima",
   "isbn": "9780720610314",
@@ -1322,17 +1300,6 @@
  {
   "title": "The Dancing Girl of Izu",
   "author": "Yasunari Kawabata",
-  "isbn": "",
-  "year": null,
-  "pages": null,
-  "published": null,
-  "series": null,
-  "series_index": null,
-  "letter": "D"
- },
- {
-  "title": "The Dancing Girl of Izu and Other Stories",
-  "author": "Yasunari Kawabata",
   "isbn": "9781887178945",
   "year": null,
   "pages": 176,
@@ -1524,17 +1491,6 @@
   "year": "2025",
   "pages": 274,
   "published": 2009,
-  "series": null,
-  "series_index": null,
-  "letter": "D"
- },
- {
-  "title": "Dr. Jekyll and Mr. Hyde",
-  "author": "Robert Louis Stevenson",
-  "isbn": "9780451528957",
-  "year": null,
-  "pages": 139,
-  "published": 1886,
   "series": null,
   "series_index": null,
   "letter": "D"
@@ -2318,17 +2274,6 @@
   "published": 1999,
   "series": "Harry Potter",
   "series_index": "3",
-  "letter": "H"
- },
- {
-  "title": "Harry Potter series",
-  "author": "J.K. Rowling",
-  "isbn": "",
-  "year": null,
-  "pages": null,
-  "published": null,
-  "series": null,
-  "series_index": null,
   "letter": "H"
  },
  {
@@ -4270,17 +4215,6 @@
  {
   "title": "Rashomon",
   "author": "Ryūnosuke Akutagawa",
-  "isbn": "",
-  "year": null,
-  "pages": null,
-  "published": null,
-  "series": null,
-  "series_index": null,
-  "letter": "R"
- },
- {
-  "title": "Rashomon and Other Stories",
-  "author": "Ryūnosuke Akutagawa",
   "isbn": "9780871401731",
   "year": null,
   "pages": 110,
@@ -4875,10 +4809,10 @@
  {
   "title": "The Strange Case of Dr. Jekyll and Mr. Hyde",
   "author": "Robert Louis Stevenson",
-  "isbn": "",
+  "isbn": "9780451528957",
   "year": "2025",
-  "pages": null,
-  "published": null,
+  "pages": 139,
+  "published": 1886,
   "series": null,
   "series_index": null,
   "letter": "S"
@@ -5654,21 +5588,10 @@
   "letter": "W"
  },
  {
-  "title": "Welcome to Hyunam-Dong Bookshop",
-  "author": "Hwang Bo-Reum",
-  "isbn": "",
-  "year": "2024",
-  "pages": null,
-  "published": null,
-  "series": null,
-  "series_index": null,
-  "letter": "W"
- },
- {
   "title": "Welcome to the Hyunam-Dong Bookshop",
   "author": "Hwang Bo-Reum",
   "isbn": "",
-  "year": null,
+  "year": "2024",
   "pages": 307,
   "published": 2022,
   "series": null,
@@ -6018,20 +5941,9 @@
  },
  {
   "title": "俺たちの箱根駅伝",
-  "author": "池井戸潤",
-  "isbn": "",
-  "year": "2024",
-  "pages": null,
-  "published": null,
-  "series": null,
-  "series_index": null,
-  "letter": "#"
- },
- {
-  "title": "俺たちの箱根駅伝 上",
   "author": "Jun Ikeido",
   "isbn": "9784163917726",
-  "year": null,
+  "year": "2024",
   "pages": 376,
   "published": 2024,
   "series": null,

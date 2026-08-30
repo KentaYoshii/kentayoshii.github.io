@@ -27,13 +27,23 @@ layout: page
 </section>
 
 {%- comment -%}
-A band of real covers, chosen at build time by striding through the shelf so
-it is not 40 books whose titles start with A. Decorative only: hidden from
-assistive tech, and the images are lazy so they never block the hero.
+A band of real covers, chosen at build time by striding through the shelf and
+the watch list so it is not 36 titles beginning with "A". Decorative only:
+hidden from assistive tech, and lazy so it never blocks the hero.
+
+Book jackets resolve straight from an ISBN, so they are plain <img> tags.
+TMDB has no title-addressable poster URL, so film slots start hidden and
+main.js fills them; with no JavaScript the band is simply books.
+"default=false" makes Open Library 404 on a missing cover rather than serving
+a blank placeholder, which main.js then drops.
 {%- endcomment -%}
-<div class="cover-mosaic" aria-hidden="true">
-  {%- for isbn in site.data.stats.books.mosaic -%}
-  <img src="https://covers.openlibrary.org/b/isbn/{{ isbn }}-M.jpg" alt="" loading="lazy" decoding="async">
+<div class="cover-mosaic" aria-hidden="true" data-cover-mosaic>
+  {%- for item in site.data.stats.books.mosaic -%}
+  {%- if item.isbn -%}
+  <img class="mosaic-cover" src="https://covers.openlibrary.org/b/isbn/{{ item.isbn }}-M.jpg?default=false" alt="" loading="lazy" decoding="async">
+  {%- else -%}
+  <span class="mosaic-cover mosaic-slot" data-mosaic-movie="{{ item.title | escape }}" hidden></span>
+  {%- endif -%}
   {%- endfor -%}
 </div>
 

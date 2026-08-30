@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initThemeToggle();
   initCollectionPage();
   initCoverArt();
+  initCoverMosaic();
   initVimTipsToc();
 });
 
@@ -392,6 +393,54 @@ function initCollectionPage() {
 
   // The header's height changes when the controls wrap onto another line.
   window.addEventListener('resize', syncStickyHeight);
+}
+
+// Tidies the landing page's decorative cover band: drops jackets Open Library
+// has no image for, and fills the film slots, which need a TMDB lookup and so
+// cannot be resolved at build time.
+function initCoverMosaic() {
+  var band = document.querySelector('[data-cover-mosaic]');
+  if (!band) return;
+
+  // Open Library serves a 1px image for an unknown ISBN when "default=false"
+  // is not honoured, and that stretches into a smear. Treat either as a miss.
+  function checkJacket(img) {
+    if (!img.naturalWidth || img.naturalWidth < 10) img.remove();
+  }
+
+  Array.prototype.forEach.call(band.querySelectorAll('img.mosaic-cover'), function (img) {
+    if (img.complete) {
+      checkJacket(img);
+      return;
+    }
+    img.addEventListener('load', function () { checkJacket(img); });
+    img.addEventListener('error', function () { img.remove(); });
+  });
+
+  Array.prototype.forEach.call(band.querySelectorAll('[data-mosaic-movie]'), function (slot) {
+    var title = slot.getAttribute('data-mosaic-movie');
+    // Shares the collection pages' request queue and localStorage cache, so a
+    // poster already fetched on /movies/ costs nothing here.
+    enqueueCoverFetch(function () {
+      return resolveCover('movies', { title: title, isSeries: false, releaseYear: null })
+        .then(function (url) {
+          if (!url) {
+            slot.remove();
+            return;
+          }
+          var img = document.createElement('img');
+          img.className = 'mosaic-cover';
+          img.alt = '';
+          img.decoding = 'async';
+          img.addEventListener('load', function () { slot.hidden = false; });
+          img.addEventListener('error', function () { slot.remove(); });
+          img.src = url;
+          slot.appendChild(img);
+        }, function () {
+          slot.remove();
+        });
+    });
+  });
 }
 
 // Builds a quick-jump table of contents for the Vim Tips page from its

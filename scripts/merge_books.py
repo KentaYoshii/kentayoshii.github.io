@@ -17,6 +17,7 @@ Why both sources:
 
 import collections
 import csv
+import difflib
 import json
 import os
 import re
@@ -123,6 +124,10 @@ def title_keys(t):
                 keys.add(k)
 
     add(base)
+    # Goodreads titles a collection after its lead story plus a catch-all
+    # ('The Dancing Girl of Izu and Other Stories'); the log uses just the
+    # lead story. Indexing both sides under the short form bridges that.
+    add(re.sub(r'\s+and other\s+\w+\s*$', '', base, flags=re.I))
     # Goodreads keeps subtitles ('Sapiens: A Brief History of Humankind',
     # 'Moby-Dick; or, The Whale') where the markdown uses the short title.
     for sep in (':', ';'):
@@ -136,6 +141,25 @@ def title_keys(t):
     # wins must not depend on Python's per-process string hash seed, or the
     # generated file churns between runs.
     return sorted(keys)
+
+
+# Pairs the normaliser cannot bridge on its own, mapping a title as written in
+# the log to the title Goodreads files it under. Kept explicit rather than
+# guessed at, since a wrong match silently attaches another book's ISBN, page
+# count and cover.
+ALIASES = {
+    # Goodreads uses the short popular title.
+    'The Strange Case of Dr. Jekyll and Mr. Hyde': 'Dr. Jekyll and Mr. Hyde',
+    # Goodreads splits the novel into two volumes; the log records it once.
+    # Matching volume 1 also unifies the author, whom Goodreads romanises.
+    '俺たちの箱根駅伝': '俺たちの箱根駅伝 上',
+}
+
+
+def alias_keys(title):
+    """Extra match keys for a log title with a known Goodreads counterpart."""
+    target = ALIASES.get(squash(strip_series(nfkc(title))))
+    return title_keys(target) if target else []
 
 
 def as_int(v):
@@ -199,9 +223,82 @@ def load_markdown():
             'title': squash(title),
             'author': squash(author),
             'year': year,
-            'keys': title_keys(title),
+            'keys': sorted(set(title_keys(title)) | set(alias_keys(title))),
         })
     return entries
+
+
+# A log entry this similar to a Goodreads title, by the same author, is almost
+# certainly the same book with a typo or a title-form difference.
+NEAR_TITLE = 0.72
+NEAR_AUTHOR = 0.80
+
+
+def report_near_misses(md_only, gr):
+    """Warn about log entries that look like a Goodreads book the matcher
+    missed, so a typo does not silently cost a book its ISBN and cover.
+
+    The author is what keeps this quiet: 'Ford County' and 'Snow Country' are
+    similar enough to trip the title test, but Grisham is not Kawabata.
+    """
+    hits = []
+    for m in md_only:
+        best = None
+        for g in gr:
+            ta = difflib.SequenceMatcher(None, keyify(m['title']),
+                                         keyify(g['title'])).ratio()
+            if ta < NEAR_TITLE:
+                continue
+            aa = difflib.SequenceMatcher(None, keyify(m['author']),
+                                         keyify(g['author'])).ratio()
+            if aa < NEAR_AUTHOR:
+                continue
+            if best is None or ta > best[0]:
+                best = (ta, g)
+        if best:
+            hits.append((m, best[1], best[0]))
+
+    if not hits:
+        return
+    print('\n  %d log entr%s look like an unmatched Goodreads book:'
+          % (len(hits), 'y' if len(hits) == 1 else 'ies'))
+    for m, g, ratio in sorted(hits, key=lambda h: -h[2]):
+        print('    %-38s -> %-38s (%s, %.0f%%)'
+              % (m['title'][:38], g['title'][:38], g['author'][:22], ratio * 100))
+    print('    Fix the log title, or add a pair to ALIASES in this script.')
+
+
+def report_duplicates(books):
+    """Warn about entries that are probably the same work listed twice."""
+    exact = collections.Counter((keyify(b['title']), keyify(b['author']))
+                                for b in books)
+    dupes = [k for k, n in exact.items() if n > 1]
+    if dupes:
+        print('\n  %d duplicate title+author pair(s):' % len(dupes))
+        for b in books:
+            if exact[(keyify(b['title']), keyify(b['author']))] > 1:
+                print('    %-40s %s' % (b['title'][:40], b['author'][:24]))
+
+    # One work split across volumes, or a set listed alongside its parts.
+    stem = collections.defaultdict(list)
+    for b in books:
+        base = re.sub(r'\s*[上中下巻]\s*$|\s+(vol\.?|volume|part|book)\s*\d+\s*$',
+                      '', b['title'], flags=re.I)
+        stem[(keyify(base), keyify(b['author']))].append(b['title'])
+    split = {k: v for k, v in stem.items() if len(v) > 1}
+    if split:
+        print('\n  %d work(s) listed as multiple volumes:' % len(split))
+        for v in split.values():
+            print('    %s' % ' | '.join(v))
+
+    placeholder = [b for b in books
+                   if re.search(r'\b(series|trilogy|collection|omnibus)\b',
+                                b['title'], re.I)]
+    if placeholder:
+        print('\n  %d entr%s name a set rather than one book:'
+              % (len(placeholder), 'y' if len(placeholder) == 1 else 'ies'))
+        for b in placeholder:
+            print('    %-40s %s' % (b['title'][:40], b['author'][:24]))
 
 
 def main():
@@ -317,6 +414,9 @@ def main():
     in_series = [b for b in books if b['series']]
     print('  in a series: %d across %d series (min %d books each)'
           % (len(in_series), len({b['series'] for b in in_series}), SERIES_MIN))
+
+    report_near_misses(md_only, gr)
+    report_duplicates(books)
 
 
 if __name__ == '__main__':
