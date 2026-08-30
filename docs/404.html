@@ -1,25 +1,35 @@
 ---
-permalink: /404.html
 layout: page
+title: Not found
+permalink: /404.html
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+{%- comment -%}
+GitHub Pages serves this for any unmatched path. It has to be reachable at
+/404.html exactly, hence the explicit permalink rather than a pretty URL.
+The links are absolute (relative_url) because the page renders at whatever
+path the visitor mistyped.
+{%- endcomment -%}
 
-<div class="container">
-  <h1>404</h1>
+<p class="collection-tagline">There's nothing at this address. It was probably a mistyped or an out-of-date link.</p>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+<div class="card-grid">
+  <a class="link-card" href="{{ '/' | relative_url }}">
+    <span class="link-card-icon" aria-hidden="true">🏠</span>
+    <h2>Home</h2>
+    <p>Back to the start.</p>
+    <span class="link-card-cta">Go home →</span>
+  </a>
+  <a class="link-card" href="{{ '/books/' | relative_url }}">
+    <span class="link-card-icon" aria-hidden="true">📚</span>
+    <h2>Books</h2>
+    <p>Everything I've read.</p>
+    <span class="link-card-cta">Browse books →</span>
+  </a>
+  <a class="link-card" href="{{ '/movies/' | relative_url }}">
+    <span class="link-card-icon" aria-hidden="true">🎬</span>
+    <h2>Movies</h2>
+    <p>Everything I've watched.</p>
+    <span class="link-card-cta">Browse movies →</span>
+  </a>
 </div>
