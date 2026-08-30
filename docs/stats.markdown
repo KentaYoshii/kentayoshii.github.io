@@ -118,7 +118,7 @@ can do, so this needs no extra data.
   {%- endfor -%}
 </ul>
 
-<h2>By year</h2>
+<h2>Books by year</h2>
 
 <p class="collection-tagline">Read dates come from my own logs, which only go back to 2024 — the {{ b.total | minus: b.dated }} earlier books aren't dated.</p>
 
@@ -126,9 +126,64 @@ can do, so this needs no extra data.
   {%- for y in b.by_year -%}
   <li><strong>{{ y.year }}:</strong> {{ y.count }} books</li>
   {%- endfor -%}
-  {%- for y in m.by_year -%}
-  <li><strong>{{ y.year }}:</strong> {{ y.count }} movies &amp; shows</li>
+</ul>
+
+<h2>Watching</h2>
+
+<div class="stats-grid">
+  <div class="stat-card">
+    <span class="stat-big">{{ m.films }}</span>
+    <span class="stat-caption">films</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-big">{{ m.shows }}</span>
+    <span class="stat-caption">series</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-big">{{ m.month_median }}</span>
+    <span class="stat-caption">in a typical month</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-big">{{ m.busiest_month.count }}</span>
+    <span class="stat-caption">in {{ m.busiest_month.label }}, the busiest</span>
+  </div>
+</div>
+
+{%- comment -%}
+A month-by-month heatmap. Books are only recorded to the year, so this is the
+one part of the log with fine enough grain to show a rhythm. Cell shading is
+bucketed in Liquid rather than computed as a continuous ramp, because Liquid
+has no float division.
+{%- endcomment -%}
+<div class="heatmap">
+  {%- for row in m.heatmap -%}
+  <div class="heatmap-row">
+    <span class="heatmap-year">{{ row.year }}</span>
+    {%- for cell in row.months -%}
+    {%- assign pct = cell.count | times: 100 | divided_by: m.heatmap_max -%}
+    {%- if cell.count == 0 -%}{%- assign lvl = 0 -%}
+    {%- elsif pct < 20 -%}{%- assign lvl = 1 -%}
+    {%- elsif pct < 40 -%}{%- assign lvl = 2 -%}
+    {%- elsif pct < 60 -%}{%- assign lvl = 3 -%}
+    {%- elsif pct < 80 -%}{%- assign lvl = 4 -%}
+    {%- else -%}{%- assign lvl = 5 -%}
+    {%- endif -%}
+    <span class="heat heat--{{ lvl }}" title="{{ cell.month }} {{ row.year }}: {{ cell.count }}"></span>
+    {%- endfor -%}
+  </div>
   {%- endfor -%}
+  <div class="heatmap-row heatmap-labels">
+    <span class="heatmap-year"></span>
+    {%- for cell in m.heatmap.first.months -%}
+    <span class="heat-label">{{ cell.month | slice: 0 }}</span>
+    {%- endfor -%}
+  </div>
+</div>
+
+<ul class="heat-legend">
+  <li>fewer</li>
+  {%- for l in (0..5) -%}<li><span class="heat heat--{{ l }}"></span></li>{%- endfor -%}
+  <li>more, up to {{ m.heatmap_max }}</li>
 </ul>
 
 </div></div>

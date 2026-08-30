@@ -252,6 +252,8 @@
  },
  "movies": {
   "total": 178,
+  "films": 175,
+  "shows": 3,
   "by_year": [
    {
     "year": "2026",
@@ -265,6 +267,175 @@
     "year": "2024",
     "count": 46
    }
-  ]
+  ],
+  "heatmap": [
+   {
+    "year": "2024",
+    "months": [
+     {
+      "month": "Jan",
+      "count": 1
+     },
+     {
+      "month": "Feb",
+      "count": 0
+     },
+     {
+      "month": "Mar",
+      "count": 1
+     },
+     {
+      "month": "Apr",
+      "count": 1
+     },
+     {
+      "month": "May",
+      "count": 2
+     },
+     {
+      "month": "Jun",
+      "count": 2
+     },
+     {
+      "month": "Jul",
+      "count": 2
+     },
+     {
+      "month": "Aug",
+      "count": 3
+     },
+     {
+      "month": "Sep",
+      "count": 3
+     },
+     {
+      "month": "Oct",
+      "count": 4
+     },
+     {
+      "month": "Nov",
+      "count": 11
+     },
+     {
+      "month": "Dec",
+      "count": 16
+     }
+    ]
+   },
+   {
+    "year": "2025",
+    "months": [
+     {
+      "month": "Jan",
+      "count": 9
+     },
+     {
+      "month": "Feb",
+      "count": 7
+     },
+     {
+      "month": "Mar",
+      "count": 7
+     },
+     {
+      "month": "Apr",
+      "count": 8
+     },
+     {
+      "month": "May",
+      "count": 6
+     },
+     {
+      "month": "Jun",
+      "count": 8
+     },
+     {
+      "month": "Jul",
+      "count": 7
+     },
+     {
+      "month": "Aug",
+      "count": 7
+     },
+     {
+      "month": "Sep",
+      "count": 7
+     },
+     {
+      "month": "Oct",
+      "count": 7
+     },
+     {
+      "month": "Nov",
+      "count": 7
+     },
+     {
+      "month": "Dec",
+      "count": 21
+     }
+    ]
+   },
+   {
+    "year": "2026",
+    "months": [
+     {
+      "month": "Jan",
+      "count": 8
+     },
+     {
+      "month": "Feb",
+      "count": 3
+     },
+     {
+      "month": "Mar",
+      "count": 6
+     },
+     {
+      "month": "Apr",
+      "count": 6
+     },
+     {
+      "month": "May",
+      "count": 3
+     },
+     {
+      "month": "Jun",
+      "count": 0
+     },
+     {
+      "month": "Jul",
+      "count": 4
+     },
+     {
+      "month": "Aug",
+      "count": 1
+     },
+     {
+      "month": "Sep",
+      "count": 0
+     },
+     {
+      "month": "Oct",
+      "count": 0
+     },
+     {
+      "month": "Nov",
+      "count": 0
+     },
+     {
+      "month": "Dec",
+      "count": 0
+     }
+    ]
+   }
+  ],
+  "heatmap_max": 21,
+  "months_logged": 30,
+  "month_median": 6,
+  "busiest_month": {
+   "label": "December 2025",
+   "count": 21
+  },
+  "undated": 0
  }
 }

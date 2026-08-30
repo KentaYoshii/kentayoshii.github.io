@@ -67,6 +67,8 @@ function initCollectionPage() {
   var viewButtons = Array.prototype.slice.call(page.querySelectorAll('.view-button'));
   var header = page.querySelector('.collection-header');
   var rail = page.querySelector('.jump-rail');
+  var eraGroup = page.querySelector('.era-filter');
+  var eraFilter = 'all';
 
   // Above this many sections the rail lists initials instead of full names —
   // 230 author chips would be no more navigable than the list itself.
@@ -290,6 +292,10 @@ function initCollectionPage() {
     var visible = 0;
 
     items.forEach(function (li) {
+      if (eraFilter !== 'all' && li.getAttribute('data-era') !== eraFilter) {
+        li.style.display = 'none';
+        return;
+      }
       // Match against the data attributes rather than the rendered row: the
       // author is not shown when grouping by author, and the visible text
       // carries a trailing date label.
@@ -340,6 +346,38 @@ function initCollectionPage() {
     try { return localStorage.getItem(key); } catch (e) { return null; }
   }
 
+  // Tags every entry with its era (which the filter chips and the shelf both
+  // key off) and a spine height. Height comes from the page count where there
+  // is one, so a long novel stands taller; everything else gets a stable
+  // pseudo-height from its title, because a shelf of identical spines looks
+  // like a bar chart.
+  function decorateEntries() {
+    items.forEach(function (li) {
+      var pages = numAttr(li, 'data-pages');
+      var height;
+      if (pages) {
+        height = Math.max(120, Math.min(210, 110 + pages / 6));
+      } else {
+        var t = li.getAttribute('data-title') || '';
+        var h = 0;
+        for (var i = 0; i < t.length; i++) h = (h * 31 + t.charCodeAt(i)) % 90;
+        height = 130 + h;
+      }
+      li.style.setProperty('--spine-h', Math.round(height) + 'px');
+
+      // Colour by era, matching the Stats page's spine wall.
+      var pub = numAttr(li, 'data-published');
+      var era = 'unknown';
+      if (pub !== null) {
+        era = pub < 1800 ? 'pre1800'
+            : pub < 1900 ? 'c19'
+            : pub < 1950 ? 'c20a'
+            : pub < 2000 ? 'c20b' : 'c21';
+      }
+      li.setAttribute('data-era', era);
+    });
+  }
+
   function setView(next, persist) {
     container.setAttribute('data-view', next);
     viewButtons.forEach(function (b) {
@@ -355,6 +393,7 @@ function initCollectionPage() {
     }
   }
 
+  decorateEntries();
   restore(select, STORAGE_KEY);
   restore(sortSelect, SORT_KEY);
 
@@ -380,6 +419,23 @@ function initCollectionPage() {
     });
   });
 
+  if (eraGroup) {
+    // Hidden in the markup so it never shows without its behaviour.
+    eraGroup.hidden = false;
+    Array.prototype.forEach.call(eraGroup.querySelectorAll('.era-chip'), function (chip) {
+      chip.addEventListener('click', function () {
+        var era = chip.getAttribute('data-era');
+        // Clicking the active chip clears back to everything.
+        eraFilter = (eraFilter === era) ? 'all' : era;
+        Array.prototype.forEach.call(eraGroup.querySelectorAll('.era-chip'), function (c) {
+          c.setAttribute('aria-pressed',
+                         String(c.getAttribute('data-era') === eraFilter));
+        });
+        applyFilter(searchInput ? searchInput.value : '');
+      });
+    });
+  }
+
   if (searchInput) {
     searchInput.addEventListener('input', function () {
       applyFilter(searchInput.value);
@@ -388,7 +444,8 @@ function initCollectionPage() {
 
   mode = select ? select.value : 'none';
   sortMode = sortSelect ? sortSelect.value : 'title';
-  setView(read(VIEW_KEY) === 'grid' ? 'grid' : 'list', false);
+  var savedView = read(VIEW_KEY);
+  setView(savedView === 'grid' || savedView === 'shelf' ? savedView : 'list', false);
   refresh();
 
   // The header's height changes when the controls wrap onto another line.

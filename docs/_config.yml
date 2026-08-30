@@ -21,6 +21,18 @@
 title: Kenta's Log
 description: A running log of books I've read, movies/shows I've watched, and dev notes I don't want to forget.
 author: Kenta Yoshii
+
+# Link previews. The card is generated from the shelf by
+# scripts/build_images.py, so it changes as the shelf grows.
+# jekyll-seo-tag reads page.image and does not fall back to site.image, so
+# this has to be a front-matter default rather than a plain site setting.
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/social-card.png
+twitter:
+  card: summary_large_image
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kentayoshii.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 

@@ -451,6 +451,36 @@ code, pre {
   scroll-margin-top: calc(var(--sticky-h, 120px) + 14px);
 }
 
+.era-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.era-chip {
+  font-family: $base-font-family;
+  font-size: 12px;
+  line-height: 1;
+  padding: 6px 10px;
+  color: $grey-color-dark;
+  background: none;
+  border: 1px solid $grey-color-light;
+  border-radius: 999px;
+  cursor: pointer;
+
+  &:hover {
+    color: $brand-color;
+    border-color: $brand-color;
+  }
+
+  &[aria-pressed="true"] {
+    background-color: $brand-color;
+    border-color: $brand-color;
+    color: #fff8ec;
+  }
+}
+
 .jump-rail {
   display: flex;
   flex-wrap: wrap;
@@ -729,6 +759,80 @@ code, pre {
   em {
     font-style: normal;
     font-weight: 600;
+  }
+}
+
+// ---- Shelf view: each entry stood on end, like a book on a shelf ----
+// Heights and eras are set by main.js on the <li>, since CSS cannot read a
+// page count out of a data attribute.
+[data-view="shelf"] {
+  .year-block ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;   // spines stand on a common baseline
+    gap: 3px;
+    list-style: none;
+    margin-left: 0;
+    padding: 0 0 4px;
+    border-bottom: 2px solid $grey-color-light;
+  }
+
+  li {
+    flex: 0 0 auto;
+    width: 30px;
+    height: var(--spine-h, 170px);
+    border-radius: 2px 2px 0 0;
+    background-color: $brand-color;
+    overflow: hidden;
+    position: relative;
+  }
+
+  // The cover thumbnail and the date make no sense on a spine.
+  .cover-thumb-wrap,
+  .entry-date,
+  .entry-series {
+    display: none;
+  }
+
+  .entry-row {
+    display: block;
+    height: 100%;
+  }
+
+  .entry-text {
+    display: block;
+    height: 100%;
+    // Titles run bottom-to-top, the way most spines are printed.
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    padding: 8px 0;
+    font-size: 12px;
+    line-height: 30px;    // centres the text across the spine's width
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff8ec;
+  }
+
+  em {
+    font-style: normal;
+  }
+
+  .entry-byline {
+    display: none;
+  }
+
+  li[data-era="pre1800"] { background-color: #7d4a24; }
+  li[data-era="c19"]     { background-color: #a8632c; }
+  li[data-era="c20a"]    { background-color: #c08a4b; }
+  li[data-era="c20b"]    { background-color: #d8a86a; }
+  li[data-era="c21"]     { background-color: #e8c99a; }
+  li[data-era="unknown"] { background-color: #b9a888; }
+
+  // Pale spines need dark lettering to stay legible.
+  li[data-era="c20b"] .entry-text,
+  li[data-era="c21"] .entry-text {
+    color: #4a3520;
   }
 }
 
@@ -1017,6 +1121,39 @@ body,
     }
   }
 
+  .era-chip {
+    color: $dark-muted;
+    border-color: $dark-border;
+
+    &:hover {
+      color: $dark-brand;
+      border-color: $dark-brand;
+    }
+
+    &[aria-pressed="true"] {
+      background-color: $dark-brand;
+      border-color: $dark-brand;
+      color: $dark-bg;
+    }
+  }
+
+  .heat--0 { background-color: rgba(226, 168, 95, 0.08); }
+  .heat--1 { background-color: rgba(226, 168, 95, 0.24); }
+  .heat--2 { background-color: rgba(226, 168, 95, 0.40); }
+  .heat--3 { background-color: rgba(226, 168, 95, 0.58); }
+  .heat--4 { background-color: rgba(226, 168, 95, 0.78); }
+  .heat--5 { background-color: rgba(226, 168, 95, 1); }
+
+  .heatmap-year,
+  .heat-label,
+  .heat-legend {
+    color: $dark-muted;
+  }
+
+  [data-view="shelf"] .year-block ul {
+    border-bottom-color: $dark-border;
+  }
+
   // The light sweep is invisible on a dark placeholder.
   .cover-thumb-wrap:not(.is-settled)::before {
     background: linear-gradient(
@@ -1121,6 +1258,70 @@ body,
     width: 12px;
     height: 14px;
     border-radius: 2px;
+  }
+}
+
+// Month-by-month watch heatmap. Books only carry a year, so this is the one
+// part of the log fine-grained enough to show a rhythm.
+.heatmap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.heatmap-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.heatmap-year {
+  flex: 0 0 auto;
+  width: 42px;
+  font-size: 13px;
+  color: $grey-color-dark;
+  font-variant-numeric: tabular-nums;
+}
+
+.heat {
+  flex: 1 1 0;
+  min-width: 0;
+  height: 26px;
+  border-radius: 3px;
+  background-color: $grey-color-light;
+}
+
+.heat--0 { background-color: rgba(168, 99, 44, 0.07); }
+.heat--1 { background-color: rgba(168, 99, 44, 0.22); }
+.heat--2 { background-color: rgba(168, 99, 44, 0.38); }
+.heat--3 { background-color: rgba(168, 99, 44, 0.56); }
+.heat--4 { background-color: rgba(168, 99, 44, 0.76); }
+.heat--5 { background-color: rgba(168, 99, 44, 1); }
+
+.heat-label {
+  flex: 1 1 0;
+  min-width: 0;
+  text-align: center;
+  font-size: 11px;
+  color: $grey-color;
+  text-transform: uppercase;
+}
+
+.heat-legend {
+  list-style: none;
+  margin: 0 0 $spacing-unit;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: $grey-color-dark;
+
+  .heat {
+    flex: 0 0 auto;
+    width: 16px;
+    height: 16px;
   }
 }
 

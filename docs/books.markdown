@@ -37,7 +37,21 @@ by title (leading articles ignored), which is the default ungrouped view; the
       <div class="view-toggle" role="group" aria-label="View as">
         <button type="button" class="view-button" data-view="list" aria-pressed="true">List</button>
         <button type="button" class="view-button" data-view="grid" aria-pressed="false">Grid</button>
+        <button type="button" class="view-button" data-view="shelf" aria-pressed="false">Shelf</button>
       </div>
+    </div>
+    {%- comment -%}
+    Filters on the era buckets the Stats page already colours by. Buttons
+    rather than a select so the whole range is visible at a glance; main.js
+    wires them up and hides the row if scripting is off.
+    {%- endcomment -%}
+    <div class="era-filter" role="group" aria-label="Filter by when the book was written" hidden>
+      <button type="button" class="era-chip" data-era="all" aria-pressed="true">All</button>
+      <button type="button" class="era-chip" data-era="pre1800" aria-pressed="false">before 1800</button>
+      <button type="button" class="era-chip" data-era="c19" aria-pressed="false">1800s</button>
+      <button type="button" class="era-chip" data-era="c20a" aria-pressed="false">1900–49</button>
+      <button type="button" class="era-chip" data-era="c20b" aria-pressed="false">1950–99</button>
+      <button type="button" class="era-chip" data-era="c21" aria-pressed="false">2000s</button>
     </div>
     <nav class="jump-rail" aria-label="Jump to section" hidden></nav>
     <p class="stats-summary" aria-live="polite"></p>

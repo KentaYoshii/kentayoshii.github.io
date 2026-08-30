@@ -27,6 +27,11 @@ jobs:
       - name: Regenerate docs/_data
         run: python3 scripts/build.py
 
+      # Scoped to docs/_data on purpose. build.py also regenerates the PNGs
+      # in docs/assets, but zlib's output is not guaranteed identical across
+      # versions, so byte-comparing them here would fail on a runner whose
+      # zlib differs from the author's. Stale data implies stale images
+      # anyway, since both come from the same run.
       - name: Check the committed data matches
         run: |
           if ! git diff --quiet -- docs/_data; then

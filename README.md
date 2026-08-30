@@ -27,10 +27,11 @@ docs/                     Jekyll site root
   assets/js/main.js       search, grouping, cover art, dark mode
   assets/main.scss        theme
 scripts/
-  build.py                runs all three, in order — the usual entry point
+  build.py                runs all four, in order — the usual entry point
   merge_books.py          builds _data/books.json
   build_movies.py         builds _data/movies.json
   build_stats.py          builds _data/stats.json (reads the other two)
+  build_images.py         draws the favicon and social card from books.json
 goodreads_library_export.csv   latest Goodreads export
 ```
 
@@ -232,6 +233,21 @@ A few pieces that are not obvious from the markup:
 - **Spine wall** — rendered in Liquid from `_data/books.json`, no extra data:
   width is `pages / 40` and the era colour is a comparison chain on
   `published`.
+- **Shelf view** — a third view mode where each entry is a spine. `main.js`
+  tags every row with `data-era` and a `--spine-h` at startup, because CSS
+  cannot read a page count out of a data attribute. Entries with no page count
+  get a stable pseudo-height from their title, or a shelf of identical spines
+  reads as a bar chart.
+- **Era chips** — filter on the same five buckets, using the `data-era` the
+  shelf already needs. They combine with the search rather than replacing it.
+- **Watch heatmap** — a year × month grid on the Stats page. Books carry only
+  a year, so movies are the one part of the log fine-grained enough to show a
+  rhythm. Shading is bucketed into six levels in Liquid, which has no float
+  division.
+- **Generated images** — `build_images.py` writes PNG by hand (zlib + struct,
+  no image library) because both images are axis-aligned rectangles and no
+  text is drawn. Link previews render `og:title` beside the image, and a
+  favicon has no room for words.
 
 ## Adding dev notes
 
@@ -281,16 +297,12 @@ that Slack, iMessage and social sites read. Every page carries its own
 `description:` in its front matter; without one it inherits the site-wide
 description, which makes every link preview read identically.
 
-There is no `og:image`, so previews render as small text-only cards. To
-upgrade them to large image cards, add a raster image (PNG or JPG — SVG is not
-reliably supported) and point `_config.yml` at it:
-
-```yaml
-image: /assets/social-card.png
-```
-
-Recommended size is 1200×630. Do not reference a file that does not exist —
-a broken `og:image` previews worse than none at all.
+The `og:image` is `assets/social-card.png`, drawn from the shelf by
+`build_images.py` — one spine per book, width by page count, colour by era —
+so the card is the actual collection rather than a logo, and it changes as the
+shelf grows. Note that `jekyll-seo-tag` reads `page.image` and does **not**
+fall back to `site.image`, so it is set through Jekyll `defaults` in
+`_config.yml`, not as a plain site key.
 
 ## CI
 

@@ -14,6 +14,7 @@ time keeps the stats page free of client-side work.
 import collections
 import json
 import os
+import re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -79,6 +80,55 @@ def ordinal(n):
     return '%d%s' % (n, suffix)
 
 
+MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
+          'August', 'September', 'October', 'November', 'December']
+
+# The log marks shows with "(TV Series)" or "Season N"; anything else is a film.
+TV_RE = re.compile(r'\(\s*tv series\s*\)|\bseason\s+\d+\b', re.I)
+
+
+def median(xs):
+    s = sorted(xs)
+    return s[len(s) // 2] if s else None
+
+
+def movie_stats(movies, movie_years):
+    """Counts, extremes and a year x month grid for the watch heatmap."""
+    per_month = collections.Counter(m['date'] for m in movies if m['month'])
+    years = sorted({m['year'] for m in movies})
+
+    # Every month of every year present, zeros included — the heatmap needs
+    # the empty cells as much as the busy ones.
+    grid = []
+    for y in years:
+        cells = [{'month': MONTHS[i][:3],
+                  'count': per_month.get('%s-%02d' % (y, i + 1), 0)}
+                 for i in range(12)]
+        grid.append({'year': y, 'months': cells})
+
+    busiest = per_month.most_common(1)[0] if per_month else (None, 0)
+    shows = [m for m in movies if TV_RE.search(m['title'])]
+    undated = [m for m in movies if not m['month']]
+
+    return {
+        'total': len(movies),
+        'films': len(movies) - len(shows),
+        'shows': len(shows),
+        'by_year': [{'year': y, 'count': movie_years[y]}
+                    for y in sorted(movie_years, reverse=True)],
+        'heatmap': grid,
+        'heatmap_max': max(per_month.values()) if per_month else 0,
+        'months_logged': len(per_month),
+        'month_median': median(list(per_month.values())),
+        'busiest_month': {
+            'label': '%s %s' % (MONTHS[int(busiest[0][5:]) - 1], busiest[0][:4])
+                     if busiest[0] else None,
+            'count': busiest[1],
+        },
+        'undated': len(undated),
+    }
+
+
 def main():
     books = load('books.json')
     movies = load('movies.json')
@@ -134,11 +184,7 @@ def main():
             'top_series': [{'name': n, 'count': c}
                            for n, c in by_series.most_common(8)],
         },
-        'movies': {
-            'total': len(movies),
-            'by_year': [{'year': y, 'count': movie_years[y]}
-                        for y in sorted(movie_years, reverse=True)],
-        },
+        'movies': movie_stats(movies, movie_years),
     }
 
     out = os.path.join(DATA, 'stats.json')
