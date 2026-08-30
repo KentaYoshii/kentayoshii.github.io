@@ -1309,6 +1309,14 @@ body,
   .heat--4 { background-color: rgba(226, 168, 95, 0.78); }
   .heat--5 { background-color: rgba(226, 168, 95, 1); }
 
+  .heat--future {
+    background-image: repeating-linear-gradient(
+      45deg, rgba(226, 168, 95, 0.16), rgba(226, 168, 95, 0.16) 2px,
+      transparent 2px, transparent 6px
+    );
+    border-color: $dark-border;
+  }
+
   .heatmap-year,
   .heat-label,
   .heat-legend {
@@ -1460,6 +1468,18 @@ body,
 .heat--3 { background-color: rgba(168, 99, 44, 0.56); }
 .heat--4 { background-color: rgba(168, 99, 44, 0.76); }
 .heat--5 { background-color: rgba(168, 99, 44, 1); }
+
+// A month that has not happened yet, not a month with nothing watched —
+// a faint diagonal hatch rather than a flat fill, so the current year
+// visibly trails off into "no data" instead of reading as a quiet stretch.
+.heat--future {
+  background-color: transparent;
+  background-image: repeating-linear-gradient(
+    45deg, rgba(168, 99, 44, 0.12), rgba(168, 99, 44, 0.12) 2px,
+    transparent 2px, transparent 6px
+  );
+  border: 1px dashed $grey-color-light;
+}
 
 .heat-label {
   flex: 1 1 0;

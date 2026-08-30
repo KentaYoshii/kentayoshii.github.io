@@ -153,13 +153,19 @@ can do, so this needs no extra data.
 A month-by-month heatmap. Books are only recorded to the year, so this is the
 one part of the log with fine enough grain to show a rhythm. Cell shading is
 bucketed in Liquid rather than computed as a continuous ramp, because Liquid
-has no float division.
+has no float division. A cell with no count at all is a month that has not
+happened yet — build_stats.py only zero-fills the current year through the
+current month — and gets its own "future" styling rather than looking like a
+genuinely quiet month.
 {%- endcomment -%}
 <div class="heatmap">
   {%- for row in m.heatmap -%}
   <div class="heatmap-row">
     <span class="heatmap-year">{{ row.year }}</span>
     {%- for cell in row.months -%}
+    {%- if cell.count == nil -%}
+    <span class="heat heat--future" title="{{ cell.month }} {{ row.year }}: not yet"></span>
+    {%- else -%}
     {%- assign pct = cell.count | times: 100 | divided_by: m.heatmap_max -%}
     {%- if cell.count == 0 -%}{%- assign lvl = 0 -%}
     {%- elsif pct < 20 -%}{%- assign lvl = 1 -%}
@@ -169,6 +175,7 @@ has no float division.
     {%- else -%}{%- assign lvl = 5 -%}
     {%- endif -%}
     <span class="heat heat--{{ lvl }}" title="{{ cell.month }} {{ row.year }}: {{ cell.count }}"></span>
+    {%- endif -%}
     {%- endfor -%}
   </div>
   {%- endfor -%}

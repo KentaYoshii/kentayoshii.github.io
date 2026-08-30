@@ -349,7 +349,13 @@ A few pieces that are not obvious from the markup:
 - **Watch heatmap** — a year × month grid on the Stats page. Books carry only
   a year, so movies are the one part of the log fine-grained enough to show a
   rhythm. Shading is bucketed into six levels in Liquid, which has no float
-  division.
+  division. The current year is zero-filled only through the current month
+  (`build_stats.py` checks against `datetime.date.today()`) — a month that
+  has not happened yet gets `count: null` and a distinct hatched `.heat--future`
+  cell, rather than being shaded identically to a month with genuinely
+  nothing watched. Without that, the row for the year in progress would trail
+  off into a stretch of flat "zero" cells indistinguishable from an actual
+  quiet spell.
 - **Generated images** — `build_images.py` writes PNG by hand (zlib + struct,
   no image library) because both images are axis-aligned rectangles and no
   text is drawn. Link previews render `og:title` beside the image, and a

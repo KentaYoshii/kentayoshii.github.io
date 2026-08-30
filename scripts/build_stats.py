@@ -12,6 +12,7 @@ time keeps the stats page free of client-side work.
 """
 
 import collections
+import datetime
 import json
 import os
 import re
@@ -103,11 +104,18 @@ def movie_stats(movies, movie_years):
     years = sorted({m['year'] for m in movies})
 
     # Every month of every year present, zeros included — the heatmap needs
-    # the empty cells as much as the busy ones.
+    # the empty cells as much as the busy ones. The current year is the one
+    # exception: a month that has not happened yet is not "zero watched",
+    # it is "no data yet", and shading it the same as a genuine quiet month
+    # would make the row look like it trails off into empty space rather
+    # than simply being in progress. count is None for those months instead
+    # of 0, which the template renders as a distinct "future" cell.
+    today = datetime.date.today()
     grid = []
     for y in years:
+        month_cap = today.month if y == str(today.year) else 12
         cells = [{'month': MONTHS[i][:3],
-                  'count': per_month.get('%s-%02d' % (y, i + 1), 0)}
+                  'count': per_month.get('%s-%02d' % (y, i + 1), 0) if i < month_cap else None}
                  for i in range(12)]
         grid.append({'year': y, 'months': cells})
 
