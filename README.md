@@ -221,6 +221,21 @@ A few pieces that are not obvious from the markup:
 - **Cover shimmer** — keyed off `.is-settled`, which `applyCover` adds however
   the lookup ends. A miss has to settle too, or the placeholder would animate
   forever on the ~150 books with no cover.
+- **Status strip** — a muted line under the header on every page: the
+  author's local time, current weather, and a small CSS panda, inserted by
+  `initStatusStrip()` rather than templated, so nothing else needed to
+  change. Fixed to New York regardless of visitor — this is the author's
+  time and weather, not a geolocation feature — via `STATUS_LAT` /
+  `STATUS_LON` / `STATUS_TIMEZONE` at the top of that function in `main.js`.
+  Weather comes from Open-Meteo, chosen because it needs no key and no
+  attribution. Each part degrades independently: the clock needs nothing to
+  render, the weather text simply never appears on a failed fetch, and the
+  panda falls back to a fixed-hour day/night guess in `STATUS_TIMEZONE`
+  rather than being left assuming weather it never received. The panda
+  itself is plain divs and `border-radius`, the same "hand-drawn, no image
+  files" approach as the spine wall and heat legend — sunglasses, an
+  umbrella, and falling snowflakes are mutually exclusive classes main.js
+  toggles from the forecast's weather code.
 - **Landing page mosaic** — 24 slots chosen at build time by striding through
   the title-sorted shelf and watch list (`MOSAIC_COUNT` / `MOSAIC_MOVIES` in
   `build_stats.py`), so it is not 24 titles beginning with "A". Book jackets

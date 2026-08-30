@@ -1018,6 +1018,220 @@ body,
   }
 }
 
+// A muted line under the header: local time, weather, and a small CSS panda.
+// Built from plain divs and border-radius rather than an image, same as the
+// rest of the site's hand-drawn decoration (spine wall, heat legend).
+.status-strip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 6px calc(#{$spacing-unit} / 2) 0;
+}
+
+.status-text {
+  font-size: 13px;
+  color: $grey-color;
+}
+
+.status-panda {
+  position: relative;
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.panda-ear {
+  position: absolute;
+  top: -1px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: #2b2b2b;
+
+  &.left { left: 2px; }
+  &.right { right: 2px; }
+}
+
+.panda-head {
+  position: absolute;
+  inset: 4px 3px 2px;
+  border-radius: 50%;
+  background-color: #fdfdfa;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.panda-patch {
+  position: absolute;
+  top: 9px;
+  width: 10px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #2b2b2b;
+
+  &.left { left: 4px; transform: rotate(-12deg); }
+  &.right { right: 4px; transform: rotate(12deg); }
+}
+
+.panda-eye {
+  position: absolute;
+  top: 14px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #fdfdfa;
+  // Idle blink, always running — the night/sunglasses states hide it rather
+  // than stopping it, so it never freezes mid-blink when a state changes.
+  animation: panda-blink 5s ease-in-out infinite;
+
+  &.left { left: 7px; }
+  &.right { right: 7px; }
+}
+
+.panda-nose {
+  position: absolute;
+  top: 21px;
+  left: 50%;
+  width: 5px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #2b2b2b;
+  transform: translateX(-50%);
+}
+
+// Weather accessories. Only one of these is ever visible at once — main.js
+// toggles is-sunny/is-rain/is-snow as a mutually exclusive trio.
+.panda-shades,
+.panda-umbrella,
+.panda-snowflake {
+  opacity: 0;
+}
+
+.panda-shades {
+  position: absolute;
+  top: 13px;
+  left: 6px;
+  right: 6px;
+  height: 5px;
+  border-radius: 3px;
+  background-color: #111;
+}
+
+.panda-umbrella {
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  width: 26px;
+  height: 13px;
+  border-radius: 26px 26px 0 0;
+  background-color: $brand-color;
+  transform: translateX(-50%);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 50%;
+    width: 2px;
+    height: 8px;
+    background-color: $brand-color;
+    transform: translateX(-50%);
+  }
+}
+
+.panda-snowflake {
+  position: absolute;
+  top: -6px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: $grey-color-light;
+  animation: panda-snowfall 3.2s linear infinite;
+
+  &.a { left: 2px; animation-delay: 0s; }
+  &.b { left: 18px; animation-delay: 1.1s; }
+  &.c { left: 30px; animation-delay: 2.1s; }
+}
+
+.status-panda.is-sunny .panda-shades { opacity: 1; }
+.status-panda.is-rain .panda-umbrella { opacity: 1; }
+
+.status-panda.is-snow .panda-snowflake {
+  animation-play-state: running;
+  opacity: 1;
+}
+
+.panda-zzz {
+  position: absolute;
+  top: -4px;
+  right: -6px;
+  font-size: 11px;
+  font-weight: 700;
+  color: $grey-color;
+  opacity: 0;
+}
+
+// Curls up, closes its eyes, and stops blinking — a closed eye mid-blink
+// animation would pop back open every 5 seconds, which reads as awake.
+.status-panda.is-night {
+  transform: scale(0.92) rotate(-4deg);
+
+  .panda-eye {
+    top: 15px;
+    height: 1px;
+    border-radius: 1px;
+    animation: none;
+  }
+
+  .panda-zzz {
+    opacity: 1;
+    animation: panda-zzz-float 2.4s ease-in infinite;
+  }
+}
+
+@keyframes panda-blink {
+  0%, 92%, 100% { transform: scaleY(1); }
+  95% { transform: scaleY(0.1); }
+}
+
+@keyframes panda-snowfall {
+  0% { transform: translateY(0); opacity: 0; }
+  15% { opacity: 1; }
+  100% { transform: translateY(34px); opacity: 0; }
+}
+
+@keyframes panda-zzz-float {
+  0% { transform: translateY(0); opacity: 0; }
+  30% { opacity: 1; }
+  100% { transform: translateY(-10px); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .panda-eye,
+  .panda-snowflake,
+  .status-panda.is-night .panda-zzz {
+    animation: none;
+  }
+}
+
+@media screen and (max-width: $on-palm) {
+  .status-strip {
+    padding-left: $spacing-unit / 2;
+    padding-right: $spacing-unit / 2;
+  }
+
+  .status-panda {
+    width: 32px;
+    height: 32px;
+  }
+
+  .status-text {
+    font-size: 12px;
+  }
+}
+
 [data-theme="dark"] {
   $dark-bg: #1c1712;
   $dark-surface: #241d16;
@@ -1431,5 +1645,29 @@ body,
 
   .theme-toggle:hover {
     border-color: $dark-brand;
+  }
+
+  .status-text {
+    color: $dark-muted;
+  }
+
+  .panda-head {
+    background-color: $dark-surface;
+    border-color: $dark-border;
+  }
+
+  .panda-ear,
+  .panda-patch,
+  .panda-nose,
+  .panda-shades {
+    background-color: $dark-bg;
+  }
+
+  .panda-eye {
+    background-color: $dark-surface;
+  }
+
+  .panda-zzz {
+    color: $dark-muted;
   }
 }

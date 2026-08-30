@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initCollectionPage();
   initCoverArt();
   initCoverMosaic();
+  initStatusStrip();
   initVimTipsToc();
 });
 
@@ -547,6 +548,131 @@ function startMosaicDrift(band) {
   track.style.setProperty('--mosaic-shift', '-' + shift + 'px');
   track.style.setProperty('--mosaic-duration', (shift / MOSAIC_SPEED) + 's');
   track.classList.add('is-drifting');
+}
+
+// A fixed location, not the visitor's: this is the author's local time and
+// weather, shown the same way to everyone, not something geolocation should
+// personalize. Hardcoded here rather than threaded through _config.yml for
+// the same reason TMDB_API_KEY is — it belongs to this one piece of JS and a
+// config layer would only add indirection.
+var STATUS_LAT = 40.7128;
+var STATUS_LON = -74.006;
+var STATUS_TIMEZONE = 'America/New_York';
+var STATUS_PLACE = 'NYC';
+
+// Open Library and TMDB above are keyless too, but this one is also
+// attribution-free and asks nothing of a static site with no backend: a plain
+// GET with no key, no account, no rate-limit bookkeeping.
+var WEATHER_URL = 'https://api.open-meteo.com/v1/forecast?latitude=' + STATUS_LAT +
+  '&longitude=' + STATUS_LON + '&current_weather=true&temperature_unit=fahrenheit';
+
+// WMO weather codes -> a short label and the panda's reaction to them. Open
+// Library and TMDB fold way more cases than this; a status strip does not
+// need meteorological precision, just enough to pick "sun, rain, snow, or
+// plain cloud" and say something readable next to the temperature.
+var WEATHER_CODES = {
+  0: ['clear', 'sunny'], 1: ['mostly clear', 'sunny'], 2: ['partly cloudy', 'cloudy'],
+  3: ['overcast', 'cloudy'],
+  45: ['foggy', 'cloudy'], 48: ['foggy', 'cloudy'],
+  51: ['drizzling', 'rain'], 53: ['drizzling', 'rain'], 55: ['drizzling', 'rain'],
+  56: ['icy drizzle', 'rain'], 57: ['icy drizzle', 'rain'],
+  61: ['raining', 'rain'], 63: ['raining', 'rain'], 65: ['raining hard', 'rain'],
+  66: ['icy rain', 'rain'], 67: ['icy rain', 'rain'],
+  71: ['snowing', 'snow'], 73: ['snowing', 'snow'], 75: ['snowing hard', 'snow'],
+  77: ['snow grains', 'snow'],
+  80: ['rain showers', 'rain'], 81: ['rain showers', 'rain'], 82: ['heavy showers', 'rain'],
+  85: ['snow showers', 'snow'], 86: ['snow showers', 'snow'],
+  95: ['thunderstorms', 'rain'], 96: ['thunderstorms', 'rain'], 97: ['thunderstorms', 'rain'],
+  99: ['thunderstorms', 'rain']
+};
+
+// A muted line under the header: local time, current weather, and a small
+// CSS panda that reacts to both. Every part degrades independently — the
+// clock needs nothing, the weather text disappears on a failed fetch, and the
+// panda falls back to a JS-computed day/night guess rather than staying
+// caught in an in-between "sunny at night" state if the fetch never lands.
+function initStatusStrip() {
+  var header = document.querySelector('.site-header');
+  if (!header) return;
+
+  var strip = document.createElement('div');
+  strip.className = 'status-strip';
+  strip.innerHTML =
+    '<div class="status-panda" data-panda aria-hidden="true">' +
+      '<span class="panda-ear left"></span><span class="panda-ear right"></span>' +
+      '<span class="panda-head">' +
+        '<span class="panda-patch left"></span><span class="panda-patch right"></span>' +
+        '<span class="panda-eye left"></span><span class="panda-eye right"></span>' +
+        '<span class="panda-shades"></span>' +
+        '<span class="panda-nose"></span>' +
+      '</span>' +
+      '<span class="panda-umbrella"></span>' +
+      '<span class="panda-snowflake a"></span><span class="panda-snowflake b"></span><span class="panda-snowflake c"></span>' +
+      '<span class="panda-zzz">z</span>' +
+    '</div>' +
+    '<span class="status-text" data-status-text></span>';
+  header.insertAdjacentElement('afterend', strip);
+
+  var panda = strip.querySelector('[data-panda]');
+  var textEl = strip.querySelector('[data-status-text]');
+
+  var clockFormat;
+  try {
+    clockFormat = new Intl.DateTimeFormat('en-US', {
+      hour: 'numeric', minute: '2-digit', timeZone: STATUS_TIMEZONE
+    });
+  } catch (e) {
+    clockFormat = null;   // an unsupported timeZone string; skip the clock rather than throw
+  }
+
+  // Set once the weather fetch settles; renderClock() reads it on every tick
+  // so a later-arriving forecast updates the line without a second render path.
+  var weatherText = null;
+
+  function renderClock() {
+    if (!clockFormat) return;
+    var time = clockFormat.format(new Date());
+    textEl.textContent = time + ' in ' + STATUS_PLACE + (weatherText ? ' · ' + weatherText : '');
+  }
+
+  if (clockFormat) {
+    renderClock();
+    setInterval(renderClock, 15000);
+  } else {
+    textEl.remove();
+  }
+
+  // Falls back to a fixed-hour guess in STATUS_TIMEZONE if the forecast never
+  // arrives, so the panda is never left assuming weather it doesn't have. The
+  // guess is in NYC's hour, not the visitor's — the clock next to it is too.
+  function applyDayNight(isDay) {
+    panda.classList.toggle('is-night', !isDay);
+  }
+  var nyHour = 12;
+  try {
+    nyHour = parseInt(new Intl.DateTimeFormat('en-US', {
+      hour: 'numeric', hour12: false, timeZone: STATUS_TIMEZONE
+    }).format(new Date()), 10);
+  } catch (e) { /* unsupported timeZone string; stay with the daytime default */ }
+  applyDayNight(nyHour >= 7 && nyHour < 19);
+
+  fetch(WEATHER_URL)
+    .then(function (res) { return res.json(); })
+    .then(function (data) {
+      var cw = data && data.current_weather;
+      if (!cw) return;
+      applyDayNight(cw.is_day === 1);
+      var info = WEATHER_CODES[cw.weathercode] || ['', 'cloudy'];
+      panda.classList.remove('is-sunny', 'is-rain', 'is-snow');
+      // Sunglasses only read as "sunny" in daylight; showing them on a clear
+      // night would look like a mistake rather than a joke.
+      if (info[1] === 'sunny' && cw.is_day === 1) panda.classList.add('is-sunny');
+      if (info[1] === 'rain') panda.classList.add('is-rain');
+      if (info[1] === 'snow') panda.classList.add('is-snow');
+      weatherText = Math.round(cw.temperature) + '°F' + (info[0] ? ', ' + info[0] : '');
+      renderClock();
+    })
+    .catch(function () { /* no network, or Open-Meteo is down — clock stands alone */ });
 }
 
 // Builds a quick-jump table of contents for the Vim Tips page from its
