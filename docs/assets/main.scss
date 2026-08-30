@@ -38,6 +38,12 @@ h1, h2, h3, h4, h5, h6 {
   border-top: 6px solid $brand-color;
   border-bottom: 1px solid $grey-color-light;
   background-color: #f3e8d5;
+
+  // Minima positions the mobile nav dropdown absolutely but leaves it on the
+  // default layer. The full-bleed ".wide-section" blocks are also positioned,
+  // come later in the DOM, and so paint over the open menu. Lift the whole
+  // header (the nav's positioning context) above the page content.
+  z-index: 10;
 }
 
 .site-title,
