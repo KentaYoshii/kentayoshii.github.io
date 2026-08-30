@@ -35,10 +35,24 @@
   "letter": "A"
  },
  {
+  "title": "Air",
+  "year": "2026",
+  "month": "February",
+  "date": "2026-02",
+  "letter": "A"
+ },
+ {
   "title": "AK-47 Kalashnikov",
   "year": "2025",
   "month": "September",
   "date": "2025-09",
+  "letter": "A"
+ },
+ {
+  "title": "The Alabama Solution",
+  "year": "2026",
+  "month": "July",
+  "date": "2026-07",
   "letter": "A"
  },
  {
@@ -60,6 +74,13 @@
   "year": "2025",
   "month": "April",
   "date": "2025-04",
+  "letter": "A"
+ },
+ {
+  "title": "The Alpinist",
+  "year": "2026",
+  "month": "February",
+  "date": "2026-02",
   "letter": "A"
  },
  {
@@ -102,6 +123,27 @@
   "year": "2024",
   "month": "March",
   "date": "2024-03",
+  "letter": "B"
+ },
+ {
+  "title": "Blade",
+  "year": "2026",
+  "month": "January",
+  "date": "2026-01",
+  "letter": "B"
+ },
+ {
+  "title": "Blade II",
+  "year": "2026",
+  "month": "January",
+  "date": "2026-01",
+  "letter": "B"
+ },
+ {
+  "title": "Blade: Trinity",
+  "year": "2026",
+  "month": "January",
+  "date": "2026-01",
   "letter": "B"
  },
  {
@@ -193,6 +235,13 @@
   "year": "2025",
   "month": "June",
   "date": "2025-06",
+  "letter": "C"
+ },
+ {
+  "title": "Crime 101",
+  "year": "2026",
+  "month": "April",
+  "date": "2026-04",
   "letter": "C"
  },
  {
@@ -336,6 +385,13 @@
   "letter": "F"
  },
  {
+  "title": "The Firm",
+  "year": "2026",
+  "month": "January",
+  "date": "2026-01",
+  "letter": "F"
+ },
+ {
   "title": "Flight Risk",
   "year": "2025",
   "month": "November",
@@ -354,6 +410,13 @@
   "year": "2024",
   "month": "December",
   "date": "2024-12",
+  "letter": "F"
+ },
+ {
+  "title": "Free Solo",
+  "year": "2026",
+  "month": "January",
+  "date": "2026-01",
   "letter": "F"
  },
  {
@@ -399,10 +462,31 @@
   "letter": "G"
  },
  {
+  "title": "Gone with the Wind",
+  "year": "2026",
+  "month": "January",
+  "date": "2026-01",
+  "letter": "G"
+ },
+ {
+  "title": "A Good Day to Die Hard",
+  "year": "2026",
+  "month": "January",
+  "date": "2026-01",
+  "letter": "G"
+ },
+ {
   "title": "The Great Debaters",
   "year": "2025",
   "month": "January",
   "date": "2025-01",
+  "letter": "G"
+ },
+ {
+  "title": "The Great Wall",
+  "year": "2026",
+  "month": "May",
+  "date": "2026-05",
   "letter": "G"
  },
  {
@@ -413,10 +497,38 @@
   "letter": "H"
  },
  {
+  "title": "The Hobbit: An Unexpected Journey",
+  "year": "2026",
+  "month": "March",
+  "date": "2026-03",
+  "letter": "H"
+ },
+ {
+  "title": "The Hobbit: The Battle of the Five Armies",
+  "year": "2026",
+  "month": "March",
+  "date": "2026-03",
+  "letter": "H"
+ },
+ {
+  "title": "The Hobbit: The Desolation of Smaug",
+  "year": "2026",
+  "month": "March",
+  "date": "2026-03",
+  "letter": "H"
+ },
+ {
   "title": "Homestead",
   "year": "2025",
   "month": "May",
   "date": "2025-05",
+  "letter": "H"
+ },
+ {
+  "title": "How to Make a Killing",
+  "year": "2026",
+  "month": "May",
+  "date": "2026-05",
   "letter": "H"
  },
  {
@@ -459,6 +571,13 @@
   "year": "2025",
   "month": "April",
   "date": "2025-04",
+  "letter": "I"
+ },
+ {
+  "title": "In the Heart of the Sea",
+  "year": "2026",
+  "month": "February",
+  "date": "2026-02",
   "letter": "I"
  },
  {
@@ -616,6 +735,27 @@
   "letter": "L"
  },
  {
+  "title": "The Lord of the Rings: The Fellowship of the Ring",
+  "year": "2026",
+  "month": "March",
+  "date": "2026-03",
+  "letter": "L"
+ },
+ {
+  "title": "The Lord of the Rings: The Return of the King",
+  "year": "2026",
+  "month": "April",
+  "date": "2026-04",
+  "letter": "L"
+ },
+ {
+  "title": "The Lord of the Rings: The Two Towers",
+  "year": "2026",
+  "month": "March",
+  "date": "2026-03",
+  "letter": "L"
+ },
+ {
   "title": "Love Hurts",
   "year": "2025",
   "month": "October",
@@ -728,6 +868,13 @@
   "letter": "N"
  },
  {
+  "title": "Nuremberg",
+  "year": "2026",
+  "month": "March",
+  "date": "2026-03",
+  "letter": "N"
+ },
+ {
   "title": "Oblivion",
   "year": "2025",
   "month": "June",
@@ -742,6 +889,20 @@
   "letter": "O"
  },
  {
+  "title": "The Odyssey",
+  "year": "2026",
+  "month": "July",
+  "date": "2026-07",
+  "letter": "O"
+ },
+ {
+  "title": "One Battle After Another",
+  "year": "2026",
+  "month": "July",
+  "date": "2026-07",
+  "letter": "O"
+ },
+ {
   "title": "On Her Majesty's Secret Service",
   "year": "2024",
   "month": "November",
@@ -753,6 +914,13 @@
   "year": "2025",
   "month": "November",
   "date": "2025-11",
+  "letter": "P"
+ },
+ {
+  "title": "The Pianist",
+  "year": "2026",
+  "month": "April",
+  "date": "2026-04",
   "letter": "P"
  },
  {
@@ -788,6 +956,13 @@
   "year": "2025",
   "month": "March",
   "date": "2025-03",
+  "letter": "P"
+ },
+ {
+  "title": "Project Hail Mary",
+  "year": "2026",
+  "month": "April",
+  "date": "2026-04",
   "letter": "P"
  },
  {
@@ -861,6 +1036,20 @@
   "letter": "R"
  },
  {
+  "title": "The Running Man (1987)",
+  "year": "2026",
+  "month": "July",
+  "date": "2026-07",
+  "letter": "R"
+ },
+ {
+  "title": "The Running Man (2025)",
+  "year": "2026",
+  "month": "July",
+  "date": "2026-07",
+  "letter": "R"
+ },
+ {
   "title": "Shogun (TV Series)",
   "year": "2025",
   "month": "February",
@@ -875,6 +1064,13 @@
   "letter": "S"
  },
  {
+  "title": "Sinners",
+  "year": "2026",
+  "month": "January",
+  "date": "2026-01",
+  "letter": "S"
+ },
+ {
   "title": "Skyfall",
   "year": "2024",
   "month": "December",
@@ -886,6 +1082,13 @@
   "year": "2024",
   "month": "December",
   "date": "2024-12",
+  "letter": "S"
+ },
+ {
+  "title": "Spider-Man: Brand New Day",
+  "year": "2026",
+  "month": "August",
+  "date": "2026-08",
   "letter": "S"
  },
  {
@@ -987,6 +1190,13 @@
   "letter": "W"
  },
  {
+  "title": "Wicked",
+  "year": "2026",
+  "month": "April",
+  "date": "2026-04",
+  "letter": "W"
+ },
+ {
   "title": "The Wild Robot",
   "year": "2024",
   "month": "September",
@@ -1008,6 +1218,13 @@
   "letter": "W"
  },
  {
+  "title": "Wolfs",
+  "year": "2026",
+  "month": "April",
+  "date": "2026-04",
+  "letter": "W"
+ },
+ {
   "title": "A Working Man",
   "year": "2025",
   "month": "September",
@@ -1026,6 +1243,13 @@
   "year": "2024",
   "month": "April",
   "date": "2024-04",
+  "letter": "W"
+ },
+ {
+  "title": "Wrath of Man",
+  "year": "2026",
+  "month": "May",
+  "date": "2026-05",
   "letter": "W"
  },
  {

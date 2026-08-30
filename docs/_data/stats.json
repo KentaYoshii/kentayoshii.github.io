@@ -179,8 +179,12 @@
   ]
  },
  "movies": {
-  "total": 148,
+  "total": 180,
   "by_year": [
+   {
+    "year": "2026",
+    "count": 32
+   },
    {
     "year": "2025",
     "count": 102

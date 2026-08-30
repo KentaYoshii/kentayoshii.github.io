@@ -500,12 +500,21 @@ function parseMovieEntry(li) {
   var raw = (li.getAttribute('data-title') || '').trim();
   if (!raw) return null;
   var isSeries = /\(\s*tv series\s*\)/i.test(raw) || /\bseason\s+\d+\b/i.test(raw);
+  // A trailing "(1987)" disambiguates a remake from its original. Pull it out
+  // as a release year: TMDB takes it as a search filter, and leaving it in the
+  // query text would only make the match worse.
+  var yearMatch = raw.match(/\(\s*(1[89]\d\d|20\d\d)\s*\)\s*$/);
   var cleaned = raw
     .replace(/\(\s*tv series\s*\)/ig, '')
     .replace(/\bseason\s+\d+\b/ig, '')
+    .replace(/\(\s*(1[89]\d\d|20\d\d)\s*\)\s*$/, '')
     .replace(/\s{2,}/g, ' ')
     .trim();
-  return { title: cleaned || raw, isSeries: isSeries };
+  return {
+    title: cleaned || raw,
+    isSeries: isSeries,
+    releaseYear: yearMatch ? yearMatch[1] : null
+  };
 }
 
 function getCoverObserver() {
@@ -585,7 +594,10 @@ function applyCover(wrap, url) {
 
 function coverCacheKey(kind, info) {
   if (info.isbn) return kind + ':isbn:' + info.isbn;
-  return kind + ':' + (info.title + '|' + (info.author || '')).toLowerCase();
+  // The release year is part of the key, or a remake and its original would
+  // share one entry and therefore one poster.
+  return kind + ':' + (info.title + '|' + (info.author || '') +
+                       (info.releaseYear ? '|' + info.releaseYear : '')).toLowerCase();
 }
 
 function readCoverCache(key) {
@@ -683,8 +695,14 @@ var TMDB_IMAGE_BASE = 'https://image.tmdb.org/t/p/w200';
 function fetchMovieCover(info) {
   var term = encodeURIComponent(info.title);
 
-  function search(type, posterField) {
-    return fetch('https://api.themoviedb.org/3/search/' + type + '?api_key=' + TMDB_API_KEY + '&query=' + term)
+  function search(type) {
+    // TMDB names the release-year filter differently per catalogue.
+    var yearParam = '';
+    if (info.releaseYear) {
+      yearParam = (type === 'tv' ? '&first_air_date_year=' : '&year=') + info.releaseYear;
+    }
+    return fetch('https://api.themoviedb.org/3/search/' + type + '?api_key=' + TMDB_API_KEY +
+                 '&query=' + term + yearParam)
       .then(function (res) { return res.json(); })
       .then(function (data) {
         var result = data && data.results && data.results[0];

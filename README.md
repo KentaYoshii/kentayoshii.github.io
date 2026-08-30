@@ -148,6 +148,17 @@ catches this.
 Mark TV entries with `(TV Series)` or `Season N` — the cover lookup uses that
 to search TMDB's TV catalogue first, which otherwise returns a wrong film.
 
+To separate a remake from its original, put the release year in the title:
+
+```markdown
+- The Running Man (2025)
+- The Running Man (1987)
+```
+
+The lookup strips a trailing `(YYYY)` off the search text and passes it to
+TMDB as a year filter, and includes it in the cover cache key — without it the
+two would share one cached poster.
+
 ## Writing a post
 
 `/posts/` lists anything in `_posts` filed under `categories: posts`. That

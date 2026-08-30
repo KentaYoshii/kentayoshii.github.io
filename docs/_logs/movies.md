@@ -205,3 +205,51 @@ An entry with no month heading above it sorts to the start of its year.
 - Karate Kid: Legends
 - The Amateur
 - The Running Man
+
+## 2026
+
+### January
+- A Good Day to Die Hard
+- Sinners
+- Blade
+- Blade II
+- The Firm
+- Blade: Trinity
+- Free Solo
+- Gone with the Wind
+
+### February
+- In the Heart of the Sea
+- Air
+- The Alpinist
+
+### March
+- Nuremberg
+- The Hobbit: An Unexpected Journey
+- The Hobbit: The Desolation of Smaug
+- The Hobbit: The Battle of the Five Armies
+- The Lord of the Rings: The Fellowship of the Ring
+- The Lord of the Rings: The Two Towers
+
+### April
+- Project Hail Mary
+- Wicked
+- Wolfs
+- The Lord of the Rings: The Return of the King
+- Crime 101
+- The Pianist
+
+### May
+- Wrath of Man
+- The Great Wall
+- How to Make a Killing
+
+### July
+- The Odyssey
+- One Battle After Another
+- The Alabama Solution
+- The Running Man (2025)
+- The Running Man (1987)
+
+### August
+- Spider-Man: Brand New Day
