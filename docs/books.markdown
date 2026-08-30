@@ -68,5 +68,3 @@ by title (leading articles ignored), which is the default ungrouped view; the
   </div>
 </div>
 </div></div>
-
-<script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>

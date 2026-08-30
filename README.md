@@ -301,6 +301,12 @@ A few pieces that are not obvious from the markup:
   part degrades independently: the clock needs nothing to render, the
   weather text simply never appears on a failed fetch, and the quote needs
   no network at all.
+- **Dark-mode toggle** — a 🌙/☀️ button next to the site title on every page,
+  wired up by `initThemeToggle()` in `main.js`. Sets a `data-theme="dark"`
+  attribute on the document root (no attribute = light mode) and persists the
+  choice to `localStorage`. The toggle was moved next to the title from inside
+  the mobile nav so it's always visible rather than tucked behind the
+  hamburger menu.
 - **Landing page mosaic** — 24 slots chosen at build time by striding through
   the title-sorted shelf and watch list (`MOSAIC_COUNT` / `MOSAIC_MOVIES` in
   `build_stats.py`), so it is not 24 titles beginning with "A". Book jackets

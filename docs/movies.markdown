@@ -51,5 +51,3 @@ ignored; the "group by" control re-groups it client-side.
   </div>
 </div>
 </div></div>
-
-<script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>

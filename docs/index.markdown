@@ -103,5 +103,3 @@ the track.
 </section>
 
 </div></div>
-
-<script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
