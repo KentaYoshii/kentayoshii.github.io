@@ -566,31 +566,36 @@ var STATUS_PLACE = 'NYC';
 var WEATHER_URL = 'https://api.open-meteo.com/v1/forecast?latitude=' + STATUS_LAT +
   '&longitude=' + STATUS_LON + '&current_weather=true&temperature_unit=fahrenheit';
 
-// WMO weather codes -> a short label and the panda's reaction to them. Open
-// Library and TMDB fold way more cases than this; a status strip does not
-// need meteorological precision, just enough to pick "sun, rain, snow, or
-// plain cloud" and say something readable next to the temperature.
+// WMO weather codes -> a short label and a weather emoji. Open Library and
+// TMDB fold way more cases than this; a status strip does not need
+// meteorological precision, just enough to say something readable next to
+// the temperature and show a recognizable glyph beside the panda.
 var WEATHER_CODES = {
-  0: ['clear', 'sunny'], 1: ['mostly clear', 'sunny'], 2: ['partly cloudy', 'cloudy'],
-  3: ['overcast', 'cloudy'],
-  45: ['foggy', 'cloudy'], 48: ['foggy', 'cloudy'],
-  51: ['drizzling', 'rain'], 53: ['drizzling', 'rain'], 55: ['drizzling', 'rain'],
-  56: ['icy drizzle', 'rain'], 57: ['icy drizzle', 'rain'],
-  61: ['raining', 'rain'], 63: ['raining', 'rain'], 65: ['raining hard', 'rain'],
-  66: ['icy rain', 'rain'], 67: ['icy rain', 'rain'],
-  71: ['snowing', 'snow'], 73: ['snowing', 'snow'], 75: ['snowing hard', 'snow'],
-  77: ['snow grains', 'snow'],
-  80: ['rain showers', 'rain'], 81: ['rain showers', 'rain'], 82: ['heavy showers', 'rain'],
-  85: ['snow showers', 'snow'], 86: ['snow showers', 'snow'],
-  95: ['thunderstorms', 'rain'], 96: ['thunderstorms', 'rain'], 97: ['thunderstorms', 'rain'],
-  99: ['thunderstorms', 'rain']
+  0: ['clear', '☀️'], 1: ['mostly clear', '🌤️'], 2: ['partly cloudy', '⛅'],
+  3: ['overcast', '☁️'],
+  45: ['foggy', '🌫️'], 48: ['foggy', '🌫️'],
+  51: ['drizzling', '🌦️'], 53: ['drizzling', '🌦️'], 55: ['drizzling', '🌦️'],
+  56: ['icy drizzle', '🌧️'], 57: ['icy drizzle', '🌧️'],
+  61: ['raining', '🌧️'], 63: ['raining', '🌧️'], 65: ['raining hard', '🌧️'],
+  66: ['icy rain', '🌧️'], 67: ['icy rain', '🌧️'],
+  71: ['snowing', '🌨️'], 73: ['snowing', '🌨️'], 75: ['snowing hard', '❄️'],
+  77: ['snow grains', '🌨️'],
+  80: ['rain showers', '🌦️'], 81: ['rain showers', '🌧️'], 82: ['heavy showers', '⛈️'],
+  85: ['snow showers', '🌨️'], 86: ['snow showers', '🌨️'],
+  95: ['thunderstorms', '⛈️'], 96: ['thunderstorms', '⛈️'], 97: ['thunderstorms', '⛈️'],
+  99: ['thunderstorms', '⛈️']
 };
 
-// A muted line under the header: local time, current weather, and a small
-// CSS panda that reacts to both. Every part degrades independently — the
-// clock needs nothing, the weather text disappears on a failed fetch, and the
-// panda falls back to a JS-computed day/night guess rather than staying
-// caught in an in-between "sunny at night" state if the fetch never lands.
+// A muted line under the header: local time, current weather, and a panda
+// emoji that bounces, blinks, and swaps in a weather glyph. Built from a real
+// emoji rather than hand-drawn CSS shapes — a browser's font renders "🐼"
+// correctly by construction, where composing a face from divs and
+// border-radius is a guess at proportions with no way to preview it here.
+//
+// Every part degrades independently: the clock needs nothing, the weather
+// text disappears on a failed fetch, and the day/night state falls back to a
+// fixed-hour guess rather than staying caught in an in-between state if the
+// forecast never lands.
 function initStatusStrip() {
   var header = document.querySelector('.site-header');
   if (!header) return;
@@ -598,23 +603,29 @@ function initStatusStrip() {
   var strip = document.createElement('div');
   strip.className = 'status-strip';
   strip.innerHTML =
-    '<div class="status-panda" data-panda aria-hidden="true">' +
-      '<span class="panda-ear left"></span><span class="panda-ear right"></span>' +
-      '<span class="panda-head">' +
-        '<span class="panda-patch left"></span><span class="panda-patch right"></span>' +
-        '<span class="panda-eye left"></span><span class="panda-eye right"></span>' +
-        '<span class="panda-shades"></span>' +
-        '<span class="panda-nose"></span>' +
-      '</span>' +
-      '<span class="panda-umbrella"></span>' +
-      '<span class="panda-snowflake a"></span><span class="panda-snowflake b"></span><span class="panda-snowflake c"></span>' +
-      '<span class="panda-zzz">z</span>' +
-    '</div>' +
+    '<span class="status-panda" data-panda aria-hidden="true">' +
+      '<span class="panda-emoji" data-panda-emoji>🐼</span>' +
+      '<span class="panda-sleep">💤</span>' +
+      '<span class="panda-weather" data-panda-weather></span>' +
+    '</span>' +
     '<span class="status-text" data-status-text></span>';
   header.insertAdjacentElement('afterend', strip);
 
   var panda = strip.querySelector('[data-panda]');
+  var pandaEmoji = strip.querySelector('[data-panda-emoji]');
+  var pandaWeather = strip.querySelector('[data-panda-weather]');
   var textEl = strip.querySelector('[data-status-text]');
+
+  // A closed-eye panda emoji does not exist, so the blink is a brief
+  // vertical squash of the whole glyph instead — the same trick a sprite
+  // sheet uses, just done with a transform instead of a swapped frame.
+  // Skipped while asleep, so a night blink cannot pop the glyph back "awake"
+  // between animation frames.
+  setInterval(function () {
+    if (panda.classList.contains('is-night')) return;
+    pandaEmoji.classList.add('is-blinking');
+    setTimeout(function () { pandaEmoji.classList.remove('is-blinking'); }, 150);
+  }, 4500);
 
   var clockFormat;
   try {
@@ -662,14 +673,9 @@ function initStatusStrip() {
       var cw = data && data.current_weather;
       if (!cw) return;
       applyDayNight(cw.is_day === 1);
-      var info = WEATHER_CODES[cw.weathercode] || ['', 'cloudy'];
-      panda.classList.remove('is-sunny', 'is-rain', 'is-snow');
-      // Sunglasses only read as "sunny" in daylight; showing them on a clear
-      // night would look like a mistake rather than a joke.
-      if (info[1] === 'sunny' && cw.is_day === 1) panda.classList.add('is-sunny');
-      if (info[1] === 'rain') panda.classList.add('is-rain');
-      if (info[1] === 'snow') panda.classList.add('is-snow');
-      weatherText = Math.round(cw.temperature) + '°F' + (info[0] ? ', ' + info[0] : '');
+      var info = WEATHER_CODES[cw.weathercode];
+      pandaWeather.textContent = info ? info[1] : '';
+      weatherText = Math.round(cw.temperature) + '°F' + (info && info[0] ? ', ' + info[0] : '');
       renderClock();
     })
     .catch(function () { /* no network, or Open-Meteo is down — clock stands alone */ });
