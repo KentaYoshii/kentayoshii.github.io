@@ -233,7 +233,8 @@ code, pre {
   -webkit-mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
   mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
 
-  // Film slots are spans holding an <img>; book jackets are bare <img>.
+  // Film slots are spans holding an <img>; book jackets are bare <img>. Both
+  // are direct children and both get the slot geometry.
   > img,
   > .mosaic-slot {
     flex: 0 0 auto;
@@ -242,9 +243,16 @@ code, pre {
     border-radius: 3px;
     overflow: hidden;
     background-color: $grey-color-light;
+    object-fit: cover;
+    display: block;
   }
 
-  img {
+  // Only the <img> *inside* a film slot fills its parent. This must stay
+  // scoped to .mosaic-slot: a bare "img" here is a descendant selector, so it
+  // would also match the jackets, and being later in the file at equal
+  // specificity it would beat their width above and stretch each one to the
+  // full width of the band.
+  > .mosaic-slot img {
     width: 100%;
     height: 100%;
     object-fit: cover;
