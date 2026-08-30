@@ -222,19 +222,45 @@ code, pre {
 
 // Decorative band of real covers under the hero. Faded and masked at both
 // ends so it reads as texture behind the page rather than as a gallery.
+// Three nested elements, each with one job: .cover-mosaic is the fixed-size
+// window that clips and fades, .mosaic-track is the strip that moves, and
+// .mosaic-set is one copy of the slots. main.js clones the set so the track
+// holds two identical copies, then shifts the track by exactly one copy's
+// width — at which point copy two sits where copy one began and the loop is
+// seamless. The track and set gaps must stay equal or that shift is off by
+// the difference and the loop visibly jumps.
+$mosaic-gap: 8px;
+$mosaic-gap-palm: 6px;
+
 .cover-mosaic {
   display: flex;
-  gap: 8px;
-  justify-content: center;
+  justify-content: center;   // centres the static (unanimated) fallback
   overflow: hidden;
   height: 132px;
   margin: $spacing-unit 0 0;
   opacity: 0.55;
   -webkit-mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
   mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
+}
+
+.cover-mosaic.is-drifting {
+  justify-content: flex-start;
+}
+
+.mosaic-track {
+  display: flex;
+  gap: $mosaic-gap;
+  flex: 0 0 auto;
+  will-change: transform;
+}
+
+.mosaic-set {
+  display: flex;
+  gap: $mosaic-gap;
+  flex: 0 0 auto;
 
   // Film slots are spans holding an <img>; book jackets are bare <img>. Both
-  // are direct children and both get the slot geometry.
+  // are direct children of the set and both get the slot geometry.
   > img,
   > .mosaic-slot {
     flex: 0 0 auto;
@@ -260,11 +286,36 @@ code, pre {
   }
 }
 
+// Both custom properties are set by main.js once the set is measured, so the
+// speed stays constant however many slots survive the cover lookups.
+@keyframes mosaic-drift {
+  from { transform: translateX(0); }
+  to   { transform: translateX(var(--mosaic-shift, 0)); }
+}
+
+.mosaic-track.is-drifting {
+  animation: mosaic-drift var(--mosaic-duration, 60s) linear infinite;
+}
+
+// main.js already declines to start the animation under a reduced-motion
+// preference. This is the backstop for the preference changing after load.
+@media (prefers-reduced-motion: reduce) {
+  .mosaic-track.is-drifting {
+    animation: none;
+  }
+}
+
 @media screen and (max-width: $on-palm) {
   .cover-mosaic {
     height: 96px;
-    gap: 6px;
+  }
 
+  .mosaic-track,
+  .mosaic-set {
+    gap: $mosaic-gap-palm;
+  }
+
+  .mosaic-set {
     > img,
     > .mosaic-slot {
       width: 64px;

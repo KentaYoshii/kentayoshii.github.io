@@ -23,12 +23,13 @@ DATA = os.path.join(ROOT, 'docs', '_data')
 # How many covers the landing page's decorative band shows, and how many of
 # those are film posters rather than book jackets. Each one is an extra lazy
 # request, so keep it modest.
-# Sized to roughly one screen width plus a little bleed for the mask to fade.
-# Overshooting is not free: the band clips horizontally, and a browser will not
-# lazy-load — or even paint — slots that sit outside the viewport, so the extra
-# ones are dead weight that only widens the clipped region.
-MOSAIC_COUNT = 15
-MOSAIC_MOVIES = 5
+# The band scrolls, so every slot is seen in turn and the count is no longer
+# bounded by what fits on screen at once. It is bounded by the loop instead: at
+# the drift speed in main.js this is a little over a minute end to end, which is
+# long enough to feel unhurried and short enough that a slot is not effectively
+# invisible. Raising it lengthens the loop in proportion.
+MOSAIC_COUNT = 24
+MOSAIC_MOVIES = 8
 
 
 def stride(seq, n):

@@ -28,28 +28,37 @@ layout: page
 
 {%- comment -%}
 A band of real covers, chosen at build time by striding through the shelf and
-the watch list so it is not 36 titles beginning with "A". Decorative only:
-hidden from assistive tech, and lazy so it never blocks the hero.
+the watch list so it is not 36 titles beginning with "A". Decorative only, and
+hidden from assistive tech.
 
 Book jackets resolve straight from an ISBN, so they are plain <img> tags.
 TMDB has no title-addressable poster URL, so film slots start hidden and
 main.js fills them; with no JavaScript the band is simply books.
 "default=false" makes Open Library 404 on a missing cover rather than serving
 a blank placeholder, which main.js then drops.
+
+The inner ".mosaic-set" is the element main.js clones to make the scroll loop
+seamless, so the slots must stay wrapped in it rather than sitting directly in
+the track.
 {%- endcomment -%}
 <div class="cover-mosaic" aria-hidden="true" data-cover-mosaic>
+  <div class="mosaic-track" data-mosaic-track>
+  <div class="mosaic-set" data-mosaic-set>
   {%- for item in site.data.stats.books.mosaic -%}
   {%- if item.isbn -%}
   {%- comment -%}
-  Not lazy: the band is at the top of the page and clips horizontally, so a
-  lazy jacket outside the clipped region never enters the viewport and never
-  loads at all — it stays an empty grey slot for the life of the page.
+  Not lazy: the band clips horizontally, so a lazy jacket outside the clipped
+  region never enters the viewport and never loads at all. It would also have
+  to load mid-scroll, arriving as a visible pop. The band is small and above
+  the fold, so eager is the right call on both counts.
   {%- endcomment -%}
   <img class="mosaic-cover" src="https://covers.openlibrary.org/b/isbn/{{ item.isbn }}-M.jpg?default=false" alt="" decoding="async">
   {%- else -%}
   <span class="mosaic-cover mosaic-slot" data-mosaic-movie="{{ item.title | escape }}" hidden></span>
   {%- endif -%}
   {%- endfor -%}
+  </div>
+  </div>
 </div>
 
 <div class="card-grid">

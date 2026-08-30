@@ -221,9 +221,9 @@ A few pieces that are not obvious from the markup:
 - **Cover shimmer** — keyed off `.is-settled`, which `applyCover` adds however
   the lookup ends. A miss has to settle too, or the placeholder would animate
   forever on the ~150 books with no cover.
-- **Landing page mosaic** — 15 slots chosen at build time by striding through
+- **Landing page mosaic** — 24 slots chosen at build time by striding through
   the title-sorted shelf and watch list (`MOSAIC_COUNT` / `MOSAIC_MOVIES` in
-  `build_stats.py`), so it is not 15 titles beginning with "A". Book jackets
+  `build_stats.py`), so it is not 24 titles beginning with "A". Book jackets
   resolve straight from an ISBN and are plain `<img>` tags; TMDB has no
   title-addressable poster URL, so film slots start `hidden` and `main.js`
   fills them from the shared cover cache. With no JavaScript the band is just
@@ -232,13 +232,31 @@ A few pieces that are not obvious from the markup:
   comes back under 10px wide — but only after a real `load` or `error` event.
   A `loading="lazy"` image whose load is still deferred can report
   `complete === true` with `naturalWidth` 0, so testing `complete` alone
-  deletes every jacket before it loads. Two things follow from the band being
-  a clipped, non-scrolling flex row: the jackets are **not** lazy (a lazy image
-  outside the clipped region never enters the viewport, so it never loads at
-  all and stays an empty slot forever), and the slot count is kept near what
-  actually fits — overshooting only widens the clipped-away part. Film slots
-  parse `(TV Series)` and a trailing `(YYYY)` out of the title the same way the
-  Movies page does. Decorative and `aria-hidden`.
+  deletes every jacket before it loads. The jackets are therefore **not** lazy:
+  the band clips horizontally, so a lazy image outside the clipped region never
+  enters the viewport, never loads at all, and stays an empty slot forever.
+  Film slots parse `(TV Series)` and a trailing `(YYYY)` out of the title the
+  same way the Movies page does. Decorative and `aria-hidden`.
+- **Mosaic drift** — the band scrolls in a seamless loop. Three nested
+  elements, each with one job: `.cover-mosaic` clips and fades, `.mosaic-track`
+  moves, `.mosaic-set` is one copy of the slots. `main.js` clones the set and
+  shifts the track by exactly one copy's width plus one gap, so copy two lands
+  where copy one began. Four things it depends on:
+  - The track and set gaps must stay equal, or the shift is off by the
+    difference and the loop jumps once a cycle.
+  - Measuring waits until every slot has settled. Jackets are still being
+    dropped and posters inserted before then, and a width measured mid-flight
+    misaligns the loop permanently. An 8s timeout keeps one hung request from
+    pinning the band still.
+  - The band is centred when static but anchors left once it moves. Centring
+    overflows both sides equally, which leaves the second copy half a window
+    short and blanks the right-hand side at the end of every cycle.
+  - Speed is fixed in px/s (`MOSAIC_SPEED`) and the duration derived from the
+    measured width, so the pace is the same however many covers survive.
+
+  Under `prefers-reduced-motion` none of it runs and the static band stays.
+  Raising `MOSAIC_COUNT` lengthens the loop in proportion — at 24 slots it is
+  a little over a minute.
 - **Spine wall** — rendered in Liquid from `_data/books.json`, no extra data:
   width is `pages / 40` and the era colour is a comparison chain on
   `published`.

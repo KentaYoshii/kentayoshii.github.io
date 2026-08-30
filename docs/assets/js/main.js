@@ -452,10 +452,14 @@ function initCoverMosaic() {
     if (!img.naturalWidth || img.naturalWidth < 10) img.remove();
   }
 
+  var pending = [];
+
   Array.prototype.forEach.call(band.querySelectorAll('img.mosaic-cover'), function (img) {
     if (img.complete && img.naturalWidth > 0) return;   // already loaded fine
-    img.addEventListener('load', function () { settleJacket(img); });
-    img.addEventListener('error', function () { img.remove(); });
+    pending.push(new Promise(function (done) {
+      img.addEventListener('load', function () { settleJacket(img); done(); });
+      img.addEventListener('error', function () { img.remove(); done(); });
+    }));
   });
 
   Array.prototype.forEach.call(band.querySelectorAll('[data-mosaic-movie]'), function (slot) {
@@ -467,26 +471,82 @@ function initCoverMosaic() {
     if (!info) { slot.remove(); return; }
     // Shares the collection pages' request queue and localStorage cache, so a
     // poster already fetched on /movies/ costs nothing here.
-    enqueueCoverFetch(function () {
-      return resolveCover('movies', info)
-        .then(function (url) {
-          if (!url) {
+    pending.push(new Promise(function (done) {
+      enqueueCoverFetch(function () {
+        return resolveCover('movies', info)
+          .then(function (url) {
+            if (!url) {
+              slot.remove();
+              done();
+              return;
+            }
+            var img = document.createElement('img');
+            img.className = 'mosaic-cover';
+            img.alt = '';
+            img.decoding = 'async';
+            img.addEventListener('load', function () { slot.hidden = false; done(); });
+            img.addEventListener('error', function () { slot.remove(); done(); });
+            img.src = url;
+            slot.appendChild(img);
+          }, function () {
             slot.remove();
-            return;
-          }
-          var img = document.createElement('img');
-          img.className = 'mosaic-cover';
-          img.alt = '';
-          img.decoding = 'async';
-          img.addEventListener('load', function () { slot.hidden = false; });
-          img.addEventListener('error', function () { slot.remove(); });
-          img.src = url;
-          slot.appendChild(img);
-        }, function () {
-          slot.remove();
-        });
-    });
+            done();
+          });
+      });
+    }));
   });
+
+  // Nothing may be measured until every slot has resolved: the track's width
+  // is still changing while jackets are being dropped and posters inserted,
+  // and a shift measured mid-flight would leave the loop misaligned forever.
+  // The timeout is the guard against one hung request pinning the band still.
+  Promise.race([
+    Promise.all(pending),
+    new Promise(function (done) { setTimeout(done, MOSAIC_SETTLE_TIMEOUT); })
+  ]).then(function () { startMosaicDrift(band); });
+}
+
+// Pixels per second. Slow enough to read as drift rather than as a carousel;
+// the loop length then follows from however wide the set turns out to be.
+var MOSAIC_SPEED = 30;
+var MOSAIC_SETTLE_TIMEOUT = 8000;
+
+// Turns the settled band into a seamless scrolling loop by duplicating the
+// slots and animating the track by exactly one copy's width.
+function startMosaicDrift(band) {
+  var track = band.querySelector('[data-mosaic-track]');
+  var set = band.querySelector('[data-mosaic-set]');
+  if (!track || !set) return;
+
+  // Perpetual motion beside text is a real accessibility problem, and a band
+  // this decorative is not worth imposing it. Leave the static version.
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  var setWidth = set.getBoundingClientRect().width;
+  if (!setWidth) return;
+
+  // A set narrower than the window would scroll a gap into view, and there is
+  // nothing to reveal anyway — everything already fits.
+  if (setWidth <= band.getBoundingClientRect().width) return;
+
+  // The gap between the two copies is part of the distance travelled, or copy
+  // two would land one gap short of where copy one started.
+  var gap = parseFloat(window.getComputedStyle(track).columnGap) || 0;
+  var shift = setWidth + gap;
+
+  var clone = set.cloneNode(true);
+  clone.removeAttribute('data-mosaic-set');
+  track.appendChild(clone);
+
+  // The static band is centred, which overflows equally on both sides. That
+  // leaves the track's right edge only half a window past the frame, so the
+  // second copy runs out before the loop restarts and the right-hand side goes
+  // blank at the end of every cycle. Anchor it left now that it moves.
+  band.classList.add('is-drifting');
+
+  track.style.setProperty('--mosaic-shift', '-' + shift + 'px');
+  track.style.setProperty('--mosaic-duration', (shift / MOSAIC_SPEED) + 's');
+  track.classList.add('is-drifting');
 }
 
 // Builds a quick-jump table of contents for the Vim Tips page from its
