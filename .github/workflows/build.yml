@@ -1,0 +1,56 @@
+name: build
+
+# GitHub Pages builds and deploys this site on its own, independently of this
+# workflow — a failure here does not block a deploy. The point is to get told
+# when something is wrong, since the two failure modes below are both silent:
+# stale generated data looks fine until you notice a book missing, and a
+# Liquid error just leaves the previous version of the page published.
+on:
+  push:
+    branches: [gh-pages, main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  data:
+    name: generated data is up to date
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # The scripts use only the standard library, so there is nothing to
+      # install.
+      - name: Regenerate docs/_data
+        run: python3 scripts/build.py
+
+      - name: Check the committed data matches
+        run: |
+          if ! git diff --quiet -- docs/_data; then
+            echo "::error::docs/_data is stale. Run 'python3 scripts/build.py' and commit the result."
+            git diff --stat -- docs/_data
+            git diff -- docs/_data | head -100
+            exit 1
+          fi
+          echo "docs/_data is up to date."
+
+  site:
+    name: jekyll build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          # No Gemfile.lock is committed, so resolve fresh and cache the
+          # result rather than requiring one.
+          bundler-cache: true
+          working-directory: docs
+
+      - name: Build
+        run: bundle exec jekyll build
+        working-directory: docs

@@ -1,0 +1,6 @@
+# The global gitignore (~/.gitignore_global) excludes .github/** so that
+# workflow files are not committed by accident. This site genuinely wants its
+# workflows tracked, and a repo-level rule overrides the global one.
+!.github/
+!.github/workflows/
+!.github/workflows/*.yml
