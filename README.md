@@ -229,7 +229,10 @@ A few pieces that are not obvious from the markup:
   fills them from the shared cover cache. With no JavaScript the band is just
   books. Jacket URLs carry `?default=false` so Open Library 404s on a missing
   cover instead of serving a blank, and `main.js` drops anything that fails or
-  comes back under 10px wide. Decorative and `aria-hidden`.
+  comes back under 10px wide — but only after a real `load` or `error` event.
+  A `loading="lazy"` image whose load is still deferred can report
+  `complete === true` with `naturalWidth` 0, so testing `complete` alone
+  deletes every jacket before it loads. Decorative and `aria-hidden`.
 - **Spine wall** — rendered in Liquid from `_data/books.json`, no extra data:
   width is `pages / 40` and the era colour is a comparison chain on
   `published`.
