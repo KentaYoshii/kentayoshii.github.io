@@ -5,6 +5,120 @@ the `- Title` lines below into `docs/_data/movies.json`.
 
 A `## <year>` heading sets the year, a `### <Month>` heading the month.
 An entry with no month heading above it sorts to the start of its year.
+`## Undated` is the pre-2018 backlog, which has no per-movie date; any
+`###` subheadings under it are ignored, same as a year section with no
+month recorded.
+
+
+## Undated
+
+- 65
+- American Sniper
+- Anyone But You
+- Avatar
+- Avatar: The Way of Water
+- Avengers: Age of Ultron
+- Avengers: Endgame
+- Avengers: Infinity War
+- Civil War
+- Deadpool
+- Dunkirk
+- Gladiator
+- Gravity
+- Jurassic Park
+- Juror #2
+- Saving Private Ryan
+- The Accountant
+- The Avengers
+- Top Gun
+- Twilight
+- WALL-E
+- Warfare
+
+
+## 2018
+- 12 Strong
+- Ant-Man and the Wasp
+- Aquaman
+- Black Panther
+- Fantastic Beasts: The Crimes of Grindelwald
+- Green Book
+- Pacific Rim: Uprising
+- Rampage
+- Ready Player One
+- Red Sparrow
+- Skyscraper
+- The 15:17 to Paris
+- Tomb Raider
+
+## 2019
+- Ip Man
+- Ip Man 2
+- Ip Man 3
+- Joker
+- Men in Black: International
+- Midway
+- Spider-Man: Far From Home
+
+## 2020
+- 1917
+- Greyhound
+- Honest Thief
+- Tenet
+
+## 2021
+- Black Widow
+- Dune: Part One
+- Godzilla vs. Kong
+- Shang-Chi and the Legend of the Ten Rings
+- Snake Eyes: G.I. Joe Origins
+- Spider-Man: No Way Home
+- The Tomorrow War
+
+## 2022
+- Black Panther: Wakanda Forever
+- Bullet Train
+- Death on the Nile
+- Devotion
+- Doctor Strange in the Multiverse of Madness
+- Everything Everywhere All at Once
+- Fantastic Beasts: The Secrets of Dumbledore
+- The Contractor
+- The Menu
+- The Northman
+- Thor: Love and Thunder
+- Top Gun: Maverick
+- Uncharted
+- Where the Crawdads Sing
+
+## 2023
+- A Haunting in Venice
+- Ant-Man and the Wasp: Quantumania
+- Indiana Jones and the Dial of Destiny
+- John Wick
+- John Wick: Chapter 2
+- John Wick: Chapter 3 – Parabellum
+- John Wick: Chapter 4
+- Killers of the Flower Moon
+- Meg 2: The Trench
+- Mission: Impossible
+- Mission: Impossible II
+- Mission: Impossible III
+- Mission: Impossible – Ghost Protocol
+- Mission: Impossible – Rogue Nation
+- Mission: Impossible – Fallout
+- Mission: Impossible – Dead Reckoning Part One
+- Operation Fortune: Ruse de Guerre
+- Oppenheimer
+- The Creator
+- The Hunger Games
+- The Hunger Games: Catching Fire
+- The Hunger Games: Mockingjay - Part 1
+- The Hunger Games: Mockingjay - Part 2
+- The Hunger Games: The Ballad of Songbirds & Snakes
+- The Meg
+- The Super Mario Bros. Movie
+- Transformers: Rise of the Beasts
 
 
 ## 2024

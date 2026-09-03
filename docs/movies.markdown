@@ -44,7 +44,7 @@ ignored; the "group by" control re-groups it client-side.
     <section class="year-block">
       <ul>
         {%- for movie in site.data.movies -%}
-        <li data-title="{{ movie.title | escape }}" data-letter="{{ movie.letter }}" data-year="{{ movie.year }}" data-date="{{ movie.date }}"><em>{{ movie.title | escape }}</em><span class="entry-date"> · {% if movie.month %}{{ movie.month | slice: 0, 3 }} {% endif %}{{ movie.year }}</span></li>
+        <li data-title="{{ movie.title | escape }}" data-letter="{{ movie.letter }}"{% if movie.year %} data-year="{{ movie.year }}" data-date="{{ movie.date }}"{% endif %}><em>{{ movie.title | escape }}</em>{% if movie.year %}<span class="entry-date"> · {% if movie.month %}{{ movie.month | slice: 0, 3 }} {% endif %}{{ movie.year }}</span>{% endif %}</li>
         {%- endfor -%}
       </ul>
     </section>

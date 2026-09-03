@@ -1,9 +1,30 @@
 [
  {
+  "title": "12 Strong",
+  "year": "2018",
+  "month": null,
+  "date": "2018-00",
+  "letter": "#"
+ },
+ {
   "title": "13 Hours: The Secret Soldiers of Benghazi",
   "year": "2024",
   "month": "August",
   "date": "2024-08",
+  "letter": "#"
+ },
+ {
+  "title": "The 15:17 to Paris",
+  "year": "2018",
+  "month": null,
+  "date": "2018-00",
+  "letter": "#"
+ },
+ {
+  "title": "1917",
+  "year": "2020",
+  "month": null,
+  "date": "2020-00",
   "letter": "#"
  },
  {
@@ -26,6 +47,20 @@
   "month": "December",
   "date": "2025-12",
   "letter": "#"
+ },
+ {
+  "title": "65",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "#"
+ },
+ {
+  "title": "The Accountant",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "A"
  },
  {
   "title": "The Accountant 2",
@@ -91,10 +126,38 @@
   "letter": "A"
  },
  {
+  "title": "American Sniper",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "A"
+ },
+ {
   "title": "Angels & Demons",
   "year": "2025",
   "month": "May",
   "date": "2025-05",
+  "letter": "A"
+ },
+ {
+  "title": "Ant-Man and the Wasp",
+  "year": "2018",
+  "month": null,
+  "date": "2018-00",
+  "letter": "A"
+ },
+ {
+  "title": "Ant-Man and the Wasp: Quantumania",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
+  "letter": "A"
+ },
+ {
+  "title": "Anyone But You",
+  "year": null,
+  "month": null,
+  "date": null,
   "letter": "A"
  },
  {
@@ -105,10 +168,59 @@
   "letter": "A"
  },
  {
+  "title": "Aquaman",
+  "year": "2018",
+  "month": null,
+  "date": "2018-00",
+  "letter": "A"
+ },
+ {
+  "title": "Avatar",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "A"
+ },
+ {
   "title": "Avatar: Fire and Ash",
   "year": "2025",
   "month": "December",
   "date": "2025-12",
+  "letter": "A"
+ },
+ {
+  "title": "Avatar: The Way of Water",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "A"
+ },
+ {
+  "title": "The Avengers",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "A"
+ },
+ {
+  "title": "Avengers: Age of Ultron",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "A"
+ },
+ {
+  "title": "Avengers: Endgame",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "A"
+ },
+ {
+  "title": "Avengers: Infinity War",
+  "year": null,
+  "month": null,
+  "date": null,
   "letter": "A"
  },
  {
@@ -123,6 +235,27 @@
   "year": "2024",
   "month": "March",
   "date": "2024-03",
+  "letter": "B"
+ },
+ {
+  "title": "Black Panther",
+  "year": "2018",
+  "month": null,
+  "date": "2018-00",
+  "letter": "B"
+ },
+ {
+  "title": "Black Panther: Wakanda Forever",
+  "year": "2022",
+  "month": null,
+  "date": "2022-00",
+  "letter": "B"
+ },
+ {
+  "title": "Black Widow",
+  "year": "2021",
+  "month": null,
+  "date": "2021-00",
   "letter": "B"
  },
  {
@@ -189,6 +322,13 @@
   "letter": "B"
  },
  {
+  "title": "Bullet Train",
+  "year": "2022",
+  "month": null,
+  "date": "2022-00",
+  "letter": "B"
+ },
+ {
   "title": "Captain America: Brave New World",
   "year": "2025",
   "month": "August",
@@ -200,6 +340,13 @@
   "year": "2024",
   "month": "December",
   "date": "2024-12",
+  "letter": "C"
+ },
+ {
+  "title": "Civil War",
+  "year": null,
+  "month": null,
+  "date": null,
   "letter": "C"
  },
  {
@@ -224,10 +371,24 @@
   "letter": "C"
  },
  {
+  "title": "The Contractor",
+  "year": "2022",
+  "month": null,
+  "date": "2022-00",
+  "letter": "C"
+ },
+ {
   "title": "The Count of Monte-Cristo (2024)",
   "year": "2025",
   "month": "November",
   "date": "2025-11",
+  "letter": "C"
+ },
+ {
+  "title": "The Creator",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
   "letter": "C"
  },
  {
@@ -266,6 +427,20 @@
   "letter": "D"
  },
  {
+  "title": "Deadpool",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "D"
+ },
+ {
+  "title": "Death on the Nile",
+  "year": "2022",
+  "month": null,
+  "date": "2022-00",
+  "letter": "D"
+ },
+ {
   "title": "Deep Cover",
   "year": "2025",
   "month": "June",
@@ -277,6 +452,13 @@
   "year": "2025",
   "month": "October",
   "date": "2025-10",
+  "letter": "D"
+ },
+ {
+  "title": "Devotion",
+  "year": "2022",
+  "month": null,
+  "date": "2022-00",
   "letter": "D"
  },
  {
@@ -315,10 +497,31 @@
   "letter": "D"
  },
  {
+  "title": "Doctor Strange in the Multiverse of Madness",
+  "year": "2022",
+  "month": null,
+  "date": "2022-00",
+  "letter": "D"
+ },
+ {
   "title": "Dr. No",
   "year": "2024",
   "month": "October",
   "date": "2024-10",
+  "letter": "D"
+ },
+ {
+  "title": "Dune: Part One",
+  "year": "2021",
+  "month": null,
+  "date": "2021-00",
+  "letter": "D"
+ },
+ {
+  "title": "Dunkirk",
+  "year": null,
+  "month": null,
+  "date": null,
   "letter": "D"
  },
  {
@@ -364,6 +567,13 @@
   "letter": "E"
  },
  {
+  "title": "Everything Everywhere All at Once",
+  "year": "2022",
+  "month": null,
+  "date": "2022-00",
+  "letter": "E"
+ },
+ {
   "title": "F1",
   "year": "2025",
   "month": "July",
@@ -375,6 +585,20 @@
   "year": "2024",
   "month": "May",
   "date": "2024-05",
+  "letter": "F"
+ },
+ {
+  "title": "Fantastic Beasts: The Crimes of Grindelwald",
+  "year": "2018",
+  "month": null,
+  "date": "2018-00",
+  "letter": "F"
+ },
+ {
+  "title": "Fantastic Beasts: The Secrets of Dumbledore",
+  "year": "2022",
+  "month": null,
+  "date": "2022-00",
   "letter": "F"
  },
  {
@@ -434,6 +658,13 @@
   "letter": "F"
  },
  {
+  "title": "Gladiator",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "G"
+ },
+ {
   "title": "Gladiator II",
   "year": "2024",
   "month": "November",
@@ -445,6 +676,13 @@
   "year": "2024",
   "month": "June",
   "date": "2024-06",
+  "letter": "G"
+ },
+ {
+  "title": "Godzilla vs. Kong",
+  "year": "2021",
+  "month": null,
+  "date": "2021-00",
   "letter": "G"
  },
  {
@@ -476,6 +714,13 @@
   "letter": "G"
  },
  {
+  "title": "Gravity",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "G"
+ },
+ {
   "title": "The Great Debaters",
   "year": "2025",
   "month": "January",
@@ -488,6 +733,27 @@
   "month": "May",
   "date": "2026-05",
   "letter": "G"
+ },
+ {
+  "title": "Green Book",
+  "year": "2018",
+  "month": null,
+  "date": "2018-00",
+  "letter": "G"
+ },
+ {
+  "title": "Greyhound",
+  "year": "2020",
+  "month": null,
+  "date": "2020-00",
+  "letter": "G"
+ },
+ {
+  "title": "A Haunting in Venice",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
+  "letter": "H"
  },
  {
   "title": "Heads of State",
@@ -525,11 +791,60 @@
   "letter": "H"
  },
  {
+  "title": "Honest Thief",
+  "year": "2020",
+  "month": null,
+  "date": "2020-00",
+  "letter": "H"
+ },
+ {
   "title": "How to Make a Killing",
   "year": "2026",
   "month": "May",
   "date": "2026-05",
   "letter": "H"
+ },
+ {
+  "title": "The Hunger Games",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
+  "letter": "H"
+ },
+ {
+  "title": "The Hunger Games: Catching Fire",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
+  "letter": "H"
+ },
+ {
+  "title": "The Hunger Games: Mockingjay - Part 1",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
+  "letter": "H"
+ },
+ {
+  "title": "The Hunger Games: Mockingjay - Part 2",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
+  "letter": "H"
+ },
+ {
+  "title": "The Hunger Games: The Ballad of Songbirds & Snakes",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
+  "letter": "H"
+ },
+ {
+  "title": "Indiana Jones and the Dial of Destiny",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
+  "letter": "I"
  },
  {
   "title": "Indiana Jones and the Kingdom of the Crystal Skull",
@@ -588,6 +903,27 @@
   "letter": "I"
  },
  {
+  "title": "Ip Man",
+  "year": "2019",
+  "month": null,
+  "date": "2019-00",
+  "letter": "I"
+ },
+ {
+  "title": "Ip Man 2",
+  "year": "2019",
+  "month": null,
+  "date": "2019-00",
+  "letter": "I"
+ },
+ {
+  "title": "Ip Man 3",
+  "year": "2019",
+  "month": null,
+  "date": "2019-00",
+  "letter": "I"
+ },
+ {
   "title": "Ip Man 4",
   "year": "2025",
   "month": "July",
@@ -616,10 +952,66 @@
   "letter": "J"
  },
  {
+  "title": "John Wick",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
+  "letter": "J"
+ },
+ {
+  "title": "John Wick: Chapter 2",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
+  "letter": "J"
+ },
+ {
+  "title": "John Wick: Chapter 3 – Parabellum",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
+  "letter": "J"
+ },
+ {
+  "title": "John Wick: Chapter 4",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
+  "letter": "J"
+ },
+ {
+  "title": "Joker",
+  "year": "2019",
+  "month": null,
+  "date": "2019-00",
+  "letter": "J"
+ },
+ {
+  "title": "Jurassic Park",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "J"
+ },
+ {
+  "title": "Juror #2",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "J"
+ },
+ {
   "title": "Karate Kid: Legends",
   "year": "2025",
   "month": "December",
   "date": "2025-12",
+  "letter": "K"
+ },
+ {
+  "title": "Killers of the Flower Moon",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
   "letter": "K"
  },
  {
@@ -812,6 +1204,20 @@
   "letter": "M"
  },
  {
+  "title": "The Meg",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
+  "letter": "M"
+ },
+ {
+  "title": "Meg 2: The Trench",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
+  "letter": "M"
+ },
+ {
   "title": "Memory",
   "year": "2025",
   "month": "July",
@@ -819,10 +1225,31 @@
   "letter": "M"
  },
  {
+  "title": "Men in Black: International",
+  "year": "2019",
+  "month": null,
+  "date": "2019-00",
+  "letter": "M"
+ },
+ {
+  "title": "The Menu",
+  "year": "2022",
+  "month": null,
+  "date": "2022-00",
+  "letter": "M"
+ },
+ {
   "title": "Mickey 17",
   "year": "2025",
   "month": "March",
   "date": "2025-03",
+  "letter": "M"
+ },
+ {
+  "title": "Midway",
+  "year": "2019",
+  "month": null,
+  "date": "2019-00",
   "letter": "M"
  },
  {
@@ -840,6 +1267,55 @@
   "letter": "M"
  },
  {
+  "title": "Mission: Impossible",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
+  "letter": "M"
+ },
+ {
+  "title": "Mission: Impossible – Dead Reckoning Part One",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
+  "letter": "M"
+ },
+ {
+  "title": "Mission: Impossible – Fallout",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
+  "letter": "M"
+ },
+ {
+  "title": "Mission: Impossible – Ghost Protocol",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
+  "letter": "M"
+ },
+ {
+  "title": "Mission: Impossible II",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
+  "letter": "M"
+ },
+ {
+  "title": "Mission: Impossible III",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
+  "letter": "M"
+ },
+ {
+  "title": "Mission: Impossible – Rogue Nation",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
+  "letter": "M"
+ },
+ {
   "title": "Mission Impossible: The Final Reckoning",
   "year": "2025",
   "month": "May",
@@ -852,6 +1328,13 @@
   "month": "November",
   "date": "2024-11",
   "letter": "M"
+ },
+ {
+  "title": "The Northman",
+  "year": "2022",
+  "month": null,
+  "date": "2022-00",
+  "letter": "N"
  },
  {
   "title": "No Time To Die",
@@ -901,6 +1384,27 @@
   "month": "November",
   "date": "2024-11",
   "letter": "O"
+ },
+ {
+  "title": "Operation Fortune: Ruse de Guerre",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
+  "letter": "O"
+ },
+ {
+  "title": "Oppenheimer",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
+  "letter": "O"
+ },
+ {
+  "title": "Pacific Rim: Uprising",
+  "year": "2018",
+  "month": null,
+  "date": "2018-00",
+  "letter": "P"
  },
  {
   "title": "Pearl Harbor",
@@ -987,6 +1491,13 @@
   "letter": "Q"
  },
  {
+  "title": "Rampage",
+  "year": "2018",
+  "month": null,
+  "date": "2018-00",
+  "letter": "R"
+ },
+ {
   "title": "Ratatouille",
   "year": "2025",
   "month": "February",
@@ -1001,10 +1512,24 @@
   "letter": "R"
  },
  {
+  "title": "Ready Player One",
+  "year": "2018",
+  "month": null,
+  "date": "2018-00",
+  "letter": "R"
+ },
+ {
   "title": "Red One",
   "year": "2024",
   "month": "December",
   "date": "2024-12",
+  "letter": "R"
+ },
+ {
+  "title": "Red Sparrow",
+  "year": "2018",
+  "month": null,
+  "date": "2018-00",
   "letter": "R"
  },
  {
@@ -1036,6 +1561,20 @@
   "letter": "R"
  },
  {
+  "title": "Saving Private Ryan",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "S"
+ },
+ {
+  "title": "Shang-Chi and the Legend of the Ten Rings",
+  "year": "2021",
+  "month": null,
+  "date": "2021-00",
+  "letter": "S"
+ },
+ {
   "title": "Shogun (TV Series)",
   "year": "2025",
   "month": "February",
@@ -1064,6 +1603,20 @@
   "letter": "S"
  },
  {
+  "title": "Skyscraper",
+  "year": "2018",
+  "month": null,
+  "date": "2018-00",
+  "letter": "S"
+ },
+ {
+  "title": "Snake Eyes: G.I. Joe Origins",
+  "year": "2021",
+  "month": null,
+  "date": "2021-00",
+  "letter": "S"
+ },
+ {
   "title": "Spectre",
   "year": "2024",
   "month": "December",
@@ -1075,6 +1628,20 @@
   "year": "2026",
   "month": "August",
   "date": "2026-08",
+  "letter": "S"
+ },
+ {
+  "title": "Spider-Man: Far From Home",
+  "year": "2019",
+  "month": null,
+  "date": "2019-00",
+  "letter": "S"
+ },
+ {
+  "title": "Spider-Man: No Way Home",
+  "year": "2021",
+  "month": null,
+  "date": "2021-00",
   "letter": "S"
  },
  {
@@ -1090,6 +1657,27 @@
   "month": "December",
   "date": "2025-12",
   "letter": "S"
+ },
+ {
+  "title": "The Super Mario Bros. Movie",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
+  "letter": "S"
+ },
+ {
+  "title": "Tenet",
+  "year": "2020",
+  "month": null,
+  "date": "2020-00",
+  "letter": "T"
+ },
+ {
+  "title": "Thor: Love and Thunder",
+  "year": "2022",
+  "month": null,
+  "date": "2022-00",
+  "letter": "T"
  },
  {
   "title": "Thunderball",
@@ -1113,10 +1701,38 @@
   "letter": "T"
  },
  {
+  "title": "Tomb Raider",
+  "year": "2018",
+  "month": null,
+  "date": "2018-00",
+  "letter": "T"
+ },
+ {
   "title": "Tomorrow Never Dies",
   "year": "2024",
   "month": "December",
   "date": "2024-12",
+  "letter": "T"
+ },
+ {
+  "title": "The Tomorrow War",
+  "year": "2021",
+  "month": null,
+  "date": "2021-00",
+  "letter": "T"
+ },
+ {
+  "title": "Top Gun",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "T"
+ },
+ {
+  "title": "Top Gun: Maverick",
+  "year": "2022",
+  "month": null,
+  "date": "2022-00",
   "letter": "T"
  },
  {
@@ -1127,11 +1743,32 @@
   "letter": "T"
  },
  {
+  "title": "Transformers: Rise of the Beasts",
+  "year": "2023",
+  "month": null,
+  "date": "2023-00",
+  "letter": "T"
+ },
+ {
+  "title": "Twilight",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "T"
+ },
+ {
   "title": "Twisters",
   "year": "2025",
   "month": "March",
   "date": "2025-03",
   "letter": "T"
+ },
+ {
+  "title": "Uncharted",
+  "year": "2022",
+  "month": null,
+  "date": "2022-00",
+  "letter": "U"
  },
  {
   "title": "Unstoppable (2024)",
@@ -1162,10 +1799,31 @@
   "letter": "V"
  },
  {
+  "title": "WALL-E",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "W"
+ },
+ {
+  "title": "Warfare",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "W"
+ },
+ {
   "title": "War for the Planet of the Apes",
   "year": "2025",
   "month": "March",
   "date": "2025-03",
+  "letter": "W"
+ },
+ {
+  "title": "Where the Crawdads Sing",
+  "year": "2022",
+  "month": null,
+  "date": "2022-00",
   "letter": "W"
  },
  {

@@ -101,7 +101,7 @@ def median(xs):
 def movie_stats(movies, movie_years):
     """Counts, extremes and a year x month grid for the watch heatmap."""
     per_month = collections.Counter(m['date'] for m in movies if m['month'])
-    years = sorted({m['year'] for m in movies})
+    years = sorted({m['year'] for m in movies if m['year']})
 
     # Every month of every year present, zeros included — the heatmap needs
     # the empty cells as much as the busy ones. The current year is the one
@@ -165,7 +165,7 @@ def main():
 
     mosaic = build_mosaic(books, movies)
 
-    movie_years = collections.Counter(m['year'] for m in movies)
+    movie_years = collections.Counter(m['year'] for m in movies if m['year'])
 
     stats = {
         'books': {
