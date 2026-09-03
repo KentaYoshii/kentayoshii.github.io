@@ -111,7 +111,7 @@
     "isbn": "9780571225361"
    },
    {
-    "title": "13 Hours: The Secret Soldiers of Benghazi"
+    "title": "12 Strong"
    },
    {
     "isbn": "9780063236400"
@@ -120,7 +120,7 @@
     "isbn": "9780385074070"
    },
    {
-    "title": "Blade: Trinity"
+    "title": "Black Panther"
    },
    {
     "isbn": "9780385348744"
@@ -129,7 +129,7 @@
     "isbn": "9781501100079"
    },
    {
-    "title": "Fallout (TV Series)"
+    "title": "Everything Everywhere All at Once"
    },
    {
     "isbn": "9780385336697"
@@ -138,7 +138,7 @@
     "isbn": "9780451528520"
    },
    {
-    "title": "Infinite"
+    "title": "Interstellar"
    },
    {
     "isbn": "9781444729702"
@@ -156,7 +156,7 @@
     "isbn": "9780440241003"
    },
    {
-    "title": "Road House"
+    "title": "Red Sparrow"
    },
    {
     "isbn": "9781400031702"
@@ -165,7 +165,7 @@
     "isbn": "9781538742051"
    },
    {
-    "title": "The Eight Hundred"
+    "title": "The Creator"
    },
    {
     "isbn": "9780425205976"
@@ -174,7 +174,7 @@
     "isbn": "9780385541206"
    },
    {
-    "title": "The Matrix Reloaded"
+    "title": "The Ministry of Ungentlemanly Warfare"
    }
   ],
   "series_count": 26,
@@ -215,8 +215,8 @@
   ]
  },
  "movies": {
-  "total": 178,
-  "films": 175,
+  "total": 272,
+  "films": 269,
   "shows": 3,
   "by_year": [
    {
@@ -230,9 +230,351 @@
    {
     "year": "2024",
     "count": 46
+   },
+   {
+    "year": "2023",
+    "count": 27
+   },
+   {
+    "year": "2022",
+    "count": 14
+   },
+   {
+    "year": "2021",
+    "count": 7
+   },
+   {
+    "year": "2020",
+    "count": 4
+   },
+   {
+    "year": "2019",
+    "count": 7
+   },
+   {
+    "year": "2018",
+    "count": 13
    }
   ],
   "heatmap": [
+   {
+    "year": "2018",
+    "months": [
+     {
+      "month": "Jan",
+      "count": 0
+     },
+     {
+      "month": "Feb",
+      "count": 0
+     },
+     {
+      "month": "Mar",
+      "count": 0
+     },
+     {
+      "month": "Apr",
+      "count": 0
+     },
+     {
+      "month": "May",
+      "count": 0
+     },
+     {
+      "month": "Jun",
+      "count": 0
+     },
+     {
+      "month": "Jul",
+      "count": 0
+     },
+     {
+      "month": "Aug",
+      "count": 0
+     },
+     {
+      "month": "Sep",
+      "count": 0
+     },
+     {
+      "month": "Oct",
+      "count": 0
+     },
+     {
+      "month": "Nov",
+      "count": 0
+     },
+     {
+      "month": "Dec",
+      "count": 0
+     }
+    ]
+   },
+   {
+    "year": "2019",
+    "months": [
+     {
+      "month": "Jan",
+      "count": 0
+     },
+     {
+      "month": "Feb",
+      "count": 0
+     },
+     {
+      "month": "Mar",
+      "count": 0
+     },
+     {
+      "month": "Apr",
+      "count": 0
+     },
+     {
+      "month": "May",
+      "count": 0
+     },
+     {
+      "month": "Jun",
+      "count": 0
+     },
+     {
+      "month": "Jul",
+      "count": 0
+     },
+     {
+      "month": "Aug",
+      "count": 0
+     },
+     {
+      "month": "Sep",
+      "count": 0
+     },
+     {
+      "month": "Oct",
+      "count": 0
+     },
+     {
+      "month": "Nov",
+      "count": 0
+     },
+     {
+      "month": "Dec",
+      "count": 0
+     }
+    ]
+   },
+   {
+    "year": "2020",
+    "months": [
+     {
+      "month": "Jan",
+      "count": 0
+     },
+     {
+      "month": "Feb",
+      "count": 0
+     },
+     {
+      "month": "Mar",
+      "count": 0
+     },
+     {
+      "month": "Apr",
+      "count": 0
+     },
+     {
+      "month": "May",
+      "count": 0
+     },
+     {
+      "month": "Jun",
+      "count": 0
+     },
+     {
+      "month": "Jul",
+      "count": 0
+     },
+     {
+      "month": "Aug",
+      "count": 0
+     },
+     {
+      "month": "Sep",
+      "count": 0
+     },
+     {
+      "month": "Oct",
+      "count": 0
+     },
+     {
+      "month": "Nov",
+      "count": 0
+     },
+     {
+      "month": "Dec",
+      "count": 0
+     }
+    ]
+   },
+   {
+    "year": "2021",
+    "months": [
+     {
+      "month": "Jan",
+      "count": 0
+     },
+     {
+      "month": "Feb",
+      "count": 0
+     },
+     {
+      "month": "Mar",
+      "count": 0
+     },
+     {
+      "month": "Apr",
+      "count": 0
+     },
+     {
+      "month": "May",
+      "count": 0
+     },
+     {
+      "month": "Jun",
+      "count": 0
+     },
+     {
+      "month": "Jul",
+      "count": 0
+     },
+     {
+      "month": "Aug",
+      "count": 0
+     },
+     {
+      "month": "Sep",
+      "count": 0
+     },
+     {
+      "month": "Oct",
+      "count": 0
+     },
+     {
+      "month": "Nov",
+      "count": 0
+     },
+     {
+      "month": "Dec",
+      "count": 0
+     }
+    ]
+   },
+   {
+    "year": "2022",
+    "months": [
+     {
+      "month": "Jan",
+      "count": 0
+     },
+     {
+      "month": "Feb",
+      "count": 0
+     },
+     {
+      "month": "Mar",
+      "count": 0
+     },
+     {
+      "month": "Apr",
+      "count": 0
+     },
+     {
+      "month": "May",
+      "count": 0
+     },
+     {
+      "month": "Jun",
+      "count": 0
+     },
+     {
+      "month": "Jul",
+      "count": 0
+     },
+     {
+      "month": "Aug",
+      "count": 0
+     },
+     {
+      "month": "Sep",
+      "count": 0
+     },
+     {
+      "month": "Oct",
+      "count": 0
+     },
+     {
+      "month": "Nov",
+      "count": 0
+     },
+     {
+      "month": "Dec",
+      "count": 0
+     }
+    ]
+   },
+   {
+    "year": "2023",
+    "months": [
+     {
+      "month": "Jan",
+      "count": 0
+     },
+     {
+      "month": "Feb",
+      "count": 0
+     },
+     {
+      "month": "Mar",
+      "count": 0
+     },
+     {
+      "month": "Apr",
+      "count": 0
+     },
+     {
+      "month": "May",
+      "count": 0
+     },
+     {
+      "month": "Jun",
+      "count": 0
+     },
+     {
+      "month": "Jul",
+      "count": 0
+     },
+     {
+      "month": "Aug",
+      "count": 0
+     },
+     {
+      "month": "Sep",
+      "count": 0
+     },
+     {
+      "month": "Oct",
+      "count": 0
+     },
+     {
+      "month": "Nov",
+      "count": 0
+     },
+     {
+      "month": "Dec",
+      "count": 0
+     }
+    ]
+   },
    {
     "year": "2024",
     "months": [
@@ -376,7 +718,7 @@
      },
      {
       "month": "Sep",
-      "count": null
+      "count": 0
      },
      {
       "month": "Oct",
@@ -400,6 +742,6 @@
    "label": "December 2025",
    "count": 21
   },
-  "undated": 0
+  "undated": 94
  }
 }

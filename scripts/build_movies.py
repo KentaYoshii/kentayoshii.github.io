@@ -58,8 +58,11 @@ def main():
     items = []
     year = None
     month = None
-    # '## 2025' opens a year, '### January' a month within it. A new year
-    # clears the month so an entry cannot inherit one across the boundary.
+    in_section = False
+    # '## 2025' opens a year, '### January' a month within it. '## Undated'
+    # is the backlog: it opens a section too, but leaves year (and so month
+    # and date) as None. A new year/heading clears the month so an entry
+    # cannot inherit one across the boundary.
     for line in open(LOG_PATH, encoding='utf-8'):
         line = line.rstrip()
         head = re.match(r'^##\s+(.+?)\s*$', line)
@@ -67,13 +70,14 @@ def main():
             label = head.group(1)
             year = label if re.fullmatch(r'\d{4}', label) else None
             month = None
+            in_section = True
             continue
         sub = re.match(r'^###\s+(.+?)\s*$', line)
         if sub:
             month = sub.group(1) if sub.group(1).lower() in MONTH_NUM else None
             continue
         m = re.match(r'^-\s+(.+?)\s*$', line)
-        if not m or year is None:
+        if not m or not in_section:
             continue
         title = re.sub(r'\s+', ' ', nfkc(m.group(1))).strip()
         if not title:
@@ -81,10 +85,12 @@ def main():
         items.append({
             'title': title,
             'year': year,
-            'month': month,
+            'month': month if year else None,
             # Sortable stamp for the "date watched" ordering; entries with
-            # no month heading sort to the start of their year.
-            'date': '%s-%02d' % (year, MONTH_NUM.get((month or '').lower(), 0)),
+            # no month heading sort to the start of their year, and
+            # undated entries carry no stamp so they sort last.
+            'date': ('%s-%02d' % (year, MONTH_NUM.get((month or '').lower(), 0))
+                      if year else None),
             'letter': letter_of(title),
         })
 
@@ -95,10 +101,11 @@ def main():
         json.dump(items, f, ensure_ascii=False, indent=1)
         f.write('\n')
 
-    years = sorted({i['year'] for i in items})
+    years = sorted({i['year'] for i in items if i['year']})
     print('wrote %d movies/shows (%s) -> %s'
           % (len(items), ', '.join(years), os.path.relpath(OUT_PATH, ROOT)))
     print('  with month: %d' % sum(1 for i in items if i['month']))
+    print('  undated: %d' % sum(1 for i in items if not i['year']))
 
 
 if __name__ == '__main__':
