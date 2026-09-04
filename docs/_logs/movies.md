@@ -216,7 +216,7 @@ month recorded.
 
 ### March 
 - War for the Planet of the Apes
-- Kingdom of the Planet of the Apes
+- Kingdom of the Planet of the Apes (2024)
 - Life of Pi
 - Mickey 17
 - Twisters
@@ -288,7 +288,7 @@ month recorded.
 - Knight and Day
 
 ### November
-- The Count of Monte-Cristo (2024)
+- The Count of Monte-Cristo (2024 film)
 - From the World of John Wick: Ballerina
 - Flight Risk
 - The Ministry of Ungentlemanly Warfare
