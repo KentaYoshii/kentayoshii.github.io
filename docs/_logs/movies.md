@@ -30,8 +30,8 @@ month recorded.
 - Saving Private Ryan
 - The Accountant
 - The Avengers
-- Top Gun
-- Twilight
+- Top Gun (1986)
+- Twilight (2008)
 - WALL-E
 - Warfare
 
@@ -224,7 +224,7 @@ month recorded.
 - The Prey 
 
 ### April
-- Predator
+- Predator (1987)
 - Predator 2
 - Alien vs Predator
 - Alien vs Predator Requiem
