@@ -497,9 +497,9 @@ function initCollectionPage() {
   window.addEventListener('resize', syncStickyHeight);
 }
 
-// Tidies the landing page's decorative cover band: drops jackets Open Library
-// has no image for, and fills the film slots, which need a TMDB lookup and so
-// cannot be resolved at build time.
+// Tidies the landing page's decorative cover band, then sets it drifting.
+// Every slot is a plain <img> whose URL build_covers.py already resolved, so
+// there is nothing to look up here — only broken images to drop.
 function initCoverMosaic() {
   var band = document.querySelector('[data-cover-mosaic]');
   if (!band) return;
@@ -524,44 +524,10 @@ function initCoverMosaic() {
     }));
   });
 
-  Array.prototype.forEach.call(band.querySelectorAll('[data-mosaic-movie]'), function (slot) {
-    // The data file carries the raw log title, so "(TV Series)" and a trailing
-    // "(2025)" are still on it. Parse it the same way the Movies page does, or
-    // the annotations go to TMDB as search text and the show is searched for in
-    // the film catalogue.
-    var info = parseMovieTitle(slot.getAttribute('data-mosaic-movie'));
-    if (!info) { slot.remove(); return; }
-    // Shares the collection pages' request queue and localStorage cache, so a
-    // poster already fetched on /movies/ costs nothing here.
-    pending.push(new Promise(function (done) {
-      enqueueCoverFetch(function () {
-        return resolveCover('movies', info)
-          .then(function (url) {
-            if (!url) {
-              slot.remove();
-              done();
-              return;
-            }
-            var img = document.createElement('img');
-            img.className = 'mosaic-cover';
-            img.alt = '';
-            img.decoding = 'async';
-            img.addEventListener('load', function () { slot.hidden = false; done(); });
-            img.addEventListener('error', function () { slot.remove(); done(); });
-            img.src = url;
-            slot.appendChild(img);
-          }, function () {
-            slot.remove();
-            done();
-          });
-      });
-    }));
-  });
-
-  // Nothing may be measured until every slot has resolved: the track's width
-  // is still changing while jackets are being dropped and posters inserted,
-  // and a shift measured mid-flight would leave the loop misaligned forever.
-  // The timeout is the guard against one hung request pinning the band still.
+  // Nothing may be measured until every image has settled: the track's width
+  // is still changing while broken jackets are being dropped, and a shift
+  // measured mid-flight would leave the loop misaligned forever. The timeout
+  // is the guard against one hung image pinning the band still.
   Promise.race([
     Promise.all(pending),
     new Promise(function (done) { setTimeout(done, MOSAIC_SETTLE_TIMEOUT); })
@@ -613,22 +579,22 @@ function startMosaicDrift(band) {
 
 // A fixed location, not the visitor's: this is the author's local time and
 // weather, shown the same way to everyone, not something geolocation should
-// personalize. Hardcoded here rather than threaded through _config.yml for
-// the same reason TMDB_API_KEY is — it belongs to this one piece of JS and a
-// config layer would only add indirection.
+// personalize. Hardcoded here rather than threaded through _config.yml
+// because it belongs to this one piece of JS, and a config layer would only
+// add indirection.
 var STATUS_LAT = 40.7128;
 var STATUS_LON = -74.006;
 var STATUS_TIMEZONE = 'America/New_York';
 var STATUS_PLACE = 'NYC';
 
-// Open Library and TMDB above are keyless too, but this one is also
-// attribution-free and asks nothing of a static site with no backend: a plain
+// The only API this page still calls at runtime, now that covers are resolved
+// at build time. It asks nothing of a static site with no backend: a plain
 // GET with no key, no account, no rate-limit bookkeeping.
 var WEATHER_URL = 'https://api.open-meteo.com/v1/forecast?latitude=' + STATUS_LAT +
   '&longitude=' + STATUS_LON + '&current_weather=true&temperature_unit=fahrenheit';
 
-// WMO weather codes -> a short readable label. Open Library and TMDB fold
-// way more cases than this; a status strip does not need meteorological
+// WMO weather codes -> a short readable label. The full set folds many more
+// cases than this; a status strip does not need meteorological
 // precision, just enough to say something next to the temperature.
 var WEATHER_CODES = {
   0: 'clear', 1: 'mostly clear', 2: 'partly cloudy', 3: 'overcast',
@@ -775,20 +741,15 @@ function initVimTipsToc() {
 
 // ---- Cover art (Books/Movies) ----
 //
-// Loading strategy, since these pages can have hundreds of entries:
-//  - Only fetch a cover once its <li> scrolls near the viewport
-//    (IntersectionObserver), not on page load. This also means entries
-//    hidden by the search filter never fetch until they're shown.
-//  - Cap concurrent lookups so we don't fire off hundreds of requests at
-//    once (e.g. on a tall viewport or a wide multi-column layout).
-//  - Cache resolved (and "not found") results in localStorage, keyed by
-//    title/author, so repeat visits are instant and don't re-hit the API.
-
-var COVER_CACHE_PREFIX = 'coverCache:v2:';
-var COVER_MAX_CONCURRENT = 4;
-var coverQueue = [];
-var coverActive = 0;
-var coverObserver = null;
+// Every URL is already in the page, as a data-cover attribute written by
+// scripts/build_covers.py. This used to be a lookup layer — an
+// IntersectionObserver to defer requests, a four-at-a-time queue to throttle
+// them, a localStorage cache to avoid repeating them, and a TMDB API key
+// shipped in the page source because a static site has nowhere to hide one.
+// None of that is needed to read an attribute.
+//
+// What remains is the loading state: the thumbnail is still lazy (natively,
+// via loading="lazy"), and the shimmer runs until it either loads or fails.
 
 function initCoverArt() {
   var page = document.querySelector('[data-collection]');
@@ -799,9 +760,6 @@ function initCoverArt() {
 
   var items = Array.prototype.slice.call(page.querySelectorAll('[data-items] li'));
   items.forEach(function (li) {
-    var info = kind === 'books' ? parseBookEntry(li) : parseMovieEntry(li);
-    if (!info || !info.title) return;
-
     var wrap = document.createElement('span');
     wrap.className = 'cover-thumb-wrap';
 
@@ -825,108 +783,14 @@ function initCoverArt() {
     row.appendChild(textSpan);
     li.appendChild(row);
 
-    observeForCover(li, wrap, kind, info);
+    // No attribute means build_covers.py has not resolved this one yet. The
+    // wrap is still built, so the row keeps the same shape as its neighbours
+    // — it just shows the placeholder glyph.
+    applyCover(wrap, li.getAttribute('data-cover'));
   });
 }
 
-function parseBookEntry(li) {
-  // Read the data attributes rather than the rendered row: the visible text
-  // also carries a trailing "· 2025" date label.
-  var title = (li.getAttribute('data-title') || '').trim();
-  if (!title) return null;
-
-  var author = li.getAttribute('data-author') || '';
-  var isbn = li.getAttribute('data-isbn') || '';
-
-  // Strip a trailing "Part N" (e.g. reading a novel in two sittings, logged
-  // as "Shogun Part 1"/"Shogun Part 2") for search purposes — catalogs
-  // index the work as a single title, so the literal suffix won't match.
-  var searchTitle = title.replace(/\s+part\s+(\d+|one|two|three|four|five|six|seven|eight|nine|ten)\s*$/i, '').trim();
-
-  return { title: searchTitle || title, author: author, isbn: isbn };
-}
-
-function parseMovieEntry(li) {
-  return parseMovieTitle(li.getAttribute('data-title'));
-}
-
-// The string half of the above, shared with the landing-page mosaic, whose
-// slots carry the raw log title in an attribute rather than a list row.
-function parseMovieTitle(title) {
-  var raw = (title || '').trim();
-  if (!raw) return null;
-  var isSeries = /\(\s*tv series\s*\)/i.test(raw) || /\bseason\s+\d+\b/i.test(raw);
-  // A trailing "(1987)" disambiguates a remake from its original. Pull it out
-  // as a release year: TMDB takes it as a search filter, and leaving it in the
-  // query text would only make the match worse.
-  var yearMatch = raw.match(/\(\s*(1[89]\d\d|20\d\d)\s*\)\s*$/);
-  var cleaned = raw
-    .replace(/\(\s*tv series\s*\)/ig, '')
-    .replace(/\bseason\s+\d+\b/ig, '')
-    .replace(/\(\s*(1[89]\d\d|20\d\d)\s*\)\s*$/, '')
-    .replace(/\s{2,}/g, ' ')
-    .trim();
-  return {
-    title: cleaned || raw,
-    isSeries: isSeries,
-    releaseYear: yearMatch ? yearMatch[1] : null
-  };
-}
-
-function getCoverObserver() {
-  if (coverObserver !== null) return coverObserver;
-  if (typeof IntersectionObserver === 'undefined') {
-    coverObserver = false;
-    return coverObserver;
-  }
-  coverObserver = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (!entry.isIntersecting) return;
-      coverObserver.unobserve(entry.target);
-      var handler = entry.target.coverHandler;
-      if (handler) handler();
-    });
-  }, { rootMargin: '200px 0px' });
-  return coverObserver;
-}
-
-function observeForCover(li, wrap, kind, info) {
-  var handler = function () {
-    enqueueCoverFetch(function () {
-      return resolveCover(kind, info).then(function (url) {
-        applyCover(wrap, url);
-      }, function () {
-        applyCover(wrap, null);   // a failed lookup still has to settle
-      });
-    });
-  };
-
-  var observer = getCoverObserver();
-  if (!observer) {
-    handler();
-    return;
-  }
-  li.coverHandler = handler;
-  observer.observe(li);
-}
-
-function enqueueCoverFetch(task) {
-  coverQueue.push(task);
-  pumpCoverQueue();
-}
-
-function pumpCoverQueue() {
-  while (coverActive < COVER_MAX_CONCURRENT && coverQueue.length) {
-    var task = coverQueue.shift();
-    coverActive++;
-    task().catch(function () {}).then(function () {
-      coverActive--;
-      pumpCoverQueue();
-    });
-  }
-}
-
-// "settled" means the lookup is over, however it ended. The loading shimmer
+// "settled" means the image is done, however it ended. The loading shimmer
 // keys off it, so a miss has to settle too or it would animate forever.
 function applyCover(wrap, url) {
   if (!url) {
@@ -940,155 +804,12 @@ function applyCover(wrap, url) {
   img.addEventListener('load', function () {
     wrap.classList.add('is-loaded', 'is-settled');
   });
+  // A cached URL can still 404 later — Open Library drops a jacket now and
+  // then — so the error path stays.
   img.addEventListener('error', function () {
     img.remove();
     wrap.classList.add('is-settled');
   });
   img.src = url;
   wrap.appendChild(img);
-}
-
-function coverCacheKey(kind, info) {
-  if (info.isbn) return kind + ':isbn:' + info.isbn;
-  // The release year is part of the key, or a remake and its original would
-  // share one entry and therefore one poster.
-  return kind + ':' + (info.title + '|' + (info.author || '') +
-                       (info.releaseYear ? '|' + info.releaseYear : '')).toLowerCase();
-}
-
-function readCoverCache(key) {
-  try {
-    var raw = localStorage.getItem(COVER_CACHE_PREFIX + key);
-    if (raw === null) return undefined;
-    return JSON.parse(raw);
-  } catch (e) {
-    return undefined;
-  }
-}
-
-function writeCoverCache(key, value) {
-  try {
-    localStorage.setItem(COVER_CACHE_PREFIX + key, JSON.stringify(value));
-  } catch (e) {}
-}
-
-// Entries that resolve to the same cache key (e.g. a book logged twice, or
-// "Shogun Part 1"/"Part 2" sharing one search title) share a single in-flight
-// request instead of each firing its own, even before either has cached.
-var coverInFlight = {};
-
-function resolveCover(kind, info) {
-  var key = coverCacheKey(kind, info);
-  var cached = readCoverCache(key);
-  if (cached !== undefined) {
-    return Promise.resolve(cached.url);
-  }
-
-  if (coverInFlight[key]) {
-    return coverInFlight[key];
-  }
-
-  var lookup = kind === 'books' ? fetchBookCover(info) : fetchMovieCover(info);
-  var promise = lookup
-    .then(function (url) {
-      writeCoverCache(key, { url: url || null });
-      delete coverInFlight[key];
-      return url;
-    })
-    .catch(function () {
-      writeCoverCache(key, { url: null });
-      delete coverInFlight[key];
-      return null;
-    });
-
-  coverInFlight[key] = promise;
-  return promise;
-}
-
-// Open Library's search API is free, keyless, and CORS-enabled.
-function fetchBookCover(info) {
-  // With an ISBN (most books, via the Goodreads export) the cover is a direct
-  // URL — no search request, and no risk of a title/author mismatch. The
-  // default=false parameter makes Open Library 404 instead of serving a
-  // placeholder image, so the <img> error handler can fall back.
-  if (info.isbn) {
-    return Promise.resolve(
-      'https://covers.openlibrary.org/b/isbn/' + encodeURIComponent(info.isbn) + '-M.jpg?default=false'
-    );
-  }
-
-  function search(withAuthor) {
-    var params = 'title=' + encodeURIComponent(info.title) +
-      (withAuthor && info.author ? '&author=' + encodeURIComponent(info.author) : '') +
-      '&limit=1&fields=cover_i';
-
-    return fetch('https://openlibrary.org/search.json?' + params)
-      .then(function (res) { return res.json(); })
-      .then(function (data) {
-        var doc = data && data.docs && data.docs[0];
-        if (doc && doc.cover_i) {
-          return 'https://covers.openlibrary.org/b/id/' + doc.cover_i + '-M.jpg';
-        }
-        return null;
-      });
-  }
-
-  // Title+author is the precise query, but fails whenever Open Library's
-  // credited "author" differs from ours (translators, anthology editors,
-  // etc.) — a broader title-only search catches those.
-  return search(true).then(function (url) {
-    return url || (info.author ? search(false) : null);
-  });
-}
-
-// TMDB (themoviedb.org). Free tier, CORS-enabled. Note: this key is a
-// personal, non-commercial API key and is necessarily public in a static
-// site's client-side JS (there's no backend to hide it behind) — same as
-// any free-tier key embedded in a browser app.
-var TMDB_API_KEY = '276b22ca1df85e0ea85564e4b597e81f';
-var TMDB_IMAGE_BASE = 'https://image.tmdb.org/t/p/w200';
-
-function fetchMovieCover(info) {
-  var term = encodeURIComponent(info.title);
-
-  // TMDB ranks by popularity, not by how well the title matches, so a short
-  // generic title like "Blade" can return an unrelated but busier film first.
-  // Prefer a result whose title is exactly what we asked for.
-  function pick(results) {
-    if (!results || !results.length) return null;
-    var want = foldForSearch(info.title);
-    var fallback = null;
-    for (var i = 0; i < results.length; i++) {
-      var r = results[i];
-      if (!r.poster_path) continue;
-      if (foldForSearch(r.title || r.name || '') === want) return r;
-      if (!fallback) fallback = r;
-    }
-    return fallback;
-  }
-
-  function search(type) {
-    // TMDB names the release-year filter differently per catalogue.
-    var yearParam = '';
-    if (info.releaseYear) {
-      yearParam = (type === 'tv' ? '&first_air_date_year=' : '&year=') + info.releaseYear;
-    }
-    return fetch('https://api.themoviedb.org/3/search/' + type + '?api_key=' + TMDB_API_KEY +
-                 '&query=' + term + yearParam)
-      .then(function (res) { return res.json(); })
-      .then(function (data) {
-        var result = pick(data && data.results);
-        return result ? TMDB_IMAGE_BASE + result.poster_path : null;
-      });
-  }
-
-  // Entries explicitly marked as a series (e.g. "(TV Series)", "Season 2")
-  // search TV first, since a movie-search false-positive would otherwise
-  // win before we ever tried the TV catalog.
-  var first = info.isSeries ? 'tv' : 'movie';
-  var second = info.isSeries ? 'movie' : 'tv';
-
-  return search(first).then(function (url) {
-    return url || search(second);
-  });
 }

@@ -16,6 +16,7 @@ docs/                     Jekyll site root
   _data/movies.json       generated — do not edit by hand
   _data/stats.json        generated — do not edit by hand
   _data/travel.json       generated — do not edit by hand
+  _data/covers.json       generated cover-lookup cache — do not edit by hand
   _logs/books.md          hand-written reading log (source of truth)
   _logs/movies.md         hand-written watch log (source of truth)
   _logs/travel.md         hand-written travel log (source of truth)
@@ -33,10 +34,12 @@ scripts/
   build.py                runs everything below, in order — the usual entry point
   merge_books.py          builds _data/books.json
   build_movies.py         builds _data/movies.json
+  build_covers.py         resolves cover URLs; --fetch is the only online step
   build_stats.py          builds _data/stats.json (reads the other two)
   build_images.py         draws the favicon and social card from books.json
   build_travel.py         builds _data/travel.json
   national_parks.py       fixed reference list of all 63 US National Parks
+tests/                    pytest suite for the build scripts
 goodreads_library_export.csv   latest Goodreads export
 ```
 
@@ -274,15 +277,25 @@ on Goodreads.
 A few pieces that are not obvious from the markup:
 
 - **Sticky controls** — `.collection-header` sticks to the top of the Books and
-  Movies pages. `main.js` measures its height into a `--sticky-h` custom
-  property, which `.year-block`'s `scroll-margin-top` subtracts so a jump
-  lands below the bar rather than behind it.
+  Movies pages, **on desktop only**. `main.js` measures its height into a
+  `--sticky-h` custom property, which `.year-block`'s `scroll-margin-top`
+  subtracts so a jump lands below the bar rather than behind it. On a phone
+  the bar is `position: static` and scrolls away — two rows of controls cost
+  too much of a small viewport — so `syncStickyHeight()` reads the used
+  `position` and publishes a zero offset instead, or every jump would land a
+  header's height short.
+- **Back to top** — the phone-only replacement for the sticky bar: a round
+  button that appears once you have scrolled past the first screen.
+  Visibility comes from an `IntersectionObserver` on a zero-height sentinel at
+  the top of `<body>`, not a scroll handler, so there is no per-frame work.
+  Clicking it also moves focus to the site title, since scrolling does not
+  move focus on its own.
 - **Jump rail** — rebuilt after every filter, so searching narrows it in step
   with the list. Twelve sections or fewer are listed by name (years); above
   that it collapses to initials, with non-Latin under `#`.
 - **Cover shimmer** — keyed off `.is-settled`, which `applyCover` adds however
-  the lookup ends. A miss has to settle too, or the placeholder would animate
-  forever on the ~150 books with no cover.
+  the image ends up. A row with no cover has to settle immediately, or the
+  placeholder would animate forever on the books still awaiting a `--fetch`.
 - **Status strip** — a muted line under the header on every page: the
   author's local time, current weather, and a quote, inserted by
   `initStatusStrip()` rather than templated, so nothing else needed to
@@ -375,19 +388,50 @@ for it in `docs/dev.markdown`.
 
 ## Cover art
 
-Covers load lazily as rows scroll into view, at most 4 requests at a time, and
-results are cached in `localStorage` (including misses, so a failed lookup is
-not retried every visit).
+Covers are resolved at build time by `build_covers.py`, which writes a `cover`
+URL onto every record in `books.json` and `movies.json`. The page just reads
+the attribute — there is no lookup, no request queue and no API key in the
+JavaScript. The image itself is still lazy, natively via `loading="lazy"`.
 
-- **Books** — by ISBN straight from Open Library when known (416 of 563), which
-  needs no search request and cannot mismatch. Books without an ISBN fall back
-  to a title/author search.
-- **Movies** — TMDB. The API key in `assets/js/main.js` is a free personal key
-  and is necessarily public in a static site's JavaScript; regenerate it in
-  your TMDB account settings if it is ever abused.
+The script has two modes, and the difference matters:
 
-If covers look wrong after changing the lookup logic, bump `COVER_CACHE_PREFIX`
-in `main.js` so stale cached results are discarded.
+```sh
+python3 scripts/build_covers.py            # offline — no network at all
+python3 scripts/build_covers.py --fetch    # look up whatever is missing
+```
+
+`build.py` and CI run the **offline** mode. It reads the committed cache in
+`_data/covers.json` and touches the network never, which is what keeps the
+build deterministic and lets CI byte-compare the result without an API key.
+Anything not in the cache simply gets no cover and the row shows its
+placeholder glyph.
+
+`--fetch` is the occasional manual pass. Run it after adding books or films,
+then commit `covers.json` with the rest of `_data`:
+
+```sh
+export TMDB_API_KEY=...        # free personal key from themoviedb.org
+python3 scripts/build_covers.py --fetch
+python3 scripts/build.py
+```
+
+Where the URLs come from:
+
+- **Books with an ISBN** (416 of 555) are free — Open Library serves a jacket
+  straight from the ISBN, so the URL is pure string construction. No request,
+  no cache entry, and it cannot mismatch.
+- **Books without an ISBN** need an Open Library title/author search, so they
+  only resolve on a `--fetch` run.
+- **Films** need a TMDB search. The key is read from `TMDB_API_KEY` and is
+  never committed or shipped to the browser.
+
+A key already in `covers.json` is never looked up again, *including* when its
+value is `null` — that means "asked, and there is nothing". Delete the entry to
+force a retry. Entries for books and films no longer in the logs are pruned
+automatically.
+
+If one API is unreachable, `--only books` / `--only movies` restricts the pass
+to the other.
 
 ## Running locally
 
@@ -424,15 +468,25 @@ fall back to `site.image`, so it is set through Jekyll `defaults` in
 
 ## CI
 
-`.github/workflows/build.yml` runs two checks on every push and pull request:
+`.github/workflows/build.yml` runs three checks on every push and pull request:
 
 - **data** — re-runs `scripts/build.py` and fails if `docs/_data` changes,
   which catches editing a markdown log without regenerating the JSON.
+- **pytest** — the suite in `tests/`, which covers the title matching in
+  `merge_books.py` and the offline pass in `build_covers.py`.
 - **site** — a full `jekyll build`, which catches Liquid and front-matter
   errors.
 
-Both are advisory. GitHub Pages builds and deploys independently of this
+All three are advisory. GitHub Pages builds and deploys independently of this
 workflow, so a red run does not block a deploy — it just tells you the
-published site is wrong. Both failure modes are otherwise silent: stale data
-looks fine until you notice a missing book, and a Liquid error leaves the
-previous version of the page published.
+published site is wrong. The failure modes are otherwise silent: stale data
+looks fine until you notice a missing book, a Liquid error leaves the previous
+version of the page published, and a broken title normaliser only stops a book
+matching Goodreads, costing it its cover.
+
+Run the tests locally with:
+
+```sh
+python3 -m pip install -r requirements-dev.txt
+python3 -m pytest
+```

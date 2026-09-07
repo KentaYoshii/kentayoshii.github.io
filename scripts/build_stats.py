@@ -44,23 +44,28 @@ def stride(seq, n):
 def build_mosaic(books, movies):
     """Book jackets and film posters interleaved two-to-one.
 
-    Books carry an ISBN, which is enough to build an Open Library URL at build
-    time. Movies carry only a title: TMDB has no title-addressable poster URL,
-    so those slots are filled in the browser.
+    Both sides are plain image URLs by the time this runs — build_covers.py
+    has already resolved them — so a slot is just a URL and the page needs no
+    client-side lookup to fill one. Entries whose cover is still unresolved
+    are skipped rather than emitted as a gap.
     """
-    jackets = stride([b['isbn'] for b in books if b['isbn']],
+    jackets = stride([b['cover'] for b in books if b.get('cover')],
                      MOSAIC_COUNT - MOSAIC_MOVIES)
-    posters = stride(sorted({m['title'] for m in movies}), MOSAIC_MOVIES)
+    # Sorted before sampling so the choice is stable run to run; deduplicated
+    # because two log entries for one film share a poster and the band should
+    # not show it twice.
+    posters = stride(sorted({m['cover'] for m in movies if m.get('cover')}),
+                     MOSAIC_MOVIES)
 
     out = []
     bi = mi = 0
     while bi < len(jackets) or mi < len(posters):
         for _ in range(2):
             if bi < len(jackets):
-                out.append({'isbn': jackets[bi]})
+                out.append({'cover': jackets[bi]})
                 bi += 1
         if mi < len(posters):
-            out.append({'title': posters[mi]})
+            out.append({'cover': posters[mi]})
             mi += 1
     return out
 

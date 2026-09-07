@@ -8,7 +8,8 @@
   "published": 2011,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781451627282-M.jpg?default=false"
  },
  {
   "title": "1984",
@@ -19,7 +20,8 @@
   "published": 1949,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780452284234-M.jpg?default=false"
  },
  {
   "title": "1Q84",
@@ -30,7 +32,8 @@
   "published": 2009,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780307593313-M.jpg?default=false"
  },
  {
   "title": "20,000 Leagues Under the Sea",
@@ -41,7 +44,8 @@
   "published": null,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": null
  },
  {
   "title": "21 Lessons for the 21st Century",
@@ -52,7 +56,8 @@
   "published": 2018,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780525512172-M.jpg?default=false"
  },
  {
   "title": "4:50 From Paddington",
@@ -63,7 +68,8 @@
   "published": 1957,
   "series": "Miss Marple",
   "series_index": "7",
-  "letter": "#"
+  "letter": "#",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781579126933-M.jpg?default=false"
  },
  {
   "title": "The A.B.C. Murders",
@@ -74,7 +80,8 @@
   "published": 1936,
   "series": "Hercule Poirot",
   "series_index": "13",
-  "letter": "A"
+  "letter": "A",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781579126247-M.jpg?default=false"
  },
  {
   "title": "Absolutely on Music",
@@ -85,7 +92,8 @@
   "published": null,
   "series": null,
   "series_index": null,
-  "letter": "A"
+  "letter": "A",
+  "cover": null
  },
  {
   "title": "An Abundance of Katherines",
@@ -96,7 +104,8 @@
   "published": 2006,
   "series": null,
   "series_index": null,
-  "letter": "A"
+  "letter": "A",
+  "cover": null
  },
  {
   "title": "The Accomplice",
@@ -107,7 +116,8 @@
   "published": 2019,
   "series": "Theodore Boone",
   "series_index": "7",
-  "letter": "A"
+  "letter": "A",
+  "cover": null
  },
  {
   "title": "The Adventure of the Christmas Pudding",
@@ -118,7 +128,8 @@
   "published": 1960,
   "series": "Hercule Poirot",
   "series_index": "37",
-  "letter": "A"
+  "letter": "A",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007121083-M.jpg?default=false"
  },
  {
   "title": "The Adventures of Huckleberry Finn",
@@ -129,7 +140,8 @@
   "published": 1885,
   "series": null,
   "series_index": null,
-  "letter": "A"
+  "letter": "A",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780142437179-M.jpg?default=false"
  },
  {
   "title": "The Adventures of Sherlock Holmes",
@@ -140,7 +152,8 @@
   "published": 1892,
   "series": "Sherlock Holmes",
   "series_index": "3",
-  "letter": "A"
+  "letter": "A",
+  "cover": null
  },
  {
   "title": "The Adventures of Tom Sawyer",
@@ -151,7 +164,8 @@
   "published": 1876,
   "series": null,
   "series_index": null,
-  "letter": "A"
+  "letter": "A",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780143039563-M.jpg?default=false"
  },
  {
   "title": "After Dark",
@@ -162,7 +176,8 @@
   "published": 2004,
   "series": null,
   "series_index": null,
-  "letter": "A"
+  "letter": "A",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780307265838-M.jpg?default=false"
  },
  {
   "title": "After the Funeral",
@@ -173,7 +188,8 @@
   "published": 1953,
   "series": "Hercule Poirot",
   "series_index": "30",
-  "letter": "A"
+  "letter": "A",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780425173909-M.jpg?default=false"
  },
  {
   "title": "After the Quake",
@@ -184,7 +200,8 @@
   "published": 2000,
   "series": null,
   "series_index": null,
-  "letter": "A"
+  "letter": "A",
+  "cover": null
  },
  {
   "title": "The Alchemist",
@@ -195,7 +212,8 @@
   "published": 1988,
   "series": null,
   "series_index": null,
-  "letter": "A"
+  "letter": "A",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780062315007-M.jpg?default=false"
  },
  {
   "title": "Allegiant",
@@ -206,7 +224,8 @@
   "published": 2013,
   "series": "Divergent",
   "series_index": "3",
-  "letter": "A"
+  "letter": "A",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007524273-M.jpg?default=false"
  },
  {
   "title": "All Quiet on the Western Front",
@@ -217,7 +236,8 @@
   "published": 1928,
   "series": null,
   "series_index": null,
-  "letter": "A"
+  "letter": "A",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780449213940-M.jpg?default=false"
  },
  {
   "title": "All the Colors of the Dark",
@@ -228,7 +248,8 @@
   "published": 2024,
   "series": null,
   "series_index": null,
-  "letter": "A"
+  "letter": "A",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780593798881-M.jpg?default=false"
  },
  {
   "title": "All the Light We Cannot See",
@@ -239,7 +260,8 @@
   "published": 2014,
   "series": null,
   "series_index": null,
-  "letter": "A"
+  "letter": "A",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781476746586-M.jpg?default=false"
  },
  {
   "title": "Almond",
@@ -250,7 +272,8 @@
   "published": 2017,
   "series": null,
   "series_index": null,
-  "letter": "A"
+  "letter": "A",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780062961372-M.jpg?default=false"
  },
  {
   "title": "And Then There Were None",
@@ -261,7 +284,8 @@
   "published": 1939,
   "series": null,
   "series_index": null,
-  "letter": "A"
+  "letter": "A",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780312330873-M.jpg?default=false"
  },
  {
   "title": "Animal Farm",
@@ -272,7 +296,8 @@
   "published": 1945,
   "series": null,
   "series_index": null,
-  "letter": "A"
+  "letter": "A",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780451526342-M.jpg?default=false"
  },
  {
   "title": "Anna Karenina",
@@ -283,7 +308,8 @@
   "published": 1878,
   "series": null,
   "series_index": null,
-  "letter": "A"
+  "letter": "A",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780345803924-M.jpg?default=false"
  },
  {
   "title": "Anne of Green Gables",
@@ -294,7 +320,8 @@
   "published": 1908,
   "series": null,
   "series_index": null,
-  "letter": "A"
+  "letter": "A",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780451528827-M.jpg?default=false"
  },
  {
   "title": "Anxious People",
@@ -305,7 +332,8 @@
   "published": 2019,
   "series": null,
   "series_index": null,
-  "letter": "A"
+  "letter": "A",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781982169633-M.jpg?default=false"
  },
  {
   "title": "The Appeal",
@@ -316,7 +344,8 @@
   "published": 2008,
   "series": null,
   "series_index": null,
-  "letter": "A"
+  "letter": "A",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385515047-M.jpg?default=false"
  },
  {
   "title": "Appointment with Death",
@@ -327,7 +356,8 @@
   "published": 1938,
   "series": "Hercule Poirot",
   "series_index": "19",
-  "letter": "A"
+  "letter": "A",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007119356-M.jpg?default=false"
  },
  {
   "title": "The Ark",
@@ -338,7 +368,8 @@
   "published": 2022,
   "series": null,
   "series_index": null,
-  "letter": "A"
+  "letter": "A",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781805331896-M.jpg?default=false"
  },
  {
   "title": "Around the World in Eighty Days",
@@ -349,7 +380,8 @@
   "published": 1872,
   "series": null,
   "series_index": null,
-  "letter": "A"
+  "letter": "A",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780140449068-M.jpg?default=false"
  },
  {
   "title": "An Artist of the Floating World",
@@ -360,7 +392,8 @@
   "published": 1986,
   "series": null,
   "series_index": null,
-  "letter": "A"
+  "letter": "A",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780571225361-M.jpg?default=false"
  },
  {
   "title": "The Art of Readable Code: Simple and Practical Techniques for Writing Better Code",
@@ -371,7 +404,8 @@
   "published": 2010,
   "series": null,
   "series_index": null,
-  "letter": "A"
+  "letter": "A",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780596802295-M.jpg?default=false"
  },
  {
   "title": "The Associate",
@@ -382,7 +416,8 @@
   "published": 2009,
   "series": null,
   "series_index": null,
-  "letter": "A"
+  "letter": "A",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385517836-M.jpg?default=false"
  },
  {
   "title": "At Bertram's Hotel",
@@ -393,7 +428,8 @@
   "published": 1965,
   "series": "Miss Marple",
   "series_index": "10",
-  "letter": "A"
+  "letter": "A",
+  "cover": null
  },
  {
   "title": "Atmosphere",
@@ -404,7 +440,8 @@
   "published": 2025,
   "series": null,
   "series_index": null,
-  "letter": "A"
+  "letter": "A",
+  "cover": null
  },
  {
   "title": "Babel",
@@ -415,7 +452,8 @@
   "published": 2022,
   "series": null,
   "series_index": null,
-  "letter": "B"
+  "letter": "B",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780063021426-M.jpg?default=false"
  },
  {
   "title": "Bad Luck and Trouble",
@@ -426,7 +464,8 @@
   "published": 2007,
   "series": "Jack Reacher",
   "series_index": "11",
-  "letter": "B"
+  "letter": "B",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385340557-M.jpg?default=false"
  },
  {
   "title": "The Ballad of Songbirds and Snakes",
@@ -437,7 +476,8 @@
   "published": 2020,
   "series": "The Hunger Games",
   "series_index": "0",
-  "letter": "B"
+  "letter": "B",
+  "cover": null
  },
  {
   "title": "Beach Read",
@@ -448,7 +488,8 @@
   "published": 2020,
   "series": null,
   "series_index": null,
-  "letter": "B"
+  "letter": "B",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781984806734-M.jpg?default=false"
  },
  {
   "title": "Beloved",
@@ -459,7 +500,8 @@
   "published": 1987,
   "series": null,
   "series_index": null,
-  "letter": "B"
+  "letter": "B",
+  "cover": null
  },
  {
   "title": "The Big Four",
@@ -470,7 +512,8 @@
   "published": 1927,
   "series": "Hercule Poirot",
   "series_index": "5",
-  "letter": "B"
+  "letter": "B",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007120819-M.jpg?default=false"
  },
  {
   "title": "Black Beauty",
@@ -481,7 +524,8 @@
   "published": 1877,
   "series": null,
   "series_index": null,
-  "letter": "B"
+  "letter": "B",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780439228909-M.jpg?default=false"
  },
  {
   "title": "Blackouts",
@@ -492,7 +536,8 @@
   "published": 2023,
   "series": null,
   "series_index": null,
-  "letter": "B"
+  "letter": "B",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780374293574-M.jpg?default=false"
  },
  {
   "title": "Bleachers",
@@ -503,7 +548,8 @@
   "published": 2003,
   "series": null,
   "series_index": null,
-  "letter": "B"
+  "letter": "B",
+  "cover": null
  },
  {
   "title": "Blind Willow, Sleeping Woman",
@@ -514,7 +560,8 @@
   "published": 2006,
   "series": null,
   "series_index": null,
-  "letter": "B"
+  "letter": "B",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781400044610-M.jpg?default=false"
  },
  {
   "title": "Blood Moon",
@@ -525,7 +572,8 @@
   "published": 2025,
   "series": null,
   "series_index": null,
-  "letter": "B"
+  "letter": "B",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781538742983-M.jpg?default=false"
  },
  {
   "title": "Bloomberg by Bloomberg",
@@ -536,7 +584,8 @@
   "published": 1997,
   "series": null,
   "series_index": null,
-  "letter": "B"
+  "letter": "B",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780471208884-M.jpg?default=false"
  },
  {
   "title": "The Body in the Library",
@@ -547,7 +596,8 @@
   "published": 1942,
   "series": "Miss Marple",
   "series_index": "2",
-  "letter": "B"
+  "letter": "B",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781579126261-M.jpg?default=false"
  },
  {
   "title": "Book Lovers",
@@ -558,7 +608,8 @@
   "published": 2022,
   "series": null,
   "series_index": null,
-  "letter": "B"
+  "letter": "B",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780593334836-M.jpg?default=false"
  },
  {
   "title": "The Book Thief",
@@ -569,7 +620,8 @@
   "published": 2005,
   "series": null,
   "series_index": null,
-  "letter": "B"
+  "letter": "B",
+  "cover": null
  },
  {
   "title": "Botchan",
@@ -580,7 +632,8 @@
   "published": 1906,
   "series": null,
   "series_index": null,
-  "letter": "B"
+  "letter": "B",
+  "cover": "https://covers.openlibrary.org/b/isbn/9784770030481-M.jpg?default=false"
  },
  {
   "title": "The Boyfriend",
@@ -591,7 +644,8 @@
   "published": 2024,
   "series": null,
   "series_index": null,
-  "letter": "B"
+  "letter": "B",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781728296227-M.jpg?default=false"
  },
  {
   "title": "The Boys from Biloxi",
@@ -602,7 +656,8 @@
   "published": 2022,
   "series": null,
   "series_index": null,
-  "letter": "B"
+  "letter": "B",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385548922-M.jpg?default=false"
  },
  {
   "title": "The Brave New World",
@@ -613,7 +668,8 @@
   "published": 1932,
   "series": null,
   "series_index": null,
-  "letter": "B"
+  "letter": "B",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780060929879-M.jpg?default=false"
  },
  {
   "title": "Breakfast at Tiffany's",
@@ -624,7 +680,8 @@
   "published": null,
   "series": null,
   "series_index": null,
-  "letter": "B"
+  "letter": "B",
+  "cover": null
  },
  {
   "title": "Breakfast at Tiffany’s and Three Stories",
@@ -635,7 +692,8 @@
   "published": 1958,
   "series": null,
   "series_index": null,
-  "letter": "B"
+  "letter": "B",
+  "cover": null
  },
  {
   "title": "Breakfast of Champions",
@@ -646,7 +704,8 @@
   "published": 1973,
   "series": null,
   "series_index": null,
-  "letter": "B"
+  "letter": "B",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385334204-M.jpg?default=false"
  },
  {
   "title": "The Brethren",
@@ -657,7 +716,8 @@
   "published": 2000,
   "series": null,
   "series_index": null,
-  "letter": "B"
+  "letter": "B",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385339674-M.jpg?default=false"
  },
  {
   "title": "The British Are Coming",
@@ -668,7 +728,8 @@
   "published": 2019,
   "series": null,
   "series_index": null,
-  "letter": "B"
+  "letter": "B",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781627790437-M.jpg?default=false"
  },
  {
   "title": "Broken Country",
@@ -679,7 +740,8 @@
   "published": 2025,
   "series": null,
   "series_index": null,
-  "letter": "B"
+  "letter": "B",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781668078181-M.jpg?default=false"
  },
  {
   "title": "The Broker",
@@ -690,7 +752,8 @@
   "published": 2005,
   "series": null,
   "series_index": null,
-  "letter": "B"
+  "letter": "B",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385340540-M.jpg?default=false"
  },
  {
   "title": "The Brothers Karamazov",
@@ -701,7 +764,8 @@
   "published": 1879,
   "series": null,
   "series_index": null,
-  "letter": "B"
+  "letter": "B",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780374528379-M.jpg?default=false"
  },
  {
   "title": "Bullet Train",
@@ -712,7 +776,8 @@
   "published": 2010,
   "series": null,
   "series_index": null,
-  "letter": "B"
+  "letter": "B",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781419756337-M.jpg?default=false"
  },
  {
   "title": "The Buried Giant",
@@ -723,7 +788,8 @@
   "published": 2015,
   "series": null,
   "series_index": null,
-  "letter": "B"
+  "letter": "B",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780307271037-M.jpg?default=false"
  },
  {
   "title": "Butter",
@@ -734,7 +800,8 @@
   "published": 2017,
   "series": null,
   "series_index": null,
-  "letter": "B"
+  "letter": "B",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780063236400-M.jpg?default=false"
  },
  {
   "title": "By the Pricking of My Thumbs",
@@ -745,7 +812,8 @@
   "published": 1968,
   "series": "Tommy and Tuppence Mysteries",
   "series_index": "4",
-  "letter": "B"
+  "letter": "B",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780451200525-M.jpg?default=false"
  },
  {
   "title": "Calico Joe",
@@ -756,7 +824,8 @@
   "published": 2012,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385536073-M.jpg?default=false"
  },
  {
   "title": "Call Me By Your Name",
@@ -767,7 +836,8 @@
   "published": 2007,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": null
  },
  {
   "title": "The Call of the Wild",
@@ -778,7 +848,8 @@
   "published": 1903,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": null
  },
  {
   "title": "Camino Ghosts",
@@ -789,7 +860,8 @@
   "published": 2024,
   "series": "Camino Island",
   "series_index": "3",
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385545990-M.jpg?default=false"
  },
  {
   "title": "Camino Island",
@@ -800,7 +872,8 @@
   "published": 2017,
   "series": "Camino Island",
   "series_index": "1",
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385543026-M.jpg?default=false"
  },
  {
   "title": "Camino Winds",
@@ -811,7 +884,8 @@
   "published": 2020,
   "series": "Camino Island",
   "series_index": "2",
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385545945-M.jpg?default=false"
  },
  {
   "title": "Cards on the Table",
@@ -822,7 +896,8 @@
   "published": 1936,
   "series": "Hercule Poirot",
   "series_index": "15",
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780425205952-M.jpg?default=false"
  },
  {
   "title": "Careless People",
@@ -833,7 +908,8 @@
   "published": 2025,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781250391230-M.jpg?default=false"
  },
  {
   "title": "A Caribbean Mystery",
@@ -844,7 +920,8 @@
   "published": 1964,
   "series": "Miss Marple",
   "series_index": "9",
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780451199928-M.jpg?default=false"
  },
  {
   "title": "Carrie",
@@ -855,7 +932,8 @@
   "published": 1974,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781416524304-M.jpg?default=false"
  },
  {
   "title": "The Castle",
@@ -866,7 +944,8 @@
   "published": 1926,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780805211061-M.jpg?default=false"
  },
  {
   "title": "Cat Among the Pigeons",
@@ -877,7 +956,8 @@
   "published": 1959,
   "series": "Hercule Poirot",
   "series_index": "36",
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780425205969-M.jpg?default=false"
  },
  {
   "title": "Catch-22",
@@ -888,7 +968,8 @@
   "published": 1961,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780684833392-M.jpg?default=false"
  },
  {
   "title": "The Catcher in the Rye",
@@ -899,7 +980,8 @@
   "published": 1951,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780316769174-M.jpg?default=false"
  },
  {
   "title": "Catching Fire",
@@ -910,7 +992,8 @@
   "published": 2009,
   "series": "The Hunger Games",
   "series_index": "2",
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780439023498-M.jpg?default=false"
  },
  {
   "title": "Cat’s Cradle",
@@ -921,7 +1004,8 @@
   "published": 1963,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": null
  },
  {
   "title": "The Celestine Prophecy",
@@ -932,7 +1016,8 @@
   "published": 1993,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780446518628-M.jpg?default=false"
  },
  {
   "title": "The Chamber",
@@ -943,7 +1028,8 @@
   "published": 1994,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385339667-M.jpg?default=false"
  },
  {
   "title": "The Chosen",
@@ -954,7 +1040,8 @@
   "published": 1967,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780449213445-M.jpg?default=false"
  },
  {
   "title": "A Christmas Carol",
@@ -965,7 +1052,8 @@
   "published": 1843,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781561797462-M.jpg?default=false"
  },
  {
   "title": "Circe",
@@ -976,7 +1064,8 @@
   "published": 2018,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780316556347-M.jpg?default=false"
  },
  {
   "title": "The City and Its Uncertain Walls",
@@ -987,7 +1076,8 @@
   "published": 2023,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780593801970-M.jpg?default=false"
  },
  {
   "title": "The Client",
@@ -998,7 +1088,8 @@
   "published": 1993,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385339087-M.jpg?default=false"
  },
  {
   "title": "The Clocks",
@@ -1009,7 +1100,8 @@
   "published": 1963,
   "series": "Hercule Poirot",
   "series_index": "39",
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781572703933-M.jpg?default=false"
  },
  {
   "title": "A Clockwork Orange",
@@ -1020,7 +1112,8 @@
   "published": 1962,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780393341768-M.jpg?default=false"
  },
  {
   "title": "The Code of the Woosters",
@@ -1031,7 +1124,8 @@
   "published": 1938,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780393339819-M.jpg?default=false"
  },
  {
   "title": "Colorless Tsukuru Tazaki",
@@ -1042,7 +1136,8 @@
   "published": null,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": null
  },
  {
   "title": "Colorless Tsukuru Tazaki and His Years of Pilgrimage",
@@ -1053,7 +1148,8 @@
   "published": 2013,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385352116-M.jpg?default=false"
  },
  {
   "title": "The Complete Stories and Poems",
@@ -1064,7 +1160,8 @@
   "published": 1849,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385074070-M.jpg?default=false"
  },
  {
   "title": "The Confession",
@@ -1075,7 +1172,8 @@
   "published": 2010,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385528047-M.jpg?default=false"
  },
  {
   "title": "Confessions of a Mask",
@@ -1086,7 +1184,8 @@
   "published": 1949,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780720610314-M.jpg?default=false"
  },
  {
   "title": "Convenience Store Woman",
@@ -1097,7 +1196,8 @@
   "published": 2016,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780802128256-M.jpg?default=false"
  },
  {
   "title": "The Correspondent",
@@ -1108,7 +1208,8 @@
   "published": 2025,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780593798430-M.jpg?default=false"
  },
  {
   "title": "Counterattacks at Thirty",
@@ -1119,7 +1220,8 @@
   "published": 2017,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780063378100-M.jpg?default=false"
  },
  {
   "title": "Counting Miracles",
@@ -1130,7 +1232,8 @@
   "published": 2024,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780593449592-M.jpg?default=false"
  },
  {
   "title": "The Count of Monte Cristo",
@@ -1141,7 +1244,8 @@
   "published": 1846,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780140449266-M.jpg?default=false"
  },
  {
   "title": "A Court of Frost and Starlight",
@@ -1152,7 +1256,8 @@
   "published": 2018,
   "series": "A Court of Thorns and Roses",
   "series_index": "4",
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781635575620-M.jpg?default=false"
  },
  {
   "title": "A Court of Mist and Fury",
@@ -1163,7 +1268,8 @@
   "published": 2016,
   "series": "A Court of Thorns and Roses",
   "series_index": "2",
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781635575583-M.jpg?default=false"
  },
  {
   "title": "A ​Court of Silver Flames",
@@ -1174,7 +1280,8 @@
   "published": 2021,
   "series": "A Court of Thorns and Roses",
   "series_index": "5",
-  "letter": "#"
+  "letter": "#",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781681196282-M.jpg?default=false"
  },
  {
   "title": "A Court of Thorns and Roses",
@@ -1185,7 +1292,8 @@
   "published": 2015,
   "series": "A Court of Thorns and Roses",
   "series_index": "1",
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781635575569-M.jpg?default=false"
  },
  {
   "title": "A Court of Wings and Ruin",
@@ -1196,7 +1304,8 @@
   "published": 2017,
   "series": "A Court of Thorns and Roses",
   "series_index": "3",
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781635575606-M.jpg?default=false"
  },
  {
   "title": "The Covenant of Water",
@@ -1207,7 +1316,8 @@
   "published": 2023,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780802162175-M.jpg?default=false"
  },
  {
   "title": "The Crash",
@@ -1218,7 +1328,8 @@
   "published": 2025,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781464232985-M.jpg?default=false"
  },
  {
   "title": "Crazy Rich Asians",
@@ -1229,7 +1340,8 @@
   "published": 2013,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385536974-M.jpg?default=false"
  },
  {
   "title": "Crime and Punishment",
@@ -1240,7 +1352,8 @@
   "published": 1866,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": null
  },
  {
   "title": "Crooked House",
@@ -1251,7 +1364,8 @@
   "published": 1949,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780312981662-M.jpg?default=false"
  },
  {
   "title": "The Crucible",
@@ -1262,7 +1376,8 @@
   "published": 1953,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780142437339-M.jpg?default=false"
  },
  {
   "title": "Cujo",
@@ -1273,7 +1388,8 @@
   "published": 1981,
   "series": null,
   "series_index": null,
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780307348241-M.jpg?default=false"
  },
  {
   "title": "Curtain",
@@ -1284,7 +1400,8 @@
   "published": 1975,
   "series": "Hercule Poirot",
   "series_index": "44",
-  "letter": "C"
+  "letter": "C",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780425173749-M.jpg?default=false"
  },
  {
   "title": "Dance Dance Dance",
@@ -1295,7 +1412,8 @@
   "published": 1988,
   "series": null,
   "series_index": null,
-  "letter": "D"
+  "letter": "D",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780099448761-M.jpg?default=false"
  },
  {
   "title": "The Dancing Girl of Izu",
@@ -1306,7 +1424,8 @@
   "published": 1926,
   "series": null,
   "series_index": null,
-  "letter": "D"
+  "letter": "D",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781887178945-M.jpg?default=false"
  },
  {
   "title": "The Dark Forest",
@@ -1317,7 +1436,8 @@
   "published": 2008,
   "series": "Remembrance of Earth’s Past",
   "series_index": "2",
-  "letter": "D"
+  "letter": "D",
+  "cover": null
  },
  {
   "title": "David Copperfield",
@@ -1328,7 +1448,8 @@
   "published": 1850,
   "series": null,
   "series_index": null,
-  "letter": "D"
+  "letter": "D",
+  "cover": null
  },
  {
   "title": "Dead Man's Folly",
@@ -1339,7 +1460,8 @@
   "published": 1956,
   "series": "Hercule Poirot",
   "series_index": "35",
-  "letter": "D"
+  "letter": "D",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781572705470-M.jpg?default=false"
  },
  {
   "title": "Death Comes as the End",
@@ -1350,7 +1472,8 @@
   "published": 1944,
   "series": null,
   "series_index": null,
-  "letter": "D"
+  "letter": "D",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780312981617-M.jpg?default=false"
  },
  {
   "title": "Death in the Clouds",
@@ -1361,7 +1484,8 @@
   "published": 1935,
   "series": "Hercule Poirot",
   "series_index": "12",
-  "letter": "D"
+  "letter": "D",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007119332-M.jpg?default=false"
  },
  {
   "title": "Death on the Nile",
@@ -1372,7 +1496,8 @@
   "published": 1937,
   "series": "Hercule Poirot",
   "series_index": "18",
-  "letter": "D"
+  "letter": "D",
+  "cover": null
  },
  {
   "title": "Death's End",
@@ -1383,7 +1508,8 @@
   "published": 2010,
   "series": "Remembrance of Earth’s Past",
   "series_index": "3",
-  "letter": "D"
+  "letter": "D",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780765377104-M.jpg?default=false"
  },
  {
   "title": "Demon Copperhead",
@@ -1394,7 +1520,8 @@
   "published": 2022,
   "series": null,
   "series_index": null,
-  "letter": "D"
+  "letter": "D",
+  "cover": null
  },
  {
   "title": "The Demon of Unrest",
@@ -1405,7 +1532,8 @@
   "published": 2024,
   "series": null,
   "series_index": null,
-  "letter": "D"
+  "letter": "D",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385348744-M.jpg?default=false"
  },
  {
   "title": "Destination Unknown",
@@ -1416,7 +1544,8 @@
   "published": 1954,
   "series": null,
   "series_index": null,
-  "letter": "D"
+  "letter": "D",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007154906-M.jpg?default=false"
  },
  {
   "title": "The Diary of a Young Girl",
@@ -1427,7 +1556,8 @@
   "published": 1947,
   "series": null,
   "series_index": null,
-  "letter": "D"
+  "letter": "D",
+  "cover": null
  },
  {
   "title": "Die Trying",
@@ -1438,7 +1568,8 @@
   "published": 1998,
   "series": "Jack Reacher",
   "series_index": "2",
-  "letter": "D"
+  "letter": "D",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780515142242-M.jpg?default=false"
  },
  {
   "title": "Divergent",
@@ -1449,7 +1580,8 @@
   "published": 2011,
   "series": "Divergent",
   "series_index": "1",
-  "letter": "D"
+  "letter": "D",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780062024039-M.jpg?default=false"
  },
  {
   "title": "Doctor Sleep",
@@ -1460,7 +1592,8 @@
   "published": 2013,
   "series": "The Shining",
   "series_index": "2",
-  "letter": "D"
+  "letter": "D",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781476727653-M.jpg?default=false"
  },
  {
   "title": "Don Quixote",
@@ -1471,7 +1604,8 @@
   "published": 1605,
   "series": null,
   "series_index": null,
-  "letter": "D"
+  "letter": "D",
+  "cover": null
  },
  {
   "title": "Dracula",
@@ -1482,7 +1616,8 @@
   "published": 1897,
   "series": null,
   "series_index": null,
-  "letter": "D"
+  "letter": "D",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780393970128-M.jpg?default=false"
  },
  {
   "title": "Drive Your Plow Over the Bones of the Dead",
@@ -1493,7 +1628,8 @@
   "published": 2009,
   "series": null,
   "series_index": null,
-  "letter": "D"
+  "letter": "D",
+  "cover": null
  },
  {
   "title": "Dumb Witness",
@@ -1504,7 +1640,8 @@
   "published": 1937,
   "series": "Hercule Poirot",
   "series_index": "17",
-  "letter": "D"
+  "letter": "D",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007120796-M.jpg?default=false"
  },
  {
   "title": "Dune",
@@ -1515,7 +1652,8 @@
   "published": 1965,
   "series": null,
   "series_index": null,
-  "letter": "D"
+  "letter": "D",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780593099322-M.jpg?default=false"
  },
  {
   "title": "East of Eden",
@@ -1526,7 +1664,8 @@
   "published": 1952,
   "series": null,
   "series_index": null,
-  "letter": "E"
+  "letter": "E",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780142000656-M.jpg?default=false"
  },
  {
   "title": "Echo Burning",
@@ -1537,7 +1676,8 @@
   "published": 2001,
   "series": "Jack Reacher",
   "series_index": "5",
-  "letter": "E"
+  "letter": "E",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780515133318-M.jpg?default=false"
  },
  {
   "title": "Educated",
@@ -1548,7 +1688,8 @@
   "published": 2018,
   "series": null,
   "series_index": null,
-  "letter": "E"
+  "letter": "E",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780399590504-M.jpg?default=false"
  },
  {
   "title": "Eleanor Oliphant Is Completely Fine",
@@ -1559,7 +1700,8 @@
   "published": 2017,
   "series": null,
   "series_index": null,
-  "letter": "E"
+  "letter": "E",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780008172145-M.jpg?default=false"
  },
  {
   "title": "Elephants Can Remember",
@@ -1570,7 +1712,8 @@
   "published": 1972,
   "series": "Hercule Poirot",
   "series_index": "42",
-  "letter": "E"
+  "letter": "E",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780425067826-M.jpg?default=false"
  },
  {
   "title": "The Elephant Vanishes",
@@ -1581,7 +1724,8 @@
   "published": 1993,
   "series": null,
   "series_index": null,
-  "letter": "E"
+  "letter": "E",
+  "cover": null
  },
  {
   "title": "Elon Musk",
@@ -1592,7 +1736,8 @@
   "published": 2023,
   "series": null,
   "series_index": null,
-  "letter": "E"
+  "letter": "E",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781982181284-M.jpg?default=false"
  },
  {
   "title": "Emma",
@@ -1603,7 +1748,8 @@
   "published": 1815,
   "series": null,
   "series_index": null,
-  "letter": "E"
+  "letter": "E",
+  "cover": null
  },
  {
   "title": "Encore in Death",
@@ -1614,7 +1760,8 @@
   "published": 2023,
   "series": null,
   "series_index": null,
-  "letter": "E"
+  "letter": "E",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781250284310-M.jpg?default=false"
  },
  {
   "title": "Endless Night",
@@ -1625,7 +1772,8 @@
   "published": 1967,
   "series": null,
   "series_index": null,
-  "letter": "E"
+  "letter": "E",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007151677-M.jpg?default=false"
  },
  {
   "title": "The Enemy",
@@ -1636,7 +1784,8 @@
   "published": 2004,
   "series": "Jack Reacher",
   "series_index": "8",
-  "letter": "E"
+  "letter": "E",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780440241010-M.jpg?default=false"
  },
  {
   "title": "Erasure",
@@ -1647,7 +1796,8 @@
   "published": 2001,
   "series": null,
   "series_index": null,
-  "letter": "E"
+  "letter": "E",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780786888153-M.jpg?default=false"
  },
  {
   "title": "Evil Under the Sun",
@@ -1658,7 +1808,8 @@
   "published": 1941,
   "series": "Hercule Poirot",
   "series_index": "23",
-  "letter": "E"
+  "letter": "E",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781579126285-M.jpg?default=false"
  },
  {
   "title": "The Exchange",
@@ -1669,7 +1820,8 @@
   "published": 2023,
   "series": "The Firm",
   "series_index": "2",
-  "letter": "E"
+  "letter": "E",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385548953-M.jpg?default=false"
  },
  {
   "title": "Factfulness",
@@ -1680,7 +1832,8 @@
   "published": 2018,
   "series": null,
   "series_index": null,
-  "letter": "F"
+  "letter": "F",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781473637467-M.jpg?default=false"
  },
  {
   "title": "Fahrenheit 451",
@@ -1691,7 +1844,8 @@
   "published": 1963,
   "series": null,
   "series_index": null,
-  "letter": "F"
+  "letter": "F",
+  "cover": null
  },
  {
   "title": "Fairy Tale",
@@ -1702,7 +1856,8 @@
   "published": 2022,
   "series": null,
   "series_index": null,
-  "letter": "F"
+  "letter": "F",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781668002179-M.jpg?default=false"
  },
  {
   "title": "The Fall",
@@ -1713,7 +1868,8 @@
   "published": 1956,
   "series": null,
   "series_index": null,
-  "letter": "F"
+  "letter": "F",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780679720225-M.jpg?default=false"
  },
  {
   "title": "A Farewell to Arms",
@@ -1724,7 +1880,8 @@
   "published": 1929,
   "series": null,
   "series_index": null,
-  "letter": "F"
+  "letter": "F",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780099910107-M.jpg?default=false"
  },
  {
   "title": "The Fate of the Day: The War for America, Fort Ticonderoga to Charleston, 1777-1780",
@@ -1735,7 +1892,8 @@
   "published": 2025,
   "series": null,
   "series_index": null,
-  "letter": "F"
+  "letter": "F",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780593799185-M.jpg?default=false"
  },
  {
   "title": "The Fault in Our Stars",
@@ -1746,7 +1904,8 @@
   "published": 2012,
   "series": null,
   "series_index": null,
-  "letter": "F"
+  "letter": "F",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780525478812-M.jpg?default=false"
  },
  {
   "title": "The Fellowship of the Ring",
@@ -1757,7 +1916,8 @@
   "published": 1954,
   "series": "The Lord of the Rings",
   "series_index": "1",
-  "letter": "F"
+  "letter": "F",
+  "cover": null
  },
  {
   "title": "Finders Keepers",
@@ -1768,7 +1928,8 @@
   "published": 2015,
   "series": null,
   "series_index": null,
-  "letter": "F"
+  "letter": "F",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781501100079-M.jpg?default=false"
  },
  {
   "title": "Firestarter",
@@ -1779,7 +1940,8 @@
   "published": 1980,
   "series": null,
   "series_index": null,
-  "letter": "F"
+  "letter": "F",
+  "cover": null
  },
  {
   "title": "The Firm",
@@ -1790,7 +1952,8 @@
   "published": 1991,
   "series": "The Firm",
   "series_index": "1",
-  "letter": "F"
+  "letter": "F",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780440211457-M.jpg?default=false"
  },
  {
   "title": "First Lie Wins",
@@ -1801,7 +1964,8 @@
   "published": 2024,
   "series": null,
   "series_index": null,
-  "letter": "F"
+  "letter": "F",
+  "cover": null
  },
  {
   "title": "First Person Singular",
@@ -1812,7 +1976,8 @@
   "published": 2020,
   "series": null,
   "series_index": null,
-  "letter": "F"
+  "letter": "F",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780593318072-M.jpg?default=false"
  },
  {
   "title": "Five Little Pigs",
@@ -1823,7 +1988,8 @@
   "published": 1942,
   "series": "Hercule Poirot",
   "series_index": "24",
-  "letter": "F"
+  "letter": "F",
+  "cover": null
  },
  {
   "title": "Ford County",
@@ -1834,7 +2000,8 @@
   "published": null,
   "series": null,
   "series_index": null,
-  "letter": "F"
+  "letter": "F",
+  "cover": null
  },
  {
   "title": "For Whom the Bell Tolls",
@@ -1845,7 +2012,8 @@
   "published": 1940,
   "series": null,
   "series_index": null,
-  "letter": "F"
+  "letter": "F",
+  "cover": null
  },
  {
   "title": "Fourth Wing",
@@ -1856,7 +2024,8 @@
   "published": 2023,
   "series": "The Empyrean",
   "series_index": "1",
-  "letter": "F"
+  "letter": "F",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781649374042-M.jpg?default=false"
  },
  {
   "title": "The Four Winds",
@@ -1867,7 +2036,8 @@
   "published": 2021,
   "series": null,
   "series_index": null,
-  "letter": "F"
+  "letter": "F",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781250178602-M.jpg?default=false"
  },
  {
   "title": "The Framed",
@@ -1878,7 +2048,8 @@
   "published": 2024,
   "series": null,
   "series_index": null,
-  "letter": "F"
+  "letter": "F",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385550444-M.jpg?default=false"
  },
  {
   "title": "Frankenstein",
@@ -1889,7 +2060,8 @@
   "published": 1818,
   "series": null,
   "series_index": null,
-  "letter": "F"
+  "letter": "F",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780143131847-M.jpg?default=false"
  },
  {
   "title": "The Frozen River",
@@ -1900,7 +2072,8 @@
   "published": 2023,
   "series": null,
   "series_index": null,
-  "letter": "F"
+  "letter": "F",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385546874-M.jpg?default=false"
  },
  {
   "title": "Funny Story",
@@ -1911,7 +2084,8 @@
   "published": 2024,
   "series": null,
   "series_index": null,
-  "letter": "F"
+  "letter": "F",
+  "cover": null
  },
  {
   "title": "Gai-Jin",
@@ -1922,7 +2096,8 @@
   "published": 1993,
   "series": "Asian Saga",
   "series_index": "3",
-  "letter": "G"
+  "letter": "G",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780440216803-M.jpg?default=false"
  },
  {
   "title": "A Gentleman in Moscow",
@@ -1933,7 +2108,8 @@
   "published": 2016,
   "series": null,
   "series_index": null,
-  "letter": "G"
+  "letter": "G",
+  "cover": null
  },
  {
   "title": "The Giver",
@@ -1944,7 +2120,8 @@
   "published": 1993,
   "series": null,
   "series_index": null,
-  "letter": "G"
+  "letter": "G",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385732550-M.jpg?default=false"
  },
  {
   "title": "The God of the Woods",
@@ -1955,7 +2132,8 @@
   "published": 2024,
   "series": null,
   "series_index": null,
-  "letter": "G"
+  "letter": "G",
+  "cover": null
  },
  {
   "title": "Going Rogue",
@@ -1966,7 +2144,8 @@
   "published": 2022,
   "series": null,
   "series_index": null,
-  "letter": "G"
+  "letter": "G",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781668003053-M.jpg?default=false"
  },
  {
   "title": "The Goldfinch",
@@ -1977,7 +2156,8 @@
   "published": 2013,
   "series": null,
   "series_index": null,
-  "letter": "G"
+  "letter": "G",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780316055437-M.jpg?default=false"
  },
  {
   "title": "Gone Girl",
@@ -1988,7 +2168,8 @@
   "published": 2012,
   "series": null,
   "series_index": null,
-  "letter": "G"
+  "letter": "G",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780307588371-M.jpg?default=false"
  },
  {
   "title": "Gone Tomorrow",
@@ -1999,7 +2180,8 @@
   "published": 2009,
   "series": "Jack Reacher",
   "series_index": "13",
-  "letter": "G"
+  "letter": "G",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780593057056-M.jpg?default=false"
  },
  {
   "title": "Gone with the Wind",
@@ -2010,7 +2192,8 @@
   "published": 1936,
   "series": null,
   "series_index": null,
-  "letter": "G"
+  "letter": "G",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780446365383-M.jpg?default=false"
  },
  {
   "title": "The Good Soldier",
@@ -2021,7 +2204,8 @@
   "published": 1915,
   "series": null,
   "series_index": null,
-  "letter": "G"
+  "letter": "G",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781551113814-M.jpg?default=false"
  },
  {
   "title": "The Grapes of Wrath",
@@ -2032,7 +2216,8 @@
   "published": 1939,
   "series": null,
   "series_index": null,
-  "letter": "G"
+  "letter": "G",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780670016907-M.jpg?default=false"
  },
  {
   "title": "Gray Mountain",
@@ -2043,7 +2228,8 @@
   "published": 2014,
   "series": null,
   "series_index": null,
-  "letter": "G"
+  "letter": "G",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385537148-M.jpg?default=false"
  },
  {
   "title": "The Great Alone",
@@ -2054,7 +2240,8 @@
   "published": 2018,
   "series": null,
   "series_index": null,
-  "letter": "G"
+  "letter": "G",
+  "cover": null
  },
  {
   "title": "Great Big Beautiful Life",
@@ -2065,7 +2252,8 @@
   "published": 2025,
   "series": null,
   "series_index": null,
-  "letter": "G"
+  "letter": "G",
+  "cover": null
  },
  {
   "title": "Great Expectations",
@@ -2076,7 +2264,8 @@
   "published": 1861,
   "series": null,
   "series_index": null,
-  "letter": "G"
+  "letter": "G",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780192833594-M.jpg?default=false"
  },
  {
   "title": "The Great Gatsby",
@@ -2087,7 +2276,8 @@
   "published": 1925,
   "series": null,
   "series_index": null,
-  "letter": "G"
+  "letter": "G",
+  "cover": null
  },
  {
   "title": "Greenlights",
@@ -2098,7 +2288,8 @@
   "published": 2020,
   "series": null,
   "series_index": null,
-  "letter": "G"
+  "letter": "G",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780593139134-M.jpg?default=false"
  },
  {
   "title": "The Green Mile",
@@ -2109,7 +2300,8 @@
   "published": 1996,
   "series": null,
   "series_index": null,
-  "letter": "G"
+  "letter": "G",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780451933027-M.jpg?default=false"
  },
  {
   "title": "The Guardians",
@@ -2120,7 +2312,8 @@
   "published": 2019,
   "series": null,
   "series_index": null,
-  "letter": "G"
+  "letter": "G",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385544184-M.jpg?default=false"
  },
  {
   "title": "The Guest List",
@@ -2131,7 +2324,8 @@
   "published": 2020,
   "series": null,
   "series_index": null,
-  "letter": "G"
+  "letter": "G",
+  "cover": null
  },
  {
   "title": "Guns, Germs, and Steel: The Fates of Human Societies",
@@ -2142,7 +2336,8 @@
   "published": 1997,
   "series": null,
   "series_index": null,
-  "letter": "G"
+  "letter": "G",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780739467350-M.jpg?default=false"
  },
  {
   "title": "Hallowe'en Party",
@@ -2153,7 +2348,8 @@
   "published": 1969,
   "series": "Hercule Poirot",
   "series_index": "41",
-  "letter": "H"
+  "letter": "H",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007120680-M.jpg?default=false"
  },
  {
   "title": "The Handmaid's Tale",
@@ -2164,7 +2360,8 @@
   "published": 1985,
   "series": null,
   "series_index": null,
-  "letter": "H"
+  "letter": "H",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781328879943-M.jpg?default=false"
  },
  {
   "title": "Happy Place",
@@ -2175,7 +2372,8 @@
   "published": 2023,
   "series": null,
   "series_index": null,
-  "letter": "H"
+  "letter": "H",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780593441275-M.jpg?default=false"
  },
  {
   "title": "Hard-Boiled Wonderland and the End of the World",
@@ -2186,7 +2384,8 @@
   "published": 1985,
   "series": null,
   "series_index": null,
-  "letter": "H"
+  "letter": "H",
+  "cover": null
  },
  {
   "title": "The Hard Way",
@@ -2197,7 +2396,8 @@
   "published": 2006,
   "series": "Jack Reacher",
   "series_index": "10",
-  "letter": "H"
+  "letter": "H",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385336697-M.jpg?default=false"
  },
  {
   "title": "Harry Potter and the Chamber of Secrets",
@@ -2208,7 +2408,8 @@
   "published": 1998,
   "series": "Harry Potter",
   "series_index": "2",
-  "letter": "H"
+  "letter": "H",
+  "cover": null
  },
  {
   "title": "Harry Potter and the Deathly Hallows",
@@ -2219,7 +2420,8 @@
   "published": 2007,
   "series": "Harry Potter",
   "series_index": "7",
-  "letter": "H"
+  "letter": "H",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780545010221-M.jpg?default=false"
  },
  {
   "title": "Harry Potter and the Goblet of Fire",
@@ -2230,7 +2432,8 @@
   "published": 2000,
   "series": "Harry Potter",
   "series_index": "4",
-  "letter": "H"
+  "letter": "H",
+  "cover": null
  },
  {
   "title": "Harry Potter and the Half-Blood Prince",
@@ -2241,7 +2444,8 @@
   "published": 2005,
   "series": "Harry Potter",
   "series_index": "6",
-  "letter": "H"
+  "letter": "H",
+  "cover": null
  },
  {
   "title": "Harry Potter and the Order of the Phoenix",
@@ -2252,7 +2456,8 @@
   "published": 2003,
   "series": "Harry Potter",
   "series_index": "5",
-  "letter": "H"
+  "letter": "H",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780439358064-M.jpg?default=false"
  },
  {
   "title": "Harry Potter and the Philosopher's Stone",
@@ -2263,7 +2468,8 @@
   "published": 1997,
   "series": "Harry Potter",
   "series_index": "1",
-  "letter": "H"
+  "letter": "H",
+  "cover": null
  },
  {
   "title": "Harry Potter and the Prisoner of Azkaban",
@@ -2274,7 +2480,8 @@
   "published": 1999,
   "series": "Harry Potter",
   "series_index": "3",
-  "letter": "H"
+  "letter": "H",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780439655484-M.jpg?default=false"
  },
  {
   "title": "The Hate U Give",
@@ -2285,7 +2492,8 @@
   "published": 2017,
   "series": null,
   "series_index": null,
-  "letter": "H"
+  "letter": "H",
+  "cover": null
  },
  {
   "title": "Hear the Wind Sing",
@@ -2296,7 +2504,8 @@
   "published": null,
   "series": null,
   "series_index": null,
-  "letter": "H"
+  "letter": "H",
+  "cover": null
  },
  {
   "title": "Heart of Darkness",
@@ -2307,7 +2516,8 @@
   "published": 1899,
   "series": null,
   "series_index": null,
-  "letter": "H"
+  "letter": "H",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781892295491-M.jpg?default=false"
  },
  {
   "title": "The Heaven & Earth Grocery Store",
@@ -2318,7 +2528,8 @@
   "published": 2023,
   "series": null,
   "series_index": null,
-  "letter": "H"
+  "letter": "H",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780593422946-M.jpg?default=false"
  },
  {
   "title": "Hello Beautiful",
@@ -2329,7 +2540,8 @@
   "published": 2023,
   "series": null,
   "series_index": null,
-  "letter": "H"
+  "letter": "H",
+  "cover": null
  },
  {
   "title": "Hercule Poirot's Christmas",
@@ -2340,7 +2552,8 @@
   "published": 1938,
   "series": "Hercule Poirot",
   "series_index": "20",
-  "letter": "H"
+  "letter": "H",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007120697-M.jpg?default=false"
  },
  {
   "title": "Hercule Poirot: The Complete Short Stories",
@@ -2351,7 +2564,8 @@
   "published": 1999,
   "series": null,
   "series_index": null,
-  "letter": "H"
+  "letter": "H",
+  "cover": null
  },
  {
   "title": "Hickory Dickory Dock",
@@ -2362,7 +2576,8 @@
   "published": 1955,
   "series": "Hercule Poirot",
   "series_index": "31",
-  "letter": "H"
+  "letter": "H",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781572705647-M.jpg?default=false"
  },
  {
   "title": "Hillbilly Elegy",
@@ -2373,7 +2588,8 @@
   "published": 2016,
   "series": null,
   "series_index": null,
-  "letter": "H"
+  "letter": "H",
+  "cover": null
  },
  {
   "title": "Hiroshima",
@@ -2384,7 +2600,8 @@
   "published": 1946,
   "series": null,
   "series_index": null,
-  "letter": "H"
+  "letter": "H",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780679721031-M.jpg?default=false"
  },
  {
   "title": "The Hobbit",
@@ -2395,7 +2612,8 @@
   "published": null,
   "series": null,
   "series_index": null,
-  "letter": "H"
+  "letter": "H",
+  "cover": null
  },
  {
   "title": "The Hobbit, or There and Back Again",
@@ -2406,7 +2624,8 @@
   "published": 1937,
   "series": null,
   "series_index": null,
-  "letter": "H"
+  "letter": "H",
+  "cover": null
  },
  {
   "title": "The Hollow",
@@ -2417,7 +2636,8 @@
   "published": 1946,
   "series": "Hercule Poirot",
   "series_index": "25",
-  "letter": "H"
+  "letter": "H",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007121021-M.jpg?default=false"
  },
  {
   "title": "Holly",
@@ -2428,7 +2648,8 @@
   "published": 2023,
   "series": "Holly Gibney",
   "series_index": "3",
-  "letter": "H"
+  "letter": "H",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781668016138-M.jpg?default=false"
  },
  {
   "title": "Homo Deus",
@@ -2439,7 +2660,8 @@
   "published": 2015,
   "series": null,
   "series_index": null,
-  "letter": "H"
+  "letter": "H",
+  "cover": null
  },
  {
   "title": "The Hound of the Baskervilles",
@@ -2450,7 +2672,8 @@
   "published": 1902,
   "series": "Sherlock Holmes",
   "series_index": "5",
-  "letter": "H"
+  "letter": "H",
+  "cover": null
  },
  {
   "title": "The Housemaid",
@@ -2461,7 +2684,8 @@
   "published": 2022,
   "series": "The Housemaid",
   "series_index": "1",
-  "letter": "H"
+  "letter": "H",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781803144375-M.jpg?default=false"
  },
  {
   "title": "The Housemaid's Secret",
@@ -2472,7 +2696,8 @@
   "published": 2023,
   "series": "The Housemaid",
   "series_index": "2",
-  "letter": "H"
+  "letter": "H",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781837901319-M.jpg?default=false"
  },
  {
   "title": "The Hunger Games",
@@ -2483,7 +2708,8 @@
   "published": 2008,
   "series": "The Hunger Games",
   "series_index": "1",
-  "letter": "H"
+  "letter": "H",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780439023481-M.jpg?default=false"
  },
  {
   "title": "I Am a Cat",
@@ -2494,7 +2720,8 @@
   "published": 1906,
   "series": null,
   "series_index": null,
-  "letter": "I"
+  "letter": "I",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780804832656-M.jpg?default=false"
  },
  {
   "title": "The Idiot",
@@ -2505,7 +2732,8 @@
   "published": 2017,
   "series": null,
   "series_index": null,
-  "letter": "I"
+  "letter": "I",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781594205613-M.jpg?default=false"
  },
  {
   "title": "If It Bleeds",
@@ -2516,7 +2744,8 @@
   "published": 2020,
   "series": "Holly Gibney",
   "series_index": "2",
-  "letter": "I"
+  "letter": "I",
+  "cover": null
  },
  {
   "title": "The Iliad",
@@ -2527,7 +2756,8 @@
   "published": -750,
   "series": null,
   "series_index": null,
-  "letter": "I"
+  "letter": "I",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781324001805-M.jpg?default=false"
  },
  {
   "title": "The Illustrated Man",
@@ -2538,7 +2768,8 @@
   "published": 1951,
   "series": null,
   "series_index": null,
-  "letter": "I"
+  "letter": "I",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007127740-M.jpg?default=false"
  },
  {
   "title": "The Importance of Being Earnest",
@@ -2549,7 +2780,8 @@
   "published": 1895,
   "series": null,
   "series_index": null,
-  "letter": "I"
+  "letter": "I",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781580495806-M.jpg?default=false"
  },
  {
   "title": "In Cold Blood",
@@ -2560,7 +2792,8 @@
   "published": 1966,
   "series": null,
   "series_index": null,
-  "letter": "I"
+  "letter": "I",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780679745587-M.jpg?default=false"
  },
  {
   "title": "The Innocent Man",
@@ -2571,7 +2804,8 @@
   "published": 2006,
   "series": null,
   "series_index": null,
-  "letter": "I"
+  "letter": "I",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385517232-M.jpg?default=false"
  },
  {
   "title": "In Order to Live",
@@ -2582,7 +2816,8 @@
   "published": 2015,
   "series": null,
   "series_index": null,
-  "letter": "I"
+  "letter": "I",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781594206795-M.jpg?default=false"
  },
  {
   "title": "In Our Time",
@@ -2593,7 +2828,8 @@
   "published": 1924,
   "series": null,
   "series_index": null,
-  "letter": "I"
+  "letter": "I",
+  "cover": null
  },
  {
   "title": "The Institute",
@@ -2604,7 +2840,8 @@
   "published": 2019,
   "series": null,
   "series_index": null,
-  "letter": "I"
+  "letter": "I",
+  "cover": null
  },
  {
   "title": "Insurgent",
@@ -2615,7 +2852,8 @@
   "published": 2012,
   "series": "Divergent",
   "series_index": "2",
-  "letter": "I"
+  "letter": "I",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007442911-M.jpg?default=false"
  },
  {
   "title": "Intermezzo",
@@ -2626,7 +2864,8 @@
   "published": 2024,
   "series": null,
   "series_index": null,
-  "letter": "I"
+  "letter": "I",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780374602635-M.jpg?default=false"
  },
  {
   "title": "In the Likely Event",
@@ -2637,7 +2876,8 @@
   "published": 2023,
   "series": null,
   "series_index": null,
-  "letter": "I"
+  "letter": "I",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781662511561-M.jpg?default=false"
  },
  {
   "title": "The Invisible Life of Addie LaRue",
@@ -2648,7 +2888,8 @@
   "published": 2020,
   "series": null,
   "series_index": null,
-  "letter": "I"
+  "letter": "I",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780765387561-M.jpg?default=false"
  },
  {
   "title": "The Invisible Man",
@@ -2659,7 +2900,8 @@
   "published": 1897,
   "series": null,
   "series_index": null,
-  "letter": "I"
+  "letter": "I",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780451528520-M.jpg?default=false"
  },
  {
   "title": "Iron Flame",
@@ -2670,7 +2912,8 @@
   "published": 2023,
   "series": "The Empyrean",
   "series_index": "2",
-  "letter": "I"
+  "letter": "I",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781649374172-M.jpg?default=false"
  },
  {
   "title": "It",
@@ -2681,7 +2924,8 @@
   "published": 1986,
   "series": null,
   "series_index": null,
-  "letter": "I"
+  "letter": "I",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780450411434-M.jpg?default=false"
  },
  {
   "title": "It Ends with Us",
@@ -2692,7 +2936,8 @@
   "published": 2016,
   "series": "It Ends with Us",
   "series_index": "1",
-  "letter": "I"
+  "letter": "I",
+  "cover": null
  },
  {
   "title": "It Starts with Us",
@@ -2703,7 +2948,8 @@
   "published": 2022,
   "series": "It Ends with Us",
   "series_index": "2",
-  "letter": "I"
+  "letter": "I",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781668001226-M.jpg?default=false"
  },
  {
   "title": "Ivanhoe",
@@ -2714,7 +2960,8 @@
   "published": 1819,
   "series": null,
   "series_index": null,
-  "letter": "I"
+  "letter": "I",
+  "cover": null
  },
  {
   "title": "I Want to Eat Your Pancreas",
@@ -2725,7 +2972,8 @@
   "published": 2015,
   "series": null,
   "series_index": null,
-  "letter": "I"
+  "letter": "I",
+  "cover": "https://covers.openlibrary.org/b/isbn/9786026383143-M.jpg?default=false"
  },
  {
   "title": "James",
@@ -2736,7 +2984,8 @@
   "published": 2024,
   "series": null,
   "series_index": null,
-  "letter": "J"
+  "letter": "J",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385550369-M.jpg?default=false"
  },
  {
   "title": "Jane Eyre",
@@ -2747,7 +2996,8 @@
   "published": 1847,
   "series": null,
   "series_index": null,
-  "letter": "J"
+  "letter": "J",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780142437209-M.jpg?default=false"
  },
  {
   "title": "A Journey to the Center of the Earth",
@@ -2758,7 +3008,8 @@
   "published": 1864,
   "series": null,
   "series_index": null,
-  "letter": "J"
+  "letter": "J",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780553213973-M.jpg?default=false"
  },
  {
   "title": "The Judge's List",
@@ -2769,7 +3020,8 @@
   "published": 2021,
   "series": "The Whistler",
   "series_index": "2",
-  "letter": "J"
+  "letter": "J",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385546027-M.jpg?default=false"
  },
  {
   "title": "Just Mercy",
@@ -2780,7 +3032,8 @@
   "published": 2014,
   "series": null,
   "series_index": null,
-  "letter": "J"
+  "letter": "J",
+  "cover": null
  },
  {
   "title": "Kafka on the Shore",
@@ -2791,7 +3044,8 @@
   "published": 2002,
   "series": null,
   "series_index": null,
-  "letter": "K"
+  "letter": "K",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781400079278-M.jpg?default=false"
  },
  {
   "title": "Katabasis",
@@ -2802,7 +3056,8 @@
   "published": 2025,
   "series": null,
   "series_index": null,
-  "letter": "K"
+  "letter": "K",
+  "cover": null
  },
  {
   "title": "Killers of the Flower Moon",
@@ -2813,7 +3068,8 @@
   "published": 2017,
   "series": null,
   "series_index": null,
-  "letter": "K"
+  "letter": "K",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780593470831-M.jpg?default=false"
  },
  {
   "title": "Killing Commendatore",
@@ -2824,7 +3080,8 @@
   "published": 2017,
   "series": null,
   "series_index": null,
-  "letter": "K"
+  "letter": "K",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780525520047-M.jpg?default=false"
  },
  {
   "title": "Killing Floor",
@@ -2835,7 +3092,8 @@
   "published": 1997,
   "series": "Jack Reacher",
   "series_index": "1",
-  "letter": "K"
+  "letter": "K",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780515141429-M.jpg?default=false"
  },
  {
   "title": "The King of Torts",
@@ -2846,7 +3104,8 @@
   "published": 2003,
   "series": null,
   "series_index": null,
-  "letter": "K"
+  "letter": "K",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385339650-M.jpg?default=false"
  },
  {
   "title": "King Rat",
@@ -2857,7 +3116,8 @@
   "published": 1962,
   "series": "Asian Saga",
   "series_index": "4",
-  "letter": "K"
+  "letter": "K",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385333764-M.jpg?default=false"
  },
  {
   "title": "The Kite Runner",
@@ -2868,7 +3128,8 @@
   "published": 2003,
   "series": null,
   "series_index": null,
-  "letter": "K"
+  "letter": "K",
+  "cover": null
  },
  {
   "title": "Klara and the Sun",
@@ -2879,7 +3140,8 @@
   "published": 2021,
   "series": null,
   "series_index": null,
-  "letter": "K"
+  "letter": "K",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780593318171-M.jpg?default=false"
  },
  {
   "title": "Kokoro",
@@ -2890,7 +3152,8 @@
   "published": 1914,
   "series": null,
   "series_index": null,
-  "letter": "K"
+  "letter": "K",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780895267153-M.jpg?default=false"
  },
  {
   "title": "The Labours of Hercules",
@@ -2901,7 +3164,8 @@
   "published": 1947,
   "series": "Hercule Poirot",
   "series_index": "26",
-  "letter": "L"
+  "letter": "L",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781572704572-M.jpg?default=false"
  },
  {
   "title": "Lady Tan's Circle of Women",
@@ -2912,7 +3176,8 @@
   "published": 2023,
   "series": null,
   "series_index": null,
-  "letter": "L"
+  "letter": "L",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781982117085-M.jpg?default=false"
  },
  {
   "title": "Land of Milk and Honey",
@@ -2923,7 +3188,8 @@
   "published": 2023,
   "series": null,
   "series_index": null,
-  "letter": "L"
+  "letter": "L",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780593538241-M.jpg?default=false"
  },
  {
   "title": "The Last Girl",
@@ -2934,7 +3200,8 @@
   "published": 2017,
   "series": null,
   "series_index": null,
-  "letter": "L"
+  "letter": "L",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780525493211-M.jpg?default=false"
  },
  {
   "title": "The Last Juror",
@@ -2945,7 +3212,8 @@
   "published": 2004,
   "series": null,
   "series_index": null,
-  "letter": "L"
+  "letter": "L",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385339681-M.jpg?default=false"
  },
  {
   "title": "Les Misérables",
@@ -2956,7 +3224,8 @@
   "published": 1862,
   "series": null,
   "series_index": null,
-  "letter": "L"
+  "letter": "L",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780451525260-M.jpg?default=false"
  },
  {
   "title": "Lessons in Chemistry",
@@ -2967,7 +3236,8 @@
   "published": 2022,
   "series": null,
   "series_index": null,
-  "letter": "L"
+  "letter": "L",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781804990926-M.jpg?default=false"
  },
  {
   "title": "Lights Out",
@@ -2978,7 +3248,8 @@
   "published": 2024,
   "series": null,
   "series_index": null,
-  "letter": "L"
+  "letter": "L",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781638932239-M.jpg?default=false"
  },
  {
   "title": "Like Father, Like Son",
@@ -2989,7 +3260,8 @@
   "published": null,
   "series": null,
   "series_index": null,
-  "letter": "L"
+  "letter": "L",
+  "cover": null
  },
  {
   "title": "The Lincoln Highway",
@@ -3000,7 +3272,8 @@
   "published": 2021,
   "series": null,
   "series_index": null,
-  "letter": "L"
+  "letter": "L",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780735222359-M.jpg?default=false"
  },
  {
   "title": "The Litigators",
@@ -3011,7 +3284,8 @@
   "published": 2011,
   "series": null,
   "series_index": null,
-  "letter": "L"
+  "letter": "L",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781444729702-M.jpg?default=false"
  },
  {
   "title": "A Little Life",
@@ -3022,7 +3296,8 @@
   "published": 2015,
   "series": null,
   "series_index": null,
-  "letter": "L"
+  "letter": "L",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385539258-M.jpg?default=false"
  },
  {
   "title": "The Little Prince",
@@ -3033,7 +3308,8 @@
   "published": 1943,
   "series": null,
   "series_index": null,
-  "letter": "L"
+  "letter": "L",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780152023980-M.jpg?default=false"
  },
  {
   "title": "Little Women",
@@ -3044,7 +3320,8 @@
   "published": 1868,
   "series": null,
   "series_index": null,
-  "letter": "L"
+  "letter": "L",
+  "cover": null
  },
  {
   "title": "Lolita",
@@ -3055,7 +3332,8 @@
   "published": 1955,
   "series": null,
   "series_index": null,
-  "letter": "L"
+  "letter": "L",
+  "cover": null
  },
  {
   "title": "Long Island",
@@ -3066,7 +3344,8 @@
   "published": 2024,
   "series": null,
   "series_index": null,
-  "letter": "L"
+  "letter": "L",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781476785110-M.jpg?default=false"
  },
  {
   "title": "Looking for Alaska",
@@ -3077,7 +3356,8 @@
   "published": 2005,
   "series": null,
   "series_index": null,
-  "letter": "L"
+  "letter": "L",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781435249158-M.jpg?default=false"
  },
  {
   "title": "Lord Edgware Dies",
@@ -3088,7 +3368,8 @@
   "published": 1933,
   "series": "Hercule Poirot",
   "series_index": "9",
-  "letter": "L"
+  "letter": "L",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780002314572-M.jpg?default=false"
  },
  {
   "title": "Lord of the Flies",
@@ -3099,7 +3380,8 @@
   "published": 1954,
   "series": null,
   "series_index": null,
-  "letter": "L"
+  "letter": "L",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780140283334-M.jpg?default=false"
  },
  {
   "title": "Love in the Time of Cholera",
@@ -3110,7 +3392,8 @@
   "published": 1985,
   "series": null,
   "series_index": null,
-  "letter": "L"
+  "letter": "L",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781400034680-M.jpg?default=false"
  },
  {
   "title": "The Lovely Bones",
@@ -3121,7 +3404,8 @@
   "published": 2002,
   "series": null,
   "series_index": null,
-  "letter": "L"
+  "letter": "L",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780316166683-M.jpg?default=false"
  },
  {
   "title": "The Magic Mountain",
@@ -3132,7 +3416,8 @@
   "published": 1924,
   "series": null,
   "series_index": null,
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780593688137-M.jpg?default=false"
  },
  {
   "title": "Magpie Murders",
@@ -3143,7 +3428,8 @@
   "published": 2016,
   "series": null,
   "series_index": null,
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780062645227-M.jpg?default=false"
  },
  {
   "title": "The Maid",
@@ -3154,7 +3440,8 @@
   "published": 2022,
   "series": null,
   "series_index": null,
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780593356159-M.jpg?default=false"
  },
  {
   "title": "A Man Called Ove",
@@ -3165,7 +3452,8 @@
   "published": 2012,
   "series": null,
   "series_index": null,
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781476738017-M.jpg?default=false"
  },
  {
   "title": "The Man in the Brown Suit",
@@ -3176,7 +3464,8 @@
   "published": 1924,
   "series": "Colonel Race",
   "series_index": "1",
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007151660-M.jpg?default=false"
  },
  {
   "title": "The Man in the Iron Mask",
@@ -3187,7 +3476,8 @@
   "published": 1850,
   "series": null,
   "series_index": null,
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780140439243-M.jpg?default=false"
  },
  {
   "title": "Mansfield Park",
@@ -3198,7 +3488,8 @@
   "published": 1814,
   "series": null,
   "series_index": null,
-  "letter": "M"
+  "letter": "M",
+  "cover": null
  },
  {
   "title": "The Martian",
@@ -3209,7 +3500,8 @@
   "published": 2011,
   "series": null,
   "series_index": null,
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780804139021-M.jpg?default=false"
  },
  {
   "title": "The Martian Chronicles",
@@ -3220,7 +3512,8 @@
   "published": 1950,
   "series": null,
   "series_index": null,
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780553278224-M.jpg?default=false"
  },
  {
   "title": "Martyr!",
@@ -3231,7 +3524,8 @@
   "published": 2024,
   "series": null,
   "series_index": null,
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780593537619-M.jpg?default=false"
  },
  {
   "title": "The Memoirs of Sherlock Holmes",
@@ -3242,7 +3536,8 @@
   "published": 1893,
   "series": "Sherlock Holmes",
   "series_index": "4",
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780192123091-M.jpg?default=false"
  },
  {
   "title": "The Memory Police",
@@ -3253,7 +3548,8 @@
   "published": 1994,
   "series": null,
   "series_index": null,
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781101870600-M.jpg?default=false"
  },
  {
   "title": "Men Without Women",
@@ -3264,7 +3560,8 @@
   "published": 2014,
   "series": null,
   "series_index": null,
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385689458-M.jpg?default=false"
  },
  {
   "title": "The Metamorphosis",
@@ -3275,7 +3572,8 @@
   "published": 1915,
   "series": null,
   "series_index": null,
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780553213690-M.jpg?default=false"
  },
  {
   "title": "Mickey7",
@@ -3286,7 +3584,8 @@
   "published": 2022,
   "series": null,
   "series_index": null,
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781250275035-M.jpg?default=false"
  },
  {
   "title": "Middlemarch",
@@ -3297,7 +3596,8 @@
   "published": 1872,
   "series": null,
   "series_index": null,
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780451529176-M.jpg?default=false"
  },
  {
   "title": "The Midnight Library",
@@ -3308,7 +3608,8 @@
   "published": 2020,
   "series": null,
   "series_index": null,
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780525559474-M.jpg?default=false"
  },
  {
   "title": "Milkman",
@@ -3319,7 +3620,8 @@
   "published": 2018,
   "series": null,
   "series_index": null,
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780571338764-M.jpg?default=false"
  },
  {
   "title": "The Ministry of Time",
@@ -3330,7 +3632,8 @@
   "published": 2024,
   "series": null,
   "series_index": null,
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781668045145-M.jpg?default=false"
  },
  {
   "title": "The Mirror Crack'd From Side to Side",
@@ -3341,7 +3644,8 @@
   "published": 1962,
   "series": "Miss Marple",
   "series_index": "8",
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007120987-M.jpg?default=false"
  },
  {
   "title": "Misery",
@@ -3352,7 +3656,8 @@
   "published": 1987,
   "series": null,
   "series_index": null,
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780450417399-M.jpg?default=false"
  },
  {
   "title": "Moby-Dick",
@@ -3363,7 +3668,8 @@
   "published": null,
   "series": null,
   "series_index": null,
-  "letter": "M"
+  "letter": "M",
+  "cover": null
  },
  {
   "title": "Moby-Dick or, The Whale",
@@ -3374,7 +3680,8 @@
   "published": 1851,
   "series": null,
   "series_index": null,
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780142437247-M.jpg?default=false"
  },
  {
   "title": "Mockingjay",
@@ -3385,7 +3692,8 @@
   "published": 2010,
   "series": "The Hunger Games",
   "series_index": "3",
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780439023511-M.jpg?default=false"
  },
  {
   "title": "The Moon and Sixpence",
@@ -3396,7 +3704,8 @@
   "published": 1919,
   "series": null,
   "series_index": null,
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781598185218-M.jpg?default=false"
  },
  {
   "title": "The Moving Finger",
@@ -3407,7 +3716,8 @@
   "published": 1942,
   "series": "Miss Marple",
   "series_index": "3",
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007120840-M.jpg?default=false"
  },
  {
   "title": "Mr. Mercedes",
@@ -3418,7 +3728,8 @@
   "published": 2014,
   "series": null,
   "series_index": null,
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781476754451-M.jpg?default=false"
  },
  {
   "title": "Mrs. Dalloway",
@@ -3429,7 +3740,8 @@
   "published": 1925,
   "series": null,
   "series_index": null,
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780151009985-M.jpg?default=false"
  },
  {
   "title": "Mrs. McGinty's Dead",
@@ -3440,7 +3752,8 @@
   "published": 1952,
   "series": "Hercule Poirot",
   "series_index": "29",
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781572707313-M.jpg?default=false"
  },
  {
   "title": "Murder at the Vicarage",
@@ -3451,7 +3764,8 @@
   "published": 1930,
   "series": "Miss Marple",
   "series_index": "1",
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781579126254-M.jpg?default=false"
  },
  {
   "title": "Murder in Mesopotamia",
@@ -3462,7 +3776,8 @@
   "published": 1936,
   "series": "Hercule Poirot",
   "series_index": "14",
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007113804-M.jpg?default=false"
  },
  {
   "title": "Murder in the Mews",
@@ -3473,7 +3788,8 @@
   "published": 1937,
   "series": "Hercule Poirot",
   "series_index": "16",
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781572702844-M.jpg?default=false"
  },
  {
   "title": "A Murder Is Announced",
@@ -3484,7 +3800,8 @@
   "published": 1950,
   "series": "Miss Marple",
   "series_index": "4",
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781579126292-M.jpg?default=false"
  },
  {
   "title": "Murder Is Easy",
@@ -3495,7 +3812,8 @@
   "published": 1939,
   "series": "Superintendent Battle",
   "series_index": "4",
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780312979829-M.jpg?default=false"
  },
  {
   "title": "The Murder of Roger Ackroyd",
@@ -3506,7 +3824,8 @@
   "published": 1926,
   "series": "Hercule Poirot",
   "series_index": "4",
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781579126278-M.jpg?default=false"
  },
  {
   "title": "Murder on the Links",
@@ -3517,7 +3836,8 @@
   "published": 1923,
   "series": "Hercule Poirot",
   "series_index": "2",
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781734452556-M.jpg?default=false"
  },
  {
   "title": "Murder on the Orient Express",
@@ -3528,7 +3848,8 @@
   "published": 1934,
   "series": "Hercule Poirot",
   "series_index": "10",
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007119318-M.jpg?default=false"
  },
  {
   "title": "My Beloved World",
@@ -3539,7 +3860,8 @@
   "published": 2013,
   "series": null,
   "series_index": null,
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780307594884-M.jpg?default=false"
  },
  {
   "title": "The Mysterious Affair at Styles",
@@ -3550,7 +3872,8 @@
   "published": 1920,
   "series": "Hercule Poirot",
   "series_index": "1",
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781734452594-M.jpg?default=false"
  },
  {
   "title": "The Mystery of the Blue Train",
@@ -3561,7 +3884,8 @@
   "published": 1928,
   "series": "Hercule Poirot",
   "series_index": "6",
-  "letter": "M"
+  "letter": "M",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781579126957-M.jpg?default=false"
  },
  {
   "title": "Nemesis",
@@ -3572,7 +3896,8 @@
   "published": 1971,
   "series": "Miss Marple",
   "series_index": "11",
-  "letter": "N"
+  "letter": "N",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780451200181-M.jpg?default=false"
  },
  {
   "title": "Never Flinch",
@@ -3583,7 +3908,8 @@
   "published": 2025,
   "series": "Holly Gibney",
   "series_index": "4",
-  "letter": "N"
+  "letter": "N",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781668089330-M.jpg?default=false"
  },
  {
   "title": "Never Let Me Go",
@@ -3594,7 +3920,8 @@
   "published": 2005,
   "series": null,
   "series_index": null,
-  "letter": "N"
+  "letter": "N",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781400078776-M.jpg?default=false"
  },
  {
   "title": "Never Lie",
@@ -3605,7 +3932,8 @@
   "published": 2022,
   "series": null,
   "series_index": null,
-  "letter": "N"
+  "letter": "N",
+  "cover": null
  },
  {
   "title": "Never Never",
@@ -3616,7 +3944,8 @@
   "published": null,
   "series": null,
   "series_index": null,
-  "letter": "N"
+  "letter": "N",
+  "cover": null
  },
  {
   "title": "The New Map",
@@ -3627,7 +3956,8 @@
   "published": null,
   "series": null,
   "series_index": null,
-  "letter": "N"
+  "letter": "N",
+  "cover": null
  },
  {
   "title": "The Nightingale",
@@ -3638,7 +3968,8 @@
   "published": 2015,
   "series": null,
   "series_index": null,
-  "letter": "N"
+  "letter": "N",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780312577223-M.jpg?default=false"
  },
  {
   "title": "Night of the Milky Way Railway",
@@ -3649,7 +3980,8 @@
   "published": null,
   "series": null,
   "series_index": null,
-  "letter": "N"
+  "letter": "N",
+  "cover": null
  },
  {
   "title": "Night Train to the Stars",
@@ -3660,7 +3992,8 @@
   "published": 1934,
   "series": null,
   "series_index": null,
-  "letter": "N"
+  "letter": "N",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781784877767-M.jpg?default=false"
  },
  {
   "title": "Nocturnes",
@@ -3671,7 +4004,8 @@
   "published": 2009,
   "series": null,
   "series_index": null,
-  "letter": "N"
+  "letter": "N",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780307397874-M.jpg?default=false"
  },
  {
   "title": "No Longer Human",
@@ -3682,7 +4016,8 @@
   "published": 1948,
   "series": null,
   "series_index": null,
-  "letter": "N"
+  "letter": "N",
+  "cover": null
  },
  {
   "title": "N or M?",
@@ -3693,7 +4028,8 @@
   "published": 1941,
   "series": "Tommy & Tuppence Mysteries",
   "series_index": "3",
-  "letter": "N"
+  "letter": "N",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007111459-M.jpg?default=false"
  },
  {
   "title": "Normal People",
@@ -3704,7 +4040,8 @@
   "published": 2018,
   "series": null,
   "series_index": null,
-  "letter": "N"
+  "letter": "N",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781984822178-M.jpg?default=false"
  },
  {
   "title": "Northanger Abbey",
@@ -3715,7 +4052,8 @@
   "published": 1817,
   "series": null,
   "series_index": null,
-  "letter": "N"
+  "letter": "N",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781593082642-M.jpg?default=false"
  },
  {
   "title": "North Woods",
@@ -3726,7 +4064,8 @@
   "published": 2023,
   "series": null,
   "series_index": null,
-  "letter": "N"
+  "letter": "N",
+  "cover": null
  },
  {
   "title": "Norwegian Wood",
@@ -3737,7 +4076,8 @@
   "published": 1987,
   "series": null,
   "series_index": null,
-  "letter": "N"
+  "letter": "N",
+  "cover": null
  },
  {
   "title": "Nothing to Lose",
@@ -3748,7 +4088,8 @@
   "published": 2008,
   "series": "Jack Reacher",
   "series_index": "12",
-  "letter": "N"
+  "letter": "N",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385340564-M.jpg?default=false"
  },
  {
   "title": "The Odyssey",
@@ -3759,7 +4100,8 @@
   "published": -750,
   "series": null,
   "series_index": null,
-  "letter": "O"
+  "letter": "O",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780143039952-M.jpg?default=false"
  },
  {
   "title": "Of Mice and Men",
@@ -3770,7 +4112,8 @@
   "published": 1937,
   "series": null,
   "series_index": null,
-  "letter": "O"
+  "letter": "O",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780142000670-M.jpg?default=false"
  },
  {
   "title": "The Old Man and the Sea",
@@ -3781,7 +4124,8 @@
   "published": 1952,
   "series": null,
   "series_index": null,
-  "letter": "O"
+  "letter": "O",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780684830490-M.jpg?default=false"
  },
  {
   "title": "Oliver Twist",
@@ -3792,7 +4136,8 @@
   "published": 1838,
   "series": null,
   "series_index": null,
-  "letter": "O"
+  "letter": "O",
+  "cover": null
  },
  {
   "title": "One Hundred Years of Solitude",
@@ -3803,7 +4148,8 @@
   "published": 1967,
   "series": null,
   "series_index": null,
-  "letter": "O"
+  "letter": "O",
+  "cover": null
  },
  {
   "title": "One Shot",
@@ -3814,7 +4160,8 @@
   "published": 2005,
   "series": "Jack Reacher",
   "series_index": "9",
-  "letter": "O"
+  "letter": "O",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780440241027-M.jpg?default=false"
  },
  {
   "title": "One, Two, Buckle My Shoe",
@@ -3825,7 +4172,8 @@
   "published": 1940,
   "series": "Hercule Poirot",
   "series_index": "22",
-  "letter": "O"
+  "letter": "O",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781572703858-M.jpg?default=false"
  },
  {
   "title": "Onyx Storm",
@@ -3836,7 +4184,8 @@
   "published": 2025,
   "series": "The Empyrean",
   "series_index": "3",
-  "letter": "O"
+  "letter": "O",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781649374189-M.jpg?default=false"
  },
  {
   "title": "Ordeal by Innocence",
@@ -3847,7 +4196,8 @@
   "published": 1958,
   "series": null,
   "series_index": null,
-  "letter": "O"
+  "letter": "O",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780312981624-M.jpg?default=false"
  },
  {
   "title": "The Outsider",
@@ -3858,7 +4208,8 @@
   "published": 2018,
   "series": "Holly Gibney",
   "series_index": "1",
-  "letter": "O"
+  "letter": "O",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781501180989-M.jpg?default=false"
  },
  {
   "title": "The Outsiders",
@@ -3869,7 +4220,8 @@
   "published": 1967,
   "series": null,
   "series_index": null,
-  "letter": "O"
+  "letter": "O",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780142407332-M.jpg?default=false"
  },
  {
   "title": "The Overstory",
@@ -3880,7 +4232,8 @@
   "published": 2018,
   "series": null,
   "series_index": null,
-  "letter": "O"
+  "letter": "O",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780393356687-M.jpg?default=false"
  },
  {
   "title": "Pachinko",
@@ -3891,7 +4244,8 @@
   "published": 2017,
   "series": null,
   "series_index": null,
-  "letter": "P"
+  "letter": "P",
+  "cover": null
  },
  {
   "title": "A Painted House",
@@ -3902,7 +4256,8 @@
   "published": 2001,
   "series": null,
   "series_index": null,
-  "letter": "P"
+  "letter": "P",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385337939-M.jpg?default=false"
  },
  {
   "title": "The Pale Horse",
@@ -3913,7 +4268,8 @@
   "published": 1961,
   "series": null,
   "series_index": null,
-  "letter": "P"
+  "letter": "P",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780312981716-M.jpg?default=false"
  },
  {
   "title": "A Pale View of Hills",
@@ -3924,7 +4280,8 @@
   "published": 1982,
   "series": null,
   "series_index": null,
-  "letter": "P"
+  "letter": "P",
+  "cover": null
  },
  {
   "title": "Paper Towns",
@@ -3935,7 +4292,8 @@
   "published": 2008,
   "series": null,
   "series_index": null,
-  "letter": "P"
+  "letter": "P",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780142414934-M.jpg?default=false"
  },
  {
   "title": "The Partner",
@@ -3946,7 +4304,8 @@
   "published": 1997,
   "series": null,
   "series_index": null,
-  "letter": "P"
+  "letter": "P",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385339100-M.jpg?default=false"
  },
  {
   "title": "Partners in Crime",
@@ -3957,7 +4316,8 @@
   "published": 1929,
   "series": "Tommy & Tuppence Mysteries",
   "series_index": "2",
-  "letter": "P"
+  "letter": "P",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007111503-M.jpg?default=false"
  },
  {
   "title": "Passenger to Frankfurt",
@@ -3968,7 +4328,8 @@
   "published": 1970,
   "series": null,
   "series_index": null,
-  "letter": "P"
+  "letter": "P",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007154920-M.jpg?default=false"
  },
  {
   "title": "The Pearl",
@@ -3979,7 +4340,8 @@
   "published": 1947,
   "series": null,
   "series_index": null,
-  "letter": "P"
+  "letter": "P",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780142000694-M.jpg?default=false"
  },
  {
   "title": "The Pelican Brief",
@@ -3990,7 +4352,8 @@
   "published": 1992,
   "series": null,
   "series_index": null,
-  "letter": "P"
+  "letter": "P",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385339704-M.jpg?default=false"
  },
  {
   "title": "The Penguin Book of Japanese Short Stories",
@@ -4001,7 +4364,8 @@
   "published": 2018,
   "series": null,
   "series_index": null,
-  "letter": "P"
+  "letter": "P",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780141395623-M.jpg?default=false"
  },
  {
   "title": "People We Meet on Vacation",
@@ -4012,7 +4376,8 @@
   "published": 2021,
   "series": null,
   "series_index": null,
-  "letter": "P"
+  "letter": "P",
+  "cover": null
  },
  {
   "title": "A Perfect Day to Be Alone",
@@ -4023,7 +4388,8 @@
   "published": 2007,
   "series": null,
   "series_index": null,
-  "letter": "P"
+  "letter": "P",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781529427691-M.jpg?default=false"
  },
  {
   "title": "Peril at End House",
@@ -4034,7 +4400,8 @@
   "published": 1932,
   "series": "Hercule Poirot",
   "series_index": "8",
-  "letter": "P"
+  "letter": "P",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007119301-M.jpg?default=false"
  },
  {
   "title": "Persuader",
@@ -4045,7 +4412,8 @@
   "published": 2003,
   "series": "Jack Reacher",
   "series_index": "7",
-  "letter": "P"
+  "letter": "P",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780440241003-M.jpg?default=false"
  },
  {
   "title": "Persuasion",
@@ -4056,7 +4424,8 @@
   "published": 1817,
   "series": null,
   "series_index": null,
-  "letter": "P"
+  "letter": "P",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780192802637-M.jpg?default=false"
  },
  {
   "title": "Pet Sematary",
@@ -4067,7 +4436,8 @@
   "published": 1983,
   "series": null,
   "series_index": null,
-  "letter": "P"
+  "letter": "P",
+  "cover": null
  },
  {
   "title": "The Picture of Dorian Gray",
@@ -4078,7 +4448,8 @@
   "published": 1890,
   "series": null,
   "series_index": null,
-  "letter": "P"
+  "letter": "P",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780141439570-M.jpg?default=false"
  },
  {
   "title": "The Plague",
@@ -4089,7 +4460,8 @@
   "published": 1947,
   "series": null,
   "series_index": null,
-  "letter": "P"
+  "letter": "P",
+  "cover": null
  },
  {
   "title": "Playing for Pizza",
@@ -4100,7 +4472,8 @@
   "published": 2007,
   "series": null,
   "series_index": null,
-  "letter": "P"
+  "letter": "P",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385525008-M.jpg?default=false"
  },
  {
   "title": "A Pocket Full of Rye",
@@ -4111,7 +4484,8 @@
   "published": 1953,
   "series": "Miss Marple",
   "series_index": "6",
-  "letter": "P"
+  "letter": "P",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780451199867-M.jpg?default=false"
  },
  {
   "title": "Poirot Investigates",
@@ -4122,7 +4496,8 @@
   "published": 1924,
   "series": "Hercule Poirot",
   "series_index": "3",
-  "letter": "P"
+  "letter": "P",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781736062883-M.jpg?default=false"
  },
  {
   "title": "The Postcard",
@@ -4133,7 +4508,8 @@
   "published": 2021,
   "series": null,
   "series_index": null,
-  "letter": "P"
+  "letter": "P",
+  "cover": null
  },
  {
   "title": "Postern of Fate",
@@ -4144,7 +4520,8 @@
   "published": 1973,
   "series": "Tommy and Tuppence Mysteries",
   "series_index": "5",
-  "letter": "P"
+  "letter": "P",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007111480-M.jpg?default=false"
  },
  {
   "title": "Pride and Prejudice",
@@ -4155,7 +4532,8 @@
   "published": 1813,
   "series": null,
   "series_index": null,
-  "letter": "P"
+  "letter": "P",
+  "cover": null
  },
  {
   "title": "Project Hail Mary",
@@ -4166,7 +4544,8 @@
   "published": 2021,
   "series": null,
   "series_index": null,
-  "letter": "P"
+  "letter": "P",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780593135204-M.jpg?default=false"
  },
  {
   "title": "Prophet Song",
@@ -4177,7 +4556,8 @@
   "published": 2023,
   "series": null,
   "series_index": null,
-  "letter": "P"
+  "letter": "P",
+  "cover": null
  },
  {
   "title": "The Racketeer",
@@ -4188,7 +4568,8 @@
   "published": 2012,
   "series": null,
   "series_index": null,
-  "letter": "R"
+  "letter": "R",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385535144-M.jpg?default=false"
  },
  {
   "title": "The Rainmaker",
@@ -4199,7 +4580,8 @@
   "published": 1995,
   "series": null,
   "series_index": null,
-  "letter": "R"
+  "letter": "R",
+  "cover": null
  },
  {
   "title": "A Random Walk Down Wall Street",
@@ -4210,7 +4592,8 @@
   "published": 1973,
   "series": null,
   "series_index": null,
-  "letter": "R"
+  "letter": "R",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781324002185-M.jpg?default=false"
  },
  {
   "title": "Rashomon",
@@ -4221,7 +4604,8 @@
   "published": 1915,
   "series": null,
   "series_index": null,
-  "letter": "R"
+  "letter": "R",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780871401731-M.jpg?default=false"
  },
  {
   "title": "The Reckoning",
@@ -4232,7 +4616,8 @@
   "published": 2018,
   "series": null,
   "series_index": null,
-  "letter": "R"
+  "letter": "R",
+  "cover": null
  },
  {
   "title": "The Red Badge of Courage",
@@ -4243,7 +4628,8 @@
   "published": 1894,
   "series": null,
   "series_index": null,
-  "letter": "R"
+  "letter": "R",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781580495868-M.jpg?default=false"
  },
  {
   "title": "Red Sparrow",
@@ -4254,7 +4640,8 @@
   "published": 2013,
   "series": null,
   "series_index": null,
-  "letter": "R"
+  "letter": "R",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781476706122-M.jpg?default=false"
  },
  {
   "title": "The Remains of the Day",
@@ -4265,7 +4652,8 @@
   "published": 1989,
   "series": null,
   "series_index": null,
-  "letter": "R"
+  "letter": "R",
+  "cover": null
  },
  {
   "title": "Remarkably Bright Creatures",
@@ -4276,7 +4664,8 @@
   "published": 2022,
   "series": null,
   "series_index": null,
-  "letter": "R"
+  "letter": "R",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780063204157-M.jpg?default=false"
  },
  {
   "title": "Reminders of Him",
@@ -4287,7 +4676,8 @@
   "published": 2022,
   "series": null,
   "series_index": null,
-  "letter": "R"
+  "letter": "R",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781542025607-M.jpg?default=false"
  },
  {
   "title": "The Return of Sherlock Holmes",
@@ -4298,7 +4688,8 @@
   "published": 1904,
   "series": "Sherlock Holmes",
   "series_index": "6",
-  "letter": "R"
+  "letter": "R",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780192123176-M.jpg?default=false"
  },
  {
   "title": "The Return of the King",
@@ -4309,7 +4700,8 @@
   "published": 1955,
   "series": "The Lord of the Rings",
   "series_index": "3",
-  "letter": "R"
+  "letter": "R",
+  "cover": null
  },
  {
   "title": "The Richest Man in Babylon",
@@ -4320,7 +4712,8 @@
   "published": 1926,
   "series": null,
   "series_index": null,
-  "letter": "R"
+  "letter": "R",
+  "cover": "https://covers.openlibrary.org/b/isbn/9789388118354-M.jpg?default=false"
  },
  {
   "title": "Rob Roy",
@@ -4331,7 +4724,8 @@
   "published": 1817,
   "series": null,
   "series_index": null,
-  "letter": "R"
+  "letter": "R",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780140435542-M.jpg?default=false"
  },
  {
   "title": "Rogue Lawyer",
@@ -4342,7 +4736,8 @@
   "published": 2015,
   "series": null,
   "series_index": null,
-  "letter": "R"
+  "letter": "R",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385539432-M.jpg?default=false"
  },
  {
   "title": "A Room of One’s Own",
@@ -4353,7 +4748,8 @@
   "published": 1929,
   "series": null,
   "series_index": null,
-  "letter": "R"
+  "letter": "R",
+  "cover": null
  },
  {
   "title": "The Rooster Bar",
@@ -4364,7 +4760,8 @@
   "published": 2017,
   "series": null,
   "series_index": null,
-  "letter": "R"
+  "letter": "R",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385541176-M.jpg?default=false"
  },
  {
   "title": "Rules of Civility",
@@ -4375,7 +4772,8 @@
   "published": 2011,
   "series": null,
   "series_index": null,
-  "letter": "R"
+  "letter": "R",
+  "cover": null
  },
  {
   "title": "The Runaway Jury",
@@ -4386,7 +4784,8 @@
   "published": 1996,
   "series": null,
   "series_index": null,
-  "letter": "R"
+  "letter": "R",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385339698-M.jpg?default=false"
  },
  {
   "title": "Running Blind",
@@ -4397,7 +4796,8 @@
   "published": 2000,
   "series": "Jack Reacher",
   "series_index": "4",
-  "letter": "R"
+  "letter": "R",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780515130973-M.jpg?default=false"
  },
  {
   "title": "Sad Cypress",
@@ -4408,7 +4808,8 @@
   "published": 1940,
   "series": "Hercule Poirot",
   "series_index": "21",
-  "letter": "S"
+  "letter": "S",
+  "cover": null
  },
  {
   "title": "’Salem’s Lot",
@@ -4419,7 +4820,8 @@
   "published": 1975,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780450031069-M.jpg?default=false"
  },
  {
   "title": "Sanshirō",
@@ -4430,7 +4832,8 @@
   "published": 1908,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781929280100-M.jpg?default=false"
  },
  {
   "title": "Sapiens",
@@ -4441,7 +4844,8 @@
   "published": 2011,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": null
  },
  {
   "title": "The Scarlet Letter",
@@ -4452,7 +4856,8 @@
   "published": 1850,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780142437261-M.jpg?default=false"
  },
  {
   "title": "The Secret Adversary",
@@ -4463,7 +4868,8 @@
   "published": 1922,
   "series": "Tommy and Tuppence Mysteries",
   "series_index": "1",
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781600963940-M.jpg?default=false"
  },
  {
   "title": "The Secret History",
@@ -4474,7 +4880,8 @@
   "published": 1992,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781400031702-M.jpg?default=false"
  },
  {
   "title": "The Secret of Chimneys",
@@ -4485,7 +4892,8 @@
   "published": 1925,
   "series": "Superintendent Battle",
   "series_index": "1",
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007122585-M.jpg?default=false"
  },
  {
   "title": "Sense and Sensibility",
@@ -4496,7 +4904,8 @@
   "published": 1811,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780141439662-M.jpg?default=false"
  },
  {
   "title": "The Seven Dials Mystery",
@@ -4507,7 +4916,8 @@
   "published": 1929,
   "series": "Superintendent Battle",
   "series_index": "2",
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007122592-M.jpg?default=false"
  },
  {
   "title": "The Seven Husbands of Evelyn Hugo",
@@ -4518,7 +4928,8 @@
   "published": 2017,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781501139239-M.jpg?default=false"
  },
  {
   "title": "The Shining",
@@ -4529,7 +4940,8 @@
   "published": 1977,
   "series": "The Shining",
   "series_index": "1",
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780450040184-M.jpg?default=false"
  },
  {
   "title": "Shoe Dog",
@@ -4540,7 +4952,8 @@
   "published": 2016,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781501135910-M.jpg?default=false"
  },
  {
   "title": "Shōgun",
@@ -4551,7 +4964,8 @@
   "published": 1975,
   "series": "Asian Saga",
   "series_index": "1",
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781982603847-M.jpg?default=false"
  },
  {
   "title": "The Sign of Four",
@@ -4562,7 +4976,8 @@
   "published": 1890,
   "series": "Sherlock Holmes",
   "series_index": "2",
-  "letter": "S"
+  "letter": "S",
+  "cover": null
  },
  {
   "title": "Silence",
@@ -4573,7 +4988,8 @@
   "published": null,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": null
  },
  {
   "title": "The Silent Patient",
@@ -4584,7 +5000,8 @@
   "published": 2019,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781250301697-M.jpg?default=false"
  },
  {
   "title": "Silent Spring",
@@ -4595,7 +5012,8 @@
   "published": 1962,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": null
  },
  {
   "title": "The Sittaford Mystery",
@@ -4606,7 +5024,8 @@
   "published": 1931,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007136841-M.jpg?default=false"
  },
  {
   "title": "Skipping Christmas",
@@ -4617,7 +5036,8 @@
   "published": 2001,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780099481683-M.jpg?default=false"
  },
  {
   "title": "Slaughterhouse-Five",
@@ -4628,7 +5048,8 @@
   "published": 1969,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": null
  },
  {
   "title": "Sleeping Murder",
@@ -4639,7 +5060,8 @@
   "published": 1976,
   "series": "Miss Marple",
   "series_index": "12",
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780002317856-M.jpg?default=false"
  },
  {
   "title": "Snow Country",
@@ -4650,7 +5072,8 @@
   "published": 1948,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780679761044-M.jpg?default=false"
  },
  {
   "title": "The Snowman",
@@ -4661,7 +5084,8 @@
   "published": 2007,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780307595867-M.jpg?default=false"
  },
  {
   "title": "Something Wicked This Way Comes",
@@ -4672,7 +5096,8 @@
   "published": 1962,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780380729401-M.jpg?default=false"
  },
  {
   "title": "Song of Achilles",
@@ -4683,7 +5108,8 @@
   "published": 2011,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": null
  },
  {
   "title": "Song of Solomon",
@@ -4694,7 +5120,8 @@
   "published": 1977,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": null
  },
  {
   "title": "Sooley",
@@ -4705,7 +5132,8 @@
   "published": 2021,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385547680-M.jpg?default=false"
  },
  {
   "title": "Source Code",
@@ -4716,7 +5144,8 @@
   "published": 2025,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780593801581-M.jpg?default=false"
  },
  {
   "title": "South of the Border, West of the Sun",
@@ -4727,7 +5156,8 @@
   "published": 1992,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780099448570-M.jpg?default=false"
  },
  {
   "title": "Sparkling Cyanide",
@@ -4738,7 +5168,8 @@
   "published": 1945,
   "series": "Colonel Race",
   "series_index": "4",
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007136858-M.jpg?default=false"
  },
  {
   "title": "Sparring Partners",
@@ -4749,7 +5180,8 @@
   "published": 2022,
   "series": "Jake Brigance",
   "series_index": "4",
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385549325-M.jpg?default=false"
  },
  {
   "title": "Sputnik Sweetheart",
@@ -4760,7 +5192,8 @@
   "published": 1999,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780099448471-M.jpg?default=false"
  },
  {
   "title": "The Stand",
@@ -4771,7 +5204,8 @@
   "published": 1978,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": null
  },
  {
   "title": "Station Eleven",
@@ -4782,7 +5216,8 @@
   "published": 2014,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385353304-M.jpg?default=false"
  },
  {
   "title": "Steve Jobs",
@@ -4793,7 +5228,8 @@
   "published": 2011,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781451648539-M.jpg?default=false"
  },
  {
   "title": "Stoner",
@@ -4804,7 +5240,8 @@
   "published": 1965,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781590171998-M.jpg?default=false"
  },
  {
   "title": "The Strange Case of Dr. Jekyll and Mr. Hyde",
@@ -4815,7 +5252,8 @@
   "published": 1886,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780451528957-M.jpg?default=false"
  },
  {
   "title": "The Strange Library",
@@ -4826,7 +5264,8 @@
   "published": 2005,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385354301-M.jpg?default=false"
  },
  {
   "title": "The Stranger",
@@ -4837,7 +5276,8 @@
   "published": 1942,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": null
  },
  {
   "title": "Strangers in Time",
@@ -4848,7 +5288,8 @@
   "published": 2025,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781538742051-M.jpg?default=false"
  },
  {
   "title": "The Street Lawyer",
@@ -4859,7 +5300,8 @@
   "published": 1998,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385339094-M.jpg?default=false"
  },
  {
   "title": "The Strength of the Few",
@@ -4870,7 +5312,8 @@
   "published": 2025,
   "series": "Hierarchy",
   "series_index": "2",
-  "letter": "S"
+  "letter": "S",
+  "cover": null
  },
  {
   "title": "A Study in Scarlet",
@@ -4881,7 +5324,8 @@
   "published": 1887,
   "series": "Sherlock Holmes",
   "series_index": "1",
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781420925531-M.jpg?default=false"
  },
  {
   "title": "The Subtle Art of Not Giving a F*ck",
@@ -4892,7 +5336,8 @@
   "published": 2016,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9798804636129-M.jpg?default=false"
  },
  {
   "title": "The Summons",
@@ -4903,7 +5348,8 @@
   "published": 2002,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385339599-M.jpg?default=false"
  },
  {
   "title": "The Sun Also Rises",
@@ -4914,7 +5360,8 @@
   "published": 1926,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": null
  },
  {
   "title": "Sunrise on the Reaping",
@@ -4925,7 +5372,8 @@
   "published": 2025,
   "series": "The Hunger Games",
   "series_index": "0.5",
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781546171461-M.jpg?default=false"
  },
  {
   "title": "Sycamore Row",
@@ -4936,7 +5384,8 @@
   "published": 2013,
   "series": "Jake Brigance",
   "series_index": "2",
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385537131-M.jpg?default=false"
  },
  {
   "title": "The Sympathizer",
@@ -4947,7 +5396,8 @@
   "published": 2015,
   "series": null,
   "series_index": null,
-  "letter": "S"
+  "letter": "S",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780802123459-M.jpg?default=false"
  },
  {
   "title": "A Table for Two",
@@ -4958,7 +5408,8 @@
   "published": 2024,
   "series": null,
   "series_index": null,
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780593296370-M.jpg?default=false"
  },
  {
   "title": "Tai-Pan",
@@ -4969,7 +5420,8 @@
   "published": 1966,
   "series": "Asian Saga",
   "series_index": "2",
-  "letter": "T"
+  "letter": "T",
+  "cover": null
  },
  {
   "title": "Taiwan Travelogue",
@@ -4980,7 +5432,8 @@
   "published": 2020,
   "series": null,
   "series_index": null,
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781644453155-M.jpg?default=false"
  },
  {
   "title": "Taken at the Flood",
@@ -4991,7 +5444,8 @@
   "published": 1948,
   "series": "Hercule Poirot",
   "series_index": "27",
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007121014-M.jpg?default=false"
  },
  {
   "title": "A Tale for the Time Being",
@@ -5002,7 +5456,8 @@
   "published": 2013,
   "series": null,
   "series_index": null,
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780670026630-M.jpg?default=false"
  },
  {
   "title": "A Tale of Two Cities",
@@ -5013,7 +5468,8 @@
   "published": 1859,
   "series": null,
   "series_index": null,
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780141439600-M.jpg?default=false"
  },
  {
   "title": "The Teacher",
@@ -5024,7 +5480,8 @@
   "published": 2024,
   "series": null,
   "series_index": null,
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781728296210-M.jpg?default=false"
  },
  {
   "title": "The Temple of the Golden Pavilion",
@@ -5035,7 +5492,8 @@
   "published": 1956,
   "series": null,
   "series_index": null,
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780679433156-M.jpg?default=false"
  },
  {
   "title": "The Testament",
@@ -5046,7 +5504,8 @@
   "published": 1999,
   "series": null,
   "series_index": null,
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780440234746-M.jpg?default=false"
  },
  {
   "title": "The Testaments",
@@ -5057,7 +5516,8 @@
   "published": 2019,
   "series": null,
   "series_index": null,
-  "letter": "T"
+  "letter": "T",
+  "cover": null
  },
  {
   "title": "Theodore Boone: Kid Lawyer",
@@ -5068,7 +5528,8 @@
   "published": 2010,
   "series": "Theodore Boone",
   "series_index": "1",
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780142428696-M.jpg?default=false"
  },
  {
   "title": "Theodore Boone: The Abduction",
@@ -5079,7 +5540,8 @@
   "published": 2010,
   "series": "Theodore Boone",
   "series_index": "2",
-  "letter": "T"
+  "letter": "T",
+  "cover": null
  },
  {
   "title": "Theodore Boone: The Accused",
@@ -5090,7 +5552,8 @@
   "published": 2012,
   "series": "Theodore Boone",
   "series_index": "3",
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780525425762-M.jpg?default=false"
  },
  {
   "title": "Theodore Boone: The Activist",
@@ -5101,7 +5564,8 @@
   "published": 2013,
   "series": "Theodore Boone",
   "series_index": "4",
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780525425779-M.jpg?default=false"
  },
  {
   "title": "Theodore Boone: The Fugitive",
@@ -5112,7 +5576,8 @@
   "published": 2015,
   "series": "Theodore Boone",
   "series_index": "5",
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780525426387-M.jpg?default=false"
  },
  {
   "title": "Theodore Boone: The Scandal",
@@ -5123,7 +5588,8 @@
   "published": 2016,
   "series": "Theodore Boone",
   "series_index": "6",
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780525426394-M.jpg?default=false"
  },
  {
   "title": "Theo of Golden",
@@ -5134,7 +5600,8 @@
   "published": 2023,
   "series": null,
   "series_index": null,
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781668236512-M.jpg?default=false"
  },
  {
   "title": "They Came to Baghdad",
@@ -5145,7 +5612,8 @@
   "published": 1951,
   "series": null,
   "series_index": null,
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007154937-M.jpg?default=false"
  },
  {
   "title": "They Do It With Mirrors",
@@ -5156,7 +5624,8 @@
   "published": 1952,
   "series": "Miss Marple",
   "series_index": "5",
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780451199904-M.jpg?default=false"
  },
  {
   "title": "The Things We Leave Unfinished",
@@ -5167,7 +5636,8 @@
   "published": 2021,
   "series": null,
   "series_index": null,
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781682815663-M.jpg?default=false"
  },
  {
   "title": "Third Girl",
@@ -5178,7 +5648,8 @@
   "published": 1966,
   "series": "Hercule Poirot",
   "series_index": "40",
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780007121106-M.jpg?default=false"
  },
  {
   "title": "Three Act Tragedy",
@@ -5189,7 +5660,8 @@
   "published": 1935,
   "series": "Hercule Poirot",
   "series_index": "11",
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780425205976-M.jpg?default=false"
  },
  {
   "title": "The Three-Body Problem",
@@ -5200,7 +5672,8 @@
   "published": 2006,
   "series": "Remembrance of Earth’s Past",
   "series_index": "1",
-  "letter": "T"
+  "letter": "T",
+  "cover": null
  },
  {
   "title": "The Three Musketeers",
@@ -5211,7 +5684,8 @@
   "published": 1844,
   "series": null,
   "series_index": null,
-  "letter": "T"
+  "letter": "T",
+  "cover": null
  },
  {
   "title": "A Time for Mercy",
@@ -5222,7 +5696,8 @@
   "published": 2020,
   "series": "Jake Brigance",
   "series_index": "3",
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385545976-M.jpg?default=false"
  },
  {
   "title": "A Time to Kill",
@@ -5233,7 +5708,8 @@
   "published": 1989,
   "series": "Jake Brigance",
   "series_index": "1",
-  "letter": "T"
+  "letter": "T",
+  "cover": null
  },
  {
   "title": "To Kill a Mockingbird",
@@ -5244,7 +5720,8 @@
   "published": 1960,
   "series": null,
   "series_index": null,
-  "letter": "T"
+  "letter": "T",
+  "cover": null
  },
  {
   "title": "Tokyo Vice",
@@ -5255,7 +5732,8 @@
   "published": 2009,
   "series": null,
   "series_index": null,
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780307378798-M.jpg?default=false"
  },
  {
   "title": "Tom Lake",
@@ -5266,7 +5744,8 @@
   "published": 2023,
   "series": null,
   "series_index": null,
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780063327528-M.jpg?default=false"
  },
  {
   "title": "Tomorrow, and Tomorrow, and Tomorrow",
@@ -5277,7 +5756,8 @@
   "published": 2022,
   "series": null,
   "series_index": null,
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780735243347-M.jpg?default=false"
  },
  {
   "title": "Towards Zero",
@@ -5288,7 +5768,8 @@
   "published": 1944,
   "series": "Superintendent Battle",
   "series_index": "5",
-  "letter": "T"
+  "letter": "T",
+  "cover": null
  },
  {
   "title": "Treasure Island",
@@ -5299,7 +5780,8 @@
   "published": 1882,
   "series": null,
   "series_index": null,
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780753453803-M.jpg?default=false"
  },
  {
   "title": "A Tree Grows in Brooklyn",
@@ -5310,7 +5792,8 @@
   "published": 1943,
   "series": null,
   "series_index": null,
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780061120077-M.jpg?default=false"
  },
  {
   "title": "The Trial",
@@ -5321,7 +5804,8 @@
   "published": 1925,
   "series": null,
   "series_index": null,
-  "letter": "T"
+  "letter": "T",
+  "cover": null
  },
  {
   "title": "Tripwire",
@@ -5332,7 +5816,8 @@
   "published": 1999,
   "series": "Jack Reacher",
   "series_index": "3",
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780515128635-M.jpg?default=false"
  },
  {
   "title": "Trust",
@@ -5343,7 +5828,8 @@
   "published": 2022,
   "series": null,
   "series_index": null,
-  "letter": "T"
+  "letter": "T",
+  "cover": null
  },
  {
   "title": "The Truths We Hold",
@@ -5354,7 +5840,8 @@
   "published": 2019,
   "series": null,
   "series_index": null,
-  "letter": "T"
+  "letter": "T",
+  "cover": null
  },
  {
   "title": "The Turn of the Screw",
@@ -5365,7 +5852,8 @@
   "published": 1898,
   "series": null,
   "series_index": null,
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780140620610-M.jpg?default=false"
  },
  {
   "title": "Turtles All the Way Down",
@@ -5376,7 +5864,8 @@
   "published": 2017,
   "series": null,
   "series_index": null,
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780525555360-M.jpg?default=false"
  },
  {
   "title": "Twenty Thousand Leagues Under the Sea",
@@ -5387,7 +5876,8 @@
   "published": 1869,
   "series": null,
   "series_index": null,
-  "letter": "T"
+  "letter": "T",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780760728505-M.jpg?default=false"
  },
  {
   "title": "The Two Towers",
@@ -5398,7 +5888,8 @@
   "published": 1954,
   "series": "The Lord of the Rings",
   "series_index": "2",
-  "letter": "T"
+  "letter": "T",
+  "cover": null
  },
  {
   "title": "Ugly Love",
@@ -5409,7 +5900,8 @@
   "published": 2014,
   "series": null,
   "series_index": null,
-  "letter": "U"
+  "letter": "U",
+  "cover": null
  },
  {
   "title": "Uncle Tom’s Cabin",
@@ -5420,7 +5912,8 @@
   "published": 1852,
   "series": null,
   "series_index": null,
-  "letter": "U"
+  "letter": "U",
+  "cover": null
  },
  {
   "title": "The Unconsoled",
@@ -5431,7 +5924,8 @@
   "published": 1995,
   "series": null,
   "series_index": null,
-  "letter": "U"
+  "letter": "U",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780571225392-M.jpg?default=false"
  },
  {
   "title": "The Undercover Economist",
@@ -5442,7 +5936,8 @@
   "published": 2005,
   "series": null,
   "series_index": null,
-  "letter": "U"
+  "letter": "U",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780195189773-M.jpg?default=false"
  },
  {
   "title": "Underground",
@@ -5453,7 +5948,8 @@
   "published": 1997,
   "series": null,
   "series_index": null,
-  "letter": "U"
+  "letter": "U",
+  "cover": null
  },
  {
   "title": "The Underground Railroad",
@@ -5464,7 +5960,8 @@
   "published": 2016,
   "series": null,
   "series_index": null,
-  "letter": "U"
+  "letter": "U",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385542364-M.jpg?default=false"
  },
  {
   "title": "Under the Dome",
@@ -5475,7 +5972,8 @@
   "published": 2009,
   "series": null,
   "series_index": null,
-  "letter": "U"
+  "letter": "U",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781439148501-M.jpg?default=false"
  },
  {
   "title": "Upheaval",
@@ -5486,7 +5984,8 @@
   "published": 2019,
   "series": null,
   "series_index": null,
-  "letter": "U"
+  "letter": "U",
+  "cover": null
  },
  {
   "title": "The Vegetarian",
@@ -5497,7 +5996,8 @@
   "published": 2007,
   "series": null,
   "series_index": null,
-  "letter": "V"
+  "letter": "V",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780553448184-M.jpg?default=false"
  },
  {
   "title": "Verity",
@@ -5508,7 +6008,8 @@
   "published": 2018,
   "series": null,
   "series_index": null,
-  "letter": "V"
+  "letter": "V",
+  "cover": null
  },
  {
   "title": "The Wager",
@@ -5519,7 +6020,8 @@
   "published": 2023,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385534260-M.jpg?default=false"
  },
  {
   "title": "War and Peace",
@@ -5530,7 +6032,8 @@
   "published": 1868,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780192833983-M.jpg?default=false"
  },
  {
   "title": "Ward D",
@@ -5541,7 +6044,8 @@
   "published": 2023,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781464233005-M.jpg?default=false"
  },
  {
   "title": "War of the Worlds",
@@ -5552,7 +6056,8 @@
   "published": 1898,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780375759239-M.jpg?default=false"
  },
  {
   "title": "Washington Square",
@@ -5563,7 +6068,8 @@
   "published": 1880,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780451528711-M.jpg?default=false"
  },
  {
   "title": "We Begin at the End",
@@ -5574,7 +6080,8 @@
   "published": 2020,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781250759665-M.jpg?default=false"
  },
  {
   "title": "The Wedding People",
@@ -5585,7 +6092,8 @@
   "published": 2024,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": null
  },
  {
   "title": "Welcome to the Hyunam-Dong Bookshop",
@@ -5596,7 +6104,8 @@
   "published": 2022,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": null
  },
  {
   "title": "Weyward",
@@ -5607,7 +6116,8 @@
   "published": 2023,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781250842725-M.jpg?default=false"
  },
  {
   "title": "What I Talk About When I Talk About Running",
@@ -5618,7 +6128,8 @@
   "published": 2007,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": null
  },
  {
   "title": "What You Are Looking for Is in the Library",
@@ -5629,7 +6140,8 @@
   "published": 2020,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781335005625-M.jpg?default=false"
  },
  {
   "title": "When We Were Orphans",
@@ -5640,7 +6152,8 @@
   "published": 2000,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780571225408-M.jpg?default=false"
  },
  {
   "title": "Where the Crawdads Sing",
@@ -5651,7 +6164,8 @@
   "published": 2018,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780735219113-M.jpg?default=false"
  },
  {
   "title": "The Whistler",
@@ -5662,7 +6176,8 @@
   "published": 2016,
   "series": "The Whistler",
   "series_index": "1",
-  "letter": "W"
+  "letter": "W",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385541206-M.jpg?default=false"
  },
  {
   "title": "White Fang",
@@ -5673,7 +6188,8 @@
   "published": 1906,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": null
  },
  {
   "title": "Who Moved My Cheese?",
@@ -5684,7 +6200,8 @@
   "published": 1998,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780091883768-M.jpg?default=false"
  },
  {
   "title": "Why Didn't They Ask Evans?",
@@ -5695,7 +6212,8 @@
   "published": 1934,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780312981594-M.jpg?default=false"
  },
  {
   "title": "Wicked",
@@ -5706,7 +6224,8 @@
   "published": 1995,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": null
  },
  {
   "title": "The Widow",
@@ -5717,7 +6236,8 @@
   "published": 2025,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385548984-M.jpg?default=false"
  },
  {
   "title": "A Wild Sheep Chase",
@@ -5728,7 +6248,8 @@
   "published": 1982,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780375718946-M.jpg?default=false"
  },
  {
   "title": "Will Grayson, Will Grayson",
@@ -5739,7 +6260,8 @@
   "published": 2010,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780525421580-M.jpg?default=false"
  },
  {
   "title": "The Will of the Many",
@@ -5750,7 +6272,8 @@
   "published": 2023,
   "series": "Hierarchy",
   "series_index": "1",
-  "letter": "W"
+  "letter": "W",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781982141196-M.jpg?default=false"
  },
  {
   "title": "Wind/Pinball: Two Novels",
@@ -5761,7 +6284,8 @@
   "published": 1980,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780385352123-M.jpg?default=false"
  },
  {
   "title": "The Wind-Up Bird Chronicle",
@@ -5772,7 +6296,8 @@
   "published": 1994,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780965341981-M.jpg?default=false"
  },
  {
   "title": "Winesburg, Ohio",
@@ -5783,7 +6308,8 @@
   "published": 1919,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780192839770-M.jpg?default=false"
  },
  {
   "title": "Without Fail",
@@ -5794,7 +6320,8 @@
   "published": 2002,
   "series": "Jack Reacher",
   "series_index": "6",
-  "letter": "W"
+  "letter": "W",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781590860625-M.jpg?default=false"
  },
  {
   "title": "The Woman in Cabin 10",
@@ -5805,7 +6332,8 @@
   "published": 2016,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781668221877-M.jpg?default=false"
  },
  {
   "title": "The Woman in Me",
@@ -5816,7 +6344,8 @@
   "published": null,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": null
  },
  {
   "title": "The Women",
@@ -5827,7 +6356,8 @@
   "published": 2024,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781250178633-M.jpg?default=false"
  },
  {
   "title": "Wuthering Heights",
@@ -5838,7 +6368,8 @@
   "published": 1847,
   "series": null,
   "series_index": null,
-  "letter": "W"
+  "letter": "W",
+  "cover": "https://covers.openlibrary.org/b/isbn/9780141439556-M.jpg?default=false"
  },
  {
   "title": "Yellowface",
@@ -5849,7 +6380,8 @@
   "published": 2023,
   "series": null,
   "series_index": null,
-  "letter": "Y"
+  "letter": "Y",
+  "cover": null
  },
  {
   "title": "Yesteryear",
@@ -5860,7 +6392,8 @@
   "published": 2026,
   "series": null,
   "series_index": null,
-  "letter": "Y"
+  "letter": "Y",
+  "cover": null
  },
  {
   "title": "You Like It Darker",
@@ -5871,7 +6404,8 @@
   "published": 2024,
   "series": null,
   "series_index": null,
-  "letter": "Y"
+  "letter": "Y",
+  "cover": "https://covers.openlibrary.org/b/isbn/9781668037713-M.jpg?default=false"
  },
  {
   "title": "そして、バトンは渡された",
@@ -5882,7 +6416,8 @@
   "published": 2018,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": "https://covers.openlibrary.org/b/isbn/9784163907956-M.jpg?default=false"
  },
  {
   "title": "われら闇より天を見る",
@@ -5893,7 +6428,8 @@
   "published": null,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": null
  },
  {
   "title": "アマテラスの暗号",
@@ -5904,7 +6440,8 @@
   "published": 2019,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": null
  },
  {
   "title": "ラブカは静かに弓を持つ",
@@ -5915,7 +6452,8 @@
   "published": 2022,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": "https://covers.openlibrary.org/b/isbn/9784087717846-M.jpg?default=false"
  },
  {
   "title": "リボルバー",
@@ -5926,7 +6464,8 @@
   "published": 2021,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": null
  },
  {
   "title": "三十の反撃",
@@ -5937,7 +6476,8 @@
   "published": null,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": null
  },
  {
   "title": "俺たちの箱根駅伝",
@@ -5948,7 +6488,8 @@
   "published": 2024,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": "https://covers.openlibrary.org/b/isbn/9784163917726-M.jpg?default=false"
  },
  {
   "title": "俺たちの箱根駅伝 下",
@@ -5959,7 +6500,8 @@
   "published": 2024,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": "https://covers.openlibrary.org/b/isbn/9784163917733-M.jpg?default=false"
  },
  {
   "title": "光のとこにいてね",
@@ -5970,7 +6512,8 @@
   "published": 2022,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": null
  },
  {
   "title": "十戒",
@@ -5981,7 +6524,8 @@
   "published": null,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": null
  },
  {
   "title": "十誡",
@@ -5992,7 +6536,8 @@
   "published": 2025,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": "https://covers.openlibrary.org/b/isbn/9786267609422-M.jpg?default=false"
  },
  {
   "title": "同志少女よ、敵を撃て",
@@ -6003,7 +6548,8 @@
   "published": 2021,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": "https://covers.openlibrary.org/b/isbn/9784152100641-M.jpg?default=false"
  },
  {
   "title": "君たちはどう生きるか",
@@ -6014,7 +6560,8 @@
   "published": 1937,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": "https://covers.openlibrary.org/b/isbn/9784003315811-M.jpg?default=false"
  },
  {
   "title": "君のクイズ",
@@ -6025,7 +6572,8 @@
   "published": 2022,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": "https://covers.openlibrary.org/b/isbn/9784022518378-M.jpg?default=false"
  },
  {
   "title": "君の膵臓をたべたい",
@@ -6036,7 +6584,8 @@
   "published": null,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": null
  },
  {
   "title": "成瀬は天下を取りにいく",
@@ -6047,7 +6596,8 @@
   "published": 2023,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": "https://covers.openlibrary.org/b/isbn/9784103549512-M.jpg?default=false"
  },
  {
   "title": "方舟",
@@ -6058,7 +6608,8 @@
   "published": null,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": null
  },
  {
   "title": "正欲",
@@ -6069,7 +6620,8 @@
   "published": 2021,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": null
  },
  {
   "title": "水車小屋のネネ",
@@ -6080,7 +6632,8 @@
   "published": 2023,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": "https://covers.openlibrary.org/b/isbn/9784620108629-M.jpg?default=false"
  },
  {
   "title": "永遠の0",
@@ -6091,7 +6644,8 @@
   "published": 2006,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": "https://covers.openlibrary.org/b/isbn/9784062764131-M.jpg?default=false"
  },
  {
   "title": "汝、星のごとく",
@@ -6102,6 +6656,7 @@
   "published": 2022,
   "series": null,
   "series_index": null,
-  "letter": "#"
+  "letter": "#",
+  "cover": null
  }
 ]

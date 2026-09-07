@@ -44,18 +44,17 @@ the track.
 <div class="cover-mosaic" aria-hidden="true" data-cover-mosaic>
   <div class="mosaic-track" data-mosaic-track>
   <div class="mosaic-set" data-mosaic-set>
-  {%- for item in site.data.stats.books.mosaic -%}
-  {%- if item.isbn -%}
   {%- comment -%}
+  Every slot is a plain <img> now: build_covers.py resolves film posters as
+  well as book jackets, so there is nothing left for the browser to look up.
+
   Not lazy: the band clips horizontally, so a lazy jacket outside the clipped
   region never enters the viewport and never loads at all. It would also have
   to load mid-scroll, arriving as a visible pop. The band is small and above
   the fold, so eager is the right call on both counts.
   {%- endcomment -%}
-  <img class="mosaic-cover" src="https://covers.openlibrary.org/b/isbn/{{ item.isbn }}-M.jpg?default=false" alt="" decoding="async">
-  {%- else -%}
-  <span class="mosaic-cover mosaic-slot" data-mosaic-movie="{{ item.title | escape }}" hidden></span>
-  {%- endif -%}
+  {%- for item in site.data.stats.books.mosaic -%}
+  <img class="mosaic-cover" src="{{ item.cover }}" alt="" decoding="async">
   {%- endfor -%}
   </div>
   </div>
