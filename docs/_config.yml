@@ -54,6 +54,7 @@ header_pages:
   - books.markdown
   - movies.markdown
   - adventure.markdown
+  - gallery.markdown
   - posts.markdown
   - dev.markdown
   - stats.markdown

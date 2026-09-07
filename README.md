@@ -19,19 +19,22 @@ docs/                     Jekyll site root
   _data/trails.json       generated — do not edit by hand
   _data/trails_osm.json   generated OSM lookup cache — do not edit by hand
   _data/covers.json       generated cover-lookup cache — do not edit by hand
+  _data/gallery.yml       hand-written photo list (source of truth, not generated)
   _logs/books.md          hand-written reading log (source of truth)
   _logs/movies.md         hand-written watch log (source of truth)
   _logs/travel.md         hand-written park-visit log (source of truth)
   _logs/trails.md         hand-written trail log (source of truth)
   _posts/                 blog posts only (`categories: posts`)
+  assets/gallery/         photo files, referenced by _data/gallery.yml
   books.markdown          renders _data/books.json
   movies.markdown         renders _data/movies.json
   adventure.markdown      renders _data/travel.json + _data/trails.json
+  gallery.markdown        renders _data/gallery.yml
   stats.markdown          renders _data/stats.json
   posts.markdown          lists posts filed under `categories: posts`
   404.html                served by GitHub Pages for any unmatched path
   dev/vim-tips.markdown   dev notes, edited directly
-  assets/js/main.js       search, grouping, cover art, dark mode
+  assets/js/main.js       search, grouping, cover art, dark mode, gallery lightbox
   assets/main.scss        theme
 scripts/
   build.py                runs everything below, in order — the usual entry point
@@ -322,6 +325,45 @@ things and no changes to the matching or page-rendering logic:
 contains, so a new checklist appears on the page automatically — nothing
 there needs to change. A `## <heading>` in the log with no matching entry in
 `CHECKLISTS` prints a warning rather than silently being dropped.
+
+## Gallery
+
+`/gallery/` renders `docs/_data/gallery.yml` directly — unlike books, movies,
+travel and trails, there is no `_logs/*.md` source file and no Python build
+script. Those exist because their data needs an external lookup (covers,
+posters) or free-text date-heading parsing that Liquid can't do; a photo
+needs neither, so `gallery.yml` is hand-edited as the structured list it
+already is.
+
+To add a photo:
+
+1. Drop the image file under `docs/assets/gallery/`.
+2. Add an entry to the top of `docs/_data/gallery.yml` (newest first):
+
+   ```yaml
+   - image: /assets/gallery/2026-06-yosemite-valley.jpg
+     caption: Tunnel View at sunrise
+     date: 2026-06-14
+     location: Yosemite National Park, CA
+     tags: [landscape, national-park]
+   ```
+
+3. Commit and push:
+
+   ```sh
+   git add docs/assets/gallery docs/_data/gallery.yml
+   git commit -m "Add a gallery photo" && git push origin gh-pages
+   ```
+
+`tags` is optional; an untagged photo still appears in the grid, just with no
+chip pointing at it. The chip row itself is built client-side
+(`initGallery()` in `main.js`) from whatever tags the photos on the page
+actually carry, since the tag set is open-ended — unlike the Books page's
+fixed five eras, which are hardcoded in the markup.
+
+There is no automated check on image file size or dimensions, and none is
+planned — this is a hand-curated, occasional-use gallery, not a bulk upload
+pipeline.
 
 ## Writing a post
 

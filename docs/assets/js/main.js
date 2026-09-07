@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initCoverMosaic();
   initStatusStrip();
   initVimTipsToc();
+  initGallery();
 });
 
 // Inserts a light/dark mode toggle right next to the site title, so it is
@@ -812,4 +813,153 @@ function applyCover(wrap, url) {
   });
   img.src = url;
   wrap.appendChild(img);
+}
+
+// ---- Gallery (grid + tag filter + lightbox) ----
+//
+// Tags are open-ended (unlike the Books page's fixed five eras), so the chip
+// row is built here from whatever data-tags the server-rendered tiles
+// actually carry, rather than in Liquid.
+function initGallery() {
+  var grid = document.querySelector('[data-gallery-grid]');
+  if (!grid) return;
+
+  var tiles = Array.prototype.slice.call(grid.querySelectorAll('.gallery-tile'));
+  if (!tiles.length) return;
+
+  var filterBar = document.querySelector('[data-tag-filter]');
+  var activeTag = 'all';
+
+  function tagsOf(tile) {
+    var raw = tile.getAttribute('data-tags') || '';
+    return raw ? raw.split(',') : [];
+  }
+
+  function applyTagFilter() {
+    tiles.forEach(function (tile) {
+      var match = activeTag === 'all' || tagsOf(tile).indexOf(activeTag) !== -1;
+      tile.style.display = match ? '' : 'none';
+    });
+  }
+
+  // The lightbox only ever cycles through what is currently visible, so
+  // prev/next stay in step with an active tag filter instead of walking
+  // through hidden photos.
+  function visibleTiles() {
+    return tiles.filter(function (t) { return t.style.display !== 'none'; });
+  }
+
+  function buildTagFilter() {
+    if (!filterBar) return;
+
+    var seen = Object.create(null);
+    var allTags = [];
+    tiles.forEach(function (tile) {
+      tagsOf(tile).forEach(function (tag) {
+        if (!tag || seen[tag]) return;
+        seen[tag] = true;
+        allTags.push(tag);
+      });
+    });
+    if (!allTags.length) return;
+    allTags.sort();
+
+    function addChip(label, value) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'tag-chip';
+      b.textContent = label;
+      b.setAttribute('data-tag', value);
+      b.setAttribute('aria-pressed', String(value === 'all'));
+      b.addEventListener('click', function () {
+        // Clicking the active chip clears back to everything, same
+        // interaction as the era-chip filter on the Books page.
+        activeTag = (activeTag === value) ? 'all' : value;
+        Array.prototype.forEach.call(filterBar.querySelectorAll('.tag-chip'), function (c) {
+          c.setAttribute('aria-pressed', String(c.getAttribute('data-tag') === activeTag));
+        });
+        applyTagFilter();
+      });
+      filterBar.appendChild(b);
+    }
+
+    addChip('All', 'all');
+    allTags.forEach(function (tag) { addChip(tag, tag); });
+    filterBar.hidden = false;
+  }
+
+  var lightbox = document.createElement('div');
+  lightbox.className = 'gallery-lightbox';
+  lightbox.setAttribute('role', 'dialog');
+  lightbox.setAttribute('aria-modal', 'true');
+  lightbox.setAttribute('aria-label', 'Photo viewer');
+  lightbox.innerHTML =
+    '<button type="button" class="lightbox-close" aria-label="Close">&times;</button>' +
+    '<button type="button" class="lightbox-prev" aria-label="Previous photo">&lsaquo;</button>' +
+    '<img class="lightbox-image" alt="">' +
+    '<button type="button" class="lightbox-next" aria-label="Next photo">&rsaquo;</button>' +
+    '<div class="lightbox-caption">' +
+      '<span class="lightbox-caption-text"></span>' +
+      '<span class="lightbox-meta"></span>' +
+    '</div>';
+  document.body.appendChild(lightbox);
+
+  var lightboxImage = lightbox.querySelector('.lightbox-image');
+  var captionText = lightbox.querySelector('.lightbox-caption-text');
+  var metaText = lightbox.querySelector('.lightbox-meta');
+  var currentIndex = -1;
+  var lastFocused = null;
+
+  function show(index) {
+    var set = visibleTiles();
+    if (!set.length) return;
+    currentIndex = (index + set.length) % set.length;
+    var tile = set[currentIndex];
+    lightboxImage.src = tile.getAttribute('data-image');
+    lightboxImage.alt = tile.getAttribute('data-caption') || '';
+    captionText.textContent = tile.getAttribute('data-caption') || '';
+    metaText.textContent = [tile.getAttribute('data-location'), tile.getAttribute('data-date')]
+      .filter(function (v) { return v; })
+      .join(' · ');
+  }
+
+  function onKeydown(e) {
+    if (e.key === 'Escape') close();
+    else if (e.key === 'ArrowLeft') show(currentIndex - 1);
+    else if (e.key === 'ArrowRight') show(currentIndex + 1);
+  }
+
+  function open(tile) {
+    var index = visibleTiles().indexOf(tile);
+    if (index === -1) return;
+    lastFocused = document.activeElement;
+    lightbox.classList.add('is-open');
+    // Stops the page scrolling behind a full-screen overlay.
+    document.body.classList.add('gallery-lightbox-open');
+    show(index);
+    lightbox.querySelector('.lightbox-close').focus();
+    document.addEventListener('keydown', onKeydown);
+  }
+
+  function close() {
+    lightbox.classList.remove('is-open');
+    document.body.classList.remove('gallery-lightbox-open');
+    document.removeEventListener('keydown', onKeydown);
+    // Scrolling to open the lightbox does not move focus back on its own.
+    if (lastFocused) lastFocused.focus();
+  }
+
+  lightbox.querySelector('.lightbox-close').addEventListener('click', close);
+  lightbox.querySelector('.lightbox-prev').addEventListener('click', function () { show(currentIndex - 1); });
+  lightbox.querySelector('.lightbox-next').addEventListener('click', function () { show(currentIndex + 1); });
+  lightbox.addEventListener('click', function (e) {
+    if (e.target === lightbox) close();
+  });
+
+  tiles.forEach(function (tile) {
+    tile.addEventListener('click', function () { open(tile); });
+  });
+
+  buildTagFilter();
+  applyTagFilter();
 }

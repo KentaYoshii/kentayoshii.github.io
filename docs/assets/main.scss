@@ -1455,6 +1455,206 @@ body,
   }
 }
 
+// The gallery: a grid of photos, a full-screen lightbox, and — once the
+// photos carry tags — a chip filter built client-side (initGallery() in
+// main.js), since the tag set is open-ended and unknown at template time,
+// unlike the Books page's fixed five eras below.
+.gallery-page .collection-tagline {
+  margin-bottom: $spacing-unit;
+}
+
+.tag-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: $spacing-unit;
+}
+
+.tag-chip {
+  font-family: $base-font-family;
+  font-size: 12px;
+  line-height: 1;
+  padding: 6px 10px;
+  color: $grey-color-dark;
+  background: none;
+  border: 1px solid $grey-color-light;
+  border-radius: 999px;
+  cursor: pointer;
+
+  &:hover {
+    color: $brand-color;
+    border-color: $brand-color;
+  }
+
+  &[aria-pressed="true"] {
+    background-color: $brand-color;
+    border-color: $brand-color;
+    color: #fff8ec;
+  }
+}
+
+// A masonry-style flow, not a fixed grid: photos come in whatever
+// dimensions they were shot in, and cropping every one to a square (the
+// simpler CSS-grid approach) would throw that away. Multi-column layout is
+// the same trick .year-block ul already uses for the book list — each tile
+// keeps its natural aspect ratio and break-inside: avoid stops one from
+// splitting across two columns.
+.gallery-grid {
+  columns: 2;
+  column-gap: 10px;
+}
+
+@media screen and (min-width: 700px) {
+  .gallery-grid {
+    columns: 3;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .gallery-grid {
+    columns: 4;
+  }
+}
+
+@media screen and (max-width: $on-palm) {
+  .gallery-grid {
+    columns: 1;
+  }
+}
+
+.gallery-tile {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 10px;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  background: none;
+  cursor: pointer;
+  break-inside: avoid;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.15s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.03);
+  }
+
+  &:focus-visible {
+    outline: 2px solid $brand-color;
+    outline-offset: 2px;
+  }
+}
+
+// Deliberately dark in both themes, like a conventional photo viewer —
+// unlike the rest of the page, the backdrop is not meant to track light/dark
+// mode.
+.gallery-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(20, 14, 8, 0.92);
+
+  &.is-open {
+    display: flex;
+  }
+}
+
+// Set on <body> while the lightbox is open, so the page behind it cannot
+// scroll.
+.gallery-lightbox-open {
+  overflow: hidden;
+}
+
+.lightbox-image {
+  max-width: min(90vw, 1100px);
+  max-height: 78vh;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  background: none;
+  border: none;
+  color: #fff8ec;
+  cursor: pointer;
+  line-height: 1;
+
+  &:hover {
+    color: $brand-color;
+  }
+}
+
+.lightbox-close {
+  top: 16px;
+  right: 20px;
+  font-size: 32px;
+}
+
+.lightbox-prev,
+.lightbox-next {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 48px;
+  padding: 10px;
+}
+
+.lightbox-prev {
+  left: 8px;
+}
+
+.lightbox-next {
+  right: 8px;
+}
+
+.lightbox-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #fff8ec;
+  text-align: center;
+  padding: 0 60px;
+}
+
+.lightbox-caption-text {
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 15px;
+}
+
+.lightbox-meta {
+  font-size: 12px;
+  color: rgba(255, 248, 236, 0.75);
+}
+
+@media screen and (max-width: $on-palm) {
+  .lightbox-prev,
+  .lightbox-next {
+    font-size: 34px;
+    padding: 6px;
+  }
+
+  .lightbox-caption {
+    padding: 0 44px;
+    bottom: 14px;
+  }
+}
+
 [data-theme="dark"] {
   $dark-bg: #1c1712;
   $dark-surface: #241d16;
@@ -1832,5 +2032,21 @@ body,
 
   .trail-tag.is-muted {
     border-color: transparent;
+  }
+
+  .tag-chip {
+    color: $dark-muted;
+    border-color: $dark-border;
+
+    &:hover {
+      color: $dark-brand;
+      border-color: $dark-brand;
+    }
+
+    &[aria-pressed="true"] {
+      background-color: $dark-brand;
+      border-color: $dark-brand;
+      color: $dark-bg;
+    }
   }
 }

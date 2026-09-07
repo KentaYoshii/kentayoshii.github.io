@@ -1,0 +1,45 @@
+# Photos for /gallery/, newest first. Hand-maintained — no build script,
+# unlike books.json/movies.json/trails.json, since a photo needs no external
+# lookup and its fields are already structured (see README).
+#
+# Add a photo by dropping the file under docs/assets/gallery/ and adding an
+# entry here:
+#
+# - image: /assets/gallery/2026-06-yosemite-valley.jpg
+#   caption: Tunnel View at sunrise
+#   date: 2026-06-14
+#   location: Yosemite National Park, CA
+#   tags: [landscape, national-park]
+#
+# `tags` is optional — an untagged photo still shows in the grid, just
+# without any chips pointing at it.
+#
+# TODO: the entries below are synthetic placeholders (solid-colour PNGs,
+# not real photos) added to test the masonry grid with mixed dimensions.
+# Replace them with real photos, or delete them back to an empty list.
+
+- image: /assets/gallery/test-portrait-small.png
+  caption: Portrait test tile
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/test-panorama.png
+  caption: Panorama test tile
+  date: 2026-09-06
+  location: Test bench
+  tags: [test, panorama]
+- image: /assets/gallery/test-square.png
+  caption: Square test tile
+  date: 2026-09-05
+  location: Test bench
+  tags: [test, square]
+- image: /assets/gallery/test-portrait-tall.png
+  caption: Tall portrait test tile
+  date: 2026-09-04
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/test-landscape-wide.png
+  caption: Wide landscape test tile
+  date: 2026-09-03
+  location: Test bench
+  tags: [test, landscape]
