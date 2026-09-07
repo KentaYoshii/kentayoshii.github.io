@@ -73,6 +73,12 @@ the track.
     <p>Movies and shows I've watched, organized by year and searchable.</p>
     <span class="link-card-cta">Browse movies →</span>
   </a>
+  <a class="link-card" href="{{ '/adventure/' | relative_url }}">
+    <span class="link-card-icon" aria-hidden="true">🥾</span>
+    <h2>Adventure</h2>
+    <p>Trails walked, and the national parks checklist.</p>
+    <span class="link-card-cta">See the trails →</span>
+  </a>
   <a class="link-card" href="{{ '/posts/' | relative_url }}">
     <span class="link-card-icon" aria-hidden="true">✍️</span>
     <h2>Posts</h2>

@@ -44,12 +44,16 @@ plugins:
   # link previews read. minima depends on it, so it loaded implicitly
   # before; listing it here makes that explicit.
   - jekyll-seo-tag
+  # Serves the old /travel/ path as a redirect to /adventure/, from the
+  # redirect_from list in that page's front matter, so links to the previous
+  # URL keep working.
+  - jekyll-redirect-from
 
 # Controls the order of pages in the site nav (minima reads this list)
 header_pages:
   - books.markdown
   - movies.markdown
-  - travel.markdown
+  - adventure.markdown
   - posts.markdown
   - dev.markdown
   - stats.markdown

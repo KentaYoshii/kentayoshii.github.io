@@ -1,7 +1,7 @@
 # Kenta's Log
 
-A personal log of books read, movies/shows watched, national parks visited,
-and dev notes. Live at <https://kentayoshii.github.io>.
+A personal log of books read, movies/shows watched, trails walked, national
+parks visited, and dev notes. Live at <https://kentayoshii.github.io>.
 
 Static [Jekyll](https://jekyllrb.com/) site using the `minima` theme, published
 by GitHub Pages from the **`gh-pages` branch, `/docs` folder**. Pushing to
@@ -16,14 +16,17 @@ docs/                     Jekyll site root
   _data/movies.json       generated — do not edit by hand
   _data/stats.json        generated — do not edit by hand
   _data/travel.json       generated — do not edit by hand
+  _data/trails.json       generated — do not edit by hand
+  _data/trails_osm.json   generated OSM lookup cache — do not edit by hand
   _data/covers.json       generated cover-lookup cache — do not edit by hand
   _logs/books.md          hand-written reading log (source of truth)
   _logs/movies.md         hand-written watch log (source of truth)
-  _logs/travel.md         hand-written travel log (source of truth)
+  _logs/travel.md         hand-written park-visit log (source of truth)
+  _logs/trails.md         hand-written trail log (source of truth)
   _posts/                 blog posts only (`categories: posts`)
   books.markdown          renders _data/books.json
   movies.markdown         renders _data/movies.json
-  travel.markdown         renders _data/travel.json
+  adventure.markdown      renders _data/travel.json + _data/trails.json
   stats.markdown          renders _data/stats.json
   posts.markdown          lists posts filed under `categories: posts`
   404.html                served by GitHub Pages for any unmatched path
@@ -38,6 +41,7 @@ scripts/
   build_stats.py          builds _data/stats.json (reads the other two)
   build_images.py         draws the favicon and social card from books.json
   build_travel.py         builds _data/travel.json
+  build_trails.py         builds _data/trails.json; --fetch is its online step
   national_parks.py       fixed reference list of all 63 US National Parks
 tests/                    pytest suite for the build scripts
 goodreads_library_export.csv   latest Goodreads export
@@ -187,7 +191,82 @@ disambiguator.
 
 For a show, prefer one `Title (TV Series)` entry over one row per season.
 
-## Travel
+## Adventure
+
+`/adventure/` carries two things of deliberately different shapes, which is
+why they come from two scripts and are rendered by two blocks rather than one
+loop:
+
+- **Checklists** (`build_travel.py`) — a finite universe with a visited flag.
+  63 national parks, ticked or not, so the page can show what is *left*.
+- **The trail log** (`build_trails.py`) — open-ended. There is no list of
+  every trail to tick off, only the ones actually walked.
+
+The page used to live at `/travel/`; that path still works, via
+`redirect_from` in `adventure.markdown` and the `jekyll-redirect-from` plugin.
+
+### Trails
+
+`docs/_logs/trails.md` groups hikes by `## <year>` then an optional
+`### <month>`:
+
+```markdown
+## 2026
+
+### June
+- Angels Landing — Zion National Park, UT — 5.4 mi
+```
+
+The separator is an em dash (`—`), an en dash, or `--`. **Not** a plain
+` - `: real trail names contain it (`Suffern - Bear Mountain Trail`) and the
+parser would split in the wrong place. Only the name is required; distance
+accepts `mi`, `miles` or `km` and is normalised to miles.
+
+Then look up anything new and regenerate:
+
+```sh
+python3 scripts/build_trails.py --fetch
+python3 scripts/build.py
+git add docs/_logs/trails.md docs/_data
+git commit -m "Add a hike" && git push origin gh-pages
+```
+
+#### What OpenStreetMap adds
+
+`build_trails.py` is offline by default — that mode is what `build.py` and CI
+run, so the build stays deterministic and keyless. `--fetch` is the manual
+pass that fills `docs/_data/trails_osm.json`, which is committed. A trail
+already in the cache is never looked up again, *including* when its entry is
+empty (that means "asked, nothing there"); delete the entry to force a retry.
+
+The `<where>` field does double duty: it is displayed, and its first part
+scopes the OSM lookup to a named area. That scoping is not optional —
+searching OSM for a trail by name alone is unindexed, so it either times out
+or misses outright (`Breakneck Ridge` returns nothing globally). A trail with
+no place therefore never resolves; it still renders, just with nothing beyond
+what you wrote.
+
+What comes back depends on where you walked, and both shapes are useful:
+
+- **Blazed networks** (the Northeast, most of Europe) carry `osmc:symbol` or
+  `colour` — the actual paint on the tree, rendered as the small bar beside
+  each row. `Timp Torne Trail` → `blue:blue` → a blue blaze.
+- **National park trails** are rarely blazed but usually carry `sac_scale` (a
+  six-step Alpine difficulty grade, relabelled from jargon to `easy` /
+  `moderate` / `alpine`), `surface`, and sometimes an official `distance`.
+  `Angels Landing` → `alpine_hiking`, which is fair.
+
+One trap worth knowing: `distance` means the length of the whole route on a
+*relation*, but the length of one segment on a *way*. Merging both put an
+official 2.98 mi against a logged 17.3 mi on the Hoh River Trail, so
+`RELATION_ONLY_TAGS` gates it.
+
+Overpass is donated infrastructure with a handful of concurrent slots and
+answers `429` the moment they are full, so a fetch run waits between trails
+and backs off when told to. A run that dies partway keeps everything it
+already resolved and still writes the data file — just re-run `--fetch`.
+
+### National parks
 
 `docs/_logs/travel.md` groups entries by `## <category>` then `### <year>`,
 currently just `## US National Parks`:
@@ -239,7 +318,7 @@ things and no changes to the matching or page-rendering logic:
 2. An entry in `CHECKLISTS`.
 3. A `## Countries` section in `travel.md` using that exact heading text.
 
-`docs/travel.markdown` loops over whatever categories `travel.json` actually
+`docs/adventure.markdown` loops over whatever categories `travel.json` actually
 contains, so a new checklist appears on the page automatically — nothing
 there needs to change. A `## <heading>` in the log with no matching entry in
 `CHECKLISTS` prints a warning rather than silently being dropped.

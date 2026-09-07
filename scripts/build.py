@@ -24,12 +24,15 @@ import build_covers  # noqa: E402
 import build_images  # noqa: E402
 import build_movies  # noqa: E402
 import build_stats  # noqa: E402
+import build_trails  # noqa: E402
 import build_travel  # noqa: E402
 import merge_books  # noqa: E402
 
 # build_covers annotates books.json and movies.json, so it runs after both are
 # written and before build_stats, whose cover mosaic reads the annotations.
 # build_images reads books.json for ISBNs, so it too runs after merge_books.
+# build_travel and build_trails are independent of all of the above and of
+# each other; they run here so one command regenerates everything.
 for step in (merge_books, build_movies, build_covers, build_stats,
-             build_images, build_travel):
+             build_images, build_travel, build_trails):
     step.main()
