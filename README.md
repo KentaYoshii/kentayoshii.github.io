@@ -552,7 +552,8 @@ fall back to `site.image`, so it is set through Jekyll `defaults` in
 - **data** — re-runs `scripts/build.py` and fails if `docs/_data` changes,
   which catches editing a markdown log without regenerating the JSON.
 - **pytest** — the suite in `tests/`, which covers the title matching in
-  `merge_books.py` and the offline pass in `build_covers.py`.
+  `merge_books.py` and the offline passes of `build_covers.py` and
+  `build_trails.py`.
 - **site** — a full `jekyll build`, which catches Liquid and front-matter
   errors.
 
@@ -569,3 +570,32 @@ Run the tests locally with:
 python3 -m pip install -r requirements-dev.txt
 python3 -m pytest
 ```
+
+### Fetching covers and trails
+
+`.github/workflows/fetch.yml` is the one workflow allowed to touch the
+network, and it only runs when you press the button: **Actions → fetch → Run
+workflow**, optionally narrowed to `covers` or `trails`. It runs the `--fetch`
+passes, regenerates everything, and commits `docs/_data` back to the branch it
+ran on — which redeploys the site.
+
+Run it when the **data** job reports unresolved entries.
+
+It exists because a laptop is not always a good place to make these calls. On
+a corporate network a TLS-inspecting root CA is enough to make Python refuse
+Open Library outright — `CERTIFICATE_VERIFY_FAILED: Basic Constraints of CA
+cert not marked critical`, which is OpenSSL rejecting the intercepting CA as
+malformed rather than any problem with the script. A runner has a clean trust
+store and clean egress.
+
+Notes:
+
+- `TMDB_API_KEY` is an optional repository secret (Settings → Secrets and
+  variables → Actions). Without it film lookups are skipped with a notice and
+  book lookups still run.
+- A run that loses the network partway still commits whatever resolved — both
+  scripts checkpoint as they go — and then fails, so re-running continues
+  where it left off.
+- Pushing with `GITHUB_TOKEN` deliberately does not re-trigger the `build`
+  workflow. The data was just written by the same script that workflow
+  compares against, so that check would pass by construction.
