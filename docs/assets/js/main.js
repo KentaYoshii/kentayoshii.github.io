@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   initThemeToggle();
   initCollectionPage();
+  initBackToTop();
   initCoverArt();
   initCoverMosaic();
   initStatusStrip();
@@ -42,6 +43,59 @@ function initThemeToggle() {
 
   render();
   title.insertAdjacentElement('afterend', button);
+}
+
+// A back-to-top button, shown only on a phone (see .back-to-top in the
+// stylesheet), where the collection header no longer sticks to the top of the
+// viewport. Added to every page rather than just the collections: the travel
+// checklist and the vim notes are long enough to want it too, and a page too
+// short to scroll never reveals it.
+function initBackToTop() {
+  var button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'back-to-top';
+  // The glyph is decorative; the label is what a screen reader announces.
+  button.setAttribute('aria-label', 'Back to top');
+  button.innerHTML = '<span aria-hidden="true">↑</span>';
+
+  button.addEventListener('click', function () {
+    // Instant for anyone who has asked for less motion — smooth-scrolling the
+    // whole page is a much bigger movement than the fade-in.
+    var reduce = window.matchMedia &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+    // Scrolling away does not move focus, so a keyboard user would be left
+    // at the bottom of the tab order pointing at a button that has just
+    // vanished. Hand focus back to the top of the document.
+    var target = document.querySelector('.site-title') || document.body;
+    target.focus({ preventScroll: true });
+  });
+
+  document.body.appendChild(button);
+
+  // A zero-height marker at the very top of the page. Watching whether it has
+  // scrolled out of view costs nothing per frame, unlike a scroll handler
+  // reading scrollY. The margin delays the button until the first screen is
+  // well behind you, so it does not flicker in on a small nudge.
+  var sentinel = document.createElement('span');
+  sentinel.className = 'back-to-top-sentinel';
+  sentinel.setAttribute('aria-hidden', 'true');
+  document.body.insertBefore(sentinel, document.body.firstChild);
+
+  function show(visible) {
+    button.classList.toggle('is-visible', visible);
+  }
+
+  if (typeof IntersectionObserver === 'undefined') {
+    // Without the observer the button is simply always available; a permanent
+    // one is a smaller failure than none at all.
+    show(true);
+    return;
+  }
+
+  new IntersectionObserver(function (entries) {
+    show(!entries[0].isIntersecting);
+  }, { rootMargin: '400px 0px 0px 0px' }).observe(sentinel);
 }
 
 // Lowercase and strip Latin accents so typing "shogun" finds "Shōgun" and
@@ -217,10 +271,15 @@ function initCollectionPage() {
   }
 
   // The sticky header overlaps whatever a jump scrolls to, so publish its
-  // height for .year-block's scroll-margin-top to subtract.
+  // height for .year-block's scroll-margin-top to subtract. On a phone the
+  // header is not sticky and scrolls away with the page, so it overlaps
+  // nothing and the offset has to go back to zero — otherwise every jump
+  // lands a header's height short of its target. Read the used value rather
+  // than re-testing the breakpoint here, so the two cannot drift apart.
   function syncStickyHeight() {
     if (!header) return;
-    page.style.setProperty('--sticky-h', header.offsetHeight + 'px');
+    var sticky = window.getComputedStyle(header).position === 'sticky';
+    page.style.setProperty('--sticky-h', (sticky ? header.offsetHeight : 0) + 'px');
   }
 
   function sectionLabel(section) {
