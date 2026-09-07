@@ -70,6 +70,53 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: none;
 }
 
+// "More" groups the less-central pages (docs/_includes/header.html,
+// nav_more_pages in _config.yml) behind a toggle, opened by initMoreMenu()
+// in main.js. Flattened back into the plain flow on mobile below, where the
+// checkbox-driven .trigger panel is already the "opened menu" and a nested
+// disclosure inside it would just be more clutter, not less.
+.nav-more {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-more-toggle {
+  font: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.nav-more-caret {
+  font-size: 10px;
+  margin-left: 2px;
+}
+
+.nav-more-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 140px;
+  margin-top: 10px;
+  padding: 6px 0;
+  background-color: $background-color;
+  border: 1px solid $grey-color-light;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(60, 40, 20, 0.15);
+  z-index: 20;
+
+  &.is-open {
+    display: flex;
+  }
+
+  .page-link {
+    padding: 8px 14px;
+  }
+}
+
 .site-footer {
   background-color: #f3e8d5;
   border-top: 1px solid $grey-color-light;
@@ -1082,6 +1129,25 @@ body,
     box-shadow: 0 8px 20px rgba(60, 40, 20, 0.18);
   }
 
+  // The checkbox-driven .trigger panel is already the "opened menu" here, so
+  // the desktop dropdown mechanics (toggle button, floating panel, JS
+  // open/close) would just be a second disclosure nested inside the first.
+  // Drop the toggle and let nav-more-menu sit in the plain flow instead, so
+  // it reads as the tail of one flat list like everything above it.
+  .nav-more-toggle {
+    display: none;
+  }
+
+  .nav-more-menu {
+    display: flex;
+    position: static;
+    margin-top: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
+
   // No sticky bar on a phone. Even trimmed to two rows it costs a sixth of
   // the viewport on every scroll, and the controls are mostly set-and-forget
   // — you pick a sort order once and then read. It scrolls away with the rest
@@ -1721,6 +1787,12 @@ body,
   // disappears against the dark header.
   .site-nav .menu-icon > svg {
     fill: $dark-text;
+  }
+
+  .nav-more-menu {
+    background-color: $dark-surface;
+    border-color: $dark-border;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
   }
 
   // On mobile minima renders the nav as a dropdown panel with its own

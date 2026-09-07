@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initStatusStrip();
   initVimTipsToc();
   initGallery();
+  initMoreMenu();
 });
 
 // Inserts a light/dark mode toggle right next to the site title, so it is
@@ -44,6 +45,47 @@ function initThemeToggle() {
 
   render();
   title.insertAdjacentElement('afterend', button);
+}
+
+// The "More" dropdown in the site nav (docs/_includes/header.html), which
+// groups the less-central pages behind a toggle on desktop. Below $on-palm
+// the checkbox-driven .trigger panel is already the "opened menu" and
+// main.scss flattens nav-more-menu back into the plain list there, so the
+// toggle button is hidden and this never runs on a phone — but it costs
+// nothing to leave wired up regardless of viewport width.
+function initMoreMenu() {
+  var toggle = document.querySelector('.nav-more-toggle');
+  var menu = document.querySelector('.nav-more-menu');
+  if (!toggle || !menu) return;
+
+  function isOpen() {
+    return menu.classList.contains('is-open');
+  }
+
+  function close() {
+    menu.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+
+  function open() {
+    menu.classList.add('is-open');
+    toggle.setAttribute('aria-expanded', 'true');
+  }
+
+  toggle.addEventListener('click', function (e) {
+    // Without this the same click that opens the menu would immediately
+    // reach the document-level listener below and close it again.
+    e.stopPropagation();
+    if (isOpen()) close(); else open();
+  });
+
+  document.addEventListener('click', function (e) {
+    if (isOpen() && !menu.contains(e.target)) close();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && isOpen()) close();
+  });
 }
 
 // A back-to-top button, shown only on a phone (see .back-to-top in the

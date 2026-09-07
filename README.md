@@ -441,6 +441,15 @@ A few pieces that are not obvious from the markup:
   choice to `localStorage`. The toggle was moved next to the title from inside
   the mobile nav so it's always visible rather than tucked behind the
   hamburger menu.
+- **"More" nav dropdown** — `docs/_includes/header.html` overrides minima's
+  default header (which lists every `header_pages` entry in one flat row)
+  because that row got cramped once Gallery made it seven pages. `nav_pages`
+  in `_config.yml` render inline as before; `nav_more_pages` sit behind a
+  "More" toggle, opened by `initMoreMenu()`. Below `$on-palm` the
+  checkbox-driven `.trigger` panel is already the "opened menu", so the
+  dropdown would just be a second disclosure nested inside the first —
+  `main.scss` flattens `.nav-more-menu` back into the plain list there
+  instead, and hides the toggle button.
 - **Landing page mosaic** — 24 slots chosen at build time by striding through
   the title-sorted shelf and watch list (`MOSAIC_COUNT` / `MOSAIC_MOVIES` in
   `build_stats.py`), so it is not 24 titles beginning with "A". Book jackets

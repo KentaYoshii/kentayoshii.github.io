@@ -49,14 +49,19 @@ plugins:
   # URL keep working.
   - jekyll-redirect-from
 
-# Controls the order of pages in the site nav (minima reads this list)
-header_pages:
+# Controls the site nav, read by docs/_includes/header.html (which overrides
+# minima's default header — see that file for why). nav_pages render inline;
+# nav_more_pages collapse into a "More" dropdown on desktop, since minima's
+# default single flat row got cramped once Gallery joined Books/Movies/
+# Adventure/Posts/Dev/Stats.
+nav_pages:
   - books.markdown
   - movies.markdown
+  - dev.markdown
+  - posts.markdown
+nav_more_pages:
   - adventure.markdown
   - gallery.markdown
-  - posts.markdown
-  - dev.markdown
   - stats.markdown
 
 # Exclude from processing.
