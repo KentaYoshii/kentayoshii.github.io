@@ -1575,10 +1575,22 @@ body,
 }
 
 .lightbox-image {
-  max-width: min(90vw, 1100px);
+  // Not written as max-width: min(90vw, 1100px) — GitHub Pages builds with
+  // jekyll-sass-converter 1.5.2 (Ruby Sass 3.4), which shadows CSS min()/max()
+  // with its own SassScript function and dies on mixed units ("Incompatible
+  // units: 'px' and 'vw'") rather than passing a plain CSS function through.
+  // The breakpoint below is where 90vw crosses 1100px, so the two rules
+  // reproduce the same cap without the function call.
+  max-width: 90vw;
   max-height: 78vh;
   object-fit: contain;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1223px) {
+  .lightbox-image {
+    max-width: 1100px;
+  }
 }
 
 .lightbox-close,
