@@ -1,0 +1,4 @@
+# Test-only dependency. The generators in scripts/ deliberately use nothing
+# but the standard library, so this is never needed to build the site — only
+# to run `python3 -m pytest`.
+pytest>=8

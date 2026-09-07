@@ -2,9 +2,10 @@ name: build
 
 # GitHub Pages builds and deploys this site on its own, independently of this
 # workflow — a failure here does not block a deploy. The point is to get told
-# when something is wrong, since the two failure modes below are both silent:
-# stale generated data looks fine until you notice a book missing, and a
-# Liquid error just leaves the previous version of the page published.
+# when something is wrong, since these failure modes are all silent: stale
+# generated data looks fine until you notice a book missing, a Liquid error
+# just leaves the previous version of the page published, and a broken title
+# normaliser only stops a book matching Goodreads, costing it its cover.
 on:
   push:
     branches: [gh-pages, main]
@@ -41,6 +42,24 @@ jobs:
             exit 1
           fi
           echo "docs/_data is up to date."
+
+  tests:
+    name: pytest
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # Unlike the data job, this one does need an install: the generators are
+      # stdlib-only, but pytest is not in the standard library.
+      - name: Install test dependencies
+        run: python3 -m pip install --requirement requirements-dev.txt
+
+      - name: Run tests
+        run: python3 -m pytest
 
   site:
     name: jekyll build

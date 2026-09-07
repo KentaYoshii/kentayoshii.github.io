@@ -1,0 +1,10 @@
+# This repo is not a Python package — the files in scripts/ are standalone
+# generators run as `python3 scripts/build.py`. This file exists only to
+# configure pytest; tests/conftest.py handles the import path.
+
+[tool.pytest.ini_options]
+testpaths = ["tests/unit", "tests/integration"]
+addopts = [
+    "--strict-markers",
+    "--strict-config",
+]
