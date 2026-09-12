@@ -96,6 +96,20 @@ def main():
 
     items.sort(key=lambda i: keyify(sort_title(i['title'])))
 
+    # Preserve covers from the existing movies.json to avoid losing them on rebuild.
+    old_covers = {}
+    if os.path.exists(OUT_PATH):
+        try:
+            with open(OUT_PATH, encoding='utf-8') as f:
+                old_movies = json.load(f)
+                old_covers = {m['title']: m.get('cover') for m in old_movies if m.get('cover')}
+        except (OSError, json.JSONDecodeError):
+            pass
+
+    for item in items:
+        if item['title'] in old_covers:
+            item['cover'] = old_covers[item['title']]
+
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
     with open(OUT_PATH, 'w', encoding='utf-8') as f:
         json.dump(items, f, ensure_ascii=False, indent=1)
