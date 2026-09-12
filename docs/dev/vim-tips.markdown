@@ -19,42 +19,78 @@ A running personal cheat sheet of Vim tricks worth remembering.
 - `gg` / `G` — top/bottom of file; `{n}G` or `:{n}` jumps to line `n`.
 - `Ctrl-o` / `Ctrl-i` — hop backward/forward through the jump list (great after a search or `gd`).
 - `H` / `M` / `L` — jump to top/middle/bottom of the visible window.
+- `g;` / `g,` - move backward/forward in you change list
 
 ## Editing
 
-- `ciw` / `caw` — change inner/around word, regardless of cursor position inside it.
-- `ci"`, `ci(`, `cit` — change inside quotes, parens, or an HTML/XML tag.
-- `J` — join the next line onto the current one; `gJ` joins without adding a space.
-- `.` — repeat the last change. Combine with motions for fast batch edits (`ciw` then `.` on the next word).
-- `>>` / `<<` — indent/outdent a line; select lines in visual mode and repeat with `.`.
-- `~` — toggle case of the character under the cursor; select text and `g~` to toggle a whole selection.
+- `cgn` - can be used to selectively replace matches
+    - `/` to search for keyword
+    - `cgn` and replace the keyword with new word
+    - `.` to repeat the edit on the next match. `n` to skip.
+- `:normal` - apply normal mode command to many lines easily
+    - Flow
+        - Select lines
+        - `:normal <cmd><ESC>` (:normal I- etc.)
+    - You can do 
+        - `:%normal <cmd>` (run on every line in a file)
+        - `:10,20normal <cmd>` (run on line 10 to 20 in a file)
+        - etc.
+    - Use this when every line gets the same treatment! 
+
+- `:g/global` to operate on every matching line
+    - Let's you run Ex command on every line matching a pattern
+        - `:g/pattern/command`
+    - Conversely, to perform Ex on lines NOT matching
+        - `:v/pattern/command`
+    - You can use this with normal too!
+        - `:g/pattern/normal <cmd>`
+
+- Edit with motion
+    - Think big. Motion such as `/` and `?` can be used with operators such as `c` and `d`!
 
 ## Search & Replace
 
-- `:%s/old/new/g` — replace all occurrences in the file; add `c` to confirm each one.
-- `:%s/\<word\>/new/g` — replace only whole-word matches.
-- `/pattern` then `:%s//new/g` — reuse the last search pattern in a substitution.
-- `gv` — reselect the last visual selection (handy before running a substitution on it).
-
 ## Registers & Macros
 
-- `"add` — delete into register `a` instead of the default register; `"ap` pastes it back.
-- `qa ... q` — record a macro into register `a`; `@a` replays it, `@@` repeats the last macro.
-- `:reg` — view the contents of all registers.
-- `"0p` — paste from the yank register (register `0`), unaffected by later deletes.
+- `Macro` - a way to record a sequence of keystrokes and let you replay it
+    - Recording a macro 
+        - `q<reg>` to start recording
+        - ... do your thing
+        - `q` to stop recording
+    - Playing a macro
+        - `[<count>]@<reg>` to play count
+        - `@@` to play the recently executed macro
+
+- `Registers`
+    - `"0` is a yank register. Contains the most recently yanked text. `d` will not overwrite it
+    - `"_` is the black-hole register. The deleted text just disappears
 
 ## Windows, Buffers & Tabs
 
-- `Ctrl-w s` / `Ctrl-w v` — split window horizontally/vertically; `Ctrl-w =` equalizes sizes.
-- `Ctrl-w w` / `Ctrl-w h/j/k/l` — cycle or navigate between splits.
-- `:bnext` / `:bprev` (or `:bn`/`:bp`) — cycle through open buffers; `:ls` lists them.
-- `Ctrl-^` — toggle between the current and previously edited buffer.
+## Navigating
+
+- `Ctrl-D` - move down HALF a page (`Ctrl-U` the other way)
+- `Ctrl-F` - move down FULL page (`Ctrl-B` the other way)
+- `zz` - centers your cursor
+    - `zt` - cursor to the top
+    - `zb` - cursor to the bottom
+- `m` - bookmark a certain location (`ma`, `mb`, etc.)
+    - Creating and jumpin
+        - `'a` etc. to jump to that bookmarked LINE
+        - `backtick a` to jump to that bookmarked CURSOR POS
+    - Showing
+        - `:marks` - shows all marks
+- `''` - returns to the line you were on before your previous jump. (double back tick for the cursor position equivalent)
+- `Ctrl-^` switch back and forth between current and previous file
 
 ## Misc
 
-- `:set relativenumber` — line numbers relative to the cursor, making `{n}j`/`{n}k` motions easy to count.
-- `zz` — center the current line in the window (`zt`/`zb` for top/bottom).
-- `Ctrl-v` — visual block mode, for editing a rectangular column across multiple lines.
-- `:earlier 5m` / `:later 5m` — travel through undo history by time instead of by step.
+- `=` operator indents your file
+    - `=<motion><text object>`
+    - `gg=G` to indent entire file, `==` current line
+- `Ctrl-a` to increment a number; `Ctrl-x` to decrement a number
+    - If you have a list of items, you can do 
+        - select all lines
+        -`g Ctrl-a` to create a list with numbers
 
 </div>
