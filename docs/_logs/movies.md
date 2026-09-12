@@ -365,3 +365,11 @@ month recorded.
 
 ### August
 - Spider-Man: Brand New Day
+
+### September
+- The Death of Robin Hood
+- Hiroshima
+- Mercy
+- Pressure
+- Bakudan
+- Civil War
