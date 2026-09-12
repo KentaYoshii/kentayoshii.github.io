@@ -367,10 +367,10 @@ month recorded.
 - Spider-Man: Brand New Day
 
 ### September
-- The Death of Robin Hood
-- Hiroshima
-- Mercy
-- Pressure
-- Bakudan
+- The Death of Robin Hood (2026)
+- Fukushima: A Nuclear Nightmare
+- Mercy (2026)
+- Pressure (2026)
+- Bakudan (2025)
 - Civil War
 - Blade Runner (1982)
