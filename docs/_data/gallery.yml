@@ -14,32 +14,179 @@
 # `tags` is optional — an untagged photo still shows in the grid, just
 # without any chips pointing at it.
 #
-# TODO: the entries below are synthetic placeholders (solid-colour PNGs,
-# not real photos) added to test the masonry grid with mixed dimensions.
-# Replace them with real photos, or delete them back to an empty list.
 
-- image: /assets/gallery/test-portrait-small.png
-  caption: Portrait test tile
+- image: /assets/gallery/hawaiian_volcanoes_1.jpeg
+  caption: Hawaiian Volcanoes National Park
   date: 2026-09-07
   location: Test bench
   tags: [test, portrait]
-- image: /assets/gallery/test-panorama.png
-  caption: Panorama test tile
+- image: /assets/gallery/yosemite_1.jpeg
+  caption: Yosemite National Park
   date: 2026-09-06
   location: Test bench
   tags: [test, panorama]
-- image: /assets/gallery/test-square.png
-  caption: Square test tile
+- image: /assets/gallery/yosemite_2.jpeg
+  caption: Yosemite National Park
   date: 2026-09-05
-  location: Test bench
+  location: 
   tags: [test, square]
-- image: /assets/gallery/test-portrait-tall.png
-  caption: Tall portrait test tile
-  date: 2026-09-04
+- image: /assets/gallery/yosemite_3.jpeg
+  caption: Yosemite National Park
+  date: 2026-09-05
+  location: 
+  tags: [test, square]
+- image: /assets/gallery/zion_1.jpeg
+  caption: Zion National Park
+  date: 2026-09-05
+  location: 
+  tags: [test, square]
+- image: /assets/gallery/antelope.jpeg
+  caption: Antelope Canyon 
+  date: 2026-09-07
   location: Test bench
   tags: [test, portrait]
-- image: /assets/gallery/test-landscape-wide.png
-  caption: Wide landscape test tile
-  date: 2026-09-03
+- image: /assets/gallery/grand_canyon.jpeg
+  caption: Grand Canyon National Park
+  date: 2026-09-06
   location: Test bench
-  tags: [test, landscape]
+  tags: [test, panorama]
+- image: /assets/gallery/yellowstone_1.jpeg
+  caption: Yellowstone National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/yellowstone_2.jpeg
+  caption: Yellowstone National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/yellowstone_3.jpeg
+  caption: Yellowstone National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/bb_1.jpeg
+  caption: Big Bend National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/bb_2.jpeg
+  caption: Big Bend National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/bb_3.jpeg
+  caption: Big Bend National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/whitesands.jpeg
+  caption: Whitesands National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/guadalupe.jpeg
+  caption: Guadalupe National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/carlsbad.jpeg
+  caption: Carlsbad Caverns National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/haleakala.jpeg
+  caption: Haleakala National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/haleakala2.jpeg
+  caption: Haleakala National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/haleakala3.jpeg
+  caption: Haleakala National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/haleakala4.jpeg
+  caption: Haleakala National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/olympic.jpeg
+  caption: Olympic National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/olympic2.jpeg
+  caption: Olympic National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/olympic3.jpeg
+  caption: Olympic National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/olympic4.jpeg
+  caption: Olympic National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/olympic5.jpeg
+  caption: Olympic National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/olympic6.jpeg
+  caption: Olympic National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/olympic7.jpeg
+  caption: Olympic National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/rainier.jpeg
+  caption: Mt. Rainier National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/rainier2.jpeg
+  caption: Mt. Rainier National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/rainier3.jpeg
+  caption: Mt. Rainier National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/rainier4.jpeg
+  caption: Mt. Rainier National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/rmnp.jpeg
+  caption: Rocky Mountains National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/rmnp2.jpeg
+  caption: Rocky Mountains National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/rmnp3.jpeg
+  caption: Rocky Mountains National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
+- image: /assets/gallery/rmnp4.jpeg
+  caption: Rocky Mountains National Park 
+  date: 2026-09-07
+  location: Test bench
+  tags: [test, portrait]
