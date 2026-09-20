@@ -2,7 +2,7 @@
 layout: page
 title: US National Parks
 permalink: /adventure/parks/
-description: All sixty-three US national parks, which I have been to, and photographs of them.
+description: All sixty-three US national parks — the ones I've visited, and photographs of them.
 ---
 
 {%- comment -%}
