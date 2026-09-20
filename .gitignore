@@ -4,3 +4,8 @@
 !.github/
 !.github/workflows/
 !.github/workflows/*.yml
+
+# Screenshots dropped at the repo root to show someone a rendering problem.
+# They have been committed by accident twice now (73032d2, and again during
+# the gallery rework), which is often enough to just ignore them.
+/Screenshot*.png
