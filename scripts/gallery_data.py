@@ -36,6 +36,18 @@ class GalleryError(Exception):
     """A line in gallery.yml does not match the documented shape."""
 
 
+def unquote(text):
+    """Strip one matching pair of surrounding quotes, as YAML would.
+
+    Dates are written quoted in gallery.yml so that a real YAML parser hands
+    Jekyll a string rather than coercing them to a date object, which would
+    make the two readers of this file disagree about the type.
+    """
+    if len(text) >= 2 and text[0] == text[-1] and text[0] in '"\'':
+        return text[1:-1]
+    return text
+
+
 def parse_value(raw):
     """Turn the text after a ``key:`` into a string, a list, or None.
 
@@ -47,8 +59,8 @@ def parse_value(raw):
         return None
     if text.startswith('[') and text.endswith(']'):
         inner = text[1:-1]
-        return [part.strip() for part in inner.split(',') if part.strip()]
-    return text
+        return [unquote(part.strip()) for part in inner.split(',') if part.strip()]
+    return unquote(text)
 
 
 def parse_gallery(text):

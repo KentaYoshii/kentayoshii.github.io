@@ -165,7 +165,12 @@ photos actually carry, rather than in Liquid here.
               data-image="{{ '/assets/gallery/large/' | append: file | relative_url }}"
               data-caption="{{ label | escape }}"
               data-park="{{ photo.park }}"
-              data-year="{{ info.year }}"
+              {%- comment -%}
+              The photo's own EXIF date where it has one, falling back to the
+              year travel.json records for the visit. Formatted here rather
+              than in JavaScript so there is one date format on the site.
+              {%- endcomment -%}
+              data-when="{% if photo.date %}{{ photo.date | date: '%-d %B %Y' }}{% else %}{{ info.year }}{% endif %}"
               data-location="{{ photo.location | escape }}"
               {% if shown %}style="background-image: url('{{ shown.lqip }}')"{% endif %}>
         <img src="{{ '/assets/gallery/thumbs/' | append: file | relative_url }}"

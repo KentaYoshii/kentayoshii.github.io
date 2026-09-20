@@ -15,9 +15,13 @@
 # - image: /assets/gallery/zion_1.jpeg      # required, the original
 #   park: Zion                              # exact name from travel.json
 #   location: Utah                          # state, for the lightbox
+#   date: "2025-04-27"                      # quoted -- see below
 #   caption: The Narrows, looking upstream  # optional
-#   date: 2025-10-02                        # optional
 #   tags: [canyon, water]                   # optional
+#
+# Quote the date. Unquoted, a real YAML parser turns it into a date object
+# while scripts/gallery_data.py leaves it a string, and the two readers of
+# this file then disagree about the type. There is a test for that.
 #
 # `park` is what groups the page into sections and what joins a photo to its
 # entry on /adventure/, so it must match the park's name in
@@ -29,145 +33,187 @@
 # Section order follows first appearance below: most recent visit first, and
 # within a year the parks with the most photos first.
 #
-# `caption`, `date` and `tags` are optional and currently unset -- the entries
-# here carry only what is known to be true. A photo without a caption still
-# renders; the template falls back to the park name for its alt text.
+# Every `date` below was read out of the photo's own EXIF, so they are the
+# days the shutter actually fired rather than anything typed in. The lightbox
+# shows the date where there is one and the park's visit year otherwise.
+#
+# `caption` and `tags` are optional and mostly unset: nothing is recorded
+# about what these photographs show, and a guess would read as fact. A photo
+# without a caption still renders -- the template falls back to the park name
+# for its alt text -- so they can be filled in whenever there is something
+# real to say.
 
 # Olympic -- Washington, visited 2026
 - image: /assets/gallery/olympic.jpeg
   park: Olympic
   location: Washington
+  date: "2026-07-26"
 - image: /assets/gallery/olympic2.jpeg
   park: Olympic
   location: Washington
+  date: "2026-07-26"
 - image: /assets/gallery/olympic3.jpeg
   park: Olympic
   location: Washington
+  date: "2026-07-27"
 - image: /assets/gallery/olympic4.jpeg
   park: Olympic
   location: Washington
+  date: "2026-07-29"
 - image: /assets/gallery/olympic5.jpeg
   park: Olympic
   location: Washington
+  date: "2026-07-28"
 - image: /assets/gallery/olympic6.jpeg
   park: Olympic
   location: Washington
+  date: "2026-07-29"
 - image: /assets/gallery/olympic7.jpeg
   park: Olympic
   location: Washington
+  date: "2026-07-29"
 
 # Haleakalā -- Hawaii, visited 2026
 - image: /assets/gallery/haleakala.jpeg
   park: Haleakalā
   location: Hawaii
+  date: "2026-04-29"
 - image: /assets/gallery/haleakala2.jpeg
   park: Haleakalā
   location: Hawaii
+  date: "2026-04-29"
 - image: /assets/gallery/haleakala3.jpeg
   park: Haleakalā
   location: Hawaii
+  date: "2026-04-29"
 - image: /assets/gallery/haleakala4.jpeg
   park: Haleakalā
   location: Hawaii
+  date: "2026-04-30"
 
 # Mount Rainier -- Washington, visited 2026
 - image: /assets/gallery/rainier.jpeg
   park: Mount Rainier
   location: Washington
+  date: "2026-07-30"
 - image: /assets/gallery/rainier2.jpeg
   park: Mount Rainier
   location: Washington
+  date: "2026-07-30"
 - image: /assets/gallery/rainier3.jpeg
   park: Mount Rainier
   location: Washington
+  date: "2026-07-30"
 - image: /assets/gallery/rainier4.jpeg
   park: Mount Rainier
   location: Washington
+  date: "2026-07-30"
 
 # Rocky Mountain -- Colorado, visited 2026
 - image: /assets/gallery/rmnp.jpeg
   park: Rocky Mountain
   location: Colorado
+  date: "2026-09-06"
 - image: /assets/gallery/rmnp2.jpeg
   park: Rocky Mountain
   location: Colorado
+  date: "2026-09-06"
 - image: /assets/gallery/rmnp3.jpeg
   park: Rocky Mountain
   location: Colorado
+  date: "2026-09-08"
 - image: /assets/gallery/rmnp4.jpeg
   park: Rocky Mountain
   location: Colorado
+  date: "2026-09-07"
 
 # Hawaiʻi Volcanoes -- Hawaii, visited 2026
 - image: /assets/gallery/hawaiian_volcanoes_1.jpeg
   park: Hawaiʻi Volcanoes
   location: Hawaii
+  date: "2022-04-01"
 
 # Big Bend -- Texas, visited 2025
 - image: /assets/gallery/bb_1.jpeg
   park: Big Bend
   location: Texas
+  date: "2025-12-09"
 - image: /assets/gallery/bb_2.jpeg
   park: Big Bend
   location: Texas
+  date: "2025-12-11"
 - image: /assets/gallery/bb_3.jpeg
   park: Big Bend
   location: Texas
+  date: "2025-12-09"
 
 # Yellowstone -- Wyoming / Montana / Idaho, visited 2025
 - image: /assets/gallery/yellowstone_1.jpeg
   park: Yellowstone
   location: Wyoming / Montana / Idaho
+  date: "2025-10-01"
 - image: /assets/gallery/yellowstone_2.jpeg
   park: Yellowstone
   location: Wyoming / Montana / Idaho
+  date: "2025-10-02"
 - image: /assets/gallery/yellowstone_3.jpeg
   park: Yellowstone
   location: Wyoming / Montana / Idaho
+  date: "2025-10-02"
 
 # Yosemite -- California, visited 2025
-- image: /assets/gallery/yosemite_1.jpeg
-  park: Yosemite
-  location: California
 - image: /assets/gallery/yosemite_2.jpeg
   park: Yosemite
   location: California
+  date: "2025-05-01"
 - image: /assets/gallery/yosemite_3.jpeg
   park: Yosemite
   location: California
+  date: "2025-05-02"
 
 # Carlsbad Caverns -- New Mexico, visited 2025
 - image: /assets/gallery/carlsbad.jpeg
   park: Carlsbad Caverns
   location: New Mexico
+  date: "2025-12-13"
 
 # Grand Canyon -- Arizona, visited 2025
 - image: /assets/gallery/grand_canyon.jpeg
   park: Grand Canyon
   location: Arizona
+  date: "2025-04-29"
 
 # Grand Teton -- Wyoming, visited 2025
 - image: /assets/gallery/grand_teton_1.jpeg
   park: Grand Teton
   location: Wyoming
+  date: "2025-09-28"
 
 # Guadalupe Mountains -- Texas, visited 2025
 - image: /assets/gallery/guadalupe.jpeg
   park: Guadalupe Mountains
   location: Texas
+  date: "2025-12-14"
 
 # White Sands -- New Mexico, visited 2025
 - image: /assets/gallery/whitesands.jpeg
   park: White Sands
   location: New Mexico
+  date: "2025-12-18"
 
 # Zion -- Utah, visited 2025
 - image: /assets/gallery/zion_1.jpeg
   park: Zion
   location: Utah
+  date: "2025-04-27"
 
 # Elsewhere -- not a national park, so no `park` key. These carry a caption
 # because nothing else on the page names the place.
 - image: /assets/gallery/antelope.jpeg
   caption: Antelope Canyon
   location: Arizona
+  date: "2025-04-28"
+- image: /assets/gallery/yosemite_1.jpeg
+  caption: Fiordland
+  location: New Zealand
+  date: "2024-01-09"

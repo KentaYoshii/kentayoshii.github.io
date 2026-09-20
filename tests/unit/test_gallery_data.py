@@ -32,9 +32,29 @@ class TestParseValue:
         ('[solo]', ['solo']),
         ('[]', []),
         ('[a, , b]', ['a', 'b']),
+        ('["a", \'b\']', ['a', 'b']),
     ])
     def test_inline_lists(self, raw: str, value: list) -> None:
         assert gd.parse_value(raw) == value
+
+    @pytest.mark.parametrize('raw, value', [
+        ('"2025-10-02"', '2025-10-02'),
+        ("'Utah'", 'Utah'),
+        ('"quoted"', 'quoted'),
+    ])
+    def test_surrounding_quotes_are_stripped(self, raw: str, value: str) -> None:
+        # Dates are written quoted so a real YAML parser returns a string
+        # rather than a date object. Leaving the quote characters in would
+        # put them on the page.
+        assert gd.parse_value(raw) == value
+
+    @pytest.mark.parametrize('raw', [
+        'The Narrows, "looking upstream"',
+        '"mismatched\'',
+        'a "quote" inside',
+    ])
+    def test_quotes_that_do_not_wrap_the_value_are_kept(self, raw: str) -> None:
+        assert gd.parse_value(raw) == raw
 
 
 class TestParseGallery:

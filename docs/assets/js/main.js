@@ -1053,7 +1053,7 @@ function initGallery() {
     var caption = tile.getAttribute('data-caption') || '';
     if (park && caption.indexOf(park) === 0) park = '';
     metaText.textContent = [park, tile.getAttribute('data-location'),
-                            tile.getAttribute('data-year')]
+                            tile.getAttribute('data-when')]
       .filter(function (v) { return v; })
       .join(' · ');
   }
