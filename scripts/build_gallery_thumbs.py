@@ -191,6 +191,17 @@ def load_image(path):
     return image.convert('RGB')
 
 
+def existing_size(path):
+    """The pixel size of a derivative already on disk.
+
+    Reads the header only; Pillow does not decode the image for this.
+    """
+    from PIL import Image
+
+    with Image.open(path) as image:
+        return image.size
+
+
 def write_derivative(image, destination, target_width, quality):
     """Write one resized copy, and report the size it was written at."""
     from PIL import Image
@@ -281,7 +292,12 @@ def build(entries, force=False, log=print):
                                         QUALITY[kind])
                 action = 'wrote'
             else:
-                size = scaled_size(image.size, target_width)
+                # Measured from the file rather than recomputed from the
+                # target width. The two agree until a width in SIZES changes,
+                # at which point every existing derivative is a size the
+                # arithmetic no longer predicts and the staleness check --
+                # which only looks at mtimes -- does not notice.
+                size = existing_size(targets[kind])
                 action = 'kept '
             if kind == 'thumbs':
                 record['width'], record['height'] = size

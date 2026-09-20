@@ -1701,8 +1701,15 @@ body,
   border: none;
   border-radius: 8px;
   overflow: hidden;
-  background: none;
   cursor: pointer;
+  // The blur-up placeholder: a 16px-wide copy of this photo, inlined as a
+  // data URI by the template, so the grid shows an impression of each photo
+  // immediately instead of empty boxes. It sits on the button rather than on
+  // the img because the img fades in from opacity 0, and opacity would take
+  // its own background with it.
+  background-color: $grey-color-light;
+  background-size: cover;
+  background-position: center;
 
   img {
     display: block;
@@ -1712,11 +1719,6 @@ body,
     height: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
-    // The blur-up placeholder: a 16px-wide copy of this photo, inlined as a
-    // data URI by the template and stretched over the cell, so the grid shows
-    // an impression of each photo immediately instead of empty boxes.
-    background-size: cover;
-    background-position: center;
     opacity: 0;
     transition: opacity 0.4s ease, transform 0.25s ease;
   }
@@ -2384,6 +2386,12 @@ body,
       border-color: $dark-brand;
       color: $dark-bg;
     }
+  }
+
+  // Only seen for a photo with no generated placeholder; a cream box would
+  // flash against this background.
+  .gallery-tile {
+    background-color: $dark-surface;
   }
 
   .gallery-map-state {

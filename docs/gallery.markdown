@@ -155,16 +155,22 @@ photos actually carry, rather than in Liquid here.
     {%- assign label = photo.location -%}
   {%- endif -%}
 
+      {%- comment -%}
+      The blur-up placeholder goes on the button, not on the img. The img
+      starts fully transparent and fades in once it decodes, and opacity
+      takes an element's own background with it -- set here, the placeholder
+      would be invisible for exactly as long as it is needed.
+      {%- endcomment -%}
       <button type="button" class="gallery-tile"
               data-image="{{ '/assets/gallery/large/' | append: file | relative_url }}"
               data-caption="{{ label | escape }}"
               data-park="{{ photo.park }}"
               data-year="{{ info.year }}"
-              data-location="{{ photo.location | escape }}">
+              data-location="{{ photo.location | escape }}"
+              {% if shown %}style="background-image: url('{{ shown.lqip }}')"{% endif %}>
         <img src="{{ '/assets/gallery/thumbs/' | append: file | relative_url }}"
              alt="{{ label | escape }}"
-             {% if shown %}width="{{ shown.width }}" height="{{ shown.height }}"
-             style="background-image: url('{{ shown.lqip }}')"{% endif %}
+             {% if shown %}width="{{ shown.width }}" height="{{ shown.height }}"{% endif %}
              loading="lazy" decoding="async">
         <span class="gallery-tile-caption" aria-hidden="true">{{ label }}</span>
       </button>
