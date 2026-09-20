@@ -20,16 +20,20 @@ docs/                     Jekyll site root
   _data/trails_osm.json   generated OSM lookup cache — do not edit by hand
   _data/covers.json       generated cover-lookup cache — do not edit by hand
   _data/gallery.yml       hand-written photo list (source of truth, not generated)
+  _data/gallery_render.json  generated thumbnail/colour data — do not edit by hand
+  _data/gallery_map.json  generated map geometry — do not edit by hand
   _logs/books.md          hand-written reading log (source of truth)
   _logs/movies.md         hand-written watch log (source of truth)
   _logs/travel.md         hand-written park-visit log (source of truth)
   _logs/trails.md         hand-written trail log (source of truth)
   _posts/                 blog posts only (`categories: posts`)
-  assets/gallery/         photo files, referenced by _data/gallery.yml
+  assets/gallery/         full-resolution originals, never served directly
+  assets/gallery/thumbs/  generated 800px grid images — do not edit by hand
+  assets/gallery/large/   generated 2000px lightbox images — do not edit by hand
   books.markdown          renders _data/books.json
   movies.markdown         renders _data/movies.json
   adventure.markdown      renders _data/travel.json + _data/trails.json
-  gallery.markdown        renders _data/gallery.yml
+  gallery.markdown        renders _data/gallery.yml + gallery_render.json + gallery_map.json
   stats.markdown          renders _data/stats.json
   posts.markdown          lists posts filed under `categories: posts`
   404.html                served by GitHub Pages for any unmatched path
@@ -37,7 +41,8 @@ docs/                     Jekyll site root
   assets/js/main.js       search, grouping, cover art, dark mode, gallery lightbox
   assets/main.scss        theme
 scripts/
-  build.py                runs everything below, in order — the usual entry point
+  build.py                runs the _data generators in order — the usual entry point
+                          (not the two gallery scripts; see Gallery)
   merge_books.py          builds _data/books.json
   build_movies.py         builds _data/movies.json
   build_covers.py         resolves cover URLs; --fetch is the only online step
@@ -46,6 +51,10 @@ scripts/
   build_travel.py         builds _data/travel.json
   build_trails.py         builds _data/trails.json; --fetch is its online step
   national_parks.py       fixed reference list of all 63 US National Parks
+  gallery_data.py         reads _data/gallery.yml (shared by the two below)
+  build_gallery_thumbs.py resizes gallery photos — NOT run by build.py; needs Pillow
+  build_gallery_map.py    builds _data/gallery_map.json — NOT run by build.py;
+                          --fetch is its online step
 tests/                    pytest suite for the build scripts
 goodreads_library_export.csv   latest Goodreads export
 ```
@@ -328,42 +337,74 @@ there needs to change. A `## <heading>` in the log with no matching entry in
 
 ## Gallery
 
-`/gallery/` renders `docs/_data/gallery.yml` directly — unlike books, movies,
-travel and trails, there is no `_logs/*.md` source file and no Python build
-script. Those exist because their data needs an external lookup (covers,
-posters) or free-text date-heading parsing that Liquid can't do; a photo
-needs neither, so `gallery.yml` is hand-edited as the structured list it
-already is.
+`/gallery/` renders `docs/_data/gallery.yml`, grouped into one section per
+national park. The list itself is hand-edited — unlike books, movies, travel
+and trails there is no `_logs/*.md` source and no generator for it, because a
+photo needs neither an external lookup nor free-text date parsing.
+
+Two things *are* generated, and both are committed:
+
+| File | Written by | What it carries |
+|---|---|---|
+| `assets/gallery/thumbs/`, `assets/gallery/large/` | `build_gallery_thumbs.py` | the 800px and 2000px copies the page serves |
+| `_data/gallery_render.json` | `build_gallery_thumbs.py` | thumbnail dimensions, blur-up placeholders, a colour per park |
+| `_data/gallery_map.json` | `build_gallery_map.py --fetch` | projected state outlines and park marker positions |
+
+The page never serves the files in `assets/gallery/` itself. Those are the
+full-resolution originals, kept only as the source the derivatives are rebuilt
+from: as committed they come to 153 MB, against 3.5 MB for the thumbnails the
+grid actually loads.
+
+`park` is the field that does the work. It groups the page into sections and
+joins each photo to its entry in `_data/travel.json` for the state and the
+year visited, so it has to match that file's name exactly — several differ
+from the everyday spelling (`White Sands`, `Rocky Mountain`,
+`Hawaiʻi Volcanoes`, `Guadalupe Mountains`). Omit it for somewhere that is
+not a national park; those collect into a closing "Elsewhere" section.
+`caption`, `date` and `tags` are all optional.
 
 To add a photo:
 
 1. Drop the image file under `docs/assets/gallery/`.
-2. Add an entry to the top of `docs/_data/gallery.yml` (newest first):
+2. Add an entry to `docs/_data/gallery.yml`, next to the others from that
+   park (section order follows first appearance):
 
    ```yaml
    - image: /assets/gallery/2026-06-yosemite-valley.jpg
+     park: Yosemite
+     location: California
      caption: Tunnel View at sunrise
-     date: 2026-06-14
-     location: Yosemite National Park, CA
-     tags: [landscape, national-park]
    ```
 
-3. Commit and push:
+3. Regenerate the derivatives. This is the one step that needs Pillow, which
+   is why it is not in `build.py`:
 
    ```sh
-   git add docs/assets/gallery docs/_data/gallery.yml
+   python3 -m pip install -r requirements-dev.txt
+   python3 scripts/build_gallery_thumbs.py
+   ```
+
+4. Commit the original, the derivatives and the render data together:
+
+   ```sh
+   git add docs/assets/gallery docs/_data/gallery.yml docs/_data/gallery_render.json
    git commit -m "Add a gallery photo" && git push origin gh-pages
    ```
 
-`tags` is optional; an untagged photo still appears in the grid, just with no
-chip pointing at it. The chip row itself is built client-side
-(`initGallery()` in `main.js`) from whatever tags the photos on the page
-actually carry, since the tag set is open-ended — unlike the Books page's
-fixed five eras, which are hardcoded in the markup.
+A park photographed for the first time also needs a marker on the hero map:
+add its coordinates to `PARKS` in `scripts/build_gallery_map.py` and re-run
+`python3 scripts/build_gallery_map.py --fetch` (or the `map` target of the
+`fetch` workflow). The test suite checks that every photographed park has a
+marker and that every marker lands inside its own state, so a missing or
+mistyped coordinate fails rather than quietly drawing a dot in Nebraska.
 
-There is no automated check on image file size or dimensions, and none is
-planned — this is a hand-curated, occasional-use gallery, not a bulk upload
-pipeline.
+The filter chips are built client-side (`initGallery()` in `main.js`) from
+the sections the page rendered, since the set of parks is open-ended — unlike
+the Books page's fixed five eras, which are hardcoded in the markup.
+
+There is no automated check on the size or dimensions of the originals, and
+none is planned — `build_gallery_thumbs.py` makes the page's cost independent
+of them.
 
 ## Writing a post
 
