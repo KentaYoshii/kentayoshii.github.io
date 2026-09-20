@@ -158,20 +158,32 @@ photos actually carry, rather than in Liquid here.
   {%- endif -%}
 
       {%- comment -%}
-      The blur-up placeholder goes on the button, not on the img. The img
-      starts fully transparent and fades in once it decodes, and opacity
-      takes an element's own background with it -- set here, the placeholder
-      would be invisible for exactly as long as it is needed.
+      Keep Liquid tags OUT of the attribute list below, and never use the
+      whitespace-stripping form ({%- -%}) inside one. A comment in among the
+      attributes strips the newline and indentation on both sides, which
+      leaves two attributes touching -- data-park="Olympic"data-when="..." --
+      and kramdown's HTML parser wants whitespace before every attribute
+      name. It does not fail loudly: it gives up on the start tag and escapes
+      the whole thing, so the page renders the markup as visible text while
+      the <img> inside it still renders normally.
+
+      So, notes about individual attributes live here rather than beside
+      them:
+
+        data-image   the 2000px copy, loaded only when the lightbox opens.
+        data-when    the photo's own EXIF date where it has one, falling back
+                     to the year travel.json records for the visit. Formatted
+                     here so there is one date format on the site.
+        style        the blur-up placeholder, on the button rather than the
+                     img: the img fades in from opacity 0, and opacity takes
+                     an element's own background with it, so set on the img
+                     the placeholder would be invisible exactly while it is
+                     needed.
       {%- endcomment -%}
       <button type="button" class="gallery-tile"
               data-image="{{ '/assets/gallery/large/' | append: file | relative_url }}"
               data-caption="{{ label | escape }}"
               data-park="{{ photo.park }}"
-              {%- comment -%}
-              The photo's own EXIF date where it has one, falling back to the
-              year travel.json records for the visit. Formatted here rather
-              than in JavaScript so there is one date format on the site.
-              {%- endcomment -%}
               data-when="{% if photo.date %}{{ photo.date | date: '%-d %B %Y' }}{% else %}{{ info.year }}{% endif %}"
               data-tags="{{ photo.tags | join: ' · ' | escape }}"
               data-location="{{ photo.location | escape }}"
