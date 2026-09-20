@@ -11,6 +11,7 @@ opposite colours into a grey neither photo contains.
 """
 
 import colorsys
+import os
 
 import pytest
 
@@ -46,12 +47,23 @@ class TestDerivativePath:
     @pytest.mark.parametrize('kind', ['thumbs', 'large'])
     def test_keeps_the_basename_under_the_kind(self, kind: str) -> None:
         path = bgt.derivative_path('/photos/zion_1.jpeg', kind,
-                                   gallery_dir='/photos')
-        assert path == '/photos/%s/zion_1.jpeg' % kind
+                                   derivatives_dir='/site')
+        assert path == '/site/%s/zion_1.jpeg' % kind
 
     def test_rejects_an_unknown_kind(self) -> None:
         with pytest.raises(ValueError):
-            bgt.derivative_path('/photos/a.jpeg', 'huge', gallery_dir='/photos')
+            bgt.derivative_path('/photos/a.jpeg', 'huge',
+                                derivatives_dir='/site')
+
+    def test_the_derivatives_are_written_inside_the_site_source(self) -> None:
+        # The originals sit outside docs/ so Jekyll cannot publish them; the
+        # derivatives have to be inside it, or the page has nothing to load.
+        for kind in bgt.SIZES:
+            assert bgt.derivative_path('/anywhere/a.jpeg', kind).startswith(
+                os.path.join(bgt.ROOT, 'docs'))
+
+    def test_originals_are_read_from_outside_the_site_source(self) -> None:
+        assert not bgt.ORIGINALS.startswith(os.path.join(bgt.ROOT, 'docs'))
 
 
 class TestIsStale:

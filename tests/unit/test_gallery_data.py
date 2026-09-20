@@ -153,11 +153,23 @@ class TestAgreesWithRealYaml:
 
 
 class TestOriginalPath:
-    def test_resolves_the_basename_under_the_gallery_directory(self) -> None:
+    def test_resolves_a_bare_filename_under_the_originals_directory(self) -> None:
+        path = gd.original_path({'image': 'zion_1.jpeg'},
+                                originals_dir='/tmp/originals')
+        assert path == '/tmp/originals/zion_1.jpeg'
+
+    def test_tolerates_the_older_site_root_form(self) -> None:
+        # `image` used to be a URL, back when the page served the original.
         path = gd.original_path({'image': '/assets/gallery/zion_1.jpeg'},
-                                gallery_dir='/tmp/gallery')
-        assert path == '/tmp/gallery/zion_1.jpeg'
+                                originals_dir='/tmp/originals')
+        assert path == '/tmp/originals/zion_1.jpeg'
 
     def test_an_entry_without_an_image_is_an_error(self) -> None:
         with pytest.raises(gd.GalleryError):
             gd.original_path({'park': 'Zion'})
+
+    def test_the_originals_live_outside_the_published_site(self) -> None:
+        # The whole point of the move: docs/ is the Jekyll source, so anything
+        # under it is published whether or not a page links to it.
+        import os
+        assert not gd.ORIGINALS_DIR.startswith(os.path.join(gd.ROOT, 'docs'))

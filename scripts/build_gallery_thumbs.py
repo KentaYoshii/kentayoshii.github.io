@@ -7,14 +7,15 @@
 The page used to serve the committed originals straight into the grid: 153 MB
 across 36 photos, several over 6 MB, every one of them scaled down by the
 browser into a box a few hundred pixels wide. `loading="lazy"` deferred the
-cost but did not remove it. This writes two smaller copies of each photo and
-the page serves those instead:
+cost but did not remove it. This reads each original from photo-originals/ and
+writes two smaller copies into the site, which are what the page loads:
 
-    assets/gallery/thumbs/  800 px wide   the grid tile
-    assets/gallery/large/  2000 px wide   the lightbox
+    docs/assets/gallery/thumbs/  800 px wide   the grid tile
+    docs/assets/gallery/large/  2000 px wide   the lightbox
 
 The originals stay committed and untouched as the source these are rebuilt
-from; nothing links to them any more.
+from, but they live outside docs/ so that Jekyll does not publish 144 MB of
+full-resolution photographs nothing links to.
 
 Also written is docs/_data/gallery_render.json, which carries the three things
 the template cannot work out for itself:
@@ -49,8 +50,13 @@ import gallery_data  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-GALLERY = os.path.join(ROOT, 'docs', 'assets', 'gallery')
 DATA = os.path.join(ROOT, 'docs', '_data')
+
+# Read from outside the site source, written into it. The originals are the
+# only input here and are deliberately not under docs/ (see gallery_data);
+# the derivatives are the only thing the page loads, so they belong there.
+ORIGINALS = gallery_data.ORIGINALS_DIR
+DERIVATIVES = os.path.join(ROOT, 'docs', 'assets', 'gallery')
 
 # Widths, not heights: the grid lays out in columns, and every photo here is
 # landscape apart from one, so width is the dimension that bounds the work.
@@ -109,11 +115,11 @@ def scaled_size(size, target_width):
     return target_width, scaled_height
 
 
-def derivative_path(original, kind, gallery_dir=GALLERY):
+def derivative_path(original, kind, derivatives_dir=DERIVATIVES):
     """Where the `kind` copy of `original` belongs."""
     if kind not in SIZES:
         raise ValueError('unknown derivative: %r' % (kind,))
-    return os.path.join(gallery_dir, kind, os.path.basename(original))
+    return os.path.join(derivatives_dir, kind, os.path.basename(original))
 
 
 def is_stale(original, derivative):
@@ -349,12 +355,12 @@ def main():
         json.dump(render, handle, indent=2, sort_keys=True, ensure_ascii=False)
         handle.write('\n')
 
-    originals = directory_bytes(GALLERY)
-    thumbs = directory_bytes(os.path.join(GALLERY, 'thumbs'))
-    large = directory_bytes(os.path.join(GALLERY, 'large'))
+    originals = directory_bytes(ORIGINALS)
+    thumbs = directory_bytes(os.path.join(DERIVATIVES, 'thumbs'))
+    large = directory_bytes(os.path.join(DERIVATIVES, 'large'))
     print('\n%d photos across %d parks' % (len(render['photos']),
                                            len(render['parks'])))
-    print('  originals  %7.1f MB  (kept as the source; never served)'
+    print('  originals  %7.1f MB  (photo-originals/, outside the built site)'
           % (originals / 1e6))
     print('  thumbs     %7.1f MB  (what the grid now costs)' % (thumbs / 1e6))
     print('  large      %7.1f MB  (one file per lightbox open)' % (large / 1e6))

@@ -27,7 +27,6 @@ docs/                     Jekyll site root
   _logs/travel.md         hand-written park-visit log (source of truth)
   _logs/trails.md         hand-written trail log (source of truth)
   _posts/                 blog posts only (`categories: posts`)
-  assets/gallery/         full-resolution originals, never served directly
   assets/gallery/thumbs/  generated 800px grid images — do not edit by hand
   assets/gallery/large/   generated 2000px lightbox images — do not edit by hand
   books.markdown          renders _data/books.json
@@ -55,6 +54,7 @@ scripts/
   build_gallery_thumbs.py resizes gallery photos — NOT run by build.py; needs Pillow
   build_gallery_map.py    builds _data/gallery_map.json — NOT run by build.py;
                           --fetch is its online step
+photo-originals/          full-resolution sources, outside the published site
 tests/                    pytest suite for the build scripts
 goodreads_library_export.csv   latest Goodreads export
 ```
@@ -350,10 +350,14 @@ Two things *are* generated, and both are committed:
 | `_data/gallery_render.json` | `build_gallery_thumbs.py` | thumbnail dimensions, blur-up placeholders, a colour per park |
 | `_data/gallery_map.json` | `build_gallery_map.py --fetch` | projected state outlines and park marker positions |
 
-The page never serves the files in `assets/gallery/` itself. Those are the
-full-resolution originals, kept only as the source the derivatives are rebuilt
-from: as committed they come to 153 MB, against 3.5 MB for the thumbnails the
-grid actually loads.
+The full-resolution originals live in `photo-originals/` at the repo root,
+**not** under `docs/`. That is deliberate: `docs/` is the Jekyll source, so
+anything inside it is copied into the built site whether or not a page links
+to it — which for 150 MB of originals meant publishing every one at a
+guessable URL and shipping them in every deploy, to serve a grid that only
+ever loads the 3.5 MB of thumbnails. They stay in the repo because
+`build_gallery_thumbs.py` reads them; they just live where Jekyll cannot see
+them, the same reason `plans/` sits at the root.
 
 `park` is the field that does the work. It groups the page into sections and
 joins each photo to its entry in `_data/travel.json` for the state and the
@@ -365,16 +369,20 @@ not a national park; those collect into a closing "Elsewhere" section.
 
 To add a photo:
 
-1. Drop the image file under `docs/assets/gallery/`.
+1. Drop the image file under `photo-originals/`.
 2. Add an entry to `docs/_data/gallery.yml`, next to the others from that
    park (section order follows first appearance):
 
    ```yaml
-   - image: /assets/gallery/2026-06-yosemite-valley.jpg
+   - image: 2026-06-yosemite-valley.jpg
      park: Yosemite
      location: California
+     date: "2026-06-14"
      caption: Tunnel View at sunrise
    ```
+
+   `image` is a bare filename, resolved against `photo-originals/`. Quote the
+   date, so a YAML parser hands Jekyll a string rather than a date object.
 
 3. Regenerate the derivatives. This is the one step that needs Pillow, which
    is why it is not in `build.py`:
@@ -387,7 +395,7 @@ To add a photo:
 4. Commit the original, the derivatives and the render data together:
 
    ```sh
-   git add docs/assets/gallery docs/_data/gallery.yml docs/_data/gallery_render.json
+   git add photo-originals docs/assets/gallery docs/_data/gallery.yml docs/_data/gallery_render.json
    git commit -m "Add a gallery photo" && git push origin gh-pages
    ```
 

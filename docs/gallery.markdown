@@ -142,8 +142,10 @@ photos actually carry, rather than in Liquid here.
   {%- endif -%}
 
   {%- comment -%}
-  `file` is the basename, which is the key gallery_render.json is written
-  against and the name both derivatives share.
+  `image` names a file in photo-originals/, which is outside the site source
+  and never published. The name is all that is needed here: it is the key
+  gallery_render.json is written against and the name both derivatives share.
+  The split tolerates the older form, where `image` was a site-root path.
   {%- endcomment -%}
   {%- assign file = photo.image | split: "/" | last -%}
   {%- assign shown = render.photos[file] -%}

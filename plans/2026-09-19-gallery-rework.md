@@ -55,8 +55,15 @@ independent of how large the originals are, so there is no rule to follow.
 
 **Derivatives.** `scripts/build_gallery_thumbs.py` writes an 800px copy for
 the grid and a 2000px copy for the lightbox. The grid went from 153.5 MB to
-3.5 MB, measured. Originals stay committed as the rebuild source and are no
-longer linked from anywhere.
+3.5 MB, measured.
+
+The originals then moved to `photo-originals/` at the repo root. Unlinking
+them from the page was not enough: `docs/` is the Jekyll source, so everything
+under it is copied into the built site regardless of what links to it, and the
+originals were still being published at guessable URLs and shipped in every
+deploy. Moving them outside `docs/` was the fix — a Jekyll `exclude` would
+not work, because the derivatives live inside `assets/gallery/` and would have
+gone with it. They remain committed, because the generator reads them.
 
 It needs Pillow, so it is deliberately not in `build.py`: CI runs that with
 nothing installed and the rest of `scripts/` is standard-library only. It is a

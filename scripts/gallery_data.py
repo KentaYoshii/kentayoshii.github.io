@@ -29,7 +29,15 @@ import os
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 GALLERY_YML = os.path.join(ROOT, 'docs', '_data', 'gallery.yml')
-GALLERY_DIR = os.path.join(ROOT, 'docs', 'assets', 'gallery')
+
+# Outside docs/ deliberately. docs/ is the Jekyll source, so anything under it
+# is copied into the built site whether or not a page links to it -- which for
+# 144 MB of full-resolution originals meant publishing every one of them at a
+# guessable URL, and shipping them in every deploy, to serve a grid that only
+# ever loads the generated thumbnails. They stay in the repo because
+# build_gallery_thumbs.py reads them; they just no longer live where Jekyll
+# can see them. Same reasoning as plans/ living at the root.
+ORIGINALS_DIR = os.path.join(ROOT, 'photo-originals')
 
 
 class GalleryError(Exception):
@@ -97,13 +105,14 @@ def load_gallery(path=GALLERY_YML):
         return parse_gallery(handle.read())
 
 
-def original_path(entry, gallery_dir=GALLERY_DIR):
-    """Absolute path of the committed original an entry points at.
+def original_path(entry, originals_dir=ORIGINALS_DIR):
+    """Absolute path of the committed original an entry names.
 
-    ``image`` is a site-root URL (/assets/gallery/x.jpeg); only the basename
-    matters on disk.
+    ``image`` is a bare filename. It used to be a site-root URL, back when the
+    page served the original; taking the basename here still tolerates that
+    older form.
     """
     image = entry.get('image')
     if not image:
         raise GalleryError('entry has no image: %r' % (entry,))
-    return os.path.join(gallery_dir, os.path.basename(image))
+    return os.path.join(originals_dir, os.path.basename(image))
