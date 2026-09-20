@@ -1108,25 +1108,85 @@ function initGallery() {
   // that would otherwise leave the target hidden, and scrolls smoothly unless
   // the reader has asked for less motion. Matching is on data-park rather
   // than the href so the two cannot drift apart over a slug.
+  // The name of whichever marker is under the pointer. Plain HTML positioned
+  // over the map rather than an SVG <text>, because the SVG scales to its
+  // container: text inside it would shrink with the viewport and be unreadable
+  // on a phone, where this is most needed.
+  function initMapLabel(pins) {
+    var figure = document.querySelector('.parks-map');
+    if (!figure) return;
+
+    var label = document.createElement('span');
+    label.className = 'parks-map-label';
+    label.hidden = true;
+    figure.appendChild(label);
+
+    function show(pin) {
+      var dot = pin.querySelector('.parks-map-dot');
+      if (!dot) return;
+      label.textContent = pin.getAttribute('data-label') ||
+                          pin.getAttribute('data-park') || '';
+      label.hidden = false;
+
+      var mark = dot.getBoundingClientRect();
+      var frame = figure.getBoundingClientRect();
+      var half = label.offsetWidth / 2;
+      // Clamped so a marker near an edge -- Olympic, Acadia, the Hawaii inset
+      // -- does not push its label off the side of the map.
+      var x = mark.left + mark.width / 2 - frame.left;
+      x = Math.max(half + 2, Math.min(frame.width - half - 2, x));
+      label.style.left = x + 'px';
+      label.style.top = (mark.top - frame.top) + 'px';
+    }
+
+    function hide() {
+      label.hidden = true;
+    }
+
+    Array.prototype.forEach.call(pins, function (pin) {
+      pin.addEventListener('mouseenter', function () { show(pin); });
+      pin.addEventListener('mouseleave', hide);
+      // Keyboard focus lands only on the visited markers, which are the only
+      // ones that are links; the rest are not in the tab order.
+      pin.addEventListener('focus', function () { show(pin); });
+      pin.addEventListener('blur', hide);
+      // Touch has no hover. Tapping a visited marker navigates, so this only
+      // really serves the unvisited ones, which would otherwise be unnamed on
+      // a phone.
+      pin.addEventListener('click', function () { show(pin); });
+    });
+
+    figure.addEventListener('mouseleave', hide);
+  }
+
   function initMapPins() {
     var pins = document.querySelectorAll('.parks-map-pin');
     if (!pins.length) return;
 
+    initMapLabel(pins);
+
     var calm = window.matchMedia &&
       window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    Array.prototype.forEach.call(pins, function (pin) {
+    // Only the visited markers are anchors. The rest are plain groups with no
+    // href and nothing to scroll to, so they are left out of this entirely.
+    Array.prototype.forEach.call(document.querySelectorAll('a.parks-map-pin'), function (pin) {
       pin.addEventListener('click', function (event) {
         var park = pin.getAttribute('data-park');
+        var href = pin.getAttribute('href') || '';
         var match = null;
         sections.forEach(function (section) {
           if (section.park === park) match = section;
         });
-        if (!match) return;
+        // The park's photographs where it has some, its checklist tile
+        // otherwise. Resolving both here rather than letting the second case
+        // fall through to the browser keeps one scrolling behaviour.
+        var target = match ? match.el : document.getElementById(href.slice(1));
+        if (!target) return;
 
         // A filter on some other park would hide the section being jumped to,
         // so clear back to everything first.
-        if (activeTag !== 'all' && activeTag !== park) {
+        if (match && activeTag !== 'all' && activeTag !== park) {
           activeTag = 'all';
           if (filterBar) {
             Array.prototype.forEach.call(
@@ -1139,12 +1199,12 @@ function initGallery() {
         }
 
         event.preventDefault();
-        match.el.scrollIntoView({behavior: calm ? 'auto' : 'smooth',
-                                 block: 'start'});
+        target.scrollIntoView({behavior: calm ? 'auto' : 'smooth',
+                               block: 'start'});
         // Leaving the URL alone would make the jump impossible to share or to
         // undo with the back button.
         if (window.history && window.history.replaceState) {
-          window.history.replaceState(null, '', pin.getAttribute('href'));
+          window.history.replaceState(null, '', href);
         }
       });
     });

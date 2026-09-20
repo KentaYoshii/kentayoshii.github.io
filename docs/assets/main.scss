@@ -1559,11 +1559,10 @@ body,
   }
 }
 
-// The hero map, drawn from _data/gallery_map.json. The SVG carries its own
-// viewBox, so it scales to the column with no breakpoints of its own; only
-// the marker sizes need adjusting, and those are handled by scaling the
-// stroke rather than by media queries.
+// The map, drawn from _data/parks_map.json. The SVG carries its own viewBox,
+// so it scales to the column with no breakpoints of its own.
 .parks-map {
+  position: relative;   // the hover label is positioned against this
   margin: 0 0 $spacing-unit;
 }
 
@@ -1574,8 +1573,8 @@ body,
   overflow: visible;
 }
 
-// Deliberately faint. The map is context for the photographs, not the
-// subject, and a hard outline would compete with the grid below it.
+// Deliberately faint. The states are a backdrop for the markers, not the
+// subject; a hard outline would compete with the dots sitting on them.
 .parks-map-state {
   fill: rgba(138, 120, 103, 0.10);
   stroke: rgba(138, 120, 103, 0.35);
@@ -1583,19 +1582,37 @@ body,
   vector-effect: non-scaling-stroke;
 }
 
-// A state holding at least one photographed park. Enough to read the shape of
-// where the photos come from at a glance, without labelling anything.
-.parks-map-state.is-lit {
-  fill: rgba(168, 99, 44, 0.14);
-  stroke: rgba(168, 99, 44, 0.45);
-}
-
+// Only a visited park is a link. An unvisited one is a plain <g>: named on
+// hover, but nothing to click through to, so it should not offer a pointer.
 .parks-map-pin {
-  cursor: pointer;
+  cursor: default;
 
   &:focus {
     outline: none;
   }
+}
+
+a.parks-map-pin {
+  cursor: pointer;
+}
+
+// The park name, following the pointer across the map. Plain HTML over the
+// SVG rather than an SVG <text>, which would scale with the viewBox and end
+// up a few pixels tall on a phone. main.js positions it and clamps it to the
+// map's width so an edge marker keeps its label on screen.
+.parks-map-label {
+  position: absolute;
+  z-index: 2;
+  transform: translate(-50%, calc(-100% - 8px));
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-family: $base-font-family;
+  font-size: 12px;
+  line-height: 1.35;
+  white-space: nowrap;
+  color: $background-color;
+  background-color: rgba(44, 32, 22, 0.92);
+  pointer-events: none;
 }
 
 .parks-map-hit {
@@ -2421,14 +2438,25 @@ body,
     stroke: rgba(236, 226, 208, 0.22);
   }
 
-  .parks-map-state.is-lit {
-    fill: rgba(226, 168, 95, 0.13);
-    stroke: rgba(226, 168, 95, 0.40);
+  // Unvisited stays hollow; the two filled states switch to the lighter
+  // variant the generator produced for this background.
+  .parks-map-dot {
+    stroke: $dark-muted;
   }
 
-  .parks-map-dot {
+  .parks-map-pin.is-visited .parks-map-dot {
+    fill: $dark-brand;
+    stroke: $dark-bg;
+  }
+
+  .parks-map-pin.has-photos .parks-map-dot {
     fill: var(--park-accent-dark, #{$dark-brand});
     stroke: $dark-bg;
+  }
+
+  .parks-map-label {
+    color: $dark-bg;
+    background-color: rgba(236, 226, 208, 0.94);
   }
 
   .parks-map-pin:focus-visible .parks-map-hit {

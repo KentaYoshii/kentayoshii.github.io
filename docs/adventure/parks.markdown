@@ -71,6 +71,17 @@ and then what they looked like.
         <path d="{{ state.path }}" class="parks-map-state"></path>
         {%- endfor -%}
       </g>
+      {%- comment -%}
+      A visited park is an anchor -- to its photographs where there are any,
+      to its checklist tile otherwise. An unvisited one is a plain group: it
+      has nothing to show, so it is drawn and named but not clickable and not
+      in the tab order.
+
+      There is no <title>. That would give a native tooltip on top of the
+      styled one main.js positions, two labels for the same dot at different
+      speeds. aria-label carries the name for assistive tech instead, and
+      data-label carries it for the visible one. Both say the same thing.
+      {%- endcomment -%}
       {%- for park in map.parks -%}
       {%- assign item = checklist.items | where: "name", park.name | first -%}
       {%- assign slug = park.name | slugify -%}
@@ -78,17 +89,30 @@ and then what they looked like.
       {%- if photographed contains park.name %}{% assign has_photos = true %}{% endif -%}
       {%- assign tint = render.parks[park.name] -%}
       {%- if has_photos -%}
-        {%- assign target = slug | prepend: "#park-" -%}
+        {%- capture target %}#park-{{ slug }}{% endcapture -%}
       {%- else -%}
-        {%- assign target = slug | prepend: "#chk-" -%}
+        {%- capture target %}#chk-{{ slug }}{% endcapture -%}
       {%- endif -%}
-      <a class="parks-map-pin{% if item.visited %} is-visited{% endif %}{% if has_photos %} has-photos{% endif %}"
+      {%- capture pin_label -%}
+      {{ park.name }}{% if item.visited %} · visited {{ item.year }}{% endif %}
+      {%- endcapture -%}
+      {%- if item.visited -%}
+      <a class="parks-map-pin is-visited{% if has_photos %} has-photos{% endif %}"
          href="{{ target }}" data-park="{{ park.name }}"
+         data-label="{{ pin_label | strip | escape }}"
+         aria-label="{{ pin_label | strip | escape }}"
          {% if tint %}style="--park-accent: {{ tint.accent }}; --park-accent-dark: {{ tint.accent_dark }}"{% endif %}>
-        <title>{{ park.name }}{% if item.visited %} — visited {{ item.year }}{% endif %}</title>
         <circle class="parks-map-hit" cx="{{ park.x }}" cy="{{ park.y }}" r="12"></circle>
         <circle class="parks-map-dot" cx="{{ park.x }}" cy="{{ park.y }}" r="4.5"></circle>
       </a>
+      {%- else -%}
+      <g class="parks-map-pin" role="img" data-park="{{ park.name }}"
+         data-label="{{ pin_label | strip | escape }}"
+         aria-label="{{ pin_label | strip | escape }}">
+        <circle class="parks-map-hit" cx="{{ park.x }}" cy="{{ park.y }}" r="12"></circle>
+        <circle class="parks-map-dot" cx="{{ park.x }}" cy="{{ park.y }}" r="4.5"></circle>
+      </g>
+      {%- endif -%}
       {%- endfor -%}
     </svg>
     <figcaption>
