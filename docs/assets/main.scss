@@ -1559,61 +1559,230 @@ body,
   }
 }
 
-// A masonry-style flow, not a fixed grid: photos come in whatever
-// dimensions they were shot in, and cropping every one to a square (the
-// simpler CSS-grid approach) would throw that away. Multi-column layout is
-// the same trick .year-block ul already uses for the book list — each tile
-// keeps its natural aspect ratio and break-inside: avoid stops one from
-// splitting across two columns.
+// The hero map, drawn from _data/gallery_map.json. The SVG carries its own
+// viewBox, so it scales to the column with no breakpoints of its own; only
+// the marker sizes need adjusting, and those are handled by scaling the
+// stroke rather than by media queries.
+.gallery-map {
+  margin: 0 0 $spacing-unit;
+}
+
+.gallery-map-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+// Deliberately faint. The map is context for the photographs, not the
+// subject, and a hard outline would compete with the grid below it.
+.gallery-map-state {
+  fill: rgba(138, 120, 103, 0.10);
+  stroke: rgba(138, 120, 103, 0.35);
+  stroke-width: 0.5;
+  vector-effect: non-scaling-stroke;
+}
+
+// A state holding at least one photographed park. Enough to read the shape of
+// where the photos come from at a glance, without labelling anything.
+.gallery-map-state.is-lit {
+  fill: rgba(168, 99, 44, 0.14);
+  stroke: rgba(168, 99, 44, 0.45);
+}
+
+.gallery-map-pin {
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.gallery-map-hit {
+  fill: transparent;
+}
+
+.gallery-map-dot {
+  fill: var(--park-accent, #{$brand-color});
+  stroke: $background-color;
+  stroke-width: 1.5;
+  transition: r 0.15s ease, stroke-width 0.15s ease;
+}
+
+.gallery-map-pin:hover .gallery-map-dot,
+.gallery-map-pin:focus-visible .gallery-map-dot {
+  r: 8;
+  stroke-width: 2.5;
+}
+
+// SVG ignores outline in some browsers, so focus is shown by growing the dot
+// (above) and ringing it here.
+.gallery-map-pin:focus-visible .gallery-map-hit {
+  fill: rgba(168, 99, 44, 0.18);
+}
+
+.gallery-map figcaption {
+  margin-top: 6px;
+  font-size: 12px;
+  color: $grey-color;
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gallery-map-dot {
+    transition: none;
+  }
+}
+
+// One section per park, headed by a rule tinted with that park's own colour.
+// The colour arrives as a custom property set inline by gallery.markdown,
+// measured from the photographs by scripts/build_gallery_thumbs.py; the
+// fallback keeps the rule visible for a park with no generated entry yet.
+.gallery-park {
+  margin-bottom: $spacing-unit * 1.5;
+}
+
+.gallery-park-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+  margin: 0 0 12px;
+  padding-bottom: 8px;
+  font-size: 15px;
+  font-weight: normal;
+  border-bottom: 2px solid var(--park-accent, #{$grey-color-light});
+}
+
+.gallery-park-name {
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 19px;
+  color: var(--park-accent, #{$text-color});
+}
+
+.gallery-park-where {
+  font-size: 13px;
+  color: $grey-color-dark;
+}
+
+// Pushed to the far end so the counts line up down the page regardless of how
+// long the park and state names are.
+.gallery-park-count {
+  margin-left: auto;
+  font-size: 12px;
+  color: $grey-color;
+}
+
+// An even grid, not the masonry this once was. Masonry earns its keep when
+// photos vary in shape; all but one of these are 4:3, so multi-column bought
+// nothing and cost two things — it fills downwards, so a list in date order
+// read top-to-bottom per column instead of left-to-right, and its column
+// balancing reflowed the whole section every time a lazy photo arrived.
+// Fixed-ratio cells sidestep both. The one portrait photo is cropped in its
+// tile; the lightbox still shows it whole.
 .gallery-grid {
-  columns: 2;
-  column-gap: 10px;
-}
-
-@media screen and (min-width: 700px) {
-  .gallery-grid {
-    columns: 3;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .gallery-grid {
-    columns: 4;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
 }
 
 @media screen and (max-width: $on-palm) {
   .gallery-grid {
-    columns: 1;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
 }
 
 .gallery-tile {
+  position: relative;
   display: block;
   width: 100%;
   padding: 0;
-  margin: 0 0 10px;
+  margin: 0;
   border: none;
   border-radius: 8px;
   overflow: hidden;
-  background: none;
   cursor: pointer;
-  break-inside: avoid;
+  // The blur-up placeholder: a 16px-wide copy of this photo, inlined as a
+  // data URI by the template, so the grid shows an impression of each photo
+  // immediately instead of empty boxes. It sits on the button rather than on
+  // the img because the img fades in from opacity 0, and opacity would take
+  // its own background with it.
+  background-color: $grey-color-light;
+  background-size: cover;
+  background-position: center;
 
   img {
     display: block;
+    // Overrides the intrinsic width/height the template sets. Those are there
+    // so the cell has a known shape before the photo loads, not to size it.
     width: 100%;
-    height: auto;
-    transition: transform 0.15s ease;
+    height: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.25s ease;
   }
 
-  &:hover img {
-    transform: scale(1.03);
+  // Set by initGallery() once the photo has decoded. Images that were already
+  // cached never fire load, so the script sets this from img.complete too —
+  // without that they would stay invisible.
+  &.is-loaded img {
+    opacity: 1;
+  }
+
+  &:hover img,
+  &:focus-visible img {
+    transform: scale(1.04);
   }
 
   &:focus-visible {
     outline: 2px solid $brand-color;
     outline-offset: 2px;
+  }
+}
+
+// Caption over the photo, on hover or keyboard focus. aria-hidden in the
+// template: it repeats the img alt text, so a screen reader would read every
+// photo twice.
+.gallery-tile-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 18px 10px 8px;
+  font-size: 12px;
+  line-height: 1.3;
+  text-align: left;
+  color: #fff8ec;
+  background: linear-gradient(to top, rgba(20, 14, 8, 0.78), rgba(20, 14, 8, 0));
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.gallery-tile:hover .gallery-tile-caption,
+.gallery-tile:focus-visible .gallery-tile-caption {
+  opacity: 1;
+}
+
+// Touch has no hover, so the caption would either never appear or stick after
+// a tap. The lightbox shows it on tap instead.
+@media (hover: none) {
+  .gallery-tile-caption {
+    display: none;
+  }
+}
+
+// A photo appearing is information; a photo sliding and zooming is decoration.
+// Keep the first, drop the second.
+@media (prefers-reduced-motion: reduce) {
+  .gallery-tile img {
+    transition: opacity 0.01ms;
+  }
+
+  .gallery-tile:hover img,
+  .gallery-tile:focus-visible img {
+    transform: none;
   }
 }
 
@@ -1718,6 +1887,99 @@ body,
 .lightbox-meta {
   font-size: 12px;
   color: rgba(255, 248, 236, 0.75);
+}
+
+// Quieter than the metadata above it: what is in the frame, not where or
+// when. Filled in by main.js and hidden outright for an untagged photo.
+.lightbox-tags {
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: rgba(255, 248, 236, 0.5);
+}
+
+// A strip of the photos prev/next currently walks, so there is some sense of
+// where you are in a set of seven. Hidden by main.js when there is only one
+// photo to look at, which is the case for eight of the fourteen parks.
+.lightbox-strip {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 6px;
+  padding: 10px 16px;
+  overflow-x: auto;
+  // The strip can be wider than the viewport, and a visible scrollbar over a
+  // photo viewer reads as a rendering fault rather than as an affordance.
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.lightbox-strip-item {
+  flex: 0 0 auto;
+  width: 54px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  border-radius: 3px;
+  background-color: rgba(255, 248, 236, 0.15);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  opacity: 0.45;
+  transition: opacity 0.15s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &.is-current {
+    opacity: 1;
+    box-shadow: 0 0 0 2px #fff8ec;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $brand-color;
+    outline-offset: 1px;
+  }
+}
+
+// The strip sits where the caption was, so lift the caption clear of it and
+// give the photo less room. Driven by a class main.js sets rather than by the
+// strip's own state, so a single-photo park still gets the full height.
+.gallery-lightbox.has-strip {
+  .lightbox-caption {
+    bottom: 76px;
+  }
+
+  .lightbox-image {
+    max-height: 66vh;
+  }
+}
+
+@media screen and (max-width: $on-palm) {
+  .lightbox-strip {
+    padding: 8px 10px;
+  }
+
+  .lightbox-strip-item {
+    width: 42px;
+    height: 32px;
+  }
+
+  .gallery-lightbox.has-strip .lightbox-caption {
+    bottom: 60px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lightbox-strip-item {
+    transition: none;
+  }
 }
 
 @media screen and (max-width: $on-palm) {
@@ -2132,5 +2394,53 @@ body,
       border-color: $dark-brand;
       color: $dark-bg;
     }
+  }
+
+  // Only seen for a photo with no generated placeholder; a cream box would
+  // flash against this background.
+  .gallery-tile {
+    background-color: $dark-surface;
+  }
+
+  .gallery-map-state {
+    fill: rgba(236, 226, 208, 0.07);
+    stroke: rgba(236, 226, 208, 0.22);
+  }
+
+  .gallery-map-state.is-lit {
+    fill: rgba(226, 168, 95, 0.13);
+    stroke: rgba(226, 168, 95, 0.40);
+  }
+
+  .gallery-map-dot {
+    fill: var(--park-accent-dark, #{$dark-brand});
+    stroke: $dark-bg;
+  }
+
+  .gallery-map-pin:focus-visible .gallery-map-hit {
+    fill: rgba(226, 168, 95, 0.20);
+  }
+
+  .gallery-map figcaption {
+    color: $dark-muted;
+  }
+
+  // Each park's colour comes in two versions. The light one is too dark to
+  // read on this background, so switch to the variant the generator lightened
+  // for exactly this purpose rather than trying to adjust it in CSS.
+  .gallery-park-head {
+    border-bottom-color: var(--park-accent-dark, #{$dark-border});
+  }
+
+  .gallery-park-name {
+    color: var(--park-accent-dark, #{$dark-text});
+  }
+
+  .gallery-park-where {
+    color: $dark-muted;
+  }
+
+  .gallery-park-count {
+    color: $dark-muted;
   }
 }

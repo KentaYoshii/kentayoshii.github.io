@@ -857,54 +857,62 @@ function applyCover(wrap, url) {
   wrap.appendChild(img);
 }
 
-// ---- Gallery (grid + tag filter + lightbox) ----
+// ---- Gallery (park sections + filter chips + lightbox) ----
 //
-// Tags are open-ended (unlike the Books page's fixed five eras), so the chip
-// row is built here from whatever data-tags the server-rendered tiles
-// actually carry, rather than in Liquid.
+// The set of parks is open-ended (unlike the Books page's fixed five eras),
+// so the chip row is built here from the sections the page actually rendered
+// rather than in Liquid.
 function initGallery() {
-  var grid = document.querySelector('[data-gallery-grid]');
-  if (!grid) return;
+  // There is one grid per park now, so this guards on the page itself rather
+  // than on a single grid element.
+  var page = document.querySelector('.gallery-page');
+  if (!page) return;
 
-  var tiles = Array.prototype.slice.call(grid.querySelectorAll('.gallery-tile'));
+  // Every section, paired with its own tiles. The page is grouped by park, so
+  // filtering hides whole sections — heading included — rather than leaving a
+  // park's heading standing over an empty grid.
+  var sections = Array.prototype.slice.call(
+    document.querySelectorAll('.gallery-park')
+  ).map(function (section) {
+    return {
+      el: section,
+      park: section.getAttribute('data-park') || '',
+      tiles: Array.prototype.slice.call(section.querySelectorAll('.gallery-tile'))
+    };
+  });
+
+  var tiles = sections.reduce(function (all, section) {
+    return all.concat(section.tiles);
+  }, []);
   if (!tiles.length) return;
 
   var filterBar = document.querySelector('[data-tag-filter]');
   var activeTag = 'all';
 
-  function tagsOf(tile) {
-    var raw = tile.getAttribute('data-tags') || '';
-    return raw ? raw.split(',') : [];
-  }
-
   function applyTagFilter() {
-    tiles.forEach(function (tile) {
-      var match = activeTag === 'all' || tagsOf(tile).indexOf(activeTag) !== -1;
-      tile.style.display = match ? '' : 'none';
+    sections.forEach(function (section) {
+      var match = activeTag === 'all' || section.park === activeTag;
+      section.el.hidden = !match;
     });
   }
 
   // The lightbox only ever cycles through what is currently visible, so
-  // prev/next stay in step with an active tag filter instead of walking
-  // through hidden photos.
+  // prev/next stay in step with an active filter instead of walking through
+  // hidden photos.
   function visibleTiles() {
-    return tiles.filter(function (t) { return t.style.display !== 'none'; });
+    return sections.reduce(function (all, section) {
+      return section.el.hidden ? all : all.concat(section.tiles);
+    }, []);
   }
 
   function buildTagFilter() {
     if (!filterBar) return;
 
-    var seen = Object.create(null);
-    var allTags = [];
-    tiles.forEach(function (tile) {
-      tagsOf(tile).forEach(function (tag) {
-        if (!tag || seen[tag]) return;
-        seen[tag] = true;
-        allTags.push(tag);
-      });
-    });
-    if (!allTags.length) return;
-    allTags.sort();
+    // Section order is the page's order — most recent visit first — which is
+    // more useful here than alphabetical, so it is kept rather than sorted.
+    var parks = sections.map(function (section) { return section.park; })
+      .filter(function (park) { return park; });
+    if (parks.length < 2) return;
 
     function addChip(label, value) {
       var b = document.createElement('button');
@@ -926,8 +934,29 @@ function initGallery() {
     }
 
     addChip('All', 'all');
-    allTags.forEach(function (tag) { addChip(tag, tag); });
+    parks.forEach(function (park) { addChip(park, park); });
     filterBar.hidden = false;
+  }
+
+  // Tiles start transparent over their own blurred placeholder and fade in as
+  // each photo decodes. A cached image can be complete before this runs and
+  // will never fire load, so that case is checked rather than waited for —
+  // otherwise a revisit shows a grid that stays blurred.
+  function revealOnLoad(tile) {
+    var img = tile.querySelector('img');
+    if (!img) return;
+    if (img.complete && img.naturalWidth > 0) {
+      tile.classList.add('is-loaded');
+      return;
+    }
+    img.addEventListener('load', function () {
+      tile.classList.add('is-loaded');
+    });
+    // A photo that fails to load would otherwise stay invisible, hiding both
+    // the failure and the placeholder. Show the tile either way.
+    img.addEventListener('error', function () {
+      tile.classList.add('is-loaded');
+    });
   }
 
   var lightbox = document.createElement('div');
@@ -943,26 +972,97 @@ function initGallery() {
     '<div class="lightbox-caption">' +
       '<span class="lightbox-caption-text"></span>' +
       '<span class="lightbox-meta"></span>' +
-    '</div>';
+      '<span class="lightbox-tags"></span>' +
+    '</div>' +
+    '<div class="lightbox-strip" hidden></div>';
   document.body.appendChild(lightbox);
 
   var lightboxImage = lightbox.querySelector('.lightbox-image');
   var captionText = lightbox.querySelector('.lightbox-caption-text');
   var metaText = lightbox.querySelector('.lightbox-meta');
+  var tagText = lightbox.querySelector('.lightbox-tags');
+  var strip = lightbox.querySelector('.lightbox-strip');
   var currentIndex = -1;
   var lastFocused = null;
+  var stripTiles = null;
+
+  // The strip mirrors whatever prev/next currently walks, so it is an honest
+  // position indicator rather than a second, differently-scoped list. With a
+  // park filter on that is the park; with no filter it is everything.
+  function buildStrip(set) {
+    stripTiles = set;
+    strip.textContent = '';
+    // Nothing to navigate between, so the strip would only take up room the
+    // photo could use.
+    if (set.length < 2) {
+      strip.hidden = true;
+      lightbox.classList.remove('has-strip');
+      return;
+    }
+    set.forEach(function (tile, index) {
+      var thumb = tile.querySelector('img');
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'lightbox-strip-item';
+      // Reuses the grid thumbnail, which is already decoded and in cache, so
+      // opening the lightbox costs no extra requests.
+      if (thumb) b.style.backgroundImage = 'url("' + thumb.src + '")';
+      b.setAttribute('aria-label', tile.getAttribute('data-caption') || 'Photo');
+      b.addEventListener('click', function () { show(index); });
+      strip.appendChild(b);
+    });
+    strip.hidden = false;
+    // Tells the stylesheet to lift the caption and shorten the photo so the
+    // strip has somewhere to sit.
+    lightbox.classList.add('has-strip');
+  }
+
+  function markStrip(index) {
+    if (strip.hidden) return;
+    var items = strip.children;
+    for (var i = 0; i < items.length; i++) {
+      var current = (i === index);
+      items[i].classList.toggle('is-current', current);
+      items[i].setAttribute('aria-current', current ? 'true' : 'false');
+    }
+    var active = items[index];
+    if (active && active.scrollIntoView) {
+      active.scrollIntoView({block: 'nearest', inline: 'center'});
+    }
+  }
+
+  function sameSet(a, b) {
+    if (!a || a.length !== b.length) return false;
+    for (var i = 0; i < a.length; i++) {
+      if (a[i] !== b[i]) return false;
+    }
+    return true;
+  }
 
   function show(index) {
     var set = visibleTiles();
     if (!set.length) return;
+    if (!sameSet(stripTiles, set)) buildStrip(set);
     currentIndex = (index + set.length) % set.length;
     var tile = set[currentIndex];
+    markStrip(currentIndex);
     lightboxImage.src = tile.getAttribute('data-image');
     lightboxImage.alt = tile.getAttribute('data-caption') || '';
     captionText.textContent = tile.getAttribute('data-caption') || '';
-    metaText.textContent = [tile.getAttribute('data-location'), tile.getAttribute('data-date')]
+    // The park is dropped when it would only repeat the caption, which is
+    // what the caption falls back to for a photo with nothing else to say.
+    var park = tile.getAttribute('data-park');
+    var caption = tile.getAttribute('data-caption') || '';
+    if (park && caption.indexOf(park) === 0) park = '';
+    metaText.textContent = [park, tile.getAttribute('data-location'),
+                            tile.getAttribute('data-when')]
       .filter(function (v) { return v; })
       .join(' · ');
+    // Hidden rather than left empty, so an untagged photo does not leave a
+    // gap under the caption where the tags would be.
+    var tags = tile.getAttribute('data-tags') || '';
+    tagText.textContent = tags;
+    tagText.hidden = !tags;
   }
 
   function onKeydown(e) {
@@ -1000,8 +1100,57 @@ function initGallery() {
 
   tiles.forEach(function (tile) {
     tile.addEventListener('click', function () { open(tile); });
+    revealOnLoad(tile);
   });
+
+  // The hero map. Each marker is already an anchor to its section, so this
+  // only improves on what the browser would do anyway: it clears a filter
+  // that would otherwise leave the target hidden, and scrolls smoothly unless
+  // the reader has asked for less motion. Matching is on data-park rather
+  // than the href so the two cannot drift apart over a slug.
+  function initMapPins() {
+    var pins = document.querySelectorAll('.gallery-map-pin');
+    if (!pins.length) return;
+
+    var calm = window.matchMedia &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    Array.prototype.forEach.call(pins, function (pin) {
+      pin.addEventListener('click', function (event) {
+        var park = pin.getAttribute('data-park');
+        var match = null;
+        sections.forEach(function (section) {
+          if (section.park === park) match = section;
+        });
+        if (!match) return;
+
+        // A filter on some other park would hide the section being jumped to,
+        // so clear back to everything first.
+        if (activeTag !== 'all' && activeTag !== park) {
+          activeTag = 'all';
+          if (filterBar) {
+            Array.prototype.forEach.call(
+              filterBar.querySelectorAll('.tag-chip'), function (c) {
+                c.setAttribute('aria-pressed',
+                               String(c.getAttribute('data-tag') === 'all'));
+              });
+          }
+          applyTagFilter();
+        }
+
+        event.preventDefault();
+        match.el.scrollIntoView({behavior: calm ? 'auto' : 'smooth',
+                                 block: 'start'});
+        // Leaving the URL alone would make the jump impossible to share or to
+        // undo with the back button.
+        if (window.history && window.history.replaceState) {
+          window.history.replaceState(null, '', pin.getAttribute('href'));
+        }
+      });
+    });
+  }
 
   buildTagFilter();
   applyTagFilter();
+  initMapPins();
 }

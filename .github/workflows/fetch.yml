@@ -2,17 +2,21 @@ name: fetch
 
 # The one job that is allowed to touch the network, run by hand.
 #
-# build_covers.py and build_trails.py are offline by default so that build.py
-# and the `build` workflow stay deterministic; filling their caches needs an
-# online --fetch pass. Doing that here rather than on a laptop means it runs
-# on a clean network with a clean trust store: a corporate TLS-inspection root
-# CA is enough to make Python reject Open Library outright, and some networks
-# block it entirely.
+# build_covers.py, build_trails.py and build_gallery_map.py are offline by
+# default so that build.py and the `build` workflow stay deterministic;
+# filling their caches needs an online --fetch pass. Doing that here rather
+# than on a laptop means it runs on a clean network with a clean trust store:
+# a corporate TLS-inspection root CA is enough to make Python reject Open
+# Library outright, and some networks block it entirely.
 #
 # Deliberately not on: push. These call donated infrastructure (Open Library,
-# Overpass), so they run when there is something new to look up, not on every
-# commit. The `build` workflow tells you when that is — it reports unresolved
-# entries.
+# Overpass, jsDelivr), so they run when there is something new to look up, not
+# on every commit. The `build` workflow tells you when that is — it reports
+# unresolved entries.
+#
+# `map` is deliberately outside `all`: state borders do not move, so the
+# gallery's map geometry is rebuilt only when the projection or the
+# simplification changes, not on every routine fetch.
 on:
   workflow_dispatch:
     inputs:
@@ -20,7 +24,7 @@ on:
         description: What to look up
         type: choice
         default: all
-        options: [all, covers, trails]
+        options: [all, covers, trails, map]
 
 # A second run while one is mid-flight would race on the same files and push a
 # conflicting commit. Queue instead, and never cancel: an interrupted run
@@ -65,6 +69,16 @@ jobs:
         continue-on-error: true
         run: python3 scripts/build_trails.py --fetch
 
+      # Not part of `all` — see the note at the top. Unlike the two above this
+      # resolves nothing incrementally: it rebuilds the whole map in one pass,
+      # so a failure leaves the committed geometry untouched rather than
+      # half-filled, and re-running later costs nothing.
+      - name: Rebuild the gallery map
+        id: map
+        if: inputs.target == 'map'
+        continue-on-error: true
+        run: python3 scripts/build_gallery_map.py --fetch
+
       # The caches are only half the story: the offline pass is what writes
       # the resolved URLs and tags onto the records the pages actually render.
       - name: Regenerate everything
@@ -87,7 +101,7 @@ jobs:
           # inside the YAML block would carry this step's indentation into the
           # commit body.
           git commit \
-            -m "Resolve outstanding covers and trails" \
+            -m "Refresh generated data (${{ inputs.target }})" \
             -m "Ran the --fetch passes on a runner, since the APIs are not reachable from every network. Generated data only."
           git push origin HEAD:${{ github.ref_name }}
           echo "Pushed."
@@ -100,8 +114,10 @@ jobs:
         run: |
           echo "covers: ${{ steps.covers.outcome || 'skipped' }}"
           echo "trails: ${{ steps.trails.outcome || 'skipped' }}"
+          echo "map:    ${{ steps.map.outcome || 'skipped' }}"
           if [ "${{ steps.covers.outcome }}" = "failure" ] || \
-             [ "${{ steps.trails.outcome }}" = "failure" ]; then
+             [ "${{ steps.trails.outcome }}" = "failure" ] || \
+             [ "${{ steps.map.outcome }}" = "failure" ]; then
             echo "::error::A lookup did not finish. Whatever resolved was committed; run this again to continue."
             exit 1
           fi
