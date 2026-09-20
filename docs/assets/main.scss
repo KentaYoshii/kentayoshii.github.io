@@ -1563,11 +1563,11 @@ body,
 // viewBox, so it scales to the column with no breakpoints of its own; only
 // the marker sizes need adjusting, and those are handled by scaling the
 // stroke rather than by media queries.
-.gallery-map {
+.parks-map {
   margin: 0 0 $spacing-unit;
 }
 
-.gallery-map-svg {
+.parks-map-svg {
   display: block;
   width: 100%;
   height: auto;
@@ -1576,7 +1576,7 @@ body,
 
 // Deliberately faint. The map is context for the photographs, not the
 // subject, and a hard outline would compete with the grid below it.
-.gallery-map-state {
+.parks-map-state {
   fill: rgba(138, 120, 103, 0.10);
   stroke: rgba(138, 120, 103, 0.35);
   stroke-width: 0.5;
@@ -1585,12 +1585,12 @@ body,
 
 // A state holding at least one photographed park. Enough to read the shape of
 // where the photos come from at a glance, without labelling anything.
-.gallery-map-state.is-lit {
+.parks-map-state.is-lit {
   fill: rgba(168, 99, 44, 0.14);
   stroke: rgba(168, 99, 44, 0.45);
 }
 
-.gallery-map-pin {
+.parks-map-pin {
   cursor: pointer;
 
   &:focus {
@@ -1598,30 +1598,44 @@ body,
   }
 }
 
-.gallery-map-hit {
+.parks-map-hit {
   fill: transparent;
 }
 
-.gallery-map-dot {
-  fill: var(--park-accent, #{$brand-color});
-  stroke: $background-color;
+// Three states, and the difference has to survive being 4.5px across:
+//   unvisited      hollow, faint -- present but clearly not ticked off
+//   visited        filled in the brand colour
+//   photographed   filled in the colour measured from its own photographs
+.parks-map-dot {
+  fill: none;
+  stroke: $grey-color;
   stroke-width: 1.5;
   transition: r 0.15s ease, stroke-width 0.15s ease;
 }
 
-.gallery-map-pin:hover .gallery-map-dot,
-.gallery-map-pin:focus-visible .gallery-map-dot {
+.parks-map-pin.is-visited .parks-map-dot {
+  fill: $brand-color;
+  stroke: $background-color;
+}
+
+.parks-map-pin.has-photos .parks-map-dot {
+  fill: var(--park-accent, #{$brand-color});
+  stroke: $background-color;
+}
+
+.parks-map-pin:hover .parks-map-dot,
+.parks-map-pin:focus-visible .parks-map-dot {
   r: 8;
   stroke-width: 2.5;
 }
 
 // SVG ignores outline in some browsers, so focus is shown by growing the dot
 // (above) and ringing it here.
-.gallery-map-pin:focus-visible .gallery-map-hit {
+.parks-map-pin:focus-visible .parks-map-hit {
   fill: rgba(168, 99, 44, 0.18);
 }
 
-.gallery-map figcaption {
+.parks-map figcaption {
   margin-top: 6px;
   font-size: 12px;
   color: $grey-color;
@@ -1629,7 +1643,7 @@ body,
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .gallery-map-dot {
+  .parks-map-dot {
     transition: none;
   }
 }
@@ -2402,26 +2416,26 @@ body,
     background-color: $dark-surface;
   }
 
-  .gallery-map-state {
+  .parks-map-state {
     fill: rgba(236, 226, 208, 0.07);
     stroke: rgba(236, 226, 208, 0.22);
   }
 
-  .gallery-map-state.is-lit {
+  .parks-map-state.is-lit {
     fill: rgba(226, 168, 95, 0.13);
     stroke: rgba(226, 168, 95, 0.40);
   }
 
-  .gallery-map-dot {
+  .parks-map-dot {
     fill: var(--park-accent-dark, #{$dark-brand});
     stroke: $dark-bg;
   }
 
-  .gallery-map-pin:focus-visible .gallery-map-hit {
+  .parks-map-pin:focus-visible .parks-map-hit {
     fill: rgba(226, 168, 95, 0.20);
   }
 
-  .gallery-map figcaption {
+  .parks-map figcaption {
     color: $dark-muted;
   }
 

@@ -57,11 +57,10 @@ plugins:
 nav_pages:
   - books.markdown
   - movies.markdown
-  - dev.markdown
-  - posts.markdown
-nav_more_pages:
   - adventure.markdown
-  - gallery.markdown
+  - dev.markdown
+nav_more_pages:
+  - posts.markdown
   - stats.markdown
 
 # Exclude from processing.

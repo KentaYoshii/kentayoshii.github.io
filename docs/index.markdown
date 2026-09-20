@@ -76,8 +76,8 @@ the track.
   <a class="link-card" href="{{ '/adventure/' | relative_url }}">
     <span class="link-card-icon" aria-hidden="true">🥾</span>
     <h2>Adventure</h2>
-    <p>Trails walked, and the national parks checklist.</p>
-    <span class="link-card-cta">See the trails →</span>
+    <p>National parks visited and photographed, and trails walked.</p>
+    <span class="link-card-cta">Go outside →</span>
   </a>
   <a class="link-card" href="{{ '/posts/' | relative_url }}">
     <span class="link-card-icon" aria-hidden="true">✍️</span>

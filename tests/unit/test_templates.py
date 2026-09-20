@@ -116,11 +116,11 @@ class TestTemplate:
         assert not stack, '%s: unclosed %r' % (path, stack)
 
 
-class TestGalleryTemplate:
-    """Checks specific to the page this suite was written for."""
+class TestParksTemplate:
+    """Checks specific to /adventure/parks/, where the photographs live."""
 
     def path(self):
-        return os.path.join(DOCS, 'gallery.markdown')
+        return os.path.join(DOCS, 'adventure', 'parks.markdown')
 
     def test_the_grid_serves_derivatives_and_never_an_original(self) -> None:
         source = read(self.path())
@@ -136,7 +136,7 @@ class TestGalleryTemplate:
         # caption line just loses a field.
         source = read(self.path())
         js = read(os.path.join(DOCS, 'assets', 'js', 'main.js'))
-        # Only reads off a gallery tile. Scanning every getAttribute in the
+        # Only reads off a photo tile. Scanning every getAttribute in the
         # file would also pick up the theme toggle and the books/movies list
         # sorting, which have nothing to do with this page.
         attributes = set(re.findall(r"tile\.getAttribute\('(data-[\w-]+)'\)", js))
@@ -144,4 +144,4 @@ class TestGalleryTemplate:
         for attribute in sorted(attributes):
             assert attribute + '=' in source, (
                 '%s is read off a tile in main.js but never emitted by '
-                'gallery.markdown' % attribute)
+                'adventure/parks.markdown' % attribute)

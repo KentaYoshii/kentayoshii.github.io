@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Project a US map and the photographed parks onto it, for the gallery hero.
+"""Project a US map and every national park onto it, for /adventure/parks/.
 
-    python3 scripts/build_gallery_map.py            # offline, no network
-    python3 scripts/build_gallery_map.py --fetch    # re-download the geometry
+    python3 scripts/build_parks_map.py            # offline, no network
+    python3 scripts/build_parks_map.py --fetch    # re-download the geometry
 
-Offline mode reads the committed cache in docs/_data/gallery_map.json and
+Offline mode reads the committed cache in docs/_data/parks_map.json and
 touches the network never, so build.py and CI stay deterministic -- the same
 split build_covers.py and build_trails.py use. --fetch is the rare manual pass
 that rebuilds it; state borders do not move, so in practice this is run once
@@ -19,11 +19,13 @@ markers through one projection implemented once. A pre-projected outline would
 mean reimplementing whatever projection it used and hoping the two agreed.
 
 That projection is Albers USA: an equal-area conic for the lower 48, with
-Alaska and Hawaii moved in beside it on their own conics. Hawaii matters here
--- two of the fourteen parks are on Maui and Hawaiʻi island, and without the
-inset they would be projected somewhere out in the Pacific, far off canvas.
+Alaska and Hawaii moved in beside it on their own conics. Both insets earn
+their place: eight of the sixty-three parks are in Alaska and two are in
+Hawaiʻi, and without them a sixth of the checklist would land out in the
+ocean. Two parks -- American Samoa and Virgin Islands -- fall outside even
+that, and are recorded in UNPLOTTABLE rather than forced somewhere wrong.
 
-Standard library only. Pillow is needed elsewhere in the gallery pipeline
+Standard library only. Pillow is needed elsewhere in the photo pipeline
 (build_gallery_thumbs.py) but nothing here needs an image decoded.
 """
 
@@ -37,7 +39,7 @@ import urllib.request
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 DATA = os.path.join(ROOT, 'docs', '_data')
-MAP_JSON = os.path.join(DATA, 'gallery_map.json')
+MAP_JSON = os.path.join(DATA, 'parks_map.json')
 
 SOURCE_URL = 'https://cdn.jsdelivr.net/npm/us-atlas@3/states-10m.json'
 SOURCE_NAME = ('us-atlas@3 states-10m (US Census Bureau cartographic '
@@ -62,27 +64,101 @@ TERRITORY_FIPS = {'60', '66', '69', '72', '78'}
 ALASKA_FIPS = '02'
 HAWAII_FIPS = '15'
 
-# Where each photographed park is, and the state it must land in. The second
-# half of that is the point: a transposed sign or a digit typo produces a dot
-# that still looks plausible on a map of this size, so every one of these is
-# checked against the projected state polygon by the test suite rather than by
-# eye. Names are travel.json's, so they join to the rest of the gallery.
+# Every national park, by latitude and longitude. Keys are national_parks.py's
+# names, which are also travel.json's, so a marker joins to its checklist entry
+# and to any photographs of it.
+#
+# A typo here produces a dot that still looks perfectly plausible on a map this
+# size, which is why none of these is trusted on sight: the test suite projects
+# each one and checks it lands in the state national_parks.py says it is in. A
+# transposed digit or a flipped sign moves a park hundreds of pixels, so the
+# check separates mistakes from the handful of parks that are genuinely a
+# fraction of a pixel offshore (see PROJECTION_TOLERANCE).
 PARKS = {
-    'Big Bend': (29.2498, -103.2502, '48'),
-    'Carlsbad Caverns': (32.1479, -104.5567, '35'),
-    'Grand Canyon': (36.1069, -112.1129, '04'),
-    'Grand Teton': (43.7904, -110.6818, '56'),
-    'Guadalupe Mountains': (31.9231, -104.8677, '48'),
-    'Haleakalā': (20.7204, -156.1552, '15'),
-    'Hawaiʻi Volcanoes': (19.4194, -155.2885, '15'),
-    'Mount Rainier': (46.8800, -121.7269, '53'),
-    'Olympic': (47.8021, -123.6044, '53'),
-    'Rocky Mountain': (40.3428, -105.6836, '08'),
-    'White Sands': (32.7872, -106.3257, '35'),
-    'Yellowstone': (44.4280, -110.5885, '56'),
-    'Yosemite': (37.8651, -119.5383, '06'),
-    'Zion': (37.2982, -113.0263, '49'),
+    'Acadia': (44.3500, -68.2100),
+    'American Samoa': (-14.2500, -170.6800),
+    'Arches': (38.7300, -109.5900),
+    'Badlands': (43.8550, -102.3400),
+    'Big Bend': (29.2498, -103.2502),
+    'Biscayne': (25.4900, -80.2100),
+    'Black Canyon of the Gunnison': (38.5754, -107.7416),
+    'Bryce Canyon': (37.5930, -112.1870),
+    'Canyonlands': (38.2000, -109.9300),
+    'Capitol Reef': (38.3670, -111.2620),
+    'Carlsbad Caverns': (32.1479, -104.5567),
+    'Channel Islands': (34.0069, -119.7785),
+    'Congaree': (33.7948, -80.7821),
+    'Crater Lake': (42.9446, -122.1090),
+    'Cuyahoga Valley': (41.2808, -81.5678),
+    'Death Valley': (36.5054, -117.0794),
+    'Denali': (63.1148, -151.1926),
+    'Dry Tortugas': (24.6285, -82.8732),
+    'Everglades': (25.2866, -80.8987),
+    'Gates of the Arctic': (67.9558, -153.8894),
+    'Gateway Arch': (38.6247, -90.1848),
+    'Glacier': (48.7596, -113.7870),
+    'Glacier Bay': (58.6658, -136.9002),
+    'Grand Canyon': (36.1069, -112.1129),
+    'Grand Teton': (43.7904, -110.6818),
+    'Great Basin': (38.9833, -114.3000),
+    'Great Sand Dunes': (37.7916, -105.5943),
+    'Great Smoky Mountains': (35.6118, -83.4895),
+    'Guadalupe Mountains': (31.9231, -104.8677),
+    'Haleakalā': (20.7204, -156.1552),
+    'Hawaiʻi Volcanoes': (19.4194, -155.2885),
+    'Hot Springs': (34.5217, -93.0424),
+    'Indiana Dunes': (41.6533, -87.0524),
+    'Isle Royale': (48.0063, -88.5547),
+    'Joshua Tree': (33.8734, -115.9010),
+    'Katmai': (58.5978, -154.9358),
+    'Kenai Fjords': (59.9227, -149.6510),
+    'Kings Canyon': (36.8879, -118.5551),
+    'Kobuk Valley': (67.3556, -159.2836),
+    'Lake Clark': (60.9672, -153.4178),
+    'Lassen Volcanic': (40.4977, -121.4207),
+    'Mammoth Cave': (37.1862, -86.1000),
+    'Mesa Verde': (37.2309, -108.4618),
+    'Mount Rainier': (46.8800, -121.7269),
+    'New River Gorge': (37.9393, -81.0687),
+    'North Cascades': (48.7718, -121.2985),
+    'Olympic': (47.8021, -123.6044),
+    'Petrified Forest': (34.9100, -109.8068),
+    'Pinnacles': (36.4906, -121.1825),
+    'Redwood': (41.2132, -124.0046),
+    'Rocky Mountain': (40.3428, -105.6836),
+    'Saguaro': (32.2967, -111.1666),
+    'Sequoia': (36.4864, -118.5658),
+    'Shenandoah': (38.2928, -78.6796),
+    'Theodore Roosevelt': (46.9790, -103.5387),
+    'Virgin Islands': (18.3428, -64.7486),
+    'Voyageurs': (48.4839, -92.8386),
+    'White Sands': (32.7872, -106.3257),
+    'Wind Cave': (43.5724, -103.4818),
+    'Wrangell–St. Elias': (61.7104, -142.9857),
+    'Yellowstone': (44.4280, -110.5885),
+    'Yosemite': (37.8651, -119.5383),
+    'Zion': (37.2982, -113.0263),
 }
+
+# How far, in canvas pixels, a marker may sit outside the state it belongs to
+# before the test suite calls it a mistake. Four parks need this and all four
+# are real places the simplified outline does not reach:
+#
+#   Dry Tortugas   0.1px  islands seventy miles west of Key West
+#   Biscayne       0.5px  almost entirely water off the Florida coast
+#   Gateway Arch   0.6px  on the Mississippi bank; at this simplification the
+#                         state line falls the wrong side of it
+#   Isle Royale    1.1px  an island in Lake Superior
+#
+# A mistyped coordinate misses by hundreds of pixels, so 3 separates the two
+# without being loose enough to let an error through.
+PROJECTION_TOLERANCE = 3.0
+
+# Albers USA covers the fifty states and nothing else. These two parks are
+# real and are on the checklist; there is simply nowhere on this projection to
+# draw them, so they are recorded here and the page says so rather than
+# quietly showing 61 dots next to the number 63.
+UNPLOTTABLE = ('American Samoa', 'Virgin Islands')
 
 
 class ConicEqualArea(object):
@@ -154,11 +230,39 @@ def albers_usa(scale=SCALE, translate=TRANSLATE):
 
 
 def projection_for(fips, projections):
+    """Which sub-projection a state's geometry belongs to."""
     if fips == ALASKA_FIPS:
         return projections['alaska']
     if fips == HAWAII_FIPS:
         return projections['hawaii']
     return projections['lower48']
+
+
+def route(lat, lon):
+    """Which sub-projection a point belongs to, or None if it has no home.
+
+    Decided from the coordinate rather than from a state code entered by hand
+    alongside it. One fewer field to get wrong, and it means a park that is
+    nowhere near the United States reports that instead of being projected
+    into the middle of Kansas.
+    """
+    if 51 <= lat <= 72 and (lon <= -129 or lon >= 172):
+        return 'alaska'
+    if 18 <= lat <= 23 and -161 <= lon <= -154:
+        return 'hawaii'
+    if 24 <= lat <= 50 and -125 <= lon <= -66:
+        return 'lower48'
+    return None
+
+
+def place(name, projections, parks=None):
+    """Project one park, or None where the projection has no room for it."""
+    lat, lon = (parks or PARKS)[name]
+    which = route(lat, lon)
+    if which is None:
+        return None
+    x, y = projections[which](lon, lat)
+    return round(x, 1), round(y, 1)
 
 
 def decode_arcs(topology):
@@ -292,12 +396,15 @@ def build(topology, scale=SCALE, translate=TRANSLATE, tolerance=TOLERANCE):
         })
     states.sort(key=lambda s: s['name'])
 
+    # Sorted by name so the committed file has a stable order and a rebuild
+    # produces no spurious diff. The page decides which markers to light up;
+    # this only says where each one goes.
     parks = []
     for name in sorted(PARKS):
-        lat, lon, fips = PARKS[name]
-        x, y = projection_for(fips, projections)(lon, lat)
-        parks.append({'name': name, 'state': fips,
-                      'x': round(x, 1), 'y': round(y, 1)})
+        point = place(name, projections)
+        if point is None:
+            continue
+        parks.append({'name': name, 'x': point[0], 'y': point[1]})
 
     return {
         'source': SOURCE_NAME,

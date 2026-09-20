@@ -1,0 +1,23 @@
+---
+layout: null
+permalink: /gallery/
+sitemap: false
+---
+{%- comment -%}
+The photographs moved to /adventure/parks/, since all but one are of national
+parks and the checklist for those was on a different page again. Same redirect
+stub as vim-tips.html uses for its old flat URL: meta refresh plus a canonical
+link, because GitHub Pages serves static files and cannot issue a 301.
+{%- endcomment -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0; url={{ '/adventure/parks/' | relative_url }}">
+  <link rel="canonical" href="{{ '/adventure/parks/' | absolute_url }}">
+  <title>Redirecting…</title>
+</head>
+<body>
+  <p>The gallery has moved to <a href="{{ '/adventure/parks/' | relative_url }}">Adventure → US National Parks</a>.</p>
+</body>
+</html>

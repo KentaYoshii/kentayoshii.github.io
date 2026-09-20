@@ -1109,7 +1109,7 @@ function initGallery() {
   // the reader has asked for less motion. Matching is on data-park rather
   // than the href so the two cannot drift apart over a slug.
   function initMapPins() {
-    var pins = document.querySelectorAll('.gallery-map-pin');
+    var pins = document.querySelectorAll('.parks-map-pin');
     if (!pins.length) return;
 
     var calm = window.matchMedia &&

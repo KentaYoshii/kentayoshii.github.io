@@ -148,3 +148,69 @@ chips remain park-based, since parks are what the page is organised by.
 - **Tag filtering.** Tags are recorded and displayed but not filterable. The
   chip row filters by park, and a second axis of filtering is more machinery
   than 35 photos justify.
+
+---
+
+# Folding the gallery into a parks page
+
+Date: 2026-09-20
+
+## Why
+
+Two pages were describing the same sixty-three parks. `/adventure/` held the
+checklist next to an unrelated trail log; `/gallery/` held photographs grouped
+by park, with a park map. Thirty-four of the thirty-five photographs are of
+national parks, and `/gallery/` was reachable only from the nav's "More"
+dropdown — the home page did not link to it at all.
+
+So the split was along the wrong axis. Not Adventure-and-Gallery, but
+parks-and-trails.
+
+## What it is now
+
+```
+/adventure/          hub, a card per child (same shape as /dev/)
+/adventure/parks/    map → checklist → photographs
+/adventure/trails/   the trail log
+/gallery/            redirect stub
+```
+
+The hub's cards carry live counts rather than static blurbs, so it says
+something rather than only pointing. Nav drops from seven entries to six,
+which let `adventure.markdown` move out of the "More" dropdown and back inline.
+
+The checklist stays. A map cannot label sixty-three dots, so it is not a
+substitute for the part you read names and years off; it sits above it.
+
+## The map, extended
+
+`build_gallery_map.py` became `build_parks_map.py`, and its coordinate table
+went from the fourteen photographed parks to all sixty-three. Routing to a
+sub-projection is now decided from the coordinate rather than from a state
+code typed alongside it — one fewer field to get wrong, and a park nowhere
+near the United States reports that instead of landing in Kansas.
+
+Markers have three states: hollow for unvisited, filled for visited, filled
+with the park's own measured colour where there are photographs. Each is an
+anchor — to the photo section where one exists, to the checklist tile
+otherwise — so every dot leads somewhere and the map works without JavaScript.
+
+Two parks have no marker. Albers USA covers the fifty states and nothing else,
+so American Samoa and Virgin Islands are listed in `UNPLOTTABLE` and the
+caption says so, rather than showing 61 dots beside the number 63.
+
+Forty-nine coordinates were entered by hand. That is safe only because the
+integration test projects each one and checks it lands inside the state
+`national_parks.py` lists it under. Four parks legitimately fall outside their
+state's simplified outline — Dry Tortugas 0.1px, Biscayne 0.5px, Gateway Arch
+0.6px, Isle Royale 1.1px, all islands or riverbanks — so the check allows 3px.
+A mistyped coordinate misses by hundreds.
+
+## What this costs
+
+`docs/adventure/parks.markdown` reads `checklists.us_national_parks` by name
+instead of looping over every category the way the old page did. A new
+checklist no longer appears on a page automatically; it needs its own page and
+a card on the hub. That is a real loss of generality, accepted because the
+parks page pairs the checklist with park coordinates and with photographs
+joined on park name — neither of which means anything for a list of countries.

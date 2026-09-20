@@ -21,7 +21,7 @@ docs/                     Jekyll site root
   _data/covers.json       generated cover-lookup cache — do not edit by hand
   _data/gallery.yml       hand-written photo list (source of truth, not generated)
   _data/gallery_render.json  generated thumbnail/colour data — do not edit by hand
-  _data/gallery_map.json  generated map geometry — do not edit by hand
+  _data/parks_map.json    generated map geometry — do not edit by hand
   _logs/books.md          hand-written reading log (source of truth)
   _logs/movies.md         hand-written watch log (source of truth)
   _logs/travel.md         hand-written park-visit log (source of truth)
@@ -31,8 +31,10 @@ docs/                     Jekyll site root
   assets/gallery/large/   generated 2000px lightbox images — do not edit by hand
   books.markdown          renders _data/books.json
   movies.markdown         renders _data/movies.json
-  adventure.markdown      renders _data/travel.json + _data/trails.json
-  gallery.markdown        renders _data/gallery.yml + gallery_render.json + gallery_map.json
+  adventure.markdown      hub: cards for Parks and Trails
+  adventure/parks.markdown   renders travel.json + parks_map.json + gallery.yml
+  adventure/trails.markdown  renders _data/trails.json
+  gallery.html            redirect stub: /gallery/ → /adventure/parks/
   stats.markdown          renders _data/stats.json
   posts.markdown          lists posts filed under `categories: posts`
   404.html                served by GitHub Pages for any unmatched path
@@ -52,7 +54,7 @@ scripts/
   national_parks.py       fixed reference list of all 63 US National Parks
   gallery_data.py         reads _data/gallery.yml (shared by the two below)
   build_gallery_thumbs.py resizes gallery photos — NOT run by build.py; needs Pillow
-  build_gallery_map.py    builds _data/gallery_map.json — NOT run by build.py;
+  build_parks_map.py      builds _data/parks_map.json — NOT run by build.py;
                           --fetch is its online step
 photo-originals/          full-resolution sources, outside the published site
 tests/                    pytest suite for the build scripts
@@ -205,16 +207,29 @@ For a show, prefer one `Title (TV Series)` entry over one row per season.
 
 ## Adventure
 
-`/adventure/` carries two things of deliberately different shapes, which is
-why they come from two scripts and are rendered by two blocks rather than one
-loop:
+`/adventure/` is a hub, the same shape as `/dev/`: a card per child page and
+no content of its own. It used to carry two things at once — a fixed 63-item
+parks checklist and an open-ended trail log — which have nothing to do with
+each other beyond both being outdoors.
+
+| page | what it is |
+|---|---|
+| `/adventure/parks/` | the map, the checklist, and the photographs |
+| `/adventure/trails/` | the trail log |
+| `/gallery/` | redirect stub → `/adventure/parks/` |
+
+The photographs moved onto the parks page because all but one are of national
+parks, and because `/gallery/` was reachable only from the nav's "More"
+dropdown — the home page never linked to it at all.
+
+Two scripts feed these, and they stay separate because the shapes differ:
 
 - **Checklists** (`build_travel.py`) — a finite universe with a visited flag.
   63 national parks, ticked or not, so the page can show what is *left*.
 - **The trail log** (`build_trails.py`) — open-ended. There is no list of
   every trail to tick off, only the ones actually walked.
 
-The page used to live at `/travel/`; that path still works, via
+`/adventure/` used to live at `/travel/`; that path still works, via
 `redirect_from` in `adventure.markdown` and the `jekyll-redirect-from` plugin.
 
 ### Trails
@@ -330,25 +345,42 @@ things and no changes to the matching or page-rendering logic:
 2. An entry in `CHECKLISTS`.
 3. A `## Countries` section in `travel.md` using that exact heading text.
 
-`docs/adventure.markdown` loops over whatever categories `travel.json` actually
-contains, so a new checklist appears on the page automatically — nothing
-there needs to change. A `## <heading>` in the log with no matching entry in
-`CHECKLISTS` prints a warning rather than silently being dropped.
+`build_travel.py` picks the new category up without changes, and a
+`## <heading>` in the log with no matching entry in `CHECKLISTS` prints a
+warning rather than being silently dropped.
 
-## Gallery
+The *page* is a different matter. `docs/adventure/parks.markdown` reads
+`checklists.us_national_parks` by name rather than looping over every
+category, because it is a page about national parks specifically — it pairs
+the checklist with a map of park coordinates and with photographs joined on
+the park name, none of which would mean anything for a countries list. A new
+checklist therefore needs its own page under `/adventure/` and a card on the
+hub. That is more work than the old loop, and it is the price of the parks
+page being about parks rather than about checklists in general.
 
-`/gallery/` renders `docs/_data/gallery.yml`, grouped into one section per
-national park. The list itself is hand-edited — unlike books, movies, travel
-and trails there is no `_logs/*.md` source and no generator for it, because a
-photo needs neither an external lookup nor free-text date parsing.
+## The parks page
 
-Two things *are* generated, and both are committed:
+Four data files join on the park name:
 
-| File | Written by | What it carries |
+| file | written by | what it carries |
 |---|---|---|
-| `assets/gallery/thumbs/`, `assets/gallery/large/` | `build_gallery_thumbs.py` | the 800px and 2000px copies the page serves |
-| `_data/gallery_render.json` | `build_gallery_thumbs.py` | thumbnail dimensions, blur-up placeholders, a colour per park |
-| `_data/gallery_map.json` | `build_gallery_map.py --fetch` | projected state outlines and park marker positions |
+| `_data/travel.json` | `build_travel.py` | the checklist: 63 parks, which are visited |
+| `_data/parks_map.json` | `build_parks_map.py --fetch` | state outlines and a projected point per park |
+| `_data/gallery.yml` | hand-edited | the photographs |
+| `_data/gallery_render.json` | `build_gallery_thumbs.py` | thumbnail sizes, blur-up placeholders, a colour per park |
+
+`park` in `gallery.yml` is what does the joining, so it must match
+`travel.json` exactly — several names differ from the everyday spelling
+(`White Sands`, `Rocky Mountain`, `Hawaiʻi Volcanoes`, `Guadalupe Mountains`).
+Omit it for somewhere that is not a national park; those collect into a
+closing "Elsewhere" section. `caption`, `date` and `tags` are optional.
+
+Two parks — American Samoa and Virgin Islands — have no marker. Albers USA
+covers the fifty states and nothing else, so there is nowhere to draw them;
+they are listed in `UNPLOTTABLE` and the map's caption says so rather than
+showing 61 dots beside the number 63.
+
+### Adding a photo
 
 The full-resolution originals live in `photo-originals/` at the repo root,
 **not** under `docs/`. That is deliberate: `docs/` is the Jekyll source, so
@@ -358,16 +390,6 @@ guessable URL and shipping them in every deploy, to serve a grid that only
 ever loads the 3.5 MB of thumbnails. They stay in the repo because
 `build_gallery_thumbs.py` reads them; they just live where Jekyll cannot see
 them, the same reason `plans/` sits at the root.
-
-`park` is the field that does the work. It groups the page into sections and
-joins each photo to its entry in `_data/travel.json` for the state and the
-year visited, so it has to match that file's name exactly — several differ
-from the everyday spelling (`White Sands`, `Rocky Mountain`,
-`Hawaiʻi Volcanoes`, `Guadalupe Mountains`). Omit it for somewhere that is
-not a national park; those collect into a closing "Elsewhere" section.
-`caption`, `date` and `tags` are all optional.
-
-To add a photo:
 
 1. Drop the image file under `photo-originals/`.
 2. Add an entry to `docs/_data/gallery.yml`, next to the others from that
@@ -399,16 +421,16 @@ To add a photo:
    git commit -m "Add a gallery photo" && git push origin gh-pages
    ```
 
-A park photographed for the first time also needs a marker on the hero map:
-add its coordinates to `PARKS` in `scripts/build_gallery_map.py` and re-run
-`python3 scripts/build_gallery_map.py --fetch` (or the `map` target of the
-`fetch` workflow). The test suite checks that every photographed park has a
-marker and that every marker lands inside its own state, so a missing or
-mistyped coordinate fails rather than quietly drawing a dot in Nebraska.
+A newly designated park needs a coordinate added to `PARKS` in
+`scripts/build_parks_map.py` alongside its entry in `national_parks.py`, then
+`python3 scripts/build_parks_map.py --fetch` (or the `map` target of the
+`fetch` workflow). The test suite projects every coordinate and checks it
+lands inside the state `national_parks.py` lists it under, so a mistyped
+latitude fails rather than quietly drawing a dot in Nebraska.
 
-The filter chips are built client-side (`initGallery()` in `main.js`) from
-the sections the page rendered, since the set of parks is open-ended — unlike
-the Books page's fixed five eras, which are hardcoded in the markup.
+The filter chips above the photographs are built client-side
+(`initGallery()` in `main.js`) from the sections the page rendered, since the
+set of parks is open-ended.
 
 There is no automated check on the size or dimensions of the originals, and
 none is planned — `build_gallery_thumbs.py` makes the page's cost independent

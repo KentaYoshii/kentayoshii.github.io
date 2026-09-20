@@ -2,7 +2,7 @@ name: fetch
 
 # The one job that is allowed to touch the network, run by hand.
 #
-# build_covers.py, build_trails.py and build_gallery_map.py are offline by
+# build_covers.py, build_trails.py and build_parks_map.py are offline by
 # default so that build.py and the `build` workflow stay deterministic;
 # filling their caches needs an online --fetch pass. Doing that here rather
 # than on a laptop means it runs on a clean network with a clean trust store:
@@ -15,7 +15,7 @@ name: fetch
 # unresolved entries.
 #
 # `map` is deliberately outside `all`: state borders do not move, so the
-# gallery's map geometry is rebuilt only when the projection or the
+# parks map geometry is rebuilt only when the projection or the
 # simplification changes, not on every routine fetch.
 on:
   workflow_dispatch:
@@ -73,11 +73,11 @@ jobs:
       # resolves nothing incrementally: it rebuilds the whole map in one pass,
       # so a failure leaves the committed geometry untouched rather than
       # half-filled, and re-running later costs nothing.
-      - name: Rebuild the gallery map
+      - name: Rebuild the parks map
         id: map
         if: inputs.target == 'map'
         continue-on-error: true
-        run: python3 scripts/build_gallery_map.py --fetch
+        run: python3 scripts/build_parks_map.py --fetch
 
       # The caches are only half the story: the offline pass is what writes
       # the resolved URLs and tags onto the records the pages actually render.
