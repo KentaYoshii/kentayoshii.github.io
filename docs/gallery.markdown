@@ -158,14 +158,20 @@ photos actually carry, rather than in Liquid here.
   {%- endif -%}
 
       {%- comment -%}
-      Keep Liquid tags OUT of the attribute list below, and never use the
-      whitespace-stripping form ({%- -%}) inside one. A comment in among the
-      attributes strips the newline and indentation on both sides, which
+      Keep Liquid tags OUT of the attribute list below, and in particular
+      never use the hyphenated whitespace-stripping form in among the
+      attributes. It strips the newline and indentation on both sides, which
       leaves two attributes touching -- data-park="Olympic"data-when="..." --
       and kramdown's HTML parser wants whitespace before every attribute
       name. It does not fail loudly: it gives up on the start tag and escapes
       the whole thing, so the page renders the markup as visible text while
-      the <img> inside it still renders normally.
+      the img inside it still renders normally.
+
+      Do not write a Liquid delimiter literally in this comment to illustrate
+      the point. Liquid tokenises the contents of a comment block too, and a
+      delimiter pair with no tag name inside it is a syntax error that fails
+      the whole build -- which, on GitHub Pages, silently keeps serving the
+      previous version of the site.
 
       So, notes about individual attributes live here rather than beside
       them:

@@ -75,6 +75,30 @@ class TestTemplate:
             % (os.path.relpath(path, ROOT), '\n  '.join(offenders))
         )
 
+    def test_every_liquid_tag_has_a_name(self, path: str) -> None:
+        """No {% %} delimiter pair without a tag name in it.
+
+        Liquid needs a word character for the tag name and raises a syntax
+        error without one. It tokenises the inside of a comment block as well,
+        so this bites even when the delimiter is only being quoted in prose to
+        explain something -- which is exactly how it happened.
+
+        The cost is high and the signal is low: Jekyll fails the build, and
+        GitHub Pages responds by continuing to serve the previous version of
+        the site. Nothing about the live page says it is stale.
+        """
+        source = read(path)
+        offenders = []
+        for match in re.finditer(r'\{%(.*?)%\}', source, re.S):
+            body = match.group(1).strip().lstrip('-').strip()
+            if not re.match(r'^\w+', body):
+                line = source[:match.start()].count('\n') + 1
+                offenders.append('line %d: %s' % (line, match.group(0)[:60]))
+        assert not offenders, (
+            'Liquid delimiters with no tag name in %s:\n  %s'
+            % (os.path.relpath(path, ROOT), '\n  '.join(offenders))
+        )
+
     def test_liquid_blocks_are_balanced(self, path: str) -> None:
         source = read(path)
         stack = []
