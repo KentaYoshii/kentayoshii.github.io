@@ -12,6 +12,9 @@ ALIASES for the handful that need an explicit mapping.
 
 ## US National Parks
 
+### 2022
+- Hawaiian Volcanoes
+
 ### 2025
 - Zion
 - Grand Canyon
@@ -25,7 +28,6 @@ ALIASES for the handful that need an explicit mapping.
 
 ### 2026
 - Haleakala
-- Hawaiian Volcanoes
 - Rocky Mountains
 - Olympic
 - Mount Rainier

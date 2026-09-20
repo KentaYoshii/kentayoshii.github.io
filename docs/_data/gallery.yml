@@ -16,8 +16,8 @@
 #   park: Zion                              # exact name from travel.json
 #   location: Utah                          # state, for the lightbox
 #   date: "2025-04-27"                      # quoted -- see below
-#   caption: The Narrows, looking upstream  # optional
-#   tags: [canyon, water]                   # optional
+#   caption: The canyon from the overlook   # optional
+#   tags: [canyon, clouds]                  # optional
 #
 # Quote the date. Unquoted, a real YAML parser turns it into a date object
 # while scripts/gallery_data.py leaves it a string, and the two readers of
@@ -33,187 +33,246 @@
 # Section order follows first appearance below: most recent visit first, and
 # within a year the parks with the most photos first.
 #
-# Every `date` below was read out of the photo's own EXIF, so they are the
-# days the shutter actually fired rather than anything typed in. The lightbox
-# shows the date where there is one and the park's visit year otherwise.
-#
-# `caption` and `tags` are optional and mostly unset: nothing is recorded
-# about what these photographs show, and a guess would read as fact. A photo
-# without a caption still renders -- the template falls back to the park name
-# for its alt text -- so they can be filled in whenever there is something
-# real to say.
+# Every `date` was read out of the photo's own EXIF, so they are the days the
+# shutter actually fired rather than anything typed in. Captions describe what
+# is in the frame; where a landmark is not identifiable with certainty the
+# caption says what is visible instead of naming it.
 
 # Olympic -- Washington, visited 2026
 - image: /assets/gallery/olympic.jpeg
   park: Olympic
   location: Washington
   date: "2026-07-26"
+  caption: Fog sitting on the ridge
+  tags: [ridge, fog, forest]
 - image: /assets/gallery/olympic2.jpeg
   park: Olympic
   location: Washington
   date: "2026-07-26"
+  caption: Boardwalk through the rainforest
+  tags: [rainforest, moss, ferns, trail]
 - image: /assets/gallery/olympic3.jpeg
   park: Olympic
   location: Washington
   date: "2026-07-27"
+  caption: A chipmunk on the path
+  tags: [wildlife, fog]
 - image: /assets/gallery/olympic4.jpeg
   park: Olympic
   location: Washington
   date: "2026-07-29"
+  caption: Sea stacks at low tide
+  tags: [coast, sea stacks, tide]
 - image: /assets/gallery/olympic5.jpeg
   park: Olympic
   location: Washington
   date: "2026-07-28"
+  caption: A creek stepping down through the ferns
+  tags: [rainforest, creek, ferns]
 - image: /assets/gallery/olympic6.jpeg
   park: Olympic
   location: Washington
   date: "2026-07-29"
+  caption: Rocks at the tide line
+  tags: [coast, tide]
 - image: /assets/gallery/olympic7.jpeg
   park: Olympic
   location: Washington
   date: "2026-07-29"
+  caption: Moss-hung maples over the trail
+  tags: [rainforest, moss, trail]
 
 # Haleakalā -- Hawaii, visited 2026
 - image: /assets/gallery/haleakala.jpeg
   park: Haleakalā
   location: Hawaii
   date: "2026-04-29"
+  caption: A rainbow from the roadside
+  tags: [rainbow, rain]
 - image: /assets/gallery/haleakala2.jpeg
   park: Haleakalā
   location: Hawaii
   date: "2026-04-29"
+  caption: Ridges above the cloud layer
+  tags: [clouds, summit]
 - image: /assets/gallery/haleakala3.jpeg
   park: Haleakalā
   location: Hawaii
   date: "2026-04-29"
+  caption: Sunset from above the clouds
+  tags: [sunset, clouds]
 - image: /assets/gallery/haleakala4.jpeg
   park: Haleakalā
   location: Hawaii
   date: "2026-04-30"
+  caption: Cinder cones on the crater floor
+  tags: [crater, volcanic]
 
 # Mount Rainier -- Washington, visited 2026
 - image: /assets/gallery/rainier.jpeg
   park: Mount Rainier
   location: Washington
   date: "2026-07-30"
+  caption: Steps up into the meadow, the mountain behind
+  tags: [summit, meadow, trail]
 - image: /assets/gallery/rainier2.jpeg
   park: Mount Rainier
   location: Washington
   date: "2026-07-30"
+  caption: A marmot on a rock above the valley
+  tags: [wildlife, marmot]
 - image: /assets/gallery/rainier3.jpeg
   park: Mount Rainier
   location: Washington
   date: "2026-07-30"
+  caption: The mountain reflected in the lake
+  tags: [reflection, lake, summit]
 - image: /assets/gallery/rainier4.jpeg
   park: Mount Rainier
   location: Washington
   date: "2026-07-30"
+  caption: A band of cloud across the mountain
+  tags: [summit, forest]
 
 # Rocky Mountain -- Colorado, visited 2026
 - image: /assets/gallery/rmnp.jpeg
   park: Rocky Mountain
   location: Colorado
   date: "2026-09-06"
+  caption: A lake below the cirque
+  tags: [lake, cirque]
 - image: /assets/gallery/rmnp2.jpeg
   park: Rocky Mountain
   location: Colorado
   date: "2026-09-06"
+  caption: A bird in the pines
+  tags: [wildlife, birds]
 - image: /assets/gallery/rmnp3.jpeg
   park: Rocky Mountain
   location: Colorado
   date: "2026-09-08"
+  caption: Sunrise from the tundra
+  tags: [sunrise, tundra]
 - image: /assets/gallery/rmnp4.jpeg
   park: Rocky Mountain
   location: Colorado
   date: "2026-09-07"
+  caption: Two lakes from the ridge
+  tags: [lake, ridge, clouds]
 
-# Hawaiʻi Volcanoes -- Hawaii, visited 2026
+# Hawaiʻi Volcanoes -- Hawaii, visited 2022
 - image: /assets/gallery/hawaiian_volcanoes_1.jpeg
   park: Hawaiʻi Volcanoes
   location: Hawaii
   date: "2022-04-01"
+  caption: Across the crater floor in the rain
+  tags: [crater, volcanic, rain]
 
 # Big Bend -- Texas, visited 2025
 - image: /assets/gallery/bb_1.jpeg
   park: Big Bend
   location: Texas
   date: "2025-12-09"
+  caption: Looking out through the pour-off
+  tags: [canyon, desert]
 - image: /assets/gallery/bb_2.jpeg
   park: Big Bend
   location: Texas
   date: "2025-12-11"
+  caption: The river between the canyon walls
+  tags: [canyon, river]
 - image: /assets/gallery/bb_3.jpeg
   park: Big Bend
   location: Texas
   date: "2025-12-09"
+  caption: First light on the Chisos
+  tags: [mountains, sunrise]
 
 # Yellowstone -- Wyoming / Montana / Idaho, visited 2025
 - image: /assets/gallery/yellowstone_1.jpeg
   park: Yellowstone
   location: Wyoming / Montana / Idaho
   date: "2025-10-01"
+  caption: Steam off the travertine terraces
+  tags: [thermal, terraces]
 - image: /assets/gallery/yellowstone_2.jpeg
   park: Yellowstone
   location: Wyoming / Montana / Idaho
   date: "2025-10-02"
+  caption: Yellow walls, and a falls at the far end
+  tags: [canyon, waterfall]
 - image: /assets/gallery/yellowstone_3.jpeg
   park: Yellowstone
   location: Wyoming / Montana / Idaho
   date: "2025-10-02"
+  caption: Sunrise over the lake
+  tags: [sunrise, lake]
 
 # Yosemite -- California, visited 2025
 - image: /assets/gallery/yosemite_2.jpeg
   park: Yosemite
   location: California
   date: "2025-05-01"
+  caption: Looking up in the sequoia grove
+  tags: [sequoias, forest]
 - image: /assets/gallery/yosemite_3.jpeg
   park: Yosemite
   location: California
   date: "2025-05-02"
+  caption: The upper fall, with Half Dome down the valley
+  tags: [waterfall, valley]
 
 # Carlsbad Caverns -- New Mexico, visited 2025
 - image: /assets/gallery/carlsbad.jpeg
   park: Carlsbad Caverns
   location: New Mexico
   date: "2025-12-13"
+  caption: Stalactites over the chamber floor
+  tags: [cave, formations]
 
 # Grand Canyon -- Arizona, visited 2025
 - image: /assets/gallery/grand_canyon.jpeg
   park: Grand Canyon
   location: Arizona
   date: "2025-04-29"
+  caption: Layers going back to the far rim
+  tags: [canyon, layers]
 
 # Grand Teton -- Wyoming, visited 2025
 - image: /assets/gallery/grand_teton_1.jpeg
   park: Grand Teton
   location: Wyoming
   date: "2025-09-28"
+  caption: A lake under the granite
+  tags: [lake, reflection, granite]
 
 # Guadalupe Mountains -- Texas, visited 2025
 - image: /assets/gallery/guadalupe.jpeg
   park: Guadalupe Mountains
   location: Texas
   date: "2025-12-14"
+  caption: Above the cloud, early
+  tags: [clouds, sunrise, summit]
 
 # White Sands -- New Mexico, visited 2025
 - image: /assets/gallery/whitesands.jpeg
   park: White Sands
   location: New Mexico
   date: "2025-12-18"
+  caption: Sunset over the dunes
+  tags: [dunes, sunset]
 
 # Zion -- Utah, visited 2025
 - image: /assets/gallery/zion_1.jpeg
   park: Zion
   location: Utah
   date: "2025-04-27"
+  caption: The canyon from the overlook
+  tags: [canyon, clouds]
 
-# Elsewhere -- not a national park, so no `park` key. These carry a caption
-# because nothing else on the page names the place.
+# Elsewhere -- not a national park, so no `park` key.
 - image: /assets/gallery/antelope.jpeg
-  caption: Antelope Canyon
   location: Arizona
   date: "2025-04-28"
-- image: /assets/gallery/yosemite_1.jpeg
-  caption: Fiordland
-  location: New Zealand
-  date: "2024-01-09"
+  caption: Antelope Canyon
+  tags: [slot canyon, sandstone]

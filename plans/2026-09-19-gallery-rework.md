@@ -105,24 +105,39 @@ They are ordinary anchors to the section ids, so the map works without
 JavaScript; `main.js` only upgrades the jump to a smooth scroll and clears an
 active filter first.
 
-## Data left unset on purpose
+## Dates, and what the EXIF turned up
 
-The placeholder `caption`, `date` and `tags` values were removed and not
-replaced. Real values exist for park, state and visit year and those are now
-in place; nothing is known about the dates the photos were taken, what they
-show, or how to tag them, so the keys are documented as optional and left
-empty rather than filled with plausible-looking inventions. Antelope Canyon
-keeps its caption, which is genuine.
+The placeholder `caption`, `date` and `tags` values were first removed rather
+than replaced, on the grounds that nothing real was known to put there. That
+was right about captions and wrong about dates: every photo carries an EXIF
+`DateTimeOriginal`, so the dates were recoverable and are now recorded. The
+lightbox shows the photo's own date, falling back to the park's visit year.
+
+34 of the photos also carry GPS, which turned the park field into something
+checkable. Two things came out of checking it:
+
+- `yosemite_1.jpeg` was 7,274 miles from Yosemite — 44.76°S, 167.96°E, which
+  is Fiordland in New Zealand — and dated more than a year before the genuine
+  Yosemite photos. It had been mislabelled since before this rework. The photo
+  has been removed from the gallery; it is in git history if it is ever
+  wanted. Yosemite's accent colour changed once it stopped being averaged with
+  a photograph from the wrong hemisphere.
+- `hawaiian_volcanoes_1.jpeg` is dated April 2022, but `_logs/travel.md`
+  listed Hawaiʻi Volcanoes under 2026. The Haleakalā photos confirm a 2026
+  Hawaii trip, so the log had one park under the wrong year; it now sits under
+  2022, which is what the photograph supports.
+
+Captions and tags were then written by looking at each photograph. Where a
+landmark is not identifiable with certainty the caption describes what is
+visible rather than naming it — "Looking out through the pour-off" rather
+than a specific named feature. Tags are shown in the lightbox; the filter
+chips remain park-based, since parks are what the page is organised by.
 
 ## Not done
 
-- **Captions.** Worth adding when there is something real to say; the template
-  already prefers `caption` over the park name for both alt text and the
-  hover overlay.
 - **A `webp`/`avif` variant.** The JPEG thumbnails are around 100 KB and the
   grid is no longer the bottleneck, so this would be optimisation without a
   measured problem.
-- **`stats.json` drift.** `build.py` regenerates it with different TMDB poster
-  URLs than are committed, so CI's data-drift job fails. This predates the
-  rework — confirmed on a clean worktree of the base commit — and was left
-  alone to keep the change focused.
+- **Tag filtering.** Tags are recorded and displayed but not filterable. The
+  chip row filters by park, and a second axis of filtering is more machinery
+  than 35 photos justify.

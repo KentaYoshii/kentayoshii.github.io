@@ -1889,6 +1889,14 @@ body,
   color: rgba(255, 248, 236, 0.75);
 }
 
+// Quieter than the metadata above it: what is in the frame, not where or
+// when. Filled in by main.js and hidden outright for an untagged photo.
+.lightbox-tags {
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: rgba(255, 248, 236, 0.5);
+}
+
 // A strip of the photos prev/next currently walks, so there is some sense of
 // where you are in a set of seven. Hidden by main.js when there is only one
 // photo to look at, which is the case for eight of the fourteen parks.

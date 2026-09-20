@@ -972,6 +972,7 @@ function initGallery() {
     '<div class="lightbox-caption">' +
       '<span class="lightbox-caption-text"></span>' +
       '<span class="lightbox-meta"></span>' +
+      '<span class="lightbox-tags"></span>' +
     '</div>' +
     '<div class="lightbox-strip" hidden></div>';
   document.body.appendChild(lightbox);
@@ -979,6 +980,7 @@ function initGallery() {
   var lightboxImage = lightbox.querySelector('.lightbox-image');
   var captionText = lightbox.querySelector('.lightbox-caption-text');
   var metaText = lightbox.querySelector('.lightbox-meta');
+  var tagText = lightbox.querySelector('.lightbox-tags');
   var strip = lightbox.querySelector('.lightbox-strip');
   var currentIndex = -1;
   var lastFocused = null;
@@ -1056,6 +1058,11 @@ function initGallery() {
                             tile.getAttribute('data-when')]
       .filter(function (v) { return v; })
       .join(' · ');
+    // Hidden rather than left empty, so an untagged photo does not leave a
+    // gap under the caption where the tags would be.
+    var tags = tile.getAttribute('data-tags') || '';
+    tagText.textContent = tags;
+    tagText.hidden = !tags;
   }
 
   function onKeydown(e) {

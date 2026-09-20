@@ -171,6 +171,7 @@ photos actually carry, rather than in Liquid here.
               than in JavaScript so there is one date format on the site.
               {%- endcomment -%}
               data-when="{% if photo.date %}{{ photo.date | date: '%-d %B %Y' }}{% else %}{{ info.year }}{% endif %}"
+              data-tags="{{ photo.tags | join: ' · ' | escape }}"
               data-location="{{ photo.location | escape }}"
               {% if shown %}style="background-image: url('{{ shown.lqip }}')"{% endif %}>
         <img src="{{ '/assets/gallery/thumbs/' | append: file | relative_url }}"
