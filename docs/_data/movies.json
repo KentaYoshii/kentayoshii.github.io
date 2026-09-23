@@ -109,7 +109,7 @@
   "month": null,
   "date": "2017-00",
   "letter": "A",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg"
  },
  {
   "title": "Alien 3",
@@ -117,7 +117,7 @@
   "month": null,
   "date": "2017-00",
   "letter": "A",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/kDSuWwWLtMoh4xvlFH6sU6uNhR6.jpg"
  },
  {
   "title": "Alien: Covenant",
@@ -125,7 +125,7 @@
   "month": null,
   "date": "2017-00",
   "letter": "A",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/zecMELPbU5YMQpC81Z8ImaaXuf9.jpg"
  },
  {
   "title": "Alien Resurrection",
@@ -133,7 +133,7 @@
   "month": null,
   "date": "2017-00",
   "letter": "A",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/9aRDMlU5Zwpysilm0WCWzU2PCFv.jpg"
  },
  {
   "title": "Alien Romulus",
@@ -149,7 +149,7 @@
   "month": null,
   "date": "2017-00",
   "letter": "A",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/r1x5JGpyqZU8PYhbs4UcrO1Xb6x.jpg"
  },
  {
   "title": "Alien vs Predator",
@@ -173,7 +173,7 @@
   "month": null,
   "date": "2016-00",
   "letter": "A",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/faq9JlF8znUGQ5p3En1W61Fi5p0.jpg"
  },
  {
   "title": "The Alpinist",
@@ -253,7 +253,7 @@
   "month": null,
   "date": "2016-00",
   "letter": "A",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/pEzNVQfdzYDzVK0XqxERIw2x2se.jpg"
  },
  {
   "title": "Avatar",
@@ -325,7 +325,7 @@
   "month": null,
   "date": "2016-00",
   "letter": "B",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/5UsK3grJvtQrtzEgqNlDljJW96w.jpg"
  },
  {
   "title": "Battle for Sevastopol",
@@ -397,7 +397,7 @@
   "month": null,
   "date": "2017-00",
   "letter": "B",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg"
  },
  {
   "title": "Blade: Trinity",
@@ -477,7 +477,7 @@
   "month": null,
   "date": "2016-00",
   "letter": "C",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/rAGiXaUfPzY7CDEyNKUofk3Kw2e.jpg"
  },
  {
   "title": "Casino Royale",
@@ -693,7 +693,7 @@
   "month": null,
   "date": "2016-00",
   "letter": "D",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/aNh4Q3iuPKDMPi2SL7GgOpiLukX.jpg"
  },
  {
   "title": "Doctor Strange",
@@ -701,7 +701,7 @@
   "month": null,
   "date": "2016-00",
   "letter": "D",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/uGBVj3bEbCoZbDjjl9wTxcygko1.jpg"
  },
  {
   "title": "Doctor Strange in the Multiverse of Madness",
@@ -813,7 +813,7 @@
   "month": null,
   "date": "2016-00",
   "letter": "F",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/h6NYfVUyM6CDURtZSnBpz647Ldd.jpg"
  },
  {
   "title": "Fantastic Beasts: The Crimes of Grindelwald",
@@ -1013,7 +1013,7 @@
   "month": null,
   "date": "2016-00",
   "letter": "H",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/fnOMP6mjmOmZwmlC1n0K7ivrzt1.jpg"
  },
  {
   "title": "A Haunting in Venice",
@@ -1165,7 +1165,7 @@
   "month": null,
   "date": "2016-00",
   "letter": "I",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/5T6iVetK5AB1kgwAEKbDM2hTZJU.jpg"
  },
  {
   "title": "Infinite",
@@ -1181,7 +1181,7 @@
   "month": null,
   "date": "2016-00",
   "letter": "I",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/dP5Fb6YRfzmCQtRbHOr2kO7tJW9.jpg"
  },
  {
   "title": "Interstellar",
@@ -1245,7 +1245,7 @@
   "month": null,
   "date": "2017-00",
   "letter": "I",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg"
  },
  {
   "title": "It Ends with Us",
@@ -1317,7 +1317,7 @@
   "month": null,
   "date": "2017-00",
   "letter": "J",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/pSgXKPU5h6U89ipF7HBYajvYt7j.jpg"
  },
  {
   "title": "Jurassic Park",
@@ -1413,7 +1413,7 @@
   "month": null,
   "date": "2017-00",
   "letter": "K",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/r2517Vz9EhDhj88qwbDVj8DCRZN.jpg"
  },
  {
   "title": "Last Breath",
@@ -1469,7 +1469,7 @@
   "month": null,
   "date": "2016-00",
   "letter": "L",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/iEbLkYzyiUdOKNK4WNBFyGH7r2Y.jpg"
  },
  {
   "title": "Longlegs",
@@ -1741,7 +1741,7 @@
   "month": null,
   "date": "2017-00",
   "letter": "M",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/7GtdJU6iAg6fjQu3E3zta3bIAQh.jpg"
  },
  {
   "title": "The Northman",
@@ -1765,7 +1765,7 @@
   "month": null,
   "date": "2016-00",
   "letter": "N",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/tWsNYbrqy1p1w6K9zRk0mSchztT.jpg"
  },
  {
   "title": "Now You See Me 2",
@@ -1773,7 +1773,7 @@
   "month": null,
   "date": "2016-00",
   "letter": "N",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/A81kDB6a1K86YLlcOtZB27jriJh.jpg"
  },
  {
   "title": "Nuremberg",
@@ -1797,7 +1797,7 @@
   "month": null,
   "date": "2017-00",
   "letter": "O",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg"
  },
  {
   "title": "Octopussy",
@@ -1861,7 +1861,7 @@
   "month": null,
   "date": "2016-00",
   "letter": "P",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/jK9S6HANSf2no64v1x1HxfcpmcA.jpg"
  },
  {
   "title": "Pearl Harbor",
@@ -1941,7 +1941,7 @@
   "month": null,
   "date": "2017-00",
   "letter": "P",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/qsYQflQhOuhDpQ0W2aOcwqgDAeI.jpg"
  },
  {
   "title": "Quantum of Solace",
@@ -2029,7 +2029,7 @@
   "month": "September",
   "date": "2026-09",
   "letter": "R",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/1UKNef590A0ZaMnxsscIcWuK1Em.jpg"
  },
  {
   "title": "Resident Evil (2026)",
@@ -2037,7 +2037,7 @@
   "month": "September",
   "date": "2026-09",
   "letter": "R",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/i7UyjfPio0VFHB9rBUZSFyhOoM8.jpg"
  },
  {
   "title": "Resident Evil: Afterlife",
@@ -2045,7 +2045,7 @@
   "month": "September",
   "date": "2026-09",
   "letter": "R",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/qZHDnt8bnsD2cSJfIbjWbCkIq3G.jpg"
  },
  {
   "title": "Resident Evil: Apocalypse",
@@ -2053,7 +2053,7 @@
   "month": "September",
   "date": "2026-09",
   "letter": "R",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/way9dOm4dM2sm9UMcu2PEXMTX0q.jpg"
  },
  {
   "title": "Resident Evil: Extinction",
@@ -2061,7 +2061,7 @@
   "month": "September",
   "date": "2026-09",
   "letter": "R",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/6yaLr7Ymg5cvbtSVi5hHwBKx35I.jpg"
  },
  {
   "title": "Resident Evil: Retribution",
@@ -2069,7 +2069,7 @@
   "month": "September",
   "date": "2026-09",
   "letter": "R",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/ohdUDWVlcbuWphaLu6wS91xdJ73.jpg"
  },
  {
   "title": "Resident Evil: The Final Chapter",
@@ -2077,7 +2077,7 @@
   "month": "September",
   "date": "2026-09",
   "letter": "R",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/7glPlA0xPpxPxBu0TnY4ulQVCV1.jpg"
  },
  {
   "title": "Resident Evil: Welcome to Raccoon City",
@@ -2085,7 +2085,7 @@
   "month": "September",
   "date": "2026-09",
   "letter": "R",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/bArhvjRHl535XMaSh9VjInF2mSZ.jpg"
  },
  {
   "title": "Rise of the Planet of the Apes",
@@ -2165,7 +2165,7 @@
   "month": null,
   "date": "2016-00",
   "letter": "S",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/x5T0cQDYws0xRBVG4Q3wpcrcmax.jpg"
  },
  {
   "title": "Sinners",
@@ -2205,7 +2205,7 @@
   "month": null,
   "date": "2016-00",
   "letter": "S",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/yfK7zxNL63VWfluFuoUaJj5PdNw.jpg"
  },
  {
   "title": "Spectre",
@@ -2237,7 +2237,7 @@
   "month": null,
   "date": "2017-00",
   "letter": "S",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/c24sv2weTHPsmDa7jEMN0m2P3RT.jpg"
  },
  {
   "title": "Spider-Man: No Way Home",
@@ -2293,7 +2293,7 @@
   "month": null,
   "date": "2017-00",
   "letter": "T",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/rzRwTcFvttcN1ZpX2xv4j3tSdJu.jpg"
  },
  {
   "title": "Thunderball",
@@ -2365,7 +2365,7 @@
   "month": "September",
   "date": "2026-09",
   "letter": "T",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/lkZ9gqCEjzX85lKR6Jjd1uGAXNp.jpg"
  },
  {
   "title": "Transformers: Age of Extinction",
@@ -2373,7 +2373,7 @@
   "month": "September",
   "date": "2026-09",
   "letter": "T",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/jyzrfx2WaeY60kYZpPYepSjGz4S.jpg"
  },
  {
   "title": "Transformers: Dark of the Moon",
@@ -2381,7 +2381,7 @@
   "month": "September",
   "date": "2026-09",
   "letter": "T",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/28YlCLrFhONteYSs9hKjD1Km0Cj.jpg"
  },
  {
   "title": "Transformers One",
@@ -2397,7 +2397,7 @@
   "month": "September",
   "date": "2026-09",
   "letter": "T",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/pLBb0whOzVDtJvyD4DPeQyQNOqp.jpg"
  },
  {
   "title": "Transformers: Rise of the Beasts",
@@ -2413,7 +2413,7 @@
   "month": "September",
   "date": "2026-09",
   "letter": "T",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/s5HQf2Gb3lIO2cRcFwNL9sn1o1o.jpg"
  },
  {
   "title": "Twilight (2008)",
@@ -2565,7 +2565,7 @@
   "month": null,
   "date": "2017-00",
   "letter": "W",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/sONh3LYGFcVDTy8pm1tbSOB13Li.jpg"
  },
  {
   "title": "A Working Man",
