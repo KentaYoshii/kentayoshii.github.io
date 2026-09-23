@@ -374,3 +374,16 @@ month recorded.
 - Bakudan (2025)
 - Civil War
 - Blade Runner (1982)
+- Resident Evil (2002)
+- Resident Evil: Apocalypse
+- Resident Evil: Extinction
+- Resident Evil: Afterlife
+- Resident Evil: Retribution
+- Resident Evil: The Final Chapter
+- Resident Evil: Welcome to Raccoon City
+- Resident Evil (2026)
+- Transformers (2007)
+- Transformers: Revenge of the Fallen
+- Transformers: Dark of the Moon
+- Transformers: Age of Extinction
+- Transformers: The Last Knight

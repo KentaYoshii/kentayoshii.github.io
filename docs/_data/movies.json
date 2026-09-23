@@ -1808,6 +1808,70 @@
   "cover": "https://image.tmdb.org/t/p/w200/cdefNr6aS00IwVbSlxdFJnfmzKh.jpg"
  },
  {
+  "title": "Resident Evil (2002)",
+  "year": "2026",
+  "month": "September",
+  "date": "2026-09",
+  "letter": "R",
+  "cover": null
+ },
+ {
+  "title": "Resident Evil (2026)",
+  "year": "2026",
+  "month": "September",
+  "date": "2026-09",
+  "letter": "R",
+  "cover": null
+ },
+ {
+  "title": "Resident Evil: Afterlife",
+  "year": "2026",
+  "month": "September",
+  "date": "2026-09",
+  "letter": "R",
+  "cover": null
+ },
+ {
+  "title": "Resident Evil: Apocalypse",
+  "year": "2026",
+  "month": "September",
+  "date": "2026-09",
+  "letter": "R",
+  "cover": null
+ },
+ {
+  "title": "Resident Evil: Extinction",
+  "year": "2026",
+  "month": "September",
+  "date": "2026-09",
+  "letter": "R",
+  "cover": null
+ },
+ {
+  "title": "Resident Evil: Retribution",
+  "year": "2026",
+  "month": "September",
+  "date": "2026-09",
+  "letter": "R",
+  "cover": null
+ },
+ {
+  "title": "Resident Evil: The Final Chapter",
+  "year": "2026",
+  "month": "September",
+  "date": "2026-09",
+  "letter": "R",
+  "cover": null
+ },
+ {
+  "title": "Resident Evil: Welcome to Raccoon City",
+  "year": "2026",
+  "month": "September",
+  "date": "2026-09",
+  "letter": "R",
+  "cover": null
+ },
+ {
   "title": "Rise of the Planet of the Apes",
   "year": "2025",
   "month": "February",
@@ -2040,6 +2104,30 @@
   "cover": "https://image.tmdb.org/t/p/w200/n0YuM4f5lvGAP6MAW2kBIzugXnc.jpg"
  },
  {
+  "title": "Transformers (2007)",
+  "year": "2026",
+  "month": "September",
+  "date": "2026-09",
+  "letter": "T",
+  "cover": null
+ },
+ {
+  "title": "Transformers: Age of Extinction",
+  "year": "2026",
+  "month": "September",
+  "date": "2026-09",
+  "letter": "T",
+  "cover": null
+ },
+ {
+  "title": "Transformers: Dark of the Moon",
+  "year": "2026",
+  "month": "September",
+  "date": "2026-09",
+  "letter": "T",
+  "cover": null
+ },
+ {
   "title": "Transformers One",
   "year": "2024",
   "month": "September",
@@ -2048,12 +2136,28 @@
   "cover": "https://image.tmdb.org/t/p/w200/iRCgqpdVE4wyLQvGYU3ZP7pAtUc.jpg"
  },
  {
+  "title": "Transformers: Revenge of the Fallen",
+  "year": "2026",
+  "month": "September",
+  "date": "2026-09",
+  "letter": "T",
+  "cover": null
+ },
+ {
   "title": "Transformers: Rise of the Beasts",
   "year": "2023",
   "month": null,
   "date": "2023-00",
   "letter": "T",
   "cover": "https://image.tmdb.org/t/p/w200/gPbM0MK8CP8A174rmUwGsADNYKD.jpg"
+ },
+ {
+  "title": "Transformers: The Last Knight",
+  "year": "2026",
+  "month": "September",
+  "date": "2026-09",
+  "letter": "T",
+  "cover": null
  },
  {
   "title": "Twilight (2008)",

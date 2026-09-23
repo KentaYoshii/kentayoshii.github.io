@@ -215,13 +215,13 @@
   ]
  },
  "movies": {
-  "total": 279,
-  "films": 276,
+  "total": 292,
+  "films": 289,
   "shows": 3,
   "by_year": [
    {
     "year": "2026",
-    "count": 38
+    "count": 51
    },
    {
     "year": "2025",
@@ -718,7 +718,7 @@
      },
      {
       "month": "Sep",
-      "count": 7
+      "count": 20
      },
      {
       "month": "Oct",
