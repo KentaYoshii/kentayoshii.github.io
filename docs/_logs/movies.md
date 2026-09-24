@@ -18,14 +18,48 @@ month recorded.
 - Avengers: Endgame
 - Avengers: Infinity War
 - Civil War
-- Gladiator
+- Ghostbusters
+- Ghostbusters II
+- Home Alone
+- Home Alone 2
+- Home Alone 3
+- Home Alone 4
+- Jaws
 - Jurassic Park
 - Juror #2
-- Saving Private Ryan
+- Men in Black
+- Men in Black II
+- Men in Black 3
 - The Accountant
+- The Karate Kid
+- The Karate Kid Part II
+- The Karate Kid Part III
+- The Mummy (1999)
+- The Next Karate Kid
+- The Shawshank Redemption
+- The Truman Show
 - Top Gun (1986)
 - Warfare
 
+
+## 2001
+- Spirited Away
+- American Psycho
+- Gladiator
+- Saving Private Ryan
+
+## 2003
+- Finding Nemo
+- The Last Samurai
+- Elf
+
+## 2004
+- The Incredibles
+
+## 2005
+- Charlie and the Chocolate Factory
+- King Kong (2005)
+- The Chronicles of Narnia: The Lion, the Witch and the Wardrobe
 
 ## 2007
 - Spider-Man

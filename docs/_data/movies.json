@@ -232,6 +232,14 @@
   "cover": "https://image.tmdb.org/t/p/w200/bU7nTmvmy0h3VUP01v1T2imgH6N.jpg"
  },
  {
+  "title": "American Psycho",
+  "year": "2001",
+  "month": null,
+  "date": "2001-00",
+  "letter": "A",
+  "cover": null
+ },
+ {
   "title": "American Sniper",
   "year": "2014",
   "month": null,
@@ -600,6 +608,22 @@
   "cover": "https://image.tmdb.org/t/p/w200/lMrxYKKhd4lqRzwUHAy5gcx9PSO.jpg"
  },
  {
+  "title": "Charlie and the Chocolate Factory",
+  "year": "2005",
+  "month": null,
+  "date": "2005-00",
+  "letter": "C",
+  "cover": null
+ },
+ {
+  "title": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+  "year": "2005",
+  "month": null,
+  "date": "2005-00",
+  "letter": "C",
+  "cover": null
+ },
+ {
   "title": "Civil War",
   "year": null,
   "month": null,
@@ -872,6 +896,14 @@
   "cover": "https://image.tmdb.org/t/p/w200/skGBLKakvPhyXaTPwZzx2zyOKz5.jpg"
  },
  {
+  "title": "Elf",
+  "year": "2003",
+  "month": null,
+  "date": "2003-00",
+  "letter": "E",
+  "cover": null
+ },
+ {
   "title": "The Equalizer",
   "year": "2025",
   "month": "January",
@@ -976,6 +1008,14 @@
   "cover": "https://image.tmdb.org/t/p/w200/nf5qaSEvyYSNeFH0YhSs5EsBLX9.jpg"
  },
  {
+  "title": "Finding Nemo",
+  "year": "2003",
+  "month": null,
+  "date": "2003-00",
+  "letter": "F",
+  "cover": null
+ },
+ {
   "title": "The Firm",
   "year": "2026",
   "month": "January",
@@ -1056,6 +1096,22 @@
   "cover": "https://image.tmdb.org/t/p/w200/pfte7wdMobMF4CVHuOxyu6oqeeA.jpg"
  },
  {
+  "title": "Ghostbusters",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "G",
+  "cover": null
+ },
+ {
+  "title": "Ghostbusters II",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "G",
+  "cover": null
+ },
+ {
   "title": "G.I. Joe: Retaliation",
   "year": "2013",
   "month": null,
@@ -1073,9 +1129,9 @@
  },
  {
   "title": "Gladiator",
-  "year": null,
+  "year": "2001",
   "month": null,
-  "date": null,
+  "date": "2001-00",
   "letter": "G",
   "cover": "https://image.tmdb.org/t/p/w200/wN2xWp1eIwCKOD0BHTcErTBv1Uq.jpg"
  },
@@ -1232,6 +1288,38 @@
   "cover": "https://image.tmdb.org/t/p/w200/xQYiXsheRCDBA39DOrmaw1aSpbk.jpg"
  },
  {
+  "title": "Home Alone",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "H",
+  "cover": null
+ },
+ {
+  "title": "Home Alone 2",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "H",
+  "cover": null
+ },
+ {
+  "title": "Home Alone 3",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "H",
+  "cover": null
+ },
+ {
+  "title": "Home Alone 4",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "H",
+  "cover": null
+ },
+ {
   "title": "Homestead",
   "year": "2025",
   "month": "May",
@@ -1316,6 +1404,14 @@
   "year": "2008",
   "month": null,
   "date": "2008-00",
+  "letter": "I",
+  "cover": null
+ },
+ {
+  "title": "The Incredibles",
+  "year": "2004",
+  "month": null,
+  "date": "2004-00",
   "letter": "I",
   "cover": null
  },
@@ -1496,6 +1592,14 @@
   "cover": "https://image.tmdb.org/t/p/w200/xA7N41glw17MBQtcWSm2eBlBRuG.jpg"
  },
  {
+  "title": "Jaws",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "J",
+  "cover": null
+ },
+ {
   "title": "John Wick",
   "year": "2023",
   "month": null,
@@ -1568,12 +1672,36 @@
   "cover": "https://image.tmdb.org/t/p/w200/ugQkpGajKFQ8eyOEhGheR0HfWQ.jpg"
  },
  {
+  "title": "The Karate Kid",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "K",
+  "cover": null
+ },
+ {
   "title": "Karate Kid: Legends",
   "year": "2025",
   "month": "December",
   "date": "2025-12",
   "letter": "K",
   "cover": "https://image.tmdb.org/t/p/w200/c90Lt7OQGsOmhv6x4JoFdoHzw5l.jpg"
+ },
+ {
+  "title": "The Karate Kid Part II",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "K",
+  "cover": null
+ },
+ {
+  "title": "The Karate Kid Part III",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "K",
+  "cover": null
  },
  {
   "title": "Killers of the Flower Moon",
@@ -1598,6 +1726,14 @@
   "date": "2025-03",
   "letter": "K",
   "cover": "https://image.tmdb.org/t/p/w200/gKkl37BQuKTanygYQG1pyYgLVgf.jpg"
+ },
+ {
+  "title": "King Kong (2005)",
+  "year": "2005",
+  "month": null,
+  "date": "2005-00",
+  "letter": "K",
+  "cover": null
  },
  {
   "title": "The King's Man",
@@ -1662,6 +1798,14 @@
   "date": "2025-10",
   "letter": "L",
   "cover": "https://image.tmdb.org/t/p/w200/uB8yTnF6YLIIVKuRJAK8LNk8C6w.jpg"
+ },
+ {
+  "title": "The Last Samurai",
+  "year": "2003",
+  "month": null,
+  "date": "2003-00",
+  "letter": "L",
+  "cover": null
  },
  {
   "title": "Letters from Iwo Jima",
@@ -1880,6 +2024,30 @@
   "cover": "https://image.tmdb.org/t/p/w200/cZgTA5ZOKOIRGyYClJMu02VUNcE.jpg"
  },
  {
+  "title": "Men in Black",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "M",
+  "cover": null
+ },
+ {
+  "title": "Men in Black 3",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "M",
+  "cover": null
+ },
+ {
+  "title": "Men in Black II",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "M",
+  "cover": null
+ },
+ {
   "title": "Men in Black: International",
   "year": "2019",
   "month": null,
@@ -2008,12 +2176,28 @@
   "cover": "https://image.tmdb.org/t/p/w200/6LrJdXNmu5uHOVALZxVYd44Lva0.jpg"
  },
  {
+  "title": "The Mummy (1999)",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "M",
+  "cover": null
+ },
+ {
   "title": "Murder on the Orient Express",
   "year": "2017",
   "month": null,
   "date": "2017-00",
   "letter": "M",
   "cover": "https://image.tmdb.org/t/p/w200/7GtdJU6iAg6fjQu3E3zta3bIAQh.jpg"
+ },
+ {
+  "title": "The Next Karate Kid",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "N",
+  "cover": null
  },
  {
   "title": "Night at the Museum",
@@ -2441,9 +2625,9 @@
  },
  {
   "title": "Saving Private Ryan",
-  "year": null,
+  "year": "2001",
   "month": null,
-  "date": null,
+  "date": "2001-00",
   "letter": "S",
   "cover": "https://image.tmdb.org/t/p/w200/uqx37cS8cpHg8U35f9U5IBlrCV3.jpg"
  },
@@ -2454,6 +2638,14 @@
   "date": "2021-00",
   "letter": "S",
   "cover": "https://image.tmdb.org/t/p/w200/9f2Q0U3IOsLgrI2HkvldwSABZy5.jpg"
+ },
+ {
+  "title": "The Shawshank Redemption",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "S",
+  "cover": null
  },
  {
   "title": "Shogun (TV Series)",
@@ -2582,6 +2774,14 @@
   "date": "2021-00",
   "letter": "S",
   "cover": "https://image.tmdb.org/t/p/w200/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg"
+ },
+ {
+  "title": "Spirited Away",
+  "year": "2001",
+  "month": null,
+  "date": "2001-00",
+  "letter": "S",
+  "cover": null
  },
  {
   "title": "The Spy Who Loved Me",
@@ -2782,6 +2982,14 @@
   "date": "2026-09",
   "letter": "T",
   "cover": "https://image.tmdb.org/t/p/w200/s5HQf2Gb3lIO2cRcFwNL9sn1o1o.jpg"
+ },
+ {
+  "title": "The Truman Show",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "T",
+  "cover": null
  },
  {
   "title": "Twilight (2008)",
