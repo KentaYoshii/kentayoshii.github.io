@@ -215,8 +215,8 @@
   ]
  },
  "movies": {
-  "total": 368,
-  "films": 365,
+  "total": 378,
+  "films": 375,
   "shows": 3,
   "by_year": [
    {
@@ -286,9 +286,180 @@
    {
     "year": "2010",
     "count": 3
+   },
+   {
+    "year": "2009",
+    "count": 4
+   },
+   {
+    "year": "2008",
+    "count": 5
+   },
+   {
+    "year": "2007",
+    "count": 3
    }
   ],
   "heatmap": [
+   {
+    "year": "2007",
+    "months": [
+     {
+      "month": "Jan",
+      "count": 0
+     },
+     {
+      "month": "Feb",
+      "count": 0
+     },
+     {
+      "month": "Mar",
+      "count": 0
+     },
+     {
+      "month": "Apr",
+      "count": 0
+     },
+     {
+      "month": "May",
+      "count": 0
+     },
+     {
+      "month": "Jun",
+      "count": 0
+     },
+     {
+      "month": "Jul",
+      "count": 0
+     },
+     {
+      "month": "Aug",
+      "count": 0
+     },
+     {
+      "month": "Sep",
+      "count": 0
+     },
+     {
+      "month": "Oct",
+      "count": 0
+     },
+     {
+      "month": "Nov",
+      "count": 0
+     },
+     {
+      "month": "Dec",
+      "count": 0
+     }
+    ]
+   },
+   {
+    "year": "2008",
+    "months": [
+     {
+      "month": "Jan",
+      "count": 0
+     },
+     {
+      "month": "Feb",
+      "count": 0
+     },
+     {
+      "month": "Mar",
+      "count": 0
+     },
+     {
+      "month": "Apr",
+      "count": 0
+     },
+     {
+      "month": "May",
+      "count": 0
+     },
+     {
+      "month": "Jun",
+      "count": 0
+     },
+     {
+      "month": "Jul",
+      "count": 0
+     },
+     {
+      "month": "Aug",
+      "count": 0
+     },
+     {
+      "month": "Sep",
+      "count": 0
+     },
+     {
+      "month": "Oct",
+      "count": 0
+     },
+     {
+      "month": "Nov",
+      "count": 0
+     },
+     {
+      "month": "Dec",
+      "count": 0
+     }
+    ]
+   },
+   {
+    "year": "2009",
+    "months": [
+     {
+      "month": "Jan",
+      "count": 0
+     },
+     {
+      "month": "Feb",
+      "count": 0
+     },
+     {
+      "month": "Mar",
+      "count": 0
+     },
+     {
+      "month": "Apr",
+      "count": 0
+     },
+     {
+      "month": "May",
+      "count": 0
+     },
+     {
+      "month": "Jun",
+      "count": 0
+     },
+     {
+      "month": "Jul",
+      "count": 0
+     },
+     {
+      "month": "Aug",
+      "count": 0
+     },
+     {
+      "month": "Sep",
+      "count": 0
+     },
+     {
+      "month": "Oct",
+      "count": 0
+     },
+     {
+      "month": "Nov",
+      "count": 0
+     },
+     {
+      "month": "Dec",
+      "count": 0
+     }
+    ]
+   },
    {
     "year": "2010",
     "months": [
@@ -1198,6 +1369,6 @@
    "label": "December 2025",
    "count": 21
   },
-  "undated": 170
+  "undated": 180
  }
 }

@@ -56,6 +56,14 @@
   "cover": "https://image.tmdb.org/t/p/w200/n5FygjEppOvac6yEaowi26nTyw3.jpg"
  },
  {
+  "title": "3 Idiots",
+  "year": "2009",
+  "month": null,
+  "date": "2009-00",
+  "letter": "#",
+  "cover": null
+ },
+ {
   "title": "47 Ronin",
   "year": "2013",
   "month": null,
@@ -297,9 +305,9 @@
  },
  {
   "title": "Avatar",
-  "year": null,
+  "year": "2009",
   "month": null,
-  "date": null,
+  "date": "2009-00",
   "letter": "A",
   "cover": "https://image.tmdb.org/t/p/w200/gKY6q7SjCkAU6FqvqWybDYgUKIF.jpg"
  },
@@ -454,6 +462,14 @@
   "date": "2026-01",
   "letter": "B",
   "cover": "https://image.tmdb.org/t/p/w200/6f7iXvPOnf83MaLB1JmPzUor1rr.jpg"
+ },
+ {
+  "title": "The Blind Side",
+  "year": "2009",
+  "month": null,
+  "date": "2009-00",
+  "letter": "B",
+  "cover": null
  },
  {
   "title": "Blink Twice",
@@ -1296,6 +1312,14 @@
   "cover": "https://image.tmdb.org/t/p/w200/xlaY2zyzMfkhk0HSC5VUwzoZPU1.jpg"
  },
  {
+  "title": "The Incredible Hulk",
+  "year": "2008",
+  "month": null,
+  "date": "2008-00",
+  "letter": "I",
+  "cover": null
+ },
+ {
   "title": "Indiana Jones and the Dial of Destiny",
   "year": "2023",
   "month": null,
@@ -1512,6 +1536,14 @@
   "cover": "https://image.tmdb.org/t/p/w200/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg"
  },
  {
+  "title": "Journey to the Center of the Earth",
+  "year": "2008",
+  "month": null,
+  "date": "2008-00",
+  "letter": "J",
+  "cover": null
+ },
+ {
   "title": "Jumanji: Welcome to the Jungle",
   "year": "2017",
   "month": null,
@@ -1614,6 +1646,14 @@
   "date": "2017-00",
   "letter": "K",
   "cover": "https://image.tmdb.org/t/p/w200/r2517Vz9EhDhj88qwbDVj8DCRZN.jpg"
+ },
+ {
+  "title": "Kung Fu Panda",
+  "year": "2008",
+  "month": null,
+  "date": "2008-00",
+  "letter": "K",
+  "cover": null
  },
  {
   "title": "Last Breath",
@@ -2240,6 +2280,14 @@
   "cover": "https://image.tmdb.org/t/p/w200/4q2hz2m8hubgvijz8Ez0T2Os2Yv.jpg"
  },
  {
+  "title": "Rambo",
+  "year": "2008",
+  "month": null,
+  "date": "2008-00",
+  "letter": "R",
+  "cover": null
+ },
+ {
   "title": "Rampage",
   "year": "2018",
   "month": null,
@@ -2478,6 +2526,30 @@
   "date": "2024-12",
   "letter": "S",
   "cover": "https://image.tmdb.org/t/p/w200/zj8ongFhtWNsVlfjOGo8pSr7PQg.jpg"
+ },
+ {
+  "title": "Spider-Man",
+  "year": "2007",
+  "month": null,
+  "date": "2007-00",
+  "letter": "S",
+  "cover": null
+ },
+ {
+  "title": "Spider-Man 2",
+  "year": "2007",
+  "month": null,
+  "date": "2007-00",
+  "letter": "S",
+  "cover": null
+ },
+ {
+  "title": "Spider-Man 3",
+  "year": "2007",
+  "month": null,
+  "date": "2007-00",
+  "letter": "S",
+  "cover": null
  },
  {
   "title": "Spider-Man: Brand New Day",
@@ -2776,6 +2848,14 @@
   "cover": "https://image.tmdb.org/t/p/w200/csle64zkLObsdRoabreC6bBRxLI.jpg"
  },
  {
+  "title": "Up",
+  "year": "2009",
+  "month": null,
+  "date": "2009-00",
+  "letter": "U",
+  "cover": null
+ },
+ {
   "title": "USS Indianapolis",
   "year": "2025",
   "month": "August",
@@ -2801,9 +2881,9 @@
  },
  {
   "title": "WALL-E",
-  "year": null,
+  "year": "2008",
   "month": null,
-  "date": null,
+  "date": "2008-00",
   "letter": "W",
   "cover": "https://image.tmdb.org/t/p/w200/1OsdhvbLNLUJEi9vqQCyhAXsaRX.jpg"
  },

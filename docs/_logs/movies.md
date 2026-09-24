@@ -14,7 +14,6 @@ month recorded.
 
 - 65
 - Anyone But You
-- Avatar
 - Avatar: The Way of Water
 - Avengers: Endgame
 - Avengers: Infinity War
@@ -25,9 +24,26 @@ month recorded.
 - Saving Private Ryan
 - The Accountant
 - Top Gun (1986)
-- WALL-E
 - Warfare
 
+
+## 2007
+- Spider-Man
+- Spider-Man 2
+- Spider-Man 3
+
+## 2008
+- WALL-E
+- Kung Fu Panda
+- The Incredible Hulk
+- Rambo
+- Journey to the Center of the Earth
+
+## 2009
+- Avatar
+- Up
+- 3 Idiots
+- The Blind Side
 
 ## 2010
 - Inception
