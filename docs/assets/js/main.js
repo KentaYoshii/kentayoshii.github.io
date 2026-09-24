@@ -345,7 +345,12 @@ function initCollectionPage() {
       return;
     }
 
-    var byName = shown.length <= RAIL_MAX_NAMES;
+    // Year labels are digits, so collapsing them to a first-character
+    // "initial" is meaningless — every one falls into a single '#' bucket
+    // and the rail vanishes (chips.length < 2 below). Always spell out
+    // years in full; author/series/letter groupings still fall back once
+    // there are too many to list by name.
+    var byName = mode === 'year' || shown.length <= RAIL_MAX_NAMES;
     var seen = Object.create(null);
     var chips = [];
     shown.forEach(function (section) {
