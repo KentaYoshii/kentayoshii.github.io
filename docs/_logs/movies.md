@@ -13,11 +13,9 @@ month recorded.
 ## Undated
 
 - 65
-- American Sniper
 - Anyone But You
 - Avatar
 - Avatar: The Way of Water
-- Avengers: Age of Ultron
 - Avengers: Endgame
 - Avengers: Infinity War
 - Civil War
@@ -27,12 +25,36 @@ month recorded.
 - Juror #2
 - Saving Private Ryan
 - The Accountant
-- The Avengers
 - Top Gun (1986)
 - Twilight (2008)
 - WALL-E
 - Warfare
 
+
+## 2014
+- Captain America: The First Avenger
+- Captain America: The Winter Soldier
+- The Imitation Game
+- Edge of Tomorrow
+- Fury
+- The Amazing Spider-Man
+- The Amazing Spider-Man 2
+- American Sniper
+- The Maze Runner
+- Maze Runner: The Scorch Trials
+- Maze Runner: The Death Cure
+- Night at the Museum
+- Night at the Museum: Battle of the Smithsonian
+- Night at the Museum: Secret of the Tomb
+
+## 2015
+- The Martian
+- The Avengers
+- Avengers: Age of Ultron
+- Ant-Man
+- Ted
+- Ted 2
+- Fantastic Four (2015)
 
 ## 2016
 - Deadpool

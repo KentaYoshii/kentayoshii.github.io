@@ -192,10 +192,26 @@
   "cover": "https://image.tmdb.org/t/p/w200/SNEoUInCa5fAgwuEBMIMBGvkkh.jpg"
  },
  {
-  "title": "American Sniper",
-  "year": null,
+  "title": "The Amazing Spider-Man",
+  "year": "2014",
   "month": null,
-  "date": null,
+  "date": "2014-00",
+  "letter": "A",
+  "cover": null
+ },
+ {
+  "title": "The Amazing Spider-Man 2",
+  "year": "2014",
+  "month": null,
+  "date": "2014-00",
+  "letter": "A",
+  "cover": null
+ },
+ {
+  "title": "American Sniper",
+  "year": "2014",
+  "month": null,
+  "date": "2014-00",
   "letter": "A",
   "cover": "https://image.tmdb.org/t/p/w200/i1U46OwMc6vlm7OoSUKfqUH615e.jpg"
  },
@@ -206,6 +222,14 @@
   "date": "2025-05",
   "letter": "A",
   "cover": "https://image.tmdb.org/t/p/w200/tFZQAuulEOtFTp0gHbVdEXwGrYe.jpg"
+ },
+ {
+  "title": "Ant-Man",
+  "year": "2015",
+  "month": null,
+  "date": "2015-00",
+  "letter": "A",
+  "cover": null
  },
  {
   "title": "Ant-Man and the Wasp",
@@ -281,17 +305,17 @@
  },
  {
   "title": "The Avengers",
-  "year": null,
+  "year": "2015",
   "month": null,
-  "date": null,
+  "date": "2015-00",
   "letter": "A",
   "cover": "https://image.tmdb.org/t/p/w200/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg"
  },
  {
   "title": "Avengers: Age of Ultron",
-  "year": null,
+  "year": "2015",
   "month": null,
-  "date": null,
+  "date": "2015-00",
   "letter": "A",
   "cover": "https://image.tmdb.org/t/p/w200/4ssDuvEDkSArWEdyBl2X5EHvYKU.jpg"
  },
@@ -478,6 +502,22 @@
   "date": "2016-00",
   "letter": "C",
   "cover": "https://image.tmdb.org/t/p/w200/rAGiXaUfPzY7CDEyNKUofk3Kw2e.jpg"
+ },
+ {
+  "title": "Captain America: The First Avenger",
+  "year": "2014",
+  "month": null,
+  "date": "2014-00",
+  "letter": "C",
+  "cover": null
+ },
+ {
+  "title": "Captain America: The Winter Soldier",
+  "year": "2014",
+  "month": null,
+  "date": "2014-00",
+  "letter": "C",
+  "cover": null
  },
  {
   "title": "Casino Royale",
@@ -736,6 +776,14 @@
   "cover": "https://image.tmdb.org/t/p/w200/b4Oe15CGLL61Ped0RAS9JpqdmCt.jpg"
  },
  {
+  "title": "Edge of Tomorrow",
+  "year": "2014",
+  "month": null,
+  "date": "2014-00",
+  "letter": "E",
+  "cover": null
+ },
+ {
   "title": "The Eight Hundred",
   "year": "2025",
   "month": "January",
@@ -832,6 +880,14 @@
   "cover": "https://image.tmdb.org/t/p/w200/3c5GNLB4yRSLBby0trHoA1DSQxQ.jpg"
  },
  {
+  "title": "Fantastic Four (2015)",
+  "year": "2015",
+  "month": null,
+  "date": "2015-00",
+  "letter": "F",
+  "cover": null
+ },
+ {
   "title": "The Fantastic Four: First Steps",
   "year": "2025",
   "month": "December",
@@ -902,6 +958,14 @@
   "date": "2026-09",
   "letter": "F",
   "cover": "https://image.tmdb.org/t/p/original/nL2f1g1cMPUsPmFWB71qHqjyVFd.jpg"
+ },
+ {
+  "title": "Fury",
+  "year": "2014",
+  "month": null,
+  "date": "2014-00",
+  "letter": "F",
+  "cover": null
  },
  {
   "title": "Gladiator",
@@ -1118,6 +1182,14 @@
   "date": "2023-00",
   "letter": "H",
   "cover": "https://image.tmdb.org/t/p/w200/mBaXZ95R2OxueZhvQbcEWy2DqyO.jpg"
+ },
+ {
+  "title": "The Imitation Game",
+  "year": "2014",
+  "month": null,
+  "date": "2014-00",
+  "letter": "I",
+  "cover": null
  },
  {
   "title": "Indiana Jones and the Dial of Destiny",
@@ -1544,6 +1616,14 @@
   "cover": "https://image.tmdb.org/t/p/w200/xVkbKwGnBVNQ122GN5bCTMyPbWz.jpg"
  },
  {
+  "title": "The Martian",
+  "year": "2015",
+  "month": null,
+  "date": "2015-00",
+  "letter": "M",
+  "cover": null
+ },
+ {
   "title": "Marty Supreme",
   "year": "2025",
   "month": "December",
@@ -1582,6 +1662,30 @@
   "date": "2025-12",
   "letter": "M",
   "cover": "https://image.tmdb.org/t/p/w200/qEWiBXJGXK28jGBAm8oFKKTB0WD.jpg"
+ },
+ {
+  "title": "The Maze Runner",
+  "year": "2014",
+  "month": null,
+  "date": "2014-00",
+  "letter": "M",
+  "cover": null
+ },
+ {
+  "title": "Maze Runner: The Death Cure",
+  "year": "2014",
+  "month": null,
+  "date": "2014-00",
+  "letter": "M",
+  "cover": null
+ },
+ {
+  "title": "Maze Runner: The Scorch Trials",
+  "year": "2014",
+  "month": null,
+  "date": "2014-00",
+  "letter": "M",
+  "cover": null
  },
  {
   "title": "The Meg",
@@ -1742,6 +1846,30 @@
   "date": "2017-00",
   "letter": "M",
   "cover": "https://image.tmdb.org/t/p/w200/7GtdJU6iAg6fjQu3E3zta3bIAQh.jpg"
+ },
+ {
+  "title": "Night at the Museum",
+  "year": "2014",
+  "month": null,
+  "date": "2014-00",
+  "letter": "N",
+  "cover": null
+ },
+ {
+  "title": "Night at the Museum: Battle of the Smithsonian",
+  "year": "2014",
+  "month": null,
+  "date": "2014-00",
+  "letter": "N",
+  "cover": null
+ },
+ {
+  "title": "Night at the Museum: Secret of the Tomb",
+  "year": "2014",
+  "month": null,
+  "date": "2014-00",
+  "letter": "N",
+  "cover": null
  },
  {
   "title": "The Northman",
@@ -2270,6 +2398,22 @@
   "date": "2023-00",
   "letter": "S",
   "cover": "https://image.tmdb.org/t/p/w200/qNBAXBIQlnOThrVvA6mA2B5ggV6.jpg"
+ },
+ {
+  "title": "Ted",
+  "year": "2015",
+  "month": null,
+  "date": "2015-00",
+  "letter": "T",
+  "cover": null
+ },
+ {
+  "title": "Ted 2",
+  "year": "2015",
+  "month": null,
+  "date": "2015-00",
+  "letter": "T",
+  "cover": null
  },
  {
   "title": "Tenet",
