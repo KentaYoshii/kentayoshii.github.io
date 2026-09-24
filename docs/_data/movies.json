@@ -197,7 +197,7 @@
   "month": null,
   "date": "2014-00",
   "letter": "A",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/jexoNYnPd6vVrmygwF6QZmWPFdu.jpg"
  },
  {
   "title": "The Amazing Spider-Man 2",
@@ -205,7 +205,7 @@
   "month": null,
   "date": "2014-00",
   "letter": "A",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/bU7nTmvmy0h3VUP01v1T2imgH6N.jpg"
  },
  {
   "title": "American Sniper",
@@ -229,7 +229,7 @@
   "month": null,
   "date": "2015-00",
   "letter": "A",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/rQRnQfUl3kfp78nCWq8Ks04vnq1.jpg"
  },
  {
   "title": "Ant-Man and the Wasp",
@@ -509,7 +509,7 @@
   "month": null,
   "date": "2014-00",
   "letter": "C",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/vSNxAJTlD0r02V9sPYpOjqDZXUK.jpg"
  },
  {
   "title": "Captain America: The Winter Soldier",
@@ -517,7 +517,7 @@
   "month": null,
   "date": "2014-00",
   "letter": "C",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/tVFRpFw3xTedgPGqxW0AOI8Qhh0.jpg"
  },
  {
   "title": "Casino Royale",
@@ -781,7 +781,7 @@
   "month": null,
   "date": "2014-00",
   "letter": "E",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/nBM9MMa2WCwvMG4IJ3eiGUdbPe6.jpg"
  },
  {
   "title": "The Eight Hundred",
@@ -885,7 +885,7 @@
   "month": null,
   "date": "2015-00",
   "letter": "F",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/cDroz5qSlP8xZ6tOpeYoPkBvKyL.jpg"
  },
  {
   "title": "The Fantastic Four: First Steps",
@@ -965,7 +965,7 @@
   "month": null,
   "date": "2014-00",
   "letter": "F",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/pfte7wdMobMF4CVHuOxyu6oqeeA.jpg"
  },
  {
   "title": "Gladiator",
@@ -1189,7 +1189,7 @@
   "month": null,
   "date": "2014-00",
   "letter": "I",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/zSqJ1qFq8NXFfi7JeIYMlzyR0dx.jpg"
  },
  {
   "title": "Indiana Jones and the Dial of Destiny",
@@ -1621,7 +1621,7 @@
   "month": null,
   "date": "2015-00",
   "letter": "M",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/5BHuvQ6p9kfc091Z8RiFNhCwL4b.jpg"
  },
  {
   "title": "Marty Supreme",
@@ -1669,7 +1669,7 @@
   "month": null,
   "date": "2014-00",
   "letter": "M",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/ode14q7WtDugFDp78fo9lCsmay9.jpg"
  },
  {
   "title": "Maze Runner: The Death Cure",
@@ -1677,7 +1677,7 @@
   "month": null,
   "date": "2014-00",
   "letter": "M",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/s8K0US4tUEoOrQ1LDh0eppuwGDx.jpg"
  },
  {
   "title": "Maze Runner: The Scorch Trials",
@@ -1685,7 +1685,7 @@
   "month": null,
   "date": "2014-00",
   "letter": "M",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/mYw7ZyejqSCPFlrT2jHZOESZDU3.jpg"
  },
  {
   "title": "The Meg",
@@ -1853,7 +1853,7 @@
   "month": null,
   "date": "2014-00",
   "letter": "N",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/pDsAAYf6Zn0yiAGJ6lYGs6hoZ4E.jpg"
  },
  {
   "title": "Night at the Museum: Battle of the Smithsonian",
@@ -1861,7 +1861,7 @@
   "month": null,
   "date": "2014-00",
   "letter": "N",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/l9yAQn6TyrA3gv5xZZkiMMoZsiw.jpg"
  },
  {
   "title": "Night at the Museum: Secret of the Tomb",
@@ -1869,7 +1869,7 @@
   "month": null,
   "date": "2014-00",
   "letter": "N",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/xwgy305K6qDs3D20xUO4OZu1HPY.jpg"
  },
  {
   "title": "The Northman",
@@ -2405,7 +2405,7 @@
   "month": null,
   "date": "2015-00",
   "letter": "T",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/1QVZXQQHCEIj8lyUhdBYd2qOYtq.jpg"
  },
  {
   "title": "Ted 2",
@@ -2413,7 +2413,7 @@
   "month": null,
   "date": "2015-00",
   "letter": "T",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/38C91I7Xft0gyY7BITm8i4yvuRb.jpg"
  },
  {
   "title": "Tenet",
