@@ -20,16 +20,48 @@ month recorded.
 - Avengers: Infinity War
 - Civil War
 - Gladiator
-- Gravity
 - Jurassic Park
 - Juror #2
 - Saving Private Ryan
 - The Accountant
 - Top Gun (1986)
-- Twilight (2008)
 - WALL-E
 - Warfare
 
+
+## 2010
+- Inception
+- Despicable Me
+- Alice in Wonderland
+
+## 2011
+- Thor
+- Thor: The Dark World
+- Cars
+- Cars 2
+- Cars 3
+- The Green Mile
+
+## 2012
+- Battleship
+- Twilight (2008)
+- The Twilight Saga: New Moon
+- The Twilight Saga: Eclipse
+- The Twilight Saga: Breaking Dawn - Part 1
+- The Twilight Saga: Breaking Dawn - Part 2
+
+## 2013
+- Iron Man
+- Iron Man 2
+- Iron Man 3
+- Gravity
+- World War Z
+- Frozen
+- Pacific Rim
+- Captain Phillips
+- G.I. Joe: Rise of Cobra
+- G.I. Joe: Retaliation
+- 47 Ronin
 
 ## 2014
 - Captain America: The First Avenger
