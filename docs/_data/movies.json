@@ -376,6 +376,14 @@
   "cover": "https://image.tmdb.org/t/p/original/zTd7UJ0PHInHw43YVFciWDSCu54.jpg"
  },
  {
+  "title": "Bakuman",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "B",
+  "cover": null
+ },
+ {
   "title": "Batman v Superman: Dawn of Justice",
   "year": "2016",
   "month": null,
@@ -744,6 +752,22 @@
   "cover": "https://image.tmdb.org/t/p/w200/3E53WEZJqP6aM84D8CckXx4pIHw.jpg"
  },
  {
+  "title": "Death Note (2006)",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "D",
+  "cover": null
+ },
+ {
+  "title": "Death Note: The Last Name",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "D",
+  "cover": null
+ },
+ {
   "title": "The Death of Robin Hood (2026)",
   "year": "2026",
   "month": "September",
@@ -782,6 +806,14 @@
   "date": "2010-00",
   "letter": "D",
   "cover": "https://image.tmdb.org/t/p/w200/b1BT309QWjtFUlJPLmXmrcHOWEL.jpg"
+ },
+ {
+  "title": "Detective Conan (movie series)",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "D",
+  "cover": null
  },
  {
   "title": "Devotion",
@@ -944,6 +976,14 @@
   "cover": "https://image.tmdb.org/t/p/w200/9qVzb6qDdh5ni76bLAPHAZDNHv4.jpg"
  },
  {
+  "title": "The Eternal Zero",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "E",
+  "cover": null
+ },
+ {
   "title": "Everything Everywhere All at Once",
   "year": "2022",
   "month": null,
@@ -1096,6 +1136,22 @@
   "cover": "https://image.tmdb.org/t/p/w200/pfte7wdMobMF4CVHuOxyu6oqeeA.jpg"
  },
  {
+  "title": "Gantz (2011)",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "G",
+  "cover": null
+ },
+ {
+  "title": "Gantz: Perfect Answer",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "G",
+  "cover": null
+ },
+ {
   "title": "Ghostbusters",
   "year": null,
   "month": null,
@@ -1158,6 +1214,14 @@
   "date": "2021-00",
   "letter": "G",
   "cover": "https://image.tmdb.org/t/p/w200/pgqgaUx1cJb5oZQQ5v0tNARCeBp.jpg"
+ },
+ {
+  "title": "Gokusen: The Movie",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "G",
+  "cover": null
  },
  {
   "title": "GoldenEye",
@@ -1670,6 +1734,22 @@
   "date": null,
   "letter": "J",
   "cover": "https://image.tmdb.org/t/p/w200/ugQkpGajKFQ8eyOEhGheR0HfWQ.jpg"
+ },
+ {
+  "title": "Kaiji",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "K",
+  "cover": null
+ },
+ {
+  "title": "Kaiji 2",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "K",
+  "cover": null
  },
  {
   "title": "The Karate Kid",
@@ -2192,6 +2272,14 @@
   "cover": "https://image.tmdb.org/t/p/w200/7GtdJU6iAg6fjQu3E3zta3bIAQh.jpg"
  },
  {
+  "title": "Naruto (movies)",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "N",
+  "cover": null
+ },
+ {
   "title": "The Next Karate Kid",
   "year": null,
   "month": null,
@@ -2302,6 +2390,14 @@
   "date": "2026-07",
   "letter": "O",
   "cover": "https://image.tmdb.org/t/p/w200/lbBWwxBht4JFP5PsuJ5onpMqugW.jpg"
+ },
+ {
+  "title": "One Piece (movies)",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "O",
+  "cover": null
  },
  {
   "title": "On Her Majesty's Secret Service",
@@ -2624,6 +2720,46 @@
   "cover": "https://image.tmdb.org/t/p/w200/GTAUOhO4BN0peJVvxGEQydJvUO.jpg"
  },
  {
+  "title": "Rurouni Kenshin (2012)",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "R",
+  "cover": null
+ },
+ {
+  "title": "Rurouni Kenshin: Kyoto Inferno",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "R",
+  "cover": null
+ },
+ {
+  "title": "Rurouni Kenshin: The Beginning",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "R",
+  "cover": null
+ },
+ {
+  "title": "Rurouni Kenshin: The Final",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "R",
+  "cover": null
+ },
+ {
+  "title": "Rurouni Kenshin: The Legend Ends",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "R",
+  "cover": null
+ },
+ {
   "title": "Saving Private Ryan",
   "year": "2001",
   "month": null,
@@ -2792,6 +2928,14 @@
   "cover": "https://image.tmdb.org/t/p/w200/3ZxHKFxMYvAko680DsRgAZKWcLi.jpg"
  },
  {
+  "title": "Summer Wars",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "S",
+  "cover": null
+ },
+ {
   "title": "Superman",
   "year": "2025",
   "month": "December",
@@ -2830,6 +2974,22 @@
   "date": "2020-00",
   "letter": "T",
   "cover": "https://image.tmdb.org/t/p/w200/aCIFMriQh8rvhxpN1IWGgvH0Tlg.jpg"
+ },
+ {
+  "title": "Thermae Romae",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "T",
+  "cover": null
+ },
+ {
+  "title": "Thermae Romae II",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "T",
+  "cover": null
  },
  {
   "title": "Thor",
@@ -3158,6 +3318,14 @@
   "date": "2025-05",
   "letter": "W",
   "cover": "https://image.tmdb.org/t/p/w200/h5KVPn1P74eCvXDqMeLoXvb1yiX.jpg"
+ },
+ {
+  "title": "Wolf Children",
+  "year": null,
+  "month": null,
+  "date": null,
+  "letter": "W",
+  "cover": null
  },
  {
   "title": "Wolfs",

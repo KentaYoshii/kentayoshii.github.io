@@ -215,8 +215,8 @@
   ]
  },
  "movies": {
-  "total": 404,
-  "films": 401,
+  "total": 425,
+  "films": 422,
   "shows": 3,
   "by_year": [
    {
@@ -1597,6 +1597,6 @@
    "label": "December 2025",
    "count": 21
   },
-  "undated": 206
+  "undated": 227
  }
 }

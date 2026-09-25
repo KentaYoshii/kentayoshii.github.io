@@ -17,9 +17,16 @@ month recorded.
 - Avatar: The Way of Water
 - Avengers: Endgame
 - Avengers: Infinity War
+- Bakuman
 - Civil War
+- Death Note (2006)
+- Death Note: The Last Name
+- Detective Conan (movie series)
+- Gantz (2011)
+- Gantz: Perfect Answer
 - Ghostbusters
 - Ghostbusters II
+- Gokusen: The Movie
 - Home Alone
 - Home Alone 2
 - Home Alone 3
@@ -27,10 +34,21 @@ month recorded.
 - Jaws
 - Jurassic Park
 - Juror #2
+- Kaiji
+- Kaiji 2
 - Men in Black
 - Men in Black II
 - Men in Black 3
+- Naruto (movies)
+- One Piece (movies)
+- Rurouni Kenshin (2012)
+- Rurouni Kenshin: Kyoto Inferno
+- Rurouni Kenshin: The Legend Ends
+- Rurouni Kenshin: The Final
+- Rurouni Kenshin: The Beginning
+- Summer Wars
 - The Accountant
+- The Eternal Zero
 - The Karate Kid
 - The Karate Kid Part II
 - The Karate Kid Part III
@@ -38,8 +56,11 @@ month recorded.
 - The Next Karate Kid
 - The Shawshank Redemption
 - The Truman Show
+- Thermae Romae
+- Thermae Romae II
 - Top Gun (1986)
 - Warfare
+- Wolf Children
 
 
 ## 2001
