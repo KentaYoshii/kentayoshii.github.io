@@ -1134,8 +1134,19 @@ body,
   // open/close) would just be a second disclosure nested inside the first.
   // Drop the toggle and let nav-more-menu sit in the plain flow instead, so
   // it reads as the tail of one flat list like everything above it.
-  .nav-more-toggle {
+  //
+  // Scoped under .site-nav on purpose. The toggle is also a .page-link, and
+  // minima's own mobile rule `.site-nav .page-link { display: block }` beats a
+  // bare `.nav-more-toggle` on specificity -- which left a dead "More" button
+  // in the phone menu, sitting above links it had no effect on.
+  .site-nav .nav-more-toggle {
     display: none;
+  }
+
+  // An inline-block wrapper reserves a line of the nav's 64.8px line-height
+  // even with the toggle hidden, which showed up as a blank gap above Posts.
+  .nav-more {
+    display: block;
   }
 
   .nav-more-menu {
@@ -1146,6 +1157,12 @@ body,
     background: none;
     border: none;
     box-shadow: none;
+  }
+
+  // Match minima's mobile .page-link rather than the desktop dropdown's roomier
+  // padding, so Posts and Stats line up with the links above them.
+  .nav-more-menu .page-link {
+    padding: 5px 10px;
   }
 
   // No sticky bar on a phone. Even trimmed to two rows it costs a sixth of
@@ -2098,6 +2115,15 @@ a.parks-map-pin {
       background-color: lighten($dark-surface, 5%);
       border-color: $dark-border;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    // The dark .nav-more-menu rule above styles the desktop dropdown as a
+    // floating box, and out-ranks the plain-list reset in the light-theme
+    // mobile block. On a phone the list sits inside the menu panel, so undo it.
+    .nav-more-menu {
+      background: none;
+      border: none;
+      box-shadow: none;
     }
   }
 
