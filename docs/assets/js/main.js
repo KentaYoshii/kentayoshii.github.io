@@ -1275,7 +1275,48 @@ function initGallery() {
     });
   }
 
+  // The checklist ships complete and is collapsed here rather than in Liquid,
+  // so the full sixty-three survive with JavaScript off. Visited parks are
+  // what someone came to look at; the rest are a long grey tail -- two thirds
+  // of the page on a phone -- and stay one tap away.
+  function initChecklistToggle() {
+    var section = document.querySelector('[data-checklist]');
+    if (!section) return;
+    var hidden = Array.prototype.slice.call(
+      section.querySelectorAll('.park-tile[data-unvisited]')
+    );
+    if (!hidden.length) return;
+
+    var expanded = false;
+    var button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'checklist-toggle';
+
+    function render() {
+      hidden.forEach(function (tile) { tile.hidden = !expanded; });
+      button.textContent = expanded
+        ? 'Hide the ' + hidden.length + ' not visited'
+        : 'Show the ' + hidden.length + ' not visited';
+      button.setAttribute('aria-expanded', String(expanded));
+    }
+
+    button.addEventListener('click', function () {
+      expanded = !expanded;
+      render();
+      // Collapsing from the bottom of a long list would otherwise leave the
+      // reader somewhere far below the content that remains.
+      if (!expanded) {
+        var top = section.getBoundingClientRect().top;
+        if (top < 0) section.scrollIntoView({block: 'start'});
+      }
+    });
+
+    render();
+    section.appendChild(button);
+  }
+
   buildTagFilter();
   applyTagFilter();
   initMapPins();
+  initChecklistToggle();
 }

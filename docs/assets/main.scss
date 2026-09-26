@@ -1669,6 +1669,27 @@ a.parks-map-pin {
   fill: rgba(168, 99, 44, 0.18);
 }
 
+// On a phone the whole country is about 330px across, so a marker is 3px and
+// its tap target 8px -- against the 24px WCAG asks for -- and the closest two
+// parks land 2.2px apart. No marker size separates sixty-one of them at that
+// width, so rather than offer a target that cannot be hit, the map becomes a
+// picture: bigger markers so the pattern reads, and no pointer interaction.
+// The checklist directly below lists every park by name at full tap size, and
+// is the way in on a phone.
+//
+// pointer-events only stops pointers. The markers keep their aria-labels, and
+// a keyboard (or a switch device) can still focus and follow the visited ones.
+@media screen and (max-width: $on-palm) {
+  .parks-map-pin {
+    pointer-events: none;
+  }
+
+  .parks-map-dot {
+    r: 7;
+    stroke-width: 2;
+  }
+}
+
 .parks-map figcaption {
   margin-top: 6px;
   font-size: 12px;
@@ -1679,6 +1700,32 @@ a.parks-map-pin {
 @media (prefers-reduced-motion: reduce) {
   .parks-map-dot {
     transition: none;
+  }
+}
+
+// Added by initChecklistToggle() in main.js, so it never appears without the
+// script that drives it.
+.checklist-toggle {
+  display: block;
+  margin: 14px auto 0;
+  padding: 7px 16px;
+  font-family: $base-font-family;
+  font-size: 13px;
+  line-height: 1;
+  color: $grey-color-dark;
+  background: none;
+  border: 1px solid $grey-color-light;
+  border-radius: 999px;
+  cursor: pointer;
+
+  &:hover {
+    color: $brand-color;
+    border-color: $brand-color;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $brand-color;
+    outline-offset: 2px;
   }
 }
 
@@ -2560,6 +2607,16 @@ a.parks-map-pin {
 
   .parks-map figcaption {
     color: $dark-muted;
+  }
+
+  .checklist-toggle {
+    color: $dark-muted;
+    border-color: $dark-border;
+
+    &:hover {
+      color: $dark-brand;
+      border-color: $dark-brand;
+    }
   }
 
   // Each park's colour comes in two versions. The light one is too dark to

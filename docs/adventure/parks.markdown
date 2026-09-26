@@ -133,12 +133,20 @@ photographed park in the line below.
   labels, so this stays the part you actually read names and years off. A
   visited park that has photographs links down to them.
   {%- endcomment -%}
-  <section class="park-section">
+  {%- comment -%}
+  Every park is rendered, and main.js collapses the unvisited ones behind a
+  toggle. Doing it that way round rather than in Liquid means the full list is
+  in the HTML: it still reads, prints and searches complete with JavaScript
+  off, and the forty-eight tiles that are mostly grey stop being two thirds of
+  the page on a phone.
+  {%- endcomment -%}
+  <section class="park-section" data-checklist>
     <h2>The checklist</h2>
     <div class="park-grid">
       {%- for item in checklist.items -%}
       {%- assign slug = item.name | slugify -%}
-      <div class="park-tile{% if item.visited %} is-visited{% endif %}" id="chk-{{ slug }}">
+      <div class="park-tile{% if item.visited %} is-visited{% endif %}" id="chk-{{ slug }}"
+           {% unless item.visited %}data-unvisited{% endunless %}>
         {%- if photographed contains item.name -%}
         <a class="park-name" href="#park-{{ slug }}">{{ item.name }}</a>
         {%- else -%}
