@@ -972,6 +972,7 @@ function initGallery() {
   lightbox.innerHTML =
     '<button type="button" class="lightbox-close" aria-label="Close">&times;</button>' +
     '<button type="button" class="lightbox-prev" aria-label="Previous photo">&lsaquo;</button>' +
+    '<div class="lightbox-spinner" aria-hidden="true"></div>' +
     '<img class="lightbox-image" alt="">' +
     '<button type="button" class="lightbox-next" aria-label="Next photo">&rsaquo;</button>' +
     '<div class="lightbox-caption">' +
@@ -991,11 +992,55 @@ function initGallery() {
   var lastFocused = null;
   var stripTiles = null;
 
+  // While the 2000px copy downloads, the previous photo is hidden and a
+  // spinner shown, so the caption never sits under the wrong picture. The
+  // spinner itself waits ~150ms (a CSS transition delay) before appearing, so
+  // a photo that is already cached does not flash one.
+  //
+  // One listener on the element is enough to avoid races: assigning a new src
+  // aborts the previous load, and an aborted load fires neither load nor
+  // error, so whatever arrives always belongs to the photo now showing.
+  function setLoading(on) {
+    lightbox.classList.toggle('is-loading', on);
+    lightboxImage.setAttribute('aria-busy', on ? 'true' : 'false');
+  }
+  lightboxImage.addEventListener('load', function () { setLoading(false); });
+  // A failed load still ends the wait. The alt text is what remains.
+  lightboxImage.addEventListener('error', function () { setLoading(false); });
+
+  // Strip thumbnails load only once they scroll into the strip itself.
+  //
+  // Two cheaper approaches were tried and measured first. CSS background
+  // images are fetched for every element in the document, visible or not, so
+  // opening the lightbox downloaded every thumbnail the grid had not reached
+  // yet: 51 files, about 5 MB, all competing with the one photo being opened.
+  // Native loading="lazy" still fetched about 40 of them, because the browser
+  // measures from the viewport with a margin of 1250px or more, and a strip
+  // of 54px items fits dozens inside that. An observer rooted on the strip
+  // itself loads what is actually in view, plus a few items either side.
+  var stripObserver = ('IntersectionObserver' in window)
+    ? new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          var img = entry.target;
+          img.src = img.getAttribute('data-src');
+          stripObserver.unobserve(img);
+        });
+      }, {root: strip, rootMargin: '0px 240px'})
+    : null;
+
+  function watchStripImage(img) {
+    // No observer support: load it outright. Costs data, but works.
+    if (stripObserver) stripObserver.observe(img);
+    else img.src = img.getAttribute('data-src');
+  }
+
   // The strip mirrors whatever prev/next currently walks, so it is an honest
   // position indicator rather than a second, differently-scoped list. With a
   // park filter on that is the park; with no filter it is everything.
   function buildStrip(set) {
     stripTiles = set;
+    if (stripObserver) stripObserver.disconnect();
     strip.textContent = '';
     // Nothing to navigate between, so the strip would only take up room the
     // photo could use.
@@ -1009,9 +1054,16 @@ function initGallery() {
       var b = document.createElement('button');
       b.type = 'button';
       b.className = 'lightbox-strip-item';
-      // Reuses the grid thumbnail, which is already decoded and in cache, so
-      // opening the lightbox costs no extra requests.
-      if (thumb) b.style.backgroundImage = 'url("' + thumb.src + '")';
+      // The thumbnail URL is parked in data-src and only promoted to src once
+      // the item scrolls into the strip -- see stripObserver below.
+      if (thumb) {
+        var img = document.createElement('img');
+        img.decoding = 'async';
+        img.alt = '';
+        img.setAttribute('data-src', thumb.getAttribute('src'));
+        b.appendChild(img);
+        watchStripImage(img);
+      }
       b.setAttribute('aria-label', tile.getAttribute('data-caption') || 'Photo');
       b.addEventListener('click', function () { show(index); });
       strip.appendChild(b);
@@ -1051,7 +1103,15 @@ function initGallery() {
     currentIndex = (index + set.length) % set.length;
     var tile = set[currentIndex];
     markStrip(currentIndex);
-    lightboxImage.src = tile.getAttribute('data-image');
+    var next = tile.getAttribute('data-image');
+    // Reopening the photo already loaded fires no load event, so only enter
+    // the loading state when the source actually changes -- and leave it at
+    // once if the browser had the file in memory and finished synchronously.
+    if (lightboxImage.getAttribute('src') !== next) {
+      setLoading(true);
+      lightboxImage.src = next;
+      if (lightboxImage.complete && lightboxImage.naturalWidth > 0) setLoading(false);
+    }
     lightboxImage.alt = tile.getAttribute('data-caption') || '';
     captionText.textContent = tile.getAttribute('data-caption') || '';
     // The park is dropped when it would only repeat the caption, which is

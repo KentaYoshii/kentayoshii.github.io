@@ -1868,6 +1868,68 @@ a.parks-map-pin {
   max-height: 78vh;
   object-fit: contain;
   border-radius: 4px;
+  transition: opacity 0.25s ease;
+}
+
+// Set by main.js while the 2000px copy downloads. The previous photo is
+// hidden rather than left showing under the next photo's caption.
+.gallery-lightbox.is-loading .lightbox-image {
+  opacity: 0;
+}
+
+// Centred on the viewport, which is where the photo will appear: the
+// lightbox centres the image, and the caption and strip are absolutely
+// positioned so they do not shift it.
+.lightbox-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 36px;
+  height: 36px;
+  margin: -18px 0 0 -18px;
+  border: 3px solid rgba(255, 248, 236, 0.22);
+  border-top-color: #fff8ec;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+// The delay is what keeps a cached photo from flashing the spinner: most
+// loads that are going to be instant finish inside it. It is an animation
+// rather than a transition because the first load starts in the same frame
+// the lightbox goes from display: none to visible, and transitions do not run
+// across that -- the spinner would appear at once, delay ignored.
+.gallery-lightbox.is-loading .lightbox-spinner {
+  animation: lightbox-spinner-in 0.2s ease 0.15s both,
+             lightbox-spin 0.8s linear infinite;
+}
+
+@keyframes lightbox-spinner-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes lightbox-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// Slowed rather than removed: something still has to say the photo is on its
+// way, and a slow turn reads as that without the motion of a fast one.
+@media (prefers-reduced-motion: reduce) {
+  .lightbox-image {
+    transition: none;
+  }
+
+  .gallery-lightbox.is-loading .lightbox-spinner {
+    animation: lightbox-spinner-in 0.2s ease 0.15s both,
+               lightbox-spin 2.4s linear infinite;
+  }
 }
 
 @media screen and (min-width: 1223px) {
@@ -1974,12 +2036,19 @@ a.parks-map-pin {
   padding: 0;
   border: none;
   border-radius: 3px;
+  // Stands in for the thumbnail until its lazy <img> arrives.
   background-color: rgba(255, 248, 236, 0.15);
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
   cursor: pointer;
   opacity: 0.45;
   transition: opacity 0.15s ease;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
   &:hover {
     opacity: 0.8;
