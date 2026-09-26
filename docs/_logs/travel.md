@@ -31,3 +31,4 @@ ALIASES for the handful that need an explicit mapping.
 - Rocky Mountains
 - Olympic
 - Mount Rainier
+- Glacier
