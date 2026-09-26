@@ -37,7 +37,12 @@ and then what they looked like.
 {%- assign photos = site.data.gallery -%}
 {%- assign render = site.data.gallery_render -%}
 {%- assign map = site.data.parks_map -%}
-{%- assign photographed = photos | map: "park" | uniq -%}
+{%- comment -%}
+where_exp first: a photo with no park (the Elsewhere section) maps to nil, and
+uniq keeps that nil as an entry of its own, which counted as a sixteenth
+photographed park in the line below.
+{%- endcomment -%}
+{%- assign photographed = photos | where_exp: "photo", "photo.park" | map: "park" | uniq -%}
 
 <div class="wide-section"><div class="wide-inner">
 <div class="gallery-page travel-page">
