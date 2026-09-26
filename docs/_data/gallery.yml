@@ -341,6 +341,18 @@
   tags: [summit, forest]
 
 # Big Bend -- Texas, visited 2025
+- image: IMG_2415.jpeg
+  park: Big Bend
+  location: Texas
+  date: "2025-12-06"
+  caption: Sunset on the high desert east of Marfa
+  tags: [sunset, desert]
+- image: IMG_2431.jpeg
+  park: Big Bend
+  location: Texas
+  date: "2025-12-07"
+  caption: Before dawn, north of Study Butte
+  tags: [night, desert]
 - image: IMG_2447.jpeg
   park: Big Bend
   location: Texas
@@ -377,6 +389,12 @@
   date: "2025-12-09"
   caption: Looking out through the pour-off
   tags: [canyon, desert]
+- image: IMG_2593.jpeg
+  park: Big Bend
+  location: Texas
+  date: "2025-12-10"
+  caption: Sunrise over Terlingua
+  tags: [sunrise, desert]
 - image: IMG_2631.jpeg
   park: Big Bend
   location: Texas
@@ -570,18 +588,3 @@
   date: "2025-04-28"
   caption: Antelope Canyon
   tags: [slot canyon, sandstone]
-- image: IMG_2415.jpeg
-  location: Texas
-  date: "2025-12-06"
-  caption: Sunset on the high desert east of Marfa
-  tags: [sunset, desert]
-- image: IMG_2431.jpeg
-  location: Texas
-  date: "2025-12-07"
-  caption: Before dawn, north of Study Butte
-  tags: [night, desert]
-- image: IMG_2593.jpeg
-  location: Texas
-  date: "2025-12-10"
-  caption: Sunrise over Terlingua
-  tags: [sunrise, desert]

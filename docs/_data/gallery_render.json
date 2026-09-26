@@ -1,9 +1,9 @@
 {
   "parks": {
     "Big Bend": {
-      "accent": "#3d5160",
-      "accent_dark": "#64869e",
-      "colour": "#3d5160"
+      "accent": "#384b60",
+      "accent_dark": "#5c7b9e",
+      "colour": "#384b60"
     },
     "Carlsbad Caverns": {
       "accent": "#4c3b28",
