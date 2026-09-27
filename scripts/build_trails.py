@@ -152,8 +152,10 @@ def summarise(trails):
 def main():
     trails = parse_log()
     # Most recent first — unlike Books and Movies, which are browsed
-    # alphabetically, a trail log reads as a diary.
-    trails.sort(key=lambda t: (t['date'], t['name']), reverse=True)
+    # alphabetically, a trail log reads as a diary. By date only: the sort is
+    # stable (reverse=True included), so hikes within a month keep the order
+    # they are written in the log, which keeps one park's hikes together.
+    trails.sort(key=lambda t: t['date'], reverse=True)
 
     payload = {'trails': trails, 'summary': summarise(trails)}
     os.makedirs(DATA, exist_ok=True)

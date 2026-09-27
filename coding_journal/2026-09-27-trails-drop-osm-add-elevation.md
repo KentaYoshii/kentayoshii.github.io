@@ -15,14 +15,16 @@
 - `tests/`: OSM/cache/retry tests removed; elevation parsing and summary tests added.
 - `docs/_logs/trails.md`: 12 hikes logged — Yellowstone ×7 (Oct 2025), Grand Teton ×3 (Sep 2025), Angels Landing (Apr 2025), Kīlauea Iki (Apr 2022). Months taken from the parks' photo EXIF dates. Elevations from the user except Angels Landing (NPS 1,488 ft); Fairy Falls distance from NPS (5.4 mi).
 
+- `build_trails.py` second change: sort by date only (stable), so hikes within a month keep log order and stay grouped by park.
+
 ## Verification
 - `python3 scripts/build.py`: only `trails.json` changed in `docs/_data`.
-- `python3 -m pytest`: 364 passed.
+- `python3 -m pytest`: 365 passed.
 - Jekyll not installed here; page not rendered locally. CI `site` job covers Liquid.
 
 ## TODOs
-- Distance and gain pending for Upper Geyser Basin + Observation Point Loop, Mammoth Hot Springs Trail, Artist Point via South Rim.
-- Continue logging trails park by park (done: Hawaiʻi Volcanoes, Zion, Grand Teton, Yellowstone).
+- Glacier, Rocky Mountain and Big Bend trails not logged yet.
+- Second batch (23 hikes: Olympic, Rainier, Haleakalā, Guadalupe, Carlsbad, White Sands, Yosemite, Grand Canyon) and the within-month sort change are uncommitted after 96778b3.
 
 ## Learnings
 - NPS trail stats live on `https://www.nps.gov/thingstodo/<park>-trail-<name>.htm`; links are listed on `/tripideas/day-hikes-in-the-<area>-area.htm`. Grand Teton's hiking page loads via JS. AllTrails returns 403 to scripts.

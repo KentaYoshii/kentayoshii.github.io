@@ -1,37 +1,235 @@
 {
  "trails": [
   {
-   "name": "Upper Geyser Basin and Old Faithful Observation Point Loop",
-   "place": "Yellowstone National Park, WY",
-   "distance_mi": null,
-   "distance_text": "",
-   "elevation_ft": null,
-   "elevation_text": "",
-   "year": "2025",
-   "month": "October",
-   "date": "2025-10"
+   "name": "Hoh River Trail",
+   "place": "Olympic National Park, WA",
+   "distance_mi": 11.25,
+   "distance_text": "11.25 mi",
+   "elevation_ft": 400,
+   "elevation_text": "400 ft",
+   "year": "2026",
+   "month": "July",
+   "date": "2026-07"
   },
   {
-   "name": "Seven Mile Hole",
-   "place": "Yellowstone National Park, WY",
-   "distance_mi": 10.3,
-   "distance_text": "10.3 mi",
-   "elevation_ft": 2083,
-   "elevation_text": "2,083 ft",
-   "year": "2025",
-   "month": "October",
-   "date": "2025-10"
+   "name": "Hall of Mosses Trail",
+   "place": "Olympic National Park, WA",
+   "distance_mi": 1.4,
+   "distance_text": "1.4 mi",
+   "elevation_ft": 82,
+   "elevation_text": "82 ft",
+   "year": "2026",
+   "month": "July",
+   "date": "2026-07"
   },
   {
-   "name": "Mammoth Hot Springs Trail",
-   "place": "Yellowstone National Park, MT",
-   "distance_mi": null,
-   "distance_text": "",
-   "elevation_ft": null,
-   "elevation_text": "",
+   "name": "Mount Storm King / Marymere Falls",
+   "place": "Olympic National Park, WA",
+   "distance_mi": 5.54,
+   "distance_text": "5.54 mi",
+   "elevation_ft": 2343,
+   "elevation_text": "2,343 ft",
+   "year": "2026",
+   "month": "July",
+   "date": "2026-07"
+  },
+  {
+   "name": "Sol Duc Falls Trail",
+   "place": "Olympic National Park, WA",
+   "distance_mi": 1.8,
+   "distance_text": "1.8 mi",
+   "elevation_ft": 262,
+   "elevation_text": "262 ft",
+   "year": "2026",
+   "month": "July",
+   "date": "2026-07"
+  },
+  {
+   "name": "Hurricane Hill",
+   "place": "Olympic National Park, WA",
+   "distance_mi": 3.2,
+   "distance_text": "3.2 mi",
+   "elevation_ft": 903,
+   "elevation_text": "903 ft",
+   "year": "2026",
+   "month": "July",
+   "date": "2026-07"
+  },
+  {
+   "name": "Cape Flattery Trail",
+   "place": "Olympic National Park, WA",
+   "distance_mi": 1.3,
+   "distance_text": "1.3 mi",
+   "elevation_ft": 232,
+   "elevation_text": "232 ft",
+   "year": "2026",
+   "month": "July",
+   "date": "2026-07"
+  },
+  {
+   "name": "Quinault Loop",
+   "place": "Olympic National Park, WA",
+   "distance_mi": 4.5,
+   "distance_text": "4.5 mi",
+   "elevation_ft": 394,
+   "elevation_text": "394 ft",
+   "year": "2026",
+   "month": "July",
+   "date": "2026-07"
+  },
+  {
+   "name": "Second Beach",
+   "place": "Olympic National Park, WA",
+   "distance_mi": 2.2,
+   "distance_text": "2.2 mi",
+   "elevation_ft": 291,
+   "elevation_text": "291 ft",
+   "year": "2026",
+   "month": "July",
+   "date": "2026-07"
+  },
+  {
+   "name": "Maple Glade Nature Trail",
+   "place": "Olympic National Park, WA",
+   "distance_mi": 1.0,
+   "distance_text": "1 mi",
+   "elevation_ft": 20,
+   "elevation_text": "20 ft",
+   "year": "2026",
+   "month": "July",
+   "date": "2026-07"
+  },
+  {
+   "name": "Skyline Loop / Reflection Lake / Pinnacle Peak",
+   "place": "Mount Rainier National Park, WA",
+   "distance_mi": 12.4,
+   "distance_text": "12.4 mi",
+   "elevation_ft": 3661,
+   "elevation_text": "3,661 ft",
+   "year": "2026",
+   "month": "July",
+   "date": "2026-07"
+  },
+  {
+   "name": "Bench and Snow Lakes Trail",
+   "place": "Mount Rainier National Park, WA",
+   "distance_mi": 2.3,
+   "distance_text": "2.3 mi",
+   "elevation_ft": 470,
+   "elevation_text": "470 ft",
+   "year": "2026",
+   "month": "July",
+   "date": "2026-07"
+  },
+  {
+   "name": "Mount Fremont Lookout and Burroughs Mountain Loop",
+   "place": "Mount Rainier National Park, WA",
+   "distance_mi": 10.92,
+   "distance_text": "10.92 mi",
+   "elevation_ft": 2740,
+   "elevation_text": "2,740 ft",
+   "year": "2026",
+   "month": "July",
+   "date": "2026-07"
+  },
+  {
+   "name": "Sliding Sands Trail",
+   "place": "Haleakalā National Park, HI",
+   "distance_mi": 18.2,
+   "distance_text": "18.2 mi",
+   "elevation_ft": 4140,
+   "elevation_text": "4,140 ft",
+   "year": "2026",
+   "month": "April",
+   "date": "2026-04"
+  },
+  {
+   "name": "Smith Spring and Manzanita Spring Loop",
+   "place": "Guadalupe Mountains National Park, TX",
+   "distance_mi": 2.53,
+   "distance_text": "2.53 mi",
+   "elevation_ft": 387,
+   "elevation_text": "387 ft",
    "year": "2025",
-   "month": "October",
-   "date": "2025-10"
+   "month": "December",
+   "date": "2025-12"
+  },
+  {
+   "name": "McKittrick Canyon to The Notch",
+   "place": "Guadalupe Mountains National Park, TX",
+   "distance_mi": 18.0,
+   "distance_text": "18 mi",
+   "elevation_ft": 3200,
+   "elevation_text": "3,200 ft",
+   "year": "2025",
+   "month": "December",
+   "date": "2025-12"
+  },
+  {
+   "name": "Hunter Peak via Bear Canyon",
+   "place": "Guadalupe Mountains National Park, TX",
+   "distance_mi": 9.09,
+   "distance_text": "9.09 mi",
+   "elevation_ft": 2703,
+   "elevation_text": "2,703 ft",
+   "year": "2025",
+   "month": "December",
+   "date": "2025-12"
+  },
+  {
+   "name": "Guadalupe Peak",
+   "place": "Guadalupe Mountains National Park, TX",
+   "distance_mi": 9.54,
+   "distance_text": "9.54 mi",
+   "elevation_ft": 3163,
+   "elevation_text": "3,163 ft",
+   "year": "2025",
+   "month": "December",
+   "date": "2025-12"
+  },
+  {
+   "name": "Devil's Hall",
+   "place": "Guadalupe Mountains National Park, TX",
+   "distance_mi": 5.5,
+   "distance_text": "5.5 mi",
+   "elevation_ft": 700,
+   "elevation_text": "700 ft",
+   "year": "2025",
+   "month": "December",
+   "date": "2025-12"
+  },
+  {
+   "name": "Natural Entrance and Big Room",
+   "place": "Carlsbad Caverns National Park, NM",
+   "distance_mi": 3.75,
+   "distance_text": "3.75 mi",
+   "elevation_ft": 750,
+   "elevation_text": "750 ft",
+   "year": "2025",
+   "month": "December",
+   "date": "2025-12"
+  },
+  {
+   "name": "Desert Nature Trail",
+   "place": "Carlsbad Caverns National Park, NM",
+   "distance_mi": 1.2,
+   "distance_text": "1.2 mi",
+   "elevation_ft": 72,
+   "elevation_text": "72 ft",
+   "year": "2025",
+   "month": "December",
+   "date": "2025-12"
+  },
+  {
+   "name": "Alkali Flat Trail",
+   "place": "White Sands National Park, NM",
+   "distance_mi": 4.3,
+   "distance_text": "4.3 mi",
+   "elevation_ft": 49,
+   "elevation_text": "49 ft",
+   "year": "2025",
+   "month": "December",
+   "date": "2025-12"
   },
   {
    "name": "Fairy Falls Trail",
@@ -45,12 +243,23 @@
    "date": "2025-10"
   },
   {
-   "name": "Dunraven Pass to Mount Washburn",
+   "name": "Upper Geyser Basin and Old Faithful Observation Point Loop",
    "place": "Yellowstone National Park, WY",
-   "distance_mi": 7.1,
-   "distance_text": "7.1 mi",
-   "elevation_ft": 1400,
-   "elevation_text": "1,400 ft",
+   "distance_mi": 4.9,
+   "distance_text": "4.9 mi",
+   "elevation_ft": 357,
+   "elevation_text": "357 ft",
+   "year": "2025",
+   "month": "October",
+   "date": "2025-10"
+  },
+  {
+   "name": "Mammoth Hot Springs Trail",
+   "place": "Yellowstone National Park, MT",
+   "distance_mi": 2.2,
+   "distance_text": "2.2 mi",
+   "elevation_ft": 321,
+   "elevation_text": "321 ft",
    "year": "2025",
    "month": "October",
    "date": "2025-10"
@@ -67,23 +276,45 @@
    "date": "2025-10"
   },
   {
-   "name": "Artist Point via South Rim Trail",
+   "name": "Seven Mile Hole",
    "place": "Yellowstone National Park, WY",
-   "distance_mi": null,
-   "distance_text": "",
-   "elevation_ft": null,
-   "elevation_text": "",
+   "distance_mi": 10.3,
+   "distance_text": "10.3 mi",
+   "elevation_ft": 2083,
+   "elevation_text": "2,083 ft",
    "year": "2025",
    "month": "October",
    "date": "2025-10"
   },
   {
-   "name": "Taggart and Bradley Lakes Loop",
+   "name": "Dunraven Pass to Mount Washburn",
+   "place": "Yellowstone National Park, WY",
+   "distance_mi": 7.1,
+   "distance_text": "7.1 mi",
+   "elevation_ft": 1400,
+   "elevation_text": "1,400 ft",
+   "year": "2025",
+   "month": "October",
+   "date": "2025-10"
+  },
+  {
+   "name": "Artist Point via South Rim Trail",
+   "place": "Yellowstone National Park, WY",
+   "distance_mi": 2.8,
+   "distance_text": "2.8 mi",
+   "elevation_ft": 300,
+   "elevation_text": "300 ft",
+   "year": "2025",
+   "month": "October",
+   "date": "2025-10"
+  },
+  {
+   "name": "Paintbrush–Cascade Canyon Loop",
    "place": "Grand Teton National Park, WY",
-   "distance_mi": 5.9,
-   "distance_text": "5.9 mi",
-   "elevation_ft": 767,
-   "elevation_text": "767 ft",
+   "distance_mi": 19.0,
+   "distance_text": "19 mi",
+   "elevation_ft": 4133,
+   "elevation_text": "4,133 ft",
    "year": "2025",
    "month": "September",
    "date": "2025-09"
@@ -100,15 +331,37 @@
    "date": "2025-09"
   },
   {
-   "name": "Paintbrush–Cascade Canyon Loop",
+   "name": "Taggart and Bradley Lakes Loop",
    "place": "Grand Teton National Park, WY",
-   "distance_mi": 19.0,
-   "distance_text": "19 mi",
-   "elevation_ft": 4133,
-   "elevation_text": "4,133 ft",
+   "distance_mi": 5.9,
+   "distance_text": "5.9 mi",
+   "elevation_ft": 767,
+   "elevation_text": "767 ft",
    "year": "2025",
    "month": "September",
    "date": "2025-09"
+  },
+  {
+   "name": "Yosemite Point",
+   "place": "Yosemite National Park, CA",
+   "distance_mi": 8.7,
+   "distance_text": "8.7 mi",
+   "elevation_ft": 3720,
+   "elevation_text": "3,720 ft",
+   "year": "2025",
+   "month": "May",
+   "date": "2025-05"
+  },
+  {
+   "name": "Bright Angel Trail to Havasupai Gardens",
+   "place": "Grand Canyon National Park, AZ",
+   "distance_mi": 9.2,
+   "distance_text": "9.2 mi",
+   "elevation_ft": 3034,
+   "elevation_text": "3,034 ft",
+   "year": "2025",
+   "month": "April",
+   "date": "2025-04"
   },
   {
    "name": "Angels Landing",
@@ -134,16 +387,20 @@
   }
  ],
  "summary": {
-  "total": 12,
-  "distance_mi": 72.1,
-  "distance_counted": 9,
-  "elevation_ft": 14561,
-  "elevation_text": "14,561",
-  "elevation_counted": 9,
+  "total": 35,
+  "distance_mi": 229.8,
+  "distance_counted": 35,
+  "elevation_ft": 49255,
+  "elevation_text": "49,255",
+  "elevation_counted": 35,
   "by_year": [
    {
+    "year": "2026",
+    "count": 13
+   },
+   {
     "year": "2025",
-    "count": 11
+    "count": 21
    },
    {
     "year": "2022",

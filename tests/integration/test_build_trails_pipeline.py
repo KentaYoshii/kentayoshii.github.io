@@ -69,6 +69,18 @@ class TestBuild:
         dates = [t['date'] for t in workspace.read()['trails']]
         assert dates == sorted(dates, reverse=True)
 
+    def test_same_month_keeps_log_order(self, workspace) -> None:
+        """Hikes in one month are shown as written, so a trip's hikes stay
+        grouped by park rather than interleaved alphabetically."""
+        workspace.write('## 2026\n### July\n'
+                        '- Sol Duc Falls — Olympic\n'
+                        '- Hoh River — Olympic\n'
+                        '- Skyline Loop — Mount Rainier\n'
+                        '- Bench Lake — Mount Rainier\n')
+        workspace.run()
+        assert [t['name'] for t in workspace.read()['trails']] == [
+            'Sol Duc Falls', 'Hoh River', 'Skyline Loop', 'Bench Lake']
+
     def test_summary_totals(self, workspace) -> None:
         workspace.write(LOG)
         workspace.run()
