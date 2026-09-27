@@ -12,7 +12,8 @@ layout: page
   {%- comment -%}
   Counts come from _data/stats.json at build time. They used to be fetched by
   downloading the whole Books and Movies pages and counting rows, which cost
-  ~178 KB of HTML to render two integers.
+  ~178 KB of HTML to render two integers. The miles come from
+  _data/trails.json, rounded: a tenth of a mile is noise at this size.
   {%- endcomment -%}
   <div class="stats-strip">
     <div class="stat-pill">
@@ -23,6 +24,13 @@ layout: page
       <span class="stat-value">{{ site.data.stats.movies.total }}</span>
       <span class="stat-label">movies &amp; shows logged</span>
     </div>
+    {%- assign trails = site.data.trails.summary -%}
+    {%- if trails.distance_mi > 0 %}
+    <div class="stat-pill">
+      <span class="stat-value">{{ trails.distance_mi | round }}</span>
+      <span class="stat-label">miles hiked</span>
+    </div>
+    {%- endif %}
   </div>
 </section>
 
