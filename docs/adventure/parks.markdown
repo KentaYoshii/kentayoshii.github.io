@@ -12,7 +12,7 @@ One subject, one page. This used to be split: the checklist lived on
 linked from the home page at all. Both halves were about the same sixty-three
 parks.
 
-Four data files meet here:
+Five data files meet here:
 
   _data/travel.json       the checklist -- all 63 parks and which are visited,
                           generated from _logs/travel.md.
@@ -25,6 +25,8 @@ Four data files meet here:
   _data/gallery_render.json  written by scripts/build_gallery_thumbs.py:
                           thumbnail sizes, blur-up placeholders, and a colour
                           per park measured from its own photographs.
+  _data/trails.json       written by scripts/build_trails.py: hike totals per
+                          park, linked to that park on /adventure/trails/.
 
 They join on the park name, which is why gallery.yml's `park` has to match
 travel.json exactly.
@@ -37,6 +39,8 @@ and then what they looked like.
 {%- assign photos = site.data.gallery -%}
 {%- assign render = site.data.gallery_render -%}
 {%- assign map = site.data.parks_map -%}
+{%- assign hiked = site.data.trails.parks -%}
+{%- assign trails_url = '/adventure/trails/' | relative_url -%}
 {%- comment -%}
 where_exp first: a photo with no park (the Elsewhere section) maps to nil, and
 uniq keeps that nil as an entry of its own, which counted as a sixteenth
@@ -158,6 +162,12 @@ photographed park in the line below.
           {%- if item.month %}{{ item.month | slice: 0, 3 }} {% endif -%}{{ item.year }}
         </span>
         {%- endif -%}
+        {%- assign hikes = hiked[item.name] -%}
+        {%- if hikes -%}
+        <a class="park-hikes" href="{{ trails_url }}#park-{{ slug }}">
+          {{- hikes.count }} hike{% if hikes.count != 1 %}s{% endif -%}
+        </a>
+        {%- endif -%}
       </div>
       {%- endfor -%}
     </div>
@@ -203,6 +213,10 @@ photographed park in the line below.
         <span class="gallery-park-count">
           {%- if current_park -%}
           {{ in_park }} photo{% if in_park != 1 %}s{% endif %}
+          {%- assign hikes = hiked[current_park] -%}
+          {%- if hikes %} · <a href="{{ trails_url }}#park-{{ current_park | slugify }}">
+            {{- hikes.count }} hike{% if hikes.count != 1 %}s{% endif %}, {{ hikes.distance_text }} mi</a>
+          {%- endif -%}
           {%- else -%}
           not a national park
           {%- endif -%}

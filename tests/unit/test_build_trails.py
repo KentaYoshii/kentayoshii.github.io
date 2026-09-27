@@ -143,3 +143,120 @@ class TestParseLog:
         assert bt.parse_log(self.write(tmp_path, '# Trails\n\n## 2026\n')) == []
 
 
+PARKS = {'Glacier', 'Rocky Mountain', 'Hawaiʻi Volcanoes'}
+
+
+class TestParkOf:
+    @pytest.mark.parametrize('place, park', [
+        ('Glacier National Park, MT', 'Glacier'),
+        ('Rocky Mountain National Park, CO', 'Rocky Mountain'),
+        ('Hawaiʻi Volcanoes National Park, HI', 'Hawaiʻi Volcanoes'),
+        # The bare checklist name is accepted too.
+        ('Glacier', 'Glacier'),
+    ])
+    def test_matches_the_checklist_name(self, place: str, park: str) -> None:
+        assert bt.park_of(place, PARKS) == park
+
+    @pytest.mark.parametrize('place', [
+        'Harriman State Park, NY',
+        # Close is not enough: the parks page keys on the exact name.
+        'Hawaii Volcanoes National Park, HI',
+        'Glacier Point, CA',
+        '',
+        None,
+    ])
+    def test_anything_else_is_none(self, place) -> None:
+        assert bt.park_of(place, PARKS) is None
+
+
+class TestLabelOf:
+    def test_park_name_wins(self) -> None:
+        assert bt.label_of('Glacier National Park, MT', 'Glacier') == 'Glacier'
+
+    def test_outside_a_park_uses_the_place(self) -> None:
+        assert bt.label_of('Harriman State Park, NY', None) == 'Harriman State Park'
+
+    def test_no_place(self) -> None:
+        assert bt.label_of('', None) == ''
+
+
+class TestMilesText:
+    @pytest.mark.parametrize('miles, text', [
+        (95.4, '95.4'), (5.0, '5'), (44.0, '44'), (32.24, '32.2'), (0, '0'),
+    ])
+    def test_format(self, miles: float, text: str) -> None:
+        assert bt.miles_text(miles) == text
+
+
+def hike(name, date, park, distance=None, elevation=None):
+    return {'name': name, 'date': date, 'year': date[:4], 'month': 'M',
+            'park': park, 'label': park or 'Elsewhere',
+            'distance_mi': distance, 'elevation_ft': elevation}
+
+
+class TestGroup:
+    def test_consecutive_hikes_in_one_park_and_month_are_one_group(self) -> None:
+        groups = bt.group([
+            hike('a', '2026-09', 'Glacier', 10, 2000),
+            hike('b', '2026-09', 'Glacier', 5.5, 1000),
+            hike('c', '2026-09', 'Rocky Mountain', 9, 2400),
+        ])
+        assert [(g['label'], g['count']) for g in groups] == [
+            ('Glacier', 2), ('Rocky Mountain', 1)]
+        assert groups[0]['distance_text'] == '15.5'
+        assert groups[0]['elevation_text'] == '3,000'
+
+    def test_a_park_visited_twice_is_two_groups(self) -> None:
+        """The page is a diary; a second trip is a second heading."""
+        groups = bt.group([
+            hike('a', '2026-09', 'Glacier'),
+            hike('b', '2024-07', 'Glacier'),
+        ])
+        assert len(groups) == 2
+
+    def test_only_the_most_recent_group_of_a_park_is_flagged(self) -> None:
+        """It carries the id the parks page links to; ids must be unique."""
+        groups = bt.group([
+            hike('a', '2026-09', 'Glacier'),
+            hike('b', '2025-06', 'Rocky Mountain'),
+            hike('c', '2024-07', 'Glacier'),
+        ])
+        assert [g['first_of_park'] for g in groups] == [True, True, False]
+
+    def test_hikes_outside_a_park_are_never_flagged(self) -> None:
+        groups = bt.group([hike('a', '2026-09', None)])
+        assert groups[0]['first_of_park'] is False
+        assert groups[0]['park'] is None
+
+    def test_missing_numbers_count_as_nothing(self) -> None:
+        group, = bt.group([hike('a', '2026-09', 'Glacier'),
+                           hike('b', '2026-09', 'Glacier', 4, 300)])
+        assert (group['count'], group['distance_mi'], group['elevation_ft']) == (2, 4, 300)
+
+
+class TestByPark:
+    def test_totals_across_visits(self) -> None:
+        parks = bt.by_park([
+            hike('a', '2026-09', 'Glacier', 10, 2000),
+            hike('b', '2024-07', 'Glacier', 5, 500),
+            hike('c', '2026-09', None, 3, 100),
+        ])
+        assert list(parks) == ['Glacier']
+        assert parks['Glacier']['count'] == 2
+        assert parks['Glacier']['distance_text'] == '15'
+        assert parks['Glacier']['elevation_text'] == '2,500'
+
+
+class TestLoadParkNames:
+    def test_reads_the_checklist(self, tmp_path) -> None:
+        path = tmp_path / 'travel.json'
+        path.write_text('{"checklists": {"us_national_parks": {"items": '
+                        '[{"name": "Zion"}, {"name": "Glacier"}]}}}', encoding='utf-8')
+        assert bt.load_park_names(str(path)) == {'Zion', 'Glacier'}
+
+    @pytest.mark.parametrize('body', [None, '{ oh no', '{}', '{"checklists": []}'])
+    def test_missing_or_malformed_is_empty(self, tmp_path, body) -> None:
+        path = tmp_path / 'travel.json'
+        if body is not None:
+            path.write_text(body, encoding='utf-8')
+        assert bt.load_park_names(str(path)) == set()

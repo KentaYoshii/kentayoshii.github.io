@@ -46,7 +46,8 @@ page.
     <p>
       {%- if trails.total > 0 -%}
       {{ trails.total }} hike{% if trails.total != 1 %}s{% endif %}
-      {%- if trails.distance_mi > 0 %}, {{ trails.distance_mi }} miles{% endif -%},
+      {%- if trails.distance_mi > 0 %}, {{ trails.distance_mi }} miles{% endif -%}
+      {%- if trails.elevation_ft > 0 %}, {{ trails.elevation_text }} ft of climbing{% endif -%},
       newest first.
       {%- else -%}
       Nothing logged yet.

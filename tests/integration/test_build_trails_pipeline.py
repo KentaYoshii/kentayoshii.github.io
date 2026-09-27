@@ -21,6 +21,10 @@ def workspace(tmp_path, monkeypatch):
     monkeypatch.setattr(bt, 'DATA', str(data))
     monkeypatch.setattr(bt, 'LOG_PATH', str(log))
     monkeypatch.setattr(bt, 'OUT_PATH', str(data / 'trails.json'))
+    travel = data / 'travel.json'
+    travel.write_text(json.dumps({'checklists': {'us_national_parks': {'items': [
+        {'name': 'Zion'}, {'name': 'Yosemite'}]}}}), encoding='utf-8')
+    monkeypatch.setattr(bt, 'TRAVEL_PATH', str(travel))
 
     class Workspace:
         path = data
@@ -30,6 +34,10 @@ def workspace(tmp_path, monkeypatch):
 
         def read(self):
             return json.loads((data / 'trails.json').read_text(encoding='utf-8'))
+
+        def hikes(self):
+            """Every hike, in page order, out of its group."""
+            return [t for g in self.read()['groups'] for t in g['trails']]
 
         def run(self):
             return bt.main()
@@ -58,7 +66,7 @@ class TestBuild:
     def test_renders_every_logged_hike(self, workspace) -> None:
         workspace.write(LOG)
         assert workspace.run() == 0
-        trails = workspace.read()['trails']
+        trails = workspace.hikes()
         assert [t['name'] for t in trails] == [
             'Mist Trail', 'Angels Landing', 'Timp Torne Trail']
 
@@ -66,7 +74,7 @@ class TestBuild:
         """A trail log reads as a diary, unlike the A-Z collection pages."""
         workspace.write(LOG)
         workspace.run()
-        dates = [t['date'] for t in workspace.read()['trails']]
+        dates = [t['date'] for t in workspace.hikes()]
         assert dates == sorted(dates, reverse=True)
 
     def test_same_month_keeps_log_order(self, workspace) -> None:
@@ -78,7 +86,7 @@ class TestBuild:
                         '- Skyline Loop — Mount Rainier\n'
                         '- Bench Lake — Mount Rainier\n')
         workspace.run()
-        assert [t['name'] for t in workspace.read()['trails']] == [
+        assert [t['name'] for t in workspace.hikes()] == [
             'Sol Duc Falls', 'Hoh River', 'Skyline Loop', 'Bench Lake']
 
     def test_summary_totals(self, workspace) -> None:
@@ -98,6 +106,27 @@ class TestBuild:
         assert summary['by_year'] == [{'year': '2026', 'count': 2},
                                       {'year': '2025', 'count': 1}]
 
+    def test_groups_and_park_totals(self, workspace) -> None:
+        workspace.write(LOG)
+        workspace.run()
+        payload = workspace.read()
+        assert [(g['year'], g['label'], g['park']) for g in payload['groups']] == [
+            ('2026', 'Yosemite', 'Yosemite'),
+            ('2026', 'Zion', 'Zion'),
+            ('2025', 'Harriman State Park', None),
+        ]
+        assert sorted(payload['parks']) == ['Yosemite', 'Zion']
+        assert payload['parks']['Zion']['elevation_text'] == '1,488'
+
+    def test_runs_without_travel_json(self, workspace, monkeypatch, tmp_path) -> None:
+        """Hikes just go unmatched; the page still renders them."""
+        monkeypatch.setattr(bt, 'TRAVEL_PATH', str(tmp_path / 'absent.json'))
+        workspace.write(LOG)
+        assert workspace.run() == 0
+        payload = workspace.read()
+        assert payload['parks'] == {}
+        assert len(payload['groups']) == 3
+
     def test_is_byte_stable_across_runs(self, workspace) -> None:
         """What CI's `git diff --quiet -- docs/_data` relies on."""
         workspace.write(LOG)
@@ -111,6 +140,6 @@ class TestBuild:
         workspace.write('# Trails\n\n## 2026\n')
         assert workspace.run() == 0
         payload = workspace.read()
-        assert payload['trails'] == []
+        assert payload['groups'] == []
         assert payload['summary']['total'] == 0
         assert payload['summary']['elevation_ft'] == 0

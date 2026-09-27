@@ -1406,6 +1406,18 @@ body,
   padding: 2px 6px;
 }
 
+// Sits beside the visit stamp and links to the park on /adventure/trails/.
+.park-hikes {
+  display: inline-block;
+  margin: 8px 0 0 8px;
+  font-size: 11px;
+  color: $grey-color-dark;
+
+  &:hover {
+    color: $brand-color;
+  }
+}
+
 .park-tile.is-visited {
   opacity: 1;
   background-color: #fffaf1;
@@ -1440,36 +1452,75 @@ body,
   }
 }
 
+// One trip to one park: a heading with that trip's totals, then its hikes.
+// The heading borrows the photo sections' treatment on the parks page -- park
+// name in the serif, a rule in the park's colour -- so the two pages read as
+// one set. --park-accent is set inline by trails.markdown.
+.trail-group {
+  margin-bottom: 18px;
+}
+
+.trail-park {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+  padding: 8px 0 6px;
+  border-bottom: 2px solid var(--park-accent, #{$grey-color-light});
+}
+
+.trail-park-name {
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 17px;
+  color: var(--park-accent, #{$text-color});
+}
+
+// The coloured rule under the heading already marks it; the site's usual
+// link underline only on hover.
+a.trail-park-name {
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    border-bottom-color: currentColor;
+  }
+}
+
+// Pushed to the far end so the totals line up down the page.
+.trail-park-totals {
+  margin-left: auto;
+  font-size: 12px;
+  color: $grey-color;
+  font-variant-numeric: tabular-nums;
+}
+
+.trail-group-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Wraps rather than squeezing: on a phone the distance drops under the name
+// instead of shrinking the name to nothing.
 .trail-row {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
-  gap: 10px;
+  gap: 2px 10px;
   padding: 7px 0;
   border-bottom: 1px solid rgba(233, 223, 208, 0.6);
 }
 
-.trail-text {
-  flex: 1 1 auto;
-  min-width: 0;
-}
-
 .trail-name {
+  flex: 1 1 14em;
+  min-width: 0;
   font-style: italic;
-}
-
-.trail-place {
-  display: block;
-  font-size: 13px;
-  color: $grey-color;
 }
 
 .trail-meta {
   flex: 0 0 auto;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 6px;
+  gap: 10px;
   font-size: 12px;
   color: $grey-color;
 }
@@ -1480,29 +1531,14 @@ body,
 }
 
 .trail-when {
+  font-size: 11px;
+  color: $grey-color;
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
 
 .trail-gain {
   font-variant-numeric: tabular-nums;
-}
-
-@media screen and (max-width: $on-palm) {
-  // Two columns of flex items do not survive a phone width; let the metadata
-  // drop under the name instead of squeezing the name to nothing.
-  .trail-row {
-    flex-wrap: wrap;
-  }
-
-  .trail-text {
-    flex: 1 1 100%;
-  }
-
-  .trail-meta {
-    flex: 1 1 100%;
-    justify-content: flex-start;
-  }
 }
 
 // The gallery: a grid of photos, a full-screen lightbox, and — once the
@@ -2472,6 +2508,14 @@ a.parks-map-pin {
     color: $dark-muted;
   }
 
+  .park-hikes {
+    color: $dark-muted;
+
+    &:hover {
+      color: $dark-brand;
+    }
+  }
+
   .park-tile.is-visited {
     background-color: $dark-surface;
     border-color: $dark-brand;
@@ -2491,9 +2535,20 @@ a.parks-map-pin {
     border-bottom-color: rgba(60, 49, 34, 0.7);
   }
 
-  .trail-place,
-  .trail-meta {
+  .trail-meta,
+  .trail-when,
+  .trail-park-totals {
     color: $dark-muted;
+  }
+
+  // The light accent is too dark on this background; use the variant the
+  // generator lightened for it, as the parks page does.
+  .trail-park {
+    border-bottom-color: var(--park-accent-dark, #{$dark-border});
+  }
+
+  .trail-park-name {
+    color: var(--park-accent-dark, #{$dark-text});
   }
 
   .trail-distance {
