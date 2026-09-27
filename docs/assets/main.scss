@@ -1541,6 +1541,81 @@ a.trail-park-name {
   font-variant-numeric: tabular-nums;
 }
 
+// Last in the row's metadata, so every bar ends at the same right edge and
+// they read as one column down the page. The fill is the park's colour,
+// inherited from the group's --park-accent.
+.trail-bar {
+  flex: 0 0 auto;
+  width: 56px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: $grey-color-light;
+  overflow: hidden;
+
+  > span {
+    display: block;
+    height: 100%;
+    background-color: var(--park-accent, #{$brand-color});
+  }
+}
+
+// Longest, most climbing, most miles: one line of label/value pairs under
+// the tagline, wrapping as whole pairs.
+.trail-records {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 22px;
+  margin: 0 0 $spacing-unit * 0.75;
+  font-size: 13px;
+  color: $grey-color-dark;
+
+  > div {
+    display: flex;
+    gap: 6px;
+    align-items: baseline;
+  }
+
+  dt {
+    font-size: 11px;
+    color: $grey-color;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: $on-palm) {
+  // The metadata wraps under the name here, so it starts at the left and a
+  // bar would sit wherever its gain text ends. Span the row and push the bar
+  // to the right edge to keep the bars in one column.
+  .trail-meta {
+    flex: 1 1 100%;
+  }
+
+  .trail-bar {
+    margin-left: auto;
+  }
+
+  // Too narrow for the pairs to sit side by side: a two-column grid keeps
+  // every value starting at the same indent, labels on one line each.
+  .trail-records {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 6px 12px;
+
+    > div {
+      display: contents;
+    }
+
+    dt {
+      white-space: nowrap;
+    }
+  }
+}
+
 // The gallery: a grid of photos, a full-screen lightbox, and — once the
 // photos carry tags — a chip filter built client-side (initGallery() in
 // main.js), since the tag set is open-ended and unknown at template time,
@@ -2541,6 +2616,22 @@ a.parks-map-pin {
     color: $dark-muted;
   }
 
+  .trail-bar {
+    background-color: $dark-border;
+
+    > span {
+      background-color: var(--park-accent-dark, #{$dark-brand});
+    }
+  }
+
+  .trail-records {
+    color: $dark-text;
+
+    dt {
+      color: $dark-muted;
+    }
+  }
+
   // The light accent is too dark on this background; use the variant the
   // generator lightened for it, as the parks page does.
   .trail-park {
@@ -2549,6 +2640,16 @@ a.parks-map-pin {
 
   .trail-park-name {
     color: var(--park-accent-dark, #{$dark-text});
+  }
+
+  // The dark theme's link rule outranks the light one that hides this
+  // underline, so it is hidden again here.
+  a.trail-park-name {
+    border-bottom-color: transparent;
+
+    &:hover {
+      border-bottom-color: currentColor;
+    }
   }
 
   .trail-distance {

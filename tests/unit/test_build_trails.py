@@ -283,3 +283,57 @@ class TestUnmatchedParks:
         found = bt.unmatched_parks(self.trails('Glacer National Park, MT',
                                                'Glacer National Park, MT'), PARKS)
         assert len(found) == 1
+
+
+def logged(name, park, distance=None, elevation=None):
+    return {'name': name, 'park': park, 'distance_mi': distance,
+            'distance_text': '%g mi' % distance if distance else '',
+            'elevation_ft': elevation,
+            'elevation_text': '{:,} ft'.format(elevation) if elevation else ''}
+
+
+class TestGainShare:
+    def test_relative_to_the_biggest_climb(self) -> None:
+        trails = [logged('a', 'P', elevation=4000), logged('b', 'P', elevation=1000)]
+        bt.add_gain_share(trails)
+        assert [t['gain_pct'] for t in trails] == [100, 25]
+
+    def test_a_tiny_gain_still_shows(self) -> None:
+        """49 ft against 4,232 ft rounds to 1%, not to an invisible 0%."""
+        trails = [logged('a', 'P', elevation=4232), logged('b', 'P', elevation=10)]
+        bt.add_gain_share(trails)
+        assert trails[1]['gain_pct'] == 1
+
+    def test_no_gain_logged_is_none_not_zero(self) -> None:
+        trails = [logged('a', 'P', elevation=4000), logged('b', 'P')]
+        bt.add_gain_share(trails)
+        assert trails[1]['gain_pct'] is None
+
+    def test_nothing_logged_at_all(self) -> None:
+        trails = [logged('a', 'P')]
+        bt.add_gain_share(trails)
+        assert trails[0]['gain_pct'] is None
+        bt.add_gain_share([])
+
+
+class TestRecords:
+    def test_picks_each_record(self) -> None:
+        trails = [logged('Short steep', 'Zion', 5, 3000),
+                  logged('Long flat', 'Glacier', 20, 500),
+                  logged('Middle', 'Glacier', 10, 1000)]
+        out = bt.records(trails, bt.by_park(trails))
+        assert out['longest'] == {'name': 'Long flat', 'park': 'Glacier', 'text': '20 mi'}
+        assert out['climb'] == {'name': 'Short steep', 'park': 'Zion', 'text': '3,000 ft'}
+        assert out['park'] == {'name': 'Glacier', 'park': 'Glacier', 'text': '30 mi'}
+
+    def test_a_tie_goes_to_the_more_recent(self) -> None:
+        """Trails arrive newest first."""
+        trails = [logged('Newer', 'Zion', 10), logged('Older', 'Zion', 10)]
+        assert bt.records(trails, {})['longest']['name'] == 'Newer'
+
+    def test_an_empty_log_has_no_records(self) -> None:
+        assert bt.records([], {}) == {}
+
+    def test_a_record_needs_its_number(self) -> None:
+        out = bt.records([logged('No numbers', None)], {})
+        assert out == {}

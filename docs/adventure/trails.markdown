@@ -17,6 +17,7 @@ docs/_logs/trails.md and nothing more. Server-rendered; no JavaScript.
 
 {%- assign groups = site.data.trails.groups -%}
 {%- assign summary = site.data.trails.summary -%}
+{%- assign records = site.data.trails.records -%}
 
 <div class="wide-section"><div class="wide-inner">
 <div class="travel-page">
@@ -31,6 +32,28 @@ docs/_logs/trails.md and nothing more. Server-rendered; no JavaScript.
       {%- if summary.distance_mi > 0 %}, {{ summary.distance_mi }} miles{% endif -%}
       {%- if summary.elevation_ft > 0 %}, {{ summary.elevation_text }} ft of climbing{% endif -%}.
     </p>
+
+    {%- comment -%}
+    Picked by build_trails.py. Each park name jumps to that park's heading
+    further down this page.
+    {%- endcomment -%}
+    {%- if records.longest or records.climb or records.park -%}
+    <dl class="trail-records">
+      {%- if records.longest -%}
+      <div><dt>Longest</dt><dd>{{ records.longest.name }}, {{ records.longest.text }}
+        {%- if records.longest.park %} · <a href="#park-{{ records.longest.park | slugify }}">{{ records.longest.park }}</a>{% endif -%}
+      </dd></div>
+      {%- endif -%}
+      {%- if records.climb -%}
+      <div><dt>Most climbing</dt><dd>{{ records.climb.name }}, {{ records.climb.text }}
+        {%- if records.climb.park %} · <a href="#park-{{ records.climb.park | slugify }}">{{ records.climb.park }}</a>{% endif -%}
+      </dd></div>
+      {%- endif -%}
+      {%- if records.park -%}
+      <div><dt>Most miles</dt><dd><a href="#park-{{ records.park.park | slugify }}">{{ records.park.name }}</a>, {{ records.park.text }}</dd></div>
+      {%- endif -%}
+    </dl>
+    {%- endif -%}
 
     {%- comment -%}
     build_trails.py hands over the hikes already sorted most recent first and
@@ -83,6 +106,13 @@ docs/_logs/trails.md and nothing more. Server-rendered; no JavaScript.
             <span class="trail-meta">
               {%- if trail.distance_text %}<span class="trail-distance">{{ trail.distance_text }}</span>{% endif -%}
               {%- if trail.elevation_text %}<span class="trail-gain">{{ trail.elevation_text }} gain</span>{% endif -%}
+              {%- comment -%}
+              Gain as a share of the biggest climb in the log, in the park's
+              colour. Decorative: the figure beside it says the same thing.
+              {%- endcomment -%}
+              {%- if trail.gain_pct -%}
+              <span class="trail-bar" aria-hidden="true"><span style="width: {{ trail.gain_pct }}%"></span></span>
+              {%- endif -%}
             </span>
           </li>
           {%- endfor -%}

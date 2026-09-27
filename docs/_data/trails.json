@@ -18,7 +18,8 @@
      "month": "September",
      "date": "2026-09",
      "park": "Glacier",
-     "label": "Glacier"
+     "label": "Glacier",
+     "gain_pct": 84
     },
     {
      "name": "Siyeh Pass and St. Mary Falls Loop",
@@ -31,7 +32,8 @@
      "month": "September",
      "date": "2026-09",
      "park": "Glacier",
-     "label": "Glacier"
+     "label": "Glacier",
+     "gain_pct": 100
     },
     {
      "name": "Grinnell Glacier",
@@ -44,7 +46,8 @@
      "month": "September",
      "date": "2026-09",
      "park": "Glacier",
-     "label": "Glacier"
+     "label": "Glacier",
+     "gain_pct": 51
     },
     {
      "name": "Ptarmigan Tunnel / Iceberg Lake",
@@ -57,7 +60,8 @@
      "month": "September",
      "date": "2026-09",
      "park": "Glacier",
-     "label": "Glacier"
+     "label": "Glacier",
+     "gain_pct": 72
     },
     {
      "name": "Avalanche Lake",
@@ -70,7 +74,8 @@
      "month": "September",
      "date": "2026-09",
      "park": "Glacier",
-     "label": "Glacier"
+     "label": "Glacier",
+     "gain_pct": 19
     },
     {
      "name": "Swiftcurrent Pass",
@@ -83,7 +88,8 @@
      "month": "September",
      "date": "2026-09",
      "park": "Glacier",
-     "label": "Glacier"
+     "label": "Glacier",
+     "gain_pct": 70
     },
     {
      "name": "Numa Lookout",
@@ -96,7 +102,8 @@
      "month": "September",
      "date": "2026-09",
      "park": "Glacier",
-     "label": "Glacier"
+     "label": "Glacier",
+     "gain_pct": 71
     }
    ],
    "count": 7,
@@ -123,7 +130,8 @@
      "month": "September",
      "date": "2026-09",
      "park": "Rocky Mountain",
-     "label": "Rocky Mountain"
+     "label": "Rocky Mountain",
+     "gain_pct": 57
     },
     {
      "name": "Sprague, Nymph, Dream, Emerald and Haiyaha Lakes to Sky Pond",
@@ -136,7 +144,8 @@
      "month": "September",
      "date": "2026-09",
      "park": "Rocky Mountain",
-     "label": "Rocky Mountain"
+     "label": "Rocky Mountain",
+     "gain_pct": 77
     },
     {
      "name": "Chasm Lake",
@@ -149,7 +158,8 @@
      "month": "September",
      "date": "2026-09",
      "park": "Rocky Mountain",
-     "label": "Rocky Mountain"
+     "label": "Rocky Mountain",
+     "gain_pct": 60
     },
     {
      "name": "Ouzel Falls",
@@ -162,7 +172,8 @@
      "month": "September",
      "date": "2026-09",
      "park": "Rocky Mountain",
-     "label": "Rocky Mountain"
+     "label": "Rocky Mountain",
+     "gain_pct": 23
     }
    ],
    "count": 4,
@@ -189,7 +200,8 @@
      "month": "July",
      "date": "2026-07",
      "park": "Olympic",
-     "label": "Olympic"
+     "label": "Olympic",
+     "gain_pct": 9
     },
     {
      "name": "Hall of Mosses Trail",
@@ -202,7 +214,8 @@
      "month": "July",
      "date": "2026-07",
      "park": "Olympic",
-     "label": "Olympic"
+     "label": "Olympic",
+     "gain_pct": 2
     },
     {
      "name": "Mount Storm King / Marymere Falls",
@@ -215,7 +228,8 @@
      "month": "July",
      "date": "2026-07",
      "park": "Olympic",
-     "label": "Olympic"
+     "label": "Olympic",
+     "gain_pct": 55
     },
     {
      "name": "Sol Duc Falls Trail",
@@ -228,7 +242,8 @@
      "month": "July",
      "date": "2026-07",
      "park": "Olympic",
-     "label": "Olympic"
+     "label": "Olympic",
+     "gain_pct": 6
     },
     {
      "name": "Hurricane Hill",
@@ -241,7 +256,8 @@
      "month": "July",
      "date": "2026-07",
      "park": "Olympic",
-     "label": "Olympic"
+     "label": "Olympic",
+     "gain_pct": 21
     },
     {
      "name": "Cape Flattery Trail",
@@ -254,7 +270,8 @@
      "month": "July",
      "date": "2026-07",
      "park": "Olympic",
-     "label": "Olympic"
+     "label": "Olympic",
+     "gain_pct": 5
     },
     {
      "name": "Quinault Loop",
@@ -267,7 +284,8 @@
      "month": "July",
      "date": "2026-07",
      "park": "Olympic",
-     "label": "Olympic"
+     "label": "Olympic",
+     "gain_pct": 9
     },
     {
      "name": "Second Beach",
@@ -280,7 +298,8 @@
      "month": "July",
      "date": "2026-07",
      "park": "Olympic",
-     "label": "Olympic"
+     "label": "Olympic",
+     "gain_pct": 7
     },
     {
      "name": "Maple Glade Nature Trail",
@@ -293,7 +312,8 @@
      "month": "July",
      "date": "2026-07",
      "park": "Olympic",
-     "label": "Olympic"
+     "label": "Olympic",
+     "gain_pct": 1
     }
    ],
    "count": 9,
@@ -320,7 +340,8 @@
      "month": "July",
      "date": "2026-07",
      "park": "Mount Rainier",
-     "label": "Mount Rainier"
+     "label": "Mount Rainier",
+     "gain_pct": 87
     },
     {
      "name": "Bench and Snow Lakes Trail",
@@ -333,7 +354,8 @@
      "month": "July",
      "date": "2026-07",
      "park": "Mount Rainier",
-     "label": "Mount Rainier"
+     "label": "Mount Rainier",
+     "gain_pct": 11
     },
     {
      "name": "Mount Fremont Lookout and Burroughs Mountain Loop",
@@ -346,7 +368,8 @@
      "month": "July",
      "date": "2026-07",
      "park": "Mount Rainier",
-     "label": "Mount Rainier"
+     "label": "Mount Rainier",
+     "gain_pct": 65
     }
    ],
    "count": 3,
@@ -373,7 +396,8 @@
      "month": "April",
      "date": "2026-04",
      "park": "Haleakalā",
-     "label": "Haleakalā"
+     "label": "Haleakalā",
+     "gain_pct": 98
     }
    ],
    "count": 1,
@@ -400,7 +424,8 @@
      "month": "December",
      "date": "2025-12",
      "park": "White Sands",
-     "label": "White Sands"
+     "label": "White Sands",
+     "gain_pct": 1
     }
    ],
    "count": 1,
@@ -427,7 +452,8 @@
      "month": "December",
      "date": "2025-12",
      "park": "Guadalupe Mountains",
-     "label": "Guadalupe Mountains"
+     "label": "Guadalupe Mountains",
+     "gain_pct": 9
     },
     {
      "name": "McKittrick Canyon to The Notch",
@@ -440,7 +466,8 @@
      "month": "December",
      "date": "2025-12",
      "park": "Guadalupe Mountains",
-     "label": "Guadalupe Mountains"
+     "label": "Guadalupe Mountains",
+     "gain_pct": 76
     },
     {
      "name": "Hunter Peak via Bear Canyon",
@@ -453,7 +480,8 @@
      "month": "December",
      "date": "2025-12",
      "park": "Guadalupe Mountains",
-     "label": "Guadalupe Mountains"
+     "label": "Guadalupe Mountains",
+     "gain_pct": 64
     },
     {
      "name": "Guadalupe Peak",
@@ -466,7 +494,8 @@
      "month": "December",
      "date": "2025-12",
      "park": "Guadalupe Mountains",
-     "label": "Guadalupe Mountains"
+     "label": "Guadalupe Mountains",
+     "gain_pct": 75
     },
     {
      "name": "Devil's Hall",
@@ -479,7 +508,8 @@
      "month": "December",
      "date": "2025-12",
      "park": "Guadalupe Mountains",
-     "label": "Guadalupe Mountains"
+     "label": "Guadalupe Mountains",
+     "gain_pct": 17
     }
    ],
    "count": 5,
@@ -506,7 +536,8 @@
      "month": "December",
      "date": "2025-12",
      "park": "Carlsbad Caverns",
-     "label": "Carlsbad Caverns"
+     "label": "Carlsbad Caverns",
+     "gain_pct": 18
     },
     {
      "name": "Desert Nature Trail",
@@ -519,7 +550,8 @@
      "month": "December",
      "date": "2025-12",
      "park": "Carlsbad Caverns",
-     "label": "Carlsbad Caverns"
+     "label": "Carlsbad Caverns",
+     "gain_pct": 2
     }
    ],
    "count": 2,
@@ -546,7 +578,8 @@
      "month": "December",
      "date": "2025-12",
      "park": "Big Bend",
-     "label": "Big Bend"
+     "label": "Big Bend",
+     "gain_pct": 75
     },
     {
      "name": "Upper Burro Mesa Pouroff",
@@ -559,7 +592,8 @@
      "month": "December",
      "date": "2025-12",
      "park": "Big Bend",
-     "label": "Big Bend"
+     "label": "Big Bend",
+     "gain_pct": 10
     },
     {
      "name": "Lower Burro Mesa Pouroff",
@@ -572,7 +606,8 @@
      "month": "December",
      "date": "2025-12",
      "park": "Big Bend",
-     "label": "Big Bend"
+     "label": "Big Bend",
+     "gain_pct": 4
     },
     {
      "name": "Santa Elena Canyon Trail",
@@ -585,7 +620,8 @@
      "month": "December",
      "date": "2025-12",
      "park": "Big Bend",
-     "label": "Big Bend"
+     "label": "Big Bend",
+     "gain_pct": 6
     },
     {
      "name": "The Window Trail",
@@ -598,7 +634,8 @@
      "month": "December",
      "date": "2025-12",
      "park": "Big Bend",
-     "label": "Big Bend"
+     "label": "Big Bend",
+     "gain_pct": 23
     },
     {
      "name": "Lost Mine Trail",
@@ -611,7 +648,8 @@
      "month": "December",
      "date": "2025-12",
      "park": "Big Bend",
-     "label": "Big Bend"
+     "label": "Big Bend",
+     "gain_pct": 27
     },
     {
      "name": "Ernst Ridge Trail",
@@ -624,7 +662,8 @@
      "month": "December",
      "date": "2025-12",
      "park": "Big Bend",
-     "label": "Big Bend"
+     "label": "Big Bend",
+     "gain_pct": 23
     },
     {
      "name": "Boquillas Canyon Trail",
@@ -637,7 +676,8 @@
      "month": "December",
      "date": "2025-12",
      "park": "Big Bend",
-     "label": "Big Bend"
+     "label": "Big Bend",
+     "gain_pct": 4
     },
     {
      "name": "Dog Canyon and Devil's Den",
@@ -650,7 +690,8 @@
      "month": "December",
      "date": "2025-12",
      "park": "Big Bend",
-     "label": "Big Bend"
+     "label": "Big Bend",
+     "gain_pct": 16
     }
    ],
    "count": 9,
@@ -677,7 +718,8 @@
      "month": "October",
      "date": "2025-10",
      "park": "Yellowstone",
-     "label": "Yellowstone"
+     "label": "Yellowstone",
+     "gain_pct": 4
     },
     {
      "name": "Upper Geyser Basin and Old Faithful Observation Point Loop",
@@ -690,7 +732,8 @@
      "month": "October",
      "date": "2025-10",
      "park": "Yellowstone",
-     "label": "Yellowstone"
+     "label": "Yellowstone",
+     "gain_pct": 8
     },
     {
      "name": "Mammoth Hot Springs Trail",
@@ -703,7 +746,8 @@
      "month": "October",
      "date": "2025-10",
      "park": "Yellowstone",
-     "label": "Yellowstone"
+     "label": "Yellowstone",
+     "gain_pct": 8
     },
     {
      "name": "Beaver Ponds Loop Trail",
@@ -716,7 +760,8 @@
      "month": "October",
      "date": "2025-10",
      "park": "Yellowstone",
-     "label": "Yellowstone"
+     "label": "Yellowstone",
+     "gain_pct": 18
     },
     {
      "name": "Seven Mile Hole",
@@ -729,7 +774,8 @@
      "month": "October",
      "date": "2025-10",
      "park": "Yellowstone",
-     "label": "Yellowstone"
+     "label": "Yellowstone",
+     "gain_pct": 49
     },
     {
      "name": "Dunraven Pass to Mount Washburn",
@@ -742,7 +788,8 @@
      "month": "October",
      "date": "2025-10",
      "park": "Yellowstone",
-     "label": "Yellowstone"
+     "label": "Yellowstone",
+     "gain_pct": 33
     },
     {
      "name": "Artist Point via South Rim Trail",
@@ -755,7 +802,8 @@
      "month": "October",
      "date": "2025-10",
      "park": "Yellowstone",
-     "label": "Yellowstone"
+     "label": "Yellowstone",
+     "gain_pct": 7
     }
    ],
    "count": 7,
@@ -782,7 +830,8 @@
      "month": "September",
      "date": "2025-09",
      "park": "Grand Teton",
-     "label": "Grand Teton"
+     "label": "Grand Teton",
+     "gain_pct": 98
     },
     {
      "name": "Surprise and Amphitheater Lakes",
@@ -795,7 +844,8 @@
      "month": "September",
      "date": "2025-09",
      "park": "Grand Teton",
-     "label": "Grand Teton"
+     "label": "Grand Teton",
+     "gain_pct": 71
     },
     {
      "name": "Taggart and Bradley Lakes Loop",
@@ -808,7 +858,8 @@
      "month": "September",
      "date": "2025-09",
      "park": "Grand Teton",
-     "label": "Grand Teton"
+     "label": "Grand Teton",
+     "gain_pct": 18
     }
    ],
    "count": 3,
@@ -835,7 +886,8 @@
      "month": "May",
      "date": "2025-05",
      "park": "Yosemite",
-     "label": "Yosemite"
+     "label": "Yosemite",
+     "gain_pct": 88
     }
    ],
    "count": 1,
@@ -862,7 +914,8 @@
      "month": "April",
      "date": "2025-04",
      "park": "Grand Canyon",
-     "label": "Grand Canyon"
+     "label": "Grand Canyon",
+     "gain_pct": 72
     }
    ],
    "count": 1,
@@ -889,7 +942,8 @@
      "month": "April",
      "date": "2025-04",
      "park": "Zion",
-     "label": "Zion"
+     "label": "Zion",
+     "gain_pct": 35
     }
    ],
    "count": 1,
@@ -916,7 +970,8 @@
      "month": "April",
      "date": "2022-04",
      "park": "Hawaiʻi Volcanoes",
-     "label": "Hawaiʻi Volcanoes"
+     "label": "Hawaiʻi Volcanoes",
+     "gain_pct": 18
     }
    ],
    "count": 1,
@@ -1031,6 +1086,23 @@
    "distance_text": "3.3",
    "elevation_ft": 760,
    "elevation_text": "760"
+  }
+ },
+ "records": {
+  "longest": {
+   "name": "Sprague, Nymph, Dream, Emerald and Haiyaha Lakes to Sky Pond",
+   "park": "Rocky Mountain",
+   "text": "20.3 mi"
+  },
+  "climb": {
+   "name": "Siyeh Pass and St. Mary Falls Loop",
+   "park": "Glacier",
+   "text": "4,232 ft"
+  },
+  "park": {
+   "name": "Glacier",
+   "park": "Glacier",
+   "text": "95.4 mi"
   }
  },
  "summary": {

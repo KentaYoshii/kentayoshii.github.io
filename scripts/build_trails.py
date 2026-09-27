@@ -248,6 +248,40 @@ def by_park(trails):
     return {park: totals(hikes) for park, hikes in parks.items()}
 
 
+def add_gain_share(trails):
+    """Give each hike its gain as a whole percentage of the biggest in the
+    log, for the bar beside the figure. None where no gain is logged, so the
+    page draws no bar rather than an empty one that reads as zero."""
+    biggest = max((t['elevation_ft'] or 0 for t in trails), default=0)
+    for trail in trails:
+        gain = trail['elevation_ft']
+        trail['gain_pct'] = (max(1, int(round(100.0 * gain / biggest)))
+                             if gain and biggest else None)
+
+
+def records(trails, parks):
+    """The longest hike, the biggest climb, and the park with the most
+    miles, or {} for an empty log. Ties go to the more recent, since trails
+    arrive newest first and max() keeps the first it sees."""
+    out = {}
+    measured = [t for t in trails if t['distance_mi']]
+    if measured:
+        t = max(measured, key=lambda t: t['distance_mi'])
+        out['longest'] = {'name': t['name'], 'park': t['park'],
+                          'text': t['distance_text']}
+    climbed = [t for t in trails if t['elevation_ft']]
+    if climbed:
+        t = max(climbed, key=lambda t: t['elevation_ft'])
+        out['climb'] = {'name': t['name'], 'park': t['park'],
+                        'text': t['elevation_text']}
+    if parks:
+        name = max(parks, key=lambda p: parks[p]['distance_mi'])
+        if parks[name]['distance_mi']:
+            out['park'] = {'name': name, 'park': name,
+                           'text': parks[name]['distance_text'] + ' mi'}
+    return out
+
+
 def summarise(trails):
     by_year = collections.Counter(t['year'] for t in trails)
     logged = [t['distance_mi'] for t in trails if t['distance_mi']]
@@ -285,8 +319,10 @@ def main():
 
     # No flat list of hikes: each one is already inside its group, and the
     # pages read the groups, the per-park totals, or the summary.
-    payload = {'groups': group(trails), 'parks': by_park(trails),
-               'summary': summarise(trails)}
+    add_gain_share(trails)
+    parks = by_park(trails)
+    payload = {'groups': group(trails), 'parks': parks,
+               'records': records(trails, parks), 'summary': summarise(trails)}
     os.makedirs(DATA, exist_ok=True)
     with open(OUT_PATH, 'w', encoding='utf-8') as f:
         json.dump(payload, f, ensure_ascii=False, indent=1)
