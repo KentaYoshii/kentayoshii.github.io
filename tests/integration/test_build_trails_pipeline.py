@@ -25,6 +25,12 @@ def workspace(tmp_path, monkeypatch):
     travel.write_text(json.dumps({'checklists': {'us_national_parks': {'items': [
         {'name': 'Zion'}, {'name': 'Yosemite'}]}}}), encoding='utf-8')
     monkeypatch.setattr(bt, 'TRAVEL_PATH', str(travel))
+    gallery = data / 'gallery.yml'
+    gallery.write_text('- image: zion_1.jpeg\n  park: Zion\n  trail: Angels Landing\n'
+                       '- image: zion_2.jpeg\n  park: Zion\n'
+                       '- image: yose.jpeg\n  park: Yosemite\n  trail: Half Dome\n',
+                       encoding='utf-8')
+    monkeypatch.setattr(bt, 'GALLERY_PATH', str(gallery))
 
     class Workspace:
         path = data
@@ -136,6 +142,16 @@ class TestBuild:
         assert 'Zoin National Park, UT' in err
         assert 'did you mean Zion?' in err
         assert workspace.read()['groups'][0]['park'] is None
+
+    def test_photos_are_attached_to_their_hike(self, workspace, capsys) -> None:
+        workspace.write(LOG)
+        workspace.run()
+        by_name = {t['name']: t for t in workspace.hikes()}
+        assert by_name['Angels Landing']['photos'] == ['zion_1.jpeg']
+        assert by_name['Mist Trail']['photos'] == []
+        # Half Dome is not in LOG, so that photo is reported, not dropped
+        # silently.
+        assert "yose.jpeg names trail 'Half Dome'" in capsys.readouterr().err
 
     def test_is_byte_stable_across_runs(self, workspace) -> None:
         """What CI's `git diff --quiet -- docs/_data` relies on."""

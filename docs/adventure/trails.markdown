@@ -20,7 +20,7 @@ docs/_logs/trails.md and nothing more. Server-rendered; no JavaScript.
 {%- assign records = site.data.trails.records -%}
 
 <div class="wide-section"><div class="wide-inner">
-<div class="travel-page">
+<div class="travel-page" data-photo-sets>
 
   <p class="breadcrumb"><a href="{{ '/adventure/' | relative_url }}">Adventure</a> / Trails</p>
 
@@ -67,6 +67,7 @@ docs/_logs/trails.md and nothing more. Server-rendered; no JavaScript.
     place and have no link or colour.
     {%- endcomment -%}
     {%- assign render = site.data.gallery_render -%}
+    {%- assign photos = site.data.gallery -%}
     {%- assign current_year = "" -%}
     <ul class="trail-list">
       {%- for group in groups -%}
@@ -104,6 +105,13 @@ docs/_logs/trails.md and nothing more. Server-rendered; no JavaScript.
           <li class="trail-row">
             <span class="trail-name">{{ trail.name }}</span>
             <span class="trail-meta">
+              {%- if trail.photos.size > 0 -%}
+              {%- assign set_id = trail.photos.first | split: "." | first | slugify | prepend: "photos-" -%}
+              <button type="button" class="trail-photos-toggle" aria-controls="{{ set_id }}"
+                      aria-expanded="false" hidden>
+                <span aria-hidden="true">📷</span> {{ trail.photos.size }}
+              </button>
+              {%- endif -%}
               {%- if trail.distance_text %}<span class="trail-distance">{{ trail.distance_text }}</span>{% endif -%}
               {%- if trail.elevation_text %}<span class="trail-gain">{{ trail.elevation_text }} gain</span>{% endif -%}
               {%- comment -%}
@@ -114,6 +122,35 @@ docs/_logs/trails.md and nothing more. Server-rendered; no JavaScript.
               <span class="trail-bar" aria-hidden="true"><span style="width: {{ trail.gain_pct }}%"></span></span>
               {%- endif -%}
             </span>
+            {%- comment -%}
+            The photos taken on this hike, in the same tile markup as the
+            parks page so main.js's lightbox handles both. Hidden until the
+            button above opens it; the images are lazy, so a closed set costs
+            nothing to download. Keep Liquid tags out of the button's
+            attribute list -- see the note in parks.markdown.
+            {%- endcomment -%}
+            {%- if trail.photos.size > 0 -%}
+            <div class="trail-photos" id="{{ set_id }}" data-photo-set data-park="{{ group.park }}" hidden>
+              {%- for file in trail.photos -%}
+              {%- assign photo = photos | where: "image", file | first -%}
+              {%- assign shown = render.photos[file] -%}
+              {%- assign label = photo.caption | default: trail.name -%}
+              <button type="button" class="gallery-tile"
+                      data-image="{{ '/assets/gallery/large/' | append: file | relative_url }}"
+                      data-caption="{{ label | escape }}"
+                      data-park="{{ photo.park }}"
+                      data-trail="{{ trail.name | escape }}"
+                      data-when="{% if photo.date %}{{ photo.date | date: '%-d %B %Y' }}{% endif %}"
+                      data-location="{{ photo.location | escape }}"
+                      {% if shown %}style="background-image: url('{{ shown.lqip }}')"{% endif %}>
+                <img src="{{ '/assets/gallery/thumbs/' | append: file | relative_url }}"
+                     alt="{{ label | escape }}"
+                     {% if shown %}width="{{ shown.width }}" height="{{ shown.height }}"{% endif %}
+                     loading="lazy" decoding="async">
+              </button>
+              {%- endfor -%}
+            </div>
+            {%- endif -%}
           </li>
           {%- endfor -%}
         </ul>

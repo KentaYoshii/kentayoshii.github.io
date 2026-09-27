@@ -246,6 +246,7 @@ photographed park in the line below.
     There is a test for this now. Notes on individual attributes:
 
       data-image   the 2000px copy, fetched only when the lightbox opens.
+      data-trail   the hike the photo was taken on, if any, for the caption.
       data-when    the photograph's own EXIF date, formatted here so there is
                    one date format across the site.
       style        the blur-up placeholder, on the button rather than the img
@@ -256,6 +257,7 @@ photographed park in the line below.
                 data-image="{{ '/assets/gallery/large/' | append: file | relative_url }}"
                 data-caption="{{ label | escape }}"
                 data-park="{{ photo.park }}"
+                data-trail="{{ photo.trail | escape }}"
                 data-when="{% if photo.date %}{{ photo.date | date: '%-d %B %Y' }}{% else %}{{ info.year }}{% endif %}"
                 data-tags="{{ photo.tags | join: ' · ' | escape }}"
                 data-location="{{ photo.location | escape }}"

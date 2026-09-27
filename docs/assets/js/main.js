@@ -869,15 +869,16 @@ function applyCover(wrap, url) {
 // rather than in Liquid.
 function initGallery() {
   // There is one grid per park now, so this guards on the page itself rather
-  // than on a single grid element.
-  var page = document.querySelector('.gallery-page');
+  // than on a single grid element. The trails page carries a photo set per
+  // hike ([data-photo-set]) and shares this lightbox.
+  var page = document.querySelector('.gallery-page, [data-photo-sets]');
   if (!page) return;
 
   // Every section, paired with its own tiles. The page is grouped by park, so
   // filtering hides whole sections — heading included — rather than leaving a
   // park's heading standing over an empty grid.
   var sections = Array.prototype.slice.call(
-    document.querySelectorAll('.gallery-park')
+    document.querySelectorAll('.gallery-park, [data-photo-set]')
   ).map(function (section) {
     return {
       el: section,
@@ -894,7 +895,11 @@ function initGallery() {
   var filterBar = document.querySelector('[data-tag-filter]');
   var activeTag = 'all';
 
+  // Only where there is a filter bar. The trails page has none, and its photo
+  // sets start hidden until their hike is opened; running this there would
+  // open every one of them.
   function applyTagFilter() {
+    if (!filterBar) return;
     sections.forEach(function (section) {
       var match = activeTag === 'all' || section.park === activeTag;
       section.el.hidden = !match;
@@ -1119,7 +1124,8 @@ function initGallery() {
     var park = tile.getAttribute('data-park');
     var caption = tile.getAttribute('data-caption') || '';
     if (park && caption.indexOf(park) === 0) park = '';
-    metaText.textContent = [park, tile.getAttribute('data-location'),
+    metaText.textContent = [park, tile.getAttribute('data-trail'),
+                            tile.getAttribute('data-location'),
                             tile.getAttribute('data-when')]
       .filter(function (v) { return v; })
       .join(' · ');
@@ -1315,8 +1321,32 @@ function initGallery() {
     section.appendChild(button);
   }
 
+  // On the trails page, each hike with photos has a button that shows its
+  // set. The button ships hidden and is revealed here, so without JavaScript
+  // there is no control that does nothing -- the photos are still on the
+  // parks page. The lightbox reads the hidden state when it opens, so it
+  // cycles only through the sets that are showing.
+  function initTrailPhotos() {
+    Array.prototype.forEach.call(
+      document.querySelectorAll('.trail-photos-toggle'), function (button) {
+        var set = document.getElementById(button.getAttribute('aria-controls'));
+        if (!set) return;
+        var count = set.querySelectorAll('.gallery-tile').length;
+        function render(open) {
+          set.hidden = !open;
+          button.setAttribute('aria-expanded', String(open));
+          button.setAttribute('aria-label',
+            (open ? 'Hide ' : 'Show ') + count + ' photo' + (count === 1 ? '' : 's'));
+        }
+        button.addEventListener('click', function () { render(set.hidden); });
+        render(false);
+        button.hidden = false;
+      });
+  }
+
   buildTagFilter();
   applyTagFilter();
   initMapPins();
   initChecklistToggle();
+  initTrailPhotos();
 }

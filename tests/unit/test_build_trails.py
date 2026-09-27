@@ -337,3 +337,55 @@ class TestRecords:
     def test_a_record_needs_its_number(self) -> None:
         out = bt.records([logged('No numbers', None)], {})
         assert out == {}
+
+
+class TestAttachPhotos:
+    def trails(self):
+        return [{'name': 'Skyline Trail', 'park': 'Mount Rainier'},
+                {'name': 'Skyline Trail', 'park': 'Other Park'},
+                {'name': 'Avalanche Lake', 'park': 'Glacier'}]
+
+    def test_matches_on_park_and_name_together(self) -> None:
+        """Two parks can each have a hike with the same name."""
+        trails = self.trails()
+        stray = bt.attach_photos(trails, [
+            {'image': 'a.jpeg', 'park': 'Mount Rainier', 'trail': 'Skyline Trail'},
+            {'image': 'b.jpeg', 'park': 'Other Park', 'trail': 'Skyline Trail'},
+        ])
+        assert stray == []
+        assert [t['photos'] for t in trails] == [['a.jpeg'], ['b.jpeg'], []]
+
+    def test_keeps_gallery_order(self) -> None:
+        trails = self.trails()
+        bt.attach_photos(trails, [
+            {'image': 'z.jpeg', 'park': 'Glacier', 'trail': 'Avalanche Lake'},
+            {'image': 'a.jpeg', 'park': 'Glacier', 'trail': 'Avalanche Lake'},
+        ])
+        assert trails[2]['photos'] == ['z.jpeg', 'a.jpeg']
+
+    def test_a_trail_in_the_wrong_park_is_stray(self) -> None:
+        photo = {'image': 'a.jpeg', 'park': 'Zion', 'trail': 'Avalanche Lake'}
+        assert bt.attach_photos(self.trails(), [photo]) == [photo]
+
+    def test_photos_without_a_trail_are_ignored(self) -> None:
+        trails = self.trails()
+        assert bt.attach_photos(trails, [{'image': 'a.jpeg', 'park': 'Glacier'}]) == []
+        assert all(t['photos'] == [] for t in trails)
+
+    def test_path_prefixes_are_dropped(self) -> None:
+        trails = self.trails()
+        bt.attach_photos(trails, [{'image': 'assets/x/a.jpeg', 'park': 'Glacier',
+                                   'trail': 'Avalanche Lake'}])
+        assert trails[2]['photos'] == ['a.jpeg']
+
+
+class TestRealGallery:
+    """The committed gallery.yml against the committed trail log."""
+
+    def test_every_photo_trail_is_a_logged_hike(self) -> None:
+        trails = bt.parse_log()
+        names = bt.load_park_names()
+        for trail in trails:
+            trail['park'] = bt.park_of(trail['place'], names)
+        stray = bt.attach_photos(trails, bt.load_photos())
+        assert [(p['image'], p['trail']) for p in stray] == []

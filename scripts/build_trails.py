@@ -20,6 +20,8 @@ import os
 import re
 import sys
 
+import gallery_data
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 DATA = os.path.join(ROOT, 'docs', '_data')
@@ -28,6 +30,8 @@ OUT_PATH = os.path.join(DATA, 'trails.json')
 # Written by build_travel.py, which build.py runs first. Read only for the
 # national park names, so a hike can be matched to its park.
 TRAVEL_PATH = os.path.join(DATA, 'travel.json')
+# Photos carry an optional `trail`, the name of the hike they were taken on.
+GALLERY_PATH = gallery_data.GALLERY_YML
 PARK_SUFFIX = ' National Park'
 
 MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
@@ -185,6 +189,44 @@ def label_of(place, park):
     return park or (place or '').split(',')[0].strip()
 
 
+# ---- photos -----------------------------------------------------------------
+
+def load_photos(path=None):
+    """The gallery entries, or [] if gallery.yml is missing -- hikes then
+    just have no photos."""
+    try:
+        return gallery_data.load_gallery(path or GALLERY_PATH)
+    except OSError:
+        return []
+
+
+def attach_photos(trails, photos):
+    """Give each hike the file names of the photos taken on it, in gallery
+    order, and return the photos whose `trail` matched no hike.
+
+    A photo matches on park and trail name together, so two parks can each
+    have a hike of the same name. The file name is all the page needs: it
+    looks the rest up in gallery.yml and gallery_render.json, as the parks
+    page does.
+    """
+    by_key = {}
+    for trail in trails:
+        trail['photos'] = []
+        by_key.setdefault((trail['park'], trail['name']), trail)
+
+    stray = []
+    for photo in photos:
+        name = photo.get('trail')
+        if not name:
+            continue
+        trail = by_key.get((photo.get('park'), name))
+        if trail is None:
+            stray.append(photo)
+        else:
+            trail['photos'].append(photo['image'].split('/')[-1])
+    return stray
+
+
 # ---- assembly ---------------------------------------------------------------
 
 def miles_text(miles):
@@ -320,6 +362,10 @@ def main():
     # No flat list of hikes: each one is already inside its group, and the
     # pages read the groups, the per-park totals, or the summary.
     add_gain_share(trails)
+    for photo in attach_photos(trails, load_photos()):
+        print('  warning: %s names trail %r, which is not a logged hike in %s'
+              % (photo['image'], photo['trail'], photo.get('park') or 'no park'),
+              file=sys.stderr)
     parks = by_park(trails)
     payload = {'groups': group(trails), 'parks': parks,
                'records': records(trails, parks), 'summary': summarise(trails)}

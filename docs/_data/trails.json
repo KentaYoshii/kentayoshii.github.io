@@ -19,7 +19,11 @@
      "date": "2026-09",
      "park": "Glacier",
      "label": "Glacier",
-     "gain_pct": 84
+     "gain_pct": 84,
+     "photos": [
+      "IMG_4621.jpeg",
+      "IMG_4629.jpeg"
+     ]
     },
     {
      "name": "Siyeh Pass and St. Mary Falls Loop",
@@ -33,7 +37,11 @@
      "date": "2026-09",
      "park": "Glacier",
      "label": "Glacier",
-     "gain_pct": 100
+     "gain_pct": 100,
+     "photos": [
+      "IMG_4660.jpeg",
+      "IMG_4691.jpeg"
+     ]
     },
     {
      "name": "Grinnell Glacier",
@@ -47,7 +55,13 @@
      "date": "2026-09",
      "park": "Glacier",
      "label": "Glacier",
-     "gain_pct": 51
+     "gain_pct": 51,
+     "photos": [
+      "IMG_4525.jpeg",
+      "IMG_4538.jpeg",
+      "IMG_4553.jpeg",
+      "IMG_4558.jpeg"
+     ]
     },
     {
      "name": "Ptarmigan Tunnel / Iceberg Lake",
@@ -61,7 +75,11 @@
      "date": "2026-09",
      "park": "Glacier",
      "label": "Glacier",
-     "gain_pct": 72
+     "gain_pct": 72,
+     "photos": [
+      "IMG_4495.jpeg",
+      "IMG_4508.jpeg"
+     ]
     },
     {
      "name": "Avalanche Lake",
@@ -75,7 +93,11 @@
      "date": "2026-09",
      "park": "Glacier",
      "label": "Glacier",
-     "gain_pct": 19
+     "gain_pct": 19,
+     "photos": [
+      "IMG_4736.jpeg",
+      "IMG_4737.jpeg"
+     ]
     },
     {
      "name": "Swiftcurrent Pass",
@@ -89,7 +111,12 @@
      "date": "2026-09",
      "park": "Glacier",
      "label": "Glacier",
-     "gain_pct": 70
+     "gain_pct": 70,
+     "photos": [
+      "IMG_4420.jpeg",
+      "IMG_4425.jpeg",
+      "IMG_4436.jpeg"
+     ]
     },
     {
      "name": "Numa Lookout",
@@ -103,7 +130,10 @@
      "date": "2026-09",
      "park": "Glacier",
      "label": "Glacier",
-     "gain_pct": 71
+     "gain_pct": 71,
+     "photos": [
+      "IMG_4749.jpeg"
+     ]
     }
    ],
    "count": 7,
@@ -131,7 +161,12 @@
      "date": "2026-09",
      "park": "Rocky Mountain",
      "label": "Rocky Mountain",
-     "gain_pct": 57
+     "gain_pct": 57,
+     "photos": [
+      "IMG_4317.jpeg",
+      "rmnp4.jpeg",
+      "IMG_4341.jpeg"
+     ]
     },
     {
      "name": "Sprague, Nymph, Dream, Emerald and Haiyaha Lakes to Sky Pond",
@@ -145,7 +180,14 @@
      "date": "2026-09",
      "park": "Rocky Mountain",
      "label": "Rocky Mountain",
-     "gain_pct": 77
+     "gain_pct": 77,
+     "photos": [
+      "rmnp2.jpeg",
+      "IMG_4237.jpeg",
+      "IMG_4253.jpeg",
+      "IMG_4267.jpeg",
+      "rmnp.jpeg"
+     ]
     },
     {
      "name": "Chasm Lake",
@@ -159,7 +201,13 @@
      "date": "2026-09",
      "park": "Rocky Mountain",
      "label": "Rocky Mountain",
-     "gain_pct": 60
+     "gain_pct": 60,
+     "photos": [
+      "IMG_4374.jpeg",
+      "IMG_4377.jpeg",
+      "IMG_4382.jpeg",
+      "rmnp3.jpeg"
+     ]
     },
     {
      "name": "Ouzel Falls",
@@ -173,7 +221,8 @@
      "date": "2026-09",
      "park": "Rocky Mountain",
      "label": "Rocky Mountain",
-     "gain_pct": 23
+     "gain_pct": 23,
+     "photos": []
     }
    ],
    "count": 4,
@@ -201,7 +250,10 @@
      "date": "2026-07",
      "park": "Olympic",
      "label": "Olympic",
-     "gain_pct": 9
+     "gain_pct": 9,
+     "photos": [
+      "olympic5.jpeg"
+     ]
     },
     {
      "name": "Hall of Mosses Trail",
@@ -215,7 +267,8 @@
      "date": "2026-07",
      "park": "Olympic",
      "label": "Olympic",
-     "gain_pct": 2
+     "gain_pct": 2,
+     "photos": []
     },
     {
      "name": "Mount Storm King / Marymere Falls",
@@ -229,7 +282,10 @@
      "date": "2026-07",
      "park": "Olympic",
      "label": "Olympic",
-     "gain_pct": 55
+     "gain_pct": 55,
+     "photos": [
+      "olympic.jpeg"
+     ]
     },
     {
      "name": "Sol Duc Falls Trail",
@@ -243,7 +299,8 @@
      "date": "2026-07",
      "park": "Olympic",
      "label": "Olympic",
-     "gain_pct": 6
+     "gain_pct": 6,
+     "photos": []
     },
     {
      "name": "Hurricane Hill",
@@ -257,7 +314,10 @@
      "date": "2026-07",
      "park": "Olympic",
      "label": "Olympic",
-     "gain_pct": 21
+     "gain_pct": 21,
+     "photos": [
+      "olympic3.jpeg"
+     ]
     },
     {
      "name": "Cape Flattery Trail",
@@ -271,7 +331,8 @@
      "date": "2026-07",
      "park": "Olympic",
      "label": "Olympic",
-     "gain_pct": 5
+     "gain_pct": 5,
+     "photos": []
     },
     {
      "name": "Quinault Loop",
@@ -285,7 +346,8 @@
      "date": "2026-07",
      "park": "Olympic",
      "label": "Olympic",
-     "gain_pct": 9
+     "gain_pct": 9,
+     "photos": []
     },
     {
      "name": "Second Beach",
@@ -299,7 +361,12 @@
      "date": "2026-07",
      "park": "Olympic",
      "label": "Olympic",
-     "gain_pct": 7
+     "gain_pct": 7,
+     "photos": [
+      "olympic4.jpeg",
+      "IMG_3729.jpeg",
+      "olympic6.jpeg"
+     ]
     },
     {
      "name": "Maple Glade Nature Trail",
@@ -313,7 +380,10 @@
      "date": "2026-07",
      "park": "Olympic",
      "label": "Olympic",
-     "gain_pct": 1
+     "gain_pct": 1,
+     "photos": [
+      "olympic7.jpeg"
+     ]
     }
    ],
    "count": 9,
@@ -341,7 +411,14 @@
      "date": "2026-07",
      "park": "Mount Rainier",
      "label": "Mount Rainier",
-     "gain_pct": 87
+     "gain_pct": 87,
+     "photos": [
+      "rainier2.jpeg",
+      "rainier.jpeg",
+      "IMG_3818.jpeg",
+      "rainier3.jpeg",
+      "rainier4.jpeg"
+     ]
     },
     {
      "name": "Bench and Snow Lakes Trail",
@@ -355,7 +432,8 @@
      "date": "2026-07",
      "park": "Mount Rainier",
      "label": "Mount Rainier",
-     "gain_pct": 11
+     "gain_pct": 11,
+     "photos": []
     },
     {
      "name": "Mount Fremont Lookout and Burroughs Mountain Loop",
@@ -369,7 +447,8 @@
      "date": "2026-07",
      "park": "Mount Rainier",
      "label": "Mount Rainier",
-     "gain_pct": 65
+     "gain_pct": 65,
+     "photos": []
     }
    ],
    "count": 3,
@@ -397,7 +476,8 @@
      "date": "2026-04",
      "park": "Haleakalā",
      "label": "Haleakalā",
-     "gain_pct": 98
+     "gain_pct": 98,
+     "photos": []
     }
    ],
    "count": 1,
@@ -425,7 +505,12 @@
      "date": "2025-12",
      "park": "White Sands",
      "label": "White Sands",
-     "gain_pct": 1
+     "gain_pct": 1,
+     "photos": [
+      "IMG_2958.jpg",
+      "whitesands.jpeg",
+      "IMG_2982.jpeg"
+     ]
     }
    ],
    "count": 1,
@@ -453,7 +538,8 @@
      "date": "2025-12",
      "park": "Guadalupe Mountains",
      "label": "Guadalupe Mountains",
-     "gain_pct": 9
+     "gain_pct": 9,
+     "photos": []
     },
     {
      "name": "McKittrick Canyon to The Notch",
@@ -467,7 +553,12 @@
      "date": "2025-12",
      "park": "Guadalupe Mountains",
      "label": "Guadalupe Mountains",
-     "gain_pct": 76
+     "gain_pct": 76,
+     "photos": [
+      "IMG_2908.jpeg",
+      "IMG_2912.jpeg",
+      "IMG_2931.jpeg"
+     ]
     },
     {
      "name": "Hunter Peak via Bear Canyon",
@@ -481,7 +572,10 @@
      "date": "2025-12",
      "park": "Guadalupe Mountains",
      "label": "Guadalupe Mountains",
-     "gain_pct": 64
+     "gain_pct": 64,
+     "photos": [
+      "IMG_2867.jpeg"
+     ]
     },
     {
      "name": "Guadalupe Peak",
@@ -495,7 +589,12 @@
      "date": "2025-12",
      "park": "Guadalupe Mountains",
      "label": "Guadalupe Mountains",
-     "gain_pct": 75
+     "gain_pct": 75,
+     "photos": [
+      "guadalupe.jpeg",
+      "IMG_2813.jpeg",
+      "IMG_2829.jpeg"
+     ]
     },
     {
      "name": "Devil's Hall",
@@ -509,7 +608,10 @@
      "date": "2025-12",
      "park": "Guadalupe Mountains",
      "label": "Guadalupe Mountains",
-     "gain_pct": 17
+     "gain_pct": 17,
+     "photos": [
+      "IMG_2898.jpeg"
+     ]
     }
    ],
    "count": 5,
@@ -537,7 +639,14 @@
      "date": "2025-12",
      "park": "Carlsbad Caverns",
      "label": "Carlsbad Caverns",
-     "gain_pct": 18
+     "gain_pct": 18,
+     "photos": [
+      "IMG_2735.jpeg",
+      "IMG_2745.jpeg",
+      "IMG_2757.jpeg",
+      "carlsbad.jpeg",
+      "IMG_2764.jpeg"
+     ]
     },
     {
      "name": "Desert Nature Trail",
@@ -551,7 +660,8 @@
      "date": "2025-12",
      "park": "Carlsbad Caverns",
      "label": "Carlsbad Caverns",
-     "gain_pct": 2
+     "gain_pct": 2,
+     "photos": []
     }
    ],
    "count": 2,
@@ -579,7 +689,10 @@
      "date": "2025-12",
      "park": "Big Bend",
      "label": "Big Bend",
-     "gain_pct": 75
+     "gain_pct": 75,
+     "photos": [
+      "IMG_2497.jpeg"
+     ]
     },
     {
      "name": "Upper Burro Mesa Pouroff",
@@ -593,7 +706,8 @@
      "date": "2025-12",
      "park": "Big Bend",
      "label": "Big Bend",
-     "gain_pct": 10
+     "gain_pct": 10,
+     "photos": []
     },
     {
      "name": "Lower Burro Mesa Pouroff",
@@ -607,7 +721,8 @@
      "date": "2025-12",
      "park": "Big Bend",
      "label": "Big Bend",
-     "gain_pct": 4
+     "gain_pct": 4,
+     "photos": []
     },
     {
      "name": "Santa Elena Canyon Trail",
@@ -621,7 +736,8 @@
      "date": "2025-12",
      "park": "Big Bend",
      "label": "Big Bend",
-     "gain_pct": 6
+     "gain_pct": 6,
+     "photos": []
     },
     {
      "name": "The Window Trail",
@@ -635,7 +751,10 @@
      "date": "2025-12",
      "park": "Big Bend",
      "label": "Big Bend",
-     "gain_pct": 23
+     "gain_pct": 23,
+     "photos": [
+      "bb_1.jpeg"
+     ]
     },
     {
      "name": "Lost Mine Trail",
@@ -649,7 +768,11 @@
      "date": "2025-12",
      "park": "Big Bend",
      "label": "Big Bend",
-     "gain_pct": 27
+     "gain_pct": 27,
+     "photos": [
+      "bb_3.jpeg",
+      "IMG_2562.jpeg"
+     ]
     },
     {
      "name": "Ernst Ridge Trail",
@@ -663,7 +786,8 @@
      "date": "2025-12",
      "park": "Big Bend",
      "label": "Big Bend",
-     "gain_pct": 23
+     "gain_pct": 23,
+     "photos": []
     },
     {
      "name": "Boquillas Canyon Trail",
@@ -677,7 +801,10 @@
      "date": "2025-12",
      "park": "Big Bend",
      "label": "Big Bend",
-     "gain_pct": 4
+     "gain_pct": 4,
+     "photos": [
+      "bb_2.jpeg"
+     ]
     },
     {
      "name": "Dog Canyon and Devil's Den",
@@ -691,7 +818,10 @@
      "date": "2025-12",
      "park": "Big Bend",
      "label": "Big Bend",
-     "gain_pct": 16
+     "gain_pct": 16,
+     "photos": [
+      "IMG_2653.jpeg"
+     ]
     }
    ],
    "count": 9,
@@ -719,7 +849,8 @@
      "date": "2025-10",
      "park": "Yellowstone",
      "label": "Yellowstone",
-     "gain_pct": 4
+     "gain_pct": 4,
+     "photos": []
     },
     {
      "name": "Upper Geyser Basin and Old Faithful Observation Point Loop",
@@ -733,7 +864,8 @@
      "date": "2025-10",
      "park": "Yellowstone",
      "label": "Yellowstone",
-     "gain_pct": 8
+     "gain_pct": 8,
+     "photos": []
     },
     {
      "name": "Mammoth Hot Springs Trail",
@@ -747,7 +879,10 @@
      "date": "2025-10",
      "park": "Yellowstone",
      "label": "Yellowstone",
-     "gain_pct": 8
+     "gain_pct": 8,
+     "photos": [
+      "yellowstone_1.jpeg"
+     ]
     },
     {
      "name": "Beaver Ponds Loop Trail",
@@ -761,7 +896,8 @@
      "date": "2025-10",
      "park": "Yellowstone",
      "label": "Yellowstone",
-     "gain_pct": 18
+     "gain_pct": 18,
+     "photos": []
     },
     {
      "name": "Seven Mile Hole",
@@ -775,7 +911,8 @@
      "date": "2025-10",
      "park": "Yellowstone",
      "label": "Yellowstone",
-     "gain_pct": 49
+     "gain_pct": 49,
+     "photos": []
     },
     {
      "name": "Dunraven Pass to Mount Washburn",
@@ -789,7 +926,8 @@
      "date": "2025-10",
      "park": "Yellowstone",
      "label": "Yellowstone",
-     "gain_pct": 33
+     "gain_pct": 33,
+     "photos": []
     },
     {
      "name": "Artist Point via South Rim Trail",
@@ -803,7 +941,10 @@
      "date": "2025-10",
      "park": "Yellowstone",
      "label": "Yellowstone",
-     "gain_pct": 7
+     "gain_pct": 7,
+     "photos": [
+      "yellowstone_2.jpeg"
+     ]
     }
    ],
    "count": 7,
@@ -831,7 +972,8 @@
      "date": "2025-09",
      "park": "Grand Teton",
      "label": "Grand Teton",
-     "gain_pct": 98
+     "gain_pct": 98,
+     "photos": []
     },
     {
      "name": "Surprise and Amphitheater Lakes",
@@ -845,7 +987,10 @@
      "date": "2025-09",
      "park": "Grand Teton",
      "label": "Grand Teton",
-     "gain_pct": 71
+     "gain_pct": 71,
+     "photos": [
+      "grand_teton_1.jpeg"
+     ]
     },
     {
      "name": "Taggart and Bradley Lakes Loop",
@@ -859,7 +1004,8 @@
      "date": "2025-09",
      "park": "Grand Teton",
      "label": "Grand Teton",
-     "gain_pct": 18
+     "gain_pct": 18,
+     "photos": []
     }
    ],
    "count": 3,
@@ -887,7 +1033,10 @@
      "date": "2025-05",
      "park": "Yosemite",
      "label": "Yosemite",
-     "gain_pct": 88
+     "gain_pct": 88,
+     "photos": [
+      "yosemite_3.jpeg"
+     ]
     }
    ],
    "count": 1,
@@ -915,7 +1064,8 @@
      "date": "2025-04",
      "park": "Grand Canyon",
      "label": "Grand Canyon",
-     "gain_pct": 72
+     "gain_pct": 72,
+     "photos": []
     }
    ],
    "count": 1,
@@ -943,7 +1093,8 @@
      "date": "2025-04",
      "park": "Zion",
      "label": "Zion",
-     "gain_pct": 35
+     "gain_pct": 35,
+     "photos": []
     }
    ],
    "count": 1,
@@ -971,7 +1122,10 @@
      "date": "2022-04",
      "park": "Hawaiʻi Volcanoes",
      "label": "Hawaiʻi Volcanoes",
-     "gain_pct": 18
+     "gain_pct": 18,
+     "photos": [
+      "hawaiian_volcanoes_1.jpeg"
+     ]
     }
    ],
    "count": 1,

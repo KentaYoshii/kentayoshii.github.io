@@ -372,10 +372,14 @@ them, the same reason `plans/` sits at the root.
      location: California
      date: "2026-06-14"
      caption: Tunnel View at sunrise
+     trail: Mist Trail
    ```
 
    `image` is a bare filename, resolved against `photo-originals/`. Quote the
    date, so a YAML parser hands Jekyll a string rather than a date object.
+   `trail` is optional: the name of the hike it was taken on, exactly as
+   written in `docs/_logs/trails.md`. It adds the trail to the lightbox
+   caption and lists the photo under that hike on `/adventure/trails/`.
 
 3. Regenerate the derivatives. This is the one step that needs Pillow, which
    is why it is not in `build.py`:
@@ -385,10 +389,13 @@ them, the same reason `plans/` sits at the root.
    python3 scripts/build_gallery_thumbs.py
    ```
 
-4. Commit the original, the derivatives and the render data together:
+4. Regenerate the data, since `trails.json` carries each hike's photos
+   (`build.py` warns about a `trail` that matches no logged hike), then commit
+   the original, the derivatives and the data together:
 
    ```sh
-   git add photo-originals docs/assets/gallery docs/_data/gallery.yml docs/_data/gallery_render.json
+   python3 scripts/build.py
+   git add photo-originals docs/assets/gallery docs/_data
    git commit -m "Add a gallery photo" && git push origin gh-pages
    ```
 

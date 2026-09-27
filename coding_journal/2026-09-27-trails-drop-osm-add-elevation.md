@@ -17,14 +17,15 @@
 
 - `build_trails.py` second change: sort by date only (stable), so hikes within a month keep log order and stay grouped by park.
 - Park grouping (follow-up): `build_trails.py` matches each hike to its travel.json park (`park_of`), groups consecutive same-month same-park hikes (`group`, `first_of_park` flags the anchor), and writes per-park totals (`by_park`). Output is `groups` / `parks` / `summary`; the flat `trails` list was dropped as a duplicate. `trails.markdown` renders park headings in the park's photo colour, linking to `/adventure/parks/`; rows show name, distance, gain only. `parks.markdown` shows "N hikes, X mi" in each photo section head and "N hikes" on checklist tiles, linking to `/adventure/trails/#park-<slug>`. Hub card adds the climbing total.
+- Follow-ups: unmatched-park warning (`unmatched_parks`); gain bar (`gain_pct`) and records line (`records`); "miles hiked" pill on the home page; photo-to-hike links — `trail:` on 67 gallery.yml entries (matched by GPS/date/caption, user confirmed), `attach_photos` puts file names on each hike, trails page shows a 📷 toggle per hike opening a lazy photo set that reuses the parks-page lightbox (`[data-photo-set]`; `applyTagFilter` skipped without a filter bar so sets stay collapsed), lightbox meta adds the trail. Window caption corrected from "pour-off".
 
 ## Verification
 - `python3 scripts/build.py`: only `trails.json` changed in `docs/_data`.
-- `python3 -m pytest`: 395 passed.
+- `python3 -m pytest`: 415 passed.
 - Jekyll not installed here; page not rendered locally. CI `site` job covers Liquid.
 
 ## TODOs
-- Offered, not started: a gain bar per row, and a records line (longest hike, most climbing).
+- Unassigned photos (no matching logged hike): Hidden Lake, Lake McDonald, Big Bend "window in the rock" and Rio Grande, Olympic boardwalk, Haleakalā set, Zion overlook, Grand Canyon rim, Yellowstone Lake, Yosemite sequoias.
 - All 15 visited parks logged: 55 hikes, 417.9 mi, 86,142 ft. Within a month, entries are ordered newest park first by photo dates.
 
 ## Learnings

@@ -1559,6 +1559,50 @@ a.trail-park-name {
   }
 }
 
+// The camera button on a hike with photos. First in the metadata, so the
+// distances, gains and bars after it keep their right-aligned column.
+.trail-photos-toggle {
+  padding: 1px 8px;
+  font-family: $base-font-family;
+  font-size: 12px;
+  line-height: 1.5;
+  color: $grey-color-dark;
+  background: none;
+  border: 1px solid $grey-color-light;
+  border-radius: 999px;
+  cursor: pointer;
+
+  &:hover,
+  &[aria-expanded="true"] {
+    border-color: var(--park-accent, #{$brand-color});
+  }
+}
+
+// A hike's photos, opened under its row. The tiles are the parks page's
+// .gallery-tile, smaller. display: grid would override the hidden attribute
+// the button toggles, so hidden is restated.
+.trail-photos {
+  flex: 1 1 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 8px;
+  padding: 8px 0 4px;
+
+  &[hidden] {
+    display: none;
+  }
+
+  .gallery-tile {
+    border-radius: 6px;
+  }
+}
+
+@media screen and (max-width: $on-palm) {
+  .trail-photos {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}
+
 // Longest, most climbing, most miles: one line of label/value pairs under
 // the tagline, wrapping as whole pairs.
 .trail-records {
@@ -2621,6 +2665,16 @@ a.parks-map-pin {
 
     > span {
       background-color: var(--park-accent-dark, #{$dark-brand});
+    }
+  }
+
+  .trail-photos-toggle {
+    color: $dark-text;
+    border-color: $dark-border;
+
+    &:hover,
+    &[aria-expanded="true"] {
+      border-color: var(--park-accent-dark, #{$dark-brand});
     }
   }
 
