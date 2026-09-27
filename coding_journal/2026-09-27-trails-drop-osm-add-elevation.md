@@ -19,6 +19,7 @@
 - Park grouping (follow-up): `build_trails.py` matches each hike to its travel.json park (`park_of`), groups consecutive same-month same-park hikes (`group`, `first_of_park` flags the anchor), and writes per-park totals (`by_park`). Output is `groups` / `parks` / `summary`; the flat `trails` list was dropped as a duplicate. `trails.markdown` renders park headings in the park's photo colour, linking to `/adventure/parks/`; rows show name, distance, gain only. `parks.markdown` shows "N hikes, X mi" in each photo section head and "N hikes" on checklist tiles, linking to `/adventure/trails/#park-<slug>`. Hub card adds the climbing total.
 - Follow-ups: unmatched-park warning (`unmatched_parks`); gain bar (`gain_pct`) and records line (`records`); "miles hiked" pill on the home page; photo-to-hike links — `trail:` on 67 gallery.yml entries (matched by GPS/date/caption, user confirmed), `attach_photos` puts file names on each hike, trails page shows a 📷 toggle per hike opening a lazy photo set that reuses the parks-page lightbox (`[data-photo-set]`; `applyTagFilter` skipped without a filter bar so sets stay collapsed), lightbox meta adds the trail. Window caption corrected from "pour-off".
 - NZ hikes (Jan 2024): 5 logged with the user's distances and gains (Routeburn was a 4.6 mi section, not the traverse); Tongariro distance is DOC's 20.2 km as 12.6 mi. `unmatched_parks` now skips places whose region is not a two-letter US state code.
+- 43 new photos (user commit 14ad51e): gallery.yml entries with captions from contact sheets and trails from GPS/time (Seven Mile Hole for IMG_2361 is inferred: north-rim position on the afternoon after Washburn). 2025 sections reordered by photo count per the file's rule. 96 photos on 41 hikes. Derivatives built.
 
 ## Verification
 - `python3 scripts/build.py`: only `trails.json` changed in `docs/_data`.
@@ -26,6 +27,7 @@
 - Jekyll not installed here; page not rendered locally. CI `site` job covers Liquid.
 
 ## TODOs
+- Park colour: `combine_colours` circular hue mean turns bimodal parks (blue sky + red rock) into a hue in neither — Grand Canyon became #503254 purple after the new photos. Proposed fix: medoid hue (an actual photo's hue). Awaiting user decision.
 - Unassigned photos (no matching logged hike): Hidden Lake, Lake McDonald, Big Bend "window in the rock" and Rio Grande, Olympic boardwalk, Haleakalā set, Zion overlook, Grand Canyon rim, Yellowstone Lake, Yosemite sequoias.
 - All 15 visited parks logged: 55 hikes, 417.9 mi, 86,142 ft. Within a month, entries are ordered newest park first by photo dates.
 

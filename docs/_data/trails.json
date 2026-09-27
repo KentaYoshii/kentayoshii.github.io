@@ -850,7 +850,9 @@
      "park": "Yellowstone",
      "label": "Yellowstone",
      "gain_pct": 4,
-     "photos": []
+     "photos": [
+      "IMG_2045.jpeg"
+     ]
     },
     {
      "name": "Upper Geyser Basin and Old Faithful Observation Point Loop",
@@ -865,7 +867,9 @@
      "park": "Yellowstone",
      "label": "Yellowstone",
      "gain_pct": 8,
-     "photos": []
+     "photos": [
+      "IMG_2028.jpeg"
+     ]
     },
     {
      "name": "Mammoth Hot Springs Trail",
@@ -897,7 +901,9 @@
      "park": "Yellowstone",
      "label": "Yellowstone",
      "gain_pct": 18,
-     "photos": []
+     "photos": [
+      "IMG_2171.jpeg"
+     ]
     },
     {
      "name": "Seven Mile Hole",
@@ -912,7 +918,9 @@
      "park": "Yellowstone",
      "label": "Yellowstone",
      "gain_pct": 49,
-     "photos": []
+     "photos": [
+      "IMG_2361.jpeg"
+     ]
     },
     {
      "name": "Dunraven Pass to Mount Washburn",
@@ -927,7 +935,10 @@
      "park": "Yellowstone",
      "label": "Yellowstone",
      "gain_pct": 33,
-     "photos": []
+     "photos": [
+      "IMG_2307.jpeg",
+      "IMG_2325.jpeg"
+     ]
     },
     {
      "name": "Artist Point via South Rim Trail",
@@ -973,7 +984,19 @@
      "park": "Grand Teton",
      "label": "Grand Teton",
      "gain_pct": 98,
-     "photos": []
+     "photos": [
+      "IMG_1825.jpeg",
+      "IMG_1828.jpeg",
+      "IMG_1831.jpeg",
+      "IMG_1836.jpeg",
+      "IMG_1839.jpeg",
+      "IMG_1856.jpeg",
+      "IMG_1864.jpeg",
+      "IMG_1872.jpg",
+      "IMG_1878.jpeg",
+      "IMG_1888.jpg",
+      "IMG_1901.jpeg"
+     ]
     },
     {
      "name": "Surprise and Amphitheater Lakes",
@@ -989,7 +1012,9 @@
      "label": "Grand Teton",
      "gain_pct": 71,
      "photos": [
-      "grand_teton_1.jpeg"
+      "IMG_1727.jpeg",
+      "grand_teton_1.jpeg",
+      "IMG_1755.jpeg"
      ]
     },
     {
@@ -1005,7 +1030,9 @@
      "park": "Grand Teton",
      "label": "Grand Teton",
      "gain_pct": 18,
-     "photos": []
+     "photos": [
+      "IMG_1683.jpeg"
+     ]
     }
    ],
    "count": 3,
@@ -1035,7 +1062,9 @@
      "label": "Yosemite",
      "gain_pct": 88,
      "photos": [
-      "yosemite_3.jpeg"
+      "yosemite_3.jpeg",
+      "IMG_1560.jpeg",
+      "IMG_1569.jpeg"
      ]
     }
    ],
@@ -1065,7 +1094,11 @@
      "park": "Grand Canyon",
      "label": "Grand Canyon",
      "gain_pct": 72,
-     "photos": []
+     "photos": [
+      "IMG_1248.jpeg",
+      "IMG_1282.jpeg",
+      "IMG_1304.jpeg"
+     ]
     }
    ],
    "count": 1,
@@ -1094,7 +1127,12 @@
      "park": "Zion",
      "label": "Zion",
      "gain_pct": 35,
-     "photos": []
+     "photos": [
+      "IMG_1020.jpeg",
+      "IMG_1053.jpeg",
+      "IMG_1078.jpeg",
+      "IMG_1095.jpg"
+     ]
     }
    ],
    "count": 1,

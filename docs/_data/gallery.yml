@@ -387,6 +387,219 @@
   caption: A band of cloud across the mountain
   tags: [summit, forest]
 
+# Grand Teton -- Wyoming, visited 2025
+- image: IMG_1683.jpeg
+  park: Grand Teton
+  trail: Taggart and Bradley Lakes Loop
+  location: Wyoming
+  date: "2025-09-27"
+  caption: The Tetons over Taggart Lake
+  tags: [lake, mountains]
+- image: IMG_1727.jpeg
+  park: Grand Teton
+  trail: Surprise and Amphitheater Lakes
+  location: Wyoming
+  date: "2025-09-28"
+  caption: Autumn undergrowth under a hazy sun
+  tags: [autumn, forest]
+- image: grand_teton_1.jpeg
+  park: Grand Teton
+  trail: Surprise and Amphitheater Lakes
+  location: Wyoming
+  date: "2025-09-28"
+  caption: A lake under the granite
+  tags: [lake, reflection, granite]
+- image: IMG_1755.jpeg
+  park: Grand Teton
+  trail: Surprise and Amphitheater Lakes
+  location: Wyoming
+  date: "2025-09-28"
+  caption: Red brush along the switchbacks
+  tags: [autumn, trail]
+- image: IMG_1825.jpeg
+  park: Grand Teton
+  trail: Paintbrush–Cascade Canyon Loop
+  location: Wyoming
+  date: "2025-09-29"
+  caption: Dawn over a still lake at the start of the loop
+  tags: [lake, sunrise]
+- image: IMG_1828.jpeg
+  park: Grand Teton
+  trail: Paintbrush–Cascade Canyon Loop
+  location: Wyoming
+  date: "2025-09-29"
+  caption: Sunrise through the pines
+  tags: [autumn, sunrise]
+- image: IMG_1831.jpeg
+  park: Grand Teton
+  trail: Paintbrush–Cascade Canyon Loop
+  location: Wyoming
+  date: "2025-09-29"
+  caption: A moose in the undergrowth
+  tags: [wildlife, moose]
+- image: IMG_1836.jpeg
+  park: Grand Teton
+  trail: Paintbrush–Cascade Canyon Loop
+  location: Wyoming
+  date: "2025-09-29"
+  caption: A creek tumbling over granite
+  tags: [creek, autumn]
+- image: IMG_1839.jpeg
+  park: Grand Teton
+  trail: Paintbrush–Cascade Canyon Loop
+  location: Wyoming
+  date: "2025-09-29"
+  caption: Looking back down the canyon to the lakes
+  tags: [canyon, autumn]
+- image: IMG_1856.jpeg
+  park: Grand Teton
+  trail: Paintbrush–Cascade Canyon Loop
+  location: Wyoming
+  date: "2025-09-29"
+  caption: A small tarn below the divide
+  tags: [mountains, lake]
+- image: IMG_1864.jpeg
+  park: Grand Teton
+  trail: Paintbrush–Cascade Canyon Loop
+  location: Wyoming
+  date: "2025-09-29"
+  caption: The scree climb toward the divide
+  tags: [mountains, scree]
+- image: IMG_1872.jpg
+  park: Grand Teton
+  trail: Paintbrush–Cascade Canyon Loop
+  location: Wyoming
+  date: "2025-09-29"
+  caption: A pika among the rocks
+  tags: [wildlife, pika]
+- image: IMG_1878.jpeg
+  park: Grand Teton
+  trail: Paintbrush–Cascade Canyon Loop
+  location: Wyoming
+  date: "2025-09-29"
+  caption: Peaks in cloud above the north fork of Cascade Canyon
+  tags: [mountains, autumn]
+- image: IMG_1888.jpg
+  park: Grand Teton
+  trail: Paintbrush–Cascade Canyon Loop
+  location: Wyoming
+  date: "2025-09-29"
+  caption: A deer on the trail
+  tags: [wildlife, deer]
+- image: IMG_1901.jpeg
+  park: Grand Teton
+  trail: Paintbrush–Cascade Canyon Loop
+  location: Wyoming
+  date: "2025-09-29"
+  caption: Jenny Lake under afternoon cloud
+  tags: [lake, clouds]
+- image: IMG_1923.jpeg
+  park: Grand Teton
+  location: Wyoming
+  date: "2025-09-30"
+  caption: The Tetons from Schwabacher Landing
+  tags: [mountains, autumn, reflection]
+- image: IMG_1936.jpeg
+  park: Grand Teton
+  location: Wyoming
+  date: "2025-09-30"
+  caption: Rain over the ranges east of the valley
+  tags: [clouds, mountains]
+
+# Yellowstone -- Wyoming / Montana / Idaho, visited 2025
+- image: IMG_2028.jpeg
+  park: Yellowstone
+  trail: Upper Geyser Basin and Old Faithful Observation Point Loop
+  location: Wyoming / Montana / Idaho
+  date: "2025-09-30"
+  caption: Morning Glory Pool
+  tags: [thermal, hot spring]
+- image: IMG_2045.jpeg
+  park: Yellowstone
+  trail: Fairy Falls Trail
+  location: Wyoming / Montana / Idaho
+  date: "2025-09-30"
+  caption: Grand Prismatic Spring from the overlook
+  tags: [thermal, hot spring]
+- image: IMG_2117.jpeg
+  park: Yellowstone
+  location: Wyoming / Montana / Idaho
+  date: "2025-10-01"
+  caption: Steam across Norris Geyser Basin
+  tags: [thermal, steam]
+- image: yellowstone_1.jpeg
+  park: Yellowstone
+  trail: Mammoth Hot Springs Trail
+  location: Wyoming / Montana / Idaho
+  date: "2025-10-01"
+  caption: Steam off the travertine terraces
+  tags: [thermal, terraces]
+- image: IMG_2171.jpeg
+  park: Yellowstone
+  trail: Beaver Ponds Loop Trail
+  location: Wyoming / Montana / Idaho
+  date: "2025-10-01"
+  caption: A beaver pond in the sagebrush hills
+  tags: [pond]
+- image: yellowstone_3.jpeg
+  park: Yellowstone
+  location: Wyoming / Montana / Idaho
+  date: "2025-10-02"
+  caption: Sunrise over the lake
+  tags: [sunrise, lake]
+- image: IMG_2234.jpeg
+  park: Yellowstone
+  location: Wyoming / Montana / Idaho
+  date: "2025-10-02"
+  caption: An elk grazing above Yellowstone Lake at dawn
+  tags: [wildlife, elk, lake]
+- image: IMG_2235.jpg
+  park: Yellowstone
+  location: Wyoming / Montana / Idaho
+  date: "2025-10-02"
+  caption: Mule deer crossing the road
+  tags: [wildlife, deer]
+- image: IMG_2239.jpeg
+  park: Yellowstone
+  location: Wyoming / Montana / Idaho
+  date: "2025-10-02"
+  caption: The Yellowstone River through Hayden Valley at sunrise
+  tags: [river, sunrise]
+- image: yellowstone_2.jpeg
+  park: Yellowstone
+  trail: Artist Point via South Rim Trail
+  location: Wyoming / Montana / Idaho
+  date: "2025-10-02"
+  caption: Yellow walls, and a falls at the far end
+  tags: [canyon, waterfall]
+- image: IMG_2307.jpeg
+  park: Yellowstone
+  trail: Dunraven Pass to Mount Washburn
+  location: Wyoming / Montana / Idaho
+  date: "2025-10-03"
+  caption: Early light through the firs on the way up
+  tags: [sunrise, forest]
+- image: IMG_2325.jpeg
+  park: Yellowstone
+  trail: Dunraven Pass to Mount Washburn
+  location: Wyoming / Montana / Idaho
+  date: "2025-10-03"
+  caption: The summit sign on Mount Washburn
+  tags: [summit]
+- image: IMG_2329.jpeg
+  park: Yellowstone
+  location: Wyoming / Montana / Idaho
+  date: "2025-10-03"
+  caption: A pronghorn by the road
+  tags: [wildlife, pronghorn]
+- image: IMG_2361.jpeg
+  park: Yellowstone
+  trail: Seven Mile Hole
+  location: Wyoming / Montana / Idaho
+  date: "2025-10-03"
+  caption: The Yellowstone River deep in the canyon
+  tags: [canyon, river]
+
 # Big Bend -- Texas, visited 2025
 - image: IMG_2415.jpeg
   park: Big Bend
@@ -525,6 +738,107 @@
   caption: Late sun through the canyon pines
   tags: [forest, autumn]
 
+# Zion -- Utah, visited 2025
+- image: IMG_0936.jpeg
+  park: Zion
+  location: Utah
+  date: "2025-04-27"
+  caption: Sunrise through a gap in the slickrock
+  tags: [sunrise, canyon]
+- image: zion_1.jpeg
+  park: Zion
+  location: Utah
+  date: "2025-04-27"
+  caption: The canyon from the overlook
+  tags: [canyon, clouds]
+- image: IMG_1020.jpeg
+  park: Zion
+  trail: Angels Landing
+  location: Utah
+  date: "2025-04-27"
+  caption: The canyon floor and the river from the climb
+  tags: [canyon, river]
+- image: IMG_1053.jpeg
+  park: Zion
+  trail: Angels Landing
+  location: Utah
+  date: "2025-04-27"
+  caption: The fin of Angels Landing from Scout Lookout
+  tags: [canyon, summit]
+- image: IMG_1078.jpeg
+  park: Zion
+  trail: Angels Landing
+  location: Utah
+  date: "2025-04-27"
+  caption: A chipmunk on the sandstone
+  tags: [wildlife, chipmunk]
+- image: IMG_1095.jpg
+  park: Zion
+  trail: Angels Landing
+  location: Utah
+  date: "2025-04-27"
+  caption: Chains along the final ridge
+  tags: [canyon, chains]
+- image: IMG_1110.jpeg
+  park: Zion
+  location: Utah
+  date: "2025-04-28"
+  caption: The Virgin River winding up the canyon
+  tags: [canyon, river]
+- image: IMG_1141.jpeg
+  park: Zion
+  location: Utah
+  date: "2025-04-28"
+  caption: Cottonwoods along the river under the walls
+  tags: [canyon, river]
+
+# Yosemite -- California, visited 2025
+- image: yosemite_2.jpeg
+  park: Yosemite
+  location: California
+  date: "2025-05-01"
+  caption: Looking up in the sequoia grove
+  tags: [sequoias, forest]
+- image: IMG_1438.jpeg
+  park: Yosemite
+  location: California
+  date: "2025-05-01"
+  caption: El Capitan and Bridalveil Fall from Tunnel View
+  tags: [valley, waterfall]
+- image: IMG_1465.jpeg
+  park: Yosemite
+  location: California
+  date: "2025-05-01"
+  caption: Yosemite Falls above the flooded Merced
+  tags: [waterfall, river]
+- image: IMG_1482.jpeg
+  park: Yosemite
+  location: California
+  date: "2025-05-02"
+  caption: Dawn at Tunnel View
+  tags: [sunrise, valley]
+- image: yosemite_3.jpeg
+  park: Yosemite
+  trail: Yosemite Point
+  location: California
+  date: "2025-05-02"
+  caption: The upper fall, with Half Dome down the valley
+  tags: [waterfall, valley]
+- image: IMG_1560.jpeg
+  park: Yosemite
+  trail: Yosemite Point
+  location: California
+  date: "2025-05-02"
+  caption: Across the valley from Yosemite Point
+  tags: [valley, clouds]
+- image: IMG_1569.jpeg
+  park: Yosemite
+  trail: Yosemite Point
+  location: California
+  date: "2025-05-02"
+  caption: Half Dome from Yosemite Point
+  tags: [half dome, clouds]
+
 # Carlsbad Caverns -- New Mexico, visited 2025
 - image: IMG_2735.jpeg
   park: Carlsbad Caverns
@@ -562,6 +876,41 @@
   caption: Columns rising to the ceiling
   tags: [cave, formations]
 
+# Grand Canyon -- Arizona, visited 2025
+- image: IMG_1248.jpeg
+  park: Grand Canyon
+  trail: Bright Angel Trail to Havasupai Gardens
+  location: Arizona
+  date: "2025-04-29"
+  caption: First light from the top of the trail
+  tags: [sunrise, canyon]
+- image: IMG_1282.jpeg
+  park: Grand Canyon
+  trail: Bright Angel Trail to Havasupai Gardens
+  location: Arizona
+  date: "2025-04-29"
+  caption: The trail dropping toward the plateau
+  tags: [canyon]
+- image: IMG_1304.jpeg
+  park: Grand Canyon
+  trail: Bright Angel Trail to Havasupai Gardens
+  location: Arizona
+  date: "2025-04-29"
+  caption: A mule train on the switchbacks
+  tags: [mules, trail]
+- image: grand_canyon.jpeg
+  park: Grand Canyon
+  location: Arizona
+  date: "2025-04-29"
+  caption: Layers going back to the far rim
+  tags: [canyon, layers]
+- image: IMG_1371.jpeg
+  park: Grand Canyon
+  location: Arizona
+  date: "2025-04-30"
+  caption: Sunrise over the canyon rim
+  tags: [sunrise, canyon]
+
 # White Sands -- New Mexico, visited 2025
 - image: IMG_2958.jpg
   park: White Sands
@@ -583,68 +932,6 @@
   date: "2025-12-18"
   caption: Dunes and footprints at sunset
   tags: [dunes, sunset]
-
-# Yellowstone -- Wyoming / Montana / Idaho, visited 2025
-- image: yellowstone_1.jpeg
-  park: Yellowstone
-  trail: Mammoth Hot Springs Trail
-  location: Wyoming / Montana / Idaho
-  date: "2025-10-01"
-  caption: Steam off the travertine terraces
-  tags: [thermal, terraces]
-- image: yellowstone_3.jpeg
-  park: Yellowstone
-  location: Wyoming / Montana / Idaho
-  date: "2025-10-02"
-  caption: Sunrise over the lake
-  tags: [sunrise, lake]
-- image: yellowstone_2.jpeg
-  park: Yellowstone
-  trail: Artist Point via South Rim Trail
-  location: Wyoming / Montana / Idaho
-  date: "2025-10-02"
-  caption: Yellow walls, and a falls at the far end
-  tags: [canyon, waterfall]
-
-# Yosemite -- California, visited 2025
-- image: yosemite_2.jpeg
-  park: Yosemite
-  location: California
-  date: "2025-05-01"
-  caption: Looking up in the sequoia grove
-  tags: [sequoias, forest]
-- image: yosemite_3.jpeg
-  park: Yosemite
-  trail: Yosemite Point
-  location: California
-  date: "2025-05-02"
-  caption: The upper fall, with Half Dome down the valley
-  tags: [waterfall, valley]
-
-# Grand Canyon -- Arizona, visited 2025
-- image: grand_canyon.jpeg
-  park: Grand Canyon
-  location: Arizona
-  date: "2025-04-29"
-  caption: Layers going back to the far rim
-  tags: [canyon, layers]
-
-# Grand Teton -- Wyoming, visited 2025
-- image: grand_teton_1.jpeg
-  park: Grand Teton
-  trail: Surprise and Amphitheater Lakes
-  location: Wyoming
-  date: "2025-09-28"
-  caption: A lake under the granite
-  tags: [lake, reflection, granite]
-
-# Zion -- Utah, visited 2025
-- image: zion_1.jpeg
-  park: Zion
-  location: Utah
-  date: "2025-04-27"
-  caption: The canyon from the overlook
-  tags: [canyon, clouds]
 
 # Hawaiʻi Volcanoes -- Hawaii, visited 2022
 - image: hawaiian_volcanoes_1.jpeg
