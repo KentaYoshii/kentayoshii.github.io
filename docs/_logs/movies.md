@@ -21,7 +21,7 @@ month recorded.
 - Civil War
 - Death Note (2006)
 - Death Note: The Last Name
-- Detective Conan (movie series)
+- Detective Conan
 - Gantz (2011)
 - Gantz: Perfect Answer
 - Ghostbusters
@@ -39,8 +39,8 @@ month recorded.
 - Men in Black
 - Men in Black II
 - Men in Black 3
-- Naruto (movies)
-- One Piece (movies)
+- Naruto
+- One Piece
 - Rurouni Kenshin (2012)
 - Rurouni Kenshin: Kyoto Inferno
 - Rurouni Kenshin: The Legend Ends
