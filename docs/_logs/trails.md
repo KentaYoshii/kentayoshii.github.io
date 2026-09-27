@@ -120,3 +120,9 @@ python3 scripts/build.py
 ### April
 
 - Kīlauea Iki Trail — Hawaiʻi Volcanoes National Park, HI — 3.3 mi — 760 ft
+
+## 2021
+
+### June
+
+- Jomon-sugi Cedar Trail — Yakushima, Japan — 13.4 mi — 2,995 ft
