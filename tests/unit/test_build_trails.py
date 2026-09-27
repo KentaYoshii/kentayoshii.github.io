@@ -260,3 +260,26 @@ class TestLoadParkNames:
         if body is not None:
             path.write_text(body, encoding='utf-8')
         assert bt.load_park_names(str(path)) == set()
+
+
+class TestUnmatchedParks:
+    def trails(self, *places):
+        return [{'place': p, 'park': bt.park_of(p, PARKS)} for p in places]
+
+    def test_a_typo_is_reported_with_a_suggestion(self) -> None:
+        found = bt.unmatched_parks(self.trails('Glacer National Park, MT'), PARKS)
+        assert found == [('Glacer National Park, MT', 'Glacier')]
+
+    def test_matched_parks_and_other_places_are_not_reported(self) -> None:
+        found = bt.unmatched_parks(self.trails(
+            'Glacier National Park, MT', 'Harriman State Park, NY', ''), PARKS)
+        assert found == []
+
+    def test_no_close_match_has_no_suggestion(self) -> None:
+        found = bt.unmatched_parks(self.trails('Acadia National Park, ME'), PARKS)
+        assert found == [('Acadia National Park, ME', None)]
+
+    def test_each_place_is_reported_once(self) -> None:
+        found = bt.unmatched_parks(self.trails('Glacer National Park, MT',
+                                               'Glacer National Park, MT'), PARKS)
+        assert len(found) == 1

@@ -14,9 +14,11 @@ ones actually walked.
 """
 
 import collections
+import difflib
 import json
 import os
 import re
+import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -159,6 +161,24 @@ def park_of(place, park_names):
     return area if area in park_names else None
 
 
+def unmatched_parks(trails, park_names):
+    """[(place, suggestion)] for hikes whose place names a national park that
+    is not in the checklist -- almost always a typo, which would otherwise
+    only show as a heading with no colour and a park total that is short.
+    suggestion is the closest checklist name, or None."""
+    found = []
+    for trail in trails:
+        area = (trail['place'] or '').split(',')[0].strip()
+        if trail['park'] or not area.endswith(PARK_SUFFIX):
+            continue
+        close = difflib.get_close_matches(area[:-len(PARK_SUFFIX)],
+                                          sorted(park_names), n=1)
+        pair = (trail['place'], close[0] if close else None)
+        if pair not in found:
+            found.append(pair)
+    return found
+
+
 def label_of(place, park):
     """What a group of hikes is headed with: the park name, or for a hike
     outside a national park the place up to its first comma."""
@@ -251,6 +271,12 @@ def main():
     for trail in trails:
         trail['park'] = park_of(trail['place'], park_names)
         trail['label'] = label_of(trail['place'], trail['park'])
+    # A warning, not a failure: the hike still renders, just unmatched.
+    if park_names:
+        for place, suggestion in unmatched_parks(trails, park_names):
+            hint = ' (did you mean %s?)' % suggestion if suggestion else ''
+            print('  warning: %r is not a park in the checklist%s'
+                  % (place, hint), file=sys.stderr)
     # Most recent first — unlike Books and Movies, which are browsed
     # alphabetically, a trail log reads as a diary. By date only: the sort is
     # stable (reverse=True included), so hikes within a month keep the order

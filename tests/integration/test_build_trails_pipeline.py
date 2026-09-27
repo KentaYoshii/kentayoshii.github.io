@@ -127,6 +127,16 @@ class TestBuild:
         assert payload['parks'] == {}
         assert len(payload['groups']) == 3
 
+    def test_warns_about_a_misspelled_park(self, workspace, capsys) -> None:
+        """The hike still renders; the warning is what tells you why it has
+        no colour and is missing from the park's totals."""
+        workspace.write('## 2026\n- Angels Landing — Zoin National Park, UT — 5.4 mi\n')
+        assert workspace.run() == 0
+        err = capsys.readouterr().err
+        assert 'Zoin National Park, UT' in err
+        assert 'did you mean Zion?' in err
+        assert workspace.read()['groups'][0]['park'] is None
+
     def test_is_byte_stable_across_runs(self, workspace) -> None:
         """What CI's `git diff --quiet -- docs/_data` relies on."""
         workspace.write(LOG)

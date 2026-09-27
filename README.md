@@ -250,6 +250,12 @@ accepts `mi`, `miles` or `km` and is normalised to miles; elevation gain
 accepts `ft`, `feet` or `m` and is normalised to feet. Fields after the name
 are recognised by their units, so the place can be left out.
 
+A place written as `<name> National Park, <state>` is matched to that park in
+the checklist, which gives the hike its park heading, colour and totals, and
+links it from `/adventure/parks/`. The name must match `travel.json` exactly
+(`Haleakalā`, `Hawaiʻi Volcanoes`); `build.py` prints a warning, with the
+closest name, for one that does not.
+
 Then regenerate:
 
 ```sh
