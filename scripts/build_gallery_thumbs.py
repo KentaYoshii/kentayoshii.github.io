@@ -40,7 +40,6 @@ import base64
 import colorsys
 import io
 import json
-import math
 import os
 import sys
 
@@ -145,28 +144,30 @@ def combine_colours(colours):
     """Fold a park's per-photo colours into one.
 
     Averaging in RGB is wrong here: a park with an orange canyon and a blue
-    lake averages to grey, which is a colour neither photo contains. Hue is an
-    angle, so it is averaged as one -- weighted by saturation, so washed-out
-    photos pull the result around less than vivid ones. Saturation and value
+    lake averages to grey, which is a colour neither photo contains. Averaging
+    hue as an angle is wrong too, for the same reason one step removed: blue
+    sky and red rock average to purple. So the hue is not averaged at all.
+    It is the hue of one of the
+    photos -- the one closest round the circle to all the others, weighted by
+    their saturation so washed-out photos count for less -- and is therefore
+    always a colour the park's photos actually contain. Saturation and value
     are ordinary means.
     """
     if not colours:
         raise ValueError('no colours to combine')
 
-    x = y = total_sat = total_val = 0.0
-    for rgb in colours:
-        hue, saturation, value = to_hsv(rgb)
-        angle = hue * 2 * math.pi
-        x += math.cos(angle) * saturation
-        y += math.sin(angle) * saturation
-        total_sat += saturation
-        total_val += value
+    hsv = [to_hsv(rgb) for rgb in colours]
 
-    count = float(len(colours))
-    # With every photo fully desaturated the angle is undefined rather than
-    # zero; hue is meaningless at that point anyway, so anchor it.
-    hue = (math.atan2(y, x) / (2 * math.pi)) % 1.0 if total_sat > 1e-6 else 0.0
-    rgb = colorsys.hsv_to_rgb(hue, total_sat / count, total_val / count)
+    def distance(a, b):
+        gap = abs(a - b) % 1.0
+        return min(gap, 1.0 - gap)
+
+    # min() keeps the first of equal candidates, so a tie goes to the photo
+    # listed earlier and the result is stable across runs.
+    hue = min(hsv, key=lambda c: sum(o[1] * distance(c[0], o[0]) for o in hsv))[0]
+    count = float(len(hsv))
+    rgb = colorsys.hsv_to_rgb(hue, sum(c[1] for c in hsv) / count,
+                              sum(c[2] for c in hsv) / count)
     return tuple(c * 255 for c in rgb)
 
 

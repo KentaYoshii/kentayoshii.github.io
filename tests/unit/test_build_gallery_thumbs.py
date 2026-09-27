@@ -132,6 +132,28 @@ class TestCombineColours:
         saturation = colorsys.rgb_to_hsv(*[c / 255.0 for c in combined])[1]
         assert saturation > 0.4
 
+    def test_sky_and_rock_do_not_make_purple(self) -> None:
+        # The Grand Canyon's photos: three blue (sky) and two red-orange
+        # (rock). A circular mean put the result near 290, a purple none of
+        # them contains. The combined hue has to be one of the inputs'.
+        colours = [(41, 43, 52), (39, 43, 56), (145, 113, 103), (69, 92, 147), (22, 13, 7)]
+        hue = self.hue_of(bgt.combine_colours(colours))
+        inputs = [self.hue_of(c) for c in colours]
+        assert any(abs(hue - h) < 0.5 for h in inputs)
+        assert not 260 <= hue <= 320
+
+    def test_the_majority_hue_wins(self) -> None:
+        blue, orange = (30, 90, 200), (220, 120, 30)
+        hue = self.hue_of(bgt.combine_colours([blue, blue, orange]))
+        assert abs(hue - self.hue_of(blue)) < 0.5
+
+    def test_a_tie_goes_to_the_first(self) -> None:
+        # Stable across runs, so the committed data does not flip-flop. Equal
+        # saturation (0.8 each), so neither outweighs the other.
+        a, b = (200, 40, 40), (40, 40, 200)
+        assert abs(self.hue_of(bgt.combine_colours([a, b])) - self.hue_of(a)) < 0.5
+        assert abs(self.hue_of(bgt.combine_colours([b, a])) - self.hue_of(b)) < 0.5
+
     def test_fully_grey_input_is_stable(self) -> None:
         combined = bgt.combine_colours([(128, 128, 128), (100, 100, 100)])
         red, green, blue = combined

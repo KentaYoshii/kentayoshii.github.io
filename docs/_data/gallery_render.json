@@ -1,39 +1,39 @@
 {
   "parks": {
     "Big Bend": {
-      "accent": "#384b60",
-      "accent_dark": "#5c7b9e",
-      "colour": "#384b60"
+      "accent": "#384660",
+      "accent_dark": "#5c729e",
+      "colour": "#384660"
     },
     "Carlsbad Caverns": {
-      "accent": "#4c3b28",
-      "accent_dark": "#9e7a53",
-      "colour": "#231b12"
+      "accent": "#4c3a28",
+      "accent_dark": "#9e7953",
+      "colour": "#231a12"
     },
     "Glacier": {
-      "accent": "#304752",
-      "accent_dark": "#5b889e",
-      "colour": "#304752"
+      "accent": "#304352",
+      "accent_dark": "#5b819e",
+      "colour": "#304352"
     },
     "Grand Canyon": {
-      "accent": "#503254",
-      "accent_dark": "#965e9e",
-      "colour": "#503254"
+      "accent": "#323954",
+      "accent_dark": "#5e6a9e",
+      "colour": "#323954"
     },
     "Grand Teton": {
       "accent": "#726147",
-      "accent_dark": "#9e8661",
+      "accent_dark": "#9e8761",
       "colour": "#726147"
     },
     "Guadalupe Mountains": {
-      "accent": "#4d4034",
-      "accent_dark": "#9e856c",
-      "colour": "#4d4034"
+      "accent": "#4d4334",
+      "accent_dark": "#9e896c",
+      "colour": "#4d4334"
     },
     "Haleakalā": {
-      "accent": "#7a3c3e",
-      "accent_dark": "#9e4d51",
-      "colour": "#8b4447"
+      "accent": "#7a5a3c",
+      "accent_dark": "#9e754d",
+      "colour": "#8b6744"
     },
     "Hawaiʻi Volcanoes": {
       "accent": "#626d7a",
@@ -41,39 +41,39 @@
       "colour": "#757a80"
     },
     "Mount Rainier": {
-      "accent": "#436860",
-      "accent_dark": "#659e91",
-      "colour": "#436860"
+      "accent": "#435868",
+      "accent_dark": "#65869e",
+      "colour": "#435868"
     },
     "Olympic": {
-      "accent": "#324c35",
-      "accent_dark": "#689e6d",
-      "colour": "#314b34"
+      "accent": "#3d4c32",
+      "accent_dark": "#7f9e68",
+      "colour": "#3c4b31"
     },
     "Rocky Mountain": {
-      "accent": "#354750",
-      "accent_dark": "#698b9e",
-      "colour": "#354750"
+      "accent": "#354250",
+      "accent_dark": "#69829e",
+      "colour": "#354250"
     },
     "White Sands": {
       "accent": "#4d5663",
-      "accent_dark": "#7b899e",
+      "accent_dark": "#7b8a9e",
       "colour": "#4d5663"
     },
     "Yellowstone": {
-      "accent": "#6e6345",
-      "accent_dark": "#9e8e63",
-      "colour": "#6e6345"
+      "accent": "#6e6445",
+      "accent_dark": "#9e9063",
+      "colour": "#6e6445"
     },
     "Yosemite": {
-      "accent": "#46626d",
-      "accent_dark": "#658e9e",
-      "colour": "#46626d"
+      "accent": "#46576d",
+      "accent_dark": "#657d9e",
+      "colour": "#46576d"
     },
     "Zion": {
-      "accent": "#7a6f57",
-      "accent_dark": "#9e9071",
-      "colour": "#908367"
+      "accent": "#7a6657",
+      "accent_dark": "#9e8371",
+      "colour": "#907867"
     }
   },
   "photos": {
