@@ -76,7 +76,7 @@ python3 scripts/build.py
 - Santa Elena Canyon Trail — Big Bend National Park, TX — 1.7 mi — 242 ft
 - The Window Trail — Big Bend National Park, TX — 5.5 mi — 958 ft
 - Lost Mine Trail — Big Bend National Park, TX — 4.8 mi — 1,145 ft
-- Ernest Ridge Trail — Big Bend National Park, TX — 6 mi — 954 ft
+- Ernst Ridge Trail — Big Bend National Park, TX — 6 mi — 954 ft
 - Boquillas Canyon Trail — Big Bend National Park, TX — 1.5 mi — 150 ft
 - Dog Canyon and Devil's Den — Big Bend National Park, TX — 10 mi — 689 ft
 

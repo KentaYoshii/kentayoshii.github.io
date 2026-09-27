@@ -24,7 +24,6 @@
 
 ## TODOs
 - All 15 visited parks logged: 55 hikes, 417.9 mi, 86,142 ft. Within a month, entries are ordered newest park first by photo dates.
-- "Ernest Ridge Trail" (Big Bend) kept as given; NPS names nearby trails "Ernst Tinaja" / "Ernst Basin" — confirm with the user.
 
 ## Learnings
 - NPS trail stats live on `https://www.nps.gov/thingstodo/<park>-trail-<name>.htm`; links are listed on `/tripideas/day-hikes-in-the-<area>-area.htm`. Grand Teton's hiking page loads via JS. AllTrails returns 403 to scripts.
