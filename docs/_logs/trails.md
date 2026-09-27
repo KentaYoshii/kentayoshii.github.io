@@ -105,6 +105,16 @@ python3 scripts/build.py
 - Bright Angel Trail to Havasupai Gardens — Grand Canyon National Park, AZ — 9.2 mi — 3,034 ft
 - Angels Landing — Zion National Park, UT — 5.4 mi — 1,488 ft
 
+## 2024
+
+### January
+
+- Tongariro Alpine Crossing — Tongariro National Park, New Zealand — 12.6 mi
+- Routeburn Track — Fiordland National Park, New Zealand — 20.5 mi
+- Hooker Valley Track — Aoraki/Mount Cook National Park, New Zealand — 6.2 mi
+- Mueller Hut Route — Aoraki/Mount Cook National Park, New Zealand — 6.5 mi — 3,281 ft
+- Mount John Walkway — Lake Tekapo, New Zealand
+
 ## 2022
 
 ### April

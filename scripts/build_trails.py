@@ -33,6 +33,7 @@ TRAVEL_PATH = os.path.join(DATA, 'travel.json')
 # Photos carry an optional `trail`, the name of the hike they were taken on.
 GALLERY_PATH = gallery_data.GALLERY_YML
 PARK_SUFFIX = ' National Park'
+US_STATE = re.compile(r'[A-Z]{2}')
 
 MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
           'August', 'September', 'October', 'November', 'December']
@@ -166,14 +167,21 @@ def park_of(place, park_names):
 
 
 def unmatched_parks(trails, park_names):
-    """[(place, suggestion)] for hikes whose place names a national park that
-    is not in the checklist -- almost always a typo, which would otherwise
+    """[(place, suggestion)] for hikes whose place names a US national park
+    that is not in the checklist -- almost always a typo, which would otherwise
     only show as a heading with no colour and a park total that is short.
     suggestion is the closest checklist name, or None."""
     found = []
     for trail in trails:
-        area = (trail['place'] or '').split(',')[0].strip()
+        parts = [p.strip() for p in (trail['place'] or '').split(',')]
+        area = parts[0]
         if trail['park'] or not area.endswith(PARK_SUFFIX):
+            continue
+        # The checklist is US parks only. A place whose region is not a
+        # two-letter state code ("Tongariro National Park, New Zealand") is a
+        # national park somewhere else, not a typo. No region at all is still
+        # checked.
+        if len(parts) > 1 and not US_STATE.fullmatch(parts[-1]):
             continue
         close = difflib.get_close_matches(area[:-len(PARK_SUFFIX)],
                                           sorted(park_names), n=1)
@@ -382,7 +390,7 @@ def main():
               % (summary['distance_mi'], summary['distance_counted']))
         print('  %s ft of gain across %d logged elevation(s)'
               % (summary['elevation_ft'], summary['elevation_counted']))
-        print('  %d in national parks, %d park(s)'
+        print('  %d matched to %d checklist park(s)'
               % (sum(1 for t in trails if t['park']), len(payload['parks'])))
     return 0
 

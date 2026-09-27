@@ -279,6 +279,19 @@ class TestUnmatchedParks:
         found = bt.unmatched_parks(self.trails('Acadia National Park, ME'), PARKS)
         assert found == [('Acadia National Park, ME', None)]
 
+    @pytest.mark.parametrize('place', [
+        'Tongariro National Park, New Zealand',
+        'Aoraki/Mount Cook National Park, NZ, New Zealand',
+        'Banff National Park, Alberta',
+    ])
+    def test_a_park_outside_the_us_is_not_reported(self, place: str) -> None:
+        """The checklist is US parks only; these are not typos."""
+        assert bt.unmatched_parks(self.trails(place), PARKS) == []
+
+    def test_a_typo_with_no_region_is_still_reported(self) -> None:
+        found = bt.unmatched_parks(self.trails('Glacer National Park'), PARKS)
+        assert found == [('Glacer National Park', 'Glacier')]
+
     def test_each_place_is_reported_once(self) -> None:
         found = bt.unmatched_parks(self.trails('Glacer National Park, MT',
                                                'Glacer National Park, MT'), PARKS)

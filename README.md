@@ -254,7 +254,10 @@ A place written as `<name> National Park, <state>` is matched to that park in
 the checklist, which gives the hike its park heading, colour and totals, and
 links it from `/adventure/parks/`. The name must match `travel.json` exactly
 (`Haleakalā`, `Hawaiʻi Volcanoes`); `build.py` prints a warning, with the
-closest name, for one that does not.
+closest name, for one that does not. Anywhere else — a national park outside
+the US, written with a region that is not a state code (`Tongariro National
+Park, New Zealand`), or not a park at all — is headed by its place, without
+a colour or a link.
 
 Then regenerate:
 
