@@ -28,7 +28,8 @@ docs/_logs/trails.md and nothing more. Server-rendered; no JavaScript.
     {%- if summary.total > 0 -%}
     <p class="collection-tagline">
       {{ summary.total }} hike{% if summary.total != 1 %}s{% endif %}
-      {%- if summary.distance_mi > 0 %}, {{ summary.distance_mi }} miles{% endif -%}.
+      {%- if summary.distance_mi > 0 %}, {{ summary.distance_mi }} miles{% endif -%}
+      {%- if summary.elevation_ft > 0 %}, {{ summary.elevation_text }} ft of climbing{% endif -%}.
     </p>
 
     {%- comment -%}
@@ -43,19 +44,6 @@ docs/_logs/trails.md and nothing more. Server-rendered; no JavaScript.
       <li class="trail-year"><span>{{ trail.year }}</span></li>
       {%- endif -%}
       <li class="trail-row">
-        {%- if trail.blaze -%}
-        {%- comment -%}
-        The literal paint on the tree, from OSM's osmc:symbol. Named CSS
-        colours and hex both come through as written, so this goes straight
-        into a style attribute; anything a browser cannot parse just leaves
-        the swatch transparent, which is the same as having no blaze.
-        {%- endcomment -%}
-        <span class="trail-blaze" style="background: {{ trail.blaze }}"
-              title="{{ trail.blaze }} blaze" aria-hidden="true"></span>
-        {%- else -%}
-        <span class="trail-blaze is-unknown" aria-hidden="true"></span>
-        {%- endif -%}
-
         <span class="trail-text">
           <span class="trail-name">{{ trail.name }}</span>
           {%- if trail.place %}<span class="trail-place">{{ trail.place }}</span>{% endif -%}
@@ -64,8 +52,7 @@ docs/_logs/trails.md and nothing more. Server-rendered; no JavaScript.
         <span class="trail-meta">
           {%- if trail.month %}<span class="trail-when">{{ trail.month | slice: 0, 3 }}</span>{% endif -%}
           {%- if trail.distance_text %}<span class="trail-distance">{{ trail.distance_text }}</span>{% endif -%}
-          {%- if trail.difficulty %}<span class="trail-tag">{{ trail.difficulty }}</span>{% endif -%}
-          {%- if trail.surface %}<span class="trail-tag is-muted">{{ trail.surface }}</span>{% endif -%}
+          {%- if trail.elevation_text %}<span class="trail-gain">{{ trail.elevation_text }} gain</span>{% endif -%}
         </span>
       </li>
       {%- endfor -%}

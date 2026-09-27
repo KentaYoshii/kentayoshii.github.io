@@ -17,7 +17,6 @@ docs/                     Jekyll site root
   _data/stats.json        generated — do not edit by hand
   _data/travel.json       generated — do not edit by hand
   _data/trails.json       generated — do not edit by hand
-  _data/trails_osm.json   generated OSM lookup cache — do not edit by hand
   _data/covers.json       generated cover-lookup cache — do not edit by hand
   _data/gallery.yml       hand-written photo list (source of truth, not generated)
   _data/gallery_render.json  generated thumbnail/colour data — do not edit by hand
@@ -50,7 +49,7 @@ scripts/
   build_stats.py          builds _data/stats.json (reads the other two)
   build_images.py         draws the favicon and social card from books.json
   build_travel.py         builds _data/travel.json
-  build_trails.py         builds _data/trails.json; --fetch is its online step
+  build_trails.py         builds _data/trails.json
   national_parks.py       fixed reference list of all 63 US National Parks
   gallery_data.py         reads _data/gallery.yml (shared by the two below)
   build_gallery_thumbs.py resizes gallery photos — NOT run by build.py; needs Pillow
@@ -241,57 +240,23 @@ Two scripts feed these, and they stay separate because the shapes differ:
 ## 2026
 
 ### June
-- Angels Landing — Zion National Park, UT — 5.4 mi
+- Angels Landing — Zion National Park, UT — 5.4 mi — 1,488 ft
 ```
 
 The separator is an em dash (`—`), an en dash, or `--`. **Not** a plain
 ` - `: real trail names contain it (`Suffern - Bear Mountain Trail`) and the
-parser would split in the wrong place. Only the name is required; distance
-accepts `mi`, `miles` or `km` and is normalised to miles.
+parser would split in the wrong place. Only the name is required. Distance
+accepts `mi`, `miles` or `km` and is normalised to miles; elevation gain
+accepts `ft`, `feet` or `m` and is normalised to feet. Fields after the name
+are recognised by their units, so the place can be left out.
 
-Then look up anything new and regenerate:
+Then regenerate:
 
 ```sh
-python3 scripts/build_trails.py --fetch
 python3 scripts/build.py
 git add docs/_logs/trails.md docs/_data
 git commit -m "Add a hike" && git push origin gh-pages
 ```
-
-#### What OpenStreetMap adds
-
-`build_trails.py` is offline by default — that mode is what `build.py` and CI
-run, so the build stays deterministic and keyless. `--fetch` is the manual
-pass that fills `docs/_data/trails_osm.json`, which is committed. A trail
-already in the cache is never looked up again, *including* when its entry is
-empty (that means "asked, nothing there"); delete the entry to force a retry.
-
-The `<where>` field does double duty: it is displayed, and its first part
-scopes the OSM lookup to a named area. That scoping is not optional —
-searching OSM for a trail by name alone is unindexed, so it either times out
-or misses outright (`Breakneck Ridge` returns nothing globally). A trail with
-no place therefore never resolves; it still renders, just with nothing beyond
-what you wrote.
-
-What comes back depends on where you walked, and both shapes are useful:
-
-- **Blazed networks** (the Northeast, most of Europe) carry `osmc:symbol` or
-  `colour` — the actual paint on the tree, rendered as the small bar beside
-  each row. `Timp Torne Trail` → `blue:blue` → a blue blaze.
-- **National park trails** are rarely blazed but usually carry `sac_scale` (a
-  six-step Alpine difficulty grade, relabelled from jargon to `easy` /
-  `moderate` / `alpine`), `surface`, and sometimes an official `distance`.
-  `Angels Landing` → `alpine_hiking`, which is fair.
-
-One trap worth knowing: `distance` means the length of the whole route on a
-*relation*, but the length of one segment on a *way*. Merging both put an
-official 2.98 mi against a logged 17.3 mi on the Hoh River Trail, so
-`RELATION_ONLY_TAGS` gates it.
-
-Overpass is donated infrastructure with a handful of concurrent slots and
-answers `429` the moment they are full, so a fetch run waits between trails
-and backs off when told to. A run that dies partway keeps everything it
-already resolved and still writes the data file — just re-run `--fetch`.
 
 ### National parks
 
@@ -674,8 +639,8 @@ fall back to `site.image`, so it is set through Jekyll `defaults` in
 - **data** — re-runs `scripts/build.py` and fails if `docs/_data` changes,
   which catches editing a markdown log without regenerating the JSON.
 - **pytest** — the suite in `tests/`, which covers the title matching in
-  `merge_books.py` and the offline passes of `build_covers.py` and
-  `build_trails.py`.
+  `merge_books.py`, the offline pass of `build_covers.py`, and the log
+  parser in `build_trails.py`.
 - **site** — a full `jekyll build`, which catches Liquid and front-matter
   errors.
 
@@ -693,12 +658,12 @@ python3 -m pip install -r requirements-dev.txt
 python3 -m pytest
 ```
 
-### Fetching covers and trails
+### Fetching covers
 
 `.github/workflows/fetch.yml` is the one workflow allowed to touch the
 network, and it only runs when you press the button: **Actions → fetch → Run
-workflow**, optionally narrowed to `covers` or `trails`. It runs the `--fetch`
-passes, regenerates everything, and commits `docs/_data` back to the branch it
+workflow**, optionally narrowed to `covers` (or set to `map` to rebuild the
+parks map geometry). It runs the `--fetch` passes, regenerates everything, and commits `docs/_data` back to the branch it
 ran on — which redeploys the site.
 
 Run it when the **data** job reports unresolved entries.
@@ -715,8 +680,8 @@ Notes:
 - `TMDB_API_KEY` is an optional repository secret (Settings → Secrets and
   variables → Actions). Without it film lookups are skipped with a notice and
   book lookups still run.
-- A run that loses the network partway still commits whatever resolved — both
-  scripts checkpoint as they go — and then fails, so re-running continues
+- A run that loses the network partway still commits whatever resolved — the
+  covers script checkpoints as it goes — and then fails, so re-running continues
   where it left off.
 - Pushing with `GITHUB_TOKEN` deliberately does not re-trigger the `build`
   workflow. The data was just written by the same script that workflow

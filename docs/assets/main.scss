@@ -1448,27 +1448,6 @@ body,
   border-bottom: 1px solid rgba(233, 223, 208, 0.6);
 }
 
-// The literal paint on the tree, where OSM records one. Sized and positioned
-// like a blaze on a trunk rather than a bullet: a small upright bar.
-.trail-blaze {
-  flex: 0 0 auto;
-  width: 8px;
-  height: 18px;
-  border-radius: 2px;
-  border: 1px solid rgba(60, 40, 20, 0.25);
-  // Baseline alignment puts a zero-content box on the text baseline; nudge it
-  // back up so the bar brackets the line rather than hanging below it.
-  align-self: center;
-}
-
-// Most park trails are unblazed, so this is the common case, not an error
-// state. A faint outline keeps the rows aligned without implying a colour.
-.trail-blaze.is-unknown {
-  background: transparent;
-  border-style: dashed;
-  border-color: $grey-color-light;
-}
-
 .trail-text {
   flex: 1 1 auto;
   min-width: 0;
@@ -1505,18 +1484,8 @@ body,
   letter-spacing: 0.04em;
 }
 
-// Difficulty and surface, straight from OSM's sac_scale and surface tags.
-.trail-tag {
-  padding: 2px 7px;
-  border: 1px solid $grey-color-light;
-  border-radius: 999px;
-  color: $grey-color-dark;
-  white-space: nowrap;
-}
-
-.trail-tag.is-muted {
-  border-color: transparent;
-  color: $grey-color;
+.trail-gain {
+  font-variant-numeric: tabular-nums;
 }
 
 @media screen and (max-width: $on-palm) {
@@ -1533,8 +1502,6 @@ body,
   .trail-meta {
     flex: 1 1 100%;
     justify-content: flex-start;
-    // Line the metadata up with the trail name, clearing the blaze bar.
-    padding-left: 18px;
   }
 }
 
@@ -2524,33 +2491,13 @@ a.parks-map-pin {
     border-bottom-color: rgba(60, 49, 34, 0.7);
   }
 
-  // A blaze is a real colour and must stay exactly as OSM records it, so only
-  // the surrounding outline is themed.
-  .trail-blaze {
-    border-color: rgba(236, 226, 208, 0.3);
-  }
-
-  .trail-blaze.is-unknown {
-    border-color: $dark-border;
-  }
-
   .trail-place,
-  .trail-meta,
-  .trail-tag.is-muted {
+  .trail-meta {
     color: $dark-muted;
   }
 
-  .trail-distance,
-  .trail-tag {
+  .trail-distance {
     color: $dark-text;
-  }
-
-  .trail-tag {
-    border-color: $dark-border;
-  }
-
-  .trail-tag.is-muted {
-    border-color: transparent;
   }
 
   .tag-chip {

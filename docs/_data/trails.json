@@ -1,10 +1,154 @@
 {
- "trails": [],
+ "trails": [
+  {
+   "name": "Upper Geyser Basin and Old Faithful Observation Point Loop",
+   "place": "Yellowstone National Park, WY",
+   "distance_mi": null,
+   "distance_text": "",
+   "elevation_ft": null,
+   "elevation_text": "",
+   "year": "2025",
+   "month": "October",
+   "date": "2025-10"
+  },
+  {
+   "name": "Seven Mile Hole",
+   "place": "Yellowstone National Park, WY",
+   "distance_mi": 10.3,
+   "distance_text": "10.3 mi",
+   "elevation_ft": 2083,
+   "elevation_text": "2,083 ft",
+   "year": "2025",
+   "month": "October",
+   "date": "2025-10"
+  },
+  {
+   "name": "Mammoth Hot Springs Trail",
+   "place": "Yellowstone National Park, MT",
+   "distance_mi": null,
+   "distance_text": "",
+   "elevation_ft": null,
+   "elevation_text": "",
+   "year": "2025",
+   "month": "October",
+   "date": "2025-10"
+  },
+  {
+   "name": "Fairy Falls Trail",
+   "place": "Yellowstone National Park, WY",
+   "distance_mi": 5.4,
+   "distance_text": "5.4 mi",
+   "elevation_ft": 173,
+   "elevation_text": "173 ft",
+   "year": "2025",
+   "month": "October",
+   "date": "2025-10"
+  },
+  {
+   "name": "Dunraven Pass to Mount Washburn",
+   "place": "Yellowstone National Park, WY",
+   "distance_mi": 7.1,
+   "distance_text": "7.1 mi",
+   "elevation_ft": 1400,
+   "elevation_text": "1,400 ft",
+   "year": "2025",
+   "month": "October",
+   "date": "2025-10"
+  },
+  {
+   "name": "Beaver Ponds Loop Trail",
+   "place": "Yellowstone National Park, MT",
+   "distance_mi": 5.7,
+   "distance_text": "5.7 mi",
+   "elevation_ft": 757,
+   "elevation_text": "757 ft",
+   "year": "2025",
+   "month": "October",
+   "date": "2025-10"
+  },
+  {
+   "name": "Artist Point via South Rim Trail",
+   "place": "Yellowstone National Park, WY",
+   "distance_mi": null,
+   "distance_text": "",
+   "elevation_ft": null,
+   "elevation_text": "",
+   "year": "2025",
+   "month": "October",
+   "date": "2025-10"
+  },
+  {
+   "name": "Taggart and Bradley Lakes Loop",
+   "place": "Grand Teton National Park, WY",
+   "distance_mi": 5.9,
+   "distance_text": "5.9 mi",
+   "elevation_ft": 767,
+   "elevation_text": "767 ft",
+   "year": "2025",
+   "month": "September",
+   "date": "2025-09"
+  },
+  {
+   "name": "Surprise and Amphitheater Lakes",
+   "place": "Grand Teton National Park, WY",
+   "distance_mi": 10.0,
+   "distance_text": "10 mi",
+   "elevation_ft": 3000,
+   "elevation_text": "3,000 ft",
+   "year": "2025",
+   "month": "September",
+   "date": "2025-09"
+  },
+  {
+   "name": "Paintbrush–Cascade Canyon Loop",
+   "place": "Grand Teton National Park, WY",
+   "distance_mi": 19.0,
+   "distance_text": "19 mi",
+   "elevation_ft": 4133,
+   "elevation_text": "4,133 ft",
+   "year": "2025",
+   "month": "September",
+   "date": "2025-09"
+  },
+  {
+   "name": "Angels Landing",
+   "place": "Zion National Park, UT",
+   "distance_mi": 5.4,
+   "distance_text": "5.4 mi",
+   "elevation_ft": 1488,
+   "elevation_text": "1,488 ft",
+   "year": "2025",
+   "month": "April",
+   "date": "2025-04"
+  },
+  {
+   "name": "Kīlauea Iki Trail",
+   "place": "Hawaiʻi Volcanoes National Park, HI",
+   "distance_mi": 3.3,
+   "distance_text": "3.3 mi",
+   "elevation_ft": 760,
+   "elevation_text": "760 ft",
+   "year": "2022",
+   "month": "April",
+   "date": "2022-04"
+  }
+ ],
  "summary": {
-  "total": 0,
-  "distance_mi": 0,
-  "distance_counted": 0,
-  "resolved": 0,
-  "by_year": []
+  "total": 12,
+  "distance_mi": 72.1,
+  "distance_counted": 9,
+  "elevation_ft": 14561,
+  "elevation_text": "14,561",
+  "elevation_counted": 9,
+  "by_year": [
+   {
+    "year": "2025",
+    "count": 11
+   },
+   {
+    "year": "2022",
+    "count": 1
+   }
+  ]
  }
 }

@@ -6,7 +6,7 @@
 
 Offline mode reads the committed cache in docs/_data/parks_map.json and
 touches the network never, so build.py and CI stay deterministic -- the same
-split build_covers.py and build_trails.py use. --fetch is the rare manual pass
+split build_covers.py uses. --fetch is the rare manual pass
 that rebuilds it; state borders do not move, so in practice this is run once
 and again only to change the simplification or the projection.
 

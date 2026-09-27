@@ -2,7 +2,7 @@ name: fetch
 
 # The one job that is allowed to touch the network, run by hand.
 #
-# build_covers.py, build_trails.py and build_parks_map.py are offline by
+# build_covers.py and build_parks_map.py are offline by
 # default so that build.py and the `build` workflow stay deterministic;
 # filling their caches needs an online --fetch pass. Doing that here rather
 # than on a laptop means it runs on a clean network with a clean trust store:
@@ -10,7 +10,7 @@ name: fetch
 # Library outright, and some networks block it entirely.
 #
 # Deliberately not on: push. These call donated infrastructure (Open Library,
-# Overpass, jsDelivr), so they run when there is something new to look up, not
+# jsDelivr), so they run when there is something new to look up, not
 # on every commit. The `build` workflow tells you when that is — it reports
 # unresolved entries.
 #
@@ -24,7 +24,7 @@ on:
         description: What to look up
         type: choice
         default: all
-        options: [all, covers, trails, map]
+        options: [all, covers, map]
 
 # A second run while one is mid-flight would race on the same files and push a
 # conflicting commit. Queue instead, and never cancel: an interrupted run
@@ -49,8 +49,8 @@ jobs:
         with:
           python-version: '3.11'
 
-      # continue-on-error, because a partial result is worth keeping: both
-      # scripts checkpoint their cache as they go and exit non-zero if the
+      # continue-on-error, because a partial result is worth keeping: the
+      # script checkpoints its cache as it goes and exit non-zero if the
       # network gives out, so committing what resolved and re-running later is
       # strictly better than throwing it away. The job is failed at the end.
       - name: Look up missing covers
@@ -63,13 +63,7 @@ jobs:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
         run: python3 scripts/build_covers.py --fetch
 
-      - name: Look up missing trails
-        id: trails
-        if: inputs.target == 'all' || inputs.target == 'trails'
-        continue-on-error: true
-        run: python3 scripts/build_trails.py --fetch
-
-      # Not part of `all` — see the note at the top. Unlike the two above this
+      # Not part of `all` — see the note at the top. Unlike the one above this
       # resolves nothing incrementally: it rebuilds the whole map in one pass,
       # so a failure leaves the committed geometry untouched rather than
       # half-filled, and re-running later costs nothing.
@@ -80,7 +74,7 @@ jobs:
         run: python3 scripts/build_parks_map.py --fetch
 
       # The caches are only half the story: the offline pass is what writes
-      # the resolved URLs and tags onto the records the pages actually render.
+      # the resolved URLs onto the records the pages actually render.
       - name: Regenerate everything
         run: python3 scripts/build.py
 
@@ -113,10 +107,8 @@ jobs:
       - name: Report
         run: |
           echo "covers: ${{ steps.covers.outcome || 'skipped' }}"
-          echo "trails: ${{ steps.trails.outcome || 'skipped' }}"
           echo "map:    ${{ steps.map.outcome || 'skipped' }}"
           if [ "${{ steps.covers.outcome }}" = "failure" ] || \
-             [ "${{ steps.trails.outcome }}" = "failure" ] || \
              [ "${{ steps.map.outcome }}" = "failure" ]; then
             echo "::error::A lookup did not finish. Whatever resolved was committed; run this again to continue."
             exit 1
