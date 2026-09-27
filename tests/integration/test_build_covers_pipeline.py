@@ -196,6 +196,38 @@ class TestMovieSearchOrdering:
         bc.fetch_movie_cover(info, 'test-key')
         assert '/search/tv' in asked[0]
 
+    def test_a_film_series_searches_collections_first(self, workspace,
+                                                      monkeypatch) -> None:
+        asked = []
+
+        def fake_get_json(url):
+            asked.append(url)
+            return {'results': [{'name': 'Naruto Collection', 'poster_path': '/n.jpg'}]}
+
+        monkeypatch.setattr(bc, 'get_json', fake_get_json)
+        url = bc.fetch_movie_cover(bc.parse_movie_title('Naruto (movies)'), 'test-key')
+        assert '/search/collection' in asked[0]
+        assert 'query=Naruto&' in asked[0] or asked[0].endswith('query=Naruto')
+        assert url.endswith('/n.jpg')
+
+    def test_a_film_series_falls_back_to_a_film(self, workspace, monkeypatch) -> None:
+        """With no collection on TMDB, one of the films' posters still beats
+        none."""
+        asked = []
+
+        def fake_get_json(url):
+            asked.append(url)
+            if '/search/collection' in url:
+                return {'results': []}
+            return {'results': [{'title': 'One Piece Film: Red', 'poster_path': '/o.jpg'}]}
+
+        monkeypatch.setattr(bc, 'get_json', fake_get_json)
+        monkeypatch.setattr(bc, 'REQUEST_PAUSE', 0)
+        url = bc.fetch_movie_cover(bc.parse_movie_title('One Piece (movies)'), 'test-key')
+        assert ['/search/collection' in u for u in asked] == [True, False]
+        assert '/search/movie' in asked[1]
+        assert url.endswith('/o.jpg')
+
     def test_a_film_searches_movies_first(self, workspace, monkeypatch) -> None:
         asked = []
 

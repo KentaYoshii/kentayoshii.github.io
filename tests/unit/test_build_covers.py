@@ -19,7 +19,22 @@ class TestParseMovieTitle:
 
     def test_plain_title_is_unchanged(self) -> None:
         info = bc.parse_movie_title('Dune')
-        assert info == {'title': 'Dune', 'is_series': False, 'year': None}
+        assert info == {'title': 'Dune', 'is_series': False,
+                        'is_collection': False, 'year': None}
+
+    @pytest.mark.parametrize('raw, title', [
+        ('Detective Conan (movie series)', 'Detective Conan'),
+        ('Naruto (movies)', 'Naruto'),
+        ('One Piece (Movies)', 'One Piece'),
+        ('Studio Ghibli (films)', 'Studio Ghibli'),
+    ])
+    def test_film_series_markers_are_stripped_and_flagged(self, raw: str, title: str) -> None:
+        """No single film is called 'Naruto (movies)'; the search is for the
+        series as a TMDB collection."""
+        info = bc.parse_movie_title(raw)
+        assert info['title'] == title
+        assert info['is_collection'] is True
+        assert info['is_series'] is False
 
     @pytest.mark.parametrize('raw, title', [
         ('Reacher Season 2 (TV Series)', 'Reacher'),

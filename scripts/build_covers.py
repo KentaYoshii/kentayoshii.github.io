@@ -128,6 +128,10 @@ def movie_key(movie):
 # ---- title parsing ----------------------------------------------------------
 
 SERIES_MARK = re.compile(r'\(\s*tv series\s*\)|\bseason\s+\d+\b', re.I)
+# A whole film series logged as one entry, 'Naruto (movies)'. No single film
+# has that title, so it searches TMDB's collections -- which carry their own
+# poster -- and falls back to a film search on the bare name.
+COLLECTION_MARK = re.compile(r'\(\s*(?:movie series|movies|films)\s*\)', re.I)
 # A trailing '(1987)' disambiguates a remake from its original. The optional
 # word covers the Wikipedia-style '(2024 film)', which the browser-side
 # version of this could not parse and so searched for literally, finding
@@ -148,9 +152,11 @@ def parse_movie_title(raw):
         return None
 
     is_series = bool(SERIES_MARK.search(raw))
+    is_collection = bool(COLLECTION_MARK.search(raw))
     year_match = TRAILING_YEAR.search(raw)
 
     cleaned = TRAILING_YEAR.sub('', raw)
+    cleaned = COLLECTION_MARK.sub('', cleaned)
     cleaned = re.sub(r'\(\s*tv series\s*\)', '', cleaned, flags=re.I)
     cleaned = re.sub(r'\bseason\s+\d+\b', '', cleaned, flags=re.I)
     cleaned = re.sub(r'\s{2,}', ' ', cleaned).strip()
@@ -158,6 +164,7 @@ def parse_movie_title(raw):
     return {
         'title': cleaned or raw,
         'is_series': is_series,
+        'is_collection': is_collection,
         'year': year_match.group(1) if year_match else None,
     }
 
@@ -209,7 +216,8 @@ def fetch_movie_cover(info, api_key):
 
     def search(kind):
         params = {'api_key': api_key, 'query': info['title']}
-        if info['year']:
+        # TMDB's collection search takes no year filter.
+        if info['year'] and kind != 'collection':
             # TMDB names the release-year filter differently per catalogue.
             params['first_air_date_year' if kind == 'tv' else 'year'] = info['year']
         data = get_json(TMDB_SEARCH % (kind, urllib.parse.urlencode(params)))
@@ -217,8 +225,14 @@ def fetch_movie_cover(info, api_key):
         return TMDB_IMAGE % result['poster_path'] if result else None
 
     # Anything marked as a series searches TV first, or a film false-positive
-    # wins before the TV catalogue is ever tried.
-    order = ('tv', 'movie') if info['is_series'] else ('movie', 'tv')
+    # wins before the TV catalogue is ever tried. A film series tries the
+    # collection first; its bare name then usually finds one of the films.
+    if info.get('is_collection'):
+        order = ('collection', 'movie')
+    elif info['is_series']:
+        order = ('tv', 'movie')
+    else:
+        order = ('movie', 'tv')
     for kind in order:
         url = search(kind)
         if url:
