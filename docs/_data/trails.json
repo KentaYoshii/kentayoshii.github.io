@@ -1115,22 +1115,22 @@
      "place": "Tongariro National Park, New Zealand",
      "distance_mi": 12.6,
      "distance_text": "12.6 mi",
-     "elevation_ft": null,
-     "elevation_text": "",
+     "elevation_ft": 2798,
+     "elevation_text": "2,798 ft",
      "year": "2024",
      "month": "January",
      "date": "2024-01",
      "park": null,
      "label": "Tongariro National Park",
-     "gain_pct": null,
+     "gain_pct": 66,
      "photos": []
     }
    ],
    "count": 1,
    "distance_mi": 12.6,
    "distance_text": "12.6",
-   "elevation_ft": 0,
-   "elevation_text": "0"
+   "elevation_ft": 2798,
+   "elevation_text": "2,798"
   },
   {
    "year": "2024",
@@ -1142,24 +1142,24 @@
     {
      "name": "Routeburn Track",
      "place": "Fiordland National Park, New Zealand",
-     "distance_mi": 20.5,
-     "distance_text": "20.5 mi",
-     "elevation_ft": null,
-     "elevation_text": "",
+     "distance_mi": 4.6,
+     "distance_text": "4.6 mi",
+     "elevation_ft": 1003,
+     "elevation_text": "1,003 ft",
      "year": "2024",
      "month": "January",
      "date": "2024-01",
      "park": null,
      "label": "Fiordland National Park",
-     "gain_pct": null,
+     "gain_pct": 24,
      "photos": []
     }
    ],
    "count": 1,
-   "distance_mi": 20.5,
-   "distance_text": "20.5",
-   "elevation_ft": 0,
-   "elevation_text": "0"
+   "distance_mi": 4.6,
+   "distance_text": "4.6",
+   "elevation_ft": 1003,
+   "elevation_text": "1,003"
   },
   {
    "year": "2024",
@@ -1171,39 +1171,39 @@
     {
      "name": "Hooker Valley Track",
      "place": "Aoraki/Mount Cook National Park, New Zealand",
-     "distance_mi": 6.2,
-     "distance_text": "6.2 mi",
-     "elevation_ft": null,
-     "elevation_text": "",
+     "distance_mi": 6.9,
+     "distance_text": "6.9 mi",
+     "elevation_ft": 708,
+     "elevation_text": "708 ft",
      "year": "2024",
      "month": "January",
      "date": "2024-01",
      "park": null,
      "label": "Aoraki/Mount Cook National Park",
-     "gain_pct": null,
+     "gain_pct": 17,
      "photos": []
     },
     {
      "name": "Mueller Hut Route",
      "place": "Aoraki/Mount Cook National Park, New Zealand",
-     "distance_mi": 6.5,
-     "distance_text": "6.5 mi",
-     "elevation_ft": 3281,
-     "elevation_text": "3,281 ft",
+     "distance_mi": 7.36,
+     "distance_text": "7.36 mi",
+     "elevation_ft": 3540,
+     "elevation_text": "3,540 ft",
      "year": "2024",
      "month": "January",
      "date": "2024-01",
      "park": null,
      "label": "Aoraki/Mount Cook National Park",
-     "gain_pct": 78,
+     "gain_pct": 84,
      "photos": []
     }
    ],
    "count": 2,
-   "distance_mi": 12.7,
-   "distance_text": "12.7",
-   "elevation_ft": 3281,
-   "elevation_text": "3,281"
+   "distance_mi": 14.3,
+   "distance_text": "14.3",
+   "elevation_ft": 4248,
+   "elevation_text": "4,248"
   },
   {
    "year": "2024",
@@ -1215,24 +1215,24 @@
     {
      "name": "Mount John Walkway",
      "place": "Lake Tekapo, New Zealand",
-     "distance_mi": null,
-     "distance_text": "",
-     "elevation_ft": null,
-     "elevation_text": "",
+     "distance_mi": 5.2,
+     "distance_text": "5.2 mi",
+     "elevation_ft": 1315,
+     "elevation_text": "1,315 ft",
      "year": "2024",
      "month": "January",
      "date": "2024-01",
      "park": null,
      "label": "Lake Tekapo",
-     "gain_pct": null,
+     "gain_pct": 31,
      "photos": []
     }
    ],
    "count": 1,
-   "distance_mi": 0,
-   "distance_text": "0",
-   "elevation_ft": 0,
-   "elevation_text": "0"
+   "distance_mi": 5.2,
+   "distance_text": "5.2",
+   "elevation_ft": 1315,
+   "elevation_text": "1,315"
   },
   {
    "year": "2022",
@@ -1375,9 +1375,9 @@
  },
  "records": {
   "longest": {
-   "name": "Routeburn Track",
-   "park": null,
-   "text": "20.5 mi"
+   "name": "Sprague, Nymph, Dream, Emerald and Haiyaha Lakes to Sky Pond",
+   "park": "Rocky Mountain",
+   "text": "20.3 mi"
   },
   "climb": {
    "name": "Siyeh Pass and St. Mary Falls Loop",
@@ -1392,11 +1392,11 @@
  },
  "summary": {
   "total": 60,
-  "distance_mi": 463.7,
-  "distance_counted": 59,
-  "elevation_ft": 89423,
-  "elevation_text": "89,423",
-  "elevation_counted": 56,
+  "distance_mi": 454.6,
+  "distance_counted": 60,
+  "elevation_ft": 95506,
+  "elevation_text": "95,506",
+  "elevation_counted": 60,
   "by_year": [
    {
     "year": "2026",

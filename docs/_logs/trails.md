@@ -109,11 +109,11 @@ python3 scripts/build.py
 
 ### January
 
-- Tongariro Alpine Crossing — Tongariro National Park, New Zealand — 12.6 mi
-- Routeburn Track — Fiordland National Park, New Zealand — 20.5 mi
-- Hooker Valley Track — Aoraki/Mount Cook National Park, New Zealand — 6.2 mi
-- Mueller Hut Route — Aoraki/Mount Cook National Park, New Zealand — 6.5 mi — 3,281 ft
-- Mount John Walkway — Lake Tekapo, New Zealand
+- Tongariro Alpine Crossing — Tongariro National Park, New Zealand — 12.6 mi — 2,798 ft
+- Routeburn Track — Fiordland National Park, New Zealand — 4.6 mi — 1,003 ft
+- Hooker Valley Track — Aoraki/Mount Cook National Park, New Zealand — 6.9 mi — 708 ft
+- Mueller Hut Route — Aoraki/Mount Cook National Park, New Zealand — 7.36 mi — 3,540 ft
+- Mount John Walkway — Lake Tekapo, New Zealand — 5.2 mi — 1,315 ft
 
 ## 2022
 
