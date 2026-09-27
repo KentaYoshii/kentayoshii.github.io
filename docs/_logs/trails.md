@@ -25,6 +25,20 @@ python3 scripts/build.py
 
 ## 2026
 
+### September
+
+- Highline Trail — Glacier National Park, MT — 17.13 mi — 3,556 ft
+- Siyeh Pass and St. Mary Falls Loop — Glacier National Park, MT — 18.11 mi — 4,232 ft
+- Grinnell Glacier — Glacier National Park, MT — 11.32 mi — 2,146 ft
+- Ptarmigan Tunnel / Iceberg Lake — Glacier National Park, MT — 15.1 mi — 3,068 ft
+- Avalanche Lake — Glacier National Park, MT — 6.4 mi — 801 ft
+- Swiftcurrent Pass — Glacier National Park, MT — 15.78 mi — 2,972 ft
+- Numa Lookout — Glacier National Park, MT — 11.58 mi — 3,012 ft
+- Mount Ida — Rocky Mountain National Park, CO — 9.6 mi — 2,400 ft
+- Sprague, Nymph, Dream, Emerald and Haiyaha Lakes to Sky Pond — Rocky Mountain National Park, CO — 20.3 mi — 3,278 ft
+- Chasm Lake — Rocky Mountain National Park, CO — 8.5 mi — 2,542 ft
+- Ouzel Falls — Rocky Mountain National Park, CO — 5.6 mi — 980 ft
+
 ### July
 
 - Hoh River Trail — Olympic National Park, WA — 11.25 mi — 400 ft
@@ -48,6 +62,7 @@ python3 scripts/build.py
 
 ### December
 
+- Alkali Flat Trail — White Sands National Park, NM — 4.3 mi — 49 ft
 - Smith Spring and Manzanita Spring Loop — Guadalupe Mountains National Park, TX — 2.53 mi — 387 ft
 - McKittrick Canyon to The Notch — Guadalupe Mountains National Park, TX — 18 mi — 3,200 ft
 - Hunter Peak via Bear Canyon — Guadalupe Mountains National Park, TX — 9.09 mi — 2,703 ft
@@ -55,7 +70,15 @@ python3 scripts/build.py
 - Devil's Hall — Guadalupe Mountains National Park, TX — 5.5 mi — 700 ft
 - Natural Entrance and Big Room — Carlsbad Caverns National Park, NM — 3.75 mi — 750 ft
 - Desert Nature Trail — Carlsbad Caverns National Park, NM — 1.2 mi — 72 ft
-- Alkali Flat Trail — White Sands National Park, NM — 4.3 mi — 49 ft
+- Emory Peak via South Rim and Boot Springs Trails — Big Bend National Park, TX — 14.6 mi — 3,166 ft
+- Upper Burro Mesa Pouroff — Big Bend National Park, TX — 3.6 mi — 439 ft
+- Lower Burro Mesa Pouroff — Big Bend National Park, TX — 1 mi — 157 ft
+- Santa Elena Canyon Trail — Big Bend National Park, TX — 1.7 mi — 242 ft
+- The Window Trail — Big Bend National Park, TX — 5.5 mi — 958 ft
+- Lost Mine Trail — Big Bend National Park, TX — 4.8 mi — 1,145 ft
+- Ernest Ridge Trail — Big Bend National Park, TX — 6 mi — 954 ft
+- Boquillas Canyon Trail — Big Bend National Park, TX — 1.5 mi — 150 ft
+- Dog Canyon and Devil's Den — Big Bend National Park, TX — 10 mi — 689 ft
 
 ### October
 

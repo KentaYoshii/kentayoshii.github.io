@@ -23,8 +23,8 @@
 - Jekyll not installed here; page not rendered locally. CI `site` job covers Liquid.
 
 ## TODOs
-- Glacier, Rocky Mountain and Big Bend trails not logged yet.
-- Second batch (23 hikes: Olympic, Rainier, Haleakalā, Guadalupe, Carlsbad, White Sands, Yosemite, Grand Canyon) and the within-month sort change are uncommitted after 96778b3.
+- All 15 visited parks logged: 55 hikes, 417.9 mi, 86,142 ft. Within a month, entries are ordered newest park first by photo dates.
+- "Ernest Ridge Trail" (Big Bend) kept as given; NPS names nearby trails "Ernst Tinaja" / "Ernst Basin" — confirm with the user.
 
 ## Learnings
 - NPS trail stats live on `https://www.nps.gov/thingstodo/<park>-trail-<name>.htm`; links are listed on `/tripideas/day-hikes-in-the-<area>-area.htm`. Grand Teton's hiking page loads via JS. AllTrails returns 403 to scripts.

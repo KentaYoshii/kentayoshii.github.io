@@ -1,6 +1,127 @@
 {
  "trails": [
   {
+   "name": "Highline Trail",
+   "place": "Glacier National Park, MT",
+   "distance_mi": 17.13,
+   "distance_text": "17.13 mi",
+   "elevation_ft": 3556,
+   "elevation_text": "3,556 ft",
+   "year": "2026",
+   "month": "September",
+   "date": "2026-09"
+  },
+  {
+   "name": "Siyeh Pass and St. Mary Falls Loop",
+   "place": "Glacier National Park, MT",
+   "distance_mi": 18.11,
+   "distance_text": "18.11 mi",
+   "elevation_ft": 4232,
+   "elevation_text": "4,232 ft",
+   "year": "2026",
+   "month": "September",
+   "date": "2026-09"
+  },
+  {
+   "name": "Grinnell Glacier",
+   "place": "Glacier National Park, MT",
+   "distance_mi": 11.32,
+   "distance_text": "11.32 mi",
+   "elevation_ft": 2146,
+   "elevation_text": "2,146 ft",
+   "year": "2026",
+   "month": "September",
+   "date": "2026-09"
+  },
+  {
+   "name": "Ptarmigan Tunnel / Iceberg Lake",
+   "place": "Glacier National Park, MT",
+   "distance_mi": 15.1,
+   "distance_text": "15.1 mi",
+   "elevation_ft": 3068,
+   "elevation_text": "3,068 ft",
+   "year": "2026",
+   "month": "September",
+   "date": "2026-09"
+  },
+  {
+   "name": "Avalanche Lake",
+   "place": "Glacier National Park, MT",
+   "distance_mi": 6.4,
+   "distance_text": "6.4 mi",
+   "elevation_ft": 801,
+   "elevation_text": "801 ft",
+   "year": "2026",
+   "month": "September",
+   "date": "2026-09"
+  },
+  {
+   "name": "Swiftcurrent Pass",
+   "place": "Glacier National Park, MT",
+   "distance_mi": 15.78,
+   "distance_text": "15.78 mi",
+   "elevation_ft": 2972,
+   "elevation_text": "2,972 ft",
+   "year": "2026",
+   "month": "September",
+   "date": "2026-09"
+  },
+  {
+   "name": "Numa Lookout",
+   "place": "Glacier National Park, MT",
+   "distance_mi": 11.58,
+   "distance_text": "11.58 mi",
+   "elevation_ft": 3012,
+   "elevation_text": "3,012 ft",
+   "year": "2026",
+   "month": "September",
+   "date": "2026-09"
+  },
+  {
+   "name": "Mount Ida",
+   "place": "Rocky Mountain National Park, CO",
+   "distance_mi": 9.6,
+   "distance_text": "9.6 mi",
+   "elevation_ft": 2400,
+   "elevation_text": "2,400 ft",
+   "year": "2026",
+   "month": "September",
+   "date": "2026-09"
+  },
+  {
+   "name": "Sprague, Nymph, Dream, Emerald and Haiyaha Lakes to Sky Pond",
+   "place": "Rocky Mountain National Park, CO",
+   "distance_mi": 20.3,
+   "distance_text": "20.3 mi",
+   "elevation_ft": 3278,
+   "elevation_text": "3,278 ft",
+   "year": "2026",
+   "month": "September",
+   "date": "2026-09"
+  },
+  {
+   "name": "Chasm Lake",
+   "place": "Rocky Mountain National Park, CO",
+   "distance_mi": 8.5,
+   "distance_text": "8.5 mi",
+   "elevation_ft": 2542,
+   "elevation_text": "2,542 ft",
+   "year": "2026",
+   "month": "September",
+   "date": "2026-09"
+  },
+  {
+   "name": "Ouzel Falls",
+   "place": "Rocky Mountain National Park, CO",
+   "distance_mi": 5.6,
+   "distance_text": "5.6 mi",
+   "elevation_ft": 980,
+   "elevation_text": "980 ft",
+   "year": "2026",
+   "month": "September",
+   "date": "2026-09"
+  },
+  {
    "name": "Hoh River Trail",
    "place": "Olympic National Park, WA",
    "distance_mi": 11.25,
@@ -144,6 +265,17 @@
    "date": "2026-04"
   },
   {
+   "name": "Alkali Flat Trail",
+   "place": "White Sands National Park, NM",
+   "distance_mi": 4.3,
+   "distance_text": "4.3 mi",
+   "elevation_ft": 49,
+   "elevation_text": "49 ft",
+   "year": "2025",
+   "month": "December",
+   "date": "2025-12"
+  },
+  {
    "name": "Smith Spring and Manzanita Spring Loop",
    "place": "Guadalupe Mountains National Park, TX",
    "distance_mi": 2.53,
@@ -221,12 +353,100 @@
    "date": "2025-12"
   },
   {
-   "name": "Alkali Flat Trail",
-   "place": "White Sands National Park, NM",
-   "distance_mi": 4.3,
-   "distance_text": "4.3 mi",
-   "elevation_ft": 49,
-   "elevation_text": "49 ft",
+   "name": "Emory Peak via South Rim and Boot Springs Trails",
+   "place": "Big Bend National Park, TX",
+   "distance_mi": 14.6,
+   "distance_text": "14.6 mi",
+   "elevation_ft": 3166,
+   "elevation_text": "3,166 ft",
+   "year": "2025",
+   "month": "December",
+   "date": "2025-12"
+  },
+  {
+   "name": "Upper Burro Mesa Pouroff",
+   "place": "Big Bend National Park, TX",
+   "distance_mi": 3.6,
+   "distance_text": "3.6 mi",
+   "elevation_ft": 439,
+   "elevation_text": "439 ft",
+   "year": "2025",
+   "month": "December",
+   "date": "2025-12"
+  },
+  {
+   "name": "Lower Burro Mesa Pouroff",
+   "place": "Big Bend National Park, TX",
+   "distance_mi": 1.0,
+   "distance_text": "1 mi",
+   "elevation_ft": 157,
+   "elevation_text": "157 ft",
+   "year": "2025",
+   "month": "December",
+   "date": "2025-12"
+  },
+  {
+   "name": "Santa Elena Canyon Trail",
+   "place": "Big Bend National Park, TX",
+   "distance_mi": 1.7,
+   "distance_text": "1.7 mi",
+   "elevation_ft": 242,
+   "elevation_text": "242 ft",
+   "year": "2025",
+   "month": "December",
+   "date": "2025-12"
+  },
+  {
+   "name": "The Window Trail",
+   "place": "Big Bend National Park, TX",
+   "distance_mi": 5.5,
+   "distance_text": "5.5 mi",
+   "elevation_ft": 958,
+   "elevation_text": "958 ft",
+   "year": "2025",
+   "month": "December",
+   "date": "2025-12"
+  },
+  {
+   "name": "Lost Mine Trail",
+   "place": "Big Bend National Park, TX",
+   "distance_mi": 4.8,
+   "distance_text": "4.8 mi",
+   "elevation_ft": 1145,
+   "elevation_text": "1,145 ft",
+   "year": "2025",
+   "month": "December",
+   "date": "2025-12"
+  },
+  {
+   "name": "Ernest Ridge Trail",
+   "place": "Big Bend National Park, TX",
+   "distance_mi": 6.0,
+   "distance_text": "6 mi",
+   "elevation_ft": 954,
+   "elevation_text": "954 ft",
+   "year": "2025",
+   "month": "December",
+   "date": "2025-12"
+  },
+  {
+   "name": "Boquillas Canyon Trail",
+   "place": "Big Bend National Park, TX",
+   "distance_mi": 1.5,
+   "distance_text": "1.5 mi",
+   "elevation_ft": 150,
+   "elevation_text": "150 ft",
+   "year": "2025",
+   "month": "December",
+   "date": "2025-12"
+  },
+  {
+   "name": "Dog Canyon and Devil's Den",
+   "place": "Big Bend National Park, TX",
+   "distance_mi": 10.0,
+   "distance_text": "10 mi",
+   "elevation_ft": 689,
+   "elevation_text": "689 ft",
    "year": "2025",
    "month": "December",
    "date": "2025-12"
@@ -387,20 +607,20 @@
   }
  ],
  "summary": {
-  "total": 35,
-  "distance_mi": 229.8,
-  "distance_counted": 35,
-  "elevation_ft": 49255,
-  "elevation_text": "49,255",
-  "elevation_counted": 35,
+  "total": 55,
+  "distance_mi": 417.9,
+  "distance_counted": 55,
+  "elevation_ft": 86142,
+  "elevation_text": "86,142",
+  "elevation_counted": 55,
   "by_year": [
    {
     "year": "2026",
-    "count": 13
+    "count": 24
    },
    {
     "year": "2025",
-    "count": 21
+    "count": 30
    },
    {
     "year": "2022",
