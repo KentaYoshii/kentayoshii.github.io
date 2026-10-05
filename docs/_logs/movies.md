@@ -550,3 +550,16 @@ month recorded.
 - Transformers: Dark of the Moon
 - Transformers: Age of Extinction
 - Transformers: The Last Knight
+
+### October
+- The Fast and the Furious (2001)
+- 2 Fast 2 Furious
+- The Fast and the Furious: Tokyo Drift
+- Fast & Furious (2009)
+- Fast Five
+- Fast & Furious 6
+- Furious 7
+- The Fate of the Furious
+- Fast & Furious Presents: Hobbs & Shaw
+- F9
+- Fast X

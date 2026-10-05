@@ -215,13 +215,13 @@
   ]
  },
  "movies": {
-  "total": 425,
-  "films": 422,
+  "total": 436,
+  "films": 433,
   "shows": 3,
   "by_year": [
    {
     "year": "2026",
-    "count": 51
+    "count": 62
    },
    {
     "year": "2025",
@@ -1577,7 +1577,7 @@
      },
      {
       "month": "Oct",
-      "count": null
+      "count": 11
      },
      {
       "month": "Nov",
@@ -1591,8 +1591,8 @@
    }
   ],
   "heatmap_max": 21,
-  "months_logged": 31,
-  "month_median": 6,
+  "months_logged": 32,
+  "month_median": 7,
   "busiest_month": {
    "label": "December 2025",
    "count": 21
