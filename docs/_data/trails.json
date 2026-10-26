@@ -21,7 +21,7 @@
      "label": "Acadia",
      "gain_pct": 43,
      "photos": [
-      "IMG_4916.jpeg"
+      "acadia-pink-dawn-fog-granite-summit.jpeg"
      ]
     },
     {
@@ -38,11 +38,11 @@
      "label": "Acadia",
      "gain_pct": 79,
      "photos": [
-      "IMG_4844.jpeg",
-      "IMG_4867.jpeg",
-      "IMG_4871.jpeg",
-      "IMG_4887.jpeg",
-      "IMG_4899.jpeg"
+      "acadia-before-sunrise-cadillac-mountain.jpeg",
+      "acadia-sun-clearing-horizon-cadillac-mountain.jpeg",
+      "acadia-sunrise-spruce-cadillac-mountain.jpeg",
+      "acadia-jordan-pond-islands.jpeg",
+      "acadia-bubbles-jordan-pond.jpeg"
      ]
     },
     {
@@ -59,11 +59,11 @@
      "label": "Acadia",
      "gain_pct": 52,
      "photos": [
-      "IMG_4790.jpeg",
-      "IMG_4802.jpeg",
-      "IMG_4804.jpeg",
-      "IMG_4811.jpeg",
-      "IMG_4813.jpeg"
+      "acadia-sunrise-ocean-spruce.jpeg",
+      "acadia-low-sun-fall-forest-bay.jpeg",
+      "acadia-cove-cliffs-ringed-fall-color.jpeg",
+      "acadia-morning-sun-red-oak-leaves.jpeg",
+      "acadia-small-pond-hills-sea.jpeg"
      ]
     }
    ],
@@ -94,8 +94,8 @@
      "label": "Glacier",
      "gain_pct": 84,
      "photos": [
-      "IMG_4621.jpeg",
-      "IMG_4629.jpeg"
+      "glacier-upper-grinnell-lake-from-above.jpeg",
+      "glacier-red-autumn-slopes-trail.jpeg"
      ]
     },
     {
@@ -112,8 +112,8 @@
      "label": "Glacier",
      "gain_pct": 100,
      "photos": [
-      "IMG_4660.jpeg",
-      "IMG_4691.jpeg"
+      "glacier-far-peak-head-valley.jpeg",
+      "glacier-bighorn-ram-valley.jpeg"
      ]
     },
     {
@@ -130,10 +130,10 @@
      "label": "Glacier",
      "gain_pct": 51,
      "photos": [
-      "IMG_4525.jpeg",
-      "IMG_4538.jpeg",
-      "IMG_4553.jpeg",
-      "IMG_4558.jpeg"
+      "glacier-pink-clouds-lake-dawn.jpeg",
+      "glacier-grinnell-lake-trail.jpeg",
+      "glacier-ice-floating-upper-grinnell-lake.jpeg",
+      "glacier-bighorn-ram-grazing-slope.jpeg"
      ]
     },
     {
@@ -150,8 +150,8 @@
      "label": "Glacier",
      "gain_pct": 72,
      "photos": [
-      "IMG_4495.jpeg",
-      "IMG_4508.jpeg"
+      "glacier-fresh-snow-small-lake.jpeg",
+      "glacier-cirque-lake-new-snow.jpeg"
      ]
     },
     {
@@ -168,8 +168,8 @@
      "label": "Glacier",
      "gain_pct": 19,
      "photos": [
-      "IMG_4736.jpeg",
-      "IMG_4737.jpeg"
+      "glacier-alpenglow-mirrored-lake.jpeg",
+      "glacier-waterfalls-threading-headwall.jpeg"
      ]
     },
     {
@@ -186,9 +186,9 @@
      "label": "Glacier",
      "gain_pct": 70,
      "photos": [
-      "IMG_4420.jpeg",
-      "IMG_4425.jpeg",
-      "IMG_4436.jpeg"
+      "glacier-dawn-reflected-still-lake.jpeg",
+      "glacier-waterfall-clouded-wall.jpeg",
+      "glacier-lake-down-valley.jpeg"
      ]
     },
     {
@@ -205,7 +205,7 @@
      "label": "Glacier",
      "gain_pct": 71,
      "photos": [
-      "IMG_4749.jpeg"
+      "glacier-bowman-lake-looking-valley.jpeg"
      ]
     }
    ],
@@ -236,9 +236,9 @@
      "label": "Rocky Mountain",
      "gain_pct": 57,
      "photos": [
-      "IMG_4317.jpeg",
-      "rmnp4.jpeg",
-      "IMG_4341.jpeg"
+      "rocky-mountain-red-sunrise-high-tundra.jpeg",
+      "rocky-mountain-two-lakes-ridge.jpeg",
+      "rocky-mountain-clouds-building-far-range.jpeg"
      ]
     },
     {
@@ -255,11 +255,11 @@
      "label": "Rocky Mountain",
      "gain_pct": 77,
      "photos": [
-      "rmnp2.jpeg",
-      "IMG_4237.jpeg",
-      "IMG_4253.jpeg",
-      "IMG_4267.jpeg",
-      "rmnp.jpeg"
+      "rocky-mountain-bird-pines.jpeg",
+      "rocky-mountain-still-lake-beneath-cirque.jpeg",
+      "rocky-mountain-looking-back-valley-lakes.jpeg",
+      "rocky-mountain-cow-elk-among-spruce.jpeg",
+      "rocky-mountain-lake-cirque.jpeg"
      ]
     },
     {
@@ -276,10 +276,10 @@
      "label": "Rocky Mountain",
      "gain_pct": 60,
      "photos": [
-      "IMG_4374.jpeg",
-      "IMG_4377.jpeg",
-      "IMG_4382.jpeg",
-      "rmnp3.jpeg"
+      "rocky-mountain-diamond-chasm-lake.jpeg",
+      "rocky-mountain-first-light-valley.jpeg",
+      "rocky-mountain-red-band-dawn-valley.jpeg",
+      "rocky-mountain-sunrise-tundra.jpeg"
      ]
     },
     {
@@ -325,7 +325,7 @@
      "label": "Olympic",
      "gain_pct": 9,
      "photos": [
-      "olympic5.jpeg"
+      "olympic-creek-stepping-ferns.jpeg"
      ]
     },
     {
@@ -357,7 +357,7 @@
      "label": "Olympic",
      "gain_pct": 55,
      "photos": [
-      "olympic.jpeg"
+      "olympic-fog-sitting-ridge.jpeg"
      ]
     },
     {
@@ -389,7 +389,7 @@
      "label": "Olympic",
      "gain_pct": 21,
      "photos": [
-      "olympic3.jpeg"
+      "olympic-chipmunk-path.jpeg"
      ]
     },
     {
@@ -436,9 +436,9 @@
      "label": "Olympic",
      "gain_pct": 7,
      "photos": [
-      "olympic4.jpeg",
-      "IMG_3729.jpeg",
-      "olympic6.jpeg"
+      "olympic-sea-stacks-low-tide.jpeg",
+      "olympic-ochre-sea-stars-anemones.jpeg",
+      "olympic-rocks-tide-line.jpeg"
      ]
     },
     {
@@ -455,7 +455,7 @@
      "label": "Olympic",
      "gain_pct": 1,
      "photos": [
-      "olympic7.jpeg"
+      "olympic-moss-hung-maples-trail.jpeg"
      ]
     }
    ],
@@ -486,11 +486,11 @@
      "label": "Mount Rainier",
      "gain_pct": 87,
      "photos": [
-      "rainier2.jpeg",
-      "rainier.jpeg",
-      "IMG_3818.jpeg",
-      "rainier3.jpeg",
-      "rainier4.jpeg"
+      "mount-rainier-marmot-rock-valley.jpeg",
+      "mount-rainier-meadow-steps-mountain-behind.jpeg",
+      "mount-rainier-pink-heather-sea-cloud.jpeg",
+      "mount-rainier-mountain-reflected-lake.jpeg",
+      "mount-rainier-band-cloud-mountain.jpeg"
      ]
     },
     {
@@ -580,9 +580,9 @@
      "label": "White Sands",
      "gain_pct": 1,
      "photos": [
-      "IMG_2958.jpg",
-      "whitesands.jpeg",
-      "IMG_2982.jpeg"
+      "white-sands-ripples-gypsum.jpg",
+      "white-sands-sunset-dunes.jpeg",
+      "white-sands-dunes-footprints-sunset.jpeg"
      ]
     }
    ],
@@ -628,9 +628,9 @@
      "label": "Guadalupe Mountains",
      "gain_pct": 76,
      "photos": [
-      "IMG_2908.jpeg",
-      "IMG_2912.jpeg",
-      "IMG_2931.jpeg"
+      "guadalupe-mountains-canyon-white-gravel-trail.jpeg",
+      "guadalupe-mountains-dripstone-overhanging-trail.jpeg",
+      "guadalupe-mountains-late-sun-canyon-pines.jpeg"
      ]
     },
     {
@@ -647,7 +647,7 @@
      "label": "Guadalupe Mountains",
      "gain_pct": 64,
      "photos": [
-      "IMG_2867.jpeg"
+      "guadalupe-mountains-grey-dawn-desert-basin.jpeg"
      ]
     },
     {
@@ -664,9 +664,9 @@
      "label": "Guadalupe Mountains",
      "gain_pct": 75,
      "photos": [
-      "guadalupe.jpeg",
-      "IMG_2813.jpeg",
-      "IMG_2829.jpeg"
+      "guadalupe-mountains-cloud-early.jpeg",
+      "guadalupe-mountains-trail-cliff-cloud.jpeg",
+      "guadalupe-mountains-el-capitan-top-peak.jpeg"
      ]
     },
     {
@@ -683,7 +683,7 @@
      "label": "Guadalupe Mountains",
      "gain_pct": 17,
      "photos": [
-      "IMG_2898.jpeg"
+      "guadalupe-mountains-dry-wash-bare-oaks.jpeg"
      ]
     }
    ],
@@ -714,11 +714,11 @@
      "label": "Carlsbad Caverns",
      "gain_pct": 18,
      "photos": [
-      "IMG_2735.jpeg",
-      "IMG_2745.jpeg",
-      "IMG_2757.jpeg",
-      "carlsbad.jpeg",
-      "IMG_2764.jpeg"
+      "carlsbad-caverns-trail-winding-among-formations.jpeg",
+      "carlsbad-caverns-ceiling-bristling-stalactites.jpeg",
+      "carlsbad-caverns-stalagmites-crowding-chamber.jpeg",
+      "carlsbad-caverns-stalactites-chamber-floor.jpeg",
+      "carlsbad-caverns-columns-rising-ceiling.jpeg"
      ]
     },
     {
@@ -764,7 +764,7 @@
      "label": "Big Bend",
      "gain_pct": 75,
      "photos": [
-      "IMG_2497.jpeg"
+      "big-bend-jay-on-trail.jpeg"
      ]
     },
     {
@@ -826,7 +826,7 @@
      "label": "Big Bend",
      "gain_pct": 23,
      "photos": [
-      "bb_1.jpeg"
+      "big-bend-through-the-window.jpeg"
      ]
     },
     {
@@ -843,8 +843,8 @@
      "label": "Big Bend",
      "gain_pct": 27,
      "photos": [
-      "bb_3.jpeg",
-      "IMG_2562.jpeg"
+      "big-bend-first-light-chisos.jpeg",
+      "big-bend-looking-ridge-chisos.jpeg"
      ]
     },
     {
@@ -876,7 +876,7 @@
      "label": "Big Bend",
      "gain_pct": 4,
      "photos": [
-      "bb_2.jpeg"
+      "big-bend-river-between-canyon-walls.jpeg"
      ]
     },
     {
@@ -893,7 +893,7 @@
      "label": "Big Bend",
      "gain_pct": 16,
      "photos": [
-      "IMG_2653.jpeg"
+      "big-bend-dawn-behind-ridgeline.jpeg"
      ]
     }
    ],
@@ -924,7 +924,7 @@
      "label": "Yellowstone",
      "gain_pct": 4,
      "photos": [
-      "IMG_2045.jpeg"
+      "yellowstone-grand-prismatic-spring-overlook.jpeg"
      ]
     },
     {
@@ -941,7 +941,7 @@
      "label": "Yellowstone",
      "gain_pct": 8,
      "photos": [
-      "IMG_2028.jpeg"
+      "yellowstone-morning-glory-pool.jpeg"
      ]
     },
     {
@@ -958,7 +958,7 @@
      "label": "Yellowstone",
      "gain_pct": 8,
      "photos": [
-      "yellowstone_1.jpeg"
+      "yellowstone-steam-off-travertine-terraces.jpeg"
      ]
     },
     {
@@ -975,7 +975,7 @@
      "label": "Yellowstone",
      "gain_pct": 18,
      "photos": [
-      "IMG_2171.jpeg"
+      "yellowstone-beaver-pond-sagebrush-hills.jpeg"
      ]
     },
     {
@@ -992,7 +992,7 @@
      "label": "Yellowstone",
      "gain_pct": 49,
      "photos": [
-      "IMG_2361.jpeg"
+      "yellowstone-river-deep-canyon.jpeg"
      ]
     },
     {
@@ -1009,8 +1009,8 @@
      "label": "Yellowstone",
      "gain_pct": 33,
      "photos": [
-      "IMG_2307.jpeg",
-      "IMG_2325.jpeg"
+      "yellowstone-early-light-through-firs.jpeg",
+      "yellowstone-summit-sign-mount-washburn.jpeg"
      ]
     },
     {
@@ -1027,7 +1027,7 @@
      "label": "Yellowstone",
      "gain_pct": 7,
      "photos": [
-      "yellowstone_2.jpeg"
+      "yellowstone-yellow-walls-falls-far-end.jpeg"
      ]
     }
    ],
@@ -1058,17 +1058,17 @@
      "label": "Grand Teton",
      "gain_pct": 98,
      "photos": [
-      "IMG_1825.jpeg",
-      "IMG_1828.jpeg",
-      "IMG_1831.jpeg",
-      "IMG_1836.jpeg",
-      "IMG_1839.jpeg",
-      "IMG_1856.jpeg",
-      "IMG_1864.jpeg",
-      "IMG_1872.jpg",
-      "IMG_1878.jpeg",
-      "IMG_1888.jpg",
-      "IMG_1901.jpeg"
+      "grand-teton-dawn-still-lake.jpeg",
+      "grand-teton-sunrise-pines.jpeg",
+      "grand-teton-moose-undergrowth.jpeg",
+      "grand-teton-creek-tumbling-granite.jpeg",
+      "grand-teton-looking-back-canyon-lakes.jpeg",
+      "grand-teton-small-tarn-divide.jpeg",
+      "grand-teton-scree-climb-toward-divide.jpeg",
+      "grand-teton-pika-among-rocks.jpg",
+      "grand-teton-peaks-cloud-north-fork-cascade.jpeg",
+      "grand-teton-deer-trail.jpg",
+      "grand-teton-jenny-lake-afternoon-cloud.jpeg"
      ]
     },
     {
@@ -1085,9 +1085,9 @@
      "label": "Grand Teton",
      "gain_pct": 71,
      "photos": [
-      "IMG_1727.jpeg",
-      "grand_teton_1.jpeg",
-      "IMG_1755.jpeg"
+      "grand-teton-autumn-undergrowth-hazy-sun.jpeg",
+      "grand-teton-lake-granite.jpeg",
+      "grand-teton-red-brush-switchbacks.jpeg"
      ]
     },
     {
@@ -1104,7 +1104,7 @@
      "label": "Grand Teton",
      "gain_pct": 18,
      "photos": [
-      "IMG_1683.jpeg"
+      "grand-teton-tetons-taggart-lake.jpeg"
      ]
     }
    ],
@@ -1135,9 +1135,9 @@
      "label": "Yosemite",
      "gain_pct": 88,
      "photos": [
-      "yosemite_3.jpeg",
-      "IMG_1560.jpeg",
-      "IMG_1569.jpeg"
+      "yosemite-upper-fall-half-dome-valley.jpeg",
+      "yosemite-valley-from-yosemite-point.jpeg",
+      "yosemite-half-dome-from-yosemite-point.jpeg"
      ]
     }
    ],
@@ -1168,9 +1168,9 @@
      "label": "Grand Canyon",
      "gain_pct": 72,
      "photos": [
-      "IMG_1248.jpeg",
-      "IMG_1282.jpeg",
-      "IMG_1304.jpeg"
+      "grand-canyon-first-light-top-trail.jpeg",
+      "grand-canyon-trail-dropping-toward-plateau.jpeg",
+      "grand-canyon-mule-train-switchbacks.jpeg"
      ]
     }
    ],
@@ -1201,10 +1201,10 @@
      "label": "Zion",
      "gain_pct": 35,
      "photos": [
-      "IMG_1020.jpeg",
-      "IMG_1053.jpeg",
-      "IMG_1078.jpeg",
-      "IMG_1095.jpg"
+      "zion-canyon-floor-river-climb.jpeg",
+      "zion-fin-angels-landing-scout-lookout.jpeg",
+      "zion-chipmunk-sandstone.jpeg",
+      "zion-chains-final-ridge.jpg"
      ]
     }
    ],
@@ -1366,7 +1366,7 @@
      "label": "Hawaiʻi Volcanoes",
      "gain_pct": 18,
      "photos": [
-      "hawaiian_volcanoes_1.jpeg"
+      "hawaii-volcanoes-crater-floor-rain.jpeg"
      ]
     }
    ],
