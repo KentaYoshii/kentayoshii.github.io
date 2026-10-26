@@ -32,3 +32,4 @@ ALIASES for the handful that need an explicit mapping.
 - Olympic
 - Mount Rainier
 - Glacier
+- Acadia

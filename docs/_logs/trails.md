@@ -25,6 +25,12 @@ python3 scripts/build.py
 
 ## 2026
 
+### October
+
+- Six Summits — Acadia National Park, ME — 5.8 mi — 1,800 ft
+- North Cadillac, Pemetic, North and South Bubble, Jordan Pond and Eagle Lake — Acadia National Park, ME — 14.5 mi — 3,350 ft
+- Gorham, Beehive, Bowl and Precipice — Acadia National Park, ME — 11 mi — 2,200 ft
+
 ### September
 
 - Highline Trail — Glacier National Park, MT — 17.13 mi — 3,556 ft

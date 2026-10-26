@@ -2,6 +2,79 @@
  "groups": [
   {
    "year": "2026",
+   "month": "October",
+   "park": "Acadia",
+   "label": "Acadia",
+   "first_of_park": true,
+   "trails": [
+    {
+     "name": "Six Summits",
+     "place": "Acadia National Park, ME",
+     "distance_mi": 5.8,
+     "distance_text": "5.8 mi",
+     "elevation_ft": 1800,
+     "elevation_text": "1,800 ft",
+     "year": "2026",
+     "month": "October",
+     "date": "2026-10",
+     "park": "Acadia",
+     "label": "Acadia",
+     "gain_pct": 43,
+     "photos": [
+      "IMG_4916.jpeg"
+     ]
+    },
+    {
+     "name": "North Cadillac, Pemetic, North and South Bubble, Jordan Pond and Eagle Lake",
+     "place": "Acadia National Park, ME",
+     "distance_mi": 14.5,
+     "distance_text": "14.5 mi",
+     "elevation_ft": 3350,
+     "elevation_text": "3,350 ft",
+     "year": "2026",
+     "month": "October",
+     "date": "2026-10",
+     "park": "Acadia",
+     "label": "Acadia",
+     "gain_pct": 79,
+     "photos": [
+      "IMG_4844.jpeg",
+      "IMG_4867.jpeg",
+      "IMG_4871.jpeg",
+      "IMG_4887.jpeg",
+      "IMG_4899.jpeg"
+     ]
+    },
+    {
+     "name": "Gorham, Beehive, Bowl and Precipice",
+     "place": "Acadia National Park, ME",
+     "distance_mi": 11.0,
+     "distance_text": "11 mi",
+     "elevation_ft": 2200,
+     "elevation_text": "2,200 ft",
+     "year": "2026",
+     "month": "October",
+     "date": "2026-10",
+     "park": "Acadia",
+     "label": "Acadia",
+     "gain_pct": 52,
+     "photos": [
+      "IMG_4790.jpeg",
+      "IMG_4802.jpeg",
+      "IMG_4804.jpeg",
+      "IMG_4811.jpeg",
+      "IMG_4813.jpeg"
+     ]
+    }
+   ],
+   "count": 3,
+   "distance_mi": 31.3,
+   "distance_text": "31.3",
+   "elevation_ft": 7350,
+   "elevation_text": "7,350"
+  },
+  {
+   "year": "2026",
    "month": "September",
    "park": "Glacier",
    "label": "Glacier",
@@ -1334,6 +1407,13 @@
   }
  ],
  "parks": {
+  "Acadia": {
+   "count": 3,
+   "distance_mi": 31.3,
+   "distance_text": "31.3",
+   "elevation_ft": 7350,
+   "elevation_text": "7,350"
+  },
   "Glacier": {
    "count": 7,
    "distance_mi": 95.4,
@@ -1458,16 +1538,16 @@
   }
  },
  "summary": {
-  "total": 61,
-  "distance_mi": 468.0,
-  "distance_counted": 61,
-  "elevation_ft": 98501,
-  "elevation_text": "98,501",
-  "elevation_counted": 61,
+  "total": 64,
+  "distance_mi": 499.3,
+  "distance_counted": 64,
+  "elevation_ft": 105851,
+  "elevation_text": "105,851",
+  "elevation_counted": 64,
   "by_year": [
    {
     "year": "2026",
-    "count": 24
+    "count": 27
    },
    {
     "year": "2025",

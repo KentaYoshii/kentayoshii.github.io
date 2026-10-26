@@ -49,6 +49,91 @@
 # Captions describe what is in the frame. Where a landmark is not identifiable
 # with certainty, the caption says what is visible instead of naming it.
 
+# Acadia -- Maine, visited 2026
+- image: IMG_4790.jpeg
+  park: Acadia
+  trail: Gorham, Beehive, Bowl and Precipice
+  location: Maine
+  date: "2026-10-24"
+  caption: Sunrise over the ocean through the spruce
+  tags: [sunrise, ocean, fall color]
+- image: IMG_4802.jpeg
+  park: Acadia
+  trail: Gorham, Beehive, Bowl and Precipice
+  location: Maine
+  date: "2026-10-24"
+  caption: Low sun over fall forest and the bay
+  tags: [sunrise, fall color, ocean]
+- image: IMG_4804.jpeg
+  park: Acadia
+  trail: Gorham, Beehive, Bowl and Precipice
+  location: Maine
+  date: "2026-10-24"
+  caption: A cove below the cliffs, ringed by fall color
+  tags: [cove, ocean, fall color]
+- image: IMG_4811.jpeg
+  park: Acadia
+  trail: Gorham, Beehive, Bowl and Precipice
+  location: Maine
+  date: "2026-10-24"
+  caption: Morning sun through red oak leaves
+  tags: [sun, fall color]
+- image: IMG_4813.jpeg
+  park: Acadia
+  trail: Gorham, Beehive, Bowl and Precipice
+  location: Maine
+  date: "2026-10-24"
+  caption: A small pond in the hills above the sea
+  tags: [pond, ocean, fall color]
+- image: IMG_4825.jpeg
+  park: Acadia
+  location: Maine
+  date: "2026-10-24"
+  caption: A park road through yellow birch and red maple
+  tags: [road, fall color]
+- image: IMG_4844.jpeg
+  park: Acadia
+  trail: North Cadillac, Pemetic, North and South Bubble, Jordan Pond and Eagle Lake
+  location: Maine
+  date: "2026-10-25"
+  caption: Before sunrise from Cadillac Mountain
+  tags: [dawn, ocean, islands]
+- image: IMG_4867.jpeg
+  park: Acadia
+  trail: North Cadillac, Pemetic, North and South Bubble, Jordan Pond and Eagle Lake
+  location: Maine
+  date: "2026-10-25"
+  caption: The sun clearing the horizon from Cadillac Mountain
+  tags: [sunrise, ocean, islands]
+- image: IMG_4871.jpeg
+  park: Acadia
+  trail: North Cadillac, Pemetic, North and South Bubble, Jordan Pond and Eagle Lake
+  location: Maine
+  date: "2026-10-25"
+  caption: Sunrise through spruce on Cadillac Mountain
+  tags: [sunrise, trees]
+- image: IMG_4887.jpeg
+  park: Acadia
+  trail: North Cadillac, Pemetic, North and South Bubble, Jordan Pond and Eagle Lake
+  location: Maine
+  date: "2026-10-25"
+  caption: Jordan Pond from above, islands beyond
+  tags: [pond, fall color, islands]
+- image: IMG_4899.jpeg
+  park: Acadia
+  trail: North Cadillac, Pemetic, North and South Bubble, Jordan Pond and Eagle Lake
+  location: Maine
+  date: "2026-10-25"
+  caption: The Bubbles across Jordan Pond
+  tags: [pond, reflection, mountains]
+- image: IMG_4916.jpeg
+  park: Acadia
+  trail: Six Summits
+  location: Maine
+  date: "2026-10-26"
+  caption: Pink dawn over fog and water from a granite summit
+  tags: [dawn, fog, granite]
+
 # Glacier -- Montana, visited 2026
 - image: IMG_4420.jpeg
   park: Glacier

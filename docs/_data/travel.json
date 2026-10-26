@@ -2,14 +2,14 @@
  "checklists": {
   "us_national_parks": {
    "label": "US National Parks",
-   "visited": 15,
+   "visited": 16,
    "total": 63,
    "items": [
     {
      "name": "Acadia",
      "subtitle": "Maine",
-     "visited": false,
-     "year": null,
+     "visited": true,
+     "year": "2026",
      "month": null
     },
     {
