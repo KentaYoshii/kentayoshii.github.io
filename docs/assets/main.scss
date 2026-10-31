@@ -167,6 +167,16 @@ code, pre {
   border-radius: 4px;
 }
 
+// Fenced code blocks: minima paints .highlight its own lavender, and the
+// inline-code background above would otherwise stripe every line inside it.
+.highlighter-rouge .highlight {
+  background-color: #f0e6d6;
+}
+
+pre code {
+  background-color: transparent;
+}
+
 .breadcrumb {
   font-size: 14px;
   color: $grey-color-dark;
@@ -1066,6 +1076,15 @@ $mosaic-gap-palm: 6px;
 
   li {
     margin-bottom: 4px;
+    break-inside: avoid;
+  }
+
+  // Sub-sections (h3s) nested under their h2 on the Dev Notes pages.
+  li ul {
+    columns: 1;
+    margin-top: 4px;
+    padding-left: 1em;
+    font-size: 0.9em;
   }
 
   a {
@@ -2393,9 +2412,30 @@ a.parks-map-pin {
     border-left-color: $dark-brand;
   }
 
-  code, pre {
+  code, pre,
+  .highlighter-rouge .highlight {
     background-color: #2c2419;
     color: $dark-text;
+  }
+
+  pre code {
+    background-color: transparent;
+  }
+
+  pre {
+    border-color: $dark-border;
+  }
+
+  // minima's syntax colours are tuned for a white background; lift the darkest
+  // ones so method names, types and literals stay readable.
+  .highlight {
+    .nf, .nc, .ne, .nn { color: #e8a86b; }  // method/class names
+    .kt, .nt, .no      { color: #8fb3d9; }  // types, constants
+    .na, .nb, .nv, .vi { color: #7cc4b8; }  // attributes, fields
+    .m, .mi, .mf, .il  { color: #7cc4b8; }  // numbers
+    .s, .s1, .s2, .sc  { color: #d9a3a3; }  // strings
+    .c, .c1, .cm, .cd  { color: $dark-muted; }  // comments
+    .err               { color: #ff9b8a; background-color: transparent; }
   }
 
   .hero-subtitle,

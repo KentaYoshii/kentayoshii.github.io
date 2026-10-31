@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initCoverArt();
   initCoverMosaic();
   initStatusStrip();
-  initVimTipsToc();
+  initDevNotesToc();
   initGallery();
   initMoreMenu();
 });
@@ -758,13 +758,14 @@ function initStatusStrip() {
     .catch(function () { /* no network, or Open-Meteo is down — clock stands alone */ });
 }
 
-// Builds a quick-jump table of contents for the Vim Tips page from its
-// existing (kramdown auto-generated) section heading ids.
-function initVimTipsToc() {
-  var container = document.querySelector('.vim-tips');
+// Builds a quick-jump table of contents for the Dev Notes pages (Vim Tips,
+// Java) from their existing (kramdown auto-generated) section heading ids.
+// Each h2 becomes an entry; any h3s under it are nested beneath it.
+function initDevNotesToc() {
+  var container = document.querySelector('.vim-tips, .java');
   if (!container) return;
 
-  var headings = Array.prototype.slice.call(container.querySelectorAll('h2')).filter(function (h) {
+  var headings = Array.prototype.slice.call(container.querySelectorAll('h2, h3')).filter(function (h) {
     return !!h.id;
   });
   if (!headings.length) return;
@@ -774,13 +775,25 @@ function initVimTipsToc() {
   toc.setAttribute('aria-label', 'Section navigation');
 
   var list = document.createElement('ul');
+  var section = null;
   headings.forEach(function (heading) {
     var item = document.createElement('li');
     var link = document.createElement('a');
     link.href = '#' + heading.id;
-    link.textContent = heading.textContent;
+    link.textContent = heading.textContent.trim();
     item.appendChild(link);
-    list.appendChild(item);
+
+    if (heading.tagName === 'H3' && section) {
+      var sub = section.querySelector('ul');
+      if (!sub) {
+        sub = document.createElement('ul');
+        section.appendChild(sub);
+      }
+      sub.appendChild(item);
+    } else {
+      list.appendChild(item);
+      section = item;
+    }
   });
 
   toc.appendChild(list);

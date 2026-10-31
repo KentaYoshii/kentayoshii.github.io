@@ -13,6 +13,7 @@ description: Java tips and tricks.
 ### Builder design
 If your class constructor becomes too big, it becomes hard to maintain. 
 For such a scenario, builder pattern is good. The idea is, you create an inner _Builder_ class whose `build()` method will instantiate the outer class for you.
+
 ```java
 public class Kenta {
     private final Integer a; // mandatory
@@ -42,6 +43,7 @@ public class Kenta {
 }
 
 ```
+
 With this, the caller can simply
 - provide the parameters they are interested in
 - chain the set... methods
@@ -53,6 +55,7 @@ A few ways to achieve singleton pattern.
 1. Use a `public static final` field + make the constructor private
 2. Use a _static factory method_ that returns a `private static final` field + make the constructor private
 3. Use a single-element enum
+
 ```java
 public enum Kenta {
     INSTANCE; // callers use Kenta.INSTANCE
@@ -70,6 +73,7 @@ This practice will greatly enhance the flexibility, reusability and testability 
 
 ### try-with-resources
 If your class manages resources (file handles, connections), there are two ways to do a graceful clean up.
+
 ```java
 ClassWithResource rs = new ClassWithResource(...);
 try {
@@ -78,15 +82,18 @@ try {
     rs.close(); // release
 }
 ```
+
 This first way is ok but:
 - it can get easily crazy if you start nesting
 - when nested, exceptions handling becomes odd
 Prefer try-with-resources 
+
 ```java
 try (ClassWithResource rs = new ClassWithResource(...)) {
     ...
 }
 ```
+
 For this to work, your class needs to implement `AutoCloseable` interface
 
 ### Memory Leak
@@ -155,6 +162,7 @@ An _enumerated type_ is a type whose legal values consist of a fixed set of cons
 - Enum provides compile-time safety. 
 - You can have fields in Enum type. They should be `final`.
 - If a different behavior is wanted for different enum type, you can declare an `abstract` method and have each enum create a _constant-specific class body_
+
 ```java
 public enum Kenta {
     A { public void op... ;}, 
@@ -165,6 +173,7 @@ public enum Kenta {
 }
 
 ```
+
 - `switch` statements on enums are not a good choice for implementing constant-specific behavior on enums. 
     - They are good for _augmenting_ enum types with constant-specific behavior.
 
@@ -196,6 +205,7 @@ A form of metadata that provides data about a program that is not part of the pr
 
 _Annotation Type_ is a special kind of interface used to define metadata that can be attached to java code elements. 
 - `@interface` keyword is used to declare one.
+
 ```java
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.SOURCE)
@@ -203,6 +213,7 @@ public @interface Override {
 }
 
 ```
+
 - You can have annotation take in multiple values. Annotation type with NO value is called _marker annotation_.
 Predefined annotations
 - `@Override`
