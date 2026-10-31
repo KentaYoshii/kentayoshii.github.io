@@ -1536,14 +1536,6 @@
   "cover": "https://image.tmdb.org/t/p/w200/mBaXZ95R2OxueZhvQbcEWy2DqyO.jpg"
  },
  {
-  "title": "I Can See Everything",
-  "year": "2026",
-  "month": "October",
-  "date": "2026-10",
-  "letter": "I",
-  "cover": "https://image.tmdb.org/t/p/w200/9W7iiRQvyHuTd5VFBDdX5lmKIyd.jpg"
- },
- {
   "title": "The Imitation Game",
   "year": "2014",
   "month": null,
@@ -3502,6 +3494,14 @@
   "date": "2026-05",
   "letter": "W",
   "cover": "https://image.tmdb.org/t/p/w200/M7SUK85sKjaStg4TKhlAVyGlz3.jpg"
+ },
+ {
+  "title": "You Can See Everything",
+  "year": "2026",
+  "month": "October",
+  "date": "2026-10",
+  "letter": "Y",
+  "cover": null
  },
  {
   "title": "You Only Live Twice",
