@@ -1541,7 +1541,7 @@
   "month": "October",
   "date": "2026-10",
   "letter": "I",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/9W7iiRQvyHuTd5VFBDdX5lmKIyd.jpg"
  },
  {
   "title": "The Imitation Game",
@@ -2349,7 +2349,7 @@
   "month": "October",
   "date": "2026-10",
   "letter": "M",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/wiWAg4mKV2S4vImPxsPRIdj2R2B.jpg"
  },
  {
   "title": "Moonraker",
@@ -2813,7 +2813,7 @@
   "month": "October",
   "date": "2026-10",
   "letter": "R",
-  "cover": null
+  "cover": "https://image.tmdb.org/t/p/w200/vJk2TW1QZAmBiD7oj9ZF9EPTYY1.jpg"
  },
  {
   "title": "The Running Man",
