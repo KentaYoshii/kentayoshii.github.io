@@ -1536,6 +1536,14 @@
   "cover": "https://image.tmdb.org/t/p/w200/mBaXZ95R2OxueZhvQbcEWy2DqyO.jpg"
  },
  {
+  "title": "I Can See Everything",
+  "year": "2026",
+  "month": "October",
+  "date": "2026-10",
+  "letter": "I",
+  "cover": null
+ },
+ {
   "title": "The Imitation Game",
   "year": "2014",
   "month": null,
@@ -2336,6 +2344,14 @@
   "cover": "https://image.tmdb.org/t/p/w200/iKPsC9EFUafRP9SrUznI61getVP.jpg"
  },
  {
+  "title": "The Monuments Men",
+  "year": "2026",
+  "month": "October",
+  "date": "2026-10",
+  "letter": "M",
+  "cover": null
+ },
+ {
   "title": "Moonraker",
   "year": "2024",
   "month": "November",
@@ -2790,6 +2806,14 @@
   "date": "2024-06",
   "letter": "R",
   "cover": "https://image.tmdb.org/t/p/w200/fDEdtS4P0gJsxHDIt8dG8TR5dx1.jpg"
+ },
+ {
+  "title": "Runner (2026)",
+  "year": "2026",
+  "month": "October",
+  "date": "2026-10",
+  "letter": "R",
+  "cover": null
  },
  {
   "title": "The Running Man",
