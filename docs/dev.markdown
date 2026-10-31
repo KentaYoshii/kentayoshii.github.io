@@ -16,6 +16,12 @@ description: Programming notes and cheat sheets I don't want to forget.
     <p>A personal cheat sheet of Vim tricks worth remembering.</p>
     <span class="link-card-cta">See tips →</span>
   </a>
+  <a class="link-card" href="{{ '/dev/java/' | relative_url }}">
+    <span class="link-card-icon" aria-hidden="true">☕</span>
+    <h2>Java</h2>
+    <p>Notes on idiomatic Java: object contracts, enums and annotations.</p>
+    <span class="link-card-cta">See notes →</span>
+  </a>
 </div>
 
 </div></div>
